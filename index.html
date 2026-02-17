@@ -68,22 +68,39 @@
         .center-message p {
             line-height: 1.6;
         }
-        .hero-banner-logo {
+        /* Ensure hero logo never overlaps hero text */
+        .hero {
+            overflow: hidden;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2; /* keep text above the logo */
+        }        
+		.hero-banner-logo {
             position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
+            top: 18px;
+            left: 18px;
+            height: auto;
             width: auto;
-            max-width: 200px; /* reduced from 320px */
+            max-width: 210px;
+            max-height: 130px;
             object-fit: contain;
             z-index: 1;
             pointer-events: none;
-            opacity: 0.75; /* soften visibility slightly */
+            opacity: 0.95; /* clearer as a corner badge */
         }
+		
+        /* Reserve space for the logo on desktop so text can't collide */
+        @media screen and (min-width: 900px) {
+            .hero .container {
+                padding-left: 250px;
+            }
+        }		
+		
         @media screen and (max-width: 600px) {
             .hero-banner-logo {
                 height: auto;
-                max-height: 240px;
+                max-height: 180px;
                 position: static;
                 display: block;
                 margin: 0 auto 20px;
