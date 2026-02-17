@@ -75,6 +75,11 @@
         .hero .container {
             position: relative;
             z-index: 2; /* keep text above the logo */
+            text-align: center;      /* center hero headings + paragraphs */
+            max-width: 1100px;       /* keep centered block consistent with rest */
+            margin: 0 auto;          /* center the container itself */
+            padding-left: 20px;      /* symmetric padding so center stays true */
+            padding-right: 20px;			
         }        
 		.hero-banner-logo {
             position: absolute;
@@ -90,10 +95,11 @@
             opacity: 0.95; /* clearer as a corner badge */
         }
 		
-        /* Reserve space for the logo on desktop so text can't collide */
+        /* Keep logo top-left WITHOUT shifting hero text off-center */
         @media screen and (min-width: 900px) {
             .hero .container {
-                padding-left: 250px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }		
 		
