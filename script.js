@@ -1,83 +1,101 @@
 // script.js
 
-// Ensure functions are available in the global scope
-function trackDownload(item) {
-    // Log the download event to the console for debugging
-    console.log(`Downloaded: ${item}`);
+/*
+ * Production-safe analytics helpers for OntoGuard.
+ *
+ * Current site uses Plausible. Google Analytics is optional and should not
+ * produce console warnings when it is not installed.
+ *
+ * To enable local debug logs in the browser:
+ *   localStorage.setItem("ONTOGUARD_ANALYTICS_DEBUG", "1")
+ */
+(function () {
+    "use strict";
 
-    // Track with Google Analytics (if available)
-    if (typeof gtag === 'function') {
+    var DEBUG_KEY = "ONTOGUARD_ANALYTICS_DEBUG";
+
+    function isDebugEnabled() {
         try {
-            gtag('event', 'download', {
-                'event_category': 'Resource',
-                'event_label': item,
-                'value': 1
-            });
-            console.log(`Google Analytics tracked download: ${item}`);
+            return window.localStorage && window.localStorage.getItem(DEBUG_KEY) === "1";
         } catch (error) {
-            console.error(`Error tracking download in Google Analytics: ${error}`);
+            return false;
         }
-    } else {
-        console.warn('Google Analytics (gtag) not available for tracking download');
     }
 
-    // Track with Plausible (if available)
-    if (typeof plausible === 'function') {
-        try {
-            plausible('Download', { props: { resource: item } });
-            console.log(`Plausible tracked download: ${item}`);
-        } catch (error) {
-            console.error(`Error tracking download in Plausible: ${error}`);
+    function debugLog(message, payload) {
+        if (!isDebugEnabled()) return;
+        if (payload !== undefined) {
+            console.log("[OntoGuard analytics]", message, payload);
+        } else {
+            console.log("[OntoGuard analytics]", message);
         }
-    } else {
-        console.warn('Plausible not available for tracking download');
     }
-}
 
-function trackClick(action) {
-    // Log the click event to the console for debugging
-    console.log(`Clicked: ${action}`);
+    function safeText(value, fallback) {
+        if (value === undefined || value === null) return fallback;
+        return String(value).trim().slice(0, 160) || fallback;
+    }
 
-    // Track with Google Analytics (if available)
-    if (typeof gtag === 'function') {
-        try {
-            gtag('event', 'click', {
-                'event_category': 'Button',
-                'event_label': action,
-                'value': 1
-            });
-            console.log(`Google Analytics tracked click: ${action}`);
-        } catch (error) {
-            console.error(`Error tracking click in Google Analytics: ${error}`);
+    function trackEvent(eventName, props) {
+        var safeEventName = safeText(eventName, "Interaction");
+        var safeProps = props && typeof props === "object" ? props : {};
+
+        // Plausible is the currently installed analytics provider.
+        if (typeof window.plausible === "function") {
+            try {
+                window.plausible(safeEventName, { props: safeProps });
+                debugLog("Plausible event sent", { event: safeEventName, props: safeProps });
+            } catch (error) {
+                debugLog("Plausible event failed", error);
+            }
         }
-    } else {
-        console.warn('Google Analytics (gtag) not available for tracking click');
-    }
 
-    // Track with Plausible (if available)
-    if (typeof plausible === 'function') {
-        try {
-            plausible('Click', { props: { action: action } });
-            console.log(`Plausible tracked click: ${action}`);
-        } catch (error) {
-            console.error(`Error tracking click in Plausible: ${error}`);
+        // Google Analytics is optional. Do not warn when absent.
+        if (typeof window.gtag === "function") {
+            try {
+                window.gtag("event", safeEventName.toLowerCase().replace(/\s+/g, "_"), {
+                    event_category: safeProps.category || "Website",
+                    event_label: safeProps.label || safeProps.resource || safeProps.action || safeEventName,
+                    value: 1
+                });
+                debugLog("Google Analytics event sent", { event: safeEventName, props: safeProps });
+            } catch (error) {
+                debugLog("Google Analytics event failed", error);
+            }
         }
-    } else {
-        console.warn('Plausible not available for tracking click');
-    }
-}
-
-// Ensure the script initializes properly
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('script.js loaded and ready');
-
-    // Optional: Check if Google Analytics is loaded
-    if (typeof gtag !== 'function') {
-        console.warn('Google Analytics (gtag) is not loaded. Tracking will be limited to console logs and Plausible (if available).');
     }
 
-    // Optional: Check if Plausible is loaded
-    if (typeof plausible !== 'function') {
-        console.warn('Plausible is not loaded. Tracking will be limited to console logs and Google Analytics (if available).');
-    }
-});
+    window.trackDownload = function trackDownload(item) {
+        var resource = safeText(item, "Unknown Resource");
+        trackEvent("Download", {
+            category: "Resource",
+            resource: resource,
+            label: resource
+        });
+    };
+
+    window.trackClick = function trackClick(action) {
+        var label = safeText(action, "Unknown Click");
+        trackEvent("Click", {
+            category: "Button",
+            action: label,
+            label: label
+        });
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        debugLog("script.js loaded");
+
+        // Defensive: avoid runtime errors if these optional footer elements
+        // are missing on a future page variant.
+        var emailTarget = document.getElementById("email");
+        if (emailTarget && !emailTarget.innerHTML.trim()) {
+            emailTarget.innerHTML = '<a href="mailto:mark.starobinsky@ontoguard.ai">mark.starobinsky@ontoguard.ai</a>';
+        }
+
+        var contactNda = document.getElementById("contact-nda");
+        if (contactNda && (!contactNda.getAttribute("href") || contactNda.getAttribute("href") === "#")) {
+            contactNda.setAttribute("href", "mailto:mark.starobinsky@ontoguard.ai?subject=OntoGuard%20NDA%20access%20request");
+        }
+    });
+})();
