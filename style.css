@@ -174,23 +174,33 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 12px;
     margin: 20px auto 0;
 }
 
 .review-options span,
 .review-options strong {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;	
     border-radius: 999px;
-    padding: 8px 12px;
+    min-height: 44px;
+    padding: 10px 18px;
+    line-height: 1;
 }
 
 .review-options span {
     color: #4b5563;
+	font-weight: 500;
 }
 
 .review-options strong {
     color: #fff;
     background: #0b2545;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 10px rgba(11, 37, 69, 0.18);	
 }
 
 .roadmap-list {
@@ -382,9 +392,19 @@ body {
     text-align: center;
 }
 
-.use-case-section strong {
+.use-case-section p strong {
     font-weight: 600;
     color: #222;
+}
+
+.use-case-section .review-options strong {
+    color: #fff;
+    background: #0b2545;
+    font-weight: 800;
+}
+
+.use-case-section .review-options span {
+    color: #374151;
 }
 
 .icon {
@@ -684,6 +704,19 @@ body {
 
     .icon {
         font-size: 1.2rem;
+    }
+
+    .review-options {
+        gap: 8px;
+    }
+
+    .review-options span {
+        flex-basis: 100%;
+        padding-bottom: 2px;
+    }
+
+    .review-options strong {
+        min-width: 105px;
     }
 
     .flow-row {
