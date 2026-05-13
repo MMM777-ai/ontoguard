@@ -740,3 +740,15 @@ body {
         font-size: 0.86rem;
     }	
 }
+
+/* Final desktop/mobile hardening for Human Review Options pills.
+   Keep this at the very end of the file so no generic strong rule can override it. */
+.use-case-section .review-options > strong {
+    color: #ffffff !important;
+    background-color: #0b2545;
+    font-weight: 800;
+}
+
+.use-case-section .review-options > span {
+    color: #374151;
+}
