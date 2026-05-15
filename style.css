@@ -1529,3 +1529,154 @@ body {
 .event-grid .state-card:nth-child(2) {
     grid-column: span 1;
 }
+
+
+
+/* P0/P1 buyer-conversion additions: license deliverables, differentiation, exec-vs-technical view */
+.hero-primary-cta {
+    padding: 14px 28px;
+    font-size: 1.06rem;
+    box-shadow: 0 10px 22px rgba(16, 185, 129, 0.26);
+}
+
+.license-section .section-lead,
+.differentiation-section .section-lead {
+    max-width: 980px;
+}
+
+.production-note {
+    max-width: 920px;
+    margin: 0 auto 24px;
+    padding: 12px 16px;
+    border-radius: 999px;
+    background: #d1fae5;
+    color: #064e3b;
+    font-weight: 800;
+    border: 1px solid #a7f3d0;
+}
+
+.license-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    max-width: 1180px;
+    margin: 28px auto 0;
+    text-align: left;
+}
+
+.license-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.license-card h3 {
+    color: #0b2545;
+    margin: 8px 0 8px;
+}
+
+.license-kicker {
+    display: inline-flex;
+    border-radius: 999px;
+    padding: 5px 10px;
+    background: #eaf6ff;
+    color: #0b2545;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+}
+
+.differentiation-table {
+    display: grid;
+    grid-template-columns: minmax(230px, 1.4fr) repeat(4, minmax(130px, 1fr));
+    max-width: 1180px;
+    margin: 28px auto 0;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.differentiation-table div {
+    padding: 14px 12px;
+    border-right: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.differentiation-table div:nth-child(5n+1) {
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 700;
+}
+
+.differentiation-table .head {
+    background: #0b2545;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.differentiation-table .onto {
+    background: #ecfdf5;
+    color: #065f46;
+    font-weight: 900;
+}
+
+.exec-tech-view {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+    margin: 26px auto 28px;
+    text-align: left;
+}
+
+.exec-tech-panel {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.exec-tech-panel summary {
+    cursor: pointer;
+    color: #0b2545;
+    font-weight: 900;
+    font-size: 1.05rem;
+}
+
+.exec-tech-panel p {
+    margin-top: 10px;
+    color: #222;
+}
+
+@media (max-width: 860px) {
+    .differentiation-table {
+        grid-template-columns: 1fr;
+    }
+
+    .differentiation-table div,
+    .differentiation-table div:nth-child(5n+1) {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .differentiation-table .head:not(:first-child) {
+        display: none;
+    }
+
+    .exec-tech-view {
+        grid-template-columns: 1fr;
+    }
+
+    .production-note {
+        border-radius: 14px;
+    }
+}
