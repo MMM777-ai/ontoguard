@@ -752,3 +752,780 @@ body {
 .use-case-section .review-options > span {
     color: #374151;
 }
+
+
+/* State-transition governance website expansion */
+.wide-container {
+    max-width: 1120px;
+}
+
+.hero-subheading {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.35;
+}
+
+.state-transition-table div {
+    min-height: 58px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    max-width: 1120px;
+    margin: 28px auto 0;
+    text-align: left;
+}
+
+.state-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.state-card summary {
+    cursor: pointer;
+    font-weight: 800;
+    color: #0b2545;
+    list-style-position: outside;
+}
+
+.state-card p {
+    margin-top: 10px;
+    color: #222;
+}
+
+.ontology-flow {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 14px;
+    align-items: stretch;
+    max-width: 1120px;
+    margin: 30px auto 0;
+}
+
+.ontology-node {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.ontology-node strong,
+.ontology-node span {
+    display: block;
+}
+
+.ontology-node strong {
+    color: #0b2545;
+    margin-bottom: 8px;
+}
+
+.ontology-node.emphasis {
+    border-left: 6px solid #0b72b9;
+    background: #f7fbff;
+}
+
+.ontology-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b2545;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.schema-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 12px;
+    max-width: 1120px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.schema-strip span {
+    display: block;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.schema-strip strong {
+    color: #0b2545;
+}
+
+.pilot-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 22px auto 8px;
+}
+
+.pilot-badge {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #0b72b9;
+    border-radius: 999px;
+    padding: 7px 12px;
+    color: #0b2545;
+    background: #f7fbff;
+    font-size: 0.92rem;
+    font-weight: 800;
+}
+
+.packet-stat.critical {
+    background: #fff8e6;
+    border-left-color: #d97706;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 1120px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.impact-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.impact-card h3 {
+    color: #0b2545;
+    margin-bottom: 10px;
+}
+
+.impact-card ul {
+    margin: 0 0 14px 20px;
+}
+
+.impact-card li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 760px) {
+    .ontology-flow {
+        grid-template-columns: 1fr;
+    }
+
+    .ontology-arrow {
+        min-height: 24px;
+        transform: rotate(90deg);
+    }
+
+    .state-transition-table {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Prime-time polish: state-transition visual, ontology explainer, KPI cards, and technical hierarchy */
+.transition-checkpoint {
+    display: grid;
+    grid-template-columns: 1fr auto 1.2fr auto 1fr auto 1fr;
+    gap: 12px;
+    align-items: stretch;
+    max-width: 1180px;
+    margin: 28px auto 30px;
+    text-align: center;
+}
+
+.checkpoint-step {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+}
+
+.checkpoint-step strong,
+.checkpoint-step span {
+    display: block;
+}
+
+.checkpoint-step strong {
+    color: #0b2545;
+    margin-bottom: 6px;
+}
+
+.checkpoint-core {
+    border: 2px solid #0b72b9;
+    background: #f7fbff;
+}
+
+.checkpoint-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b2545;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.state-card summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.event-status {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 4px 9px;
+    font-size: 0.72rem;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.event-status.production,
+.event-status.current {
+    color: #065f46;
+    background: #d1fae5;
+}
+
+.event-status.roadmap,
+.event-status.extension {
+    color: #0b2545;
+    background: #dbeafe;
+}
+
+.card-kicker.production {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.card-kicker.roadmap {
+    background: #dbeafe;
+    color: #0b2545;
+}
+
+.ontology-object-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 920px;
+    margin: 28px auto;
+    text-align: left;
+}
+
+.ontology-list-card {
+    background: #f7fbff;
+    border: 1px solid rgba(11, 114, 185, 0.22);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.ontology-list-card strong {
+    display: block;
+    color: #0b2545;
+    margin-bottom: 10px;
+    font-size: 1.08rem;
+}
+
+.ontology-list-card ul {
+    margin-left: 20px;
+    line-height: 1.75;
+}
+
+.impact-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 999px;
+    background: #0b2545;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.kpi-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.kpi-strip span {
+    display: inline-flex;
+    border-radius: 999px;
+    padding: 6px 10px;
+    background: #f7fbff;
+    color: #0b2545;
+    font-size: 0.85rem;
+    font-weight: 800;
+    border: 1px solid rgba(11, 114, 185, 0.18);
+}
+
+.technical-depth-grid {
+    align-items: stretch;
+}
+
+.technical-card {
+    position: relative;
+}
+
+.technical-card.priority {
+    border-top: 5px solid #0b72b9;
+}
+
+.card-kicker {
+    display: inline-flex;
+    border-radius: 999px;
+    padding: 5px 10px;
+    background: #0b2545;
+    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.buyer-proof-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(170px, 1fr));
+    gap: 14px;
+    max-width: 1080px;
+    margin: 26px auto 0;
+}
+
+.buyer-proof-row div {
+    background: #f7fbff;
+    border: 1px solid rgba(11, 114, 185, 0.18);
+    border-radius: 16px;
+    padding: 18px;
+    text-align: left;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.buyer-proof-row strong,
+.buyer-proof-row span {
+    display: block;
+}
+
+.buyer-proof-row strong {
+    color: #0b2545;
+    margin-bottom: 6px;
+    font-size: 1.06rem;
+}
+
+@media (max-width: 900px) {
+    .transition-checkpoint {
+        grid-template-columns: 1fr;
+    }
+
+    .checkpoint-arrow {
+        transform: rotate(90deg);
+        min-height: 24px;
+    }
+
+    .buyer-proof-row {
+        grid-template-columns: repeat(2, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .ontology-object-grid,
+    .buyer-proof-row {
+        grid-template-columns: 1fr;
+    }
+
+    .state-card summary {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+/* Launch polish: shorter flow, collapsible technical section, and mobile hardening */
+.compact-section .section-lead,
+.compact-lead {
+    max-width: 900px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.compact-notice {
+    max-width: 880px;
+    padding: 13px 18px;
+}
+
+.boundary-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 920px;
+    margin: 26px auto 0;
+    text-align: left;
+}
+
+.boundary-summary-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+}
+
+.boundary-summary-card h3 {
+    color: #0b2545;
+    margin: 2px 0 8px;
+}
+
+.boundary-summary-card p {
+    color: #222;
+    line-height: 1.5;
+}
+
+.technical-accordion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 14px;
+    max-width: 1060px;
+    margin: 24px auto 0;
+    text-align: left;
+}
+
+.technical-accordion-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 16px;
+    padding: 16px 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.technical-accordion-card.priority {
+    border-top: 5px solid #0b72b9;
+}
+
+.technical-accordion-card summary {
+    cursor: pointer;
+    color: #0b2545;
+    font-weight: 900;
+    line-height: 1.35;
+}
+
+.technical-accordion-card p {
+    margin-top: 10px;
+    color: #222;
+    line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+    .hero-subheading {
+        font-size: 1.25em;
+        line-height: 1.38;
+    }
+
+    .center-message,
+    .compact-section {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .state-card {
+        padding: 14px 15px;
+        border-radius: 14px;
+    }
+
+    .state-card p {
+        font-size: 0.95rem;
+        line-height: 1.48;
+    }
+
+    .transition-checkpoint {
+        gap: 8px;
+        margin: 20px auto 22px;
+    }
+
+    .checkpoint-step,
+    .ontology-node,
+    .ontology-list-card,
+    .boundary-summary-card,
+    .technical-accordion-card {
+        padding: 14px 15px;
+    }
+
+    .ontology-flow,
+    .ontology-object-grid,
+    .boundary-summary-grid,
+    .technical-accordion-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ontology-arrow,
+    .checkpoint-arrow {
+        transform: rotate(90deg);
+        min-height: 18px;
+        font-size: 1.15rem;
+    }
+
+    .schema-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .notice-box {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .state-card summary {
+        gap: 8px;
+    }
+
+    .event-status {
+        font-size: 0.66rem;
+        padding: 3px 8px;
+    }
+
+    .comparison-table div,
+    .state-transition-table div {
+        min-height: auto;
+        padding: 13px 14px;
+    }
+
+    .kpi-strip span {
+        font-size: 0.78rem;
+    }
+}
+
+/* Migrated from index.html inline <style> block for page-speed polish. */
+.hero-subheading {
+            font-size: 1.6em;
+            margin-bottom: 5px;
+            margin-top: -10px;
+            color: white;
+            opacity: 0.9;
+        }
+        .center-message h2 {
+            color: #000;
+            font-weight: 700;
+            text-shadow: none;
+        }
+        .center-message p {
+            line-height: 1.6;
+        }
+        /* Ensure hero logo never overlaps hero text */
+        .hero {
+            overflow: hidden;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2; /* keep text above the logo */
+            text-align: center;      /* center hero headings + paragraphs */
+            max-width: 1100px;       /* keep centered block consistent with rest */
+            margin: 0 auto;          /* center the container itself */
+            padding-left: 20px;      /* symmetric padding so center stays true */
+            padding-right: 20px;			
+        }        
+		.hero-banner-logo {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            height: auto;
+            width: auto;
+            max-width: 210px;
+            max-height: 130px;
+            object-fit: contain;
+            z-index: 1;
+            pointer-events: none;
+            opacity: 0.95; /* clearer as a corner badge */
+        }
+		
+        /* Keep logo top-left WITHOUT shifting hero text off-center */
+        @media screen and (min-width: 900px) {
+            .hero .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }		
+		
+        @media screen and (max-width: 600px) {
+            .hero-banner-logo {
+                height: auto;
+                max-height: 180px;
+                position: static;
+                display: block;
+                margin: 0 auto 20px;
+            }
+        }
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            z-index: 9999;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 1em;
+        }
+        .hero-patent-banner {
+            display: inline-block;
+            margin: 12px auto 18px;
+            padding: 10px 16px;
+            border: 1px solid rgba(255,255,255,0.7);
+            border-radius: 999px;
+            color: #fff;
+            background: rgba(0,0,0,0.18);
+            font-weight: 700;
+            line-height: 1.35;
+        }
+        .hero-proof-line {
+            max-width: 980px;
+            margin: 0 auto 18px;
+            color: #fff;
+            font-size: 1.2em;
+            line-height: 1.55;
+        }
+        .hero-transformation {
+            max-width: 920px;
+            margin: 14px auto 22px;
+            padding: 16px 20px;
+            border-radius: 14px;
+            background: rgba(255,255,255,0.12);
+            color: #fff;
+            font-size: 1.18em;
+            line-height: 1.55;
+        }
+        .readiness-note {
+            max-width: 920px;
+            margin: 12px auto 22px;
+            color: #fff;
+            opacity: 0.92;
+            font-size: 1em;
+            line-height: 1.45;
+        }
+        .section-card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            max-width: 1100px;
+            margin: 30px auto 0;
+            text-align: left;
+        }
+        .section-card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 22px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.08);
+        }
+        .section-card h3 {
+            margin-top: 0;
+            color: #0b2545;
+            font-size: 1.25em;
+        }
+        .section-card p,
+        .section-card li {
+            color: #222;
+            line-height: 1.55;
+        }
+        .packet-stat-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 14px;
+            max-width: 1100px;
+            margin: 25px auto;
+            text-align: left;
+        }
+        .packet-stat {
+            background: #f7fbff;
+            border-left: 5px solid #0b72b9;
+            border-radius: 10px;
+            padding: 14px 16px;
+            color: #111;
+        }
+        .packet-stat strong {
+            display: block;
+            color: #0b2545;
+            margin-bottom: 5px;
+        }
+        .comparison-table {
+            max-width: 1100px;
+            margin: 26px auto 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            text-align: left;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.12);
+        }
+        .comparison-table div {
+            padding: 16px 20px;
+            background: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+        .comparison-table div:nth-child(4n+1),
+        .comparison-table div:nth-child(4n+2) {
+            background: #f7fbff;
+        }
+        .comparison-table .head {
+            background: #0b2545 !important;
+            color: #fff;
+            font-weight: 700;
+        }
+        .notice-box {
+            max-width: 980px;
+            margin: 20px auto 0;
+            padding: 16px 20px;
+            background: #fff8e6;
+            border: 1px solid #f2d389;
+            border-radius: 12px;
+            color: #4b3900;
+            line-height: 1.5;
+        }
+        @media screen and (max-width: 720px) {
+            .comparison-table {
+                grid-template-columns: 1fr;
+            }
+        }		
+        body {
+            scroll-behavior: smooth;
+        }
+
+/* Three-card event grid balance: keep the combined Agentic Extensions card visually aligned. */
+.event-grid .state-card:nth-child(2) {
+    grid-column: span 1;
+}
