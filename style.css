@@ -1592,11 +1592,26 @@ body {
     letter-spacing: 0.02em;
 }
 
+.differentiation-table-wrap {
+    max-width: 1180px;
+    margin: 28px auto 0;
+    border-radius: 16px;
+}
+
+.mobile-scroll-hint {
+    display: none;
+    max-width: 1180px;
+    margin: 18px auto 0;
+    color: #0b2545;
+    font-size: 0.92rem;
+    font-weight: 800;
+}
+
 .differentiation-table {
     display: grid;
     grid-template-columns: minmax(230px, 1.4fr) repeat(4, minmax(130px, 1fr));
     max-width: 1180px;
-    margin: 28px auto 0;
+    margin: 0 auto;
     border: 1px solid rgba(0,0,0,0.12);
     border-radius: 16px;
     overflow: hidden;
@@ -1663,18 +1678,38 @@ body {
 }
 
 @media (max-width: 860px) {
-    .differentiation-table {
-        grid-template-columns: 1fr;
+    .mobile-scroll-hint {
+        display: block;
     }
 
-    .differentiation-table div,
+    .differentiation-table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+        border-radius: 16px;
+        scrollbar-color: #0b72b9 #eaf6ff;
+    }
+
+    .differentiation-table {
+        width: 780px;
+        min-width: 780px;
+        max-width: none;
+        grid-template-columns: 220px repeat(4, 140px);
+        margin: 0;
+    }
+
+    .differentiation-table div {
+        justify-content: center;
+        text-align: center;
+    }
+
     .differentiation-table div:nth-child(5n+1) {
         justify-content: flex-start;
         text-align: left;
     }
 
     .differentiation-table .head:not(:first-child) {
-        display: none;
+        display: flex;
     }
 
     .exec-tech-view {
