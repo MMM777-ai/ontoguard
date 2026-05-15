@@ -1530,9 +1530,8 @@ body {
     grid-column: span 1;
 }
 
-
-
-/* P0/P1 buyer-conversion additions: license deliverables, differentiation, exec-vs-technical view */
+/* Buyer-conversion table fix: license deliverables, competitive differentiation, and exec/technical panels.
+   Keep this near the end of style.css so older generic section rules cannot override it. */
 .hero-primary-cta {
     padding: 14px 28px;
     font-size: 1.06rem;
@@ -1553,6 +1552,11 @@ body {
     color: #064e3b;
     font-weight: 800;
     border: 1px solid #a7f3d0;
+}
+
+.hero-production-note {
+    margin-top: 12px;
+    margin-bottom: 16px;
 }
 
 .license-grid {
@@ -1608,6 +1612,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 58px;
 }
 
 .differentiation-table div:nth-child(5n+1) {
@@ -1680,3 +1685,4 @@ body {
         border-radius: 14px;
     }
 }
+
