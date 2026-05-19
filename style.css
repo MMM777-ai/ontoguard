@@ -1818,3 +1818,348 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================================================
+   Mobile-only hardening — preserve desktop layout
+   Applies only below tablet/mobile widths.
+   ========================================================= */
+@media (max-width: 768px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    z-index: 9999;
+  }
+
+  .nav-container {
+    justify-content: flex-start;
+    padding: 8px 10px;
+  }
+
+  .nav-links {
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    width: max-content;
+    min-width: 100%;
+    padding: 0 6px !important;
+  }
+
+  .nav-links li {
+    flex: 0 0 auto;
+  }
+
+  .nav-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 12px;
+    border-radius: 999px;
+    background: #f7fbff;
+    border: 1px solid rgba(11, 114, 185, 0.18);
+    font-size: 0.86rem !important;
+    white-space: nowrap;
+  }
+
+  .hero {
+    margin-top: 0 !important;
+    padding: 28px 14px 24px !important;
+  }
+
+  .hero-banner-logo {
+    position: static !important;
+    display: block !important;
+    max-width: 150px !important;
+    max-height: 90px !important;
+    margin: 0 auto 16px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 9vw, 2.45rem) !important;
+    line-height: 1.08 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-subheading {
+    font-size: clamp(1.08rem, 5vw, 1.32rem) !important;
+    line-height: 1.35 !important;
+    margin: 0 auto 14px !important;
+  }
+
+  .hero-proof-line,
+  .hero-transformation,
+  .readiness-note {
+    font-size: 0.98rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .hero-patent-banner,
+  .production-note {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 14px !important;
+    padding: 10px 12px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px !important;
+  }
+
+  .cta-buttons .btn,
+  .btn {
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.25;
+  }
+
+  section,
+  .center-message,
+  .compact-section,
+  .use-case-section,
+  .visuals {
+    padding: 38px 14px !important;
+  }
+
+  .center-message h2,
+  .compact-section h2,
+  .visuals h2,
+  .use-case-section h2,
+  #financial-pilot h2,
+  #business-impact h2,
+  #how-it-works h2,
+  #enterprise-ontology h2 {
+    font-size: clamp(1.65rem, 7.5vw, 2.05rem) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .section-lead,
+  .compact-lead,
+  .center-message p,
+  #financial-pilot p,
+  #business-impact p {
+    font-size: 1rem !important;
+    line-height: 1.52 !important;
+  }
+
+  .container,
+  .wide-container,
+  .hero .container {
+    width: 100%;
+    max-width: 100% !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .license-grid,
+  .stack-grid,
+  .glossary-grid,
+  .section-card-grid,
+  .event-grid,
+  .ontology-object-grid,
+  .boundary-summary-grid,
+  .technical-accordion-grid,
+  .impact-grid,
+  .packet-stat-row,
+  .schema-strip,
+  .buyer-proof-row,
+  .roi-input-grid,
+  .roi-result-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .license-card,
+  .stack-card,
+  .section-card,
+  .state-card,
+  .impact-card,
+  .technical-accordion-card,
+  .boundary-summary-card,
+  .packet-stat,
+  .schema-strip span,
+  .roi-status-card {
+    padding: 15px 16px !important;
+    border-radius: 14px !important;
+  }
+
+  #financial-pilot .pilot-badge-row {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  #financial-pilot .pilot-badge {
+    font-size: 0.78rem !important;
+    padding: 6px 10px !important;
+    max-width: 100%;
+    line-height: 1.25;
+  }
+
+  #financial-pilot .packet-stat {
+    font-size: 0.96rem;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+  }
+
+  #financial-pilot .packet-stat strong {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+  }
+
+  .roi-status-card {
+    margin: 18px auto !important;
+    padding: 16px !important;
+    border-left-width: 5px !important;
+  }
+
+  .roi-input-grid li,
+  .roi-result-grid div,
+  .packet-stat,
+  .notice-box {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .roi-input-grid li {
+    font-size: 0.9rem;
+    line-height: 1.35;
+    padding: 8px 10px;
+  }
+
+  .pilot-control-callout {
+    text-align: left !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .flow-row,
+  .transition-checkpoint,
+  .ontology-flow {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .flow-arrow,
+  .checkpoint-arrow,
+  .ontology-arrow {
+    min-height: 20px;
+    transform: rotate(90deg);
+    font-size: 1.1rem !important;
+  }
+
+  .flow-step,
+  .checkpoint-step,
+  .ontology-node {
+    padding: 14px 15px !important;
+  }
+
+  .comparison-table,
+  .state-transition-table {
+    grid-template-columns: 1fr !important;
+    border-radius: 14px;
+  }
+
+  .comparison-table .head,
+  .state-transition-table .head {
+    position: sticky;
+    top: 0;
+  }
+
+  .comparison-table div,
+  .state-transition-table div {
+    min-height: auto !important;
+    padding: 12px 14px !important;
+    font-size: 0.94rem;
+  }
+
+  .differentiation-table-wrap {
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  .mobile-scroll-hint {
+    display: block;
+  }
+
+  .diagram,
+  .trust-pipeline-img,
+  .visual-summary-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .visuals h3 {
+    font-size: 1.15rem !important;
+    line-height: 1.25 !important;
+  }
+
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.9rem !important;
+  }
+
+  .hero-subheading {
+    font-size: 1.05rem !important;
+  }
+
+  .center-message h2,
+  .compact-section h2,
+  #financial-pilot h2 {
+    font-size: 1.55rem !important;
+  }
+
+  .governance-badge,
+  .pilot-badge,
+  .event-status,
+  .card-kicker,
+  .license-kicker {
+    font-size: 0.72rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .btn {
+    padding: 11px 13px !important;
+    font-size: 0.92rem !important;
+    white-space: normal;
+  }
+
+  .packet-stat,
+  .roi-status-card,
+  .notice-box,
+  .section-card,
+  .license-card,
+  .impact-card {
+    padding: 13px 14px !important;
+  }
+
+  .roi-input-grid li {
+    font-size: 0.84rem;
+  }
+}
