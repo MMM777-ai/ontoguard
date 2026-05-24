@@ -2401,3 +2401,213 @@ body {
         padding: 13px 14px !important;
     }
 }
+
+
+/* =========================================================
+   Sales-flow hierarchy patch — authorization pilot + buyer roles
+   ========================================================= */
+.authorization-pilot-section {
+    position: relative;
+}
+
+.pilot-offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+    gap: 16px;
+    max-width: 1120px;
+    margin: 28px auto 0;
+    text-align: left;
+}
+
+.pilot-offer-card {
+    background: #ffffff;
+    border: 1px solid rgba(11, 114, 185, 0.18);
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.pilot-offer-card strong,
+.pilot-offer-card span {
+    display: block;
+}
+
+.pilot-offer-card strong {
+    color: #0b2545;
+    font-size: 1.02rem;
+    margin-bottom: 6px;
+}
+
+.pilot-offer-card span {
+    color: #263238;
+    line-height: 1.45;
+}
+
+.built-for-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    max-width: 1120px;
+    margin: 24px auto 0;
+    padding: 16px;
+    border-radius: 16px;
+    background: #f7fbff;
+    border: 1px solid rgba(11, 114, 185, 0.18);
+}
+
+.built-for-strip strong {
+    color: #0b2545;
+    margin-right: 2px;
+}
+
+.built-for-strip span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #0b2545;
+    font-weight: 800;
+    font-size: 0.86rem;
+    border: 1px solid rgba(11, 114, 185, 0.16);
+}
+
+.hero-technical-line {
+    opacity: 0.94;
+}
+
+@media (max-width: 768px) {
+    .pilot-offer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .pilot-offer-card {
+        padding: 15px 16px !important;
+        border-radius: 14px !important;
+    }
+
+    .built-for-strip {
+        justify-content: flex-start;
+        padding: 13px 14px;
+    }
+
+    .built-for-strip span {
+        font-size: 0.78rem;
+        min-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pilot-offer-card {
+        padding: 13px 14px !important;
+    }
+
+    .built-for-strip span {
+        font-size: 0.72rem;
+    }
+}
+
+
+/* =========================================================
+   Pilot conversion polish — Decision Authorization API + low-friction form
+   ========================================================= */
+.pilot-start-note {
+    margin-top: 18px;
+    background: #f0fdf4;
+    border-left-color: #059669;
+}
+
+.pilot-request-form {
+    max-width: 980px;
+    margin: 28px auto 0;
+    padding: 22px;
+    border: 1px solid rgba(11, 114, 185, 0.20);
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.07);
+    text-align: left;
+}
+
+.pilot-request-form h3 {
+    margin: 0 0 14px;
+    color: #0b2545;
+    text-align: center;
+}
+
+.pilot-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.pilot-form-grid label {
+    display: grid;
+    gap: 6px;
+    font-weight: 800;
+    color: #0b2545;
+}
+
+.pilot-form-grid input {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 1px solid rgba(11, 114, 185, 0.28);
+    border-radius: 10px;
+    font: inherit;
+    color: #111827;
+    background: #f9fafb;
+}
+
+.pilot-form-grid input:focus {
+    outline: 3px solid rgba(11, 114, 185, 0.18);
+    border-color: #0b72b9;
+    background: #ffffff;
+}
+
+.pilot-request-form .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px auto 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.pilot-form-note {
+    margin: 12px auto 0;
+    color: #4b5563;
+    font-size: 0.92rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .pilot-form-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .pilot-request-form {
+        padding: 16px !important;
+        border-radius: 14px !important;
+    }
+}
+
+
+/* Outreach form + differentiation polish */
+.pilot-request-form[data-form-provider="formsubmit"] {
+    position: relative;
+}
+
+.pilot-form-note a {
+    color: #0b72b9;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.differentiation-table .onto {
+    overflow-wrap: anywhere;
+}
