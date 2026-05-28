@@ -2406,7 +2406,8 @@ body {
 /* =========================================================
    Sales-flow hierarchy patch — authorization pilot + buyer roles
    ========================================================= */
-.authorization-pilot-section {
+.authorization-pilot-section,
+.output-risk-scan-section {
     position: relative;
 }
 
@@ -2610,4 +2611,108 @@ body {
 
 .differentiation-table .onto {
     overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   Semantic Control Plane conversion sections
+   Added for AI Output Risk Scan / no-document-start flow.
+   ========================================================= */
+.start-without-documents-section,
+.products-section,
+.semantic-outcomes-section {
+    position: relative;
+}
+
+.semantic-output-grid,
+.product-start-grid,
+.outcome-list-grid,
+.semantic-control-ladder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    max-width: 1120px;
+    margin: 28px auto 0;
+    text-align: left;
+}
+
+.semantic-output-card,
+.product-start-card,
+.outcome-list-grid div,
+.semantic-control-ladder div {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.semantic-output-card h3,
+.product-start-card h3 {
+    color: #0b2545;
+    margin-bottom: 8px;
+}
+
+.product-start-card.priority,
+.semantic-output-card.priority,
+.license-card.priority {
+    border-top: 5px solid #0b72b9;
+    background: #f7fbff;
+}
+
+.product-start-card .btn {
+    margin-top: 14px;
+}
+
+.outcome-list-grid div {
+    font-weight: 800;
+    color: #0b2545;
+}
+
+.semantic-control-ladder {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.semantic-control-ladder div strong,
+.semantic-control-ladder div span {
+    display: block;
+}
+
+.semantic-control-ladder div strong {
+    color: #0b2545;
+    margin-bottom: 6px;
+}
+
+.semantic-control-ladder div {
+    border-left: 5px solid #0b72b9;
+}
+
+#output-risk-scan .pilot-offer-card strong {
+    color: #0b2545;
+}
+
+#output-risk-scan .pilot-request-form {
+    border-top: 5px solid #0b72b9;
+}
+
+@media (max-width: 768px) {
+    .semantic-output-grid,
+    .product-start-grid,
+    .outcome-list-grid,
+    .semantic-control-ladder {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .semantic-output-card,
+    .product-start-card,
+    .outcome-list-grid div,
+    .semantic-control-ladder div {
+        padding: 15px 16px !important;
+        border-radius: 14px !important;
+    }
+
+    .product-start-card .btn {
+        width: 100%;
+    }
 }
