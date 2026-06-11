@@ -1,0 +1,23 @@
+{
+  "artifact_type": "decision_receipt",
+  "business_effect": "Autonomous release withheld pending review.",
+  "created_at": "2026-06-11T23:45:00Z",
+  "decision": "ESCALATE",
+  "input_hash_sha256": "c8004d92db9fb3b5d8852bec24c2ed349aaa5e6bda394624fdeedf68e5e0480e",
+  "output_hash_sha256": "9b6d11b9d657b327dd6b94557eac402153a9bd8a11effbf8f9374c308ccb0e2c",
+  "packet_hash_sha256": "59d08dc4f5ccf6925611fd37c9d0c147cb452a51e7ac70357ece09dc13d65cc7",
+  "public_sanitization_notice": "This receipt is a synthetic public-facing demonstration artifact. It contains no real customer, claim, patient, or insurer data and does not disclose protected runtime logic.",
+  "reason_codes": [
+    "CUSTOMER_IMPACTING_DECISION",
+    "HIGH_DOWNSTREAM_RELIANCE",
+    "EVIDENCE_LINKAGE_INCOMPLETE",
+    "POLICY_SUPPORT_INSUFFICIENT_FOR_AUTONOMOUS_RELEASE",
+    "HUMAN_REVIEW_REQUIRED"
+  ],
+  "release_authorized": false,
+  "release_status": "WITHHELD_PENDING_REVIEW",
+  "routed_to": "HUMAN_REVIEW",
+  "scenario_id": "PUBLIC-DEMO-CLAIMS-ESCALATE-001",
+  "schema_version": "public_sanitized_v1.0",
+  "synthetic": true
+}
