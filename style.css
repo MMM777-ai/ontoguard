@@ -2788,3 +2788,95 @@ body {
     }
 }
 
+/* Boundary Proof Kit Section */
+.boundary-proof-kit-section .notice-box {
+    max-width: 980px;
+    margin: 18px auto 26px;
+}
+
+.proof-kit-proofline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+    max-width: 1120px;
+    margin: 28px auto;
+    text-align: left;
+}
+
+.proof-kit-proofline div {
+    background: #ffffff;
+    border: 1px solid rgba(11, 114, 185, 0.18);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.proof-kit-proofline strong,
+.proof-kit-proofline span {
+    display: block;
+}
+
+.proof-kit-proofline strong {
+    color: #0b2545;
+    margin-bottom: 6px;
+}
+
+.proof-kit-primary-download {
+    margin: 26px auto 30px;
+}
+
+.proof-kit-file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 1120px;
+    margin: 28px auto 0;
+    text-align: left;
+}
+
+.proof-kit-file-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.proof-kit-file-card.priority {
+    border-left: 6px solid #0b72b9;
+}
+
+.proof-kit-file-card h3 {
+    color: #0b2545;
+    margin-bottom: 8px;
+}
+
+.proof-kit-file-card p {
+    margin-bottom: 16px;
+    color: #263238;
+}
+
+.proof-kit-secondary-links {
+    margin: 24px auto 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.proof-kit-secondary-links a {
+    color: #0b2545;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .proof-kit-file-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proof-kit-proofline {
+        grid-template-columns: 1fr;
+    }
+}
+
