@@ -1,0 +1,474 @@
+{
+  "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
+  "kit_version": "v3-runtime-seam-and-semantic-projection",
+  "generated_at_utc": "2026-06-24T19:39:21Z",
+  "source_trace_id": "40eafa21-3209-4015-81c7-32b3f4fcc3d0",
+  "public_sanitized": true,
+  "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
+  "public_safety_boundaries": [
+    "No source code or protected implementation logic.",
+    "No private ontology internals or raw legal registry data.",
+    "No customer data; representative/synthetic proof surface only.",
+    "Controlled harness non-bypassability is shown; production non-bypassability is not asserted.",
+    "Public summaries preserve proof posture without exposing internal algorithms."
+  ],
+  "artifact_type": "full_audit_public_sanitized_summary_not_raw_full_audit",
+  "note": "This is a public-safe summary of the full audit posture. It is not the raw full-audit JSON and intentionally excludes protected implementation details.",
+  "buyer_portable_summary": {
+    "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
+    "kit_version": "v3-runtime-seam-and-semantic-projection",
+    "generated_at_utc": "2026-06-24T19:39:21Z",
+    "source_trace_id": "40eafa21-3209-4015-81c7-32b3f4fcc3d0",
+    "public_sanitized": true,
+    "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
+    "public_safety_boundaries": [
+      "No source code or protected implementation logic.",
+      "No private ontology internals or raw legal registry data.",
+      "No customer data; representative/synthetic proof surface only.",
+      "Controlled harness non-bypassability is shown; production non-bypassability is not asserted.",
+      "Public summaries preserve proof posture without exposing internal algorithms."
+    ],
+    "artifact_type": "buyer_portable_governance_public_sanitized_summary",
+    "product_positioning": "OntoGuard Semantic Control Plane for AI Output Risk Review and Decision Authorization Proof.",
+    "commercial_wedges": [
+      {
+        "wedge": "AI Output Risk Review",
+        "buyer_value": "Identify risky, unsupported, review-heavy, or inadmissible AI outputs before release."
+      },
+      {
+        "wedge": "Decision Authorization Proof",
+        "buyer_value": "Prove that a proposed AI-driven action was governed before release, refused when conditions failed, and prevented from forming protected downstream effect in a controlled harness."
+      }
+    ],
+    "decision_summary": {
+      "decision": "ESCALATE",
+      "release_authorized": false,
+      "release_status": "WITHHELD_PENDING_REVIEW",
+      "routed_to": "HUMAN_REVIEW",
+      "business_effect": "Autonomous release withheld pending review.",
+      "primary_reason": "Release withheld by Decision API pending review.",
+      "contract_pass": true,
+      "benchmark_pass": false,
+      "strict_autonomous_release_gate_pass": false
+    },
+    "governed_response_summary": {
+      "status": "CAPTURED",
+      "buyer_facing_output_status": "ESCALATE to HUMAN_REVIEW",
+      "release_status": "WITHHELD_PENDING_REVIEW",
+      "routed_to": "HUMAN_REVIEW",
+      "display_excerpt": "Bullet points: 1. The AI advisor follows all applicable regulatory frameworks including and. 2. The AI system undergoes regular usability evaluations to ensure it remains accessible and understandable to users including those with disabilities. 3. The AI model uses a well-documented explainable uncertainty model. 4.",
+      "display_note": "The governed model output contained unverified citation-like markers. OntoGuard preserved the output for audit, flagged support/citation risk, and withheld autonomous release pending human review.",
+      "response_hash": "4a0dc291b9c1aaecf5d47cd378fe8db614beca76540f0eaff1c0e8c5dc743538"
+    },
+    "proposed_state_transition_summary": {
+      "transition_type": "open_world_domain_compliance_compliance_control_testing_review_governance_release_authorization",
+      "business_action": "AI-generated Compliance compliance control testing review governance withheld pending governed review",
+      "source_state": "AI-generated Compliance compliance control testing review governance not authorized for autonomous release",
+      "proposed_target_state": "Autonomous release withheld; routed to HUMAN_REVIEW under open world domain governance",
+      "release_surface": "reviewer_facing_workflow",
+      "materiality": "high",
+      "reversibility": "partially_reversible",
+      "requires_authorization": true,
+      "inference_status": "PARTIAL_CURRENT_RUN_DERIVED",
+      "affected_objects_preview": [
+        "false",
+        "dynamic_derived",
+        "compliance_compliance_control_testing_review_governance",
+        "compliance_control_testing_review",
+        "compliance_audit",
+        "generate_explanation",
+        "explainability",
+        "customer"
+      ],
+      "affected_relations": [
+        "ai_output_to_release_boundary",
+        "release_boundary_to_decision_action",
+        "decision_action_to_downstream_effect",
+        "decision_action_to_human_review"
+      ]
+    },
+    "runtime_seam_summary": {
+      "control_point": "PRE_RELEASE_DECISION_BOUNDARY",
+      "gate_mode": "CONTROLLED_INLINE_HARNESS",
+      "gate_invoked_before_release": true,
+      "failed_conditions": [
+        "BENCHMARK_FAIL_REQUIRES_REVIEW",
+        "BELOW_AUTONOMOUS_ALLOW_THRESHOLD",
+        "HUMAN_REVIEW_ROUTE",
+        "SEMANTIC_CONSTRAINTS_GOVERNED",
+        "BENCHMARK_FAIL",
+        "UNCERTAINTY_UNRESOLVED",
+        "AUTONOMOUS_RELEASE_NOT_AUTHORIZED",
+        "DOWNSTREAM_RELIANCE_HIGH"
+      ],
+      "refused_operation": "AUTONOMOUS_OUTPUT_RELEASE",
+      "authorization_token_issued": false,
+      "downstream_commit_status": "NOT_COMMITTED",
+      "protected_effect_formed": false,
+      "no_bind_status": "NO_PROTECTED_EFFECT_FORMED"
+    },
+    "route_completeness_summary": {
+      "route_completeness_level": "L4_ROUTE_ENFORCED_CONTROLLED_HARNESS",
+      "route_completeness_percent": 85.0,
+      "route_registered": "YES",
+      "tested": "YES",
+      "replayable": "YES",
+      "fail_closed": true,
+      "non_bypassable": "CONTROLLED_HARNESS_ASSERTED",
+      "non_bypassability_basis": "Controlled harness topology, token requirement, replay proof, bypass-prevention evidence, and pressure tests support controlled non-bypassability only.",
+      "production_enforcement_asserted": false,
+      "outcome_accounted": "PENDING_HUMAN_REVIEW_OUTCOME",
+      "limitations": [
+        "OUTCOME_CLOSURE_PENDING"
+      ]
+    },
+    "replay_and_test_summary": {
+      "same_condition_replay_status": "PASSED",
+      "same_condition_replay_passed": true,
+      "changed_condition_replay_status": "CONTROLLED_FIXTURE_PASSED",
+      "changed_condition_replay_passed": true,
+      "route_pressure_test_count": 6,
+      "route_pressure_tests_passed": 6,
+      "pressure_test_ids": [
+        "missing_authorization_token_rejected",
+        "invalid_authorization_token_rejected",
+        "timeout_fail_closed",
+        "direct_downstream_commit_blocked",
+        "stale_policy_snapshot_rejected_or_escalated",
+        "mismatched_route_token_rejected"
+      ],
+      "bypass_prevention_evidence_count": 1,
+      "bypass_prevention_passed": true
+    },
+    "semantic_projection_summary": {
+      "status": "COMPLETE",
+      "candidate_states": [
+        "ALLOW",
+        "BLOCK",
+        "ESCALATE"
+      ],
+      "selected_projection": "ESCALATE",
+      "decision_api_action": "ESCALATE",
+      "state_scores": {
+        "ALLOW": 0.69237932,
+        "BLOCK": 0.25912270000000004,
+        "ESCALATE": 0.5498677000000001
+      },
+      "projection_disagreement": true,
+      "projection_disagreement_detail": {
+        "decision_api_action_preserved": "ESCALATE",
+        "highest_scoring_projection": "ALLOW",
+        "override_performed": false
+      },
+      "why_projection_won": [
+        "Decision API action is preserved as authoritative.",
+        "Projection scores are explanatory and bounded.",
+        "No release, trust, policy, benchmark, risk, evidence, trace, or citation field was mutated."
+      ],
+      "provenance": {
+        "engine_version": "padgett.semantic_projection@1.0.0",
+        "source": "current_run_decision_api_and_current_run_governance_components"
+      }
+    },
+    "coherent_governance_loading_summary": {
+      "status": "COMPLETE",
+      "coherent_loading_score": 0.574282,
+      "coherent_loading_tier": "PARTIAL",
+      "component_scores": {
+        "benchmark_alignment": 0.0,
+        "evidence_coverage": 0.0,
+        "policy_alignment": 1.0,
+        "risk_compatibility": 1.0,
+        "trace_density": 0.9,
+        "trust_support": 0.8149,
+        "uncertainty_compatibility": 0.32999999999999996
+      },
+      "missing_components": [
+        "evidence_pack"
+      ],
+      "raw_trust_preserved_as_source_of_truth": true
+    },
+    "human_review_summary": {
+      "review_task_status": "REQUIRED",
+      "review_owner_role": null,
+      "review_options": [
+        "APPROVE",
+        "REVISE",
+        "BLOCK",
+        "REPLACE_WITH_SAFE_TEMPLATE",
+        "REQUEST_MORE_EVIDENCE"
+      ],
+      "review_reason": "BENCHMARK_FAIL_REQUIRES_REVIEW - Strict benchmark check failed; human review is required before autonomous release.; BELOW_AUTONOMOUS_ALLOW_THRESHOLD - Autonomous release was withheld because the combined benchmark, proof/citation, trust, risk, uncertainty, and routing posture required human review. Trust was one signal: decision-basis trust 81.49% versus the autonomous-release threshold 90.00%.; HUMAN_REVIEW_ROUTE - Decision route is HUMAN_REVIEW; autonomous release is withheld pending reviewer action.",
+      "review_outcome_export": true
+    },
+    "improvement_signal_summary": {
+      "improvement_signal_status": "REVIEW_GATED",
+      "export_status": "PENDING_REVIEW",
+      "training_signal_export_status": "PENDING_REVIEW",
+      "training_signal_classification": "HUMAN_REVIEW_CANDIDATE"
+    },
+    "public_limitations": [
+      "This kit demonstrates controlled-harness enforcement, not production non-bypassability.",
+      "The governed output was intentionally withheld pending human review; this is a refusal/escalation proof surface, not an autonomous release claim.",
+      "Semantic projection is explanatory and does not override the authoritative Decision API.",
+      "Some historical/cross-run intelligence is marked insufficient history until comparable accepted prior packets exist."
+    ]
+  },
+  "controlled_runtime_seam_summary": {
+    "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
+    "kit_version": "v3-runtime-seam-and-semantic-projection",
+    "generated_at_utc": "2026-06-24T19:39:21Z",
+    "source_trace_id": "40eafa21-3209-4015-81c7-32b3f4fcc3d0",
+    "public_sanitized": true,
+    "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
+    "public_safety_boundaries": [
+      "No source code or protected implementation logic.",
+      "No private ontology internals or raw legal registry data.",
+      "No customer data; representative/synthetic proof surface only.",
+      "Controlled harness non-bypassability is shown; production non-bypassability is not asserted.",
+      "Public summaries preserve proof posture without exposing internal algorithms."
+    ],
+    "summary_type": "controlled_runtime_seam_summary",
+    "what_this_proves": [
+      "A governed AI output attempted to move toward an output-release route.",
+      "OntoGuard was invoked at a pre-release decision boundary.",
+      "Release conditions failed, so autonomous output release was refused.",
+      "No authorization token was issued.",
+      "The controlled downstream commit did not execute.",
+      "No protected downstream effect formed.",
+      "A no-bind receipt was generated and hash-bound.",
+      "Same-condition replay passed.",
+      "Changed-condition controlled fixture passed.",
+      "Route pressure tests and bypass-prevention evidence passed for the controlled harness topology."
+    ],
+    "honest_limitations": [
+      "Production non-bypassability is not asserted.",
+      "Outcome closure remains pending human review.",
+      "Changed-condition replay is currently a controlled fixture, not a customer production route replay."
+    ],
+    "release_attempt": {
+      "attempt_id": "attempt_40eafa21-3209-40",
+      "attempted_movement": "AI_OUTPUT_RELEASE",
+      "requested_operation": "AUTONOMOUS_OUTPUT_RELEASE",
+      "route_id": "llm_backend_output_release",
+      "decision_action": "ESCALATE",
+      "release_status": "WITHHELD_PENDING_REVIEW",
+      "authorization_token_status": "NOT_ISSUED"
+    },
+    "execution_boundary": {
+      "control_point": "PRE_RELEASE_DECISION_BOUNDARY",
+      "gate_mode": "CONTROLLED_INLINE_HARNESS",
+      "gate_invoked_before_release": true,
+      "failed_conditions": [
+        "BENCHMARK_FAIL_REQUIRES_REVIEW",
+        "BELOW_AUTONOMOUS_ALLOW_THRESHOLD",
+        "HUMAN_REVIEW_ROUTE",
+        "SEMANTIC_CONSTRAINTS_GOVERNED",
+        "BENCHMARK_FAIL",
+        "UNCERTAINTY_UNRESOLVED",
+        "AUTONOMOUS_RELEASE_NOT_AUTHORIZED",
+        "DOWNSTREAM_RELIANCE_HIGH"
+      ],
+      "refused_operation": "AUTONOMOUS_OUTPUT_RELEASE",
+      "authorization_token_issued": false,
+      "downstream_commit_status": "NOT_COMMITTED",
+      "protected_effect_formed": false,
+      "no_bind_status": "NO_PROTECTED_EFFECT_FORMED"
+    },
+    "no_bind_receipt": {
+      "receipt_id": "receipt_92087ea328b01996",
+      "no_bind_status": "NO_PROTECTED_EFFECT_FORMED",
+      "no_bind_reason": "Autonomous release was withheld before downstream protected effect formation.",
+      "release_authorized": false,
+      "refused_operation": "AUTONOMOUS_OUTPUT_RELEASE",
+      "protected_effect_formed": false,
+      "downstream_commit_status": "NOT_COMMITTED",
+      "receipt_hash": "c33c9d07cecc6ca4cc6625815d0dd9d2e4146280e9d319843b5c7ec968139868"
+    },
+    "route_completeness": {
+      "route_completeness_level": "L4_ROUTE_ENFORCED_CONTROLLED_HARNESS",
+      "route_completeness_percent": 85.0,
+      "route_registered": "YES",
+      "tested": "YES",
+      "replayable": "YES",
+      "fail_closed": true,
+      "non_bypassable": "CONTROLLED_HARNESS_ASSERTED",
+      "non_bypassability_basis": "Controlled harness topology, token requirement, replay proof, bypass-prevention evidence, and pressure tests support controlled non-bypassability only.",
+      "production_enforcement_asserted": false,
+      "outcome_accounted": "PENDING_HUMAN_REVIEW_OUTCOME",
+      "limitations": [
+        "OUTCOME_CLOSURE_PENDING"
+      ]
+    },
+    "replay_and_tests": {
+      "same_condition_replay_status": "PASSED",
+      "same_condition_replay_passed": true,
+      "changed_condition_replay_status": "CONTROLLED_FIXTURE_PASSED",
+      "changed_condition_replay_passed": true,
+      "route_pressure_test_count": 6,
+      "route_pressure_tests_passed": 6,
+      "pressure_test_ids": [
+        "missing_authorization_token_rejected",
+        "invalid_authorization_token_rejected",
+        "timeout_fail_closed",
+        "direct_downstream_commit_blocked",
+        "stale_policy_snapshot_rejected_or_escalated",
+        "mismatched_route_token_rejected"
+      ],
+      "bypass_prevention_evidence_count": 1,
+      "bypass_prevention_passed": true
+    },
+    "downstream_effect_record": {
+      "authorized_by_ontoguard": false,
+      "authorization_token_id": null,
+      "workflow_commit_executed": false,
+      "protected_effect_formed": false,
+      "review_queue_created": true,
+      "downstream_commit_status": "NOT_COMMITTED"
+    }
+  },
+  "semantic_projection_summary": {
+    "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
+    "kit_version": "v3-runtime-seam-and-semantic-projection",
+    "generated_at_utc": "2026-06-24T19:39:21Z",
+    "source_trace_id": "40eafa21-3209-4015-81c7-32b3f4fcc3d0",
+    "public_sanitized": true,
+    "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
+    "public_safety_boundaries": [
+      "No source code or protected implementation logic.",
+      "No private ontology internals or raw legal registry data.",
+      "No customer data; representative/synthetic proof surface only.",
+      "Controlled harness non-bypassability is shown; production non-bypassability is not asserted.",
+      "Public summaries preserve proof posture without exposing internal algorithms."
+    ],
+    "summary_type": "semantic_projection_summary",
+    "what_this_proves": [
+      "OntoGuard preserves the authoritative Decision API result while adding a semantic explanation layer.",
+      "The system projects the proposed state transition onto ALLOW, BLOCK, and ESCALATE outcome states.",
+      "Coherent Governance Loading explains whether evidence, policy, benchmark, risk, uncertainty, trace, and trust signals are aligned enough for release.",
+      "Trace Coupling and Evidence Geodesic show buyer-readable rationale paths without inventing new evidence.",
+      "Observer Views reorganize the same canonical packet for executive, reviewer, and technical audiences.",
+      "Improvement signals are review-gated and do not mutate the original packet."
+    ],
+    "decision_projection": {
+      "status": "COMPLETE",
+      "candidate_states": [
+        "ALLOW",
+        "BLOCK",
+        "ESCALATE"
+      ],
+      "selected_projection": "ESCALATE",
+      "decision_api_action": "ESCALATE",
+      "state_scores": {
+        "ALLOW": 0.69237932,
+        "BLOCK": 0.25912270000000004,
+        "ESCALATE": 0.5498677000000001
+      },
+      "projection_disagreement": true,
+      "projection_disagreement_detail": {
+        "decision_api_action_preserved": "ESCALATE",
+        "highest_scoring_projection": "ALLOW",
+        "override_performed": false
+      },
+      "why_projection_won": [
+        "Decision API action is preserved as authoritative.",
+        "Projection scores are explanatory and bounded.",
+        "No release, trust, policy, benchmark, risk, evidence, trace, or citation field was mutated."
+      ],
+      "provenance": {
+        "engine_version": "padgett.semantic_projection@1.0.0",
+        "source": "current_run_decision_api_and_current_run_governance_components"
+      }
+    },
+    "coherent_governance_loading": {
+      "status": "COMPLETE",
+      "coherent_loading_score": 0.574282,
+      "coherent_loading_tier": "PARTIAL",
+      "component_scores": {
+        "benchmark_alignment": 0.0,
+        "evidence_coverage": 0.0,
+        "policy_alignment": 1.0,
+        "risk_compatibility": 1.0,
+        "trace_density": 0.9,
+        "trust_support": 0.8149,
+        "uncertainty_compatibility": 0.32999999999999996
+      },
+      "missing_components": [
+        "evidence_pack"
+      ],
+      "raw_trust_preserved_as_source_of_truth": true
+    },
+    "evidence_geodesic": {
+      "status": "COMPLETE",
+      "path_count": 1,
+      "distance_formula": "distance=-log(max(semantic_entanglement,1e-6))",
+      "selected_projection": "ESCALATE",
+      "first_path_edges_rendered": 8
+    },
+    "governance_path_ensemble": {
+      "status": "COMPLETE",
+      "coherent_loading_score": 0.574282,
+      "path_selection_basis": [
+        "lowest_semantic_distance",
+        "highest_trace_coupling_strength"
+      ],
+      "path_count": 5
+    },
+    "observer_views": {
+      "status": "COMPLETE",
+      "mutation_policy": "READ_ONLY_EXPLANATORY",
+      "views": [
+        {
+          "answer": "Governed by Decision API action: ESCALATE",
+          "primary_question": "Can this AI output move autonomously?",
+          "role": "buyer_executive",
+          "selected_projection": "ESCALATE"
+        },
+        {
+          "answer": "Review Decision API reasons, evidence, pending evidence, and projection disagreement if present.",
+          "primary_question": "What must be reviewed next?",
+          "role": "human_reviewer",
+          "selected_projection": "ESCALATE"
+        },
+        {
+          "answer": "Trace, evidence pack, route proof, hashes, and semantic projection provenance.",
+          "primary_question": "What proves the governance path?",
+          "role": "auditor",
+          "selected_projection": "ESCALATE"
+        }
+      ]
+    },
+    "packet_projection_budget": {
+      "status": "COMPLETE",
+      "buyer_explanation": "The PDF renders a decision-relevant subset; full_audit.governance.json preserves the complete canonical record.",
+      "max_evidence_items_rendered": 12,
+      "max_trace_nodes_rendered": 20,
+      "max_trace_links_rendered": 30,
+      "selection_basis": [
+        "decision_relevance",
+        "evidence_strength",
+        "semantic_entanglement",
+        "risk_materiality",
+        "citation_status",
+        "human_review_relevance"
+      ],
+      "canonical_json_preserves_full_record": true
+    },
+    "cross_run_intelligence": {
+      "semantic_curvature_status": "INSUFFICIENT_HISTORY",
+      "governance_spectrum_status": "INSUFFICIENT_HISTORY",
+      "cross_run_projection_learning_status": "NO_ACCEPTED_REPAIR_HISTORY",
+      "safety_constraints": [
+        "No automatic ontology mutation",
+        "No automatic decision override",
+        "No trust overwrite"
+      ]
+    },
+    "improvement_loop": {
+      "improvement_signal_status": "REVIEW_GATED",
+      "export_status": "PENDING_REVIEW",
+      "training_signal_export_status": "PENDING_REVIEW",
+      "training_signal_classification": "HUMAN_REVIEW_CANDIDATE"
+    }
+  }
+}
