@@ -2880,3 +2880,177 @@ body {
     }
 }
 
+
+/* Controlled Execution-Boundary Proof Sections */
+.runtime-seam-section .section-lead,
+.packet-anatomy-section .section-lead,
+.capability-boundary-section .section-lead,
+.l4-l5-section .section-lead {
+    max-width: 980px;
+}
+
+.proof-sequence-grid,
+.proof-kit-proofline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+    max-width: 1120px;
+    margin: 28px auto;
+    text-align: left;
+}
+
+.proof-step-card,
+.proof-kit-proofline div {
+    background: #ffffff;
+    border: 1px solid rgba(11, 114, 185, 0.18);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.proof-step-card strong,
+.proof-step-card span,
+.proof-kit-proofline strong,
+.proof-kit-proofline span {
+    display: block;
+}
+
+.proof-step-card strong,
+.proof-kit-proofline strong {
+    color: #0b2545;
+    margin-bottom: 6px;
+}
+
+.limitation-callout {
+    background: #f7fbff;
+    border-left: 6px solid #0b72b9;
+}
+
+.controlled-proof-badge {
+    max-width: 980px;
+    margin: 16px auto 18px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.production-l5-warning {
+    background: #fff8e6;
+    border-left: 6px solid #d97706;
+}
+
+.route-proof-table-wrap,
+.capability-boundary-table-wrap {
+    max-width: 1120px;
+    margin: 28px auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.route-proof-table,
+.capability-boundary-table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.route-proof-table th,
+.route-proof-table td,
+.capability-boundary-table th,
+.capability-boundary-table td {
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 14px 16px;
+    vertical-align: top;
+}
+
+.route-proof-table th,
+.capability-boundary-table th {
+    background: #0b2545;
+    color: #ffffff;
+}
+
+.capability-status-available,
+.capability-status-controlled,
+.capability-status-roadmap,
+.capability-status-not-asserted {
+    display: inline-flex;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-weight: 800;
+    font-size: 0.84rem;
+}
+
+.capability-status-available {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.capability-status-controlled {
+    background: #dbeafe;
+    color: #0b2545;
+}
+
+.capability-status-roadmap {
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+.capability-status-not-asserted {
+    background: #fff8e6;
+    color: #92400e;
+}
+
+.packet-anatomy-grid,
+.l4-l5-ladder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    max-width: 1120px;
+    margin: 28px auto 0;
+    text-align: left;
+}
+
+.packet-anatomy-card,
+.l4-l5-ladder div {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.packet-anatomy-card h3,
+.l4-l5-ladder strong {
+    color: #0b2545;
+    margin-bottom: 8px;
+}
+
+.packet-anatomy-card ul {
+    margin-left: 18px;
+    line-height: 1.65;
+}
+
+.l4-l5-ladder strong,
+.l4-l5-ladder span {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .proof-sequence-grid,
+    .proof-kit-proofline,
+    .packet-anatomy-grid,
+    .l4-l5-ladder {
+        grid-template-columns: 1fr;
+    }
+
+    .route-proof-table,
+    .capability-boundary-table {
+        min-width: 680px;
+    }
+}
