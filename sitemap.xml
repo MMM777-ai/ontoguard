@@ -66,4 +66,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-<url><loc>https://ontoguard.ai/assets/boundary-proof-kit/full_audit.governance.public_sanitized.json</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url><url><loc>https://ontoguard.ai/assets/boundary-proof-kit/no_bind_receipt.public_sanitized.json</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url><url><loc>https://ontoguard.ai/assets/boundary-proof-kit/runtime_seam_summary.public_sanitized.pdf</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url><url><loc>https://ontoguard.ai/assets/boundary-proof-kit/route_completeness_evidence.public_sanitized.json</loc><lastmod>2026-06-24</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url></urlset>
+  <url>
+    <loc>https://ontoguard.ai/assets/boundary-proof-kit/full_audit.governance.public_sanitized.json</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ontoguard.ai/assets/boundary-proof-kit/no_bind_receipt.public_sanitized.json</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ontoguard.ai/assets/boundary-proof-kit/runtime_seam_summary.public_sanitized.pdf</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ontoguard.ai/assets/boundary-proof-kit/route_completeness_evidence.public_sanitized.json</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

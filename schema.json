@@ -1,1 +1,389 @@
-{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ontoguard.ai/#website","name":"OntoGuard AI","url":"https://ontoguard.ai/","description":"OntoGuard AI is a semantic authorization layer and Decision Authorization Infrastructure for governed AI output release, controlled execution-boundary proof, no-bind receipts, route proof, and runtime-safe improvement signals.","inLanguage":"en-US","dateModified":"2026-06-24","datePublished":"2026-05-15"},{"@type":"Organization","@id":"https://ontoguard.ai/#organization","name":"OntoGuard AI","url":"https://ontoguard.ai/","founder":{"@type":"Person","name":"Mark Starobinsky","sameAs":"https://www.linkedin.com/in/markstarobinsky/"},"contactPoint":{"@type":"ContactPoint","email":"mark.starobinsky@ontoguard.ai","contactType":"Business Inquiries","availableLanguage":"English"},"logo":{"@type":"ImageObject","url":"https://ontoguard.ai/assets/Brand.png"}},{"@type":"VideoObject","@id":"https://ontoguard.ai/videos/OntoGuard-Demo.mp4#video","name":"OntoGuard AI Product Video","description":"OntoGuard AI product video showing how the Semantic Control Plane measures AI behavior, governs autonomy, compresses human review, creates proof, and supports Decision Authorization Packets.","thumbnailUrl":"https://ontoguard.ai/assets/Brand.png","contentUrl":"https://ontoguard.ai/videos/OntoGuard-Demo.mp4","uploadDate":"2026-06-08T00:00:00-04:00","publisher":{"@id":"https://ontoguard.ai/#organization"}},{"@type":"SoftwareApplication","@id":"https://ontoguard.ai/#software","name":"OntoGuard AI Semantic Authorization Layer","url":"https://ontoguard.ai/","image":["https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png","https://ontoguard.ai/assets/Brand.png"],"publisher":{"@id":"https://ontoguard.ai/#organization"},"applicationCategory":"BusinessApplication","applicationSubCategory":"Semantic authorization layer, Decision Authorization Infrastructure, controlled execution-boundary proof, AI output governance, no-bind receipts, route completeness, and runtime-safe training signals","operatingSystem":"Cloud / API / Backend Integration","description":"OntoGuard AI is a semantic authorization layer and Decision Authorization Infrastructure for governed AI output release. It analyzes prompts, responses, logs, and proposed AI movements, returns ALLOW, BLOCK, or ESCALATE, and produces Decision Authorization Packets with execution-boundary trace, no-bind receipt, controlled route proof, semantic projection, decision admissibility, human-review routing, audit hashes, and runtime-safe improvement signals.","keywords":"Semantic Control Plane, enterprise AI governance, AI behavior measurement, AI output risk scan, AI autonomy readiness, AI review burden reduction, AI governance benchmark, cognitive drift tracking, Decision Authorization Packet, AI proof packet, agentic AI governance, human review routing, AI learning signals","featureList":["Representative AI Output Risk Review from prompts, responses, or API logs","Controlled execution-boundary no-bind proof","Runtime-seam proof status","Route registry and route completeness maturity","Controlled inline gate evidence","Authorization-token requirement proof","Downstream effect record","Same-condition replay record","Changed-condition replay record","Route pressure tests","Controlled bypass-prevention evidence","Outcome closure record","Decision admissibility layer","Semantic constraint governance","Human-review admissibility","Reviewer route completeness","Prompt-sensitive trust","Trust decomposition","Proof-harness strengthening","Buyer-safe telemetry digest","Semantic projection","Coherent governance loading","Evidence geodesic","Governance path ensemble","Packet projection budget","Runtime-safe training-signal export","PDF and JSON Decision Authorization Packets for selected high-risk or representative outputs","Customer-specific production route integration path for tool calls, memory writes, ontology changes, policy mappings, and multi-agent handoffs","Controlled harness route-enforcement evidence; production L5 non-bypassability requires customer pilot or production topology evidence","Public sanitized Boundary Proof Kit with buyer JSON, governance PDF, decision receipt, artifact manifest, governance ZIP, and escalation receipt","Representative 10–25-output AI risk review with selected full Decision Authorization Packets and larger batch expansion path","Document-independent semantic governance from AI behavior itself","Risk, overconfidence, inconsistency, hallucination, and unsafe action language detection","Human Review Burden Reducer for routing only outputs that need expert review","Autonomy Readiness Tiering for AI workflows","Governed Training Signal candidates from allowed, blocked, escalated, rewritten, or reviewer-labeled outputs","AI Behavioral Benchmarking and governance-readiness comparison","Cognitive Drift Observatory for tracking changes in AI behavior over time","Decision Authorization API for high-stakes ALLOW, BLOCK, or ESCALATE release control","Decision Authorization Packet as PDF and JSON proof artifact","ALLOW, BLOCK, or ESCALATE release decisions with reason codes and routing","Executive readout covering escalation patterns, audit readiness, review effort, and ROI proxy metrics","Production L3 training signal export and gold-example candidate flow","Governed State Transition Record with before, proposed, evidence, decision, audit, and improvement lanes","Ontology-grounded symbolic trace and evidence pack","BM25 and semantic evidence candidate retrieval for scoped governance runs","Primary-scope gap penalty logic with buyer-safe coverage disclosures","Buyer-safe telemetry lanes separated from internal repair flags","Arbitration transparency across compliance, accuracy, risk, and feedback agents","Zero hard gates with always-export PDF and JSON artifacts","Human-review routing with APPROVE, REWRITE, or BLOCK outcomes","API integration support for tool calls, memory writes, ontology changes, policy updates, and multi-agent handoffs","Decision Authorization API for runtime ALLOW, BLOCK, or ESCALATE decisions with release status, routed_to, business effect, reason codes, evidence references, and audit identifiers","Governed State Transition Record as structured JSON plus buyer-readable PDF","Compliance Trace Pack with symbolic trace, BM25 retrieval context, evidence hashes, and clause-level citations","Policy Router SDK for jurisdiction-specific policy packs and internal rules","Evidence Bundle with immutable PDF, JSON, hashes, and chain-of-custody artifacts"]},{"@type":"DigitalDocument","@id":"https://ontoguard.ai/assets/sample-financial-services-decision-authorization-packet.pdf#document","name":"Public Sample Decision Authorization Packet — Financial Services","url":"https://ontoguard.ai/assets/sample-financial-services-decision-authorization-packet.pdf","encodingFormat":"application/pdf","inLanguage":"en-US","datePublished":"2026-05-19","dateModified":"2026-06-24","publisher":{"@id":"https://ontoguard.ai/#organization"},"about":["Decision Authorization Packet","Runtime AI governance","Financial services AI governance","Human review routing","Semantic governance"],"description":"Public sample OntoGuard Decision Authorization Packet showing a financial-services AI output governed before release, mapped evidence across SEC, SOX, GLBA, and FINRA, SEC citation-linkage gap disclosure, strict benchmark-gate failure, HUMAN_REVIEW routing, audit hashes, ROI baseline readiness, and L3 improvement signals."},{"@type":"DigitalDocument","@id":"https://ontoguard.ai/assets/boundary-proof-kit/OntoGuard_Boundary_Proof_Kit_Public_Sanitized.zip#boundary-proof-kit","name":"OntoGuard Controlled Boundary Proof Kit — Public Sanitized","url":"https://ontoguard.ai/assets/boundary-proof-kit/OntoGuard_Boundary_Proof_Kit_Public_Sanitized.zip","encodingFormat":"application/zip","inLanguage":"en-US","datePublished":"2026-06-11","dateModified":"2026-06-24","publisher":{"@id":"https://ontoguard.ai/#organization"},"about":["Boundary proof surface","Decision Authorization Packet","Runtime AI governance","AI escalation receipt","Public sanitized proof artifacts","Semantic control plane"],"description":"Public sanitized OntoGuard Controlled Boundary Proof Kit showing a synthetic high-stakes AI output evaluated before release, autonomous release refused, no authorization token issued, downstream commit not executed, no protected effect formed, replay recorded, route pressure tests included, and route completeness honestly labeled."},{"@type":"DigitalDocument","@id":"https://ontoguard.ai/assets/boundary-proof-kit/ontoguard-layer-facts.pdf#layer-facts","name":"OntoGuard Layer Facts","url":"https://ontoguard.ai/assets/boundary-proof-kit/ontoguard-layer-facts.pdf","encodingFormat":"application/pdf","inLanguage":"en-US","datePublished":"2026-06-14","dateModified":"2026-06-24","publisher":{"@id":"https://ontoguard.ai/#organization"},"about":["Semantic Control Plane","Decision Authorization","AI output governance","Boundary proof surface","ALLOW BLOCK ESCALATE","Protected runtime"],"description":"Public OntoGuard Layer Facts brief explaining the movement evaluated, inputs accepted, ALLOW/BLOCK/ESCALATE outputs produced, receipts created, replay/proof surface, changed-condition behavior, and protected internals not disclosed."},{"@type":"Service","@id":"https://ontoguard.ai/#runtime-governance-service","name":"OntoGuard AI Output Risk Review and Controlled Boundary Proof","url":"https://ontoguard.ai/#output-risk-scan","serviceType":"Representative AI output risk review, Decision Authorization Packet generation, and controlled execution-boundary proof","provider":{"@id":"https://ontoguard.ai/#organization"},"areaServed":"US","audience":{"@type":"BusinessAudience","audienceType":"AI builders, regulated enterprises, financial services teams, healthcare teams, public sector operations, and high-stakes workflow owners"},"description":"A B2B assessment and proof service that analyzes representative AI prompts, responses, or logs without requiring internal document uploads. OntoGuard returns a behavior risk map, review-burden estimate, autonomy-readiness view, selected Decision Authorization Packets for high-risk or representative outputs, and controlled execution-boundary proof showing no-bind status, replay, route pressure tests, and route maturity. Larger batch scans can be scoped after the initial review."},{"@type":"HowTo","@id":"https://ontoguard.ai/#howto-state-transition-governance","name":"How OntoGuard AI proves governed AI output release at the execution boundary","description":"OntoGuard evaluates prompts, responses, logs, or proposed AI movements before release, returns ALLOW, BLOCK, or ESCALATE, and exports Decision Authorization Packets with no-bind receipts, replay records, route proof, and runtime-safe improvement signals.","step":[{"@type":"HowToStep","name":"Send representative AI outputs or logs","text":"A buyer provides representative prompts, responses, API logs, intended action labels, or workflow labels without uploading internal policy documents."},{"@type":"HowToStep","name":"Evaluate proposed movement","text":"OntoGuard checks risk, uncertainty, semantic projection, evidence posture, route limitations, and release conditions before downstream business effect."},{"@type":"HowToStep","name":"Return Decision API result","text":"The Decision API returns ALLOW, BLOCK, or ESCALATE with release status, routed_to, reason codes, evidence references, and audit identifiers."},{"@type":"HowToStep","name":"Export no-bind and route proof","text":"For refused or escalated outcomes, the packet records no authorization token issued, downstream commit not executed, no protected effect formed, replay records, route pressure tests, and controlled bypass-prevention evidence."},{"@type":"HowToStep","name":"Create improvement signal","text":"Governed outcomes can become runtime-safe L3 training-signal candidates without live fine-tuning or model-weight mutation."}]},{"@type":"FAQPage","@id":"https://ontoguard.ai/#faq-schema","mainEntity":[{"@type":"Question","name":"What does OntoGuard prove today?","acceptedAnswer":{"@type":"Answer","text":"OntoGuard can produce a controlled Decision Authorization Packet proving that an AI output or proposed state transition was evaluated before release, release was authorized or withheld, refused operation and no-bind status were recorded, replay was shown, route pressure tests ran, and controlled route-enforcement evidence was attached."}},{"@type":"Question","name":"Does OntoGuard prove production non-bypassability today?","acceptedAnswer":{"@type":"Answer","text":"Not without production integration evidence. OntoGuard can assert controlled-harness non-bypassability for the controlled proof topology. Production non-bypassability requires a pilot or production route where the real downstream endpoint cannot commit without OntoGuard authorization."}},{"@type":"Question","name":"What is a no-bind receipt?","acceptedAnswer":{"@type":"Answer","text":"A no-bind receipt is a compact proof record showing that a blocked or escalated output did not form the protected downstream effect. It binds the attempted movement, Decision API result, release authorization state, refused operation, downstream commit status, protected-effect status, trace ID, manifest hash, and evidence hash."}},{"@type":"Question","name":"What is route completeness?","acceptedAnswer":{"@type":"Answer","text":"Route completeness describes how much proof exists around a governed AI movement: event governed, no-bind proof, route registered, route tested, route enforced, or route complete. The current proof package supports controlled L4 route enforcement. Production L5 requires real production topology evidence."}},{"@type":"Question","name":"Does OntoGuard train the model?","acceptedAnswer":{"@type":"Answer","text":"Not in the runtime path. OntoGuard exports review-gated training-signal candidates and improvement signals. It does not perform live fine-tuning, model-weight updates, DPO, RLAIF, PPO, or adapter loading during governance."}},{"@type":"Question","name":"What is a Decision Authorization Packet?","acceptedAnswer":{"@type":"Answer","text":"A Decision Authorization Packet is a portable PDF and JSON proof artifact showing how a high-stakes AI output was authorized, escalated, or blocked before release. It records the ALLOW, BLOCK, or ESCALATE decision, evidence, reasons, uncertainty, semantic projection, execution-boundary trace, no-bind status, route maturity, human-review routing, audit hashes, and improvement signals."}},{"@type":"Question","name":"What is state-transition governance?","acceptedAnswer":{"@type":"Answer","text":"State-transition governance asks whether a proposed AI change is authorized, traceable, and safe to commit. The proposal may be an LLM output, tool call, memory write, ontology update, policy mapping, training signal, or multi-agent handoff."}},{"@type":"Question","name":"Do you support tool calls, memory writes, and multi-agent handoffs today?","acceptedAnswer":{"@type":"Answer","text":"Not at the same production level as LLM output governance yet. The core Decision API and JSON contract are designed to support these use cases through integration. Agent frameworks can call OntoGuard before executing actions. Production enforcement requires customer-specific integration evidence for the real downstream route."}},{"@type":"Question","name":"Is OntoGuard only a regulatory compliance tool?","acceptedAnswer":{"@type":"Answer","text":"No. OntoGuard AI is positioned as a Semantic Control Plane for enterprise AI. Regulatory readiness is one wedge; the broader platform measures AI behavior, compresses human review, creates proof artifacts, generates learning signals, benchmarks readiness, tracks drift, and supports decision authorization for high-stakes workflows."}},{"@type":"Question","name":"How does OntoGuard use ontology AI?","acceptedAnswer":{"@type":"Answer","text":"Ontology-grounded objects, relationships, rules, clause hits, domain scope, evidence, and symbolic traces connect AI proposals to enterprise reality. This is the object-oriented substrate that lets OntoGuard prove why a state transition was allowed, blocked, or escalated."}},{"@type":"Question","name":"Which state transitions can OntoGuard govern?","acceptedAnswer":{"@type":"Answer","text":"The current available center is governed LLM output release, controlled boundary proof, and runtime-safe L3 training-signal export. The same packet contract extends through integration to agent tool calls, memory writes, ontology changes, policy mappings, and multi-agent handoffs, through customer-specific production route integration and evidence capture."}},{"@type":"Question","name":"What makes the financial services pilot important?","acceptedAnswer":{"@type":"Answer","text":"It shows OntoGuard doing the commercially valuable thing: mapping financial-services evidence across SEC, SOX, GLBA, and FINRA; detecting a remaining SEC citation-linkage gap; failing the strict autonomous-release benchmark gate; and withholding release pending human review instead of rubber-stamping the output."}},{"@type":"Question","name":"What happens when evidence is incomplete?","acceptedAnswer":{"@type":"Answer","text":"The packet still exports. OntoGuard routes uncertainty to SAFE_TEMPLATE or HUMAN_REVIEW, records reason codes, preserves audit hashes, flags coverage gaps, and avoids silently blank evidence or failed artifacts."}}]},{"@type":"BreadcrumbList","@id":"https://ontoguard.ai/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ontoguard.ai/"},{"@type":"ListItem","position":2,"name":"AI Output Risk Scan","item":"https://ontoguard.ai/#output-risk-scan"},{"@type":"ListItem","position":3,"name":"Decision Authorization Packet","item":"https://ontoguard.ai/#decision-reader"}]}]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://ontoguard.ai/#website",
+      "name": "OntoGuard AI",
+      "url": "https://ontoguard.ai/",
+      "description": "OntoGuard AI is a semantic authorization layer and Decision Authorization Infrastructure for governed AI output release, controlled execution-boundary proof, no-bind receipts, route proof, and runtime-safe improvement signals.",
+      "inLanguage": "en-US",
+      "dateModified": "2026-06-24",
+      "datePublished": "2026-05-15"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ontoguard.ai/#organization",
+      "name": "OntoGuard AI",
+      "url": "https://ontoguard.ai/",
+      "founder": {
+        "@type": "Person",
+        "name": "Mark Starobinsky",
+        "sameAs": "https://www.linkedin.com/in/markstarobinsky/"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "mark.starobinsky@ontoguard.ai",
+        "contactType": "Business Inquiries",
+        "availableLanguage": "English"
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ontoguard.ai/assets/Brand.png"
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://ontoguard.ai/videos/OntoGuard-Demo.mp4#video",
+      "name": "OntoGuard AI Product Video",
+      "description": "OntoGuard AI product video showing how the Semantic Control Plane measures AI behavior, governs autonomy, compresses human review, creates proof, and supports Decision Authorization Packets.",
+      "thumbnailUrl": "https://ontoguard.ai/assets/Brand.png",
+      "contentUrl": "https://ontoguard.ai/videos/OntoGuard-Demo.mp4",
+      "uploadDate": "2026-06-08T00:00:00-04:00",
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://ontoguard.ai/#software",
+      "name": "OntoGuard AI Semantic Authorization Layer",
+      "url": "https://ontoguard.ai/",
+      "image": [
+        "https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png",
+        "https://ontoguard.ai/assets/Brand.png"
+      ],
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Semantic authorization layer, Decision Authorization Infrastructure, controlled execution-boundary proof, AI output governance, no-bind receipts, route completeness, and runtime-safe training signals",
+      "operatingSystem": "Cloud / API / Backend Integration",
+      "description": "OntoGuard AI is a semantic authorization layer and Decision Authorization Infrastructure for governed AI output release. It analyzes prompts, responses, logs, and proposed AI movements, returns ALLOW, BLOCK, or ESCALATE, and produces Decision Authorization Packets with execution-boundary trace, no-bind receipt, controlled route proof, semantic projection, decision admissibility, human-review routing, audit hashes, and runtime-safe improvement signals.",
+      "keywords": "Semantic Control Plane, enterprise AI governance, AI behavior measurement, AI output risk scan, AI autonomy readiness, AI review burden reduction, AI governance benchmark, cognitive drift tracking, Decision Authorization Packet, AI proof packet, agentic AI governance, human review routing, AI learning signals",
+      "featureList": [
+        "Representative AI Output Risk Review from prompts, responses, or API logs",
+        "Controlled execution-boundary no-bind proof",
+        "Runtime-seam proof status",
+        "Route registry and route completeness maturity",
+        "Controlled inline gate evidence",
+        "Authorization-token requirement proof",
+        "Downstream effect record",
+        "Same-condition replay record",
+        "Changed-condition replay record",
+        "Route pressure tests",
+        "Controlled bypass-prevention evidence",
+        "Outcome closure record",
+        "Decision admissibility layer",
+        "Semantic constraint governance",
+        "Human-review admissibility",
+        "Reviewer route completeness",
+        "Prompt-sensitive trust",
+        "Trust decomposition",
+        "Proof-harness strengthening",
+        "Buyer-safe telemetry digest",
+        "Semantic projection",
+        "Coherent governance loading",
+        "Evidence geodesic",
+        "Governance path ensemble",
+        "Packet projection budget",
+        "Runtime-safe training-signal export",
+        "PDF and JSON Decision Authorization Packets for selected high-risk or representative outputs",
+        "Customer-specific production route integration path for tool calls, memory writes, ontology changes, policy mappings, and multi-agent handoffs",
+        "Controlled harness route-enforcement evidence; production L5 non-bypassability requires customer pilot or production topology evidence",
+        "Public sanitized Boundary Proof Kit with buyer JSON, governance PDF, decision receipt, artifact manifest, governance ZIP, and escalation receipt",
+        "Representative 10–25-output AI risk review with selected full Decision Authorization Packets and larger batch expansion path",
+        "Document-independent semantic governance from AI behavior itself",
+        "Risk, overconfidence, inconsistency, hallucination, and unsafe action language detection",
+        "Human Review Burden Reducer for routing only outputs that need expert review",
+        "Autonomy Readiness Tiering for AI workflows",
+        "Governed Training Signal candidates from allowed, blocked, escalated, rewritten, or reviewer-labeled outputs",
+        "AI Behavioral Benchmarking and governance-readiness comparison",
+        "Cognitive Drift Observatory for tracking changes in AI behavior over time",
+        "Decision Authorization API for high-stakes ALLOW, BLOCK, or ESCALATE release control",
+        "Decision Authorization Packet as PDF and JSON proof artifact",
+        "ALLOW, BLOCK, or ESCALATE release decisions with reason codes and routing",
+        "Executive readout covering escalation patterns, audit readiness, review effort, and ROI proxy metrics",
+        "Production L3 training signal export and gold-example candidate flow",
+        "Governed State Transition Record with before, proposed, evidence, decision, audit, and improvement lanes",
+        "Ontology-grounded symbolic trace and evidence pack",
+        "BM25 and semantic evidence candidate retrieval for scoped governance runs",
+        "Primary-scope gap penalty logic with buyer-safe coverage disclosures",
+        "Buyer-safe telemetry lanes separated from internal repair flags",
+        "Arbitration transparency across compliance, accuracy, risk, and feedback agents",
+        "Zero hard gates with always-export PDF and JSON artifacts",
+        "Human-review routing with APPROVE, REWRITE, or BLOCK outcomes",
+        "API integration support for tool calls, memory writes, ontology changes, policy updates, and multi-agent handoffs",
+        "Decision Authorization API for runtime ALLOW, BLOCK, or ESCALATE decisions with release status, routed_to, business effect, reason codes, evidence references, and audit identifiers",
+        "Governed State Transition Record as structured JSON plus buyer-readable PDF",
+        "Compliance Trace Pack with symbolic trace, BM25 retrieval context, evidence hashes, and clause-level citations",
+        "Policy Router SDK for jurisdiction-specific policy packs and internal rules",
+        "Evidence Bundle with immutable PDF, JSON, hashes, and chain-of-custody artifacts"
+      ]
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://ontoguard.ai/assets/sample-financial-services-decision-authorization-packet.pdf#document",
+      "name": "Public Sample Decision Authorization Packet — Financial Services",
+      "url": "https://ontoguard.ai/assets/sample-financial-services-decision-authorization-packet.pdf",
+      "encodingFormat": "application/pdf",
+      "inLanguage": "en-US",
+      "datePublished": "2026-05-19",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "about": [
+        "Decision Authorization Packet",
+        "Runtime AI governance",
+        "Financial services AI governance",
+        "Human review routing",
+        "Semantic governance"
+      ],
+      "description": "Public sample OntoGuard Decision Authorization Packet showing a financial-services AI output governed before release, mapped evidence across SEC, SOX, GLBA, and FINRA, SEC citation-linkage gap disclosure, strict benchmark-gate failure, HUMAN_REVIEW routing, audit hashes, ROI baseline readiness, and L3 improvement signals."
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://ontoguard.ai/assets/boundary-proof-kit/OntoGuard_Boundary_Proof_Kit_Public_Sanitized.zip#boundary-proof-kit",
+      "name": "OntoGuard Controlled Boundary Proof Kit — Public Sanitized",
+      "url": "https://ontoguard.ai/assets/boundary-proof-kit/OntoGuard_Boundary_Proof_Kit_Public_Sanitized.zip",
+      "encodingFormat": "application/zip",
+      "inLanguage": "en-US",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "about": [
+        "Boundary proof surface",
+        "Decision Authorization Packet",
+        "Runtime AI governance",
+        "AI escalation receipt",
+        "Public sanitized proof artifacts",
+        "Semantic control plane"
+      ],
+      "description": "Public sanitized OntoGuard Controlled Boundary Proof Kit showing a synthetic high-stakes AI output evaluated before release, autonomous release refused, no authorization token issued, downstream commit not executed, no protected effect formed, replay recorded, route pressure tests included, and route completeness honestly labeled."
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://ontoguard.ai/assets/boundary-proof-kit/ontoguard-layer-facts.pdf#layer-facts",
+      "name": "OntoGuard Layer Facts",
+      "url": "https://ontoguard.ai/assets/boundary-proof-kit/ontoguard-layer-facts.pdf",
+      "encodingFormat": "application/pdf",
+      "inLanguage": "en-US",
+      "datePublished": "2026-06-14",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "about": [
+        "Semantic Control Plane",
+        "Decision Authorization",
+        "AI output governance",
+        "Boundary proof surface",
+        "ALLOW BLOCK ESCALATE",
+        "Protected runtime"
+      ],
+      "description": "Public OntoGuard Layer Facts brief explaining the movement evaluated, inputs accepted, ALLOW/BLOCK/ESCALATE outputs produced, receipts created, replay/proof surface, changed-condition behavior, and protected internals not disclosed."
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ontoguard.ai/#runtime-governance-service",
+      "name": "OntoGuard AI Output Risk Review and Controlled Boundary Proof",
+      "url": "https://ontoguard.ai/#output-risk-scan",
+      "serviceType": "Representative AI output risk review, Decision Authorization Packet generation, and controlled execution-boundary proof",
+      "provider": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "areaServed": "US",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "AI builders, regulated enterprises, financial services teams, healthcare teams, public sector operations, and high-stakes workflow owners"
+      },
+      "description": "A B2B assessment and proof service that analyzes representative AI prompts, responses, or logs without requiring internal document uploads. OntoGuard returns a behavior risk map, review-burden estimate, autonomy-readiness view, selected Decision Authorization Packets for high-risk or representative outputs, and controlled execution-boundary proof showing no-bind status, replay, route pressure tests, and route maturity. Larger batch scans can be scoped after the initial review."
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://ontoguard.ai/#howto-state-transition-governance",
+      "name": "How OntoGuard AI proves governed AI output release at the execution boundary",
+      "description": "OntoGuard evaluates prompts, responses, logs, or proposed AI movements before release, returns ALLOW, BLOCK, or ESCALATE, and exports Decision Authorization Packets with no-bind receipts, replay records, route proof, and runtime-safe improvement signals.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Send representative AI outputs or logs",
+          "text": "A buyer provides representative prompts, responses, API logs, intended action labels, or workflow labels without uploading internal policy documents."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Evaluate proposed movement",
+          "text": "OntoGuard checks risk, uncertainty, semantic projection, evidence posture, route limitations, and release conditions before downstream business effect."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Return Decision API result",
+          "text": "The Decision API returns ALLOW, BLOCK, or ESCALATE with release status, routed_to, reason codes, evidence references, and audit identifiers."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Export no-bind and route proof",
+          "text": "For refused or escalated outcomes, the packet records no authorization token issued, downstream commit not executed, no protected effect formed, replay records, route pressure tests, and controlled bypass-prevention evidence."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Create improvement signal",
+          "text": "Governed outcomes can become runtime-safe L3 training-signal candidates without live fine-tuning or model-weight mutation."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ontoguard.ai/#faq-schema",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can we start without internal documents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The first review can start with representative prompts, responses, API logs, intended action labels, workflow labels, or demo outputs. No internal legal files, policy manuals, production deployment, or model retraining are required to begin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is OntoGuard a compliance tool or an authorization layer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OntoGuard is a semantic authorization layer and Decision Authorization Infrastructure. Compliance readiness is one use case; the broader product governs whether high-stakes AI output is allowed to move, must be blocked, or should be routed to human review."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the fastest first step?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run an AI Output Risk Scan with 10–25 representative outputs or logs. OntoGuard returns risk, uncertainty, review-burden, autonomy-readiness, and selected proof-packet findings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do we receive after an AI Output Risk Scan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You receive a behavior risk map, review-burden analysis, autonomy-readiness view, training-signal candidates, and selected Decision Authorization Packets for high-risk or representative outputs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does OntoGuard require production deployment to start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Initial reviews can run in shadow mode from exported prompts, responses, logs, and workflow labels. Production route integration is only needed for production L5 evidence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does OntoGuard prove today?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OntoGuard can produce a controlled Decision Authorization Packet proving that an AI output or proposed state transition was evaluated before release, release was authorized or withheld, refused operation and no-bind status were recorded, replay was shown, route pressure tests ran, and controlled route-enforcement evidence was attached."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does OntoGuard prove production non-bypassability today?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not without production integration evidence. OntoGuard can assert controlled-harness non-bypassability for the controlled proof topology. Production non-bypassability requires a pilot or production route where the real downstream endpoint cannot commit without OntoGuard authorization."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a no-bind receipt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A no-bind receipt is a compact proof record showing that a blocked or escalated output did not form the protected downstream effect. It binds the attempted movement, Decision API result, release authorization state, refused operation, downstream commit status, protected-effect status, trace ID, manifest hash, and evidence hash."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is route completeness?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Route completeness describes how much proof exists around a governed AI movement: event governed, no-bind proof, route registered, route tested, route enforced, or route complete. The current proof package supports controlled L4 route enforcement. Production L5 requires real production topology evidence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does OntoGuard train the model?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not in the runtime path. OntoGuard exports review-gated training-signal candidates and improvement signals. It does not perform live fine-tuning, model-weight updates, DPO, RLAIF, PPO, or adapter loading during governance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Decision Authorization Packet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Decision Authorization Packet is a portable PDF and JSON proof artifact showing how a high-stakes AI output was authorized, escalated, or blocked before release. It records the ALLOW, BLOCK, or ESCALATE decision, evidence, reasons, uncertainty, semantic projection, execution-boundary trace, no-bind status, route maturity, human-review routing, audit hashes, and improvement signals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is state-transition governance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "State-transition governance asks whether a proposed AI change is authorized, traceable, and safe to commit. The proposal may be an LLM output, tool call, memory write, ontology update, policy mapping, training signal, or multi-agent handoff. Current production route enforcement for tool calls, memory writes, and handoffs requires customer-specific integration evidence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support tool calls, memory writes, and multi-agent handoffs today?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at the same production-enforcement level as governed LLM output release. The Decision API and JSON contract are designed to support these use cases through customer-specific integration. Production evidence requires real downstream routes, token checks, bypass-attempt logs, replay, and outcome closure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does OntoGuard use ontology AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ontology-grounded objects, relationships, rules, clause hits, domain scope, evidence, and symbolic traces connect AI proposals to enterprise reality. This semantic layer helps OntoGuard explain why a proposed AI movement was allowed, blocked, or escalated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when evidence is incomplete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The packet still exports. OntoGuard routes uncertainty to SAFE_TEMPLATE or HUMAN_REVIEW, records reason codes, preserves audit hashes, flags coverage gaps, and avoids silently blank evidence or failed artifacts."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Output Risk Scan",
+          "item": "https://ontoguard.ai/#output-risk-scan"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Decision Authorization Packet",
+          "item": "https://ontoguard.ai/#decision-reader"
+        }
+      ]
+    }
+  ]
+}
