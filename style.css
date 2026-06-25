@@ -3464,3 +3464,210 @@ body {
 
 /* Performance + internal-linking polish */
 .appendix-link-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;max-width:1120px;margin:24px auto 0;text-align:left}.appendix-link-grid a,.appendix-anchor-item{display:block;background:#f7fbff;border:1px solid rgba(11,114,185,.18);border-radius:12px;padding:12px 14px;color:#0b2545;font-weight:800;text-decoration:none}.appendix-anchor-item small{display:block;margin-top:5px;font-size:.78rem;font-weight:700}.appendix-anchor-item small a{display:inline;background:transparent;border:0;padding:0;text-decoration:underline}.faq-item a,.term-glossary-grid a,.icon-card a{color:#0b72b9;font-weight:800}.critical-css-loaded-note{display:none}
+
+/* Proof & Trust polish pass */
+.proof-trust-section {
+    position: relative;
+}
+.proof-trust-grid,
+.appendix-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 1120px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+.proof-trust-card,
+.appendix-overview-card,
+.appendix-portal-card {
+    background: #ffffff;
+    border: 1px solid rgba(11, 37, 69, 0.10);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 10px 28px rgba(11, 37, 69, 0.08);
+}
+.proof-trust-card.priority {
+    border-left: 6px solid #0b72b9;
+}
+.proof-trust-card h3,
+.appendix-overview-card strong,
+.appendix-portal-card strong {
+    color: #0b2545;
+    display: block;
+    margin-bottom: 8px;
+}
+.proof-trust-card p,
+.appendix-overview-card span,
+.appendix-portal-card span {
+    color: #263238;
+}
+.proof-trust-label {
+    display: inline-flex;
+    border-radius: 999px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    color: #0b2545;
+    background: #eaf6ff;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.appendix-portal-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 980px;
+    margin: 24px auto;
+    text-align: left;
+}
+.appendix-portal-links {
+    margin-top: 22px;
+}
+
+/* Better More menu / dropdown polish */
+.nav-more {
+    position: relative;
+}
+.nav-more summary {
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 900;
+    list-style: none;
+}
+.nav-more summary::-webkit-details-marker {
+    display: none;
+}
+.nav-more summary::after {
+    content: "▾";
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 0.75em;
+}
+.nav-more[open] summary::after {
+    transform: rotate(180deg);
+}
+.nav-more-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    gap: 6px;
+    min-width: 390px;
+    padding: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(11, 37, 69, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(11, 37, 69, 0.20);
+    text-align: left;
+    z-index: 1000;
+}
+.nav-more-menu a {
+    color: #0b2545 !important;
+    padding: 9px 10px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+.nav-more-menu a:hover,
+.nav-more-menu a:focus {
+    background: #eaf6ff;
+    text-decoration: none;
+}
+
+/* Appendix page visual structure */
+.appendix-page .appendix-hero .container {
+    max-width: 1120px;
+}
+.appendix-hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+}
+.appendix-overview-card {
+    display: block;
+    text-decoration: none;
+}
+.appendix-overview-card:hover,
+.appendix-overview-card:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(11, 37, 69, 0.12);
+}
+.appendix-page .legacy-collapsed-section {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+}
+.appendix-page .legacy-section-details > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 18px 22px;
+    background: #ffffff;
+    border: 1px solid rgba(11, 37, 69, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(11, 37, 69, 0.07);
+}
+.appendix-page .legacy-section-details > summary span {
+    color: #0b2545;
+    font-size: 1.08rem;
+    font-weight: 900;
+}
+.appendix-page .legacy-section-details > summary small {
+    color: #4b5563;
+    font-weight: 700;
+}
+.appendix-page .legacy-section-body {
+    max-width: 1120px;
+    margin: 20px auto 0;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 26px rgba(11, 37, 69, 0.06);
+    overflow: hidden;
+}
+.appendix-bottom-cta .btn.secondary {
+    background: #ffffff;
+    color: #0b2545;
+}
+
+/* Mobile polish */
+@media (max-width: 760px) {
+    .nav-more-menu {
+        position: static;
+        grid-template-columns: 1fr;
+        min-width: 0;
+        margin-top: 8px;
+        box-shadow: none;
+    }
+    .appendix-portal-card {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+    .proof-trust-grid,
+    .appendix-overview-grid {
+        grid-template-columns: 1fr;
+    }
+    .proof-trust-section,
+    .buyer-path-section,
+    .products-section,
+    .output-risk-scan-section,
+    .proof-library-section {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+    .appendix-page .legacy-section-details > summary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .appendix-page .appendix-hero {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+}

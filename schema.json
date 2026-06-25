@@ -384,6 +384,30 @@
           "item": "https://ontoguard.ai/#decision-reader"
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ontoguard.ai/deep-diligence-appendix.html#webpage",
+      "name": "OntoGuard Deep Diligence Appendix",
+      "url": "https://ontoguard.ai/deep-diligence-appendix.html",
+      "inLanguage": "en-US",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "about": [
+        "Semantic authorization layer",
+        "Decision Authorization Infrastructure",
+        "Controlled execution-boundary proof",
+        "BM25 evidence retrieval",
+        "Enterprise ontology",
+        "Runtime-safe training signals"
+      ],
+      "description": "Technical diligence appendix preserving OntoGuard platform, governance invariants, ontology, BM25/evidence, regulatory readiness, roadmap, buyer value, and visual appendix material outside the performance-optimized homepage."
     }
   ]
 }
