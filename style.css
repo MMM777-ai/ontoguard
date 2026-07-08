@@ -3806,3 +3806,146 @@ body {
         padding-right: 14px !important;
     }
 }
+
+
+/* Product maturity expansion: July 8 2026 */
+.product-maturity-grid,
+.buyer-segment-grid,
+.admissibility-grid,
+.constraint-grid,
+.pilot-timeline-grid,
+.procurement-grid,
+.uncertainty-grid,
+.proof-maturity-grid,
+.proof-library-highlight-grid,
+.score-decision-grid,
+.deep-index-grid,
+.proof-harness-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    max-width: 1120px;
+    margin: 28px auto;
+    text-align: left;
+}
+
+.product-maturity-card,
+.buyer-segment-card,
+.admissibility-grid article,
+.constraint-grid article,
+.pilot-timeline-grid article,
+.procurement-grid article,
+.uncertainty-grid article,
+.proof-maturity-card,
+.proof-library-highlight,
+.score-decision-card,
+.proof-harness-grid article {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.product-maturity-card.priority,
+.buyer-segment-card:hover,
+.proof-library-highlight {
+    border-left: 6px solid #0b72b9;
+}
+
+.admissibility-grid article strong,
+.constraint-grid article strong,
+.uncertainty-grid article strong,
+.pilot-timeline-grid article strong,
+.proof-harness-grid article strong {
+    display: block;
+    color: #0b2545;
+    margin-bottom: 6px;
+}
+
+.admissibility-grid article span,
+.constraint-grid article span,
+.uncertainty-grid article span,
+.pilot-timeline-grid article span,
+.proof-harness-grid article span {
+    display: block;
+    color: #263238;
+}
+
+.score-decision-card summary {
+    cursor: pointer;
+    font-weight: 800;
+    color: #0b2545;
+}
+
+.score-decision-card p {
+    margin-top: 10px;
+}
+
+.deep-index-grid a {
+    display: block;
+    background: #ffffff;
+    border: 1px solid rgba(11, 114, 185, 0.16);
+    border-radius: 999px;
+    padding: 11px 14px;
+    color: #0b2545;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.deep-index-grid a:hover,
+.deep-index-grid a:focus {
+    background: #eaf6ff;
+    text-decoration: underline;
+}
+
+.footer-link-row {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .product-maturity-grid,
+    .buyer-segment-grid,
+    .admissibility-grid,
+    .constraint-grid,
+    .pilot-timeline-grid,
+    .procurement-grid,
+    .uncertainty-grid,
+    .proof-maturity-grid,
+    .proof-library-highlight-grid,
+    .score-decision-grid,
+    .deep-index-grid,
+    .proof-harness-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-maturity-card,
+    .buyer-segment-card,
+    .admissibility-grid article,
+    .constraint-grid article,
+    .pilot-timeline-grid article,
+    .procurement-grid article,
+    .uncertainty-grid article,
+    .proof-library-highlight,
+    .score-decision-card {
+        padding: 16px;
+    }
+}
+
+.landing-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.landing-card h3 {
+    color: #0b2545;
+    margin-bottom: 8px;
+}
