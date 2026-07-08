@@ -1,60 +1,116 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v3-runtime-seam-and-semantic-projection",
-  "generated_at_utc": "2026-06-24T19:39:21Z",
-  "source_trace_id": "40eafa21-3209-4015-81c7-32b3f4fcc3d0",
+  "kit_version": "v4-current-maturity-execution-boundary-strict-six-batch-dap",
+  "generated_at_utc": "2026-07-07T20:30:05Z",
+  "source_runs": {
+    "single_event_trace_id": "678a7599-4cc3-4112-9818-0831673ba270",
+    "single_event_source_zip": "678a7599-4cc3-4112-9818-0831673ba270.governance(2).zip",
+    "batch_id": "corr_batch_e4ea21a3a007",
+    "batch_source_zip": "corr_batch_e4ea21a3a007.governance(2).zip",
+    "public_sample_scope": "website_public_sanitized_summary"
+  },
   "public_sanitized": true,
   "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
   "public_safety_boundaries": [
     "No source code or protected implementation logic.",
-    "No private ontology internals or raw legal registry data.",
-    "No customer data; representative/synthetic proof surface only.",
-    "Controlled harness non-bypassability is shown; production non-bypassability is not asserted.",
+    "No private ontology internals, raw legal/citation registries, or protected scoring formulas.",
+    "No customer data; public summaries are representative/synthetic or public-safe sanitized proof surfaces.",
+    "Controlled event-level/no-bind proof is shown; production L5 non-bypassability is not asserted.",
+    "Batch DAP is presented as controlled-corridor aggregate proof, not production endpoint enforcement.",
     "Public summaries preserve proof posture without exposing internal algorithms."
   ],
   "artifact_type": "decision_receipt_public_sanitized",
-  "decision": {
+  "single_event_decision": {
     "decision": "ESCALATE",
     "release_authorized": false,
     "release_status": "WITHHELD_PENDING_REVIEW",
     "routed_to": "HUMAN_REVIEW",
     "business_effect": "Autonomous release withheld pending review.",
-    "primary_reason": "Release withheld by Decision API pending review.",
     "contract_pass": true,
     "benchmark_pass": false,
     "strict_autonomous_release_gate_pass": false
   },
-  "no_bind_receipt": {
-    "receipt_id": "receipt_92087ea328b01996",
-    "no_bind_status": "NO_PROTECTED_EFFECT_FORMED",
-    "no_bind_reason": "Autonomous release was withheld before downstream protected effect formation.",
-    "release_authorized": false,
+  "single_event_no_bind_receipt": {
+    "attempted_movement": "AI_OUTPUT_RELEASE",
+    "control_point": "DIRECT_BACKEND_GOVERNANCE",
+    "gate_mode": "SHADOW_MODE",
+    "gate_invoked_before_release": true,
+    "decision": "ESCALATE",
+    "release_status": "WITHHELD_PENDING_REVIEW",
+    "failed_conditions": [
+      "BENCHMARK_FAIL_REQUIRES_REVIEW",
+      "BELOW_AUTONOMOUS_ALLOW_THRESHOLD",
+      "HUMAN_REVIEW_ROUTE",
+      "SEMANTIC_CONSTRAINTS_GOVERNED",
+      "BENCHMARK_FAIL",
+      "UNCERTAINTY_UNRESOLVED",
+      "AUTONOMOUS_RELEASE_NOT_AUTHORIZED",
+      "DOWNSTREAM_RELIANCE_HIGH"
+    ],
     "refused_operation": "AUTONOMOUS_OUTPUT_RELEASE",
-    "protected_effect_formed": false,
+    "authorization_token_issued": false,
+    "authorization_token_status": "NOT_REQUIRED_IN_SHADOW_MODE",
     "downstream_commit_status": "NOT_COMMITTED",
-    "receipt_hash": "c33c9d07cecc6ca4cc6625815d0dd9d2e4146280e9d319843b5c7ec968139868"
-  },
-  "authorization_token": {
-    "issued": false,
-    "status": "NOT_ISSUED",
-    "reason": "Decision did not authorize autonomous release.",
-    "scope": "OUTPUT_RELEASE_ONLY",
-    "token_id": null
-  },
-  "downstream_effect_record": {
-    "authorized_by_ontoguard": false,
-    "authorization_token_id": null,
-    "workflow_commit_executed": false,
     "protected_effect_formed": false,
-    "review_queue_created": true,
-    "downstream_commit_status": "NOT_COMMITTED"
+    "no_bind_status": "NO_PROTECTED_EFFECT_FORMED",
+    "no_bind_receipt_hash": "1834e98f539b90150d86cd52b221f268364e966bb13f9cd9bc2fba41030501ee",
+    "limitations": [
+      "ROUTE_INVENTORY_NOT_ATTACHED",
+      "SHADOW_MODE_DOES_NOT_ASSERT_PRODUCTION_ENFORCEMENT",
+      "DOWNSTREAM_RELEASE_ENDPOINT_NOT_ATTACHED"
+    ]
   },
-  "route_completeness_level": "L4_ROUTE_ENFORCED_CONTROLLED_HARNESS",
+  "batch_receipt_summary": {
+    "artifact_type": "BATCH_DECISION_RECEIPT",
+    "batch_id": "corr_batch_e4ea21a3a007",
+    "aggregate_decision": {
+      "batch_id": "corr_batch_e4ea21a3a007",
+      "public_label": "Batch DAP / Controlled Corridor Mode",
+      "aggregate_action": "BLOCK",
+      "case_count": 4,
+      "allow_count": 1,
+      "block_count": 1,
+      "escalate_count": 2,
+      "release_authorized": false,
+      "release_status": "WITHHELD_PENDING_REVIEW",
+      "routed_to": "HUMAN_REVIEW",
+      "route_maturity_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
+      "route_completeness_level": "L1_EVENT_GOVERNED_NO_BIND_PARTIAL",
+      "route_type": "BATCH_OUTPUT_RELEASE",
+      "production_enforcement_asserted": false,
+      "execution_boundary_summary": {
+        "control_point": "CONTROLLED_CORRIDOR_BATCH_GOVERNANCE",
+        "gate_mode": "CONTROLLED_CORRIDOR_BATCH",
+        "failed_conditions": [
+          "BATCH_HAS_BLOCK_ESCALATE_OR_WITHHELD_CASES"
+        ],
+        "downstream_commit_status": "NOT_COMMITTED_IN_CONTROLLED_BATCH_ARTIFACT",
+        "protected_effect_formed": false
+      },
+      "no_bind_summary": {
+        "no_bind_status": "NO_PROTECTED_EFFECT_FORMED_OR_NOT_ASSERTED_PER_CASE",
+        "no_bind_reason": "Controlled batch artifact does not perform downstream commits; inspect per-case no-bind status.",
+        "downstream_commit_status": "NOT_COMMITTED_IN_CONTROLLED_BATCH_ARTIFACT",
+        "limitations": [
+          "Aggregate no-bind is a controlled-corridor artifact summary, not production endpoint proof."
+        ]
+      },
+      "proof_surfaces": [
+        "aggregate decision roll-up",
+        "per-case hash references",
+        "case snapshot pointers into full_audit",
+        "aggregate execution-boundary trace",
+        "aggregate no-bind summary",
+        "telemetry digest",
+        "semantic projection summary",
+        "training-signal export candidates",
+        "strict-six batch ZIP package"
+      ]
+    },
+    "aggregate_decision_api_hash": "d050f5ae2663b00399eb56e694e86cdebeb069abd1779a7f1089edd9c9451463",
+    "artifact_manifest_hash_self_excluded": "92f9bb6025b1a907b42a227a7c94c0e80d51c7fe5c471833bc18c1e02d5d1fb6",
+    "decision_receipt_hash_self_excluded": "99c4e2509ca874d413e9fbdf017bdbd9c7bde59b161a4072257d52064f1def2d"
+  },
   "production_enforcement_asserted": false,
-  "hashes": {
-    "decision_api_hash": "d59886f5f97f60a9eb4273ec5a4d85aa9aff16cf391dc901de3605009b78d6a4",
-    "evidence_pack_hash": "4a6c0c27db136cdc79801d297f22260db0bd1213f97dd44bc632cd4306c23024",
-    "manifest_hash": "6a4442ad7cc8e9f8144093525f7c4b938e9643d7c86883968dafde34470a6bf3",
-    "no_bind_receipt_hash": "c33c9d07cecc6ca4cc6625815d0dd9d2e4146280e9d319843b5c7ec968139868"
-  }
+  "public_meaning": "OntoGuard withheld autonomous release, recorded no protected downstream effect for the single event, and can summarize multi-case controlled-corridor proof as a Batch DAP."
 }

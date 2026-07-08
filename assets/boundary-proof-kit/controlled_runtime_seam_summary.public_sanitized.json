@@ -1,48 +1,42 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v3-runtime-seam-and-semantic-projection",
-  "generated_at_utc": "2026-06-24T19:39:21Z",
-  "source_trace_id": "40eafa21-3209-4015-81c7-32b3f4fcc3d0",
+  "kit_version": "v4-current-maturity-execution-boundary-strict-six-batch-dap",
+  "generated_at_utc": "2026-07-07T20:30:05Z",
+  "source_runs": {
+    "single_event_trace_id": "678a7599-4cc3-4112-9818-0831673ba270",
+    "single_event_source_zip": "678a7599-4cc3-4112-9818-0831673ba270.governance(2).zip",
+    "batch_id": "corr_batch_e4ea21a3a007",
+    "batch_source_zip": "corr_batch_e4ea21a3a007.governance(2).zip",
+    "public_sample_scope": "website_public_sanitized_summary"
+  },
   "public_sanitized": true,
   "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
   "public_safety_boundaries": [
     "No source code or protected implementation logic.",
-    "No private ontology internals or raw legal registry data.",
-    "No customer data; representative/synthetic proof surface only.",
-    "Controlled harness non-bypassability is shown; production non-bypassability is not asserted.",
+    "No private ontology internals, raw legal/citation registries, or protected scoring formulas.",
+    "No customer data; public summaries are representative/synthetic or public-safe sanitized proof surfaces.",
+    "Controlled event-level/no-bind proof is shown; production L5 non-bypassability is not asserted.",
+    "Batch DAP is presented as controlled-corridor aggregate proof, not production endpoint enforcement.",
     "Public summaries preserve proof posture without exposing internal algorithms."
   ],
-  "summary_type": "controlled_runtime_seam_summary",
+  "summary_type": "execution_boundary_no_bind_summary_public_sanitized",
+  "legacy_filename_note": "This replaces controlled_runtime_seam_summary.public_sanitized.json but uses the current preferred name Execution Boundary + No-Bind Proof in the content.",
   "what_this_proves": [
     "A governed AI output attempted to move toward an output-release route.",
-    "OntoGuard was invoked at a pre-release decision boundary.",
+    "OntoGuard was invoked before release.",
     "Release conditions failed, so autonomous output release was refused.",
-    "No authorization token was issued.",
-    "The controlled downstream commit did not execute.",
     "No protected downstream effect formed.",
     "A no-bind receipt was generated and hash-bound.",
-    "Same-condition replay passed.",
-    "Changed-condition controlled fixture passed.",
-    "Route pressure tests and bypass-prevention evidence passed for the controlled harness topology."
+    "The current public maturity label is L1+ event-governed no-bind proof, not production L5 non-bypassability.",
+    "Batch DAP / Controlled Corridor Mode is available as aggregate proof across multiple governed cases."
   ],
-  "honest_limitations": [
-    "Production non-bypassability is not asserted.",
-    "Outcome closure remains pending human review.",
-    "Changed-condition replay is currently a controlled fixture, not a customer production route replay."
-  ],
-  "release_attempt": {
-    "attempt_id": "attempt_40eafa21-3209-40",
+  "single_event_execution_boundary": {
     "attempted_movement": "AI_OUTPUT_RELEASE",
-    "requested_operation": "AUTONOMOUS_OUTPUT_RELEASE",
-    "route_id": "llm_backend_output_release",
-    "decision_action": "ESCALATE",
-    "release_status": "WITHHELD_PENDING_REVIEW",
-    "authorization_token_status": "NOT_ISSUED"
-  },
-  "execution_boundary": {
-    "control_point": "PRE_RELEASE_DECISION_BOUNDARY",
-    "gate_mode": "CONTROLLED_INLINE_HARNESS",
+    "control_point": "DIRECT_BACKEND_GOVERNANCE",
+    "gate_mode": "SHADOW_MODE",
     "gate_invoked_before_release": true,
+    "decision": "ESCALATE",
+    "release_status": "WITHHELD_PENDING_REVIEW",
     "failed_conditions": [
       "BENCHMARK_FAIL_REQUIRES_REVIEW",
       "BELOW_AUTONOMOUS_ALLOW_THRESHOLD",
@@ -55,59 +49,66 @@
     ],
     "refused_operation": "AUTONOMOUS_OUTPUT_RELEASE",
     "authorization_token_issued": false,
+    "authorization_token_status": "NOT_REQUIRED_IN_SHADOW_MODE",
     "downstream_commit_status": "NOT_COMMITTED",
     "protected_effect_formed": false,
-    "no_bind_status": "NO_PROTECTED_EFFECT_FORMED"
-  },
-  "no_bind_receipt": {
-    "receipt_id": "receipt_92087ea328b01996",
     "no_bind_status": "NO_PROTECTED_EFFECT_FORMED",
-    "no_bind_reason": "Autonomous release was withheld before downstream protected effect formation.",
-    "release_authorized": false,
-    "refused_operation": "AUTONOMOUS_OUTPUT_RELEASE",
-    "protected_effect_formed": false,
-    "downstream_commit_status": "NOT_COMMITTED",
-    "receipt_hash": "c33c9d07cecc6ca4cc6625815d0dd9d2e4146280e9d319843b5c7ec968139868"
+    "no_bind_receipt_hash": "1834e98f539b90150d86cd52b221f268364e966bb13f9cd9bc2fba41030501ee",
+    "limitations": [
+      "ROUTE_INVENTORY_NOT_ATTACHED",
+      "SHADOW_MODE_DOES_NOT_ASSERT_PRODUCTION_ENFORCEMENT",
+      "DOWNSTREAM_RELEASE_ENDPOINT_NOT_ATTACHED"
+    ]
   },
-  "route_completeness": {
-    "route_completeness_level": "L4_ROUTE_ENFORCED_CONTROLLED_HARNESS",
-    "route_completeness_percent": 85.0,
-    "route_registered": "YES",
-    "tested": "YES",
-    "replayable": "YES",
+  "single_event_route_maturity": {
+    "decision": "ESCALATE",
+    "release_authorized": false,
+    "release_status": "WITHHELD_PENDING_REVIEW",
+    "routed_to": "HUMAN_REVIEW",
+    "business_effect": "Autonomous release withheld pending review.",
+    "contract_pass": true,
+    "benchmark_pass": false,
+    "strict_autonomous_release_gate_pass": false,
+    "public_route_maturity_label": "L1+ event-governed no-bind proof",
+    "raw_route_maturity_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "route_completeness_level": "L1_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "route_registered": "PARTIAL_EVENT_ROUTE_ONLY",
+    "tested": "PARTIAL_PROOF_HARNESS_ONLY",
+    "replayable": "PARTIAL",
     "fail_closed": true,
-    "non_bypassable": "CONTROLLED_HARNESS_ASSERTED",
-    "non_bypassability_basis": "Controlled harness topology, token requirement, replay proof, bypass-prevention evidence, and pressure tests support controlled non-bypassability only.",
+    "non_bypassable": "NOT_ASSERTED_IN_SHADOW_MODE",
     "production_enforcement_asserted": false,
     "outcome_accounted": "PENDING_HUMAN_REVIEW_OUTCOME",
     "limitations": [
-      "OUTCOME_CLOSURE_PENDING"
+      "ROUTE_INVENTORY_NOT_ATTACHED",
+      "ROUTE_LEVEL_PRESSURE_TESTS_NOT_ATTACHED",
+      "SHADOW_MODE_DOES_NOT_ASSERT_PRODUCTION_ENFORCEMENT",
+      "BYPASS_PREVENTION_EVIDENCE_NOT_ATTACHED",
+      "OUTCOME_CLOSURE_PENDING",
+      "CHANGED_CONDITION_REPLAY_NOT_PASSED"
     ]
   },
-  "replay_and_tests": {
-    "same_condition_replay_status": "PASSED",
-    "same_condition_replay_passed": true,
-    "changed_condition_replay_status": "CONTROLLED_FIXTURE_PASSED",
-    "changed_condition_replay_passed": true,
-    "route_pressure_test_count": 6,
-    "route_pressure_tests_passed": 6,
-    "pressure_test_ids": [
-      "missing_authorization_token_rejected",
-      "invalid_authorization_token_rejected",
-      "timeout_fail_closed",
-      "direct_downstream_commit_blocked",
-      "stale_policy_snapshot_rejected_or_escalated",
-      "mismatched_route_token_rejected"
+  "batch_execution_boundary_summary": {
+    "control_point": "CONTROLLED_CORRIDOR_BATCH_GOVERNANCE",
+    "gate_mode": "CONTROLLED_CORRIDOR_BATCH",
+    "failed_conditions": [
+      "BATCH_HAS_BLOCK_ESCALATE_OR_WITHHELD_CASES"
     ],
-    "bypass_prevention_evidence_count": 1,
-    "bypass_prevention_passed": true
+    "downstream_commit_status": "NOT_COMMITTED_IN_CONTROLLED_BATCH_ARTIFACT",
+    "protected_effect_formed": false
   },
-  "downstream_effect_record": {
-    "authorized_by_ontoguard": false,
-    "authorization_token_id": null,
-    "workflow_commit_executed": false,
-    "protected_effect_formed": false,
-    "review_queue_created": true,
-    "downstream_commit_status": "NOT_COMMITTED"
-  }
+  "batch_no_bind_summary": {
+    "no_bind_status": "NO_PROTECTED_EFFECT_FORMED_OR_NOT_ASSERTED_PER_CASE",
+    "no_bind_reason": "Controlled batch artifact does not perform downstream commits; inspect per-case no-bind status.",
+    "downstream_commit_status": "NOT_COMMITTED_IN_CONTROLLED_BATCH_ARTIFACT",
+    "limitations": [
+      "Aggregate no-bind is a controlled-corridor artifact summary, not production endpoint proof."
+    ]
+  },
+  "honest_limitations": [
+    "Production L5 non-bypassability is not asserted.",
+    "Real downstream endpoint token checks require customer route integration.",
+    "Outcome closure remains pending human review in the representative single-event proof.",
+    "Batch artifact is an aggregate controlled-corridor proof surface, not production endpoint enforcement."
+  ]
 }

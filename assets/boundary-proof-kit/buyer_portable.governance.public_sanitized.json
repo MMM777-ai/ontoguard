@@ -1,80 +1,108 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v3-runtime-seam-and-semantic-projection",
-  "generated_at_utc": "2026-06-24T19:39:21Z",
-  "source_trace_id": "40eafa21-3209-4015-81c7-32b3f4fcc3d0",
+  "kit_version": "v4-current-maturity-execution-boundary-strict-six-batch-dap",
+  "generated_at_utc": "2026-07-07T20:30:05Z",
+  "source_runs": {
+    "single_event_trace_id": "678a7599-4cc3-4112-9818-0831673ba270",
+    "single_event_source_zip": "678a7599-4cc3-4112-9818-0831673ba270.governance(2).zip",
+    "batch_id": "corr_batch_e4ea21a3a007",
+    "batch_source_zip": "corr_batch_e4ea21a3a007.governance(2).zip",
+    "public_sample_scope": "website_public_sanitized_summary"
+  },
   "public_sanitized": true,
   "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
   "public_safety_boundaries": [
     "No source code or protected implementation logic.",
-    "No private ontology internals or raw legal registry data.",
-    "No customer data; representative/synthetic proof surface only.",
-    "Controlled harness non-bypassability is shown; production non-bypassability is not asserted.",
+    "No private ontology internals, raw legal/citation registries, or protected scoring formulas.",
+    "No customer data; public summaries are representative/synthetic or public-safe sanitized proof surfaces.",
+    "Controlled event-level/no-bind proof is shown; production L5 non-bypassability is not asserted.",
+    "Batch DAP is presented as controlled-corridor aggregate proof, not production endpoint enforcement.",
     "Public summaries preserve proof posture without exposing internal algorithms."
   ],
   "artifact_type": "buyer_portable_governance_public_sanitized_summary",
-  "product_positioning": "OntoGuard Semantic Control Plane for AI Output Risk Review and Decision Authorization Proof.",
+  "product_positioning": "Semantic Control Plane for runtime authorization of proposed AI-driven state transitions.",
   "commercial_wedges": [
     {
-      "wedge": "AI Output Risk Review",
+      "wedge": "AI Output Risk Scan",
       "buyer_value": "Identify risky, unsupported, review-heavy, or inadmissible AI outputs before release."
     },
     {
       "wedge": "Decision Authorization Proof",
-      "buyer_value": "Prove that a proposed AI-driven action was governed before release, refused when conditions failed, and prevented from forming protected downstream effect in a controlled harness."
+      "buyer_value": "Prove that a proposed AI-driven state transition was governed before release and withheld when release conditions failed."
+    },
+    {
+      "wedge": "Batch DAP / Controlled Corridor Mode",
+      "buyer_value": "Summarize multiple governed cases in one aggregate proof packet with per-case hashes and full_audit pointers."
+    },
+    {
+      "wedge": "Strict-Six Offline Audit Credential",
+      "buyer_value": "Export buyer-readable and machine-readable proof without rerunning OntoGuard."
     }
   ],
-  "decision_summary": {
+  "current_maturity_summary": {
+    "product_identity": "Semantic Control Plane for runtime authorization of proposed AI-driven state transitions.",
+    "core_decision_api": "ALLOW / BLOCK / ESCALATE before consequence.",
+    "single_event_public_label": "L1+ event-governed no-bind proof",
+    "single_event_raw_route_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "single_event_route_completeness_level": "L1_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "single_event_production_enforcement_asserted": false,
+    "single_event_non_bypassable": "NOT_ASSERTED_IN_SHADOW_MODE",
+    "batch_public_label": "Batch DAP / Controlled Corridor Mode",
+    "batch_raw_route_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "batch_production_enforcement_asserted": false,
+    "strict_six_status": "available for single-event and controlled batch packages",
+    "roi_status": "buyer-safe KPI framework with baseline-required hard-dollar calculations"
+  },
+  "single_event_decision_summary": {
     "decision": "ESCALATE",
     "release_authorized": false,
     "release_status": "WITHHELD_PENDING_REVIEW",
     "routed_to": "HUMAN_REVIEW",
     "business_effect": "Autonomous release withheld pending review.",
-    "primary_reason": "Release withheld by Decision API pending review.",
     "contract_pass": true,
     "benchmark_pass": false,
-    "strict_autonomous_release_gate_pass": false
-  },
-  "governed_response_summary": {
-    "status": "CAPTURED",
-    "buyer_facing_output_status": "ESCALATE to HUMAN_REVIEW",
-    "release_status": "WITHHELD_PENDING_REVIEW",
-    "routed_to": "HUMAN_REVIEW",
-    "display_excerpt": "Bullet points: 1. The AI advisor follows all applicable regulatory frameworks including and. 2. The AI system undergoes regular usability evaluations to ensure it remains accessible and understandable to users including those with disabilities. 3. The AI model uses a well-documented explainable uncertainty model. 4.",
-    "display_note": "The governed model output contained unverified citation-like markers. OntoGuard preserved the output for audit, flagged support/citation risk, and withheld autonomous release pending human review.",
-    "response_hash": "4a0dc291b9c1aaecf5d47cd378fe8db614beca76540f0eaff1c0e8c5dc743538"
+    "strict_autonomous_release_gate_pass": false,
+    "public_route_maturity_label": "L1+ event-governed no-bind proof",
+    "raw_route_maturity_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "route_completeness_level": "L1_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "route_registered": "PARTIAL_EVENT_ROUTE_ONLY",
+    "tested": "PARTIAL_PROOF_HARNESS_ONLY",
+    "replayable": "PARTIAL",
+    "fail_closed": true,
+    "non_bypassable": "NOT_ASSERTED_IN_SHADOW_MODE",
+    "production_enforcement_asserted": false,
+    "outcome_accounted": "PENDING_HUMAN_REVIEW_OUTCOME",
+    "limitations": [
+      "ROUTE_INVENTORY_NOT_ATTACHED",
+      "ROUTE_LEVEL_PRESSURE_TESTS_NOT_ATTACHED",
+      "SHADOW_MODE_DOES_NOT_ASSERT_PRODUCTION_ENFORCEMENT",
+      "BYPASS_PREVENTION_EVIDENCE_NOT_ATTACHED",
+      "OUTCOME_CLOSURE_PENDING",
+      "CHANGED_CONDITION_REPLAY_NOT_PASSED"
+    ]
   },
   "proposed_state_transition_summary": {
-    "transition_type": "open_world_domain_compliance_compliance_control_testing_review_governance_release_authorization",
-    "business_action": "AI-generated Compliance compliance control testing review governance withheld pending governed review",
-    "source_state": "AI-generated Compliance compliance control testing review governance not authorized for autonomous release",
-    "proposed_target_state": "Autonomous release withheld; routed to HUMAN_REVIEW under open world domain governance",
+    "business_action": "AI-generated Investment Management portfolio construction recommendation governance withheld pending governed review",
     "release_surface": "reviewer_facing_workflow",
     "materiality": "high",
-    "reversibility": "partially_reversible",
     "requires_authorization": true,
     "inference_status": "PARTIAL_CURRENT_RUN_DERIVED",
-    "affected_objects_preview": [
-      "false",
-      "dynamic_derived",
-      "compliance_compliance_control_testing_review_governance",
-      "compliance_control_testing_review",
-      "compliance_audit",
-      "generate_explanation",
-      "explainability",
-      "customer"
-    ],
     "affected_relations": [
+      "release_to_the_customer",
       "ai_output_to_release_boundary",
       "release_boundary_to_decision_action",
       "decision_action_to_downstream_effect",
       "decision_action_to_human_review"
-    ]
+    ],
+    "sanitization_note": "Public summary omits raw prompt/response content and protected runtime internals."
   },
-  "runtime_seam_summary": {
-    "control_point": "PRE_RELEASE_DECISION_BOUNDARY",
-    "gate_mode": "CONTROLLED_INLINE_HARNESS",
+  "execution_boundary_summary": {
+    "attempted_movement": "AI_OUTPUT_RELEASE",
+    "control_point": "DIRECT_BACKEND_GOVERNANCE",
+    "gate_mode": "SHADOW_MODE",
     "gate_invoked_before_release": true,
+    "decision": "ESCALATE",
+    "release_status": "WITHHELD_PENDING_REVIEW",
     "failed_conditions": [
       "BENCHMARK_FAIL_REQUIRES_REVIEW",
       "BELOW_AUTONOMOUS_ALLOW_THRESHOLD",
@@ -87,42 +115,16 @@
     ],
     "refused_operation": "AUTONOMOUS_OUTPUT_RELEASE",
     "authorization_token_issued": false,
+    "authorization_token_status": "NOT_REQUIRED_IN_SHADOW_MODE",
     "downstream_commit_status": "NOT_COMMITTED",
     "protected_effect_formed": false,
-    "no_bind_status": "NO_PROTECTED_EFFECT_FORMED"
-  },
-  "route_completeness_summary": {
-    "route_completeness_level": "L4_ROUTE_ENFORCED_CONTROLLED_HARNESS",
-    "route_completeness_percent": 85.0,
-    "route_registered": "YES",
-    "tested": "YES",
-    "replayable": "YES",
-    "fail_closed": true,
-    "non_bypassable": "CONTROLLED_HARNESS_ASSERTED",
-    "non_bypassability_basis": "Controlled harness topology, token requirement, replay proof, bypass-prevention evidence, and pressure tests support controlled non-bypassability only.",
-    "production_enforcement_asserted": false,
-    "outcome_accounted": "PENDING_HUMAN_REVIEW_OUTCOME",
+    "no_bind_status": "NO_PROTECTED_EFFECT_FORMED",
+    "no_bind_receipt_hash": "1834e98f539b90150d86cd52b221f268364e966bb13f9cd9bc2fba41030501ee",
     "limitations": [
-      "OUTCOME_CLOSURE_PENDING"
+      "ROUTE_INVENTORY_NOT_ATTACHED",
+      "SHADOW_MODE_DOES_NOT_ASSERT_PRODUCTION_ENFORCEMENT",
+      "DOWNSTREAM_RELEASE_ENDPOINT_NOT_ATTACHED"
     ]
-  },
-  "replay_and_test_summary": {
-    "same_condition_replay_status": "PASSED",
-    "same_condition_replay_passed": true,
-    "changed_condition_replay_status": "CONTROLLED_FIXTURE_PASSED",
-    "changed_condition_replay_passed": true,
-    "route_pressure_test_count": 6,
-    "route_pressure_tests_passed": 6,
-    "pressure_test_ids": [
-      "missing_authorization_token_rejected",
-      "invalid_authorization_token_rejected",
-      "timeout_fail_closed",
-      "direct_downstream_commit_blocked",
-      "stale_policy_snapshot_rejected_or_escalated",
-      "mismatched_route_token_rejected"
-    ],
-    "bypass_prevention_evidence_count": 1,
-    "bypass_prevention_passed": true
   },
   "semantic_projection_summary": {
     "status": "COMPLETE",
@@ -134,67 +136,149 @@
     "selected_projection": "ESCALATE",
     "decision_api_action": "ESCALATE",
     "state_scores": {
-      "ALLOW": 0.69237932,
-      "BLOCK": 0.25912270000000004,
-      "ESCALATE": 0.5498677000000001
+      "ALLOW": 0.6423458143999999,
+      "BLOCK": 0.287790376,
+      "ESCALATE": 0.578321084
     },
+    "projection_confidence": 0.578321084,
     "projection_disagreement": true,
     "projection_disagreement_detail": {
       "decision_api_action_preserved": "ESCALATE",
       "highest_scoring_projection": "ALLOW",
-      "override_performed": false
+      "non_mutation_proof": {
+        "benchmark_preserved": true,
+        "citation_preserved": true,
+        "decision_api_action_preserved": true,
+        "evidence_preserved": true,
+        "policy_preserved": true,
+        "release_state_preserved": true,
+        "risk_preserved": true,
+        "routing_preserved": true,
+        "trace_preserved": true,
+        "trust_preserved": true
+      },
+      "override_performed": false,
+      "selected_projection": "ESCALATE",
+      "why_decision_api_remained_authoritative": "Decision projection is explanatory only and cannot override the Decision API; release, routing, trust, risk, benchmark, policy, citation, evidence, and trace truth remain authoritative from the final packet."
     },
-    "why_projection_won": [
-      "Decision API action is preserved as authoritative.",
-      "Projection scores are explanatory and bounded.",
-      "No release, trust, policy, benchmark, risk, evidence, trace, or citation field was mutated."
-    ],
-    "provenance": {
-      "engine_version": "padgett.semantic_projection@1.0.0",
-      "source": "current_run_decision_api_and_current_run_governance_components"
-    }
-  },
-  "coherent_governance_loading_summary": {
-    "status": "COMPLETE",
-    "coherent_loading_score": 0.574282,
-    "coherent_loading_tier": "PARTIAL",
-    "component_scores": {
-      "benchmark_alignment": 0.0,
-      "evidence_coverage": 0.0,
-      "policy_alignment": 1.0,
-      "risk_compatibility": 1.0,
-      "trace_density": 0.9,
-      "trust_support": 0.8149,
-      "uncertainty_compatibility": 0.32999999999999996
+    "coherent_governance_loading": {
+      "status": "COMPLETE",
+      "coherent_loading_score": 0.38745000000000007,
+      "coherent_loading_tier": "WEAK",
+      "release_threshold_met": false,
+      "interpretation": "Governance channel is not coherently loaded enough for autonomous release; review or additional evidence remains required."
     },
-    "missing_components": [
-      "evidence_pack"
-    ],
-    "raw_trust_preserved_as_source_of_truth": true
+    "read_only_policy": "Semantic projection is explanatory and does not override or mutate the authoritative Decision API outcome."
   },
-  "human_review_summary": {
-    "review_task_status": "REQUIRED",
-    "review_owner_role": null,
-    "review_options": [
-      "APPROVE",
-      "REVISE",
-      "BLOCK",
-      "REPLACE_WITH_SAFE_TEMPLATE",
-      "REQUEST_MORE_EVIDENCE"
-    ],
-    "review_reason": "BENCHMARK_FAIL_REQUIRES_REVIEW - Strict benchmark check failed; human review is required before autonomous release.; BELOW_AUTONOMOUS_ALLOW_THRESHOLD - Autonomous release was withheld because the combined benchmark, proof/citation, trust, risk, uncertainty, and routing posture required human review. Trust was one signal: decision-basis trust 81.49% versus the autonomous-release threshold 90.00%.; HUMAN_REVIEW_ROUTE - Decision route is HUMAN_REVIEW; autonomous release is withheld pending reviewer action.",
-    "review_outcome_export": true
+  "batch_dap_summary": {
+    "batch_id": "corr_batch_e4ea21a3a007",
+    "public_label": "Batch DAP / Controlled Corridor Mode",
+    "aggregate_action": "BLOCK",
+    "case_count": 4,
+    "allow_count": 1,
+    "block_count": 1,
+    "escalate_count": 2,
+    "release_authorized": false,
+    "release_status": "WITHHELD_PENDING_REVIEW",
+    "routed_to": "HUMAN_REVIEW",
+    "route_maturity_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "route_completeness_level": "L1_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "route_type": "BATCH_OUTPUT_RELEASE",
+    "production_enforcement_asserted": false,
+    "execution_boundary_summary": {
+      "control_point": "CONTROLLED_CORRIDOR_BATCH_GOVERNANCE",
+      "gate_mode": "CONTROLLED_CORRIDOR_BATCH",
+      "failed_conditions": [
+        "BATCH_HAS_BLOCK_ESCALATE_OR_WITHHELD_CASES"
+      ],
+      "downstream_commit_status": "NOT_COMMITTED_IN_CONTROLLED_BATCH_ARTIFACT",
+      "protected_effect_formed": false
+    },
+    "no_bind_summary": {
+      "no_bind_status": "NO_PROTECTED_EFFECT_FORMED_OR_NOT_ASSERTED_PER_CASE",
+      "no_bind_reason": "Controlled batch artifact does not perform downstream commits; inspect per-case no-bind status.",
+      "downstream_commit_status": "NOT_COMMITTED_IN_CONTROLLED_BATCH_ARTIFACT",
+      "limitations": [
+        "Aggregate no-bind is a controlled-corridor artifact summary, not production endpoint proof."
+      ]
+    },
+    "proof_surfaces": [
+      "aggregate decision roll-up",
+      "per-case hash references",
+      "case snapshot pointers into full_audit",
+      "aggregate execution-boundary trace",
+      "aggregate no-bind summary",
+      "telemetry digest",
+      "semantic projection summary",
+      "training-signal export candidates",
+      "strict-six batch ZIP package"
+    ]
   },
-  "improvement_signal_summary": {
-    "improvement_signal_status": "REVIEW_GATED",
-    "export_status": "PENDING_REVIEW",
-    "training_signal_export_status": "PENDING_REVIEW",
-    "training_signal_classification": "HUMAN_REVIEW_CANDIDATE"
+  "roi_kpi_summary": {
+    "calculation_mode": "baseline_required",
+    "hard_dollar_roi_calculated": false,
+    "customer_assumptions_supplied": false,
+    "measured_run_values": {
+      "audit_artifacts_produced": 3,
+      "decision_action": "ESCALATE",
+      "escalations_triggered": 1,
+      "evidence_packets_generated": 1,
+      "human_review_task_created": true,
+      "human_review_tasks_created": 1,
+      "improvement_signals_exported": true,
+      "outputs_governed": 1,
+      "release_status": "WITHHELD_PENDING_REVIEW",
+      "release_withheld": true,
+      "routed_to": "HUMAN_REVIEW"
+    },
+    "buckets": [
+      "Opex Takeout",
+      "Loss Prevention",
+      "Working Capital"
+    ],
+    "customer_input_checklist": {
+      "hard_dollar_roi_calculated": false,
+      "inputs": [
+        "monthly_case_volume",
+        "baseline_review_minutes_per_case",
+        "ontoguard_review_minutes_per_case",
+        "fully_loaded_reviewer_hourly_rate",
+        "baseline_false_approval_rate",
+        "ontoguard_false_approval_rate",
+        "average_loss_per_false_approval",
+        "baseline_rework_rate",
+        "average_cost_per_policy_violation",
+        "baseline_cycle_time_days",
+        "ontoguard_cycle_time_days",
+        "average_denial_value",
+        "daily_revenue_or_cash_flow",
+        "ontoguard_rework_rate",
+        "average_rework_cost_per_case",
+        "manual_evidence_packaging_minutes_per_case",
+        "baseline_incident_rollback_count_per_month",
+        "ontoguard_incident_rollback_count_per_month",
+        "average_incident_cost",
+        "baseline_denial_rate",
+        "ontoguard_denial_rate",
+        "days_sales_outstanding_reduction"
+      ],
+      "note": "OntoGuard does not invent dollar ROI without customer assumptions or pilot baseline data.",
+      "source": "aggregated_missing_inputs",
+      "title": "To calculate your ROI, provide these customer baseline inputs."
+    },
+    "disclaimer": "OntoGuard does not estimate dollar ROI unless customer workflow, cost, loss, or working-capital assumptions are supplied."
+  },
+  "training_signal_summary": {
+    "single_event_training_signal_status": "PENDING_REVIEW",
+    "single_event_candidate_type": null,
+    "batch_training_signal_summary": "Aggregate training-signal export is a review-gated candidate only; no live training occurs.",
+    "runtime_mutation_policy": "review-gated export only; no live model-weight mutation or runtime fine-tuning."
   },
   "public_limitations": [
-    "This kit demonstrates controlled-harness enforcement, not production non-bypassability.",
-    "The governed output was intentionally withheld pending human review; this is a refusal/escalation proof surface, not an autonomous release claim.",
-    "Semantic projection is explanatory and does not override the authoritative Decision API.",
-    "Some historical/cross-run intelligence is marked insufficient history until comparable accepted prior packets exist."
+    "This public kit demonstrates controlled event-level/no-bind proof and controlled batch aggregation, not production L5 non-bypassability.",
+    "The governed outputs were intentionally withheld or summarized for review; this is not an autonomous release success claim.",
+    "Batch DAP is a controlled-corridor aggregate artifact; production endpoint enforcement requires pilot integration.",
+    "Semantic projection is explanatory and does not override the Decision API.",
+    "Hard-dollar ROI is not calculated unless buyer baseline assumptions are provided."
   ]
 }
