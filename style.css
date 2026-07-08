@@ -3671,3 +3671,138 @@ body {
         padding-right: 14px !important;
     }
 }
+
+
+/* Semantic Control Plane maturity update: execution boundary, strict-six, batch DAP */
+.execution-boundary-summary-section,
+.strict-six-section,
+.batch-dap-section {
+    position: relative;
+}
+
+.proof-section-copy {
+    max-width: 980px;
+    margin: 0 auto 24px;
+    color: #263238;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.proof-maturity-grid,
+.artifact-six-grid,
+.strict-six-value-grid,
+.kpi-label-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    max-width: 1120px;
+    margin: 26px auto;
+    text-align: left;
+}
+
+.proof-maturity-card,
+.strict-six-value-grid span,
+.roi-kpi-framework,
+.appendix-overview-card {
+    background: #ffffff;
+    border: 1px solid rgba(11, 114, 185, 0.16);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+
+.proof-maturity-card h3 {
+    color: #0b2545;
+    margin-bottom: 8px;
+}
+
+.artifact-six-grid code {
+    display: block;
+    background: #0b2545;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+}
+
+.strict-six-value-grid span,
+.kpi-label-grid span {
+    display: block;
+    font-weight: 800;
+    color: #0b2545;
+}
+
+.roi-kpi-framework {
+    max-width: 1120px;
+    margin: 26px auto;
+    text-align: left;
+}
+
+.kpi-label-grid {
+    margin: 18px auto 0;
+}
+
+.kpi-label-grid span {
+    background: #eaf6ff;
+    border-radius: 999px;
+    padding: 9px 13px;
+    font-size: 0.92rem;
+}
+
+.competitive-table-wrap {
+    overflow-x: auto;
+    margin-top: 24px;
+}
+
+.competitive-table {
+    width: 100%;
+    min-width: 860px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+
+.competitive-table th,
+.competitive-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    text-align: left;
+    vertical-align: top;
+}
+
+.competitive-table th {
+    background: #0b2545;
+    color: #ffffff;
+}
+
+.competitive-table td:last-child {
+    font-weight: 700;
+    color: #0b2545;
+}
+
+@media (max-width: 760px) {
+    .proof-section-copy {
+        font-size: 1rem;
+    }
+
+    .proof-maturity-grid,
+    .artifact-six-grid,
+    .strict-six-value-grid,
+    .kpi-label-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .competitive-table {
+        min-width: 760px;
+    }
+
+    #execution-boundary-no-bind,
+    #strict-six-audit-credential,
+    #batch-dap {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+}

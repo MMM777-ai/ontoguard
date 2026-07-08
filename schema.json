@@ -6,7 +6,7 @@
       "@id": "https://ontoguard.ai/#website",
       "name": "OntoGuard AI",
       "url": "https://ontoguard.ai/",
-      "description": "OntoGuard AI is a semantic authorization layer and Decision Authorization Infrastructure for governed AI output release, controlled execution-boundary proof, no-bind receipts, route proof, and runtime-safe improvement signals.",
+      "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions, with ALLOW/BLOCK/ESCALATE decisions, execution-boundary trace, no-bind receipts, strict-six offline audit credentials, Batch DAP / Controlled Corridor Mode, route maturity, and runtime-safe improvement signals.",
       "inLanguage": "en-US",
       "dateModified": "2026-06-24",
       "datePublished": "2026-05-15"
@@ -47,7 +47,7 @@
     {
       "@type": "SoftwareApplication",
       "@id": "https://ontoguard.ai/#software",
-      "name": "OntoGuard AI Semantic Authorization Layer",
+      "name": "OntoGuard AI Semantic Control Plane",
       "url": "https://ontoguard.ai/",
       "image": [
         "https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png",
@@ -57,11 +57,18 @@
         "@id": "https://ontoguard.ai/#organization"
       },
       "applicationCategory": "BusinessApplication",
-      "applicationSubCategory": "Semantic authorization layer, Decision Authorization Infrastructure, controlled execution-boundary proof, AI output governance, no-bind receipts, route completeness, and runtime-safe training signals",
+      "applicationSubCategory": "Semantic Control Plane, runtime decision authorization, AI-driven state-transition governance, execution-boundary proof, no-bind receipts, strict-six offline audit credentials, Batch DAP / Controlled Corridor Mode, and runtime-safe improvement signals",
       "operatingSystem": "Cloud / API / Backend Integration",
-      "description": "OntoGuard AI is a semantic authorization layer and Decision Authorization Infrastructure for governed AI output release. It analyzes prompts, responses, logs, and proposed AI movements, returns ALLOW, BLOCK, or ESCALATE, and produces Decision Authorization Packets with execution-boundary trace, no-bind receipt, controlled route proof, semantic projection, decision admissibility, human-review routing, audit hashes, and runtime-safe improvement signals.",
-      "keywords": "Semantic Control Plane, enterprise AI governance, AI behavior measurement, AI output risk scan, AI autonomy readiness, AI review burden reduction, AI governance benchmark, cognitive drift tracking, Decision Authorization Packet, AI proof packet, agentic AI governance, human review routing, AI learning signals",
+      "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions. It evaluates AI outputs, tool actions, workflow movements, and release events before consequence, returns ALLOW, BLOCK, or ESCALATE, and produces strict-six, offline-verifiable proof with execution-boundary trace, no-bind receipt, route maturity, semantic projection, decision admissibility, human-review routing, audit hashes, and runtime-safe improvement signals.",
+      "keywords": "Semantic Control Plane, runtime decision authorization, AI-driven state transitions, proposed state transition governance, execution-boundary trace, no-bind receipt, strict-six offline audit credential, Batch Decision Authorization Packet, Controlled Corridor Mode, Decision Authorization Packet, ALLOW BLOCK ESCALATE AI, runtime-safe improvement signals, production L5 route evidence",
       "featureList": [
+        "Semantic Control Plane for runtime authorization of proposed AI-driven state transitions",
+        "Runtime Decision Authorization with ALLOW, BLOCK, or ESCALATE outcomes",
+        "Execution-boundary trace and no-bind receipt for withheld-release proof",
+        "Strict-six offline-verifiable audit credential with buyer JSON, full-audit JSON, PDFs, decision receipt, and artifact manifest",
+        "Batch Decision Authorization Packet / Controlled Corridor Mode with aggregate decision, case hashes, per-case full_audit pointers, and strict-six batch package",
+        "Buyer-safe ROI KPI framework with Opex Takeout, Loss Prevention, Working Capital, measured run values, and baseline-required calculations",
+        "Honest route maturity labeling: event-level no-bind proof today; production L5 requires route integration, endpoint enforcement, replay evidence, and outcome closure",
         "Representative AI Output Risk Review from prompts, responses, or API logs",
         "Controlled execution-boundary no-bind proof",
         "Runtime-seam proof status",
@@ -90,7 +97,7 @@
         "Runtime-safe training-signal export",
         "PDF and JSON Decision Authorization Packets for selected high-risk or representative outputs",
         "Customer-specific production route integration path for tool calls, memory writes, ontology changes, policy mappings, and multi-agent handoffs",
-        "Controlled harness route-enforcement evidence; production L5 non-bypassability requires customer pilot or production topology evidence",
+        "Controlled execution-boundary and no-bind evidence; production L5 route completeness requires customer pilot or production topology evidence",
         "Public sanitized Boundary Proof Kit with buyer JSON, governance PDF, decision receipt, artifact manifest, governance ZIP, and escalation receipt",
         "Representative 10–25-output AI risk review with selected full Decision Authorization Packets and larger batch expansion path",
         "Document-independent semantic governance from AI behavior itself",
@@ -189,9 +196,9 @@
     {
       "@type": "Service",
       "@id": "https://ontoguard.ai/#runtime-governance-service",
-      "name": "OntoGuard AI Output Risk Review and Controlled Boundary Proof",
+      "name": "OntoGuard Runtime Decision Authorization and Controlled Corridor Proof",
       "url": "https://ontoguard.ai/#output-risk-scan",
-      "serviceType": "Representative AI output risk review, Decision Authorization Packet generation, and controlled execution-boundary proof",
+      "serviceType": "Semantic control plane, representative AI output risk review, Decision Authorization Packet generation, strict-six offline audit credential, and Batch DAP / Controlled Corridor Mode",
       "provider": {
         "@id": "https://ontoguard.ai/#organization"
       },
@@ -200,13 +207,13 @@
         "@type": "BusinessAudience",
         "audienceType": "AI builders, regulated enterprises, financial services teams, healthcare teams, public sector operations, and high-stakes workflow owners"
       },
-      "description": "A B2B assessment and proof service that analyzes representative AI prompts, responses, or logs without requiring internal document uploads. OntoGuard returns a behavior risk map, review-burden estimate, autonomy-readiness view, selected Decision Authorization Packets for high-risk or representative outputs, and controlled execution-boundary proof showing no-bind status, replay, route pressure tests, and route maturity. Larger batch scans can be scoped after the initial review."
+      "description": "A B2B assessment and proof service that analyzes representative AI prompts, responses, logs, or proposed AI-driven state transitions without requiring internal document uploads. OntoGuard returns runtime Decision Authorization outcomes, a behavior risk map, review-burden signals, selected Decision Authorization Packets, execution-boundary trace, no-bind receipt, strict-six offline audit credentials, and Batch DAP / Controlled Corridor Mode for larger scans or pilot corridors."
     },
     {
       "@type": "HowTo",
       "@id": "https://ontoguard.ai/#howto-state-transition-governance",
-      "name": "How OntoGuard AI proves governed AI output release at the execution boundary",
-      "description": "OntoGuard evaluates prompts, responses, logs, or proposed AI movements before release, returns ALLOW, BLOCK, or ESCALATE, and exports Decision Authorization Packets with no-bind receipts, replay records, route proof, and runtime-safe improvement signals.",
+      "name": "How OntoGuard AI authorizes proposed AI-driven state transitions before consequence",
+      "description": "OntoGuard evaluates prompts, responses, logs, or proposed AI-driven movements before consequence, returns ALLOW, BLOCK, or ESCALATE, and exports strict-six Decision Authorization Packets with execution-boundary trace, no-bind receipts, replay records, route proof, and runtime-safe improvement signals.",
       "step": [
         {
           "@type": "HowToStep",
@@ -281,6 +288,22 @@
         },
         {
           "@type": "Question",
+          "name": "What is the strict-six audit credential?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is OntoGuard’s offline-verifiable governance package: buyer_portable.governance.json, full_audit.governance.json, governance.pdf, governance.sellable_lite.pdf, decision_receipt.json, and artifact_manifest.json. It lets buyers inspect the decision, evidence, receipt, manifest, and audit credential without rerunning OntoGuard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Batch DAP / Controlled Corridor Mode?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Batch Decision Authorization Packet / Controlled Corridor Mode generates one aggregate proof packet across multiple governed cases. It preserves aggregate decision logic, case-level hashes, per-case full_audit pointers, execution-boundary summary, no-bind summary, and strict-six packaging for scans, demos, and controlled pilot corridors."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What does OntoGuard prove today?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -308,7 +331,7 @@
           "name": "What is route completeness?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Route completeness describes how much proof exists around a governed AI movement: event governed, no-bind proof, route registered, route tested, route enforced, or route complete. The current proof package supports controlled L4 route enforcement. Production L5 requires real production topology evidence."
+            "text": "Route completeness describes how much proof exists around a governed AI movement: event governed, no-bind proof, route registered, route tested, route enforced, or route complete. The current proof package supports controlled event-level route proof. Production L5 requires real production topology evidence."
           }
         },
         {
