@@ -6,7 +6,7 @@
       "@id": "https://ontoguard.ai/#website",
       "name": "OntoGuard AI",
       "url": "https://ontoguard.ai/",
-      "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions, with ALLOW/BLOCK/ESCALATE decisions, execution-boundary trace, no-bind receipts, strict-six offline audit credentials, Batch DAP / Controlled Corridor Mode, route maturity, and runtime-safe improvement signals.",
+      "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions, with ALLOW/BLOCK/ESCALATE decisions, proof and diligence surfaces, financial-services sanitized proof case, execution-boundary trace, no-bind receipts, strict-six offline audit credentials, Batch DAP / Controlled Corridor Mode, route maturity, and runtime-safe improvement signals.",
       "inLanguage": "en-US",
       "dateModified": "2026-07-08",
       "datePublished": "2026-05-15"
@@ -62,6 +62,9 @@
       "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions. It evaluates AI outputs, tool actions, workflow movements, and release events before consequence, returns ALLOW, BLOCK, or ESCALATE, and produces strict-six, offline-verifiable proof with execution-boundary trace, no-bind receipt, route maturity, semantic projection, decision admissibility, human-review routing, audit hashes, and runtime-safe improvement signals.",
       "keywords": "Semantic Control Plane, runtime decision authorization, AI-driven state transitions, proposed state transition governance, execution-boundary trace, no-bind receipt, strict-six offline audit credential, Batch Decision Authorization Packet, Controlled Corridor Mode, Decision Authorization Packet, ALLOW BLOCK ESCALATE AI, runtime-safe improvement signals, production L5 route evidence",
       "featureList": [
+        "Financial Services sanitized proof case with no customer data, no protected implementation details, and no production L5 non-bypassability claim",
+        "Proof and Diligence Hub linking product video, financial proof case, boundary proof kit, strict-six audit credential, Batch DAP, pilot path, procurement readiness, and technical appendix",
+        "Public-safe proof point policy: proof points and buyer questions are used unless testimonials are real, approved, and anonymized or attributed with permission",
         "Vertical AI governance landing pages for finance, insurance, healthcare payer, vertical AI vendor, and implementation partner workflows",
         "Public-safe partner and licensing path for embedded Decision Authorization and proof packets",
         "Proof Harness: Always Export, Never Blank with trust, triad, hallucination taxonomy, benchmark status, policy status, evidence gaps, and human-review routing",
@@ -525,6 +528,48 @@
       "publisher": {
         "@id": "https://ontoguard.ai/#organization"
       }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ontoguard.ai/financial-services-ai-decision-authorization.html#webpage",
+      "name": "Financial Services AI Decision Authorization Proof Case",
+      "url": "https://ontoguard.ai/financial-services-ai-decision-authorization.html",
+      "inLanguage": "en-US",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08",
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "about": [
+        "Financial services AI governance",
+        "Decision Authorization",
+        "Sanitized proof case",
+        "No-bind receipt",
+        "Strict-six audit package",
+        "AI output release governance"
+      ],
+      "description": "Public sanitized proof case showing how OntoGuard evaluates a financial-services AI output before release, records Decision Authorization posture, and packages strict-six proof without customer data, protected implementation details, or production L5 non-bypassability claims."
+    },
+    {
+      "@type": "DigitalDocument",
+      "@id": "https://ontoguard.ai/assets/financial-services-decision-authorization-one-pager.pdf#document",
+      "name": "Financial Services Decision Authorization One-Pager",
+      "url": "https://ontoguard.ai/assets/financial-services-decision-authorization-one-pager.pdf",
+      "encodingFormat": "application/pdf",
+      "inLanguage": "en-US",
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08",
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "about": [
+        "Financial services AI governance",
+        "Decision Authorization Packet",
+        "Sanitized proof case",
+        "Strict-six audit credential",
+        "No-bind receipt"
+      ],
+      "description": "One-page public sanitized proof case summary for Financial Services AI Decision Authorization. No customer data, no protected implementation details, and no production L5 non-bypassability claim."
     }
   ]
 }
