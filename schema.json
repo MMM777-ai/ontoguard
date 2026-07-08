@@ -8,7 +8,7 @@
       "url": "https://ontoguard.ai/",
       "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions, with ALLOW/BLOCK/ESCALATE decisions, execution-boundary trace, no-bind receipts, strict-six offline audit credentials, Batch DAP / Controlled Corridor Mode, route maturity, and runtime-safe improvement signals.",
       "inLanguage": "en-US",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-07-07",
       "datePublished": "2026-05-15"
     },
     {
@@ -136,7 +136,7 @@
       "encodingFormat": "application/pdf",
       "inLanguage": "en-US",
       "datePublished": "2026-05-19",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-07-07",
       "publisher": {
         "@id": "https://ontoguard.ai/#organization"
       },
@@ -157,7 +157,7 @@
       "encodingFormat": "application/zip",
       "inLanguage": "en-US",
       "datePublished": "2026-06-11",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-07-07",
       "publisher": {
         "@id": "https://ontoguard.ai/#organization"
       },
@@ -179,7 +179,7 @@
       "encodingFormat": "application/pdf",
       "inLanguage": "en-US",
       "datePublished": "2026-06-14",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-07-07",
       "publisher": {
         "@id": "https://ontoguard.ai/#organization"
       },
@@ -414,8 +414,8 @@
       "name": "OntoGuard Deep Diligence Appendix",
       "url": "https://ontoguard.ai/deep-diligence-appendix.html",
       "inLanguage": "en-US",
-      "datePublished": "2026-06-24",
-      "dateModified": "2026-06-24",
+      "datePublished": "2026-07-07",
+      "dateModified": "2026-07-07",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
