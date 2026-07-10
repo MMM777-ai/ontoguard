@@ -1614,22 +1614,28 @@ line-height:1.5
  position:sticky;
  top:0;
  width:100%;
- overflow-x:auto;
- overflow-y:hidden;
- -webkit-overflow-scrolling:touch;
+ overflow-x:hidden;
+ overflow-y:visible;
  z-index:9999
  }
  .nav-container{
  justify-content:flex-start;
- padding:8px 10px
+ padding:6px 8px;
+ overflow-x:auto;
+ overflow-y:visible;
+ scrollbar-width:none;
+ -webkit-overflow-scrolling:touch
  }
- .nav-links{
+ .sticky-nav .nav-links{
  flex-wrap:nowrap;
  justify-content:flex-start;
- gap:8px;
+ gap:6px;
  width:max-content;
  min-width:100%;
- padding:0 6px
+ max-height:none;
+ margin:0;
+ padding:0;
+ overflow:visible
  }
  .nav-links li{
  flex:0 0 auto
@@ -1637,34 +1643,48 @@ line-height:1.5
  .nav-links a{
  display:inline-flex;
  align-items:center;
- min-height:44px;
- padding:0 12px;
+ min-height:38px;
+ padding:0 11px;
  border-radius:999px;
  background:#f7fbff;
  border:1px solid rgba(11, 114, 185, 0.18);
- font-size:0.86rem;
+ font-size:.82rem;
  white-space:nowrap
  }
  .hero{
  margin-top:0;
  padding:28px 14px 24px
  }
- .hero-banner-logo{
- position:static;
- display:block;
- max-width:150px;
- max-height:90px;
- margin:0 auto 16px
+ .home-page .hero-banner-logo{
+ display:none
  }
  .hero h1{
- font-size:clamp(2rem, 9vw, 2.45rem);
+ font-size:clamp(1.9rem,7.5vw,2.35rem);
  line-height:1.08;
  margin-bottom:12px
  }
  .hero-subheading{
- font-size:clamp(1.08rem, 5vw, 1.32rem);
- line-height:1.35;
- margin:0 auto 14px
+ font-size:1rem;
+ line-height:1.55;
+ margin:0 auto 18px
+ }
+ .home-page .hero-eyebrow{
+ display:block;
+ max-width:30rem;
+ margin:0 auto 14px;
+ padding:0;
+ background:none;
+ font-size:.72rem;
+ line-height:1.35
+ }
+ .home-page .home-hero h1{
+ max-width:20ch;
+ margin-left:auto;
+ margin-right:auto
+ }
+ .home-page .home-hero .hero-subheading{
+ max-width:36rem;
+ text-align:left
  }
  .hero-proof-line,.hero-transformation,.readiness-note{
  font-size:0.98rem;
@@ -2538,9 +2558,6 @@ padding-top:18px
  .governance-badge{
  font-size:0.82rem
  }
- .sticky-nav .nav-links a{
- font-size:0.86rem
- }
  .proof-kit-file-grid{
  grid-template-columns:1fr
  }
@@ -2553,17 +2570,6 @@ padding-top:18px
  body{
  padding-bottom:66px
  }
- .hero{
- padding:32px 16px
- }
- .hero h1{
- font-size:2rem;
- line-height:1.12
- }
- .hero-subheading{
- font-size:1.05rem;
- line-height:1.48
- }
  .hero-decision-flow,.icon-card-grid,.buyer-path-grid,.send-get-grid,.term-glossary-grid{
  grid-template-columns:1fr
  }
@@ -2571,12 +2577,6 @@ padding-top:18px
  width:100%;
  justify-content:center;
  text-align:center
- }
- .sticky-nav .nav-links{
- gap:8px 10px;
- max-height:96px;
- overflow:auto;
- justify-content:flex-start
  }
  .proof-library-tabs{
  align-items:stretch
@@ -3112,10 +3112,6 @@ color:#1f2937
 @media (max-width: 760px){
  .state-transition-table{
  grid-template-columns:1fr
- }
- .hero-subheading{
- font-size:1.25em;
- line-height:1.38
  }
  .center-message,.compact-section{
  padding-left:14px;
@@ -4002,9 +3998,22 @@ padding-bottom:calc(10px + env(safe-area-inset-bottom))
  grid-template-columns:1fr
  }
  .nav-more-menu{
- top:122px;
- max-height:calc(100dvh - 142px);
+ top:54px;
+ max-height:calc(100dvh - 74px);
  grid-template-columns:1fr
+ }
+ .home-page .sticky-nav .nav-links>li:nth-child(4),.home-page .sticky-nav .nav-links>li:nth-child(5){
+ display:none
+ }
+ .home-page .sticky-nav .nav-links{
+ justify-content:space-between;
+ width:100%;
+ min-width:0
+ }
+ .home-page .sticky-nav .nav-links a,.home-page .nav-more summary{
+ min-height:36px;
+ padding:0 9px;
+ font-size:clamp(.73rem,3.25vw,.8rem)
  }
  .landing-hero,.home-hero{
  margin-top:0
