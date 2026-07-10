@@ -1,101 +1,25 @@
-// script.js
-
-/*
- * Production-safe analytics helpers for OntoGuard.
- *
- * Current site uses Plausible. Google Analytics is optional and should not
- * produce console warnings when it is not installed.
- *
- * To enable local debug logs in the browser:
- *   localStorage.setItem("ONTOGUARD_ANALYTICS_DEBUG", "1")
- */
-(function () {
-    "use strict";
-
-    var DEBUG_KEY = "ONTOGUARD_ANALYTICS_DEBUG";
-
-    function isDebugEnabled() {
-        try {
-            return window.localStorage && window.localStorage.getItem(DEBUG_KEY) === "1";
-        } catch (error) {
-            return false;
-        }
-    }
-
-    function debugLog(message, payload) {
-        if (!isDebugEnabled()) return;
-        if (payload !== undefined) {
-            console.log("[OntoGuard analytics]", message, payload);
-        } else {
-            console.log("[OntoGuard analytics]", message);
-        }
-    }
-
-    function safeText(value, fallback) {
-        if (value === undefined || value === null) return fallback;
-        return String(value).trim().slice(0, 160) || fallback;
-    }
-
-    function trackEvent(eventName, props) {
-        var safeEventName = safeText(eventName, "Interaction");
-        var safeProps = props && typeof props === "object" ? props : {};
-
-        // Plausible is the currently installed analytics provider.
-        if (typeof window.plausible === "function") {
-            try {
-                window.plausible(safeEventName, { props: safeProps });
-                debugLog("Plausible event sent", { event: safeEventName, props: safeProps });
-            } catch (error) {
-                debugLog("Plausible event failed", error);
-            }
-        }
-
-        // Google Analytics is optional. Do not warn when absent.
-        if (typeof window.gtag === "function") {
-            try {
-                window.gtag("event", safeEventName.toLowerCase().replace(/\s+/g, "_"), {
-                    event_category: safeProps.category || "Website",
-                    event_label: safeProps.label || safeProps.resource || safeProps.action || safeEventName,
-                    value: 1
-                });
-                debugLog("Google Analytics event sent", { event: safeEventName, props: safeProps });
-            } catch (error) {
-                debugLog("Google Analytics event failed", error);
-            }
-        }
-    }
-
-    window.trackDownload = function trackDownload(item) {
-        var resource = safeText(item, "Unknown Resource");
-        trackEvent("Download", {
-            category: "Resource",
-            resource: resource,
-            label: resource
-        });
-    };
-
-    window.trackClick = function trackClick(action) {
-        var label = safeText(action, "Unknown Click");
-        trackEvent("Click", {
-            category: "Button",
-            action: label,
-            label: label
-        });
-    };
-
-    document.addEventListener("DOMContentLoaded", function () {
-        debugLog("script.js loaded");
-
-        // Defensive: avoid runtime errors if these optional footer elements
-        // are missing on a future page variant.
-        var emailTarget = document.getElementById("email");
-        if (emailTarget && !emailTarget.innerHTML.trim()) {
-            emailTarget.innerHTML = '<a href="mailto:mark.starobinsky@ontoguard.ai">mark.starobinsky@ontoguard.ai</a>';
-        }
-
-        var contactNda = document.getElementById("contact-nda");
-        if (contactNda && (!contactNda.getAttribute("href") || contactNda.getAttribute("href") === "#")) {
-            contactNda.setAttribute("href", "mailto:mark.starobinsky@ontoguard.ai?subject=OntoGuard%20NDA%20access%20request");
-        }
-    });
+// OntoGuard production-safe analytics, navigation, disclosure, video, form, and AOS behavior.
+(function(){
+ "use strict";
+ var DEBUG_KEY="ONTOGUARD_ANALYTICS_DEBUG";
+ function debugEnabled(){try{return window.localStorage&&window.localStorage.getItem(DEBUG_KEY)==="1";}catch(e){return false;}}
+ function debugLog(message,payload){if(!debugEnabled())return;if(payload!==undefined)console.log("[OntoGuard]",message,payload);else console.log("[OntoGuard]",message);}
+ function safeText(value,fallback){if(value===undefined||value===null)return fallback;return String(value).trim().slice(0,160)||fallback;}
+ function trackEvent(name,props){var eventName=safeText(name,"Interaction"),safeProps=props&&typeof props==="object"?props:{};if(typeof window.plausible==="function"){try{window.plausible(eventName,{props:safeProps});}catch(e){debugLog("Plausible event failed",e);}}if(typeof window.gtag==="function"){try{window.gtag("event",eventName.toLowerCase().replace(/\s+/g,"_"),{event_category:safeProps.category||"Website",event_label:safeProps.label||safeProps.resource||safeProps.action||eventName,value:1});}catch(e){debugLog("Analytics event failed",e);}}}
+ window.trackDownload=function(item){var resource=safeText(item,"Unknown Resource");trackEvent("Download",{category:"Resource",resource:resource,label:resource});};
+ window.trackClick=function(action){var label=safeText(action,"Unknown Click");trackEvent("Click",{category:"Button",action:label,label:label});};
+ function installDeclarativeTracking(){document.addEventListener("click",function(event){var element=event.target instanceof Element?event.target.closest("[data-track-kind][data-track-label]"):null;if(!element)return;var kind=element.dataset.trackKind,label=safeText(element.dataset.trackLabel,"Website interaction");if(kind==="download")window.trackDownload(label);else if(kind==="click")window.trackClick(label);});}
+ function closeMoreMenu(returnFocus){var details=document.querySelector(".sticky-nav details[open]");if(!details)return;details.removeAttribute("open");if(returnFocus){var summary=details.querySelector("summary");if(summary)summary.focus();}}
+ function installNavigation(){var nav=document.querySelector(".sticky-nav");if(!nav)return;document.addEventListener("keydown",function(event){if(event.key==="Escape"&&nav.querySelector("details[open]")){event.preventDefault();closeMoreMenu(true);}});document.addEventListener("click",function(event){var open=nav.querySelector("details[open]");if(!open)return;var target=event.target instanceof Element?event.target:null;if(target&&target.closest(".nav-more-menu a")){closeMoreMenu(false);return;}if(target&&!open.contains(target))closeMoreMenu(false);});}
+ function openAncestorDetails(target){var node=target&&target.parentElement;while(node){if(node.tagName==="DETAILS")node.open=true;node=node.parentElement;}}
+ function expandDetailsForHashTarget(userInitiated){var hash=window.location.hash;if(!hash||hash.length<2)return;var id;try{id=decodeURIComponent(hash.slice(1));}catch(e){return;}var target=document.getElementById(id);if(!target)return;openAncestorDetails(target);window.requestAnimationFrame(function(){target.scrollIntoView({block:"start",behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});if(userInitiated&&target.matches("a,button,input,select,textarea,summary,[tabindex]"))target.focus({preventScroll:true});});}
+ function installAOS(){if(!window.AOS||typeof window.AOS.init!=="function")return;try{window.AOS.init({duration:800,easing:"ease-in-out",once:true,disable:function(){return window.matchMedia("(prefers-reduced-motion: reduce)").matches;}});document.documentElement.classList.add("aos-enabled");}catch(e){debugLog("AOS initialization failed",e);}}
+ function installVideoTracking(){document.querySelectorAll("video").forEach(function(video){var started=false;video.addEventListener("play",function(){if(started)return;started=true;trackEvent("Video Started",{category:"Video",label:"OntoGuard Product Video"});},{passive:true});video.addEventListener("ended",function(){trackEvent("Video Completed",{category:"Video",label:"OntoGuard Product Video"});},{passive:true});});}
+ function describedByAdd(field,id){var ids=(field.getAttribute("aria-describedby")||"").split(/\s+/).filter(Boolean);if(ids.indexOf(id)<0)ids.push(id);field.setAttribute("aria-describedby",ids.join(" "));}
+ function describedByRemove(field,id){var ids=(field.getAttribute("aria-describedby")||"").split(/\s+/).filter(function(x){return x&&x!==id;});if(ids.length)field.setAttribute("aria-describedby",ids.join(" "));else field.removeAttribute("aria-describedby");}
+ function fieldError(field){if(!field.id)return;var id=field.id+"-error",error=document.getElementById(id);if(!error){error=document.createElement("span");error.id=id;error.className="field-error";field.insertAdjacentElement("afterend",error);}error.textContent=field.validationMessage||"Please complete this field.";field.setAttribute("aria-invalid","true");describedByAdd(field,id);}
+ function clearFieldError(field){if(!field.id)return;var id=field.id+"-error",error=document.getElementById(id);if(error)error.remove();field.removeAttribute("aria-invalid");describedByRemove(field,id);}
+ function installFormAccessibility(){document.querySelectorAll("form").forEach(function(form){var started=false,failurePending=false,status=form.querySelector(".form-live-status");if(!status){status=document.createElement("p");status.className="form-live-status";status.setAttribute("role","status");status.setAttribute("aria-live","polite");form.appendChild(status);}form.addEventListener("focusin",function(){if(started)return;started=true;trackEvent("Form Started",{category:"Form",label:"AI Output Risk Scan"});});form.addEventListener("invalid",function(event){var field=event.target;if(!(field instanceof HTMLElement)||!field.matches("input,select,textarea"))return;fieldError(field);if(failurePending)return;failurePending=true;window.setTimeout(function(){failurePending=false;var invalid=Array.prototype.slice.call(form.querySelectorAll(":invalid"));invalid.forEach(fieldError);status.textContent="Please correct "+invalid.length+" field"+(invalid.length===1?"":"s")+" before submitting.";trackEvent("Form Validation Failed",{category:"Form",label:"AI Output Risk Scan"});if(invalid[0])invalid[0].focus();},0);},true);form.addEventListener("input",function(event){var field=event.target;if(field instanceof HTMLElement&&field.matches("input,select,textarea")&&field.validity.valid)clearFieldError(field);if(!form.querySelector(":invalid"))status.textContent="";});form.addEventListener("submit",function(){status.textContent="Submitting your request…";trackEvent("Form Submitted",{category:"Form",label:"AI Output Risk Scan"});});});}
+ document.addEventListener("DOMContentLoaded",function(){installDeclarativeTracking();installNavigation();installVideoTracking();installFormAccessibility();expandDetailsForHashTarget(false);installAOS();var email=document.getElementById("email");if(email&&!email.innerHTML.trim())email.innerHTML='<a href="mailto:mark.starobinsky@ontoguard.ai">mark.starobinsky@ontoguard.ai</a>';});
+ window.addEventListener("hashchange",function(){expandDetailsForHashTarget(true);});
 })();

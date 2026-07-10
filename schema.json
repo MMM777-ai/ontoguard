@@ -4,17 +4,20 @@
     {
       "@type": "WebSite",
       "@id": "https://ontoguard.ai/#website",
-      "name": "OntoGuard AI",
+      "name": "OntoGuard",
       "url": "https://ontoguard.ai/",
       "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions, with ALLOW/BLOCK/ESCALATE decisions, proof and diligence surfaces, financial-services sanitized proof case, execution-boundary trace, no-bind receipts, strict-six offline audit credentials, Batch DAP / Controlled Corridor Mode, route maturity, and runtime-safe improvement signals.",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-08",
-      "datePublished": "2026-05-15"
+      "dateModified": "2026-07-10",
+      "datePublished": "2026-05-15",
+      "publisher": {
+        "@id": "https://ontoguard.ai/#organization"
+      }
     },
     {
       "@type": "Organization",
       "@id": "https://ontoguard.ai/#organization",
-      "name": "OntoGuard AI",
+      "name": "OntoGuard",
       "url": "https://ontoguard.ai/",
       "founder": {
         "@type": "Person",
@@ -33,113 +36,30 @@
       }
     },
     {
-      "@type": "VideoObject",
-      "@id": "https://ontoguard.ai/videos/OntoGuard-Demo.mp4#video",
-      "name": "OntoGuard AI Product Video",
-      "description": "OntoGuard AI product video showing how the Semantic Control Plane measures AI behavior, governs autonomy, compresses human review, creates proof, and supports Decision Authorization Packets.",
-      "thumbnailUrl": "https://ontoguard.ai/assets/Brand.png",
-      "contentUrl": "https://ontoguard.ai/videos/OntoGuard-Demo.mp4",
-      "uploadDate": "2026-06-08T00:00:00-04:00",
-      "publisher": {
-        "@id": "https://ontoguard.ai/#organization"
+      "@type": "WebPage",
+      "@id": "https://ontoguard.ai/#webpage",
+      "name": "OntoGuard AI | Runtime Decision Authorization",
+      "url": "https://ontoguard.ai/",
+      "description": "OntoGuard authorizes proposed AI outputs and actions before enterprise consequence, returning ALLOW, BLOCK, or ESCALATE with portable proof.",
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-10",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
       }
     },
     {
-      "@type": "SoftwareApplication",
-      "@id": "https://ontoguard.ai/#software",
-      "name": "OntoGuard AI Semantic Control Plane",
-      "url": "https://ontoguard.ai/",
-      "image": [
-        "https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png",
-        "https://ontoguard.ai/assets/Brand.png"
-      ],
-      "publisher": {
+      "@type": "Service",
+      "@id": "https://ontoguard.ai/#decision-authorization-service",
+      "name": "OntoGuard Decision Authorization Platform",
+      "serviceType": "AI Decision Authorization Infrastructure",
+      "provider": {
         "@id": "https://ontoguard.ai/#organization"
       },
-      "applicationCategory": "BusinessApplication",
-      "applicationSubCategory": "Semantic Control Plane, runtime decision authorization, AI-driven state-transition governance, execution-boundary proof, no-bind receipts, strict-six offline audit credentials, Batch DAP / Controlled Corridor Mode, and runtime-safe improvement signals",
-      "operatingSystem": "Cloud / API / Backend Integration",
-      "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions. It evaluates AI outputs, tool actions, workflow movements, and release events before consequence, returns ALLOW, BLOCK, or ESCALATE, and produces strict-six, offline-verifiable proof with execution-boundary trace, no-bind receipt, route maturity, semantic projection, decision admissibility, human-review routing, audit hashes, and runtime-safe improvement signals.",
-      "keywords": "Semantic Control Plane, runtime decision authorization, AI-driven state transitions, proposed state transition governance, execution-boundary trace, no-bind receipt, strict-six offline audit credential, Batch Decision Authorization Packet, Controlled Corridor Mode, Decision Authorization Packet, ALLOW BLOCK ESCALATE AI, runtime-safe improvement signals, production L5 route evidence",
-      "featureList": [
-        "Financial Services sanitized proof case with no customer data, no protected implementation details, and no production L5 non-bypassability claim",
-        "Proof and Diligence Hub linking product video, financial proof case, boundary proof kit, strict-six audit credential, Batch DAP, pilot path, procurement readiness, and technical appendix",
-        "Public-safe proof point policy: proof points and buyer questions are used unless testimonials are real, approved, and anonymized or attributed with permission",
-        "Vertical AI governance landing pages for finance, insurance, healthcare payer, vertical AI vendor, and implementation partner workflows",
-        "Public-safe partner and licensing path for embedded Decision Authorization and proof packets",
-        "Proof Harness: Always Export, Never Blank with trust, triad, hallucination taxonomy, benchmark status, policy status, evidence gaps, and human-review routing",
-        "Constraint authority and human review closure as integration evidence without fabricated authority",
-        "Decision-relevant uncertainty and threshold provenance connected to ALLOW, BLOCK, or ESCALATE outcomes",
-        "Decision admissibility assessment across evidence sufficiency, delegated authority, policy fit, route authority, consequence class, and no-bind status",
-        "Procurement and security readiness surface covering deployment modes, data handling, controls, and integrations",
-        "30-day pilot path from shadow-mode scan to selected packets to route design",
-        "Who-this-is-for buyer segmentation for vertical AI vendors, insurers, healthcare payers, banks, SIs, and governance platforms",
-        "Complete product ladder from AI Output Risk Scan to Decision Authorization API and Production Route Evidence Pilot",
-        "Semantic Control Plane for runtime authorization of proposed AI-driven state transitions",
-        "Runtime Decision Authorization with ALLOW, BLOCK, or ESCALATE outcomes",
-        "Execution-boundary trace and no-bind receipt for withheld-release proof",
-        "Strict-six offline-verifiable audit credential with buyer JSON, full-audit JSON, PDFs, decision receipt, and artifact manifest",
-        "Batch Decision Authorization Packet / Controlled Corridor Mode with aggregate decision, case hashes, per-case full_audit pointers, and strict-six batch package",
-        "Buyer-safe ROI KPI framework with Opex Takeout, Loss Prevention, Working Capital, measured run values, and baseline-required calculations",
-        "Honest route maturity labeling: event-level no-bind proof today; production L5 requires route integration, endpoint enforcement, replay evidence, and outcome closure",
-        "Representative AI Output Risk Review from prompts, responses, or API logs",
-        "Controlled execution-boundary no-bind proof",
-        "Runtime-seam proof status",
-        "Route registry and route completeness maturity",
-        "Controlled inline gate evidence",
-        "Authorization-token requirement proof",
-        "Downstream effect record",
-        "Same-condition replay record",
-        "Changed-condition replay record",
-        "Route pressure tests",
-        "Controlled bypass-prevention evidence",
-        "Outcome closure record",
-        "Decision admissibility layer",
-        "Semantic constraint governance",
-        "Human-review admissibility",
-        "Reviewer route completeness",
-        "Prompt-sensitive trust",
-        "Trust decomposition",
-        "Proof-harness strengthening",
-        "Buyer-safe telemetry digest",
-        "Semantic projection",
-        "Coherent governance loading",
-        "Evidence geodesic",
-        "Governance path ensemble",
-        "Packet projection budget",
-        "Runtime-safe training-signal export",
-        "PDF and JSON Decision Authorization Packets for selected high-risk or representative outputs",
-        "Customer-specific production route integration path for tool calls, memory writes, ontology changes, policy mappings, and multi-agent handoffs",
-        "Controlled execution-boundary and no-bind evidence; production L5 route completeness requires customer pilot or production topology evidence",
-        "Public sanitized Boundary Proof Kit with buyer JSON, governance PDF, decision receipt, artifact manifest, governance ZIP, and escalation receipt",
-        "Representative 10–25-output AI risk review with selected full Decision Authorization Packets and larger batch expansion path",
-        "Document-independent semantic governance from AI behavior itself",
-        "Risk, overconfidence, inconsistency, hallucination, and unsafe action language detection",
-        "Human Review Burden Reducer for routing only outputs that need expert review",
-        "Autonomy Readiness Tiering for AI workflows",
-        "Governed Training Signal candidates from allowed, blocked, escalated, rewritten, or reviewer-labeled outputs",
-        "AI Behavioral Benchmarking and governance-readiness comparison",
-        "Cognitive Drift Observatory for tracking changes in AI behavior over time",
-        "Decision Authorization API for high-stakes ALLOW, BLOCK, or ESCALATE release control",
-        "Decision Authorization Packet as PDF and JSON proof artifact",
-        "ALLOW, BLOCK, or ESCALATE release decisions with reason codes and routing",
-        "Executive readout covering escalation patterns, audit readiness, review effort, and ROI proxy metrics",
-        "Production L3 training signal export and gold-example candidate flow",
-        "Governed State Transition Record with before, proposed, evidence, decision, audit, and improvement lanes",
-        "Ontology-grounded symbolic trace and evidence pack",
-        "BM25 and semantic evidence candidate retrieval for scoped governance runs",
-        "Primary-scope gap penalty logic with buyer-safe coverage disclosures",
-        "Buyer-safe telemetry lanes separated from internal repair flags",
-        "Arbitration transparency across compliance, accuracy, risk, and feedback agents",
-        "Zero hard gates with always-export PDF and JSON artifacts",
-        "Human-review routing with APPROVE, REWRITE, or BLOCK outcomes",
-        "API integration support for tool calls, memory writes, ontology changes, policy updates, and multi-agent handoffs",
-        "Decision Authorization API for runtime ALLOW, BLOCK, or ESCALATE decisions with release status, routed_to, business effect, reason codes, evidence references, and audit identifiers",
-        "Governed State Transition Record as structured JSON plus buyer-readable PDF",
-        "Compliance Trace Pack with symbolic trace, BM25 retrieval context, evidence hashes, and clause-level citations",
-        "Policy Router SDK for jurisdiction-specific policy packs and internal rules",
-        "Evidence Bundle with immutable PDF, JSON, hashes, and chain-of-custody artifacts"
-      ]
+      "url": "https://ontoguard.ai/",
+      "description": "A semantic control plane that returns ALLOW, BLOCK, or ESCALATE before a proposed AI movement becomes organizational consequence."
     },
     {
       "@type": "DigitalDocument",
@@ -207,197 +127,6 @@
       "description": "Public OntoGuard Layer Facts brief explaining the movement evaluated, inputs accepted, ALLOW/BLOCK/ESCALATE outputs produced, receipts created, replay/proof surface, changed-condition behavior, and protected internals not disclosed."
     },
     {
-      "@type": "Service",
-      "@id": "https://ontoguard.ai/#runtime-governance-service",
-      "name": "OntoGuard Runtime Decision Authorization and Controlled Corridor Proof",
-      "url": "https://ontoguard.ai/#output-risk-scan",
-      "serviceType": "Semantic control plane, representative AI output risk review, Decision Authorization Packet generation, strict-six offline audit credential, and Batch DAP / Controlled Corridor Mode",
-      "provider": {
-        "@id": "https://ontoguard.ai/#organization"
-      },
-      "areaServed": "US",
-      "audience": {
-        "@type": "BusinessAudience",
-        "audienceType": "AI builders, regulated enterprises, financial services teams, healthcare teams, public sector operations, and high-stakes workflow owners"
-      },
-      "description": "A B2B assessment and proof service that analyzes representative AI prompts, responses, logs, intended actions, and workflow labels without requiring internal document uploads. OntoGuard returns a behavior risk map, ALLOW/BLOCK/ESCALATE distribution, review-burden estimate, autonomy-readiness view, selected Decision Authorization Packets, ROI baseline fields, and an expansion path into batch DAP, Decision Authorization API, and customer-specific route evidence."
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://ontoguard.ai/#howto-state-transition-governance",
-      "name": "How OntoGuard AI authorizes proposed AI-driven state transitions before consequence",
-      "description": "OntoGuard evaluates prompts, responses, logs, or proposed AI-driven movements before consequence, returns ALLOW, BLOCK, or ESCALATE, and exports strict-six Decision Authorization Packets with execution-boundary trace, no-bind receipts, replay records, route proof, and runtime-safe improvement signals.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Send representative AI outputs or logs",
-          "text": "A buyer provides representative prompts, responses, API logs, intended action labels, or workflow labels without uploading internal policy documents."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Evaluate proposed movement",
-          "text": "OntoGuard checks risk, uncertainty, semantic projection, evidence posture, route limitations, and release conditions before downstream business effect."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Return Decision API result",
-          "text": "The Decision API returns ALLOW, BLOCK, or ESCALATE with release status, routed_to, reason codes, evidence references, and audit identifiers."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Export no-bind and route proof",
-          "text": "For refused or escalated outcomes, the packet records no authorization token issued, downstream commit not executed, no protected effect formed, replay records, route pressure tests, and controlled bypass-prevention evidence."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Create improvement signal",
-          "text": "Governed outcomes can become runtime-safe L3 training-signal candidates without live fine-tuning or model-weight mutation."
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://ontoguard.ai/#faq-schema",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can we start without internal documents?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The first review can start with representative prompts, responses, API logs, intended action labels, workflow labels, or demo outputs. No internal legal files, policy manuals, production deployment, or model retraining are required to begin."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is OntoGuard a compliance tool or an authorization layer?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "OntoGuard is a semantic authorization layer and Decision Authorization Infrastructure. Compliance readiness is one use case; the broader product governs whether high-stakes AI output is allowed to move, must be blocked, or should be routed to human review."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the fastest first step?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Run an AI Output Risk Scan with 10–25 representative outputs or logs. OntoGuard returns risk, uncertainty, review-burden, autonomy-readiness, and selected proof-packet findings."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What do we receive after an AI Output Risk Scan?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You receive a behavior risk map, review-burden analysis, autonomy-readiness view, training-signal candidates, and selected Decision Authorization Packets for high-risk or representative outputs."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does OntoGuard require production deployment to start?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Initial reviews can run in shadow mode from exported prompts, responses, logs, and workflow labels. Production route integration is only needed for production L5 evidence."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the strict-six audit credential?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "It is OntoGuard’s offline-verifiable governance package: buyer_portable.governance.json, full_audit.governance.json, governance.pdf, governance.sellable_lite.pdf, decision_receipt.json, and artifact_manifest.json. It lets buyers inspect the decision, evidence, receipt, manifest, and audit credential without rerunning OntoGuard."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Batch DAP / Controlled Corridor Mode?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Batch Decision Authorization Packet / Controlled Corridor Mode generates one aggregate proof packet across multiple governed cases. It preserves aggregate decision logic, case-level hashes, per-case full_audit pointers, execution-boundary summary, no-bind summary, and strict-six packaging for scans, demos, and controlled pilot corridors."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does OntoGuard prove today?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "OntoGuard can produce a controlled Decision Authorization Packet proving that an AI output or proposed state transition was evaluated before release, release was authorized or withheld, refused operation and no-bind status were recorded, replay was shown, route pressure tests ran, and controlled route-enforcement evidence was attached."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does OntoGuard prove production non-bypassability today?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not without production integration evidence. OntoGuard can assert controlled-harness non-bypassability for the controlled proof topology. Production non-bypassability requires a pilot or production route where the real downstream endpoint cannot commit without OntoGuard authorization."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is a no-bind receipt?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A no-bind receipt is a compact proof record showing that a blocked or escalated output did not form the protected downstream effect. It binds the attempted movement, Decision API result, release authorization state, refused operation, downstream commit status, protected-effect status, trace ID, manifest hash, and evidence hash."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is route completeness?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Route completeness describes how much proof exists around a governed AI movement: event governed, no-bind proof, route registered, route tested, route enforced, or route complete. The current proof package supports controlled event-level route proof. Production L5 requires real production topology evidence."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does OntoGuard train the model?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not in the runtime path. OntoGuard exports review-gated training-signal candidates and improvement signals. It does not perform live fine-tuning, model-weight updates, DPO, RLAIF, PPO, or adapter loading during governance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is a Decision Authorization Packet?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A Decision Authorization Packet is a portable PDF and JSON proof artifact showing how a high-stakes AI output was authorized, escalated, or blocked before release. It records the ALLOW, BLOCK, or ESCALATE decision, evidence, reasons, uncertainty, semantic projection, execution-boundary trace, no-bind status, route maturity, human-review routing, audit hashes, and improvement signals."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is state-transition governance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "State-transition governance asks whether a proposed AI change is authorized, traceable, and safe to commit. The proposal may be an LLM output, tool call, memory write, ontology update, policy mapping, training signal, or multi-agent handoff. Current production route enforcement for tool calls, memory writes, and handoffs requires customer-specific integration evidence."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you support tool calls, memory writes, and multi-agent handoffs today?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Not at the same production-enforcement level as governed LLM output release. The Decision API and JSON contract are designed to support these use cases through customer-specific integration. Production evidence requires real downstream routes, token checks, bypass-attempt logs, replay, and outcome closure."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does OntoGuard use ontology AI?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ontology-grounded objects, relationships, rules, clause hits, domain scope, evidence, and symbolic traces connect AI proposals to enterprise reality. This semantic layer helps OntoGuard explain why a proposed AI movement was allowed, blocked, or escalated."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens when evidence is incomplete?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The packet still exports. OntoGuard routes uncertainty to SAFE_TEMPLATE or HUMAN_REVIEW, records reason codes, preserves audit hashes, flags coverage gaps, and avoids silently blank evidence or failed artifacts."
-          }
-        }
-      ]
-    },
-    {
       "@type": "BreadcrumbList",
       "@id": "https://ontoguard.ai/#breadcrumb",
       "itemListElement": [
@@ -422,133 +151,192 @@
       ]
     },
     {
-      "@type": "WebPage",
-      "@id": "https://ontoguard.ai/deep-diligence-appendix.html#webpage",
-      "name": "OntoGuard Deep Diligence Appendix",
+      "@type": "TechArticle",
+      "@id": "https://ontoguard.ai/deep-diligence-appendix.html#article",
+      "headline": "OntoGuard Technical Diligence Appendix",
+      "description": "Technical diligence for Decision Authorization, BM25 evidence retrieval, ontology grounding, no-bind proof, route completeness, and audit packaging.",
       "url": "https://ontoguard.ai/deep-diligence-appendix.html",
+      "mainEntityOfPage": {
+        "@id": "https://ontoguard.ai/deep-diligence-appendix.html"
+      },
       "inLanguage": "en-US",
       "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
-      "isPartOf": {
-        "@id": "https://ontoguard.ai/#website"
+      "dateModified": "2026-07-10",
+      "author": {
+        "@type": "Person",
+        "name": "Mark Starobinsky",
+        "url": "https://www.linkedin.com/in/markstarobinsky/"
       },
       "publisher": {
         "@id": "https://ontoguard.ai/#organization"
       },
-      "about": [
-        "Semantic authorization layer",
-        "Decision Authorization Infrastructure",
-        "Controlled execution-boundary proof",
-        "BM25 evidence retrieval",
-        "Enterprise ontology",
-        "Runtime-safe training signals"
-      ],
-      "description": "Technical diligence appendix preserving OntoGuard platform, governance invariants, ontology, BM25/evidence, regulatory readiness, roadmap, buyer value, and visual appendix material outside the performance-optimized homepage."
+      "image": "https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/deep-diligence-appendix.html#breadcrumb"
+      }
     },
     {
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/partners.html#webpage",
-      "name": "Partner and Licensing Path",
+      "name": "Partner, License, or Embed OntoGuard",
+      "description": "Partner, license, embed, co-sell, or OEM OntoGuard as the Decision Authorization and portable-proof layer for high-stakes AI.",
       "url": "https://ontoguard.ai/partners.html",
-      "description": "Public-safe partner, licensing, co-sell, and embedded proof-layer paths for vertical AI vendors, systems integrators, AI governance platforms, guardrail and gateway providers, and regulated software companies.",
-      "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
-      "publisher": {
-        "@id": "https://ontoguard.ai/#organization"
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-10",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/partners.html#breadcrumb"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/strategic-funding.html#webpage",
-      "name": "Strategic Funding and Commercialization Path",
+      "name": "OntoGuard Strategic Funding and Commercialization",
+      "description": "Public-safe overview of OntoGuard licensing, commercialization milestones, strategic-capital use, partner fit, and NDA-only diligence.",
       "url": "https://ontoguard.ai/strategic-funding.html",
-      "description": "Public-safe strategic funding overview for OntoGuard commercialization, pilots, integration hardening, procurement readiness, and embedded licensing expansion.",
-      "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
-      "publisher": {
-        "@id": "https://ontoguard.ai/#organization"
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-10",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/strategic-funding.html#breadcrumb"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/finance-ai-governance.html#webpage",
-      "name": "Finance AI Governance",
+      "name": "Finance AI Decision Authorization | OntoGuard",
+      "description": "Decision Authorization for finance AI outputs before customer or workflow consequence, with ALLOW, BLOCK, or ESCALATE and portable proof.",
       "url": "https://ontoguard.ai/finance-ai-governance.html",
-      "description": "Finance AI governance landing page for regulated AI movements, Decision Authorization Packets, first scans, route evidence pilots, and production-L5 limitations.",
-      "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
-      "publisher": {
-        "@id": "https://ontoguard.ai/#organization"
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-10",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/finance-ai-governance.html#breadcrumb"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/insurance-ai-governance.html#webpage",
-      "name": "Insurance AI Governance",
+      "name": "Insurance AI Decision Authorization | OntoGuard",
+      "description": "Authorize claims, coverage, underwriting, and fraud-review AI movements before release, with human routing and inspectable proof.",
       "url": "https://ontoguard.ai/insurance-ai-governance.html",
-      "description": "Insurance AI governance landing page for claims, underwriting, fraud, customer communications, proof packets, and route evidence pilots.",
-      "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
-      "publisher": {
-        "@id": "https://ontoguard.ai/#organization"
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-10",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/insurance-ai-governance.html#breadcrumb"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/healthcare-payer-ai-governance.html#webpage",
-      "name": "Healthcare Payer AI Governance",
+      "name": "Healthcare Payer AI Decision Authorization | OntoGuard",
+      "description": "Govern healthcare-payer administrative AI outputs before member, provider, claims, or prior-authorization workflow consequence.",
       "url": "https://ontoguard.ai/healthcare-payer-ai-governance.html",
-      "description": "Healthcare payer AI governance landing page for prior authorization, claims, member communications, proof packets, and route evidence pilots.",
-      "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
-      "publisher": {
-        "@id": "https://ontoguard.ai/#organization"
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-10",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/healthcare-payer-ai-governance.html#breadcrumb"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/vertical-ai-vendors.html#webpage",
-      "name": "Vertical AI Vendor Proof Layer",
+      "name": "Vertical AI Vendor Proof Layer | OntoGuard",
+      "description": "Help enterprise buyers inspect whether a vertical AI output is admissible to proceed, with Decision Authorization and portable proof.",
       "url": "https://ontoguard.ai/vertical-ai-vendors.html",
-      "description": "Vertical AI vendor landing page for converting demo outputs into buyer-portable Decision Authorization Packets and embedded proof-layer opportunities.",
-      "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
-      "publisher": {
-        "@id": "https://ontoguard.ai/#organization"
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-10",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/vertical-ai-vendors.html#breadcrumb"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/ai-implementation-partners.html#webpage",
-      "name": "AI Implementation Partner Proof Layer",
+      "name": "AI Implementation Partner Proof Layer | OntoGuard",
+      "description": "Add Decision Authorization, route evidence, human-review closure, and portable proof to systems-integration and AI delivery programs.",
       "url": "https://ontoguard.ai/ai-implementation-partners.html",
-      "description": "AI implementation partner landing page for embedding OntoGuard Decision Authorization and proof packets into high-stakes AI workflow deployments.",
-      "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
-      "publisher": {
-        "@id": "https://ontoguard.ai/#organization"
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-10",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/ai-implementation-partners.html#breadcrumb"
       }
     },
     {
-      "@type": "WebPage",
-      "@id": "https://ontoguard.ai/financial-services-ai-decision-authorization.html#webpage",
-      "name": "Financial Services AI Decision Authorization Proof Case",
+      "@type": "TechArticle",
+      "@id": "https://ontoguard.ai/financial-services-ai-decision-authorization.html#article",
+      "headline": "Financial Services Decision Authorization Proof | OntoGuard",
+      "description": "Sanitized financial-services proof case showing ESCALATE, withheld release, human review, no-bind posture, and strict-six evidence.",
       "url": "https://ontoguard.ai/financial-services-ai-decision-authorization.html",
+      "mainEntityOfPage": {
+        "@id": "https://ontoguard.ai/financial-services-ai-decision-authorization.html"
+      },
       "inLanguage": "en-US",
       "datePublished": "2026-07-08",
-      "dateModified": "2026-07-08",
+      "dateModified": "2026-07-10",
+      "author": {
+        "@type": "Person",
+        "name": "Mark Starobinsky",
+        "url": "https://www.linkedin.com/in/markstarobinsky/"
+      },
       "publisher": {
         "@id": "https://ontoguard.ai/#organization"
       },
-      "about": [
-        "Financial services AI governance",
-        "Decision Authorization",
-        "Sanitized proof case",
-        "No-bind receipt",
-        "Strict-six audit package",
-        "AI output release governance"
-      ],
-      "description": "Public sanitized proof case showing how OntoGuard evaluates a financial-services AI output before release, records Decision Authorization posture, and packages strict-six proof without customer data, protected implementation details, or production L5 non-bypassability claims."
+      "image": "https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/financial-services-ai-decision-authorization.html#breadcrumb"
+      }
     },
     {
       "@type": "DigitalDocument",
@@ -570,6 +358,168 @@
         "No-bind receipt"
       ],
       "description": "One-page public sanitized proof case summary for Financial Services AI Decision Authorization. No customer data, no protected implementation details, and no production L5 non-bypassability claim."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/deep-diligence-appendix.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Technical Diligence Appendix",
+          "item": "https://ontoguard.ai/deep-diligence-appendix.html"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/partners.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Partner and Licensing Path",
+          "item": "https://ontoguard.ai/partners.html"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/strategic-funding.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Strategic Funding and Commercialization",
+          "item": "https://ontoguard.ai/strategic-funding.html"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/finance-ai-governance.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Finance AI Decision Authorization",
+          "item": "https://ontoguard.ai/finance-ai-governance.html"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/insurance-ai-governance.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insurance AI Decision Authorization",
+          "item": "https://ontoguard.ai/insurance-ai-governance.html"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/healthcare-payer-ai-governance.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Healthcare Payer AI Decision Authorization",
+          "item": "https://ontoguard.ai/healthcare-payer-ai-governance.html"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/vertical-ai-vendors.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Vertical AI Vendor Proof Layer",
+          "item": "https://ontoguard.ai/vertical-ai-vendors.html"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/ai-implementation-partners.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Implementation Partner Proof Layer",
+          "item": "https://ontoguard.ai/ai-implementation-partners.html"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/financial-services-ai-decision-authorization.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Financial Services Decision Authorization Proof",
+          "item": "https://ontoguard.ai/financial-services-ai-decision-authorization.html"
+        }
+      ]
     }
   ]
 }

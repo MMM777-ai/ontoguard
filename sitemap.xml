@@ -1,153 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ontoguard.ai/</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/sample-financial-services-decision-authorization-packet.pdf</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/Ontology-Enhanced%20AI%20-%20Public%20White%20Paper.pdf</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/OntoGuard_Boundary_Proof_Kit_Public_Sanitized.zip</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/governance.public_sanitized.pdf</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/one_page_refusal_escalation_receipt.public_sanitized.pdf</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/buyer_portable.governance.public_sanitized.json</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/decision_receipt.public_sanitized.json</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/artifact_manifest.public_sanitized.json</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/ontoguard-layer-facts.pdf</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/full_audit.governance.public_sanitized.json</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/no_bind_receipt.public_sanitized.json</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/runtime_seam_summary.public_sanitized.pdf</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/boundary-proof-kit/route_completeness_evidence.public_sanitized.json</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/deep-diligence-appendix.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/partners.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/strategic-funding.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/finance-ai-governance.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/insurance-ai-governance.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/healthcare-payer-ai-governance.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/vertical-ai-vendors.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/ai-implementation-partners.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/financial-services-ai-decision-authorization.html</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ontoguard.ai/assets/financial-services-decision-authorization-one-pager.pdf</loc>
-    <lastmod>2026-07-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<url>
+<loc>https://ontoguard.ai/</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/sample-financial-services-decision-authorization-packet.pdf</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+
+<url>
+<loc>https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/OntoGuard_Boundary_Proof_Kit_Public_Sanitized.zip</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/governance.public_sanitized.pdf</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/one_page_refusal_escalation_receipt.public_sanitized.pdf</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/buyer_portable.governance.public_sanitized.json</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/decision_receipt.public_sanitized.json</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/artifact_manifest.public_sanitized.json</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/ontoguard-layer-facts.pdf</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/full_audit.governance.public_sanitized.json</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/no_bind_receipt.public_sanitized.json</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/runtime_seam_summary.public_sanitized.pdf</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/boundary-proof-kit/route_completeness_evidence.public_sanitized.json</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/deep-diligence-appendix.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/partners.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/strategic-funding.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/finance-ai-governance.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/insurance-ai-governance.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/healthcare-payer-ai-governance.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/vertical-ai-vendors.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/ai-implementation-partners.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/financial-services-ai-decision-authorization.html</loc>
+<lastmod>2026-07-10</lastmod>
+
+
+</url>
+<url>
+<loc>https://ontoguard.ai/assets/financial-services-decision-authorization-one-pager.pdf</loc>
+<lastmod>2026-07-08</lastmod>
+
+
+</url>
 </urlset>
