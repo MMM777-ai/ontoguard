@@ -4,78 +4,84 @@ Protected by U.S. Patent Application 19/444,521 - Track I prioritized examinatio
 
 ## What this kit is
 
-This is a public-safe proof kit for OntoGuard's current maturity surface. It is designed for website posting, GTM conversations, partner diligence, buyer education, and early technical review without disclosing source code, protected implementation logic, private ontology internals, raw legal registries, scoring formulas, or customer data.
+This is the complete public-safe replacement proof kit for OntoGuard's current maturity surface. It is designed for website posting, GTM conversations, partner diligence, buyer education, and early technical review without disclosing source code, protected implementation logic, private ontology internals, raw legal registries, scoring formulas, or customer data.
 
-OntoGuard is not presented here as generic AI governance software. The kit demonstrates four connected commercial wedges:
+OntoGuard governs the complete transaction through which an AI output or proposed action attempts to become an organizational commitment.
 
-1. **AI Output Risk Scan** - identify risky, unsupported, review-heavy, overconfident, or inadmissible AI outputs before they enter a business workflow.
-2. **Runtime Decision Authorization** - determine ALLOW, BLOCK, or ESCALATE before consequence.
-3. **Execution Boundary + No-Bind Proof** - prove what the AI attempted to move, what was refused or routed, and whether a protected downstream effect formed.
-4. **Strict-Six / Batch DAP proof** - package single-event or controlled-corridor batch proof into buyer-readable and machine-readable artifacts.
+## What the current proof surface now includes
 
-## What the current proof surface shows
+1. **Canonical Governed Event Lifecycle** - eight DAP stages: Attempt, Interpretation, Admissibility, Authorization, Release Control, Consequence Proof, Human Closure, and Learning Signal.
+2. **Runtime Decision Authorization** - authoritative ALLOW / BLOCK / ESCALATE before consequence.
+3. **Execution Boundary + No-Bind Proof** - what moved, what was refused, and whether a protected downstream effect formed.
+4. **Institutional Admissibility** - evidence, policy, authority, uncertainty, route, and human-review posture.
+5. **Strict-Six Offline Audit Credential** - buyer JSON, full-audit JSON, two PDFs, decision receipt, and artifact manifest.
+6. **Batch DAP / Controlled Corridor Mode** - aggregate proof across four controlled cases while preserving per-case decisions.
+7. **Truth Consistency** - stale batch decision mirrors are quarantined, benchmark identity is consistently synthetic, and rejected scope metadata is forensic-only.
+8. **Review-Gated Learning** - improvement candidates without live training or runtime mutation.
 
-### Single-event execution-boundary proof
+## Current single-event proof
 
-- Attempted movement: `AI_OUTPUT_RELEASE`
-- Control point: `DIRECT_BACKEND_GOVERNANCE`
-- Gate mode: `SHADOW_MODE`
+- Trace ID: `a30db149-e2c4-4001-a7f8-694ceb64af9a`
+- Business movement: `AI-generated Investment Management portfolio construction recommendation governance withheld pending governed review`
 - Decision: `ESCALATE`
 - Release authorized: `False`
 - Release status: `WITHHELD_PENDING_REVIEW`
 - Routed to: `HUMAN_REVIEW`
-- Refused operation: `AUTONOMOUS_OUTPUT_RELEASE`
-- Authorization token issued: `False`
-- Downstream commit status: `NOT_COMMITTED`
 - Protected effect formed: `False`
 - No-bind status: `NO_PROTECTED_EFFECT_FORMED`
-- Public maturity label: `L1+ event-governed no-bind proof`
-- Raw route maturity level: `L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL`
+- Human closure: `PENDING`
+- Learning signal: `CANDIDATE_GENERATED`
+- Public maturity: `L1+ event-governed no-bind proof`
 - Production enforcement asserted: `False`
 
-### Batch DAP / Controlled Corridor Mode
+## Current benchmark disclosure
 
-- Batch ID: `corr_batch_e4ea21a3a007`
+- Corpus origin: `INTERNAL_ONTOGUARD_SYNTHETIC_REFERENCE`
+- Synthetic reference corpus: `True`
+- Customer production data: `False`
+- External industry benchmark: `False`
+- Selected sample: `150` of `2850` rows
+- Current result: `17th percentile / 50 required
+
+## Current controlled batch
+
+- Batch ID: `corr_batch_af700a1eb8c1`
 - Aggregate action: `BLOCK`
 - Case count: `4`
-- Case roll-up: `1` ALLOW / `1` BLOCK / `2` ESCALATE
+- Case roll-up: `1 ALLOW / 1 BLOCK / 2 ESCALATE`
+- Stale visible case mirrors: `0`
+- Stale source mirrors quarantined: `2`
 - Release status: `WITHHELD_PENDING_REVIEW`
-- Route maturity level: `L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL`
 - Production enforcement asserted: `False`
 
-## What is new in v4
+## Verification
 
-v4 updates the public kit to reflect the current maturity and the updated website framing:
-
-- Semantic Control Plane / runtime authorization of proposed AI-driven state transitions.
-- Execution Boundary + No-Bind Proof as the central proof surface.
-- Public label corrected to event-level / L1+ no-bind proof where production route evidence is not attached.
-- Strict-six offline audit credential elevated as a buyer-facing proof asset.
-- Batch Decision Authorization Packet / Controlled Corridor Mode added as a first-class working capability.
-- ROI KPI framework added with Opex Takeout, Loss Prevention, Working Capital, measured_run_values, and baseline-required hard-dollar calculations.
-- Runtime-safe training-signal export clarified as review-gated and non-mutating.
+- Single-run post-harness: `6748` passes, `0` warnings, `0` failures.
+- Batch post-harness: `1962` passes, `0` warnings, `0` failures.
+- Both source packages contain the exact strict-six file set.
 
 ## Important boundaries
 
-This kit intentionally does not claim production L5 non-bypassability. Production L5 requires customer route integration, endpoint token checks, fail-closed production topology, replay records, bypass-attempt logs, and outcome closure.
+This kit does not claim production L5 route non-bypassability. Production L5 requires customer route integration, endpoint token checks, fail-closed topology, bypass-attempt rejection, replay evidence, reviewer authorization, and outcome closure.
 
-This kit also does not claim hard-dollar ROI without buyer baselines. OntoGuard provides measured_run_values and KPI buckets; buyer-supplied assumptions are required for dollar calculations.
+This kit does not claim hard-dollar ROI without buyer baselines. It reports KPI structure and measured proof-run values only.
 
-This kit does not claim live model-weight mutation, production memory-write enforcement, production tool-call enforcement, or customer-specific multi-agent handoff enforcement without integration evidence.
+This kit does not claim live model training, model-weight mutation, ontology mutation, policy mutation, or Decision API mutation.
 
 ## File guide
 
-- `governance.public_sanitized.pdf` - primary buyer-facing proof brief.
-- `one_page_refusal_escalation_receipt.public_sanitized.pdf` - one-page receipt showing refusal/no-bind proof.
-- `ontoguard-layer-facts.pdf` - public Layer Facts Brief explaining OntoGuard layers safely.
-- `buyer_portable.governance.public_sanitized.json` - buyer-readable machine summary of current maturity and selected proof surfaces.
-- `controlled_runtime_seam_summary.public_sanitized.json` - legacy filename retained; content now reflects Execution Boundary + No-Bind Proof.
-- `semantic_projection_summary.public_sanitized.json` - read-only semantic projection and coherent governance loading summary.
-- `decision_receipt.public_sanitized.json` - decision/no-bind receipt summary.
-- `full_audit.governance.public_sanitized_summary.json` - public-safe summary of the full audit posture.
-- `artifact_manifest.public_sanitized.json` - manifest for the strict-six public-safe governance package.
-- `governance.public_sanitized.zip` - inner public-safe strict-six governance package.
-- `boundary_proof_kit_manifest.public_sanitized.json` - outer kit manifest and checksum list.
+- `governance.public_sanitized.pdf` - primary six-page buyer/auditor proof brief.
+- `governance.sellable_lite.public_sanitized.pdf` - executive one-page proof brief.
+- `one_page_refusal_escalation_receipt.public_sanitized.pdf` - one-page no-bind receipt.
+- `ontoguard-layer-facts.pdf` - current public layer facts.
+- `buyer_portable.governance.public_sanitized.json` - buyer-readable machine summary.
+- `controlled_runtime_seam_summary.public_sanitized.json` - legacy filename retained; current execution-boundary/no-bind content.
+- `semantic_projection_summary.public_sanitized.json` - Decision API parity, projection, and governance-loading summary.
+- `decision_receipt.public_sanitized.json` - decision/no-bind/audit receipt summary.
+- `full_audit.governance.public_sanitized_summary.json` - public-safe full-audit summary.
+- `artifact_manifest.public_sanitized.json` - inner six-file package manifest.
+- `governance.public_sanitized.zip` - inner public-safe six-file package.
+- `boundary_proof_kit_manifest.public_sanitized.json` - outer kit manifest.
 
 ## Buyer reading order
 
@@ -89,6 +95,6 @@ This kit does not claim live model-weight mutation, production memory-write enfo
 
 ## Source run references
 
-- Single-event source trace: `678a7599-4cc3-4112-9818-0831673ba270`
-- Batch source: `corr_batch_e4ea21a3a007`
-- Generated for public replacement: `2026-07-07T20:30:05Z`
+- Single-event source trace: `a30db149-e2c4-4001-a7f8-694ceb64af9a`
+- Batch source: `corr_batch_af700a1eb8c1`
+- Public replacement generated: `2026-07-11T19:11:01Z`

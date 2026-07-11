@@ -1,37 +1,40 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v4-current-maturity-execution-boundary-strict-six-batch-dap",
-  "generated_at_utc": "2026-07-07T20:30:05Z",
+  "kit_version": "v4-current-maturity-governed-event-lifecycle-truth-consistency",
+  "generated_at_utc": "2026-07-11T19:11:01Z",
   "source_runs": {
-    "single_event_trace_id": "678a7599-4cc3-4112-9818-0831673ba270",
-    "single_event_source_zip": "678a7599-4cc3-4112-9818-0831673ba270.governance(2).zip",
-    "batch_id": "corr_batch_e4ea21a3a007",
-    "batch_source_zip": "corr_batch_e4ea21a3a007.governance(2).zip",
+    "single_event_trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
+    "single_event_source_zip": "a30db149-e2c4-4001-a7f8-694ceb64af9a.governance.zip",
+    "single_event_source_zip_sha256": "0428d40ab69f952b69877f1b413cd752df4d900b6d499fa95b8590cb52b5293e",
+    "batch_id": "corr_batch_af700a1eb8c1",
+    "batch_source_zip": "corr_batch_af700a1eb8c1.governance.zip",
+    "batch_source_zip_sha256": "02a680f4ebc90030c1493c90a841ee03351b937623423824cebaf9f99c60a186",
     "public_sample_scope": "website_public_sanitized_summary"
   },
   "public_sanitized": true,
   "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
   "public_safety_boundaries": [
     "No source code or protected implementation logic.",
-    "No private ontology internals, raw legal/citation registries, or protected scoring formulas.",
-    "No customer data; public summaries are representative/synthetic or public-safe sanitized proof surfaces.",
-    "Controlled event-level/no-bind proof is shown; production L5 non-bypassability is not asserted.",
-    "Batch DAP is presented as controlled-corridor aggregate proof, not production endpoint enforcement.",
-    "Public summaries preserve proof posture without exposing internal algorithms."
+    "No private ontology internals, raw legal/citation registries, protected scoring formulas, or customer data.",
+    "The single-event proof is a public-safe sanitized financial-services governance case.",
+    "The controlled batch is a synthetic controlled-corridor proof surface and not customer production data.",
+    "Event-level execution-boundary and no-bind proof is shown; production L5 non-bypassability is not asserted.",
+    "Learning signals are review-gated candidates; no live training, model-weight update, ontology mutation, policy mutation, or Decision API mutation is performed."
   ],
   "summary_type": "execution_boundary_no_bind_summary_public_sanitized",
-  "legacy_filename_note": "This replaces controlled_runtime_seam_summary.public_sanitized.json but uses the current preferred name Execution Boundary + No-Bind Proof in the content.",
+  "legacy_filename_note": "The legacy filename is retained. Content uses the current preferred name Execution Boundary + No-Bind Proof and the canonical governed-event lifecycle.",
   "what_this_proves": [
-    "A governed AI output attempted to move toward an output-release route.",
-    "OntoGuard was invoked before release.",
-    "Release conditions failed, so autonomous output release was refused.",
-    "No protected downstream effect formed.",
-    "A no-bind receipt was generated and hash-bound.",
-    "The current public maturity label is L1+ event-governed no-bind proof, not production L5 non-bypassability.",
-    "Batch DAP / Controlled Corridor Mode is available as aggregate proof across multiple governed cases."
+    "The proposed business movement was identified before release.",
+    "OntoGuard returned the authoritative Decision API action ESCALATE.",
+    "Release was withheld before a protected downstream effect formed.",
+    "A no-bind receipt and route-maturity record were attached.",
+    "The canonical eight-stage governed-event lifecycle is present in the DAP.",
+    "The controlled batch preserves ALLOW, BLOCK, and ESCALATE per-case outcomes and quarantines stale legacy mirrors.",
+    "Production L5 non-bypassability is not asserted."
   ],
   "single_event_execution_boundary": {
     "attempted_movement": "AI_OUTPUT_RELEASE",
+    "movement_description": "AI-generated output attempted to move toward reviewer/customer-facing release.",
     "control_point": "DIRECT_BACKEND_GOVERNANCE",
     "gate_mode": "SHADOW_MODE",
     "gate_invoked_before_release": true,
@@ -53,7 +56,13 @@
     "downstream_commit_status": "NOT_COMMITTED",
     "protected_effect_formed": false,
     "no_bind_status": "NO_PROTECTED_EFFECT_FORMED",
-    "no_bind_receipt_hash": "1834e98f539b90150d86cd52b221f268364e966bb13f9cd9bc2fba41030501ee",
+    "no_bind_receipt_id": "receipt_a6f03f1bc8bdab8d",
+    "no_bind_receipt_hashes": {
+      "decision_api_hash": "07aa43e874dae81e41e7a01d68f2d8c2271c7872d8cd877022804adc090a436b",
+      "evidence_pack_hash": "4d8828f73b9a1a5ec08ebbb882dc91a521963b174f6902602f5b14b0c9402f12",
+      "manifest_hash": "020132d0821cc0a83b3769d9b0d2ac3b2732535e72e379248baebee3c523d3c4",
+      "source_output_hash": "6eedaaf42bfc4f07faeb4b56bc89460e9027231d107659fae5dd97edcaed0172"
+    },
     "limitations": [
       "ROUTE_INVENTORY_NOT_ATTACHED",
       "SHADOW_MODE_DOES_NOT_ASSERT_PRODUCTION_ENFORCEMENT",
@@ -65,9 +74,11 @@
     "release_authorized": false,
     "release_status": "WITHHELD_PENDING_REVIEW",
     "routed_to": "HUMAN_REVIEW",
-    "business_effect": "Autonomous release withheld pending review.",
-    "contract_pass": true,
+    "business_effect": "Autonomous release was withheld before a protected downstream effect formed.",
+    "primary_reason": "Release withheld by Decision API pending review.",
+    "required_next_action": "Human owner must review before release.",
     "benchmark_pass": false,
+    "policy_pass": true,
     "strict_autonomous_release_gate_pass": false,
     "public_route_maturity_label": "L1+ event-governed no-bind proof",
     "raw_route_maturity_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
@@ -88,27 +99,178 @@
       "CHANGED_CONDITION_REPLAY_NOT_PASSED"
     ]
   },
+  "single_event_governed_event_lifecycle": {
+    "canonical_json_pointer": "/decision_authorization_packet/governed_event_lifecycle",
+    "control_asset_status": "ESCALATE_WITH_WITHHELD_PENDING_REVIEW",
+    "decision_api_authoritative": true,
+    "decision_api_mutated": false,
+    "derived_only": true,
+    "learning_asset_status": "CANDIDATE_GENERATED",
+    "packet_mode": "SINGLE_DECISION",
+    "proof_asset_status": "NO_PROTECTED_EFFECT_FORMED",
+    "release_truth_mutated": false,
+    "schema_version": "ontoguard.governed_event_lifecycle@1.0.0",
+    "stage_count": 8,
+    "stages": [
+      {
+        "buyer_value": "AI-generated Investment Management portfolio construction recommendation governance withheld pending governed review",
+        "label": "Attempt",
+        "limitations": [],
+        "source_pointer": "/decision_authorization_packet/proposed_state_transition",
+        "stage_key": "attempt",
+        "stage_number": 1,
+        "status": "COMPLETE"
+      },
+      {
+        "buyer_value": "Investment Management portfolio construction recommendation governance",
+        "label": "Interpretation",
+        "limitations": [],
+        "source_pointer": "/decision_authorization_packet/semantic_state_snapshot",
+        "stage_key": "interpretation",
+        "stage_number": 2,
+        "status": "SNAPSHOT_CAPTURED"
+      },
+      {
+        "buyer_value": "Explains whether the proposed movement was admissible for autonomous release or required review.",
+        "label": "Admissibility",
+        "limitations": [],
+        "source_pointer": "/decision_authorization_packet/decision_admissibility",
+        "stage_key": "admissibility",
+        "stage_number": 3,
+        "status": "INADMISSIBLE_FOR_AUTONOMOUS_RELEASE_PENDING_REVIEW"
+      },
+      {
+        "buyer_value": "Decision API result: ESCALATE",
+        "label": "Authorization",
+        "limitations": [],
+        "source_pointer": "/decision_authorization_packet/decision_api",
+        "stage_key": "authorization",
+        "stage_number": 4,
+        "status": "ESCALATE"
+      },
+      {
+        "buyer_value": "Release authorized=False; routed_to=HUMAN_REVIEW",
+        "label": "Release Control",
+        "limitations": [],
+        "source_pointer": "/decision_authorization_packet/release_control",
+        "stage_key": "release_control",
+        "stage_number": 5,
+        "status": "WITHHELD_PENDING_REVIEW"
+      },
+      {
+        "buyer_value": "Autonomous release was withheld before downstream protected effect formation.",
+        "label": "Consequence Proof",
+        "limitations": [
+          "Production non-bypassability is not asserted unless production route evidence is attached."
+        ],
+        "source_pointer": "/decision_authorization_packet/execution_boundary_trace",
+        "stage_key": "consequence_proof",
+        "stage_number": 6,
+        "status": "NO_PROTECTED_EFFECT_FORMED"
+      },
+      {
+        "buyer_value": "Shows whether the human-review route is open, pending, or closed by an actual reviewer outcome.",
+        "label": "Human Closure",
+        "limitations": [],
+        "source_pointer": "/decision_authorization_packet/outcome_closure",
+        "stage_key": "human_closure",
+        "stage_number": 7,
+        "status": "PENDING"
+      },
+      {
+        "buyer_value": "Buyer-visible L3 candidate only; no training, weight update, ontology mutation, policy mutation, benchmark mutation, retrieval mutation, or Decision API mutation is performed.",
+        "label": "Learning Signal",
+        "limitations": [
+          "No live training, model-weight mutation, ontology mutation, or policy mutation was performed."
+        ],
+        "source_pointer": "/decision_authorization_packet/improvement_signals/training_signal_export",
+        "stage_key": "learning_signal",
+        "stage_number": 8,
+        "status": "CANDIDATE_GENERATED"
+      }
+    ],
+    "status": "COMPLETE_WITH_PENDING_HUMAN_CLOSURE"
+  },
   "batch_execution_boundary_summary": {
     "control_point": "CONTROLLED_CORRIDOR_BATCH_GOVERNANCE",
     "gate_mode": "CONTROLLED_CORRIDOR_BATCH",
+    "attempted_movement": "batch case outputs attempted to enter a buyer-facing release artifact",
+    "decision": "BLOCK",
+    "release_status": "WITHHELD_PENDING_REVIEW",
     "failed_conditions": [
       "BATCH_HAS_BLOCK_ESCALATE_OR_WITHHELD_CASES"
     ],
     "downstream_commit_status": "NOT_COMMITTED_IN_CONTROLLED_BATCH_ARTIFACT",
-    "protected_effect_formed": false
+    "protected_effect_formed": false,
+    "no_bind_status": "NO_PROTECTED_EFFECT_FORMED_OR_NOT_ASSERTED_PER_CASE"
   },
   "batch_no_bind_summary": {
     "no_bind_status": "NO_PROTECTED_EFFECT_FORMED_OR_NOT_ASSERTED_PER_CASE",
     "no_bind_reason": "Controlled batch artifact does not perform downstream commits; inspect per-case no-bind status.",
     "downstream_commit_status": "NOT_COMMITTED_IN_CONTROLLED_BATCH_ARTIFACT",
     "limitations": [
-      "Aggregate no-bind is a controlled-corridor artifact summary, not production endpoint proof."
+      "Production route enforcement and non-bypassability are not asserted by aggregate batch artifact."
+    ]
+  },
+  "batch_case_authority_consistency": {
+    "visible_case_decision_mirrors_normalized": true,
+    "allow_case_visible_action": "ALLOW",
+    "block_case_visible_action": "BLOCK",
+    "stale_source_mirrors_quarantined_count": 2,
+    "buyer_raw_legacy_mirrors_exposed": false,
+    "case_records": [
+      {
+        "case_id": "case_001",
+        "workflow": "Finance / investment and lending recommendation authorization",
+        "decision": "ESCALATE",
+        "release_authorized": false,
+        "release_status": "WITHHELD_PENDING_REVIEW",
+        "routed_to": "HUMAN_REVIEW",
+        "visible_decision_api_action": "ESCALATE",
+        "decision_mirror_status": "MATCHED",
+        "formal_governance_artifact": false,
+        "public_full_audit_pointer": "/x-corridor_batch/cases/0"
+      },
+      {
+        "case_id": "case_002",
+        "workflow": "Finance / internal advisor preparation summary",
+        "decision": "ALLOW",
+        "release_authorized": true,
+        "release_status": "AUTHORIZED_INTERNAL_ONLY",
+        "routed_to": "AUTHORIZED_INTERNAL_USE",
+        "visible_decision_api_action": "ALLOW",
+        "decision_mirror_status": "STALE_SOURCE_QUARANTINED",
+        "formal_governance_artifact": false,
+        "public_full_audit_pointer": "/x-corridor_batch/cases/1"
+      },
+      {
+        "case_id": "case_003",
+        "workflow": "Healthcare / mental health clinical support authorization",
+        "decision": "BLOCK",
+        "release_authorized": false,
+        "release_status": "BLOCKED",
+        "routed_to": "HUMAN_REVIEW",
+        "visible_decision_api_action": "BLOCK",
+        "decision_mirror_status": "STALE_SOURCE_QUARANTINED",
+        "formal_governance_artifact": false,
+        "public_full_audit_pointer": "/x-corridor_batch/cases/2"
+      },
+      {
+        "case_id": "case_004",
+        "workflow": "Healthcare / clinician-facing intake summarization",
+        "decision": "ESCALATE",
+        "release_authorized": false,
+        "release_status": "WITHHELD_PENDING_REVIEW",
+        "routed_to": "HUMAN_REVIEW",
+        "visible_decision_api_action": "ESCALATE",
+        "decision_mirror_status": "MATCHED",
+        "formal_governance_artifact": false,
+        "public_full_audit_pointer": "/x-corridor_batch/cases/3"
+      }
     ]
   },
   "honest_limitations": [
-    "Production L5 non-bypassability is not asserted.",
-    "Real downstream endpoint token checks require customer route integration.",
-    "Outcome closure remains pending human review in the representative single-event proof.",
-    "Batch artifact is an aggregate controlled-corridor proof surface, not production endpoint enforcement."
+    "Shadow-mode or controlled-corridor proof does not establish production endpoint enforcement.",
+    "Production topology, token enforcement, bypass rejection, route pressure tests, changed-condition replay, and outcome closure require pilot evidence."
   ]
 }

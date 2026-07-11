@@ -1,26 +1,28 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v4-current-maturity-execution-boundary-strict-six-batch-dap",
-  "generated_at_utc": "2026-07-07T20:30:05Z",
+  "kit_version": "v4-current-maturity-governed-event-lifecycle-truth-consistency",
+  "generated_at_utc": "2026-07-11T19:11:01Z",
   "source_runs": {
-    "single_event_trace_id": "678a7599-4cc3-4112-9818-0831673ba270",
-    "single_event_source_zip": "678a7599-4cc3-4112-9818-0831673ba270.governance(2).zip",
-    "batch_id": "corr_batch_e4ea21a3a007",
-    "batch_source_zip": "corr_batch_e4ea21a3a007.governance(2).zip",
+    "single_event_trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
+    "single_event_source_zip": "a30db149-e2c4-4001-a7f8-694ceb64af9a.governance.zip",
+    "single_event_source_zip_sha256": "0428d40ab69f952b69877f1b413cd752df4d900b6d499fa95b8590cb52b5293e",
+    "batch_id": "corr_batch_af700a1eb8c1",
+    "batch_source_zip": "corr_batch_af700a1eb8c1.governance.zip",
+    "batch_source_zip_sha256": "02a680f4ebc90030c1493c90a841ee03351b937623423824cebaf9f99c60a186",
     "public_sample_scope": "website_public_sanitized_summary"
   },
   "public_sanitized": true,
   "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
   "public_safety_boundaries": [
     "No source code or protected implementation logic.",
-    "No private ontology internals, raw legal/citation registries, or protected scoring formulas.",
-    "No customer data; public summaries are representative/synthetic or public-safe sanitized proof surfaces.",
-    "Controlled event-level/no-bind proof is shown; production L5 non-bypassability is not asserted.",
-    "Batch DAP is presented as controlled-corridor aggregate proof, not production endpoint enforcement.",
-    "Public summaries preserve proof posture without exposing internal algorithms."
+    "No private ontology internals, raw legal/citation registries, protected scoring formulas, or customer data.",
+    "The single-event proof is a public-safe sanitized financial-services governance case.",
+    "The controlled batch is a synthetic controlled-corridor proof surface and not customer production data.",
+    "Event-level execution-boundary and no-bind proof is shown; production L5 non-bypassability is not asserted.",
+    "Learning signals are review-gated candidates; no live training, model-weight update, ontology mutation, policy mutation, or Decision API mutation is performed."
   ],
   "artifact_type": "boundary_proof_kit_manifest_public_sanitized",
-  "recommended_public_website_use": "Replace the public Boundary Proof Kit assets with this v4 set to align with the updated website maturity framing.",
+  "recommended_public_website_use": "Replace the existing public proof-kit assets at the same filenames and URLs.",
   "buyer_reading_order": [
     "governance.sellable_lite.public_sanitized.pdf",
     "one_page_refusal_escalation_receipt.public_sanitized.pdf",
@@ -31,89 +33,90 @@
     "semantic_projection_summary.public_sanitized.json"
   ],
   "proof_capabilities_showcased": [
-    "AI Output Risk Scan",
-    "Runtime Decision Authorization",
-    "Execution Boundary + No-Bind Proof",
-    "Strict-Six Offline Audit Credential",
-    "Batch Decision Authorization Packet / Controlled Corridor Mode",
-    "Semantic Projection / Coherent Governance Loading",
-    "ROI KPI Framework with Baseline-Required Dollar Calculations",
-    "Review-Gated Improvement and Training-Signal Export"
+    "governed-event lifecycle",
+    "Decision Authorization",
+    "execution-boundary proof",
+    "no-bind receipt",
+    "institutional admissibility",
+    "benchmark corpus identity",
+    "controlled-batch case authority consistency",
+    "strict-six offline audit credential",
+    "human closure",
+    "review-gated learning signal"
   ],
   "not_asserted": [
-    "Production L5 non-bypassability",
-    "Customer-specific benchmark baseline",
-    "Legal compliance guarantee",
-    "Autonomous release success",
-    "Live model-weight mutation",
-    "Hard-dollar ROI without buyer baselines",
-    "Source-code disclosure or protected implementation disclosure"
+    "production L5 non-bypassability",
+    "production endpoint enforcement",
+    "customer-specific benchmark",
+    "external industry benchmark",
+    "hard-dollar ROI without customer baselines",
+    "live training or runtime mutation"
   ],
   "files": [
     {
       "filename": "README_BOUNDARY_PROOF_KIT.md",
-      "bytes": 5431,
-      "sha256": "9701fb9a7b78d522075a9cfb2916c7d21bbe3ad3b31a1b49e759f32a2ce3762d"
+      "bytes": 5363,
+      "sha256": "d0e4e1364c66fa2765c45c050b4b4f9320859ed2fafc05f60a1ed01b4006ace5"
     },
     {
       "filename": "artifact_manifest.public_sanitized.json",
-      "bytes": 4150,
-      "sha256": "3c581a6ece597d53d609d2c7b3b83610c1f43448c827e5313f02702deec0bb63"
+      "bytes": 5036,
+      "sha256": "e227ba2a4f8d47b1d8cff4a8c41977705271643b6c6ddc455ff58cef83f1653e"
     },
     {
       "filename": "boundary_proof_kit_manifest.public_sanitized.json",
-      "bytes": 5052,
+      "bytes": 5328,
       "sha256": "SELF_EXCLUDED_PUBLIC_MANIFEST_HASH"
     },
     {
       "filename": "buyer_portable.governance.public_sanitized.json",
-      "bytes": 12884,
-      "sha256": "d169f94af891a8d96c19fab418a380ec49bc218502cfca6d9f7f8821027c8689"
+      "bytes": 26857,
+      "sha256": "5d7bea78b2574b8cf151053199c4c07663d38d74cee43ff4c5b9d2031a11e65c"
     },
     {
       "filename": "controlled_runtime_seam_summary.public_sanitized.json",
-      "bytes": 5622,
-      "sha256": "5a9949cd61b969732ce2bb24c01342bd50a5807ae3bdc46317ead51ccbaae64e"
+      "bytes": 12993,
+      "sha256": "abede328bc8b7c90d0781221dde31e3c33ff6d9cc1c6dc13cc4399a64e4ff64b"
     },
     {
       "filename": "decision_receipt.public_sanitized.json",
-      "bytes": 5436,
-      "sha256": "8f2aad0f6a6ef0ba90d2cdfeeff432f397e309532720b5c82cd06d2b921a5a15"
+      "bytes": 11006,
+      "sha256": "1ac04360b36b149f0b8551cce1b606714452e4dbaf21c59e699706802a6fa81e"
     },
     {
       "filename": "full_audit.governance.public_sanitized_summary.json",
-      "bytes": 32291,
-      "sha256": "5af276b5585221fbf43ca305e6a087720ecfc58a7bd39117e19e15c41d42eb01"
+      "bytes": 72147,
+      "sha256": "179178d553ed3907e3ae5245bd01e3e2045773f275ce70f1d5dbbd241c066307"
     },
     {
       "filename": "governance.public_sanitized.pdf",
-      "bytes": 11802,
-      "sha256": "03d08e6afd230ef1bf6abe95114b3b1bdddde3148813563fd743d19f3cc2a23e"
+      "bytes": 18614,
+      "sha256": "25a662cbac60210fc50e64912f08a047fb4de374ff1d6d2105189a3048aa8406"
     },
     {
       "filename": "governance.public_sanitized.zip",
-      "bytes": 24848,
-      "sha256": "21526ed962b113d384cbd9d54d909f80858ca971e0d6f472672ddd2a1ff61389"
+      "bytes": 42207,
+      "sha256": "48748db3e81396b204732be8a7fb021b350bea76d458dd6d8c1b3f201446cee5"
     },
     {
       "filename": "governance.sellable_lite.public_sanitized.pdf",
-      "bytes": 3094,
-      "sha256": "13c69edce44be9eb48bc4cd1bf0d640c4c42f787985d709f8f22fbc50ad8accf"
+      "bytes": 5144,
+      "sha256": "eefda81fd44cec54adb40b119a5e5c743c1b7f09b10af2cbb157c5dd2301d606"
     },
     {
       "filename": "one_page_refusal_escalation_receipt.public_sanitized.pdf",
-      "bytes": 2943,
-      "sha256": "69179b604cb0586c8f3b3381f8fc7415f23f66515809b0e105e36d40e6899b8d"
+      "bytes": 4849,
+      "sha256": "d4b2cff6e706912c3f57a9c38a7aa7065421ee9a5865282ac2d8f34415d14d19"
     },
     {
       "filename": "ontoguard-layer-facts.pdf",
-      "bytes": 3144,
-      "sha256": "2f2a0fd30365cd0b25255007ba20f16cfad579f34d1ca16e2062bcf5a5624fbb"
+      "bytes": 3300,
+      "sha256": "84c8b69abf1776eeb7b402718a7ff5d8b1198d9074cfc7a43ff0e2da1b16b034"
     },
     {
       "filename": "semantic_projection_summary.public_sanitized.json",
-      "bytes": 4590,
-      "sha256": "6eb1f88a10135f65ccd5871aae488ff87c6abbeac0a9fcd0734634c1c3c20826"
+      "bytes": 4779,
+      "sha256": "e71ce74e6cd15247eddaa486e4ab3feb5bdfc66af742e5bdf2f5542431e275b6"
     }
   ],
   "manifest_self_hash_policy": "boundary_proof_kit_manifest.public_sanitized.json is self-excluded for its own hash entry; use CHECKSUMS.sha256 for external file-byte hashes."

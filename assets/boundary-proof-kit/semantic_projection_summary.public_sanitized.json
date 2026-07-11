@@ -1,31 +1,34 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v4-current-maturity-execution-boundary-strict-six-batch-dap",
-  "generated_at_utc": "2026-07-07T20:30:05Z",
+  "kit_version": "v4-current-maturity-governed-event-lifecycle-truth-consistency",
+  "generated_at_utc": "2026-07-11T19:11:01Z",
   "source_runs": {
-    "single_event_trace_id": "678a7599-4cc3-4112-9818-0831673ba270",
-    "single_event_source_zip": "678a7599-4cc3-4112-9818-0831673ba270.governance(2).zip",
-    "batch_id": "corr_batch_e4ea21a3a007",
-    "batch_source_zip": "corr_batch_e4ea21a3a007.governance(2).zip",
+    "single_event_trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
+    "single_event_source_zip": "a30db149-e2c4-4001-a7f8-694ceb64af9a.governance.zip",
+    "single_event_source_zip_sha256": "0428d40ab69f952b69877f1b413cd752df4d900b6d499fa95b8590cb52b5293e",
+    "batch_id": "corr_batch_af700a1eb8c1",
+    "batch_source_zip": "corr_batch_af700a1eb8c1.governance.zip",
+    "batch_source_zip_sha256": "02a680f4ebc90030c1493c90a841ee03351b937623423824cebaf9f99c60a186",
     "public_sample_scope": "website_public_sanitized_summary"
   },
   "public_sanitized": true,
   "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
   "public_safety_boundaries": [
     "No source code or protected implementation logic.",
-    "No private ontology internals, raw legal/citation registries, or protected scoring formulas.",
-    "No customer data; public summaries are representative/synthetic or public-safe sanitized proof surfaces.",
-    "Controlled event-level/no-bind proof is shown; production L5 non-bypassability is not asserted.",
-    "Batch DAP is presented as controlled-corridor aggregate proof, not production endpoint enforcement.",
-    "Public summaries preserve proof posture without exposing internal algorithms."
+    "No private ontology internals, raw legal/citation registries, protected scoring formulas, or customer data.",
+    "The single-event proof is a public-safe sanitized financial-services governance case.",
+    "The controlled batch is a synthetic controlled-corridor proof surface and not customer production data.",
+    "Event-level execution-boundary and no-bind proof is shown; production L5 non-bypassability is not asserted.",
+    "Learning signals are review-gated candidates; no live training, model-weight update, ontology mutation, policy mutation, or Decision API mutation is performed."
   ],
   "summary_type": "semantic_projection_summary_public_sanitized",
   "what_this_proves": [
-    "OntoGuard preserves the authoritative Decision API result while adding a semantic explanation layer.",
-    "Semantic projection explains candidate states without mutating release status, routing, evidence, risk, policy, trace, or trust.",
-    "Coherent Governance Loading explains whether evidence, policy, benchmark, risk, uncertainty, trace, and trust are aligned enough for release.",
-    "Observer views reorganize the same canonical packet for executive, reviewer, and technical audiences.",
-    "Batch DAP summarizes aggregate projection posture while preserving per-case depth in full_audit."
+    "The Decision API remains authoritative.",
+    "Semantic projection and Decision Projection explain candidate states without overriding the selected authorized state.",
+    "The current selected projection matches the Decision API action ESCALATE.",
+    "Underlying score preference divergence is disclosed separately from Decision API parity.",
+    "Coherent Governance Loading explains why the autonomous release threshold was not met.",
+    "Batch projection preserves per-case outcomes and summarizes mixed controlled-corridor posture."
   ],
   "single_event_semantic_projection": {
     "status": "COMPLETE",
@@ -36,53 +39,58 @@
     ],
     "selected_projection": "ESCALATE",
     "decision_api_action": "ESCALATE",
+    "decision_api_parity": "MATCH",
     "state_scores": {
-      "ALLOW": 0.6423458143999999,
-      "BLOCK": 0.287790376,
-      "ESCALATE": 0.578321084
+      "ALLOW": 0.6422329888,
+      "BLOCK": 0.287840152,
+      "ESCALATE": 0.578354268
     },
-    "projection_confidence": 0.578321084,
-    "projection_disagreement": true,
-    "projection_disagreement_detail": {
-      "decision_api_action_preserved": "ESCALATE",
-      "highest_scoring_projection": "ALLOW",
-      "non_mutation_proof": {
-        "benchmark_preserved": true,
-        "citation_preserved": true,
-        "decision_api_action_preserved": true,
-        "evidence_preserved": true,
-        "policy_preserved": true,
-        "release_state_preserved": true,
-        "risk_preserved": true,
-        "routing_preserved": true,
-        "trace_preserved": true,
-        "trust_preserved": true
-      },
-      "override_performed": false,
-      "selected_projection": "ESCALATE",
-      "why_decision_api_remained_authoritative": "Decision projection is explanatory only and cannot override the Decision API; release, routing, trust, risk, benchmark, policy, citation, evidence, and trace truth remain authoritative from the final packet."
-    },
+    "projection_confidence": 0.578354268,
+    "projection_margin": 0.0,
+    "underlying_score_preference_divergence": true,
+    "highest_scoring_candidate": "ALLOW",
+    "override_performed": false,
     "coherent_governance_loading": {
       "status": "COMPLETE",
-      "coherent_loading_score": 0.38745000000000007,
-      "coherent_loading_tier": "WEAK",
+      "score": 0.38745000000000007,
+      "tier": "WEAK",
       "release_threshold_met": false,
-      "interpretation": "Governance channel is not coherently loaded enough for autonomous release; review or additional evidence remains required."
+      "weakest_components": [
+        "evidence_coverage",
+        "citation_linkage",
+        "human_judgment_readiness"
+      ],
+      "missing_components": [
+        "evidence_pack",
+        "citation_linkage"
+      ]
     },
-    "read_only_policy": "Semantic projection is explanatory and does not override or mutate the authoritative Decision API outcome."
+    "read_only_policy": "Projection and governance loading explain the authoritative Decision API result; they do not mutate decision, release, trust, risk, benchmark, policy, evidence, routing, citations, or trace."
   },
   "batch_semantic_projection_public_summary": {
     "status": "ATTACHED_AGGREGATE_WITH_LIMITATIONS",
     "case_count": 4,
-    "selected_projection_basis": [
-      "release_authorization_false",
-      "protected_effect_not_allowed",
-      "authority_or_evidence_gap"
-    ],
+    "selected_projection": "BLOCK",
+    "aggregate_decision_api_action": "BLOCK",
+    "projection_distribution": {
+      "ALLOW": 1,
+      "BLOCK": 1,
+      "ESCALATE": 2
+    },
+    "decision_api_parity": "MATCH",
     "highest_risk_projection": "ESCALATE",
     "full_detail_location": "full_audit.governance.json",
-    "buyer_summary": "Semantic Projection summarizes what governed outcomes the controlled batch attempted and why the aggregate selected state won without overriding per-case Decision API outcomes."
+    "buyer_summary": "Semantic Projection summarizes what governed outcomes the controlled batch attempted and why the aggregate selected state won without overriding per-case Decision API outcomes.",
+    "limitations": [
+      "This aggregate readout summarizes governed controlled test cases. It does not claim production deployment, client-specific operating policy, measured reviewer compression, measured loss prevention, or automatic model retraining until pilot feedback is attached."
+    ]
   },
-  "mutation_policy": "READ_ONLY_EXPLANATORY",
-  "decision_api_preservation_statement": "Decision API remains authoritative; semantic projection never turns a withheld or escalated output into an autonomous release."
+  "mutation_policy": {
+    "live_training_performed": false,
+    "model_update_performed": false,
+    "ontology_mutation_performed": false,
+    "policy_mutation_performed": false,
+    "decision_api_mutated": false
+  },
+  "decision_api_preservation_statement": "Projection is explanatory only. The authoritative Decision API action, release authorization, routing, no-bind result, and evidence state are preserved."
 }

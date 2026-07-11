@@ -1,29 +1,31 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v4-current-maturity-execution-boundary-strict-six-batch-dap",
-  "generated_at_utc": "2026-07-07T20:30:05Z",
+  "kit_version": "v4-current-maturity-governed-event-lifecycle-truth-consistency",
+  "generated_at_utc": "2026-07-11T19:11:01Z",
   "source_runs": {
-    "single_event_trace_id": "678a7599-4cc3-4112-9818-0831673ba270",
-    "single_event_source_zip": "678a7599-4cc3-4112-9818-0831673ba270.governance(2).zip",
-    "batch_id": "corr_batch_e4ea21a3a007",
-    "batch_source_zip": "corr_batch_e4ea21a3a007.governance(2).zip",
+    "single_event_trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
+    "single_event_source_zip": "a30db149-e2c4-4001-a7f8-694ceb64af9a.governance.zip",
+    "single_event_source_zip_sha256": "0428d40ab69f952b69877f1b413cd752df4d900b6d499fa95b8590cb52b5293e",
+    "batch_id": "corr_batch_af700a1eb8c1",
+    "batch_source_zip": "corr_batch_af700a1eb8c1.governance.zip",
+    "batch_source_zip_sha256": "02a680f4ebc90030c1493c90a841ee03351b937623423824cebaf9f99c60a186",
     "public_sample_scope": "website_public_sanitized_summary"
   },
   "public_sanitized": true,
   "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
   "public_safety_boundaries": [
     "No source code or protected implementation logic.",
-    "No private ontology internals, raw legal/citation registries, or protected scoring formulas.",
-    "No customer data; public summaries are representative/synthetic or public-safe sanitized proof surfaces.",
-    "Controlled event-level/no-bind proof is shown; production L5 non-bypassability is not asserted.",
-    "Batch DAP is presented as controlled-corridor aggregate proof, not production endpoint enforcement.",
-    "Public summaries preserve proof posture without exposing internal algorithms."
+    "No private ontology internals, raw legal/citation registries, protected scoring formulas, or customer data.",
+    "The single-event proof is a public-safe sanitized financial-services governance case.",
+    "The controlled batch is a synthetic controlled-corridor proof surface and not customer production data.",
+    "Event-level execution-boundary and no-bind proof is shown; production L5 non-bypassability is not asserted.",
+    "Learning signals are review-gated candidates; no live training, model-weight update, ontology mutation, policy mutation, or Decision API mutation is performed."
   ],
   "artifact_type": "artifact_manifest_public_sanitized",
-  "package_policy": "PUBLIC_SANITIZED_PROOF_KIT_WITH_INNER_SIX_FILE_GOVERNANCE_PACKET",
-  "inner_governance_zip_policy": "six public-safe files; not raw production package",
-  "trace_id": "678a7599-4cc3-4112-9818-0831673ba270",
-  "batch_id": "corr_batch_e4ea21a3a007",
+  "package_policy": "PUBLIC_SANITIZED_SIX_FILE_GOVERNANCE_ZIP",
+  "inner_governance_zip_policy": "Six replacement-compatible public files; public summary package, not the private strict-six source artifact.",
+  "trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
+  "batch_id": "corr_batch_af700a1eb8c1",
   "strict_six_public_files": [
     "buyer_portable.governance.public_sanitized.json",
     "full_audit.governance.public_sanitized_summary.json",
@@ -33,48 +35,63 @@
     "artifact_manifest.public_sanitized.json"
   ],
   "current_maturity_summary": {
-    "product_identity": "Semantic Control Plane for runtime authorization of proposed AI-driven state transitions.",
-    "core_decision_api": "ALLOW / BLOCK / ESCALATE before consequence.",
+    "product_identity": "AI Semantic Control Plane / Decision Authorization Infrastructure",
+    "core_decision_api": "ALLOW / BLOCK / ESCALATE",
+    "canonical_governed_event_lifecycle": "ATTACHED_EIGHT_STAGE_DAP_OBJECT",
     "single_event_public_label": "L1+ event-governed no-bind proof",
     "single_event_raw_route_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
     "single_event_route_completeness_level": "L1_EVENT_GOVERNED_NO_BIND_PARTIAL",
     "single_event_production_enforcement_asserted": false,
     "single_event_non_bypassable": "NOT_ASSERTED_IN_SHADOW_MODE",
-    "batch_public_label": "Batch DAP / Controlled Corridor Mode",
+    "batch_public_label": "Controlled Corridor aggregate Batch DAP",
     "batch_raw_route_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
     "batch_production_enforcement_asserted": false,
-    "strict_six_status": "available for single-event and controlled batch packages",
-    "roi_status": "buyer-safe KPI framework with baseline-required hard-dollar calculations"
+    "strict_six_status": "PASS_FINAL_ZIP_BYTES_VERIFIED",
+    "benchmark_corpus_identity": "INTERNAL_ONTOGUARD_SYNTHETIC_REFERENCE_2026",
+    "controlled_batch_case_authority": "VISIBLE_CASE_DECISION_MIRRORS_NORMALIZED; STALE_INPUTS_QUARANTINED",
+    "single_harness": {
+      "passes": 6748,
+      "warnings": 0,
+      "failures": 0,
+      "source_log": "post_harness_after_frontend_corridor_upload_guard_20260711_180549.log"
+    },
+    "batch_harness": {
+      "passes": 1962,
+      "warnings": 0,
+      "failures": 0,
+      "source_log": "post_harness_after_frontend_corridor_upload_guard_batch_20260711_181934.log"
+    },
+    "roi_status": "BASELINE_REQUIRED; NO_HARD_DOLLAR_ROI_CALCULATED"
   },
   "files": [
     {
       "filename": "buyer_portable.governance.public_sanitized.json",
-      "bytes": 12884,
-      "sha256": "d169f94af891a8d96c19fab418a380ec49bc218502cfca6d9f7f8821027c8689"
+      "bytes": 26857,
+      "sha256": "5d7bea78b2574b8cf151053199c4c07663d38d74cee43ff4c5b9d2031a11e65c"
     },
     {
       "filename": "full_audit.governance.public_sanitized_summary.json",
-      "bytes": 32291,
-      "sha256": "5af276b5585221fbf43ca305e6a087720ecfc58a7bd39117e19e15c41d42eb01"
+      "bytes": 72147,
+      "sha256": "179178d553ed3907e3ae5245bd01e3e2045773f275ce70f1d5dbbd241c066307"
     },
     {
       "filename": "governance.public_sanitized.pdf",
-      "bytes": 11802,
-      "sha256": "03d08e6afd230ef1bf6abe95114b3b1bdddde3148813563fd743d19f3cc2a23e"
+      "bytes": 18614,
+      "sha256": "25a662cbac60210fc50e64912f08a047fb4de374ff1d6d2105189a3048aa8406"
     },
     {
       "filename": "governance.sellable_lite.public_sanitized.pdf",
-      "bytes": 3094,
-      "sha256": "13c69edce44be9eb48bc4cd1bf0d640c4c42f787985d709f8f22fbc50ad8accf"
+      "bytes": 5144,
+      "sha256": "eefda81fd44cec54adb40b119a5e5c743c1b7f09b10af2cbb157c5dd2301d606"
     },
     {
       "filename": "decision_receipt.public_sanitized.json",
-      "bytes": 5436,
-      "sha256": "8f2aad0f6a6ef0ba90d2cdfeeff432f397e309532720b5c82cd06d2b921a5a15"
+      "bytes": 11006,
+      "sha256": "1ac04360b36b149f0b8551cce1b606714452e4dbaf21c59e699706802a6fa81e"
     },
     {
       "filename": "artifact_manifest.public_sanitized.json",
-      "bytes": 4137,
+      "bytes": 5033,
       "sha256": "SELF_EXCLUDED_PUBLIC_MANIFEST_HASH"
     }
   ],
