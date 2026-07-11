@@ -6,7 +6,7 @@
       "@id": "https://ontoguard.ai/#website",
       "name": "OntoGuard",
       "url": "https://ontoguard.ai/",
-      "description": "OntoGuard AI is a semantic control plane for runtime authorization of proposed AI-driven state transitions, with ALLOW/BLOCK/ESCALATE decisions, proof and diligence surfaces, financial-services sanitized proof case, execution-boundary trace, no-bind receipts, strict-six offline audit credentials, Batch DAP / Controlled Corridor Mode, route maturity, and runtime-safe improvement signals.",
+      "description": "OntoGuard governs the complete transaction through which AI outputs and proposed actions attempt to become business consequences, with interpretation, Decision Authorization, release control, consequence proof, human closure, and review-gated learning.",
       "inLanguage": "en-US",
       "dateModified": "2026-07-10",
       "datePublished": "2026-05-15",
@@ -40,7 +40,7 @@
       "@id": "https://ontoguard.ai/#webpage",
       "name": "OntoGuard AI | Runtime Decision Authorization",
       "url": "https://ontoguard.ai/",
-      "description": "OntoGuard authorizes proposed AI outputs and actions before enterprise consequence, returning ALLOW, BLOCK, or ESCALATE with portable proof.",
+      "description": "OntoGuard governs how AI outputs become business actions—interpreting intent, authorizing or escalating release, proving outcomes, and preserving review evidence.",
       "inLanguage": "en-US",
       "dateModified": "2026-07-10",
       "isPartOf": {
@@ -59,7 +59,7 @@
         "@id": "https://ontoguard.ai/#organization"
       },
       "url": "https://ontoguard.ai/",
-      "description": "A semantic control plane that returns ALLOW, BLOCK, or ESCALATE before a proposed AI movement becomes organizational consequence."
+      "description": "A semantic control plane that governs the complete transaction through which an AI output or proposed action attempts to become an organizational consequence."
     },
     {
       "@type": "DigitalDocument",
