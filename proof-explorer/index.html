@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Explore a Governed AI Decision | OntoGuard</title>
+<meta name="description" content="See an AI-proposed movement become an OntoGuard ALLOW, BLOCK, or ESCALATE decision, with release control, consequence proof, route maturity, and browser-verifiable public artifacts.">
+<link rel="canonical" href="https://ontoguard.ai/proof-explorer/">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta property="og:title" content="Explore a Governed AI Decision | OntoGuard">
+<meta property="og:description" content="Interactive public proof of Decision Authorization before AI action becomes organizational consequence.">
+<meta property="og:url" content="https://ontoguard.ai/proof-explorer/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png">
+<meta property="og:image:alt" content="OntoGuard Decision Authorization visual summary">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="proof-explorer.css?v=20260712-proof-explorer-v1">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"OntoGuard Governed Decision Proof Explorer",
+  "url":"https://ontoguard.ai/proof-explorer/",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web",
+  "description":"Interactive public-safe demonstration of OntoGuard Decision Authorization, release control, consequence proof, route maturity, and proof-package verification.",
+  "provider":{"@type":"Organization","name":"OntoGuard AI","url":"https://ontoguard.ai/"},
+  "isAccessibleForFree":true,
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+}
+</script>
+<script defer data-domain="ontoguard.ai" src="https://plausible.io/js/script.js"></script>
+<script defer src="proof-explorer.js?v=20260712-proof-explorer-v1"></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to proof explorer</a>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand-link" href="/" aria-label="OntoGuard home"><img src="/assets/Brand.png" alt="" width="44" height="44"><span>OntoGuard AI</span></a>
+    <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+      <a href="/platform/">Platform</a><a href="/solutions/">Solutions</a><a href="/industries/">Industries</a><a href="/proof/" aria-current="page">Proof</a><a href="/partners/">Partners</a><a href="/resources/">Resources</a>
+    </nav>
+    <div class="nav-actions"><a class="btn btn-secondary" href="/proof/">Proof Hub</a><a class="btn btn-primary" href="/solutions/ai-output-risk-scan/">Request Risk Scan</a></div>
+  </div>
+</header>
+<main id="main-content">
+<section class="explorer-hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Interactive Decision Authorization Proof</p>
+      <h1>See what happens before an AI proposal becomes organizational consequence.</h1>
+      <p class="hero-copy">Choose a controlled case. OntoGuard identifies the attempted movement, tests admissibility, returns <strong>ALLOW, BLOCK, or ESCALATE</strong>, controls release, and shows what consequence formed—or did not form.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#decision-explorer">Explore a governed decision</a><a class="btn btn-secondary" href="#packet-verifier">Verify the public packet</a></div>
+      <p class="patent-line">Protected by U.S. Patent Application 19/444,521 — Track I prioritized examination granted May 2026.</p>
+    </div>
+    <div class="hero-proof-card" aria-label="Current public proof posture">
+      <div class="proof-pulse" aria-hidden="true"></div>
+      <p class="mini-label">PUBLIC PROOF POSTURE</p>
+      <strong>Controlled event-level proof</strong>
+      <dl><div><dt>Decision states</dt><dd>ALLOW · BLOCK · ESCALATE</dd></div><div><dt>Release control</dt><dd>Visible</dd></div><div><dt>Consequence proof</dt><dd>Visible</dd></div><div><dt>Packet verification</dt><dd>Browser-side</dd></div></dl>
+      <p class="microcopy">Synthetic/public-safe controlled examples. No customer data. Production L5 non-bypassability is not asserted.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cred-strip" aria-label="Proof explorer facts"><div class="container cred-grid"><span>Actual OntoGuard output fields</span><span>Public-safe controlled cases</span><span>PDF + JSON + receipt + manifest</span><span>No proprietary engine internals exposed</span></div></section>
+
+<section id="decision-explorer" class="section">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">1 · Choose the consequence boundary</p><h2>What is the AI trying to cause?</h2></div><p class="lead">Each card is a controlled case with a real OntoGuard decision surface. Select one to inspect the complete governed event.</p></div>
+    <div id="scenario-tabs" class="scenario-tabs" role="tablist" aria-label="Controlled proof scenarios"></div>
+
+    <div class="decision-workspace">
+      <article class="movement-card">
+        <div class="card-head"><div><p class="mini-label">ATTEMPTED MOVEMENT</p><h3 id="case-title">Loading proof data…</h3></div><span id="case-source" class="source-badge">Controlled case</span></div>
+        <p id="attempted-movement" class="movement-text"></p>
+        <div class="movement-meta"><div><span>Workflow</span><strong id="workflow-value">—</strong></div><div><span>Potential protected effect</span><strong id="protected-effect-value">—</strong></div></div>
+      </article>
+
+      <article id="decision-card" class="decision-card" aria-live="polite">
+        <p class="mini-label">AUTHORITATIVE DECISION API</p>
+        <div class="decision-lockup"><span id="decision-icon" aria-hidden="true">◆</span><strong id="decision-value">—</strong></div>
+        <dl class="decision-facts"><div><dt>Release authorized</dt><dd id="release-authorized">—</dd></div><div><dt>Release status</dt><dd id="release-status">—</dd></div><div><dt>Routed to</dt><dd id="routed-to">—</dd></div><div><dt>Gate result</dt><dd id="gate-result">—</dd></div></dl>
+        <button id="why-toggle" class="text-button" type="button" aria-expanded="false" aria-controls="why-panel">Why this decision?</button>
+      </article>
+    </div>
+
+    <div id="why-panel" class="why-panel" hidden>
+      <div><span>Authority</span><strong id="authority-status">—</strong></div><div><span>Evidence</span><strong id="evidence-status">—</strong></div><div><span>Route</span><strong id="route-status">—</strong></div><div class="why-reason"><span>Plain-English reason</span><strong id="decision-reason">—</strong></div>
+    </div>
+
+    <div class="lifecycle-wrap">
+      <div class="section-heading compact"><div><p class="eyebrow">2 · Governed Event Lifecycle</p><h2>One event. Eight controlled stages.</h2></div><p class="lead">The lifecycle connects business movement to authorization, proof, human closure, and learning.</p></div>
+      <ol id="lifecycle" class="lifecycle" aria-label="Eight-stage governed event lifecycle"></ol>
+    </div>
+
+    <div class="proof-grid">
+      <article class="proof-panel">
+        <div class="card-head"><div><p class="mini-label">CONSEQUENCE PROOF</p><h3>What formed—or did not form?</h3></div><span id="no-bind-chip" class="status-chip">—</span></div>
+        <dl class="proof-facts"><div><dt>Protected effect formed</dt><dd id="protected-effect-formed">—</dd></div><div><dt>Downstream commit</dt><dd id="downstream-commit">—</dd></div><div><dt>Authorization token</dt><dd id="authorization-token">—</dd></div><div><dt>Human review</dt><dd id="human-review-required">—</dd></div></dl>
+      </article>
+      <article class="proof-panel">
+        <div class="card-head"><div><p class="mini-label">ROUTE MATURITY</p><h3>How much enforcement evidence exists?</h3></div><span class="status-chip neutral">L1+</span></div>
+        <div class="maturity-track" aria-label="Route maturity L0 through L5"><span class="done">L0</span><span class="done">L1</span><span class="active">L1+</span><span>L2</span><span>L3</span><span>L4</span><span>L5</span></div>
+        <p id="route-maturity-copy">Event-level governance and no-bind proof are visible. Production route completeness requires customer integration evidence.</p>
+      </article>
+    </div>
+
+    <div class="asset-actions">
+      <a class="btn btn-primary" href="/assets/boundary-proof-kit/governance.public_sanitized.pdf" target="_blank" rel="noopener" data-track="Open Governance PDF">Open governance PDF</a>
+      <a class="btn btn-secondary" href="/assets/boundary-proof-kit/buyer_portable.governance.public_sanitized.json" target="_blank" rel="noopener" data-track="Open Buyer JSON">Inspect buyer JSON</a>
+      <a class="btn btn-secondary" href="/assets/boundary-proof-kit/decision_receipt.public_sanitized.json" target="_blank" rel="noopener" data-track="Open Decision Receipt">Inspect decision receipt</a>
+    </div>
+  </div>
+</section>
+
+<section id="batch-dashboard" class="section section-alt">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">3 · Controlled Batch Proof</p><h2>Four proposed movements. One conservative roll-up.</h2></div><p class="lead">The dashboard does not invent live activity. It visualizes a fixed, controlled batch and lets each number resolve to a case.</p></div>
+    <div class="batch-layout">
+      <article class="donut-card">
+        <div id="decision-donut" class="decision-donut" role="img" aria-label="Decision distribution: 25 percent allow, 50 percent escalate, 25 percent block"><div><strong id="batch-total" data-count="4">0</strong><span>cases</span></div></div>
+        <div class="legend"><button type="button" data-filter="ALLOW"><i class="allow"></i><span>ALLOW</span><strong id="allow-count" data-count="1">0</strong></button><button type="button" data-filter="ESCALATE"><i class="escalate"></i><span>ESCALATE</span><strong id="escalate-count" data-count="2">0</strong></button><button type="button" data-filter="BLOCK"><i class="block"></i><span>BLOCK</span><strong id="block-count" data-count="1">0</strong></button></div>
+      </article>
+      <article class="batch-metrics">
+        <div><span>Aggregate decision</span><strong id="aggregate-decision">BLOCK</strong><small>Conservative roll-up: any BLOCK controls the batch.</small></div>
+        <div><span>Autonomous batch release</span><strong id="aggregate-release">WITHHELD</strong><small>Release is authorized only when every case passes.</small></div>
+        <div><span>Human attention</span><strong id="review-count" data-count="3">0 of 4</strong><small>Cases routed to review or blocked.</small></div>
+        <div><span>Production enforcement</span><strong>NOT ASSERTED</strong><small>Controlled-corridor proof is not production L5.</small></div>
+      </article>
+    </div>
+    <div class="case-table-wrap">
+      <table class="case-table"><thead><tr><th>Case</th><th>Attempted consequence</th><th>Decision</th><th>Release</th><th>Proof</th></tr></thead><tbody id="case-table-body"></tbody></table>
+    </div>
+  </div>
+</section>
+
+<section id="packet-verifier" class="section">
+  <div class="container verifier-shell">
+    <div class="verifier-intro"><p class="eyebrow">4 · Browser-Side Verification</p><h2>Do not take the packet on faith.</h2><p class="lead">Run verification in your browser. The explorer fetches the public manifest and packet files, recomputes SHA-256 hashes locally, and checks decision parity between the buyer summary and receipt.</p><button id="verify-button" class="btn btn-primary" type="button">Run public packet verification</button><p class="microcopy">No files are uploaded. Verification occurs in the browser against public site assets.</p></div>
+    <article class="verifier-card" aria-live="polite">
+      <div class="verifier-status"><span id="verifier-icon">○</span><div><p class="mini-label">VERIFICATION STATUS</p><strong id="verifier-result">Not yet run</strong></div></div>
+      <div id="verification-progress" class="progress-track"><span></span></div>
+      <ul id="verification-list" class="verification-list"><li><span>Manifest loaded</span><strong>Pending</strong></li><li><span>Public file hashes</span><strong>Pending</strong></li><li><span>Decision parity</span><strong>Pending</strong></li><li><span>Release-status parity</span><strong>Pending</strong></li><li><span>No-bind parity</span><strong>Pending</strong></li></ul>
+      <p id="verification-note" class="microcopy">Hash verification proves byte integrity for listed public files. It is not a substitute for a separately configured external digital signature.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-heading"><div><p class="eyebrow">What this demonstration proves</p><h2>The execution product is visible. The protected engine stays protected.</h2></div></div>
+    <div class="boundary-grid"><article><h3>Visible</h3><ul><li>Attempted movement</li><li>ALLOW / BLOCK / ESCALATE</li><li>Release and routing state</li><li>Consequence / no-bind result</li><li>Lifecycle status</li><li>Packet and hash verification</li></ul></article><article><h3>Protected</h3><ul><li>Source code</li><li>Scoring formulas and thresholds</li><li>Ontology and semantic-routing internals</li><li>Private citation registries</li><li>Prompt chains and implementation logic</li><li>Customer and confidential data</li></ul></article><article><h3>Not claimed yet</h3><ul><li>Production L5 non-bypassability</li><li>Customer-specific policy authority</li><li>Closed reviewer outcome</li><li>Measured hard-dollar ROI without baselines</li><li>Live training or automatic model mutation</li><li>External signature unless configured</li></ul></article></div>
+  </div>
+</section>
+
+<section class="section final-cta"><div class="container"><p class="eyebrow">Move from public proof to your workflow</p><h2>Which AI-proposed movement should OntoGuard govern first?</h2><p class="lead">Start with 10–25 representative prompts, responses, outputs, or logs. No internal document upload is required for the first assessment.</p><div class="hero-actions"><a class="btn btn-primary" href="/solutions/ai-output-risk-scan/">Request an AI Output Risk Scan</a><a class="btn btn-secondary" href="/contact/">Discuss a controlled pilot</a><a class="text-link" href="/assets/boundary-proof-kit/OntoGuard_Boundary_Proof_Kit_Public_Sanitized.zip">Download complete public proof kit</a></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><strong>OntoGuard AI</strong><p>Decision Authorization before AI-driven movement becomes organizational consequence.</p></div><div><a href="/proof/">Proof Hub</a><a href="/partners/">Partners</a><a href="/contact/">Contact</a></div><div><p>Protected by U.S. Patent Application 19/444,521 — Track I prioritized examination granted May 2026.</p><p>© 2026 OntoGuard AI.</p></div></div></footer>
+<noscript><div class="noscript">JavaScript is required for the interactive case explorer and packet verifier. Public proof files remain available through the Proof Hub.</div></noscript>
+</body>
+</html>

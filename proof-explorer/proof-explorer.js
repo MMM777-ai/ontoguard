@@ -1,0 +1,56 @@
+(() => {
+'use strict';
+const state={data:null,selected:null,publicSummary:null};
+const $=(id)=>document.getElementById(id);
+const safe=(v,fallback='Not attached')=>v===null||v===undefined||v===''?fallback:String(v);
+const yn=(v)=>v===true?'YES':v===false?'NO':safe(v);
+const pretty=(v)=>safe(v).replaceAll('_',' ');
+const decisionClass=(d)=>String(d||'').toLowerCase();
+const assetBase='/assets/boundary-proof-kit/';
+const urls={
+ buyer:assetBase+'buyer_portable.governance.public_sanitized.json',
+ receipt:assetBase+'decision_receipt.public_sanitized.json',
+ manifest:assetBase+'artifact_manifest.public_sanitized.json',
+ seam:assetBase+'controlled_runtime_seam_summary.public_sanitized.json',
+ projection:assetBase+'semantic_projection_summary.public_sanitized.json'
+};
+function track(name,props={}){try{if(typeof window.plausible==='function')window.plausible(name,{props});else if(typeof window.trackClick==='function')window.trackClick(name);}catch(_){}}
+function statusIcon(decision){return decision==='ALLOW'?'✓':decision==='BLOCK'?'■':'↗'}
+function statusLabel(v){return pretty(v).replace(/\b\w/g,c=>c.toUpperCase())}
+async function getJSON(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error(`${r.status} ${url}`);return r.json()}
+async function loadData(){
+ const local=await getJSON('proof-explorer-data.json');state.data=local;
+ try{
+  const [buyer,seam,projection]=await Promise.all([getJSON(urls.buyer),getJSON(urls.seam),getJSON(urls.projection)]);
+  state.publicSummary={buyer,seam,projection};
+  const s=buyer.single_event_decision_summary||{};const e=buyer.execution_boundary_summary||seam.single_event_execution_boundary||{};
+  if(s.decision){Object.assign(state.data.single_event,{decision:s.decision,release_authorized:s.release_authorized,release_status:s.release_status,routed_to:s.routed_to,business_effect:s.business_effect,control_point:e.control_point||state.data.single_event.control_point,gate_mode:e.gate_mode||state.data.single_event.gate_mode,refused_operation:e.refused_operation||state.data.single_event.refused_operation,authorization_token_issued:e.authorization_token_issued,downstream_commit_status:e.downstream_commit_status,protected_effect_formed:e.protected_effect_formed,no_bind_status:e.no_bind_status,failed_conditions:e.failed_conditions||state.data.single_event.failed_conditions});}
+ }catch(err){console.info('Public proof summaries unavailable; using packaged fallback.',err)}
+ render();
+}
+function render(){renderTabs();selectCase(state.data.batch.cases[0].id);renderLifecycle();renderBatch();installInteractions();animateCounts();}
+function renderTabs(){const tabs=$('scenario-tabs');tabs.innerHTML='';state.data.batch.cases.forEach((c,i)=>{const b=document.createElement('button');b.type='button';b.className='scenario-tab';b.id=`tab-${c.id}`;b.role='tab';b.setAttribute('aria-selected',i===0?'true':'false');b.setAttribute('aria-controls','decision-card');b.dataset.caseId=c.id;b.innerHTML=`<span>${safe(c.sector,'Controlled')}</span><strong>${safe(c.short_name)}</strong><em class="${decisionClass(c.decision)}">${statusIcon(c.decision)} ${safe(c.decision)}</em>`;tabs.appendChild(b);});}
+function selectCase(id){const c=state.data.batch.cases.find(x=>x.id===id)||state.data.batch.cases[0];state.selected=c;document.querySelectorAll('.scenario-tab').forEach(t=>t.setAttribute('aria-selected',String(t.dataset.caseId===c.id)));$('case-title').textContent=c.short_name;$('case-source').textContent='Controlled synthetic case';$('attempted-movement').textContent=c.attempted_movement;$('workflow-value').textContent=c.workflow;$('protected-effect-value').textContent=c.protected_effect||'No protected effect should form from the AI output alone.';
+ const card=$('decision-card');card.className=`decision-card ${decisionClass(c.decision)}`;$('decision-icon').textContent=statusIcon(c.decision);$('decision-value').textContent=c.decision;$('release-authorized').textContent=yn(c.release_authorized);$('release-status').textContent=pretty(c.release_status);$('routed-to').textContent=pretty(c.routed_to);$('gate-result').textContent=pretty(c.gate_result);$('authority-status').textContent=pretty(c.authority_status);$('evidence-status').textContent=pretty(c.evidence_status);$('route-status').textContent=pretty(c.route_status);$('decision-reason').textContent=c.reason;$('no-bind-chip').textContent=pretty(c.no_bind_status);$('protected-effect-formed').textContent=yn(c.protected_effect_formed);$('downstream-commit').textContent=c.protected_effect_formed?'COMMITTED':'NOT COMMITTED';$('authorization-token').textContent=c.release_authorized?'LIMITED AUTHORIZATION':'NOT ISSUED';$('human-review-required').textContent=yn(c.human_review_required);track('Proof Explorer Case Selected',{case_id:c.id,decision:c.decision,sector:c.sector});}
+function renderLifecycle(){const stages=state.data.single_event.lifecycle||[];const ol=$('lifecycle');ol.innerHTML='';stages.forEach(s=>{const li=document.createElement('li');li.innerHTML=`<span class="stage-number">${s.stage_number}</span><h3>${safe(s.label)}</h3><p>${safe(s.buyer_value)}</p><span class="stage-status">${pretty(s.status)}</span>`;ol.appendChild(li);});}
+function renderBatch(){const b=state.data.batch;$('batch-total').dataset.count=b.case_count;$('allow-count').dataset.count=b.allow_count;$('escalate-count').dataset.count=b.escalate_count;$('block-count').dataset.count=b.block_count;$('aggregate-decision').textContent=b.aggregate_action;$('aggregate-release').textContent=b.release_authorized?'AUTHORIZED':pretty(b.release_status||'WITHHELD');const review=b.cases.filter(c=>c.human_review_required||c.decision==='BLOCK').length;$('review-count').dataset.count=review;$('review-count').dataset.suffix=` of ${b.case_count}`;const body=$('case-table-body');body.innerHTML='';b.cases.forEach(c=>{const tr=document.createElement('tr');tr.dataset.caseId=c.id;tr.dataset.decision=c.decision;tr.innerHTML=`<td><strong>${c.short_name}</strong><br><small>${c.sector}</small></td><td>${c.attempted_movement}</td><td><span class="table-decision ${decisionClass(c.decision)}">${statusIcon(c.decision)} ${c.decision}</span></td><td>${pretty(c.release_status)}</td><td>${c.protected_effect_formed?'Effect formed':pretty(c.no_bind_status)}</td>`;body.appendChild(tr);});}
+function installInteractions(){document.querySelectorAll('.scenario-tab').forEach(b=>b.addEventListener('click',()=>selectCase(b.dataset.caseId)));$('why-toggle').addEventListener('click',()=>{const p=$('why-panel'),open=!p.hidden;p.hidden=open;$('why-toggle').setAttribute('aria-expanded',String(!open));track('Proof Explorer Why Toggled',{open:!open});});document.querySelectorAll('[data-track]').forEach(a=>a.addEventListener('click',()=>track(a.dataset.track)));document.querySelectorAll('.legend button').forEach(b=>b.addEventListener('click',()=>filterCases(b.dataset.filter)));document.querySelectorAll('#case-table-body tr').forEach(tr=>tr.addEventListener('click',()=>{selectCase(tr.dataset.caseId);$('decision-explorer').scrollIntoView({behavior:'smooth'});}));$('verify-button').addEventListener('click',verifyPacket);const toggle=document.querySelector('.mobile-nav-toggle');if(toggle)toggle.addEventListener('click',()=>{const nav=$('primary-navigation');const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});}
+function filterCases(decision){document.querySelectorAll('#case-table-body tr').forEach(tr=>tr.classList.toggle('filtered-highlight',tr.dataset.decision===decision));track('Proof Explorer Batch Filter',{decision});}
+function animateCounts(){document.querySelectorAll('[data-count]').forEach(el=>{const end=Number(el.dataset.count||0),suffix=el.dataset.suffix||'';let n=0;const tick=()=>{n=Math.min(end,n+1);el.textContent=`${n}${suffix}`;if(n<end)setTimeout(tick,140)};tick();});}
+async function sha256(buffer){const hash=await crypto.subtle.digest('SHA-256',buffer);return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,'0')).join('')}
+function setVerifyRow(index,status,label){const row=$('verification-list').children[index];row.className=status;row.querySelector('strong').textContent=label;}
+async function verifyPacket(){
+ const btn=$('verify-button');btn.disabled=true;btn.textContent='Verifying public files…';$('verifier-result').textContent='Verification running';$('verifier-icon').textContent='↻';const bar=$('verification-progress').firstElementChild;bar.style.width='8%';[0,1,2,3,4].forEach(i=>setVerifyRow(i,'','Running'));
+ try{
+  const [manifest,buyer,receipt]=await Promise.all([getJSON(urls.manifest),getJSON(urls.buyer),getJSON(urls.receipt)]);setVerifyRow(0,'pass','PASS');bar.style.width='25%';
+  const files=Array.isArray(manifest.files)?manifest.files:[];let verified=0,failed=0,checked=0;
+  for(const item of files){const expected=String(item.sha256||'');if(!expected||expected.includes('SELF_EXCLUDED'))continue;checked++;try{const r=await fetch(assetBase+item.filename,{cache:'no-store'});if(!r.ok)throw new Error(String(r.status));const actual=await sha256(await r.arrayBuffer());if(actual.toLowerCase()===expected.toLowerCase())verified++;else failed++;}catch(_){failed++;}bar.style.width=`${25+Math.round((checked/Math.max(1,files.length))*35)}%`;}
+  if(checked>0&&failed===0)setVerifyRow(1,'pass',`${verified}/${checked} PASS`);else setVerifyRow(1,'fail',`${failed} FAILED`);
+  const b=buyer.single_event_decision_summary||{};const r=receipt.single_event_decision||{};const decisionPass=(b.decision||b.action)===(r.decision||r.action);const releasePass=b.release_status===r.release_status&&b.release_authorized===r.release_authorized;const bn=buyer.execution_boundary_summary||{};const rn=receipt.single_event_no_bind_receipt||{};const noBindPass=bn.no_bind_status===rn.no_bind_status&&bn.protected_effect_formed===rn.protected_effect_formed;
+  setVerifyRow(2,decisionPass?'pass':'fail',decisionPass?'PASS':'MISMATCH');bar.style.width='78%';setVerifyRow(3,releasePass?'pass':'fail',releasePass?'PASS':'MISMATCH');bar.style.width='88%';setVerifyRow(4,noBindPass?'pass':'fail',noBindPass?'PASS':'MISMATCH');bar.style.width='100%';
+  const ok=failed===0&&decisionPass&&releasePass&&noBindPass;$('verifier-result').textContent=ok?'Public packet verified':'Verification found a mismatch';$('verifier-icon').textContent=ok?'✓':'!';$('verifier-icon').parentElement.style.color=ok?'var(--allow)':'var(--block)';track('Proof Explorer Verification Completed',{result:ok?'pass':'fail',hashes_checked:checked,hashes_verified:verified});
+ }catch(err){$('verifier-result').textContent='Verification could not complete';$('verifier-icon').textContent='!';$('verification-note').textContent=`Public assets could not be loaded: ${err.message}. The proof files remain available through the Proof Hub.`;[0,1,2,3,4].forEach(i=>setVerifyRow(i,'fail','UNAVAILABLE'));track('Proof Explorer Verification Error',{message:String(err.message).slice(0,120)});
+ }finally{btn.disabled=false;btn.textContent='Run verification again';}
+}
+document.addEventListener('DOMContentLoaded',()=>{loadData().catch(err=>{console.error(err);$('case-title').textContent='Proof data could not be loaded';$('attempted-movement').textContent='Open the public Proof Hub to inspect the current artifacts.';});});
+})();
