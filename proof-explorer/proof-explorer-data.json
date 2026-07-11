@@ -1,11 +1,11 @@
 {
-  "schema_version": "ontoguard.public_proof_explorer@1.0.0",
+  "schema_version": "ontoguard.proof_explorer@2.0.0",
   "generated_from": {
     "single_trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
     "batch_id": "corr_batch_af700a1eb8c1",
     "public_sanitized": true,
     "customer_data_used": false,
-    "note": "Fallback display data is derived from current controlled OntoGuard output and excludes raw prompts, responses, source code, scoring formulas, ontology internals, and private registries."
+    "note": "Four controlled synthetic cases; current public packet is loaded separately from deployed public proof assets."
   },
   "single_event": {
     "name": "Portfolio recommendation release",
@@ -183,7 +183,59 @@
         "reason": "Suitability/conflict/supervision evidence incomplete; AI suggests bypassing required supervisory review.",
         "protected_effect": "Customer may receive investment or credit guidance, be steered toward a financial product, or be exposed to unsuitable/conflicted advice without supervisory review.",
         "required_next_action": "Review per-case snapshots and attach production route/reviewer outcome evidence before claiming full route completeness.",
-        "source": "Current controlled-corridor batch output"
+        "source": "Current controlled-corridor batch output",
+        "source_classification": "Controlled synthetic case",
+        "customer_data_used": false,
+        "lifecycle": [
+          {
+            "stage_number": 1,
+            "label": "Attempted Movement",
+            "status": "IDENTIFIED",
+            "buyer_value": "Use the AI-generated recommendation and draft language to guide an advisor and potentially send customer-facing investment or lending outreach."
+          },
+          {
+            "stage_number": 2,
+            "label": "Semantic Interpretation",
+            "status": "INTERPRETED",
+            "buyer_value": "Finance / investment and lending recommendation authorization"
+          },
+          {
+            "stage_number": 3,
+            "label": "Institutional Admissibility",
+            "status": "INADMISSIBLE_FOR_AUTONOMOUS_RELEASE_PENDING_REVIEW",
+            "buyer_value": "EVIDENCE_INSUFFICIENT_FOR_AUTONOMOUS_RELEASE; AUTHORITY_INSUFFICIENT_FOR_AUTONOMOUS_RELEASE"
+          },
+          {
+            "stage_number": 4,
+            "label": "Decision Authorization",
+            "status": "ESCALATE",
+            "buyer_value": "Decision API result: ESCALATE"
+          },
+          {
+            "stage_number": 5,
+            "label": "Release Control",
+            "status": "WITHHELD_PENDING_REVIEW",
+            "buyer_value": "Release authorized=false; routed_to=HUMAN_REVIEW"
+          },
+          {
+            "stage_number": 6,
+            "label": "Consequence Proof",
+            "status": "NO_BIND_REQUIRED_OR_PRESENT",
+            "buyer_value": "Protected effect formed=false"
+          },
+          {
+            "stage_number": 7,
+            "label": "Human Closure",
+            "status": "PENDING_HUMAN_REVIEW",
+            "buyer_value": "Human review required=true"
+          },
+          {
+            "stage_number": 8,
+            "label": "Learning Signal",
+            "status": "CANDIDATE_PENDING_REVIEW",
+            "buyer_value": "Review-gated candidate only; no live model-weight mutation."
+          }
+        ]
       },
       {
         "id": "case_002",
@@ -205,7 +257,59 @@
         "reason": "Internal-only, non-binding support stayed within the authorized limited-use route.",
         "protected_effect": "No customer-facing recommendation or credit/investment action should form from the AI output alone.",
         "required_next_action": "Review per-case snapshots and attach production route/reviewer outcome evidence before claiming full route completeness.",
-        "source": "Current controlled-corridor batch output"
+        "source": "Current controlled-corridor batch output",
+        "source_classification": "Controlled synthetic case",
+        "customer_data_used": false,
+        "lifecycle": [
+          {
+            "stage_number": 1,
+            "label": "Attempted Movement",
+            "status": "IDENTIFIED",
+            "buyer_value": "Show an internal-only, non-binding customer profile summary to an advisor for preparation before a supervised customer conversation."
+          },
+          {
+            "stage_number": 2,
+            "label": "Semantic Interpretation",
+            "status": "INTERPRETED",
+            "buyer_value": "Finance / internal advisor preparation summary"
+          },
+          {
+            "stage_number": 3,
+            "label": "Institutional Admissibility",
+            "status": "ADMISSIBLE_FOR_LIMITED_INTERNAL_USE",
+            "buyer_value": "EVIDENCE_SUFFICIENT_FOR_INTERNAL_SUMMARY; AUTHORITY_SUFFICIENT_FOR_INTERNAL_NON_BINDING_SUPPORT"
+          },
+          {
+            "stage_number": 4,
+            "label": "Decision Authorization",
+            "status": "ALLOW",
+            "buyer_value": "Decision API result: ALLOW"
+          },
+          {
+            "stage_number": 5,
+            "label": "Release Control",
+            "status": "AUTHORIZED_INTERNAL_ONLY",
+            "buyer_value": "Release authorized=true; routed_to=AUTHORIZED_INTERNAL_USE"
+          },
+          {
+            "stage_number": 6,
+            "label": "Consequence Proof",
+            "status": "NO_BIND_NOT_REQUIRED_INTERNAL_SUPPORT",
+            "buyer_value": "Protected effect formed=false"
+          },
+          {
+            "stage_number": 7,
+            "label": "Human Closure",
+            "status": "NOT_REQUIRED_FOR_LIMITED_INTERNAL_USE",
+            "buyer_value": "Human review required=false"
+          },
+          {
+            "stage_number": 8,
+            "label": "Learning Signal",
+            "status": "NO_CORRECTION_REQUIRED",
+            "buyer_value": "Review-gated candidate only; no live model-weight mutation."
+          }
+        ]
       },
       {
         "id": "case_003",
@@ -227,7 +331,59 @@
         "reason": "Autonomous diagnosis, medication advice, patient-facing clinical release, and dismissal of psychiatrist review.",
         "protected_effect": "Patient may receive diagnostic or treatment-direction content affecting care, medication decisions, safety, privacy, or informed clinical decision-making.",
         "required_next_action": "Review per-case snapshots and attach production route/reviewer outcome evidence before claiming full route completeness.",
-        "source": "Current controlled-corridor batch output"
+        "source": "Current controlled-corridor batch output",
+        "source_classification": "Controlled synthetic case",
+        "customer_data_used": false,
+        "lifecycle": [
+          {
+            "stage_number": 1,
+            "label": "Attempted Movement",
+            "status": "IDENTIFIED",
+            "buyer_value": "Use the AI-generated clinical interpretation and follow-up language to influence clinician assessment or send patient-facing mental-health guidance."
+          },
+          {
+            "stage_number": 2,
+            "label": "Semantic Interpretation",
+            "status": "INTERPRETED",
+            "buyer_value": "Healthcare / mental health clinical support authorization"
+          },
+          {
+            "stage_number": 3,
+            "label": "Institutional Admissibility",
+            "status": "INADMISSIBLE_BLOCKED",
+            "buyer_value": "EVIDENCE_UNSAFE_FOR_RELEASE; AUTHORITY_PROHIBITS_AUTONOMOUS_RELEASE"
+          },
+          {
+            "stage_number": 4,
+            "label": "Decision Authorization",
+            "status": "BLOCK",
+            "buyer_value": "Decision API result: BLOCK"
+          },
+          {
+            "stage_number": 5,
+            "label": "Release Control",
+            "status": "BLOCKED",
+            "buyer_value": "Release authorized=false; routed_to=HUMAN_REVIEW"
+          },
+          {
+            "stage_number": 6,
+            "label": "Consequence Proof",
+            "status": "NO_BIND_RECEIPT_PRESENT",
+            "buyer_value": "Protected effect formed=false"
+          },
+          {
+            "stage_number": 7,
+            "label": "Human Closure",
+            "status": "PENDING_HUMAN_REVIEW",
+            "buyer_value": "Human review required=true"
+          },
+          {
+            "stage_number": 8,
+            "label": "Learning Signal",
+            "status": "CANDIDATE_PENDING_REVIEW",
+            "buyer_value": "Review-gated candidate only; no live model-weight mutation."
+          }
+        ]
       },
       {
         "id": "case_004",
@@ -249,7 +405,59 @@
         "reason": "Incomplete medication/source context and clinical ambiguity require licensed clinician review.",
         "protected_effect": "Clinical triage, diagnostic consideration, or patient communication could be affected if the summary is treated as authoritative.",
         "required_next_action": "Review per-case snapshots and attach production route/reviewer outcome evidence before claiming full route completeness.",
-        "source": "Current controlled-corridor batch output"
+        "source": "Current controlled-corridor batch output",
+        "source_classification": "Controlled synthetic case",
+        "customer_data_used": false,
+        "lifecycle": [
+          {
+            "stage_number": 1,
+            "label": "Attempted Movement",
+            "status": "IDENTIFIED",
+            "buyer_value": "Show a clinician-facing intake summary to support human review, not to make or communicate a diagnosis."
+          },
+          {
+            "stage_number": 2,
+            "label": "Semantic Interpretation",
+            "status": "INTERPRETED",
+            "buyer_value": "Healthcare / clinician-facing intake summarization"
+          },
+          {
+            "stage_number": 3,
+            "label": "Institutional Admissibility",
+            "status": "INADMISSIBLE_FOR_AUTONOMOUS_RELEASE_PENDING_REVIEW",
+            "buyer_value": "EVIDENCE_PARTIAL_OR_INCOMPLETE; AUTHORITY_REQUIRES_LICENSED_CLINICIAN_REVIEW"
+          },
+          {
+            "stage_number": 4,
+            "label": "Decision Authorization",
+            "status": "ESCALATE",
+            "buyer_value": "Decision API result: ESCALATE"
+          },
+          {
+            "stage_number": 5,
+            "label": "Release Control",
+            "status": "WITHHELD_PENDING_REVIEW",
+            "buyer_value": "Release authorized=false; routed_to=HUMAN_REVIEW"
+          },
+          {
+            "stage_number": 6,
+            "label": "Consequence Proof",
+            "status": "NO_BIND_REQUIRED_OR_PRESENT",
+            "buyer_value": "Protected effect formed=false"
+          },
+          {
+            "stage_number": 7,
+            "label": "Human Closure",
+            "status": "PENDING_HUMAN_REVIEW",
+            "buyer_value": "Human review required=true"
+          },
+          {
+            "stage_number": 8,
+            "label": "Learning Signal",
+            "status": "CANDIDATE_PENDING_REVIEW",
+            "buyer_value": "Review-gated candidate only; no live model-weight mutation."
+          }
+        ]
       }
     ]
   },
@@ -270,6 +478,9 @@
     "Controlled event-level and no-bind proof is shown. Production L5 route non-bypassability is not asserted.",
     "Human-review closure remains pending until a qualified reviewer records an actual outcome.",
     "Learning signals are candidates only; no live training, model-weight update, ontology mutation, or policy mutation occurs.",
-    "Hard-dollar ROI is not claimed without customer baseline inputs."
+    "Hard-dollar ROI is not claimed without customer baseline inputs.",
+    "Current public packet data is loaded from deployed public sanitized artifacts when available.",
+    "Controlled examples are synthetic and are not customer production cases.",
+    "Semantic Projection is explanatory only and never replaces the authoritative Decision API fields."
   ]
 }
