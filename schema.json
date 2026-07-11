@@ -520,6 +520,61 @@
           "item": "https://ontoguard.ai/financial-services-ai-decision-authorization.html"
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://ontoguard.ai/proof-explorer/#webpage",
+      "name": "Explore a Governed AI Decision | OntoGuard",
+      "url": "https://ontoguard.ai/proof-explorer/",
+      "description": "Public-safe interactive demonstration of OntoGuard Decision Authorization, release control, consequence proof, route maturity, batch decisions, and browser-side packet verification.",
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-11",
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      },
+      "about": {
+        "@id": "https://ontoguard.ai/#decision-authorization-service"
+      },
+      "breadcrumb": {
+        "@id": "https://ontoguard.ai/proof-explorer/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://ontoguard.ai/proof-explorer/#application"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://ontoguard.ai/proof-explorer/#application",
+      "name": "OntoGuard Proof Explorer",
+      "url": "https://ontoguard.ai/proof-explorer/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web browser",
+      "browserRequirements": "Requires a modern browser with JavaScript and Web Crypto for interactive packet verification.",
+      "description": "A public-safe interactive demonstration of Decision Authorization, release control, consequence proof, route maturity, controlled batch decisions, and browser-side proof-packet verification.",
+      "provider": {
+        "@id": "https://ontoguard.ai/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://ontoguard.ai/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://ontoguard.ai/proof-explorer/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "OntoGuard",
+          "item": "https://ontoguard.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Proof Explorer",
+          "item": "https://ontoguard.ai/proof-explorer/"
+        }
+      ]
     }
   ]
 }

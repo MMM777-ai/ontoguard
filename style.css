@@ -4505,3 +4505,52 @@ line-height:1.5
  .governed-stage-primary{transform:none}
 }
 
+
+
+/* Proof Explorer homepage integration — shared shell only. */
+.hero-cta-row .proof-explorer-cta {
+  border-color: #72d4db;
+  background: #f4feff;
+  color: #06334d;
+  box-shadow: 0 8px 20px rgba(0, 128, 144, .18);
+}
+.hero-cta-row .proof-explorer-cta:hover,
+.hero-cta-row .proof-explorer-cta:focus-visible {
+  background: #dff8fa;
+  color: #062237;
+}
+.hero-tertiary-actions {
+  flex: 1 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 2px;
+}
+.hero-tertiary-actions .btn {
+  min-height: auto;
+  padding: 6px 2px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.proof-explorer-card {
+  border-color: #00a3ad;
+  background: linear-gradient(145deg, #ebf9fa, #fff);
+}
+.proof-kit-primary-download {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+@media (max-width: 700px) {
+  .hero-cta-row > .hero-primary-cta,
+  .hero-cta-row > .proof-explorer-cta { width: 100%; }
+  .hero-tertiary-actions { display: grid; grid-template-columns: 1fr; gap: 2px; }
+  .hero-tertiary-actions .btn { width: auto; justify-self: center; }
+}
