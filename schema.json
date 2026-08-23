@@ -526,9 +526,9 @@
       "@id": "https://ontoguard.ai/proof-explorer/#webpage",
       "name": "Explore a Governed AI Decision | OntoGuard",
       "url": "https://ontoguard.ai/proof-explorer/",
-      "description": "Public-safe interactive demonstration of OntoGuard Decision Authorization, release control, consequence proof, route maturity, batch decisions, and browser-side packet verification.",
+      "description": "Public-safe interactive demonstration of OntoGuard Decision Authorization, R7 intent continuity, governing-basis continuity, authority and custody posture, release control, consequence custody, controlled-route maturity, controlled batch decisions, and browser-side proof integrity verification.",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-11",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -550,13 +550,14 @@
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web browser",
       "browserRequirements": "Requires a modern browser with JavaScript and Web Crypto for interactive packet verification.",
-      "description": "A public-safe interactive demonstration of Decision Authorization, release control, consequence proof, route maturity, controlled batch decisions, and browser-side proof-packet verification.",
+      "description": "A public-safe interactive demonstration of OntoGuard Decision Authorization, R7 intent continuity, governing-basis continuity, authority and custody posture, release control, consequence custody, event-versus-controlled-route maturity, controlled batch decisions, and browser-side proof integrity verification.",
       "provider": {
         "@id": "https://ontoguard.ai/#organization"
       },
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
-      }
+      },
+      "dateModified": "2026-08-23"
     },
     {
       "@type": "BreadcrumbList",
