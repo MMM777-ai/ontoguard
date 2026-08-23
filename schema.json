@@ -6,9 +6,9 @@
       "@id": "https://ontoguard.ai/#website",
       "name": "OntoGuard",
       "url": "https://ontoguard.ai/",
-      "description": "OntoGuard governs the complete transaction through which AI outputs and proposed actions attempt to become business consequences, with interpretation, Decision Authorization, release control, consequence proof, human closure, and review-gated learning.",
+      "description": "OntoGuard AI Semantic Control Plane and Decision Authorization Infrastructure for persistent intent, frozen authorization basis, authority, release control, consequence proof, and governed learning.",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "datePublished": "2026-05-15",
       "publisher": {
         "@id": "https://ontoguard.ai/#organization"
@@ -40,9 +40,9 @@
       "@id": "https://ontoguard.ai/#webpage",
       "name": "OntoGuard AI | Runtime Decision Authorization",
       "url": "https://ontoguard.ai/",
-      "description": "OntoGuard governs how AI outputs become business actions—interpreting intent, authorizing or escalating release, proving outcomes, and preserving review evidence.",
+      "description": "OntoGuard is an AI Semantic Control Plane and Decision Authorization Infrastructure that preserves persistent intent, evaluates governing basis and authority, controls release, and proves consequence.",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -59,7 +59,7 @@
         "@id": "https://ontoguard.ai/#organization"
       },
       "url": "https://ontoguard.ai/",
-      "description": "A semantic control plane that governs the complete transaction through which an AI output or proposed action attempts to become an organizational consequence."
+      "description": "AI Semantic Control Plane and Decision Authorization Infrastructure that freezes decision-driving facts, preserves mission continuity, evaluates evidence and authority, returns ALLOW, BLOCK, or ESCALATE, controls release, and proves consequence."
     },
     {
       "@type": "DigitalDocument",
@@ -154,14 +154,14 @@
       "@type": "TechArticle",
       "@id": "https://ontoguard.ai/deep-diligence-appendix.html#article",
       "headline": "OntoGuard Technical Diligence Appendix",
-      "description": "Technical diligence for Decision Authorization, BM25 evidence retrieval, ontology grounding, no-bind proof, route completeness, and audit packaging.",
+      "description": "Technical diligence for Decision Authorization, R7 Intent Horizon, governing-basis continuity, source and capability authority, custody, BM25 evidence retrieval, consequence proof, and controlled Full-Seam evidence.",
       "url": "https://ontoguard.ai/deep-diligence-appendix.html",
       "mainEntityOfPage": {
         "@id": "https://ontoguard.ai/deep-diligence-appendix.html"
       },
       "inLanguage": "en-US",
       "datePublished": "2026-07-08",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "author": {
         "@type": "Person",
         "name": "Mark Starobinsky",
@@ -185,10 +185,10 @@
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/partners.html#webpage",
       "name": "Partner, License, or Embed OntoGuard",
-      "description": "Partner, license, embed, co-sell, or OEM OntoGuard as the Decision Authorization and portable-proof layer for high-stakes AI.",
+      "description": "Partner, license, embed, co-sell, or OEM OntoGuard as Decision Authorization infrastructure with persistent intent, authority and custody checks, release control, and consequence proof.",
       "url": "https://ontoguard.ai/partners.html",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -203,10 +203,10 @@
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/strategic-funding.html#webpage",
       "name": "OntoGuard Strategic Funding and Commercialization",
-      "description": "Public-safe overview of OntoGuard licensing, commercialization milestones, strategic-capital use, partner fit, and NDA-only diligence.",
+      "description": "OntoGuard commercialization maturity: Goal 3 Decision Authorization is implemented; strategic capital accelerates customer integration, production evidence, security, distribution, and measured outcomes.",
       "url": "https://ontoguard.ai/strategic-funding.html",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -221,10 +221,10 @@
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/finance-ai-governance.html#webpage",
       "name": "Finance AI Decision Authorization | OntoGuard",
-      "description": "Decision Authorization for finance AI outputs before customer or workflow consequence, with ALLOW, BLOCK, or ESCALATE and portable proof.",
+      "description": "Finance AI Decision Authorization with persistent intent, governing-basis continuity, source and capability authority, release control, and consequence proof.",
       "url": "https://ontoguard.ai/finance-ai-governance.html",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -239,10 +239,10 @@
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/insurance-ai-governance.html#webpage",
       "name": "Insurance AI Decision Authorization | OntoGuard",
-      "description": "Authorize claims, coverage, underwriting, and fraud-review AI movements before release, with human routing and inspectable proof.",
+      "description": "Insurance AI Decision Authorization with claim-intent continuity, policy and authority validation, release control, and consequence custody.",
       "url": "https://ontoguard.ai/insurance-ai-governance.html",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -257,10 +257,10 @@
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/healthcare-payer-ai-governance.html#webpage",
       "name": "Healthcare Payer AI Decision Authorization | OntoGuard",
-      "description": "Govern healthcare-payer administrative AI outputs before member, provider, claims, or prior-authorization workflow consequence.",
+      "description": "Healthcare-payer administrative AI Decision Authorization with intent continuity, policy and source authority, reviewer routing, release control, and consequence proof.",
       "url": "https://ontoguard.ai/healthcare-payer-ai-governance.html",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -275,10 +275,10 @@
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/vertical-ai-vendors.html#webpage",
       "name": "Vertical AI Vendor Proof Layer | OntoGuard",
-      "description": "Help enterprise buyers inspect whether a vertical AI output is admissible to proceed, with Decision Authorization and portable proof.",
+      "description": "Proof-layer integration for vertical AI vendors using Decision Authorization, persistent intent, authority checks, release control, and buyer-portable consequence proof.",
       "url": "https://ontoguard.ai/vertical-ai-vendors.html",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -293,10 +293,10 @@
       "@type": "WebPage",
       "@id": "https://ontoguard.ai/ai-implementation-partners.html#webpage",
       "name": "AI Implementation Partner Proof Layer | OntoGuard",
-      "description": "Add Decision Authorization, route evidence, human-review closure, and portable proof to systems-integration and AI delivery programs.",
+      "description": "Implementation-partner integration for Decision Authorization, R7 intent continuity, governing-basis and source/capability authority, route enforcement, and consequence proof.",
       "url": "https://ontoguard.ai/ai-implementation-partners.html",
       "inLanguage": "en-US",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "isPartOf": {
         "@id": "https://ontoguard.ai/#website"
       },
@@ -311,14 +311,14 @@
       "@type": "TechArticle",
       "@id": "https://ontoguard.ai/financial-services-ai-decision-authorization.html#article",
       "headline": "Financial Services Decision Authorization Proof | OntoGuard",
-      "description": "Sanitized financial-services proof case showing ESCALATE, withheld release, human review, no-bind posture, and strict-six evidence.",
+      "description": "Controlled financial-services Decision Authorization proof with R7 intent posture, frozen authorization basis, governing-basis continuity, consequence custody, withheld release, and no-bind evidence.",
       "url": "https://ontoguard.ai/financial-services-ai-decision-authorization.html",
       "mainEntityOfPage": {
         "@id": "https://ontoguard.ai/financial-services-ai-decision-authorization.html"
       },
       "inLanguage": "en-US",
       "datePublished": "2026-07-08",
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-08-23",
       "author": {
         "@type": "Person",
         "name": "Mark Starobinsky",
