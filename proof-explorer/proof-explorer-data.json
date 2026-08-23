@@ -1,15 +1,21 @@
 {
-  "schema_version": "ontoguard.proof_explorer@2.0.0",
+  "schema_version": "ontoguard.proof_explorer@2.1.0",
   "generated_from": {
-    "single_trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
-    "batch_id": "corr_batch_af700a1eb8c1",
+    "single_trace_id": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54",
+    "batch_id": "corr_batch_eb331c8dd974",
     "public_sanitized": true,
     "customer_data_used": false,
-    "note": "Four controlled synthetic cases; current public packet is loaded separately from deployed public proof assets."
+    "single_source_member": "full_audit.governance.json",
+    "batch_source_member": "full_audit.governance.json",
+    "release_refresh_date": "2026-08-23",
+    "note": "Public-safe fallback derived from the latest accepted controlled single and batch strict-six packets. Runtime-loaded deployed public assets remain authoritative when available."
   },
   "single_event": {
+    "id": "accepted_single_fallback",
+    "short_name": "Accepted Single Packet",
+    "sector": "Financial Services",
     "name": "Portfolio recommendation release",
-    "attempted_movement": "AI-generated Investment Management portfolio construction recommendation governance withheld pending governed review",
+    "attempted_movement": "Convert an AI-generated portfolio suggestion into a review-ready advisor recommendation",
     "decision": "ESCALATE",
     "release_authorized": false,
     "release_status": "WITHHELD_PENDING_REVIEW",
@@ -30,6 +36,7 @@
       "BENCHMARK_FAIL_REQUIRES_REVIEW",
       "BELOW_AUTONOMOUS_ALLOW_THRESHOLD",
       "HUMAN_REVIEW_ROUTE",
+      "SEMANTIC_CORRECTNESS_NOT_DECISION_ADMISSIBLE",
       "SEMANTIC_CONSTRAINTS_GOVERNED",
       "BENCHMARK_FAIL",
       "UNCERTAINTY_UNRESOLVED",
@@ -41,37 +48,19 @@
     "non_bypassable": "NOT_ASSERTED_IN_SHADOW_MODE",
     "production_enforcement_asserted": false,
     "outcome_accounted": "PENDING_HUMAN_REVIEW_OUTCOME",
-    "projection": {
-      "candidate_states": [
-        "ALLOW",
-        "BLOCK",
-        "ESCALATE"
-      ],
-      "state_scores": {
-        "ALLOW": 0.6422329888,
-        "BLOCK": 0.287840152,
-        "ESCALATE": 0.578354268
-      },
-      "selected_projection": "ESCALATE",
-      "projection_confidence": 0.578354268,
-      "projection_margin": 0.0,
-      "projection_disagreement": true,
-      "authoritative_decision": "ESCALATE",
-      "note": "Semantic projection is explanatory only. The Decision API remains authoritative."
-    },
-    "coherent_governance_loading": {
-      "status": "COMPLETE",
-      "score": 0.38745000000000007,
-      "tier": "WEAK",
-      "release_threshold_met": false,
-      "missing_components": [
-        "evidence_pack",
-        "citation_linkage"
-      ]
-    },
+    "authority_status": "NOT_ATTACHED",
+    "evidence_status": "PARTIAL",
+    "route_status": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "gate_result": "FAIL_CLOSED_OR_REVIEW_REQUIRED",
+    "reason": "Release withheld by Decision API pending review.",
+    "protected_effect": "GOVERNED_OUTPUT_RELEASE",
+    "human_review_required": true,
+    "source": "Latest accepted controlled single strict-six packet",
+    "source_classification": "Accepted controlled single fallback",
+    "customer_data_used": false,
     "lifecycle": [
       {
-        "buyer_value": "AI-generated Investment Management portfolio construction recommendation governance withheld pending governed review",
+        "buyer_value": "AUTHORIZE_OR_WITHHOLD_DECISION_SUPPORT_RECOMMENDATION_RELEASE",
         "label": "Attempt",
         "limitations": [],
         "source_pointer": "/decision_authorization_packet/proposed_state_transition",
@@ -80,7 +69,7 @@
         "status": "COMPLETE"
       },
       {
-        "buyer_value": "Investment Management portfolio construction recommendation governance",
+        "buyer_value": "Wealth Management Pre-release investment recommendation review governance",
         "label": "Interpretation",
         "limitations": [],
         "source_pointer": "/decision_authorization_packet/semantic_state_snapshot",
@@ -146,7 +135,180 @@
         "stage_number": 8,
         "status": "CANDIDATE_GENERATED"
       }
-    ]
+    ],
+    "goal3_code_now_status": {
+      "status": "PASS",
+      "code_now_complete": true,
+      "code_now_passed": 15,
+      "code_now_total": 15,
+      "pilot_dependent_count": 6,
+      "pilot_dependent_open": true,
+      "final_byte_settlement": true
+    },
+    "r7_intent_horizon": {
+      "enabled": true,
+      "status": "COMPUTED",
+      "computed_before_decision": true,
+      "decision_role": "DECISION_DRIVING_INTENT_ALIGNMENT",
+      "horizon_id": "r7h_18fec6c84bee4360941f955658928321",
+      "task_id": "r7task_d4b07347c20316eb665c3d9f6a0d2bc3",
+      "sequence_number": 1,
+      "distance_status": "COMPUTED",
+      "distance_unit": 0.331310915185,
+      "similarity_unit": 0.668689084815,
+      "distance_method": "SEMANTIC_EMBEDDING_COSINE",
+      "semantic_basis_label": "sentence-transformers/all-MiniLM-L6-v2",
+      "embedding_basis_hash": "sha256:5ca35f6611142f371c8ea74788f706639018453155cffcdb65c263228ff3eb8b",
+      "threshold_state": "WARNING_THRESHOLD_EXCEEDED",
+      "required_decision_effect": "ALERT",
+      "explicit_prohibited_boundary_crossed": false,
+      "original_intent_hash": "sha256:6a703cdc9b5791dc0eb13245a2a7476bc8f337d0a7163d48b9261c0903476423",
+      "proposed_action_hash": "sha256:3dfe80cc8afdd9e6f646e61694540b18846b7aabf22aed25e674c11082b0386f",
+      "proposed_state_transition_hash": "sha256:cf9d6870c19becf6684cf0fb0320cd3afcfe880eca6343e881ee1eb5dff1578e",
+      "trajectory_hash": "sha256:9d415ac8029f220511541c994b090b1da07a5d109baf602beae5ae2d780ea95e",
+      "trajectory_head_hash": "sha256:d81bad7057d9fa3234cf0a5876718ea18f8d39166996011b2d2cc2f41987451e",
+      "action_count": 1,
+      "drift_velocity": null,
+      "drift_acceleration": null,
+      "raw_embeddings_exported": false
+    },
+    "governing_basis_continuity": {
+      "status": "ESTABLISHED_CURRENT",
+      "computed_before_decision": true,
+      "decision_role": "DECISION_DRIVING_GOVERNING_BASIS_CONTINUITY",
+      "persistence_status": "PERSISTED",
+      "governing_basis_hash": "sha256:e4c6c302a8812baa96ba30d3b7783f325c7867231c25cc7650559016d3783641",
+      "basis_epoch": 1,
+      "prior_basis_status": "NONE",
+      "basis_changed": false,
+      "lawful_continuation_state": "INITIAL",
+      "revalidation_required": false,
+      "rebind_required": false,
+      "fresh_decision_required": true
+    },
+    "source_authority": {
+      "status": "NOT_APPLICABLE",
+      "required": false,
+      "record_count": 0,
+      "eligible_count": 0,
+      "quarantined_count": 0,
+      "material_gaps": [],
+      "positive_state_may_authorize_release": false,
+      "computed_before_decision": true
+    },
+    "capability_authority": {
+      "status": "NOT_APPLICABLE",
+      "required": false,
+      "computed_before_decision": true,
+      "positive_state_may_authorize_release": false,
+      "actor_id": "NOT_ATTACHED",
+      "agent_id": "NOT_ATTACHED",
+      "tool_id": "NOT_ATTACHED",
+      "operation": "NOT_ATTACHED",
+      "target": "NOT_ATTACHED",
+      "authority_status": "PENDING_AUTHORITY",
+      "delegation_reference": "NOT_ATTACHED",
+      "freshness_status": "VALIDITY_NOT_ESTABLISHED",
+      "revocation_status": "ACTIVE",
+      "human_confirmation_required": false
+    },
+    "evidence_custody": {
+      "status": "NOT_REQUIRED",
+      "required": false,
+      "record_count": 0,
+      "total_evidence_items": 0,
+      "material_gaps": [],
+      "complete_record_count": null,
+      "broken_record_count": null,
+      "partial_record_count": null,
+      "mutated_record_count": null,
+      "computed_before_decision": true,
+      "positive_state_may_authorize_release": false,
+      "summary_hash": "sha256:e890d432d834cafd84c26619ba04ecf4abc716fbb7f0e0e117db4d84655c9008",
+      "provenance_status": "NOT_APPLICABLE",
+      "integrity_status": "NOT_APPLICABLE"
+    },
+    "external_runtime_state_attestation": {
+      "status": "NOT_ATTACHED",
+      "profile": "NOT_ATTACHED",
+      "computed_before_decision": true,
+      "required_by_policy": null,
+      "may_authorize_release": null,
+      "may_constrain_release": null,
+      "freshness_status": null,
+      "integrity_verification_state": null,
+      "reason_codes": []
+    },
+    "consequence_custody": {
+      "custody_status": "NO_BIND_PROVEN",
+      "decision_action": "ESCALATE",
+      "release_authorized": false,
+      "release_status": "WITHHELD_PENDING_REVIEW",
+      "proposed_state_transition_hash": "sha256:cf9d6870c19becf6684cf0fb0320cd3afcfe880eca6343e881ee1eb5dff1578e",
+      "governing_basis_hash": "sha256:e4c6c302a8812baa96ba30d3b7783f325c7867231c25cc7650559016d3783641",
+      "decision_input_hash": "sha256:59ff5dbcee64bf94d93d9c0b45b18e3e7002f8aa09ca46a89155cd44f268aada",
+      "decision_hash": "0641ae2e689e0ebdff26c7fc5413dc7dc2038b935356fa2ad3d7827679eed621",
+      "execution_boundary_event_hash": "sha256:8c1bd9bd6cb3cad48c48c80fb2640b21f04f4411b477d14604c83def9b542597",
+      "grant_or_no_bind_hash": "sha256:a5c4b9b44a32e9e8432ca9fd0aa90389a77ff51151cb0f380e0f589c8b3ab637",
+      "receipt_hash": "sha256:a31558dae212325017014677b7fa9571fd05e4cc509ffdfcefb0fd53057d7d9c",
+      "manifest_hash": "sha256:1533a711c750720e1754555c2dc1d94fe00b8b3235eaf664145be2efbca7a439",
+      "production_non_bypassability_asserted": null,
+      "bind_time_freshness_status": "LIMITATION_NOT_ENFORCEMENT_CAPABLE",
+      "bind_allowed": false,
+      "enforcement_seam_pre_release_proven": null
+    },
+    "semantic_curvature": {
+      "status": "INSUFFICIENT_HISTORY",
+      "decision_role": "NON_DECISIONING_PORTFOLIO_INTELLIGENCE",
+      "eligible_record_count": 1,
+      "minimum_required_records": 3,
+      "observed_record_count": 1,
+      "mutated_decision_api": false,
+      "reason_codes": null,
+      "buyer_summary": null
+    },
+    "governance_spectrum": {
+      "status": "INSUFFICIENT_HISTORY",
+      "decision_role": "NON_DECISIONING_PORTFOLIO_INTELLIGENCE",
+      "eligible_record_count": 1,
+      "observed_record_count": 1,
+      "minimum_required_records": null,
+      "mutated_decision_api": false,
+      "buyer_summary": null,
+      "decision_counts": {
+        "ALLOW": 0,
+        "BLOCK": 0,
+        "ESCALATE": 1
+      }
+    },
+    "current_event_maturity": {
+      "event_governance_proven": true,
+      "maturity": "EVENT_GOVERNED_ROUTE_COMPLETENESS_NOT_ASSERTED",
+      "production_enforcement_asserted": false,
+      "production_non_bypassability_asserted": false
+    },
+    "controlled_fixture_maturity": {
+      "maturity": "L4_ROUTE_ENFORCED",
+      "production_enforcement_asserted": false,
+      "status": "PASS"
+    },
+    "customer_production_maturity": {
+      "production_l5_established": false,
+      "production_non_bypassability_asserted": false,
+      "status": "CUSTOMER_TOPOLOGY_EVIDENCE_REQUIRED"
+    },
+    "authority_continuity": {
+      "status": "CONNECTED_ROUTE",
+      "authority_continuity_asserted": true,
+      "connected_check_count": 9,
+      "missing_check_count": 1,
+      "production_route_continuity_asserted": false,
+      "pilot_required": true,
+      "limitations": [
+        "PRODUCTION_ROUTE_CONTINUITY_NOT_ASSERTED",
+        "CONTINUITY_DOES_NOT_RECALCULATE_THE_DECISION"
+      ]
+    }
   },
   "batch": {
     "case_count": 4,
@@ -158,10 +320,55 @@
     "release_status": "WITHHELD_PENDING_REVIEW",
     "routed_to": "HUMAN_REVIEW",
     "protected_effect_formed": false,
-    "route_maturity_level": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
+    "route_maturity_level": "CONTROLLED_BATCH_CASE_SPECIFIC",
     "production_enforcement_asserted": false,
-    "cgl_status": "PARTIAL_AGGREGATE",
-    "cgl_score": 0.8,
+    "semantic_curvature": {
+      "aggregate_explanation": {
+        "aggregate_scope": "batch_summary",
+        "per_case_depth_available": true,
+        "per_case_depth_location": "full_audit.governance.json",
+        "pilot_dependency": false,
+        "reason_for_partial_status": "Aggregate summarizes controlled test cases; full proof remains case-specific."
+      },
+      "buyer_summary": "Semantic curvature requires bounded history and is not computed for this controlled batch.",
+      "canonical_json_pointer": "/decision_authorization_packet/semantic_curvature",
+      "case_count": 4,
+      "full_detail_location": "full_audit.governance.json",
+      "key_fields": [
+        "limitations"
+      ],
+      "limitations": [
+        "Insufficient aggregate history in controlled batch artifact."
+      ],
+      "reason_codes": [
+        "INSUFFICIENT_HISTORY"
+      ],
+      "status": "NOT_COMPUTED_FOR_CONTROLLED_BATCH"
+    },
+    "governance_spectrum": {
+      "aggregate_explanation": {
+        "aggregate_scope": "batch_summary",
+        "per_case_depth_available": true,
+        "per_case_depth_location": "full_audit.governance.json",
+        "pilot_dependency": false,
+        "reason_for_partial_status": "Aggregate summarizes controlled test cases; full proof remains case-specific."
+      },
+      "buyer_summary": "Governance spectrum is represented as a compact single-batch summary only.",
+      "canonical_json_pointer": "/decision_authorization_packet/governance_spectrum",
+      "case_count": 4,
+      "full_detail_location": "full_audit.governance.json",
+      "key_fields": [
+        "case_count",
+        "decision_mix"
+      ],
+      "limitations": [
+        "No portfolio-wide spectrum is asserted."
+      ],
+      "reason_codes": [
+        "SINGLE_BATCH_SUMMARY_ONLY"
+      ],
+      "status": "SINGLE_BATCH_SUMMARY_ONLY"
+    },
     "cases": [
       {
         "id": "case_001",
@@ -183,7 +390,7 @@
         "reason": "Suitability/conflict/supervision evidence incomplete; AI suggests bypassing required supervisory review.",
         "protected_effect": "Customer may receive investment or credit guidance, be steered toward a financial product, or be exposed to unsuitable/conflicted advice without supervisory review.",
         "required_next_action": "Review per-case snapshots and attach production route/reviewer outcome evidence before claiming full route completeness.",
-        "source": "Current controlled-corridor batch output",
+        "source": "Latest accepted controlled-corridor batch strict-six packet",
         "source_classification": "Controlled synthetic case",
         "customer_data_used": false,
         "lifecycle": [
@@ -235,7 +442,25 @@
             "status": "CANDIDATE_PENDING_REVIEW",
             "buyer_value": "Review-gated candidate only; no live model-weight mutation."
           }
-        ]
+        ],
+        "r7_intent_horizon": {
+          "enabled": true,
+          "status": "COMPUTED",
+          "computed_before_decision": true,
+          "decision_role": "DECISION_DRIVING_INTENT_ALIGNMENT",
+          "horizon_id": "r7h_ddbe8e93cab04a8c8e476b88e8efeec8",
+          "sequence_number": 1,
+          "distance_status": "COMPUTED",
+          "distance_unit": 0.413605968138,
+          "similarity_unit": 0.586394031862,
+          "distance_method": "SEMANTIC_EMBEDDING_COSINE",
+          "threshold_state": "WARNING_THRESHOLD_EXCEEDED",
+          "required_decision_effect": "ALERT",
+          "explicit_prohibited_boundary_crossed": false,
+          "raw_embeddings_exported": false
+        },
+        "production_l5_validation_asserted": false,
+        "production_non_bypassability_asserted": false
       },
       {
         "id": "case_002",
@@ -254,10 +479,10 @@
         "protected_effect_formed": false,
         "human_review_required": false,
         "gate_result": "PASS_LIMITED_INTERNAL_RELEASE",
-        "reason": "Internal-only, non-binding support stayed within the authorized limited-use route.",
+        "reason": "Controlled case stayed within the authorized limited-use route.",
         "protected_effect": "No customer-facing recommendation or credit/investment action should form from the AI output alone.",
         "required_next_action": "Review per-case snapshots and attach production route/reviewer outcome evidence before claiming full route completeness.",
-        "source": "Current controlled-corridor batch output",
+        "source": "Latest accepted controlled-corridor batch strict-six packet",
         "source_classification": "Controlled synthetic case",
         "customer_data_used": false,
         "lifecycle": [
@@ -309,7 +534,25 @@
             "status": "NO_CORRECTION_REQUIRED",
             "buyer_value": "Review-gated candidate only; no live model-weight mutation."
           }
-        ]
+        ],
+        "r7_intent_horizon": {
+          "enabled": true,
+          "status": "COMPUTED",
+          "computed_before_decision": true,
+          "decision_role": "DECISION_DRIVING_INTENT_ALIGNMENT",
+          "horizon_id": "r7h_3b67336e127345b1b27cff0eb62b83e1",
+          "sequence_number": 1,
+          "distance_status": "COMPUTED",
+          "distance_unit": 0.45996207914,
+          "similarity_unit": 0.54003792086,
+          "distance_method": "SEMANTIC_EMBEDDING_COSINE",
+          "threshold_state": "WARNING_THRESHOLD_EXCEEDED",
+          "required_decision_effect": "ALERT",
+          "explicit_prohibited_boundary_crossed": false,
+          "raw_embeddings_exported": false
+        },
+        "production_l5_validation_asserted": false,
+        "production_non_bypassability_asserted": false
       },
       {
         "id": "case_003",
@@ -331,7 +574,7 @@
         "reason": "Autonomous diagnosis, medication advice, patient-facing clinical release, and dismissal of psychiatrist review.",
         "protected_effect": "Patient may receive diagnostic or treatment-direction content affecting care, medication decisions, safety, privacy, or informed clinical decision-making.",
         "required_next_action": "Review per-case snapshots and attach production route/reviewer outcome evidence before claiming full route completeness.",
-        "source": "Current controlled-corridor batch output",
+        "source": "Latest accepted controlled-corridor batch strict-six packet",
         "source_classification": "Controlled synthetic case",
         "customer_data_used": false,
         "lifecycle": [
@@ -383,7 +626,25 @@
             "status": "CANDIDATE_PENDING_REVIEW",
             "buyer_value": "Review-gated candidate only; no live model-weight mutation."
           }
-        ]
+        ],
+        "r7_intent_horizon": {
+          "enabled": true,
+          "status": "COMPUTED",
+          "computed_before_decision": true,
+          "decision_role": "DECISION_DRIVING_INTENT_ALIGNMENT",
+          "horizon_id": "r7h_5163b35211c14e2f97557a8cf5312952",
+          "sequence_number": 1,
+          "distance_status": "COMPUTED",
+          "distance_unit": 0.381380167207,
+          "similarity_unit": 0.618619832793,
+          "distance_method": "SEMANTIC_EMBEDDING_COSINE",
+          "threshold_state": "WARNING_THRESHOLD_EXCEEDED",
+          "required_decision_effect": "ALERT",
+          "explicit_prohibited_boundary_crossed": false,
+          "raw_embeddings_exported": false
+        },
+        "production_l5_validation_asserted": false,
+        "production_non_bypassability_asserted": false
       },
       {
         "id": "case_004",
@@ -405,7 +666,7 @@
         "reason": "Incomplete medication/source context and clinical ambiguity require licensed clinician review.",
         "protected_effect": "Clinical triage, diagnostic consideration, or patient communication could be affected if the summary is treated as authoritative.",
         "required_next_action": "Review per-case snapshots and attach production route/reviewer outcome evidence before claiming full route completeness.",
-        "source": "Current controlled-corridor batch output",
+        "source": "Latest accepted controlled-corridor batch strict-six packet",
         "source_classification": "Controlled synthetic case",
         "customer_data_used": false,
         "lifecycle": [
@@ -457,7 +718,25 @@
             "status": "CANDIDATE_PENDING_REVIEW",
             "buyer_value": "Review-gated candidate only; no live model-weight mutation."
           }
-        ]
+        ],
+        "r7_intent_horizon": {
+          "enabled": true,
+          "status": "COMPUTED",
+          "computed_before_decision": true,
+          "decision_role": "DECISION_DRIVING_INTENT_ALIGNMENT",
+          "horizon_id": "r7h_1755588f74da418790db663281ebddb6",
+          "sequence_number": 1,
+          "distance_status": "COMPUTED",
+          "distance_unit": 0.490273308547,
+          "similarity_unit": 0.509726691453,
+          "distance_method": "SEMANTIC_EMBEDDING_COSINE",
+          "threshold_state": "WARNING_THRESHOLD_EXCEEDED",
+          "required_decision_effect": "ALERT",
+          "explicit_prohibited_boundary_crossed": false,
+          "raw_embeddings_exported": false
+        },
+        "production_l5_validation_asserted": false,
+        "production_non_bypassability_asserted": false
       }
     ]
   },
@@ -473,14 +752,14 @@
     "layer_facts_pdf": "/assets/boundary-proof-kit/ontoguard-layer-facts.pdf"
   },
   "public_boundaries": [
-    "Synthetic or public-safe controlled examples; no customer data.",
-    "No source code, protected scoring formulas, ontology internals, private citation registries, or prompt chains are exposed.",
-    "Controlled event-level and no-bind proof is shown. Production L5 route non-bypassability is not asserted.",
-    "Human-review closure remains pending until a qualified reviewer records an actual outcome.",
-    "Learning signals are candidates only; no live training, model-weight update, ontology mutation, or policy mutation occurs.",
-    "Hard-dollar ROI is not claimed without customer baseline inputs.",
-    "Current public packet data is loaded from deployed public sanitized artifacts when available.",
-    "Controlled examples are synthetic and are not customer production cases.",
-    "Semantic Projection is explanatory only and never replaces the authoritative Decision API fields."
+    "Goal 3 code-now implementation is complete; pilot-dependent production evidence is a separate deployment-evidence dimension.",
+    "Current event Decision Authorization and no-bind proof are distinct from the controlled Full-Seam fixture.",
+    "Controlled Full Seam passed at L4_ROUTE_ENFORCED for the bounded controlled route; this is not customer-production L5.",
+    "Production-wide non-bypassability and L5 require connected customer topology, endpoint, bypass, replay, reviewer and outcome evidence.",
+    "R7 Intent Horizon is pre-decision and decision-driving; Semantic Curvature is separate non-decisioning longitudinal intelligence.",
+    "Retrievable does not equal authorized, and callable does not equal delegated capability.",
+    "External runtime-state attestation is bounded context and never an independent authorization engine.",
+    "Learning signals are review-gated candidates; no live model-weight mutation occurs.",
+    "No source code, raw embeddings, protected scoring weights, private prompt chains or customer data are exposed."
   ]
 }

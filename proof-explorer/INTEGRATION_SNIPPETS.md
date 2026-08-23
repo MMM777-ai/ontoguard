@@ -21,7 +21,7 @@ Recommended hero order:
 <article class="card proof-explorer-card">
   <p class="eyebrow">Interactive proof</p>
   <h3>Explore a governed decision</h3>
-  <p>Choose a controlled AI-proposed movement and inspect the Decision API result, release state, consequence proof, route maturity, and browser-verifiable packet.</p>
+  <p>Explore a governed AI decision, intent and authority continuity, release/no-bind consequence proof, controlled route maturity, batch posture, and browser-verifiable packet integrity.</p>
   <a class="text-link" href="/proof-explorer/">Open the Proof Explorer</a>
 </article>
 ```
@@ -31,7 +31,7 @@ Recommended hero order:
 ```xml
 <url>
   <loc>https://ontoguard.ai/proof-explorer/</loc>
-  <lastmod>2026-07-12</lastmod>
+  <lastmod>2026-08-23</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
 </url>
@@ -48,7 +48,7 @@ Recommended hero order:
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
   "isAccessibleForFree": true,
-  "description": "Interactive public-safe demonstration of OntoGuard Decision Authorization, release control, consequence proof, route maturity, and packet verification.",
+  "description": "Interactive public-safe demonstration of OntoGuard Decision Authorization, intent and governing-basis continuity, authority posture, release/no-bind consequence proof, controlled route maturity, batch posture, and browser-verifiable packet integrity.",
   "provider": {"@id": "https://ontoguard.ai/#organization"}
 }
 ```

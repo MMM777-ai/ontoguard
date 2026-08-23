@@ -148,3 +148,32 @@
 @media (prefers-reduced-motion: reduce) {
  .proof-explorer-page *, .proof-explorer-page *::before, .proof-explorer-page *::after { scroll-behavior: auto; transition-duration: .01ms; animation-duration: .01ms; animation-iteration-count: 1; }
 }
+/* Goal 3 current-capability alignment — additive status/detail surfaces only. */
+.proof-explorer-page .pe-goal3-status { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:0 0 20px; }
+.proof-explorer-page .pe-goal3-status article { padding:14px; border:1px solid var(--pe-line); border-top:4px solid var(--pe-teal); border-radius:12px; background:#fff; }
+.proof-explorer-page .pe-goal3-status span, .proof-explorer-page .pe-goal3-status small { display:block; color:var(--pe-muted); }
+.proof-explorer-page .pe-goal3-status strong { display:block; margin:5px 0; color:var(--pe-dark); overflow-wrap:anywhere; }
+.proof-explorer-page .pe-why-panel > .pe-core-why, .proof-explorer-page .pe-why-panel > .pe-capability-detail-grid { grid-column:1/-1; padding:0; }
+.proof-explorer-page .pe-core-why { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.proof-explorer-page .pe-core-why > div { padding:14px; border:1px solid var(--pe-line); border-radius:12px; background:#fff; }
+.proof-explorer-page .pe-core-why span { display:block; color:var(--pe-muted); font-size:.78rem; }
+.proof-explorer-page .pe-core-why strong { display:block; margin-top:5px; overflow-wrap:anywhere; }
+.proof-explorer-page .pe-core-why .pe-why-reason { grid-column:1/-1; }
+.proof-explorer-page .pe-capability-detail-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:12px; }
+.proof-explorer-page .pe-capability-detail-grid article { padding:16px; border:1px solid var(--pe-line); border-radius:14px; background:#f8fbfd; }
+.proof-explorer-page .pe-capability-detail-grid h3 { margin:0 0 5px; color:var(--pe-dark); font-size:1rem; }
+.proof-explorer-page .pe-capability-detail-grid p, .proof-explorer-page .pe-capability-detail-grid small { color:var(--pe-muted); }
+.proof-explorer-page .pe-capability-detail-grid dl { display:grid; gap:7px; margin:12px 0; }
+.proof-explorer-page .pe-capability-detail-grid dl div { display:grid; grid-template-columns:minmax(130px,.8fr) minmax(0,1.2fr); gap:10px; padding-top:7px; border-top:1px solid var(--pe-line); }
+.proof-explorer-page .pe-capability-detail-grid dt { color:var(--pe-muted); font-size:.78rem; }
+.proof-explorer-page .pe-capability-detail-grid dd { margin:0; font-weight:750; overflow-wrap:anywhere; }
+.proof-explorer-page .pe-consequence-custody { display:grid; grid-template-columns:.7fr 1.3fr; gap:16px; margin-top:14px; padding:18px; border:1px solid var(--pe-line); border-left:5px solid var(--pe-blue); border-radius:14px; background:#fff; }
+.proof-explorer-page .pe-consequence-custody > div > strong { display:block; margin:7px 0; color:var(--pe-dark); font-size:1.15rem; overflow-wrap:anywhere; }
+.proof-explorer-page .pe-consequence-custody p { margin:0; color:var(--pe-muted); }
+.proof-explorer-page .pe-consequence-custody dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px 14px; margin:0; }
+.proof-explorer-page .pe-consequence-custody dl div { min-width:0; }
+.proof-explorer-page .pe-consequence-custody dt { color:var(--pe-muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.04em; }
+.proof-explorer-page .pe-consequence-custody dd { margin:3px 0 0; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.76rem; overflow-wrap:anywhere; }
+@media (max-width:1099px){.proof-explorer-page .pe-goal3-status{grid-template-columns:repeat(2,minmax(0,1fr));}.proof-explorer-page .pe-consequence-custody{grid-template-columns:1fr;}}
+@media (max-width:700px){.proof-explorer-page .pe-goal3-status,.proof-explorer-page .pe-core-why,.proof-explorer-page .pe-capability-detail-grid{grid-template-columns:1fr;}.proof-explorer-page .pe-core-why .pe-why-reason{grid-column:auto;}.proof-explorer-page .pe-capability-detail-grid dl div{grid-template-columns:1fr;gap:2px;}.proof-explorer-page .pe-consequence-custody dl{grid-template-columns:1fr;}}
+
