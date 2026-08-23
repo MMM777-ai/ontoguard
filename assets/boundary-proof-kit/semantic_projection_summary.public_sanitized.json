@@ -1,34 +1,35 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v4-current-maturity-governed-event-lifecycle-truth-consistency",
-  "generated_at_utc": "2026-07-11T19:11:01Z",
+  "kit_version": "v5-goal3-complete-r7-continuity-custody",
+  "generated_at_utc": "2026-08-23T18:12:17Z",
   "source_runs": {
-    "single_event_trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
-    "single_event_source_zip": "a30db149-e2c4-4001-a7f8-694ceb64af9a.governance.zip",
-    "single_event_source_zip_sha256": "0428d40ab69f952b69877f1b413cd752df4d900b6d499fa95b8590cb52b5293e",
-    "batch_id": "corr_batch_af700a1eb8c1",
-    "batch_source_zip": "corr_batch_af700a1eb8c1.governance.zip",
-    "batch_source_zip_sha256": "02a680f4ebc90030c1493c90a841ee03351b937623423824cebaf9f99c60a186",
+    "single_event_trace_id": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54",
+    "single_event_source_zip": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54.governance.zip",
+    "single_event_source_zip_sha256": "ae9994c805ae0aab87204e5af5396264792ee87e8d99d9f65eb85f4a24d0c473",
+    "single_post_harness": {
+      "passes": 7373,
+      "warnings": 0,
+      "failures": 0,
+      "hard_checks": "PASSED"
+    },
+    "batch_id": "corr_batch_eb331c8dd974",
+    "batch_source_zip": "corr_batch_eb331c8dd974.governance.zip",
+    "batch_source_zip_sha256": "8e96b5a681de88df40aeffbfebea9ee2bafc3ce636cc232baa423fa268a4b6cc",
+    "batch_post_harness": {
+      "passes": 2221,
+      "warnings": 0,
+      "failures": 0,
+      "hard_checks": "PASSED"
+    },
     "public_sample_scope": "website_public_sanitized_summary"
   },
   "public_sanitized": true,
-  "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
-  "public_safety_boundaries": [
-    "No source code or protected implementation logic.",
-    "No private ontology internals, raw legal/citation registries, protected scoring formulas, or customer data.",
-    "The single-event proof is a public-safe sanitized financial-services governance case.",
-    "The controlled batch is a synthetic controlled-corridor proof surface and not customer production data.",
-    "Event-level execution-boundary and no-bind proof is shown; production L5 non-bypassability is not asserted.",
-    "Learning signals are review-gated candidates; no live training, model-weight update, ontology mutation, policy mutation, or Decision API mutation is performed."
-  ],
-  "summary_type": "semantic_projection_summary_public_sanitized",
+  "summary_type": "semantic_projection_r7_and_longitudinal_intelligence_public_sanitized",
   "what_this_proves": [
-    "The Decision API remains authoritative.",
-    "Semantic projection and Decision Projection explain candidate states without overriding the selected authorized state.",
-    "The current selected projection matches the Decision API action ESCALATE.",
-    "Underlying score preference divergence is disclosed separately from Decision API parity.",
-    "Coherent Governance Loading explains why the autonomous release threshold was not met.",
-    "Batch projection preserves per-case outcomes and summarizes mixed controlled-corridor posture."
+    "The Decision API remains authoritative; semantic projection is explanatory only.",
+    "The selected semantic projection matches the Decision API action ESCALATE.",
+    "R7 Intent Horizon is a separate decision-driving pre-decision input measuring the current action against immutable original intent.",
+    "Semantic Curvature is separate, non-decisioning longitudinal portfolio intelligence and remains INSUFFICIENT_HISTORY for this single event."
   ],
   "single_event_semantic_projection": {
     "status": "COMPLETE",
@@ -40,32 +41,147 @@
     "selected_projection": "ESCALATE",
     "decision_api_action": "ESCALATE",
     "decision_api_parity": "MATCH",
-    "state_scores": {
-      "ALLOW": 0.6422329888,
-      "BLOCK": 0.287840152,
-      "ESCALATE": 0.578354268
-    },
-    "projection_confidence": 0.578354268,
+    "projection_confidence": 0.58919983,
     "projection_margin": 0.0,
-    "underlying_score_preference_divergence": true,
-    "highest_scoring_candidate": "ALLOW",
     "override_performed": false,
     "coherent_governance_loading": {
       "status": "COMPLETE",
-      "score": 0.38745000000000007,
+      "score": 0.27945,
       "tier": "WEAK",
       "release_threshold_met": false,
       "weakest_components": [
         "evidence_coverage",
         "citation_linkage",
-        "human_judgment_readiness"
-      ],
-      "missing_components": [
-        "evidence_pack",
-        "citation_linkage"
+        "semantic_trace_density"
       ]
     },
-    "read_only_policy": "Projection and governance loading explain the authoritative Decision API result; they do not mutate decision, release, trust, risk, benchmark, policy, evidence, routing, citations, or trace."
+    "read_only_policy": "Projection explains the authoritative Decision API result and does not mutate decision or release truth."
+  },
+  "r7_intent_horizon": {
+    "schema_version": "r7_intent_horizon_v1",
+    "status": "COMPUTED",
+    "enabled": true,
+    "computed_before_decision": true,
+    "decision_role": "DECISION_DRIVING_INTENT_ALIGNMENT",
+    "required_for_autonomous_allow": true,
+    "original_intent": {
+      "immutable": true,
+      "buyer_safe_statement": "Evaluate a Wealth Management pre-release investment recommendation without allowing downstream trade, customer communication, account update, or product order from this output.",
+      "statement_hash": "sha256:6a703cdc9b5791dc0eb13245a2a7476bc8f337d0a7163d48b9261c0903476423"
+    },
+    "horizon_id": "r7h_18fec6c84bee4360941f955658928321",
+    "sequence_number": 1,
+    "semantic_distance": {
+      "status": "COMPUTED",
+      "metric_id": "AARM_R7_INTENT_ACTION_SEMANTIC_DISTANCE",
+      "method": "SEMANTIC_EMBEDDING_COSINE",
+      "distance_unit": 0.331310915185,
+      "similarity_unit": 0.668689084815,
+      "formula_version": "aarm_r7_cosine_distance_v1",
+      "model_id": "sentence-transformers/all-MiniLM-L6-v2",
+      "model_version": "local_basis_fingerprint:ea30887036e3bc5c8b70bd7f0430932e",
+      "raw_embeddings_exported": false
+    },
+    "threshold": {
+      "profile_id": "controlled_r7_conformance_v1",
+      "threshold_state": "WARNING_THRESHOLD_EXCEEDED",
+      "required_decision_effect": "ALERT",
+      "explicit_prohibited_boundary_crossed": false,
+      "reason_code": "R7_INTENT_DRIFT_WARNING"
+    },
+    "trajectory": {
+      "action_count": 1,
+      "current_distance": 0.331310915185,
+      "previous_distance": null,
+      "drift_velocity": null,
+      "drift_acceleration": null,
+      "trajectory_hash": "sha256:9d415ac8029f220511541c994b090b1da07a5d109baf602beae5ae2d780ea95e",
+      "trajectory_head_hash": "sha256:d81bad7057d9fa3234cf0a5876718ea18f8d39166996011b2d2cc2f41987451e"
+    }
+  },
+  "semantic_curvature": {
+    "schema_version": "semantic_curvature_v2",
+    "status": "INSUFFICIENT_HISTORY",
+    "decision_role": "NON_DECISIONING_PORTFOLIO_INTELLIGENCE",
+    "observed_record_count": 1,
+    "eligible_record_count": 1,
+    "minimum_required_records": 3,
+    "time_basis": "PER_COMPARABLE_EVENT",
+    "interpretation": "Portfolio intelligence only; does not override the current Decision API result.",
+    "dimensions": {
+      "citation_readiness": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 0,
+        "current_level": null
+      },
+      "decision_api_outcome_posture": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 1,
+        "current_level": 0.5
+      },
+      "evidence": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 0,
+        "current_level": null
+      },
+      "human_review_pressure": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 1,
+        "current_level": 1.0
+      },
+      "mapped_evidence": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 1,
+        "current_level": 1.0
+      },
+      "repair_pressure": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 1,
+        "current_level": 0.0
+      },
+      "risk": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 0,
+        "current_level": null
+      },
+      "route_maturity": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 1,
+        "current_level": 0.0
+      },
+      "trust": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 1,
+        "current_level": 1.0
+      },
+      "uncertainty": {
+        "status": "INSUFFICIENT_HISTORY",
+        "observation_count": 0,
+        "current_level": null
+      }
+    }
+  },
+  "governance_spectrum": {
+    "schema_version": "governance_spectrum_v2",
+    "status": "INSUFFICIENT_HISTORY",
+    "decision_role": "NON_DECISIONING_PORTFOLIO_INTELLIGENCE",
+    "decision_counts": {
+      "ALLOW": 0,
+      "BLOCK": 0,
+      "ESCALATE": 1
+    },
+    "eligible_record_count": 1,
+    "rates": {
+      "allow_rate": 0.0,
+      "block_rate": 0.0,
+      "citation_gap_rate": 1.0,
+      "escalate_rate": 1.0,
+      "evidence_insufficiency_rate": 1.0,
+      "human_review_rate": 1.0,
+      "repair_signal_rate": 0.0,
+      "route_limitation_rate": 1.0
+    },
+    "buyer_rule": "One run does not establish a longitudinal trend; insufficient history is shown instead of fabricating velocity or acceleration."
   },
   "batch_semantic_projection_public_summary": {
     "status": "ATTACHED_AGGREGATE_WITH_LIMITATIONS",
@@ -78,19 +194,9 @@
       "ESCALATE": 2
     },
     "decision_api_parity": "MATCH",
-    "highest_risk_projection": "ESCALATE",
-    "full_detail_location": "full_audit.governance.json",
-    "buyer_summary": "Semantic Projection summarizes what governed outcomes the controlled batch attempted and why the aggregate selected state won without overriding per-case Decision API outcomes.",
     "limitations": [
-      "This aggregate readout summarizes governed controlled test cases. It does not claim production deployment, client-specific operating policy, measured reviewer compression, measured loss prevention, or automatic model retraining until pilot feedback is attached."
+      "Batch membership is not one R7 trajectory and one controlled batch is not longitudinal Semantic Curvature."
     ]
   },
-  "mutation_policy": {
-    "live_training_performed": false,
-    "model_update_performed": false,
-    "ontology_mutation_performed": false,
-    "policy_mutation_performed": false,
-    "decision_api_mutated": false
-  },
-  "decision_api_preservation_statement": "Projection is explanatory only. The authoritative Decision API action, release authorization, routing, no-bind result, and evidence state are preserved."
+  "decision_api_preservation_statement": "Projection, R7 context, and portfolio intelligence strengthen one Decision Authorization architecture. Only the Decision API authorizes ALLOW, BLOCK, or ESCALATE."
 }

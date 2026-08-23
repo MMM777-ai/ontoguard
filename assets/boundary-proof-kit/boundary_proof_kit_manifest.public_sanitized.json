@@ -1,123 +1,107 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v4-current-maturity-governed-event-lifecycle-truth-consistency",
-  "generated_at_utc": "2026-07-11T19:11:01Z",
+  "kit_version": "v5-goal3-complete-r7-continuity-custody",
+  "generated_at_utc": "2026-08-23T18:12:17Z",
   "source_runs": {
-    "single_event_trace_id": "a30db149-e2c4-4001-a7f8-694ceb64af9a",
-    "single_event_source_zip": "a30db149-e2c4-4001-a7f8-694ceb64af9a.governance.zip",
-    "single_event_source_zip_sha256": "0428d40ab69f952b69877f1b413cd752df4d900b6d499fa95b8590cb52b5293e",
-    "batch_id": "corr_batch_af700a1eb8c1",
-    "batch_source_zip": "corr_batch_af700a1eb8c1.governance.zip",
-    "batch_source_zip_sha256": "02a680f4ebc90030c1493c90a841ee03351b937623423824cebaf9f99c60a186",
+    "single_event_trace_id": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54",
+    "single_event_source_zip": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54.governance.zip",
+    "single_event_source_zip_sha256": "ae9994c805ae0aab87204e5af5396264792ee87e8d99d9f65eb85f4a24d0c473",
+    "single_post_harness": {
+      "passes": 7373,
+      "warnings": 0,
+      "failures": 0,
+      "hard_checks": "PASSED"
+    },
+    "batch_id": "corr_batch_eb331c8dd974",
+    "batch_source_zip": "corr_batch_eb331c8dd974.governance.zip",
+    "batch_source_zip_sha256": "8e96b5a681de88df40aeffbfebea9ee2bafc3ce636cc232baa423fa268a4b6cc",
+    "batch_post_harness": {
+      "passes": 2221,
+      "warnings": 0,
+      "failures": 0,
+      "hard_checks": "PASSED"
+    },
     "public_sample_scope": "website_public_sanitized_summary"
   },
-  "public_sanitized": true,
-  "ip_positioning": "Protected by U.S. Patent Application 19/444,521 - Track I prioritized examination granted May 2026.",
-  "public_safety_boundaries": [
-    "No source code or protected implementation logic.",
-    "No private ontology internals, raw legal/citation registries, protected scoring formulas, or customer data.",
-    "The single-event proof is a public-safe sanitized financial-services governance case.",
-    "The controlled batch is a synthetic controlled-corridor proof surface and not customer production data.",
-    "Event-level execution-boundary and no-bind proof is shown; production L5 non-bypassability is not asserted.",
-    "Learning signals are review-gated candidates; no live training, model-weight update, ontology mutation, policy mutation, or Decision API mutation is performed."
-  ],
-  "artifact_type": "boundary_proof_kit_manifest_public_sanitized",
-  "recommended_public_website_use": "Replace the existing public proof-kit assets at the same filenames and URLs.",
-  "buyer_reading_order": [
-    "governance.sellable_lite.public_sanitized.pdf",
-    "one_page_refusal_escalation_receipt.public_sanitized.pdf",
-    "governance.public_sanitized.pdf",
-    "ontoguard-layer-facts.pdf",
-    "buyer_portable.governance.public_sanitized.json",
-    "controlled_runtime_seam_summary.public_sanitized.json",
-    "semantic_projection_summary.public_sanitized.json"
-  ],
-  "proof_capabilities_showcased": [
-    "governed-event lifecycle",
-    "Decision Authorization",
-    "execution-boundary proof",
-    "no-bind receipt",
-    "institutional admissibility",
-    "benchmark corpus identity",
-    "controlled-batch case authority consistency",
-    "strict-six offline audit credential",
-    "human closure",
-    "review-gated learning signal"
-  ],
-  "not_asserted": [
-    "production L5 non-bypassability",
-    "production endpoint enforcement",
-    "customer-specific benchmark",
-    "external industry benchmark",
-    "hard-dollar ROI without customer baselines",
-    "live training or runtime mutation"
-  ],
+  "product_truth": {
+    "goal3_code_now_complete": true,
+    "goal3_code_now_acceptance": "15/15",
+    "sections_46_54_implemented": true,
+    "controlled_client_demo_pilot_readiness": true,
+    "current_event_production_non_bypassability_asserted": false,
+    "controlled_fixture_status": "PASS",
+    "controlled_fixture_maturity": "L4_ROUTE_ENFORCED",
+    "controlled_fixture_production_enforcement_asserted": false,
+    "production_l5_status": "CUSTOMER_TOPOLOGY_EVIDENCE_REQUIRED",
+    "decision_api_is_sole_authorization_authority": true,
+    "buyer_language": "Goal 3 code-now implementation is complete. Current-event proof, controlled-fixture L4 proof, and customer-production L5 evidence are separate evidence layers."
+  },
   "files": [
     {
       "filename": "README_BOUNDARY_PROOF_KIT.md",
-      "bytes": 5363,
-      "sha256": "d0e4e1364c66fa2765c45c050b4b4f9320859ed2fafc05f60a1ed01b4006ace5"
+      "bytes": 2067,
+      "sha256": "5d80590bc954a038f4285c83ad42a8a0c51b67282d5ff21effdf3d96e3509eea"
+    },
+    {
+      "filename": "REPLACEMENT_NOTES.md",
+      "bytes": 916,
+      "sha256": "1bc943b4f1fe03abeeae454b7e644ff89939c92b4bf6b26a87fefe279bb0480e"
     },
     {
       "filename": "artifact_manifest.public_sanitized.json",
-      "bytes": 5036,
-      "sha256": "e227ba2a4f8d47b1d8cff4a8c41977705271643b6c6ddc455ff58cef83f1653e"
-    },
-    {
-      "filename": "boundary_proof_kit_manifest.public_sanitized.json",
-      "bytes": 5328,
-      "sha256": "SELF_EXCLUDED_PUBLIC_MANIFEST_HASH"
+      "bytes": 2832,
+      "sha256": "d16e4778c9f0e572fdf77f641bb1130577057a175bbe8bb8e9091434dda17d47"
     },
     {
       "filename": "buyer_portable.governance.public_sanitized.json",
-      "bytes": 26857,
-      "sha256": "5d7bea78b2574b8cf151053199c4c07663d38d74cee43ff4c5b9d2031a11e65c"
+      "bytes": 23616,
+      "sha256": "38096a929dd102aa2f390908137dba09efe1550f6826cf8d86cfaf7858f15097"
     },
     {
       "filename": "controlled_runtime_seam_summary.public_sanitized.json",
-      "bytes": 12993,
-      "sha256": "abede328bc8b7c90d0781221dde31e3c33ff6d9cc1c6dc13cc4399a64e4ff64b"
+      "bytes": 32422,
+      "sha256": "5a7e79074973e163427848a6dfa2749f5536f1642483e6d196c5f664266550c1"
     },
     {
       "filename": "decision_receipt.public_sanitized.json",
-      "bytes": 11006,
-      "sha256": "1ac04360b36b149f0b8551cce1b606714452e4dbaf21c59e699706802a6fa81e"
+      "bytes": 8597,
+      "sha256": "d32b1e3c0be8cf3b37f19fb2748cadd0ba3047d716c849ed05a3169ea9220f66"
     },
     {
       "filename": "full_audit.governance.public_sanitized_summary.json",
-      "bytes": 72147,
-      "sha256": "179178d553ed3907e3ae5245bd01e3e2045773f275ce70f1d5dbbd241c066307"
+      "bytes": 38123,
+      "sha256": "7c2a46df8c5a9af87240fac89980846fd0142a4191a2de5677cd82b53806570f"
     },
     {
       "filename": "governance.public_sanitized.pdf",
-      "bytes": 18614,
-      "sha256": "25a662cbac60210fc50e64912f08a047fb4de374ff1d6d2105189a3048aa8406"
+      "bytes": 12577,
+      "sha256": "2f063f14423fac60feac86933189a6ed245efbadb19f995dcafffdaa100aa74d"
     },
     {
       "filename": "governance.public_sanitized.zip",
-      "bytes": 42207,
-      "sha256": "48748db3e81396b204732be8a7fb021b350bea76d458dd6d8c1b3f201446cee5"
+      "bytes": 32393,
+      "sha256": "2bffca0ed9d9f4a34c0d406b7daf156a665ae5cdc70805be0df4962234ac8aee"
     },
     {
       "filename": "governance.sellable_lite.public_sanitized.pdf",
-      "bytes": 5144,
-      "sha256": "eefda81fd44cec54adb40b119a5e5c743c1b7f09b10af2cbb157c5dd2301d606"
+      "bytes": 3959,
+      "sha256": "2842db311ad748470e8e29aee42b6aa1c31bb1d5f7baaf1bd4ebb8a9a39c3cd5"
     },
     {
       "filename": "one_page_refusal_escalation_receipt.public_sanitized.pdf",
-      "bytes": 4849,
-      "sha256": "d4b2cff6e706912c3f57a9c38a7aa7065421ee9a5865282ac2d8f34415d14d19"
+      "bytes": 3777,
+      "sha256": "daad0f07fdf27fb280d915fadb8ee540725b0737cae8d53b0379b0df242be45f"
     },
     {
       "filename": "ontoguard-layer-facts.pdf",
-      "bytes": 3300,
-      "sha256": "84c8b69abf1776eeb7b402718a7ff5d8b1198d9074cfc7a43ff0e2da1b16b034"
+      "bytes": 3762,
+      "sha256": "d6ac6496874cda40cb7266997e019efb18ffd0b6091df487c5f9e31576c6dcdd"
     },
     {
       "filename": "semantic_projection_summary.public_sanitized.json",
-      "bytes": 4779,
-      "sha256": "e71ce74e6cd15247eddaa486e4ab3feb5bdfc66af742e5bdf2f5542431e275b6"
+      "bytes": 7488,
+      "sha256": "c59beb61d2abc859c63574c010ee3579e639827cb73cde9778635ec6cb2b3f7c"
     }
   ],
-  "manifest_self_hash_policy": "boundary_proof_kit_manifest.public_sanitized.json is self-excluded for its own hash entry; use CHECKSUMS.sha256 for external file-byte hashes."
+  "manifest_self_hash_policy": "boundary_proof_kit_manifest.public_sanitized.json is self-excluded; CHECKSUMS.sha256 binds its raw bytes."
 }
