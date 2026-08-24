@@ -1,7 +1,7 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v5-goal3-complete-r7-continuity-custody",
-  "generated_at_utc": "2026-08-23T18:12:17Z",
+  "kit_version": "v6-full-goal3-current-run",
+  "generated_at_utc": "2026-08-23T20:53:06Z",
   "source_runs": {
     "single_event_trace_id": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54",
     "single_event_source_zip": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54.governance.zip",
@@ -21,7 +21,16 @@
       "failures": 0,
       "hard_checks": "PASSED"
     },
-    "public_sample_scope": "website_public_sanitized_summary"
+    "public_sample_scope": "website_public_sanitized_summary",
+    "goal_specification": {
+      "filename": "ONTOGUARD_GOAL_3(20260823-013021).txt",
+      "sha256": "575accf867bbccab16b75d54a6e49f330543996c45ce8ff56bc5dc8bd78c6f6d"
+    },
+    "last_run_archive": {
+      "filename": "Last_Run.zip",
+      "sha256": "7d21f62c1bb1685d67a6510a18b854e38ad500d4e45b68b99ed06acb7223a70f"
+    },
+    "source_binding_statement": "This public projection is derived from the named Goal specification and accepted Last Run archive; canonical private strict-six artifacts remain authoritative."
   },
   "public_sanitized": true,
   "summary_type": "semantic_projection_r7_and_longitudinal_intelligence_public_sanitized",

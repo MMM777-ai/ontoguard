@@ -1,7 +1,7 @@
 {
   "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v5-goal3-complete-r7-continuity-custody",
-  "generated_at_utc": "2026-08-23T18:12:17Z",
+  "kit_version": "v6-full-goal3-current-run",
+  "generated_at_utc": "2026-08-23T20:53:06Z",
   "source_runs": {
     "single_event_trace_id": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54",
     "single_event_source_zip": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54.governance.zip",
@@ -21,7 +21,16 @@
       "failures": 0,
       "hard_checks": "PASSED"
     },
-    "public_sample_scope": "website_public_sanitized_summary"
+    "public_sample_scope": "website_public_sanitized_summary",
+    "goal_specification": {
+      "filename": "ONTOGUARD_GOAL_3(20260823-013021).txt",
+      "sha256": "575accf867bbccab16b75d54a6e49f330543996c45ce8ff56bc5dc8bd78c6f6d"
+    },
+    "last_run_archive": {
+      "filename": "Last_Run.zip",
+      "sha256": "7d21f62c1bb1685d67a6510a18b854e38ad500d4e45b68b99ed06acb7223a70f"
+    },
+    "source_binding_statement": "This public projection is derived from the named Goal specification and accepted Last Run archive; canonical private strict-six artifacts remain authoritative."
   },
   "public_sanitized": true,
   "public_safety_boundaries": [
@@ -865,5 +874,418 @@
     "Current-event shadow/event proof does not establish production endpoint enforcement.",
     "The 22/22 Full Seam result establishes controlled L4 evidence only for its bounded controlled route.",
     "Production route inventory, real protected endpoint enforcement, production bypass rejection, connected replay, reviewer identity/authority, outcome closure, and deployment controls require customer/pilot evidence."
-  ]
+  ],
+  "full_goal3_context": {
+    "code_now_acceptance": {
+      "schema_version": "ontoguard.goal3_public_acceptance_matrix@1.0",
+      "status": "COMPLETE",
+      "code_now_complete": true,
+      "passed": 15,
+      "total": 15,
+      "final_byte_authority": true,
+      "final_byte_settlement": true,
+      "pilot_dependent_count": 6,
+      "pilot_dependent_open": true,
+      "acceptance_semantics": "A CODE_NOW PASS means the required implementation predicate passed. It does not convert honest current-run insufficiency, pending citations, controlled-only proof, or missing customer topology into positive evidence.",
+      "requirements": [
+        {
+          "requirement_id": "G3-CODE-01",
+          "requirement": "Single canonical authority and projection roles",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/single_authority_proof",
+          "current_run_surface_status": "VALID",
+          "buyer_safe_current_run_note": "One authoritative Decision API; projections and diagnostics do not override ALLOW/BLOCK/ESCALATE."
+        },
+        {
+          "requirement_id": "G3-CODE-02",
+          "requirement": "Canonical typed proposed state transition",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/proposed_state_transition",
+          "current_run_surface_status": "COMPLETE",
+          "buyer_safe_current_run_note": "Typed proposed state transition is COMPLETE, VALID, frozen before decision, and carries a movement hash."
+        },
+        {
+          "requirement_id": "G3-CODE-03",
+          "requirement": "Decision-causal evidence enforcement, fail-closed insufficiency and domain purity",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/decision_causal_evidence_authority",
+          "current_run_surface_status": "PARTIAL_WITH_REASON",
+          "buyer_safe_current_run_note": "Acceptance PASS is fail-closed truth: current evidence authority is PARTIAL_WITH_REASON; no missing evidence is fabricated and autonomous release stays withheld."
+        },
+        {
+          "requirement_id": "G3-CODE-04",
+          "requirement": "Execution boundary and no-bind proof",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/execution_boundary_trace",
+          "current_run_surface_status": "WITHHELD_PENDING_REVIEW",
+          "buyer_safe_current_run_note": "Gate ran before release; autonomous release was refused; downstream commit is NOT_COMMITTED and no protected effect formed."
+        },
+        {
+          "requirement_id": "G3-CODE-05",
+          "requirement": "Native current-run agent identity and honest arbitration",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/native_agent_arbitration",
+          "current_run_surface_status": "COMPUTED_CURRENT_RUN_NATIVE_AGENT_ARBITRATION",
+          "buyer_safe_current_run_note": "Three native current-run agents executed (Compliance, Accuracy, Risk); arbitration is explanatory/non-decisioning and does not mutate Decision API truth."
+        },
+        {
+          "requirement_id": "G3-CODE-06",
+          "requirement": "Trust, risk, uncertainty and Section 45 truth",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/score_metric_authority",
+          "current_run_surface_status": "SECTION45_METRIC_TAXONOMY_ATTACHED",
+          "buyer_safe_current_run_note": "Output-reliability trust, decision-basis trust, arbitration, risk, uncertainty and Cold/Heat/Mercury are separately typed; no score is silently repurposed as authorization."
+        },
+        {
+          "requirement_id": "G3-CODE-07",
+          "requirement": "Controlled Full Seam full-audit authority or exact buyer compact projection",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/seam_pressure_tests",
+          "current_run_surface_status": "PASS",
+          "buyer_safe_current_run_note": "Controlled Full Seam retains exact 22-record full-audit authority and passed 22/22; L4 applies only to the bounded controlled route."
+        },
+        {
+          "requirement_id": "G3-CODE-08",
+          "requirement": "Knowledge-asset identity and integrity",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/knowledge_asset_identity",
+          "current_run_surface_status": "COMPLETE",
+          "buyer_safe_current_run_note": "Eight knowledge assets are identified with no missing decision-driving identities; raw indexes/embeddings and absolute paths are not exported."
+        },
+        {
+          "requirement_id": "G3-CODE-09",
+          "requirement": "Schema, strict-six, receipt, manifest and hash parity",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/artifact_status",
+          "current_run_surface_status": "FINALIZATION_COMPLETE",
+          "buyer_safe_current_run_note": "Artifact finalization is complete and strict-six readiness is true with receipt/manifest/hash parity."
+        },
+        {
+          "requirement_id": "G3-CODE-10",
+          "requirement": "Buyer/full/PDF/frontend authority separation",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/single_authority_proof",
+          "current_run_surface_status": "VALID",
+          "buyer_safe_current_run_note": "Buyer, full-audit, PDF and frontend projections remain role-separated from canonical authorization authority."
+        },
+        {
+          "requirement_id": "G3-CODE-11",
+          "requirement": "Proof harness customer-free dimensions",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/proof_harness_strengthening",
+          "current_run_surface_status": "STRUCTURAL_PASS_WITH_WEAK_DIMENSIONS",
+          "buyer_safe_current_run_note": "Customer-free proof harness is structurally verified with weak dimensions honestly disclosed; it does not claim autonomous-release readiness."
+        },
+        {
+          "requirement_id": "G3-CODE-12",
+          "requirement": "Matrix/heatmap citation semantics parity",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/compliance_surface_authority",
+          "current_run_surface_status": "COMPLETE",
+          "buyer_safe_current_run_note": "Nine canonical compliance rows maintain matrix/table/heatmap/overview parity without decision or release mutation."
+        },
+        {
+          "requirement_id": "G3-CODE-13",
+          "requirement": "Evidence geodesic domain purity or honest insufficiency",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/evidence_geodesic",
+          "current_run_surface_status": "INSUFFICIENT_DOMAIN_PURE_GRAPH",
+          "buyer_safe_current_run_note": "No defensible current-run domain-pure graph path existed; status is INSUFFICIENT_DOMAIN_PURE_GRAPH and no path was fabricated."
+        },
+        {
+          "requirement_id": "G3-CODE-14",
+          "requirement": "Bounded compaction and no-loss full-audit authority",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/evidence_pack",
+          "current_run_surface_status": "BUYER_COMPACTED_FULL_AUDIT_RICH_EVIDENCE_RETAINED",
+          "buyer_safe_current_run_note": "Buyer projection is compacted while the full audit retains rich evidence; mapped evidence and citation linkage remain distinct."
+        },
+        {
+          "requirement_id": "G3-CODE-15",
+          "requirement": "Measured runtime performance lifecycle",
+          "acceptance_status": "PASS",
+          "predicate_evaluated": true,
+          "mere_object_presence_is_not_pass": true,
+          "source_pointer": "/decision_authorization_packet/phase_timing_authority",
+          "current_run_surface_status": "NOT_ATTACHED_WITH_REASON",
+          "buyer_safe_current_run_note": "Acceptance PASS preserves measured runtime truth without inventing missing phases: actual LLM wall-time is captured, while formal all-phase timing authority is NOT_ATTACHED_WITH_REASON."
+        }
+      ]
+    },
+    "latest_run_governance_metrics": {
+      "schema_version": "ontoguard.latest_run_public_governance_metrics@1.0",
+      "score_metric_authority": {
+        "output_reliability_trust_percent": 71.071879,
+        "decision_basis_trust_percent": 58.919983,
+        "presented_governance_trust_percent": 58.919983,
+        "native_arbitration_percent": 73.283347,
+        "decision_routing_confidence_percent": "PENDING",
+        "autonomous_release_confidence_percent": 0.0,
+        "canonical_unified_uncertainty_percent": "PENDING",
+        "buyer_rule": "These are separate typed metrics. Output reliability, decision-basis trust, arbitration, risk, uncertainty and symbolic balance are not interchangeable and do not independently authorize release."
+      },
+      "native_agent_arbitration": {
+        "status": "COMPUTED_CURRENT_RUN_NATIVE_AGENT_ARBITRATION",
+        "actual_current_run_execution_count": 3,
+        "agents": [
+          "ComplianceAgent",
+          "AccuracyAgent",
+          "RiskAgent"
+        ],
+        "agent_scores": {
+          "AccuracyAgent": 67.888398,
+          "ComplianceAgent": 78.5,
+          "RiskAgent": 70.987038
+        },
+        "arbitration_percent": 73.283347,
+        "decision_role": "EXPLANATORY_NON_DECISIONING_NATIVE_AGENT_ARBITRATION",
+        "arbitration_driving": false,
+        "decision_api_mutated": false
+      },
+      "symbolic_balance": {
+        "status": "COMPUTED",
+        "cold_percent": 100.0,
+        "heat_percent": 50.123134,
+        "mercury_percent": 33.333333,
+        "cold_calculation_status": "COMPUTED_WITH_NA_NORMALIZATION",
+        "heat_measurement_status": "NATIVE_CURRENT_RUN_MEASURED",
+        "heat_missing_components": [
+          "divergence_unit"
+        ],
+        "mercury_missing_components": [
+          "cross_scope_alignment_unit"
+        ],
+        "positive_coverage_fabricated": false,
+        "buyer_rule": "Cold/Heat/Mercury are governance diagnostics, not trust scores, agents, or authorization outcomes."
+      },
+      "risk": {
+        "risk_manager_status": "EXECUTED",
+        "domain_inherent_risk": {
+          "interpretation": "Domain/inherent risk reflects the governed workflow and regulatory context. It does not override the formal residual release risk score.",
+          "level": "Moderate",
+          "risk_dimensions": [
+            "AI output authorization boundary"
+          ],
+          "score": 35.0
+        },
+        "residual_release_risk": {
+          "level": "Low",
+          "reason": "Residual risk is low because the run escalated for trust/authorization review, not because RiskManager found an active privacy, safety, or production-block risk.",
+          "release_authorized": false,
+          "score": 0.0
+        },
+        "production_release_risk": {
+          "level": "Withheld",
+          "production_block": false,
+          "reason": "Autonomous release was withheld pending human review.",
+          "release_authorized": false,
+          "release_withheld_pending_review": true,
+          "score": 0.0
+        },
+        "buyer_rule": "Low residual/production score here reflects withheld release; it must not be read as proof that the underlying output is safe for autonomous release."
+      },
+      "uncertainty": {
+        "status": "COMPUTED",
+        "level": "high",
+        "uncertainty_percent": 67.0,
+        "routing_uncertainty_floor_unit": 0.67,
+        "routing_floor_applied": true,
+        "canonical_score_metric_authority_value": "PENDING",
+        "buyer_rule": "The current uncertainty posture is high with a 67% routing floor; the canonical Section 45 UNIFIED_UNCERTAINTY score entry remains PENDING, so the two are not silently collapsed."
+      },
+      "benchmark": {
+        "mode": "INTERNAL_ONTOGUARD_REFERENCE_CORPUS",
+        "percentile": 19,
+        "sample_size": 150,
+        "disclosure": "Synthetic 2026 OntoGuard reference corpus generated from public regulatory/control expectations and internal scenario templates; not customer production data and not an external industry benchmark.",
+        "customer_specific_baseline_attached": false
+      },
+      "evidence_and_citations": {
+        "decision_causal_evidence_status": "PARTIAL_WITH_REASON",
+        "domain_purity_status": "PENDING_SCOPE_SETTLEMENT",
+        "mapped_evidence_count": 9,
+        "citation_rows": 9,
+        "citation_linked_count": 0,
+        "citation_pending_count": 9,
+        "citation_linkage_percent": 0.0,
+        "buyer_portable_compacted": true,
+        "full_audit_contains_rich_evidence": true,
+        "buyer_rule": "Mapped evidence coverage and citation linkage are distinct. This run honestly retains pending citation linkage instead of treating mapped evidence as citation closure."
+      },
+      "evidence_geodesic": {
+        "status": "INSUFFICIENT_DOMAIN_PURE_GRAPH",
+        "domain_purity_status": "PASS_BY_HONEST_DEGRADATION",
+        "path_count": 0,
+        "excluded_off_domain_link_count": 18,
+        "reason_codes": [
+          "NO_CONNECTED_CURRENT_RUN_DECISION_DRIVING_PATH"
+        ],
+        "buyer_rule": "No domain-pure rationale path is fabricated when the current-run graph is insufficient."
+      },
+      "knowledge_asset_identity": {
+        "status": "COMPLETE",
+        "asset_count": 8,
+        "knowledge_asset_manifest_hash": "0e1059481c76d3835e49442d914990df525a544a31b8345cf95707cf019540db",
+        "missing_decision_driving_asset_identities": [],
+        "raw_indexes_or_embeddings_exported": false,
+        "absolute_paths_exposed": false
+      },
+      "compliance_surface_authority": {
+        "status": "COMPLETE",
+        "row_count": 9,
+        "surface_parity": true,
+        "canonical_row_hash": "sha256:cd79f82b1150d04ae47d44d65712e9e3aee4534f54138e0de8640694af7348fc",
+        "decision_or_release_mutated": false
+      },
+      "proof_harness_strengthening": {
+        "status": "STRUCTURAL_PASS_WITH_WEAK_DIMENSIONS",
+        "buyer_facing_status": "STRUCTURALLY_VERIFIED_EVIDENCE_QUALITY_PARTIAL",
+        "passed_dimensions": [
+          "pi",
+          "qel",
+          "ccr",
+          "rs",
+          "cost"
+        ],
+        "partial_dimensions": [],
+        "not_applicable_dimensions": [
+          "fr"
+        ],
+        "runtime_ms": 70845.0,
+        "estimated_cost_usd": 0.070845,
+        "limitations": [
+          "Weak dimensions remain weak unless measured customer-free benchmark/provenance evidence exists in the current artifact; this readout does not claim autonomous-release readiness."
+        ]
+      },
+      "artifact_finalization": {
+        "status": "FINALIZATION_COMPLETE",
+        "artifact_package_complete": true,
+        "strict_six_file_zip_ready": true,
+        "buyer_json_ready": true,
+        "full_audit_ready": true,
+        "pdf_ready": true,
+        "sellable_lite_pdf_ready": true,
+        "decision_receipt_ready": true,
+        "manifest_ready": true,
+        "finalization_ms": 62867
+      },
+      "runtime_performance": {
+        "goal3_code_now_acceptance": "PASS",
+        "formal_phase_timing_authority_status": "NOT_ATTACHED_WITH_REASON",
+        "formal_missing_phases": [
+          "llm_inference",
+          "retrieval",
+          "decision_computation",
+          "semantic_closeout",
+          "json_export",
+          "pdf_rendering",
+          "hash_reseal",
+          "zip_packaging"
+        ],
+        "actual_llm_inference_capture_status": "CAPTURED",
+        "actual_llm_inference_ms": 16816.0,
+        "actual_llm_attempt_count": 1,
+        "artifact_finalization_ms": 62867,
+        "buyer_rule": "Measured runtime evidence is disclosed where captured; absent formal phase timings remain absent rather than being estimated or fabricated."
+      }
+    },
+    "sections_46_54_acceptance": {
+      "schema_version": "ontoguard.goal3_sections_46_54_public_matrix@1.0",
+      "all_implemented": true,
+      "decision_api_remains_sole_authority": true,
+      "sections": [
+        {
+          "section": 46,
+          "name": "R7 Intent Horizon - Persistent Intent-to-Action Governance",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "COMPUTED",
+          "buyer_note": "Immutable original intent is compared to the current proposed action using semantic distance before Decision API authorization."
+        },
+        {
+          "section": 47,
+          "name": "R7 Persistence, Replay, and Portable Proof",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "BOUNDED_TRAJECTORY_HASH_CHAIN_ATTACHED",
+          "buyer_note": "A bounded one-event trajectory, horizon identity and hash chain are attached; raw embeddings are not exported."
+        },
+        {
+          "section": 48,
+          "name": "Full Semantic Curvature - Longitudinal Governance Intelligence",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "INSUFFICIENT_HISTORY",
+          "buyer_note": "The capability is implemented; this single event has only 1 eligible record against a 3-record minimum, so no trend is fabricated. Governance Spectrum is likewise insufficient-history."
+        },
+        {
+          "section": 49,
+          "name": "R7 and Semantic Curvature Proof, Presentation, and North Star Acceptance",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "PASS_WITH_SINGLE_EVENT_HISTORY_LIMIT",
+          "buyer_note": "R7 and portfolio intelligence remain distinct; ordinary batch membership is not treated as one R7 trajectory or longitudinal history."
+        },
+        {
+          "section": 50,
+          "name": "Governing Basis Continuity and Lawful Continuation",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "ESTABLISHED_CURRENT / INITIAL",
+          "buyer_note": "The governing basis is frozen and current; a fresh Decision API decision is still required and CONTINUABLE never means standing authorization."
+        },
+        {
+          "section": 51,
+          "name": "Source Authority, Capability Authority, and Evidence Custody",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "CURRENT_EVENT MIXED_NOT_APPLICABLE_OR_INSUFFICIENT",
+          "buyer_note": "Retrievable source and callable tool are not treated as authority. Current case source/capability checks are not applicable where not required; overall authority completeness remains insufficient."
+        },
+        {
+          "section": 52,
+          "name": "External Runtime-State Attestation and Substrate Independence",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "NOT_ATTACHED_NOT_REQUIRED_BY_POLICY",
+          "buyer_note": "Runtime-state attestation is supported as a bounded pre-decision input but does not independently authorize release or become a surrogate trust/risk/R7 score."
+        },
+        {
+          "section": 53,
+          "name": "Consequence Custody and Governed Non-Formation",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "NO_BIND_PROVEN",
+          "buyer_note": "The exact movement, governing basis, frozen input, Decision API result, execution boundary and no-bind proof are hash-bound through receipt and manifest."
+        },
+        {
+          "section": 54,
+          "name": "Governing Continuity, Authority, Custody, and Runtime-State North Star Acceptance",
+          "implementation_status": "IMPLEMENTED_CURRENT_RUN",
+          "current_run_status": "PASS_WITH_PRODUCTION_BOUNDARY_RETAINED",
+          "buyer_note": "The additive capabilities strengthen the same Decision API and strict-six evidence architecture; customer-production L5 remains topology/evidence dependent."
+        }
+      ]
+    }
+  }
 }
