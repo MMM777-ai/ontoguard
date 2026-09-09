@@ -1,78 +1,96 @@
 {
-  "kit_name": "OntoGuard Boundary Proof Kit - Public Sanitized",
-  "kit_version": "v6-full-goal3-current-run",
-  "generated_at_utc": "2026-08-23T20:53:06Z",
-  "source_runs": {
-    "single_event_trace_id": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54",
-    "single_event_source_zip": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54.governance.zip",
-    "single_event_source_zip_sha256": "ae9994c805ae0aab87204e5af5396264792ee87e8d99d9f65eb85f4a24d0c473",
-    "single_post_harness": {
-      "passes": 7373,
-      "warnings": 0,
-      "failures": 0,
-      "hard_checks": "PASSED"
-    },
-    "batch_id": "corr_batch_eb331c8dd974",
-    "batch_source_zip": "corr_batch_eb331c8dd974.governance.zip",
-    "batch_source_zip_sha256": "8e96b5a681de88df40aeffbfebea9ee2bafc3ce636cc232baa423fa268a4b6cc",
-    "batch_post_harness": {
-      "passes": 2221,
-      "warnings": 0,
-      "failures": 0,
-      "hard_checks": "PASSED"
-    },
-    "public_sample_scope": "website_public_sanitized_summary",
-    "goal_specification": {
-      "filename": "ONTOGUARD_GOAL_3(20260823-013021).txt",
-      "sha256": "575accf867bbccab16b75d54a6e49f330543996c45ce8ff56bc5dc8bd78c6f6d"
-    },
-    "last_run_archive": {
-      "filename": "Last_Run.zip",
-      "sha256": "7d21f62c1bb1685d67a6510a18b854e38ad500d4e45b68b99ed06acb7223a70f"
-    },
-    "source_binding_statement": "This public projection is derived from the named Goal specification and accepted Last Run archive; canonical private strict-six artifacts remain authoritative."
-  },
-  "public_sanitized": true,
-  "artifact_contract": "PUBLIC_SANITIZED_STRICT_SIX_PROJECTION",
-  "authoritative_source": "latest accepted strict-six source packets; this public set is a sanitized projection, not a replacement for canonical full_audit authority",
+  "artifact_contract": "PUBLIC_SANITIZED_BOUNDARY_KIT_NOT_CANONICAL_STRICT_SIX",
+  "canonical_private_strict_six_member_names": [
+    "buyer_portable.governance.json",
+    "full_audit.governance.json",
+    "governance.pdf",
+    "governance.sellable_lite.pdf",
+    "decision_receipt.json",
+    "artifact_manifest.json"
+  ],
+  "canonical_private_strict_six_remains_authoritative": true,
+  "claim_limits": [
+    "CURRENT_EVENT_IS_EVENT_LEVEL_GOVERNANCE_NOT_CUSTOMER_PRODUCTION_TOPOLOGY",
+    "PRODUCTION_WIDE_NON_BYPASSABILITY_NOT_ASSERTED",
+    "CUSTOMER_L5_ROUTE_COMPLETENESS_NOT_ASSERTED",
+    "REVIEWER_OUTCOME_CLOSURE_PENDING",
+    "CONTROLLED_FIXTURE_EVIDENCE_IS_NOT_PRODUCTION_EVIDENCE"
+  ],
   "files": [
     {
-      "filename": "buyer_portable.governance.public_sanitized.json",
-      "bytes": 44792,
-      "sha256": "779f1e4b2326d24fa1902d42a7ac259b964f77da849d30c8bc48db9986c98897"
+      "bytes": 1715,
+      "name": "IP_DISCLOSURE_BOUNDARY.md",
+      "sha256": "72d511a3e202e69ad2541d7d36a64ac73cf327c18039515357edc7fbec8c99a5"
     },
     {
-      "filename": "full_audit.governance.public_sanitized_summary.json",
-      "bytes": 59358,
-      "sha256": "04900f1a001c386820178ecb1805732325930f1c71159351c9a29768e3bffbee"
+      "bytes": 3835,
+      "name": "README_BOUNDARY_PROOF_KIT.md",
+      "sha256": "83c84c576a725d3a356dea44b63d4e73fe5f42028269ad744136e0cf9b860589"
     },
     {
-      "filename": "governance.public_sanitized.pdf",
-      "bytes": 21319,
-      "sha256": "d697ff71cb90594ee047be815f8a20639414a77eb0845d24d6be3402193d20b5"
+      "bytes": 1223,
+      "name": "REPLACEMENT_NOTES.md",
+      "sha256": "86a5bbff0d15f9678b041468b897ead1a706fa8ea925b0599da204062e7239a3"
     },
     {
-      "filename": "governance.sellable_lite.public_sanitized.pdf",
-      "bytes": 3839,
-      "sha256": "3e961d75971fc04737fdf19ddf0bbddebf4d505a7af4c87a1ae03299593ebc87"
+      "bytes": 4899,
+      "name": "boundary_proof_kit_manifest.public_sanitized.json",
+      "sha256": "f877ac738ad147f03bb26648cdb7eabe21b31e85e13efadc12e565110907c4c4"
     },
     {
-      "filename": "decision_receipt.public_sanitized.json",
-      "bytes": 9383,
-      "sha256": "0805306fb4651cd2618eff10506eeda178e35337bac47f29ad63737338eefd42"
+      "bytes": 12307,
+      "name": "buyer_portable.governance.public_sanitized.json",
+      "sha256": "7ca5433e6d1fc8bd630405bae07621f851e8033169aca10e7c410c090250849b"
+    },
+    {
+      "bytes": 5003,
+      "name": "controlled_runtime_seam_summary.public_sanitized.json",
+      "sha256": "3a04f4ebce4bc30417d51449bc546577eb7421d3a7f928ba0a9cbe5e39abc453"
+    },
+    {
+      "bytes": 2009,
+      "name": "decision_receipt.public_sanitized.json",
+      "sha256": "0b2d37c85cdee94b673b11b71d057214b52299d7fd49500b3cc59384e34dd863"
+    },
+    {
+      "bytes": 13032,
+      "name": "full_audit.governance.public_sanitized_summary.json",
+      "sha256": "6c31f26bfb66cab8d8a14c21b2b0978cd433fa7a94be563a4952486c8db74dcb"
+    },
+    {
+      "bytes": 8592,
+      "name": "governance.public_sanitized.pdf",
+      "sha256": "189f688cc6f23190d8bf73c71a3bdf412f264405598e2d6b60ed71973e64f758"
+    },
+    {
+      "bytes": 18742,
+      "name": "governance.public_sanitized.zip",
+      "sha256": "5ed9d2ba6489d054cfac38edaf9232b1302f825dcf0599333e0661f34b7d34d5"
+    },
+    {
+      "bytes": 3806,
+      "name": "governance.sellable_lite.public_sanitized.pdf",
+      "sha256": "6dcb6638470d7000a70c558f21f1b33c8c1ed2dc2859b9445fe5cdf8ba50a253"
+    },
+    {
+      "bytes": 2632,
+      "name": "one_page_boundary_receipt.public_sanitized.pdf",
+      "sha256": "29a3e371043b3e6da66bb9a3698456d132d92cde8b070377d7291f4105570e6e"
+    },
+    {
+      "bytes": 3292,
+      "name": "ontoguard-layer-facts.pdf",
+      "sha256": "0600d0c630915e2899bd1fe58f913f8bfe74ca69ff1c3dc7b7f5ecc9270b6a7d"
+    },
+    {
+      "bytes": 2085,
+      "name": "semantic_projection_summary.public_sanitized.json",
+      "sha256": "b4f37785605ae8454e91fbc531010d6303b01085c6bd51c0cf9695a623cd25cb"
     }
   ],
-  "semantic_bindings": {
-    "trace_id": "83b5bdd9-7b5f-40c1-9e34-75573e0aac54",
-    "decision": "ESCALATE",
-    "release_status": "WITHHELD_PENDING_REVIEW",
-    "r7_threshold_state": "WARNING_THRESHOLD_EXCEEDED",
-    "governing_basis_hash": "sha256:e4c6c302a8812baa96ba30d3b7783f325c7867231c25cc7650559016d3783641",
-    "consequence_custody_status": "NO_BIND_PROVEN",
-    "current_event_maturity": "L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL",
-    "controlled_fixture_maturity": "L4_ROUTE_ENFORCED",
-    "goal3_code_now_acceptance": "15/15 PASS",
-    "sections_46_54_implemented": true
-  },
-  "self_hash_policy": "artifact_manifest.public_sanitized.json is self-excluded from its own member hash list; outer kit manifest binds it by raw bytes."
+  "generated_at_utc": "2026-09-09T13:53:08Z",
+  "kit_version": "8.0",
+  "public_evidence_binding_sha256": "sha256:3bb2a0f08633df14e6d3c6d65c0fbb6b26baceba46ee1b46694956aa065f9d59",
+  "public_packet_member_count": 5,
+  "schema_version": "ontoguard.public_boundary_artifact_manifest@8.0"
 }

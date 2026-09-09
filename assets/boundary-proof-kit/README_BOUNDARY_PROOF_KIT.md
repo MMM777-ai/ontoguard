@@ -1,30 +1,46 @@
-# OntoGuard Boundary Proof Kit - Public Sanitized v6
+# OntoGuard Boundary Proof Kit - Public Sanitized v8
 
-Generated: 2026-08-23T20:53:06Z
+Generated: 2026-09-09T13:53:08Z
 
-This release is a public-safe projection of the latest accepted OntoGuard Goal 3 evidence. It is bound to:
+## Why v8 exists
 
-- Goal specification: `ONTOGUARD_GOAL_3(20260823-013021).txt` SHA-256 `575accf867bbccab16b75d54a6e49f330543996c45ce8ff56bc5dc8bd78c6f6d`
-- Last Run archive: `Last_Run.zip` SHA-256 `7d21f62c1bb1685d67a6510a18b854e38ad500d4e45b68b99ed06acb7223a70f`
-- Single strict-six: `83b5bdd9-7b5f-40c1-9e34-75573e0aac54.governance.zip` SHA-256 `ae9994c805ae0aab87204e5af5396264792ee87e8d99d9f65eb85f4a24d0c473`
-- Batch strict-six: `corr_batch_eb331c8dd974.governance.zip` SHA-256 `8e96b5a681de88df40aeffbfebea9ee2bafc3ce636cc232baa423fa268a4b6cc`
-- Single harness: 7,373 passes / 0 warnings / 0 failures
-- Batch harness: 2,221 passes / 0 warnings / 0 failures
+v7 minimized disclosure aggressively. v8 restores useful buyer/reviewer evidence while keeping implementation IP withheld. The rule is: **show what OntoGuard demonstrably does; do not expose how the proprietary mechanisms are implemented.**
 
-## What v6 adds
+## What v8 restores
 
-The prior v5 boundary/seam package was factually correct but intentionally narrow. v6 adds a public-safe representation of the **full Goal 3 code-now acceptance program (15/15)** and the latest-run governance metrics that those requirements validated, including native 3-agent arbitration, Section 45 trust/risk/uncertainty/Cold-Heat-Mercury truth, knowledge-asset identity, proof-harness status, compliance-surface parity, evidence-geodesic honesty, bounded compaction, artifact settlement, and measured runtime evidence.
+This package again exposes buyer-safe, current evidence for:
 
-It also preserves the already-implemented Goal §§46-54 surfaces: R7 Intent Horizon, persistence/replay/portable proof, Semantic Curvature, Governance Spectrum, Governing Basis Continuity/Lawful Continuation, Source Authority, Capability Authority, Evidence Custody, external runtime-state attestation/substrate independence, Consequence Custody, and additive North Star acceptance.
+- Pre-Transition Governing Floor and formation/non-formation semantics;
+- authoritative ALLOW / BLOCK / ESCALATE architecture and the representative current ESCALATE event;
+- exact separation of primary decision cause, diagnostics, and human-review routing;
+- authority completeness, approval posture, delegated/route/semantic authority gaps, and reviewer closure;
+- aggregate evidence custody, citation status, and decision-causal evidence counts without evidence identities;
+- Output Reliability Trust, Decision-Basis Trust, Presented Governance Trust, and uncertainty as distinct public metrics, without formulas or weights;
+- R7 pre-decision status and threshold state without model, embedding, formula, or numeric-threshold disclosure;
+- Semantic Curvature and Governance Spectrum status, bounded history, and non-decisioning role;
+- internal-reference benchmark context and strict-gate result, explicitly not customer or external-industry evidence;
+- current-event Full Seam proof, controlled-fixture maturity, no-bind / zero-effect proof, sealed handoff, replay, and changed-condition behavior;
+- strict-six artifact integrity, buyer/full role separation, receipt/manifest binding, and post-decision package timing;
+- current single-event acceptance and the current batch acceptance limitation.
+
+## Current clean single-event acceptance
+
+**7,479 PASS / 6 accepted warnings / 0 FAIL.** All hard checks passed.
+
+Accepted limitations: semantic_curvature: INSUFFICIENT_HISTORY (accepted pilot/history limitation), governance_spectrum: INSUFFICIENT_HISTORY (accepted pilot/history limitation), delegated authority not attached, semantic constraint authority not attached, reviewer/outcome closure pending, controlled/event governance is not customer production topology.
+
+## Current batch posture
+
+The latest batch exercises ALLOW, BLOCK and ESCALATE and binds per-case proof into receipt/manifest surfaces, but it is **not represented as clean release acceptance** in this kit because the latest batch harness is 2,504 PASS / 0 WARN / 1 FAIL, with one unresolved task-correspondence assertion. This is deliberately not hidden or reclassified.
 
 ## Critical interpretation
 
-`15/15 PASS` means each code-now implementation predicate passed. It does **not** mean every current-run evidence surface is positive. The public projection intentionally preserves current-run limitations including `PARTIAL_WITH_REASON` decision-causal evidence, pending citation linkage, insufficient domain-pure geodesic, insufficient longitudinal history, and formal phase-timing `NOT_ATTACHED_WITH_REASON`. No missing evidence is upgraded into a positive claim.
+The representative current event is event-governed and release-withheld. The Pre-Transition Floor is recorded but is not required on that compatibility route. Separate controlled executable proof demonstrates the stronger Floor contract when required: STANDING is formation eligibility only; NO_STANDING prevents authoritative decision invocation; NOT_EVALUABLE is not fabricated into BLOCK; non-formation yields zero protected effect; and material governing-condition changes require revalidation.
 
-The current event is event-level/shadow proof. Separately, the controlled Full Seam passed 22/22 and demonstrates `L4_ROUTE_ENFORCED` for the bounded controlled route. Production L5 / production-wide non-bypassability is **not asserted** and remains customer-topology evidence dependent.
+The bounded controlled Full Seam is stronger than current-event shadow proof, but neither is customer-production L5 evidence. Production-wide non-bypassability is not asserted.
 
-The Decision API remains the sole authority for ALLOW / BLOCK / ESCALATE.
+## IP boundary
 
-## Public safety
+No source code, module/function names, local paths, raw prompts/model outputs, raw evidence inventory, retrieval implementation details, model/embedding identifiers, scoring formulas/weights, numeric R7 thresholds, private registries/ontology internals, private runtime identifiers, internal decision/evidence hashes, secrets, or signing material are included.
 
-No source code, raw prompt, raw model output, raw embeddings, private ontology internals, private citation registry, customer data, or protected scoring formulas are included. The private canonical strict-six remains authoritative.
+The canonical private strict-six remains authoritative. The public SHA-256 binding in this kit binds only the sanitized evidence basis and is not an internal run identifier.
