@@ -1,0 +1,13 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://plausible.io; connect-src 'self' https://plausible.io https://formsubmit.co; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; frame-ancestors 'self'; form-action 'self' https://formsubmit.co; base-uri 'self';
+/archive/*
+  X-Robots-Tag: noindex
+/archive.html
+  X-Robots-Tag: noindex
+
+/assets/What_is_OntoGuard.pdf
+  X-Robots-Tag: noindex, noarchive

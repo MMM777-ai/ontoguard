@@ -1,702 +1,257 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="index, follow" name="robots"/>
-<title>OntoGuard Technical Diligence Appendix</title>
-<meta content="Technical diligence for Decision Authorization, R7 Intent Horizon, governing-basis continuity, source and capability authority, custody, BM25 evidence retrieval, consequence proof, and controlled Full-Seam evidence." name="description"/>
-<link href="https://ontoguard.ai/deep-diligence-appendix.html" rel="canonical"/>
-<link href="style.css?v=20260708-product-maturity" rel="stylesheet"/>
-<meta content="OntoGuard Technical Diligence Appendix" property="og:title"/><meta content="Technical diligence for Decision Authorization, R7 Intent Horizon, governing-basis continuity, source and capability authority, custody, BM25 evidence retrieval, consequence proof, and controlled Full-Seam evidence." property="og:description"/><meta content="summary_large_image" name="twitter:card"/><meta content="OntoGuard Technical Diligence Appendix" name="twitter:title"/><meta content="Technical diligence for Decision Authorization, R7 Intent Horizon, governing-basis continuity, source and capability authority, custody, BM25 evidence retrieval, consequence proof, and controlled Full-Seam evidence." name="twitter:description"/><meta content="https://ontoguard.ai/deep-diligence-appendix.html" property="og:url"/><meta content="article" property="og:type"/><meta content="https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png" property="og:image"/><meta content="OntoGuard Decision Authorization and governed autonomy visual summary" property="og:image:alt"/><meta content="en_US" property="og:locale"/><meta content="https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png" name="twitter:image"/><meta content="OntoGuard Decision Authorization and governed autonomy visual summary" name="twitter:image:alt"/><meta content="OntoGuard" property="og:site_name"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="image/png" property="og:image:type"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","@id":"https://ontoguard.ai/deep-diligence-appendix.html#article","headline":"OntoGuard Technical Diligence Appendix","description":"Technical diligence for Decision Authorization, R7 Intent Horizon, governing-basis continuity, source and capability authority, custody, BM25 evidence retrieval, consequence proof, and controlled Full-Seam evidence.","url":"https://ontoguard.ai/deep-diligence-appendix.html","mainEntityOfPage":{"@id":"https://ontoguard.ai/deep-diligence-appendix.html"},"inLanguage":"en-US","datePublished":"2026-07-08","dateModified":"2026-08-23","author":{"@type":"Person","name":"Mark Starobinsky","url":"https://www.linkedin.com/in/markstarobinsky/"},"publisher":{"@id":"https://ontoguard.ai/#organization"},"image":"https://ontoguard.ai/assets/1-Page%20Visual%20Summary.png","isPartOf":{"@id":"https://ontoguard.ai/#website"},"about":{"@id":"https://ontoguard.ai/#decision-authorization-service"},"breadcrumb":{"@id":"https://ontoguard.ai/deep-diligence-appendix.html#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://ontoguard.ai/deep-diligence-appendix.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"OntoGuard","item":"https://ontoguard.ai/"},{"@type":"ListItem","position":2,"name":"Technical Diligence Appendix","item":"https://ontoguard.ai/deep-diligence-appendix.html"}]}]}</script></head>
-<body class="appendix-page diligence-page"><a class="skip-link" href="#main-content">Skip to main content</a>
-<nav aria-label="Primary" class="sticky-nav"><div class="nav-container"><ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/#boundary-proof-kit">Proof Kit</a></li><li><a href="/#output-risk-scan">Risk Scan</a></li><li><a href="/#contact">Contact</a></li></ul></div></nav>
-<header class="hero appendix-hero landing-hero"><div class="container wide-container"><nav aria-label="Breadcrumb" class="page-breadcrumb"><ol><li><a href="/">OntoGuard</a></li><li aria-current="page">Technical Diligence Appendix</li></ol></nav><span class="card-kicker">Technical Diligence</span><h1>OntoGuard Deep Diligence Appendix</h1><p class="author-attribution">By <a href="https://www.linkedin.com/in/markstarobinsky/" rel="noopener noreferrer" target="_blank">Mark Starobinsky</a>, inventor and founder of OntoGuard. · Last substantively updated August 23, 2026</p><p class="hero-subheading">A structured, auditor-friendly appendix for the technical material behind OntoGuard’s semantic control plane: proposed state-transition governance, execution-boundary proof, no-bind receipt, strict-six packaging, Batch DAP / Controlled Corridor Mode, ontology, BM25/evidence retrieval, and route-maturity limitations.</p><div class="appendix-hero-actions"><a class="btn primary" href="/">Back to Homepage</a><a class="btn secondary" href="/#boundary-proof-kit">Public Proof Kit</a><a class="btn secondary" href="/#output-risk-scan">Run Risk Scan</a></div></div></header>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>OntoGuard Technical Diligence | Decision Authorization Architecture</title>
+  <meta name="description" content="Architecture, evidence boundaries, authorization semantics, maturity levels, and production-route requirements."/>
+  <link rel="canonical" href="https://ontoguard.ai/deep-diligence-appendix.html"/>
+  <link rel="stylesheet" href="style.css?v=20260921-r4"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script defer data-domain="ontoguard.ai" src="https://plausible.io/js/script.js"></script>
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg?v=3"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=3"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png?v=3"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=3"/>
+  <link rel="shortcut icon" href="favicon.ico?v=3"/>
+  <meta name="theme-color" content="#070b12"/>
+  <meta property="og:title" content="OntoGuard Technical Diligence | Decision Authorization Architecture"/>
+  <meta property="og:description" content="Architecture, evidence boundaries, authorization semantics, and production-route requirements."/>
+  <meta property="og:url" content="https://ontoguard.ai/deep-diligence-appendix.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="OntoGuard"/>
+  <meta property="og:image" content="https://ontoguard.ai/assets/ontoguard-social-card-1200x630.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:type" content="image/png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="OntoGuard Technical Diligence | Decision Authorization Architecture"/>
+  <meta name="twitter:description" content="Architecture, evidence boundaries, authorization semantics, and production-route requirements."/>
+  <meta name="twitter:image" content="https://ontoguard.ai/assets/ontoguard-social-card-1200x630.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"OntoGuard","item":"https://ontoguard.ai/"},{"@type":"ListItem","position":2,"name":"Technical Diligence","item":"https://ontoguard.ai/deep-diligence-appendix.html"}]}</script>
+</head>
+<body data-base="" class="diligence-page" data-nav="proof">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+<div class="nav-bar">
+<a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="28" height="28"/><span class="brand-word">ONTOGUARD</span></a>
+<nav class="nav-desktop" aria-label="Primary">
+<details class="nav-drop"><summary>Product</summary><div class="dropdown">
+<a href="index.html#product">Decision Authorization<small>ALLOW / BLOCK / ESCALATE at the action</small></a>
+<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Self-contained runtime 1.0.19</small></a>
+</div></details>
+<details class="nav-drop"><summary>Solutions</summary><div class="dropdown">
+<a href="finance-ai-governance.html">Financial Services<small>Decision Authorization for financial AI</small></a>
+<a href="insurance-ai-governance.html">Insurance<small>Claims and policy actions</small></a>
+<a href="healthcare-payer-ai-governance.html">Healthcare Payers<small>Administrative AI before consequence</small></a>
+<a href="cybersecurity-ai-decision-authorization.html">Cybersecurity<small>Authorize SOC agent remediation before production consequence</small></a>
+<a href="vertical-ai-vendors.html">Vertical AI Vendors<small>Governed proof for products you sell</small></a>
+<a href="ai-implementation-partners.html">Implementation Partners<small>Authorization boundary + execution route</small></a>
+</div></details>
+<details class="nav-drop"><summary>Proof</summary><div class="dropdown">
+<a href="agentrust-decision-authorization-integration.html">AgenTrust / TRACE Integration</a>
+<a href="proof-explorer/index.html">Interactive Proof Explorer</a>
+<a href="financial-services-ai-decision-authorization.html">Financial Services Proof Case</a>
+<a href="cybersecurity-ai-decision-authorization-proof.html">Cybersecurity Controlled Scenarios</a>
+<a href="resources.html#proof-assets">Public Evidence Pack</a>
+<a href="deep-diligence-appendix.html">Technical Diligence</a>
+</div></details>
+<a class="nav-link" href="partners.html">Integrations</a>
+<details class="nav-drop"><summary>Resources</summary><div class="dropdown">
+<a href="resources.html">Product Video</a>
+<a href="resources.html#proof-assets">Public Proof Assets</a>
+<a href="resources.html#research">Research</a>
+<a href="resources.html#concepts">Decision Authorization Concepts</a>
+<a href="resources.html#faq">FAQ</a>
+</div></details>
+<details class="nav-drop"><summary>Company</summary><div class="dropdown">
+<a href="about.html">About OntoGuard</a>
+<a href="index.html#contact">Contact</a>
+<a href="privacy.html">Privacy</a>
+<a href="strategic-funding.html">Strategic Partnerships</a>
+</div></details>
+</nav>
+<div class="nav-cta">
+<a class="btn btn-secondary btn-sm" data-track-event="hero_demo_cta" href="proof-explorer/index.html">See OntoGuard in Action</a>
+<a class="btn btn-primary btn-sm" href="index.html#contact">Talk to Us</a>
+</div>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+</div>
+<div class="mobile-panel" id="mobile-nav">
+<a href="index.html#product">Decision Authorization</a>
+<a href="headless-decision-authorization-runtime.html">Headless Runtime</a>
+<a href="finance-ai-governance.html">Financial Services</a>
+<a href="insurance-ai-governance.html">Insurance</a>
+<a href="healthcare-payer-ai-governance.html">Healthcare Payers</a>
+<a href="cybersecurity-ai-decision-authorization.html">Cybersecurity</a>
+<a href="vertical-ai-vendors.html">Vertical AI Vendors</a>
+<a href="ai-implementation-partners.html">Implementation Partners</a>
+<a href="proof-explorer/index.html">Proof Explorer</a>
+<a href="financial-services-ai-decision-authorization.html">Financial Proof Case</a>
+<a href="deep-diligence-appendix.html">Technical Diligence</a>
+<a href="partners.html">Integrations &amp; Partners</a>
+<a href="resources.html">Resources</a>
+<a href="about.html">About</a>
+<a href="privacy.html">Privacy</a>
+<a href="index.html#contact">Contact</a>
+</div>
+</header>
+
 <main id="main-content">
-<!-- Deep Diligence Appendix Section -->
-<section class="center-message deep-diligence-appendix appendix-overview-section section-white section-space-md centered-section" id="deep-diligence-appendix"><div class="container wide-container" data-aos="fade-up"><span class="card-kicker">Why this page exists</span><h2 class="section-title-md">The homepage provides the buyer path. This appendix preserves the deeper technical record.</h2><p class="section-lead compact-lead">This appendix preserves the deeper OntoGuard proof, semantic governance, ontology, evidence-retrieval, BM25 candidate-generation, and implementation-facing record needed by auditors, technical buyers, security reviewers, and strategic acquirers.</p><div aria-label="Appendix section groups" class="appendix-overview-grid"><a class="appendix-overview-card" href="#platform"><strong>Architecture</strong><span>Platform, how it works, state-transition governance, and ontology layer.</span></a><a class="appendix-overview-card" href="#invariants"><strong>Proof surface</strong><span>Invariants, packet logic, runtime seam, route proof, and controlled-boundary evidence.</span></a><a class="appendix-overview-card" href="#technical-depth"><strong>Technical depth</strong><span>BM25/evidence retrieval, semantic traces, governance paths, and packet surfaces.</span></a><a class="appendix-overview-card" href="#industries"><strong>Markets + visuals</strong><span>Regulatory readiness, buyer value, workflow examples, roadmap, and diagrams.</span></a></div><div aria-label="Deep diligence appendix quick links" class="appendix-link-strip"><a href="#platform">Platform</a><a href="#how-it-works">How It Works</a><a href="#state-governance">State Governance</a><a href="#enterprise-ontology">Ontology</a><a href="#technical-depth">Technical Depth</a><a href="#industries">Regulatory Readiness</a><a href="#visuals">Visuals</a></div><details class="technical-disclosure"><summary>BM25 and semantic evidence retrieval — public-safe implementation boundary</summary><div class="disclosure-body"><p>BM25 is used as a lexical candidate-retrieval surface within a scoped governance run. It helps identify potentially relevant evidence, clauses, and enterprise terms; it does not itself authorize release or prove legal applicability. Candidate relevance is evaluated alongside semantic scope, evidence sufficiency, authority, uncertainty, consequence, and route state.</p><p>The public site intentionally omits protected scoring formulas, private corpus configuration, routing internals, and proprietary arbitration logic. Missing or weak retrieval evidence must remain visible as a gap and may drive ESCALATE rather than fabricated certainty.</p></div></details></div></section>
-<section class="center-message deep-technical-index-section section-muted section-space-md centered-section" id="deep-technical-index">
-<div class="container wide-container">
-<span class="card-kicker">Deep Technical Index</span>
-<h2 class="section-title-md">Find the OntoGuard concept you need</h2>
-<div aria-label="Deep technical index" class="deep-index-grid">
-<a href="#platform">Semantic Control Plane</a>
-<a href="#how-it-works">3-layer Semantic Governance Stack</a>
-<a href="#state-governance">Proposed State Transition Builder</a>
-<a href="/#execution-boundary-no-bind">Execution Boundary Trace</a>
-<a href="/#runtime-seam-proof">No-Bind Receipt</a>
-<a href="/#l4-to-l5">Route Completeness</a>
-<a href="/#decision-authorization-packet-anatomy">Decision Projection</a>
-<a href="#technical-depth">Coherent Governance Loading</a>
-<a href="/#decision-relevant-uncertainty">Decision-Relevant Uncertainty</a>
-<a href="/#decision-relevant-uncertainty">Threshold Provenance</a>
-<a href="/#decision-admissibility">Decision Admissibility</a>
-<a href="/#constraint-authority-review-closure">Semantic Constraint Governance</a>
-<a href="/#constraint-authority-review-closure">Human Review Closure</a>
-<a href="/#strict-six-audit-credential">Strict-Six Audit Credential</a>
-<a href="/#batch-dap">Batch DAP</a>
-<a href="#proof-harness">Proof Harness</a>
-<a href="#l3-training-signals">L3 Training Signal Export</a>
-<a href="/#business-impact">ROI KPI Framework</a>
-<a href="/#procurement-security">Procurement / Security Readiness</a>
-<a href="/#complete-product-ladder">Product Ladder</a>
-<a href="partners.html">Partner / Licensing Path</a>
-</div>
-</div>
-</section>
-<section class="center-message proof-harness-section section-white section-space-md centered-section" id="proof-harness">
-<div class="container wide-container">
-<span class="card-kicker">Proof Harness</span>
-<h2 class="section-title-md">Proof Harness: Export Valid Evidence or an Explicit Failure State</h2>
-<p class="section-lead compact-lead">OntoGuard packages buyer-safe decision artifacts even when evidence is sparse, uncertainty is material, or the answer is withheld. The public proof surface emphasizes graceful degradation and explicit routing rather than silent blanks.</p>
-<div aria-label="Proof harness public-safe fields" class="proof-harness-grid">
-<article><strong>PDF / JSON export</strong><span>Buyer-readable and machine-readable proof.</span></article>
-<article><strong>Schema-valid packet</strong><span>Structured artifact contract for diligence.</span></article>
-<article><strong>Confidence tier + trust signals</strong><span>Output-Reliability Trust and Decision-Basis Trust are explanatory signals, not release authority.</span></article>
-<article><strong>Cold / Heat / Mercury triad</strong><span>Coverage, anomaly pressure, and trace fidelity posture.</span></article>
-<article><strong>Hallucination taxonomy</strong><span>Risk classes and unsafe action language categories.</span></article>
-<article><strong>Proof harness status</strong><span>Which proof checks passed, warned, or remained pending.</span></article>
-<article><strong>Benchmark + policy status</strong><span>Buyer-safe readiness and policy posture.</span></article>
-<article><strong>Evidence / citation gaps</strong><span>Explicit gaps instead of invented authority.</span></article>
-<article><strong>Abstention / human-review route</strong><span>SAFE_TEMPLATE or HUMAN_REVIEW when release is not admissible.</span></article>
-</div>
-</div>
-</section>
-<!-- Core Proposition Section -->
-<section class="center-message legacy-collapsed-section section-blue section-space-lg centered-section" id="platform">
-<details class="legacy-section-details legacy-platform-details">
-<summary><span>Platform details</span><small>Control-plane licensing and technical package details.</small></summary>
-<div class="legacy-section-body">
-<div aria-label="OntoGuard AI Core Proposition" class="container wide-container" data-aos="fade-in">
-<h2 class="section-title-xxl">Semantic Control Plane for Runtime Authorization of Proposed State Transitions</h2>
-<p class="section-lead-large">
-                OntoGuard is the <strong>Ontology AI</strong> and <strong>Semantic Layer</strong> for enterprise AI: a
-                <strong>runtime cognitive control plane</strong>, <strong>Reasoning Layer</strong>, and <strong>Cognition Layer</strong>
-                for <strong>state-transition governance</strong>. Modern AI systems no longer just answer prompts; they call tools,
-                write memory, update knowledge graphs, trigger workflows, hand work to other agents, and generate training signals that change future behavior.
-            </p>
-<p class="section-lead-medium">
-                From LLM outputs and training signals to tool calls, memory updates, ontology changes, policy mappings, and multi-agent handoffs (via integration),
-                OntoGuard turns every proposed state change into a governed, auditable decision with evidence, routing, risk, uncertainty,
-                arbitration transparency, audit hashes, and improvement signals.
-            </p>
-<p class="section-lead-large">
-                OntoGuard governs the commit boundary. It asks whether a proposed AI state transition is
-                <strong>authorized, traceable, evidence-backed, and safe to release</strong> before the change touches a customer, workflow,
-                regulator, record, or downstream system.
-            </p>
-<p class="section-lead-large">
-                The result is a <strong>Governed State Transition Record</strong> — buyer-safe proof showing decision, scope, evidence, and improvement signal.
-            </p>
-<p class="section-lead-medium">
-                The <strong>Decision Authorization Layer</strong> is the high-stakes release-control capability inside the broader Semantic Control Plane.
-            </p>
-<p class="section-lead-large">
-                Regulatory compliance is not the ceiling. It is the first high-value use case for a broader enterprise control plane.
-            </p>
-</div>
-</div>
-</details>
-</section>
-<!-- Non-Negotiable Governance Invariants Section -->
-<section class="center-message legacy-collapsed-section section-white section-space-lg centered-section" id="invariants">
-<details class="legacy-section-details legacy-invariants-details">
-<summary><span>Proof invariants</span><small>Route, packet, and governance invariants for technical diligence.</small></summary>
-<div class="legacy-section-body">
-<div class="container" data-aos="fade-up">
-<h2 class="section-title-lg">Explicit Governance Outcomes. Evidence-Preserving Export. No Silent Blank Artifacts.</h2>
-<p class="section-lead">
-                Regulated buyers need governance that is resilient under ambiguity. OntoGuard is designed so uncertainty does not erase the audit trail.
-            </p>
-<div class="section-card-grid">
-<div class="section-card">
-<h3>No Silent Artifact Failure</h3>
-<p>OntoGuard may block, escalate, withhold, or refuse an operation. The export layer should still produce a valid packet or an explicit failure-state record rather than silently omitting evidence.</p>
-</div>
-<div class="section-card">
-<h3>Always-Export Artifacts</h3>
-<p>Every governed run is expected to produce a buyer-readable PDF and complete JSON packet, even when the answer is withheld.</p>
-</div>
-<div class="section-card">
-<h3>Evidence-Never-Blank</h3>
-<p>If evidence is sparse, OntoGuard records fallback reasons, provisional review anchors, uncertainty, and next human step instead of silently emitting an empty proof trail.</p>
-</div>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- Benefits Section -->
-<section class="benefits">
-<div class="container wide-container">
-<h2 data-aos="fade-in">What the Runtime Control Plane Gives You</h2>
-<ul>
-<li><strong>Decision API:</strong> ALLOW, BLOCK, or ESCALATE with release status, routed_to, business effect, and reason codes.</li>
-<li><strong>Governed State Transition Record:</strong> before_state, proposed_action, evidence_state, decision, audit credential, and improvement signal.</li>
-<li><strong>Enterprise ontology grounding:</strong> object, relationship, rule, clause, and evidence mapping instead of opaque prompt-only scoring.</li>
-<li><strong>Semantic Governance Triad:</strong> Cold, Heat, and Mercury signals for coverage, anomaly pressure, and trace fidelity.</li>
-<li><strong>Buyer-safe telemetry:</strong> clean decision-relevant proof separated from internal repair flags, schema fences, and hardening markers.</li>
-<li><strong>Business impact:</strong> pilot KPIs that map to review minutes, escalation rate, cycle time, false approvals, and incident prevention.</li>
-</ul>
-</div>
-</section>
-<!-- Three-Layer Semantic Governance Stack Section -->
-<section class="center-message legacy-collapsed-section section-blue section-space-xl centered-section" id="how-it-works">
-<details class="legacy-section-details legacy-how-it-works-details">
-<summary><span>How it works</span><small>Layered semantic governance architecture and operating model.</small></summary>
-<div class="legacy-section-body">
-<div class="container" data-aos="fade-up">
-<h2 class="section-title-xl">How It Works — The 3-Layer Semantic Governance Stack</h2>
-<p class="section-lead">
-                OntoGuard is not just ontology lookup and not just scoring. It uses ontology throughout the governance path to connect an LLM output to policy, evidence, scope, trace, human review, and learning feedback.
-            </p>
-<div aria-label="Executive and technical explanation views" class="exec-tech-view">
-<details class="exec-tech-panel" open="">
-<summary>Executive Summary</summary>
-<p>OntoGuard uses a three-layer system to turn raw AI outputs into governed, auditable decisions. Layer 1 grounds outputs to real enterprise objects and rules. Layer 2 checks accuracy, risk, uncertainty, and compliance. Layer 3 turns every approved or corrected decision into a learning signal that improves future retrieval, policy, and agent behavior.</p>
-<p><strong>Result:</strong> fewer incidents, faster audits, clearer human review, and safer autonomy without changing model weights.</p>
-</details>
-<details class="exec-tech-panel">
-<summary>Full Technical Detail</summary>
-<p>The technical view below shows how L1 symbolic grounding, L2 semantic consensus, and L3 alignment feedback produce the Decision API, Governed State Transition Record, evidence pack, triad, audit credential, and improvement signal.</p>
-</details>
-</div>
-<div class="stack-grid">
-<div class="stack-card">
-<span class="stack-kicker">L1</span>
-<h3>Symbolic Grounding</h3>
-<p>Normalizes the governed prompt and response into clause hits, evidence IDs, retrieval IDs, checksums, regulation/domain scope, and a buyer-readable symbolic trace.</p>
-<ul>
-<li>Ontology-grounded concepts</li>
-<li>Clause and fallback hits</li>
-<li>Evidence pack and provenance</li>
-</ul>
-</div>
-<div class="stack-card">
-<span class="stack-kicker">L2</span>
-<h3>Semantic Consensus</h3>
-<p>Compares compliance, accuracy, risk, uncertainty, hallucination status, and agent disagreement before deciding whether release is safe.</p>
-<ul>
-<li>Trust and uncertainty signals</li>
-<li>Cold / Heat / Mercury triad</li>
-<li>ALLOW, BLOCK, or ESCALATE routing</li>
-</ul>
-</div>
-<div class="stack-card">
-<span class="stack-kicker">L3</span>
-<h3>Alignment Feedback</h3>
-<p>Turns governed outcomes into reusable improvement signals for retrieval, policy, alignment, training data curation, and future agent decision quality.</p>
-<ul>
-<li>Gold example candidates</li>
-<li>Human-review outcomes</li>
-<li>Review-gated learning candidate export</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- State-Transition Governance Section -->
-<section class="center-message compact-section legacy-collapsed-section section-white section-space-xl centered-section" id="state-governance">
-<details class="legacy-section-details legacy-state-governance-details">
-<summary><span>State-transition governance</span><small>How proposed AI movement becomes a governed decision.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-xl">From Output Governance to State-Transition Governance</h2>
-<p class="section-lead compact-lead">
-                Agentic systems do not just answer — they change state. OntoGuard’s Decision Authorization model governs typed proposed state transitions across LLM outputs and agentic action classes. Customer-specific production enforcement for an exact tool, memory, record, workflow, or agent route still requires integration with that route’s protected commit boundary.
-                <strong>The question now is: is this proposed transition authorized, traceable, and safe to commit?</strong>
-</p>
-<div aria-label="Old AI governance unit versus future governance unit" class="comparison-table state-transition-table">
-<div class="head">Old AI Governance Unit</div>
-<div class="head">Future Governance Unit with OntoGuard</div>
-<div>Model output</div>
-<div>Governed decision / state transition</div>
-<div>Prompt / response pair</div>
-<div>Before → Proposed → After state</div>
-<div>Hallucination check</div>
-<div>Uncertainty-aware authorization</div>
-<div>Logging</div>
-<div>Audit credential + improvement signal</div>
-<div>Human review</div>
-<div>Routed decision workflow</div>
-<div>Fine-tuning data</div>
-<div>Governed training signal</div>
-<div>Agent action</div>
-<div>Tool-call / memory / ontology authorization</div>
-</div>
-<div class="notice-box compact-notice">
-                Static governance weakens when AI systems use tools, maintain memory, and update knowledge. OntoGuard makes each proposed transition explicit before it becomes business state.
-            </div>
-<div class="cta-buttons cta-row">
-<a class="btn primary" href="#governable-events">Explore the 7 Governable Events</a>
-<a class="btn secondary" href="#enterprise-ontology">See Ontology as Enterprise Reality</a>
-<a class="btn secondary" href="#financial-pilot">View the Controlled Financial Services Proof</a>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- Seven Governable Event Types Section -->
-<section class="center-message legacy-collapsed-section section-blue section-space-xl centered-section" id="governable-events">
-<details class="legacy-section-details legacy-governable-events-details">
-<summary><span>Governable events</span><small>Current output governance and integration-path event types.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-xl">Seven Representative Governable State Transitions</h2>
-<p class="section-lead compact-lead">
-                These seven cards are representative supported event classes, not an exhaustive ontology of governable movements. Typed proposed state transitions can become ALLOW, BLOCK, or ESCALATE decisions with evidence, authority, scope, audit hashes, and review-gated improvement candidates.
-            </p>
-<div aria-label="State transition governance checkpoint" class="transition-checkpoint">
-<div class="checkpoint-step"><strong>Proposed Change</strong><span>Output, action, write, update, signal, or handoff</span></div>
-<div class="checkpoint-arrow">→</div>
-<div class="checkpoint-step checkpoint-core"><strong>OntoGuard Checkpoint</strong><span>BM25 + semantic evidence, ontology grounding, triad, arbitration</span></div>
-<div class="checkpoint-arrow">→</div>
-<div class="checkpoint-step"><strong>Decision</strong><span>ALLOW, BLOCK, or ESCALATE before commit</span></div>
-<div class="checkpoint-arrow">→</div>
-<div class="checkpoint-step"><strong>Proof + Learning</strong><span>Packet, audit credential, human route, L3 signal</span></div>
-</div>
-<div aria-label="Seven governable AI state transitions" class="event-grid">
-<details class="state-card" open="">
-<summary><span>1. LLM / Model Output</span><em class="event-status current">Available Today</em></summary>
-<p><strong>Risk if ungoverned:</strong> unsupported answers, misleading recommendations, unsafe release, or false confidence.</p>
-<p><strong>OntoGuard produces:</strong> Decision API, evidence pack, triad, hallucination status, audit hashes, and review route.</p>
-</details>
-<details class="state-card">
-<summary>
-<span>2, 3, 4, 5 &amp; 7. Agentic Extensions</span>
-<em class="event-status roadmap">Integration Path</em>
-</summary>
-<p><strong>Current Status:</strong> Typed state-transition governance, source authority, capability authority, governing-basis continuity, and the authoritative Decision API contract are implemented for these action classes.</p>
-<p><strong>How it works:</strong> Agent frameworks invoke OntoGuard before protected tool calls, memory writes, record or ontology changes, policy updates, or agent handoffs. A technically callable operation is not treated as authorized unless the exact actor, capability, target, scope, and governing basis support it.</p>
-<p><strong>Production Integration Boundary:</strong> Customer-specific route integration must connect OntoGuard to the real protected commit seam before production route-enforcement or non-bypassability claims are made.</p>
-</details>
-<details class="state-card">
-<summary><span>6. Training / Alignment Signal Export</span><em class="event-status current">Available Today</em></summary>
-<p><strong>Risk if ungoverned:</strong> bad examples, unsafe corrections, or unreviewed behavior changes feeding future systems.</p>
-<p><strong>OntoGuard produces:</strong> gold-example candidates only when governed outcomes are approved, corrected, and traceable.</p>
-</details>
-</div>
-<div class="notice-box compact-notice">
-                Implemented today: governed LLM output release, typed proposed-state-transition Decision Authorization, Decision Authorization Packet generation, controlled boundary proof, authority/continuity/custody logic, and review-gated learning-candidate export. Agentic action classes are supported by the Decision Authorization contract; customer-specific route integration is still required before production enforcement claims.
-            </div>
-</div>
-</div>
-</details>
-</section>
-<!-- Ontology AI / Semantic Layer Section -->
-<section class="center-message legacy-collapsed-section section-white section-space-xl centered-section" id="enterprise-ontology">
-<details class="legacy-section-details legacy-enterprise-ontology-details">
-<summary><span>Ontology and semantic layer</span><small>How ontology grounds objects, evidence, scope, and authorization.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-xl">Ontology AI as the Semantic Layer for Enterprise AI</h2>
-<p class="section-lead compact-lead">
-                Enterprise systems already run on objects, relationships, and rules. OntoGuard turns that structure into <strong>Ontology AI</strong>:
-                the <strong>Semantic Layer</strong> that lets AI reason over enterprise reality before a proposed state transition becomes a decision.
-            </p>
-<div aria-label="Enterprise ontology object and relationship examples" class="ontology-object-grid">
-<div class="ontology-list-card">
-<strong>Enterprise Objects</strong>
-<ul>
-<li>Customer / Account / Claim</li>
-<li>Policy / Contract / Case</li>
-<li>Vendor / Asset / Location</li>
-<li>Obligation / Exception / Evidence</li>
-</ul>
-</div>
-<div class="ontology-list-card">
-<strong>Relationships &amp; Rules</strong>
-<ul>
-<li>Customer → owns → Account</li>
-<li>Claim → references → Policy</li>
-<li>Contract → restricts → Data Use</li>
-<li>Case → requires → Review Outcome</li>
-</ul>
-</div>
-</div>
-<div aria-label="Ontology AI semantic, reasoning, and cognition layers" class="section-card-grid">
-<div class="section-card">
-<h3>Semantic Layer</h3>
-<p>Maps prompts, outputs, policy scope, BM25 evidence, clause hits, enterprise objects, and symbolic traces into one governed representation.</p>
-</div>
-<div class="section-card">
-<h3>Reasoning Layer</h3>
-<p>Turns semantic evidence into allowed, blocked, or escalated decisions with uncertainty, risk, arbitration, and human-review routing.</p>
-</div>
-<div class="section-card">
-<h3>Cognition Layer</h3>
-<p>Feeds approved or corrected outcomes back into L3 training signals, policy improvements, retrieval improvements, and future governance quality.</p>
-</div>
-</div>
-<div class="notice-box compact-notice">
-                Together, these layers form a <strong>System of Intelligence</strong>: not just model output, but enterprise-aware reasoning, authorization, evidence, and learning.
-            </div>
-<div aria-label="Ontology grounding flow" class="ontology-flow">
-<div class="ontology-node">
-<strong>Enterprise Reality</strong>
-<span>Objects, relationships, policies, obligations, evidence, and workflow state</span>
-</div>
-<div class="ontology-arrow">+</div>
-<div class="ontology-node">
-<strong>AI Proposal</strong>
-<span>Output, tool call, memory write, ontology update, policy mapping, training signal, or handoff</span>
-</div>
-<div class="ontology-arrow">→</div>
-<div class="ontology-node emphasis">
-<strong>OntoGuard Semantic Layer</strong>
-<span>Grounds, reasons, routes, audits, and converts decisions into governed learning signals</span>
-</div>
-</div>
-<div class="notice-box compact-notice">
-                Result: <strong>“We can prove it — and here is the semantic path from enterprise state to governed decision.”</strong>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- Governed State Transition Record Section -->
-<section class="center-message legacy-collapsed-section section-blue section-space-xl centered-section" id="state-transition-record">
-<details class="legacy-section-details legacy-state-transition-record-details">
-<summary><span>Governed state-transition record</span><small>Before/proposed/decision/audit/improvement record structure.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-xl">Governed State Transition Record</h2>
-<p class="section-lead">
-                The buyer-readable PDF is one view of the proof. The Governed State Transition Record is the structured JSON contract underneath it.
-                In the current v1.2.0 lineage, the record already carries the fields needed for audit, routing, repair, and improvement loops.
-            </p>
-<div aria-label="Core governed state transition record elements" class="schema-strip">
-<span><strong>before_state</strong><br/>Prompt, workflow, scope, and current object context</span>
-<span><strong>proposed_action</strong><br/>Output, tool call, memory write, mapping, or handoff</span>
-<span><strong>evidence_state</strong><br/>Clause hits, retrieval IDs, checksums, symbolic trace</span>
-<span><strong>triad_with_meta</strong><br/>Cold, Heat, Mercury, provenance, and penalties</span>
-<span><strong>audit_credential</strong><br/>Decision, evidence, report, and manifest hashes</span>
-<span><strong>improvement_signal</strong><br/>Review outcome and L3 gold-example candidate</span>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- L3 Training Signal Export Section -->
-<section class="center-message legacy-collapsed-section section-blue section-space-xl centered-section" id="l3-training-signals">
-<details class="legacy-section-details legacy-l3-training-signals-details">
-<summary><span>L3 training-signal export</span><small>Runtime-safe learning signals from governed outcomes.</small></summary>
-<div class="legacy-section-body">
-<div class="container" data-aos="fade-up">
-<h2 class="section-title-xl">Review-Gated Learning Signal Export — From Decision to Governed Improvement Candidate</h2>
-<p class="section-lead">
-                The same governance packet that protects a workflow can create review-gated candidates for better retrieval, policies, evaluation sets, and future training or agent behavior. A candidate does not become accepted learning until an authorized reviewer closes the outcome.
-            </p>
-<div aria-label="L3 training signal export buyer-facing flow" class="flow-row">
-<div class="flow-step"><strong>Attempt</strong><span>Model, agent, or tool call proposes an output.</span></div>
-<div class="flow-arrow">→</div>
-<div class="flow-step"><strong>OntoGuard Decision</strong><span>ALLOW, BLOCK, or ESCALATE is computed before release.</span></div>
-<div class="flow-arrow">→</div>
-<div class="flow-step"><strong>Evidence + Reasons</strong><span>Trace, clauses, uncertainty, risk, and reason codes are exported.</span></div>
-<div class="flow-arrow">→</div>
-<div class="flow-step"><strong>Reviewer Outcome</strong><span>Authorized review determines whether the event is approved, corrected, blocked, or remains pending.</span></div>
-<div class="flow-arrow">→</div>
-<div class="flow-step"><strong>Governed Improvement Candidate</strong><span>Only closed reviewer outcomes may become governed candidates for future retrieval, policy, evaluation, or training use; nothing is written back or used for live model-weight mutation in the authorization path.</span></div>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- Featured Controlled Financial Services Proof Section -->
-<section class="center-message legacy-collapsed-section section-white section-space-lg centered-section" id="financial-pilot">
-<details class="legacy-section-details legacy-financial-pilot-details">
-<summary><span>Financial-services example</span><small>Buyer-safe example of governed enterprise output and release withholding.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-xl">What a Buyer-Safe Enterprise Decision Authorization Packet Looks Like</h2>
-<p class="section-lead-wide">
-<strong>This is a controlled buyer-safe financial-services proof case using an enterprise-style governed workflow. It is not represented as a customer-production case.</strong>
-                OntoGuard mapped financial-services evidence, detected a remaining SEC citation-linkage gap, failed the strict autonomous-release benchmark gate,
-                and withheld release pending human review — exactly the commercially valuable control-plane behavior regulated buyers need.
-            </p>
-<div aria-label="Financial services controlled-proof badges" class="pilot-badge-row">
-<span class="pilot-badge">Controlled Financial Services Proof</span>
-<span class="pilot-badge">Buyer-Safe Telemetry</span>
-<span class="pilot-badge">SEC Citation-Linkage Gap Detected</span>
-<span class="pilot-badge">Governed State Transition Record v1.2.0</span>
-<span class="pilot-badge">Strict Release Gate Failed</span>
-</div>
-<div class="packet-stat-row">
-<div class="packet-stat"><strong>Decision</strong>ESCALATE</div>
-<div class="packet-stat critical"><strong>Release Control</strong>WITHHELD PENDING REVIEW</div>
-<div class="packet-stat"><strong>Primary Scope</strong>SEC / SOX / GLBA / FINRA</div>
-<div class="packet-stat success"><strong>Mapped Evidence Coverage</strong>100%; buyer release coverage remains review-required</div>
-<div class="packet-stat warning"><strong>Citation Gap</strong>SEC pending citation linkage</div>
-<div class="packet-stat"><strong>Decision-Basis Trust</strong>58.92%</div>
-<div class="packet-stat"><strong>Output-Reliability Trust</strong>71.07%</div>
-<div class="packet-stat"><strong>Triad</strong>Cold 100.00% | Heat 50.12% | Mercury 33.33%</div>
-<div class="packet-stat warning"><strong>Benchmark</strong>Comparable corpus available; strict release gate did not pass</div>
-<div class="packet-stat warning"><strong>ROI</strong>Hard-dollar ROI not calculated — buyer baseline required</div>
-<div class="packet-stat"><strong>Artifact Depth</strong>38-page full-audit PDF + 6-page sellable-lite packet + schema-rich JSON</div>
-</div>
-<div aria-label="Pilot ROI status" class="roi-status-card" data-hard-dollar-roi-calculated="false" data-roi-inputs-present="false">
-<div class="roi-baseline-required">
-<h3>ROI Status</h3>
-<p><strong>Hard-dollar ROI not calculated — buyer baseline required.</strong></p>
-<p>To calculate ROI, provide:</p>
-<ul class="roi-input-grid">
-<li>monthly_case_volume</li>
-<li>baseline_review_minutes_per_case</li>
-<li>ontoguard_review_minutes_per_case</li>
-<li>fully_loaded_reviewer_hourly_rate</li>
-<li>baseline_false_approval_rate</li>
-<li>ontoguard_false_approval_rate</li>
-<li>average_loss_per_false_approval</li>
-<li>implementation_cost_usd</li>
-<li>assumptions_source</li>
-</ul>
-</div>
-<div aria-label="Calculated ROI results" class="roi-calculated-results">
-<h3>ROI Results</h3>
-<div class="roi-result-grid">
-<div><strong>Monthly review savings</strong><span data-roi-field="monthly_review_savings">—</span></div>
-<div><strong>Annual loss prevention</strong><span data-roi-field="annual_loss_prevention">—</span></div>
-<div><strong>Total annual value</strong><span data-roi-field="total_annual_value">—</span></div>
-<div><strong>Payback months</strong><span data-roi-field="payback_months">—</span></div>
-<div><strong>Assumptions source</strong><span data-roi-field="assumptions_source">—</span></div>
-</div>
-</div>
-</div>
-<div class="notice-box pilot-control-callout emphasized-example">
-<strong>Why this example matters:</strong> OntoGuard did not authorize autonomous release merely because some reliability signals were positive. The Decision-Basis Trust remained insufficient for autonomous release, the evidence/citation posture remained unresolved, and the authoritative Decision API returned ESCALATE.
-                <br/><br/>
-                That is the product: not a score, but a release decision with evidence, reasons, and review routing.
-            </div>
-<div class="cta-buttons cta-row">
-<a class="btn primary" data-track-kind="click" data-track-label="Request Pilot Packet CTA" href="mailto:mark.starobinsky@ontoguard.ai?subject=Request%20Audit%20PDF%20Sellable-Lite%20Packet%20and%20Schema-Rich%20JSON">Request Audit PDF + Sellable-Lite Packet</a>
-<a class="btn secondary" data-track-kind="click" data-track-label="Request Schema-Rich JSON" href="mailto:mark.starobinsky@ontoguard.ai?subject=Request%20Schema-Rich%20Governed%20State%20Transition%20JSON">Request Schema-Rich JSON</a>
-<a class="btn secondary" data-track-kind="download" data-track-label="Public Financial Services Sample Packet" href="assets/sample-financial-services-decision-authorization-packet.pdf">Download Financial Services Sample Packet</a>
-</div>
-<div class="notice-box">
-                Similar artifacts have been delivered across KYC, claims, prior authorization, and benefits determination workflows.
-                The financial-services sample packet is available for open website visitors. Additional workflow-specific packets can be shared in sanitized or NDA-gated form.
-            </div>
-</div>
-</div>
-</details>
-</section>
-<!-- Business Impact Section -->
-<!-- Current Capability vs Expansion Roadmap -->
-<section class="center-message compact-section legacy-collapsed-section section-white section-space-md centered-section" id="control-plane">
-<details class="legacy-section-details legacy-control-plane-details">
-<summary><span>Control-plane expansion</span><small>Broader platform packaging and executive proof framing.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-md">Implemented Capability vs. Production Integration Boundary</h2>
-<p class="section-lead compact-lead">
-                Core capabilities—including governed LLM-output evaluation, Decision Authorization, proof-packet generation, and review-gated improvement-signal export—are implemented in the current controlled product. Production route enforcement and production L5 evidence require customer-specific integration.
-            </p>
-<div class="boundary-summary-grid">
-<div class="boundary-summary-card">
-<span class="card-kicker production">Available in the Current Controlled Product</span>
-<h3>Decision Authorization + Review-Gated Learning Signals</h3>
-<p>Implemented Decision Authorization, buyer-safe telemetry, audit hashes, human-review routing, and review-gated learning-candidate export. Pending reviewer outcomes remain candidates and are not written back.</p>
-</div>
-<div class="boundary-summary-card">
-<span class="card-kicker roadmap">Integration Path</span>
-<h3>Agentic State Governance — Implemented Authorization Contract</h3>
-<p>Tool call authorization, memory write control, ontology change proposals, policy mapping updates, and multi-agent handoff governance.</p>
-<p><strong>Implemented at the Decision Authorization contract level.</strong> Customer-specific production route integration is required before production enforcement, non-bypassability, or route-completeness claims are made.</p>
-</div>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- Enterprise Workflows Section -->
-<section class="use-case-section legacy-collapsed-section" data-aos="fade-up" data-aos-delay="100" id="enterprise-workflows">
-<details class="legacy-section-details legacy-enterprise-workflows-details">
-<summary><span>Enterprise workflow examples</span><small>Where high-stakes AI movement can create risk or value.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container">
-<h2><span class="icon">💼</span> Enterprise Workflows We Govern Today</h2>
-<p class="use-case-lead">
-              OntoGuard governs proposed AI state transitions in workflows where mistakes become cost, regulatory exposure, operational delay, or customer harm.
-            </p>
-<div class="section-card-grid">
-<div class="section-card">
-<h3>Financial Services</h3>
-<p>KYC and onboarding approvals, claims and dispute resolution, underwriting and credit decisions, advisor copilots, SEC / FINRA reporting support, fraud operations, and customer communications.</p>
-</div>
-<div class="section-card">
-<h3>Healthcare</h3>
-<p>Prior authorization, eligibility checks, clinical documentation, coding support, patient triage, care navigation, medical chatbot review, and safety escalation.</p>
-</div>
-<div class="section-card">
-<h3>Public Sector &amp; Enterprise Ops</h3>
-<p>Benefits and eligibility determinations, casework, investigations, procurement approvals, customer operations, refunds, exceptions, IT automation, and change approvals.</p>
-</div>
-</div>
-<div aria-label="Human review task outcomes" class="review-options">
-<span>Human Review Options:</span>
-<strong>APPROVE</strong>
-<strong>REWRITE</strong>
-<strong>BLOCK</strong>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- Technical Depth Section -->
-<section class="center-message compact-section legacy-collapsed-section section-blue section-space-md centered-section" id="technical-depth">
-<details class="legacy-section-details legacy-technical-depth-details">
-<summary><span>Technical depth</span><small>Semantic governance internals exposed at buyer-safe depth.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-lg">How OntoGuard Actually Works</h2>
-<p class="section-lead compact-lead">
-                OntoGuard settles a frozen pre-decision authorization basis before the authoritative Decision API: proposed movement → ontology scope → BM25/semantic candidate evidence → original intent / R7 → governing-basis continuity → source and capability authority → custody and runtime prerequisites → Decision API → release / no-bind proof → human closure → review-gated learning candidate.
-            </p>
-<div aria-label="Technical depth accordions" class="technical-accordion-grid">
-<details class="technical-accordion-card priority" open="">
-<summary><span>1 · Governed State Transition Record</span></summary>
-<p>v1.2.0-style structure carries before state, proposed action, evidence state, decision, triad metadata, audit credential, and improvement signal.</p>
-</details>
-<details class="technical-accordion-card priority">
-<summary><span>2 · BM25 + Semantic Candidate Bag</span></summary>
-<p>Current-run prompt, response, and scope anchors feed lexical BM25, semantic retrieval, clause normalization, checksums, and no-silent-drop telemetry.</p>
-</details>
-<details class="technical-accordion-card priority">
-<summary><span>3 · Primary-Scope Gap Penalty</span></summary>
-<p>Cold index is penalized when decision-driving regulations such as FINRA, GLBA, SEC, or SOX have zero coverage, even when supplemental regulations are mapped.</p>
-</details>
-<details class="technical-accordion-card">
-<summary><span>4 · Buyer-Safe vs. Internal Lanes</span></summary>
-<p>Buyers see clean decision evidence; internal lanes preserve repair flags, monotonic markers, schema fences, diagnostics, and repair provenance.</p>
-</details>
-<details class="technical-accordion-card">
-<summary><span>5 · Transparent Agent Consensus</span></summary>
-<p>Compliance, Accuracy, Risk, and Feedback agents expose votes, disagreement, consensus, and native arbitration computation.</p>
-</details>
-<details class="technical-accordion-card">
-<summary><span>6 · Portable Proof</span></summary>
-<p>The full-audit packet preserves the complete canonical Decision Authorization record, while the buyer packet renders a bounded buyer-safe projection with hashes, evidence anchors, limitations, and improvement-state provenance.</p>
-</details><details class="technical-accordion-card priority"><summary><span>7 · R7 Intent Horizon + Trajectory Proof</span></summary><p><strong>Buyer question:</strong> is this proposed action still faithful to the original mission? R7 binds one immutable original intent to a continuing task_id / horizon_id, compares each canonical proposed state transition against that same mission using a versioned semantic-distance basis, and records threshold posture, drift direction, and—when enough ordered history exists—velocity and acceleration. Each trajectory point can bind sequence identity, semantic action identity, proposed-transition identity, distance, Decision API result, and prior/current hashes. R7 is computed before the authoritative Decision API and may causally constrain the decision. High semantic distance alone does not automatically create BLOCK; explicit prohibited divergence is required under the current Decision API semantics. If the semantic basis cannot be computed, OntoGuard does not substitute keyword overlap or another structural proxy as R7. Trajectory persistence is bounded and append-only rather than reconstructed from prior PDFs: same-condition replay can confirm the same governed state, while changed-condition replay can create a new governed state without rewriting the original event. Raw embeddings are not exposed. Ordinary batch membership does not automatically create a shared R7 horizon.</p></details><details class="technical-accordion-card priority"><summary><span>8 · Semantic Curvature + Governance Spectrum</span></summary><p><strong>R7 Intent Drift</strong> is change relative to one immutable mission. <strong>Semantic Curvature</strong> measures change in governance conditions across comparable governed events, including evidence quality, mapped evidence, citation readiness, risk, uncertainty, output-reliability trust, decision-basis trust, route maturity, review pressure, repair pressure, Decision API posture, and outcome closure. <strong>Governance Spectrum</strong> provides bounded portfolio visibility into ALLOW/BLOCK/ESCALATE rates and governance pressures across recent and reference windows. Both are non-decisioning intelligence. With insufficient comparable history, OntoGuard reports <strong>INSUFFICIENT_HISTORY</strong> rather than inventing a trend.</p></details><details class="technical-accordion-card priority"><summary><span>9 · Governing Basis Continuity + Lawful Continuation</span></summary><p>R7 asks whether the action remains faithful to the mission. Governing Basis Continuity asks whether the conditions that make the action legitimate are still current: authority, policy, semantic constraints, route, knowledge basis, evidence requirements, source authority, capability authority, runtime basis, and protected-consequence conditions. A continuing task may be INITIAL, CONTINUABLE, REVALIDATION_REQUIRED, REBIND_REQUIRED, PAUSED, REVOKED, or TERMINATED. <strong>CONTINUABLE is not pre-authorized</strong>; every protected movement still requires a fresh Decision API decision.</p></details><details class="technical-accordion-card priority"><summary><span>10 · Retrieval Source Authority + Tool Capability Authority</span></summary><p>A source being retrievable does not mean it is authorized for decision use. Source authority can bind tenant, workflow, decision class, release surface, and governing context; missing, stale, expired, mismatched, or revoked authority remains visible. A tool being technically callable likewise does not mean the actor or agent is authorized for the exact operation. Capability authority can bind actor, tool, operation, target, data scope, argument envelope, validity period, and protected transition. Valid authority can satisfy a prerequisite but does not independently manufacture ALLOW.</p></details><details class="technical-accordion-card priority"><summary><span>11 · Evidence Custody</span></summary><p>OntoGuard distinguishes <strong>provenance</strong>—where evidence came from; <strong>integrity</strong>—whether it changed; and <strong>custody</strong>—who or what controlled and transferred it while relied upon. Missing, partial, or customer-asserted custody is preserved honestly rather than promoted to verified custody.</p></details><details class="technical-accordion-card priority"><summary><span>12 · External Runtime-State Attestation + Substrate Independence</span></summary><p>OntoGuard can accept a bounded, attributable, freshness-aware, integrity-bound statement of an upstream LLM, agent, planner, multi-agent system, robot, world model, or future intelligence substrate at the moment a protected movement is proposed. The authorization boundary remains substrate-independent: OntoGuard governs the proposed institutional movement rather than adopting the upstream system’s internal scientific theory. An attestation does not independently authorize release, does not silently become trust, risk, Cold/Heat/Mercury, R7 distance, or Semantic Curvature, and does not prove the scientific truth of an upstream claim merely because it is signed.</p></details><details class="technical-accordion-card priority"><summary><span>13 · Consequence Custody</span></summary><p>Consequence Custody connects the exact proposed movement to the governing basis, frozen authorization input, authoritative Decision API result, release state, execution-boundary event, authorization grant or NO-BIND proof, receipt, and manifest—showing whether the protected consequence was permitted to form and whether it actually formed. It is proof over the existing Decision Authorization / Full-Seam architecture, not a second authorization engine.</p></details><details class="technical-accordion-card priority"><summary><span>14 · One Frozen Authorization Basis, One Decision API</span></summary><p>Decision-driving facts are settled before the decision in a frozen authorization basis that can include governed content, proposed movement, semantic grounding, original intent / R7 state, authority context, evidence, route context, governing-basis continuity, source/capability authority, relevant runtime-state attestation, and knowledge/context identities. R7, continuity, authority, custody, and runtime-state conditions can constrain or inform authorization, but they do not create competing decision engines. The existing Decision API remains the sole authority for ALLOW, BLOCK, ESCALATE, release authorization, release status, and routing.</p></details><details class="technical-accordion-card priority"><summary><span>15 · Current Event vs. Controlled Full-Seam Maturity</span></summary><p>An ordinary governed event can correctly remain SHADOW_MODE or L1_PLUS_EVENT_GOVERNED_NO_BIND_PARTIAL while proving its own pre-release Decision API result, release state, review route, event-level no-bind status, and strict-six packet. Separately, the controlled Full-Seam fixture demonstrates a registered bounded route, enforcement gate, replay, pressure and bypass cases, controlled non-bypassability, L4_ROUTE_ENFORCED, CONTROLLED_SINGLE_ROUTE_ONLY, and production_enforcement_asserted=false. Production L5 remains customer-topology, protected-route, endpoint, bypass, replay, reviewer, outcome, and production-evidence dependent. These are evidence/deployment maturity labels, not software-completeness labels.</p></details>
-</div>
-<div class="notice-box compact-notice">
-                Differentiation: OntoGuard does not bury meaning in notebooks or pipeline glue. It exports the semantic chain as a buyer artifact.
-            </div>
-</div>
-</div>
-</details>
-</section>
-<!-- Regulatory Readiness Section -->
-<section class="center-message legacy-collapsed-section section-white section-space-xl centered-section" id="industries">
-<details class="legacy-section-details legacy-industries-details">
-<summary><span>Regulatory readiness</span><small>Industry/regulatory coverage examples and limitations.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-xl">Regulatory Strength as a Secondary Superpower</h2>
-<p class="section-lead">
-                OntoGuard is broader than compliance tooling, but regulatory readiness remains a powerful entry point.
-                The platform can expose whether the regulations that matter for a workflow are actually covered — not merely whether some evidence was found.
-            </p>
-<div class="section-card-grid">
-<div class="section-card"><h3>Financial Services</h3><p>FINRA, GLBA, SEC, SOX, credit, advisory, customer communications, trading support, regulated reporting, and primary-scope coverage gaps.</p></div>
-<div class="section-card"><h3>Healthcare and Life Sciences</h3><p>HIPAA, PHI handling, clinical support workflows, prior authorization, medical chatbot review, patient communication, and safety escalation.</p></div>
-<div class="section-card"><h3>Privacy and AI Governance</h3><p>GDPR, EU AI Act readiness, privacy obligations, risk disclosures, human-review routing, and evidence-backed decision records.</p></div>
-<div class="section-card"><h3>Public Sector and Operations</h3><p>Eligibility, procurement, exception handling, casework, audit trails, reviewer accountability, and policy-change governance.</p></div>
-</div>
-<div class="notice-box">
-                We do not just check boxes. We surface coverage gaps in the laws, policies, and enterprise rules that actually drive the workflow.
-            </div>
-<div class="notice-box">
-                EU AI Act timing — as of July 10, 2026: The Act becomes broadly applicable on August 2, 2026, subject to phased exceptions. Following the 2026 political agreement on simplification, specified high-risk-system rules are scheduled to apply from December 2, 2027, while requirements for systems embedded in regulated products are scheduled for August 2, 2028. Applicability must be confirmed for each system, role, and workflow by authorized counsel.
-            </div>
-</div>
-</div>
-</details>
-</section>
-<!-- Governance Feature Remediation Expansion Roadmap Section -->
-<section class="center-message legacy-collapsed-section section-blue section-space-xl centered-section" id="roadmap">
-<details class="legacy-section-details legacy-roadmap-details">
-<summary><span>Remediation roadmap</span><small>Human next steps tied to L1/L2/L3 improvement loops.</small></summary>
-<div class="legacy-section-body">
-<div class="container" data-aos="fade-up">
-<h2 class="section-title-xl">Governance Feature Remediation Expansion Roadmap</h2>
-<p class="section-lead">
-                Every packet can expose a buyer-readable next human step tied to the exact L1, L2, or L3 capability that needs remediation.
-            </p>
-<div class="roadmap-list">
-<div><strong>L1 Evidence Remediation:</strong> add or verify missing evidence, citation, retrieval ID, clause mapping, or ontology scope.</div>
-<div><strong>L2 Consensus Remediation:</strong> resolve trust, risk, uncertainty, hallucination, or semantic disagreement before release.</div>
-<div><strong>L3 Feedback Remediation:</strong> convert reviewer outcome into policy, retrieval, evaluation, or gold-example improvement signal.</div>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- Why This Matters Section -->
-<section class="center-message legacy-collapsed-section section-white section-space-lg centered-section" id="buyer-value">
-<details class="legacy-section-details legacy-buyer-value-details">
-<summary><span>Buyer value</span><small>Core buyer questions answered by the proof packet.</small></summary>
-<div class="legacy-section-body">
-<div class="container wide-container" data-aos="fade-up">
-<h2 class="section-title-xl">Why This Matters to the Buyer</h2>
-<p class="section-lead-wide">
-                Buyers do not need another opaque score. They need a defensible answer to four questions:
-                should this AI change commit, why, what evidence proves it, and what happens next?
-            </p>
-<div aria-label="Buyer proof questions" class="buyer-proof-row">
-<div><strong>Commit?</strong><span>ALLOW, BLOCK, or ESCALATE</span></div>
-<div><strong>Why?</strong><span>Reason codes, triad, risk, uncertainty</span></div>
-<div><strong>Proof?</strong><span>Evidence IDs, retrieval IDs, hashes, trace</span></div>
-<div><strong>Next?</strong><span>Human route or L3 improvement signal</span></div>
-</div>
-</div>
-</div>
-</details>
-</section>
-<!-- Visuals Section -->
-<section class="visuals legacy-collapsed-section" id="visuals">
-<details class="legacy-section-details legacy-visuals-details">
-<summary><span>Visual appendix</span><small>Diagrams, visual summary, and NDA-only material.</small></summary>
-<div class="legacy-section-body">
-<div class="container">
-<h2 data-aos="fade-in">How It Works</h2>
-<p class="use-case-lead">
-              OntoGuard uses a three-layer Semantic Governance Stack:
-              L1 <strong>Symbolic Grounding</strong>, L2 <strong>Semantic Consensus</strong>, and L3 <strong>Alignment Feedback</strong>.
-              The result is not just a score — it is a governed release decision with evidence, traceability, and reusable learning signals.
-            </p>
-<h3>1. From Semantic Retrieval to Decision Authorization</h3>
-<img alt="Diagram showing the progression from semantic retrieval to ontology-grounded Decision Authorization" class="diagram" height="450" loading="lazy" src="assets/ai_evolution.png" width="800"/>
-<h3>2. Ontology-Grounded Evidence Reuse</h3>
-<img alt="Diagram explaining ontology-grounded evidence reuse for governed decisions and review-gated improvement signals" class="diagram" height="450" loading="lazy" src="assets/peak_data.png" width="800"/>
-<h3 class="trust-pipeline-heading">3. The AI Trust Pipeline</h3>
-<img alt="OntoGuard AI trust pipeline showing semantic governance, evidence retrieval, compliance scoring, and decision authorization" class="diagram trust-pipeline-img" height="450" loading="lazy" src="assets/ai_trust_pipeline.png" width="800"/>
-<h3 class="executive-summary-heading" id="visual-summary">4. Executive Summary</h3>
-<img alt="One-page visual summary of OntoGuard runtime cognitive control plane, symbolic trace, evidence pack, triad scoring, and governed state transition record" class="diagram visual-summary-img" height="450" loading="lazy" src="assets/1-Page%20Visual%20Summary.png" width="800"/>
-<a class="btn secondary space-top-md" href="mailto:mark.starobinsky@ontoguard.ai">📄 NDA Access Request</a>
-<!-- Updated Intelligence Section -->
-<section class="intelligence-section" data-aos="fade-up" id="intelligence">
-<div class="intelligence-box">
-<h2 data-aos="fade-in" data-aos-delay="100">Not Just Ontology — <span class="highlight">Runtime Authorization + Learning Loop</span></h2>
-<ul class="intelligence-list">
-<li data-aos="fade-up" data-aos-delay="150">🧠 <strong>Decision API:</strong> ALLOW, BLOCK, or ESCALATE with reasons, confidence, trace ID, evidence, and release status</li>
-<li data-aos="fade-up" data-aos-delay="300">🔁 <strong>Training Signal Export:</strong> governed decisions become clean examples for better future agents</li>
-<li data-aos="fade-up" data-aos-delay="450">📊 <strong>Semantic Governance Triad:</strong> Cold, Heat, and Mercury explain grounding, volatility, and trace fidelity</li>
-<li data-aos="fade-up" data-aos-delay="600">🛡️ <strong>Audit-Ready Proof:</strong> governed response, evidence, hashes, hallucination status, uncertainty, and human-review task</li>
-</ul>
-<p class="intelligence-summary">OntoGuard is protected by U.S. Patent Application 19/444,521 — Track I prioritized examination granted May 2026; the technology produces runtime authorization decisions backed by evidence, routing, auditability, and improvement signals.</p>
-<p class="nda-note"><strong>Public sample packet available now. Full technical details, claims mapping, and private demo assets available under NDA.</strong></p>
-<div class="intelligence-cta">
-</div>
-</div>
-</section>
-</div>
-</div>
-</details>
+<header class="page-hero">
+  <div class="container">
+    <ol class="breadcrumb"><li><a href="index.html">OntoGuard</a></li><li>Technical Diligence</li></ol>
+    <p class="eyebrow">Technical Diligence</p>
+    <h1>OntoGuard Technical Diligence</h1>
+    <p class="lead">Architecture, evidence boundaries, authorization semantics, maturity levels, and production-route requirements. Last updated September 20, 2026.</p>
+  </div>
+</header>
+<section class="section section-light">
+  <div class="container-xl diligence-wrap">
+    <nav class="toc" aria-label="On this page">
+      <strong>Contents</strong>
+      <a href="#architecture">1. Architecture</a>
+      <a href="#governable-events">2. Governable transitions</a>
+      <a href="#decision-contract">3. Decision contract</a>
+      <a href="#standing">4. Pre-Transition Standing</a>
+      <a href="#projection">5. Semantic projection</a>
+      <a href="#governing-basis">6. Governing basis</a>
+      <a href="#intent-horizon">7. Intent Horizon</a>
+      <a href="#authority">8. Authority</a>
+      <a href="#evidence">9. Evidence</a>
+      <a href="#release">10. Release / custody</a>
+      <a href="#human-review">11. Human review</a>
+      <a href="#proof-packaging">12. Proof packaging</a>
+      <a href="#controlled-seam">13. Controlled full seam</a>
+      <a href="#production-route">14. Production route evidence</a>
+      <a href="#longitudinal">15. Longitudinal governance</a>
+      <a href="#boundaries">16. Capability boundaries</a>
+    </nav>
+    <article class="prose">
+      <p id="deep-diligence-appendix">The homepage sells the category. This page is the technical record. Claims below are bounded to current implementation, controlled proof, public sanitized artifacts, the accepted AgenTrust community integration, or explicit customer-integration requirements.</p>
+
+      <h2 id="architecture">1. Architecture</h2>
+      <p id="platform">OntoGuard sits between a proposed action and protected consequence. It is a semantic decision point, not a replacement for identity, policy engines, enforcement gateways, confidential computing, or audit ledgers.</p>
+      <pre class="diagram">Agent / Application
+        │
+        ▼
+ Proposed Action
+        │
+        ▼
+ ┌───────────────────┐
+ │     ONTOGUARD     │
+ │ Decision Authorize│
+ └───────────────────┘
+   │       │       │
+ ALLOW   BLOCK  ESCALATE
+   │               │
+   ▼               ▼
+Enforcement     Human
+/ Execution     Authority
+   │
+   ▼
+Evidence / TRACE / Audit</pre>
+      <p>AgenTrust / TRACE placement: OntoGuard produces the semantic authorization decision. Independently evidenced execution can then be represented in TRACE. TRACE is not OntoGuard’s native audit format. AgenTrust does not perform the semantic decision.</p>
+      <p id="how-it-works">Structured semantic context is used to interpret what the agent is attempting to change and how that movement relates to evidence, authority, policy, and institutional state. Ontology is mechanism, not category.</p>
+
+      <h2 id="governable-events">2. Governable state transitions</h2>
+      <p id="state-governance">A governable event is a proposed movement from a source state toward a target state that would bind the enterprise if released. Representative classes include payments, record mutations, customer communications, tool invocations, workflow triggers, memory writes, and multi-agent handoffs.</p>
+      <p id="enterprise-workflows">The public site does not enumerate every internal transition type. If a movement can become a consequence, it is a candidate for Decision Authorization.</p>
+
+      <h2 id="decision-contract">3. Decision Authorization contract</h2>
+      <p>The Decision API is the sole ALLOW / BLOCK / ESCALATE authority. Semantic scores, trust signals, retrieval ranks, and curvature metrics are explanatory. They do not grant release.</p>
+      <ul>
+        <li>ALLOW — the exact proposed transition may proceed under the frozen basis.</li>
+        <li>BLOCK — the transition may not proceed. Prior authorization does not survive a material mutation.</li>
+        <li>ESCALATE — explicit authorization state routing to qualified human authority.</li>
+      </ul>
+      <p>A material change to amount, destination, text, tool arguments, or target state is a new proposed action.</p>
+
+      <h2 id="standing">4. Pre-Transition Standing</h2>
+      <p>Standing asks whether the proposed movement has enough intent continuity, evidence, governing basis, and authority to be decided. Coherence of language is not standing. A high reliability score is not standing.</p>
+
+      <h2 id="projection">5. Semantic projection</h2>
+      <p id="enterprise-ontology">Semantic interpretation determines what action is being attempted and how it relates to people, accounts, records, policies, and authority. Retrieval may inform standing. It does not authorize release. Missing evidence remains visible and may drive ESCALATE rather than fabricated certainty.</p>
+
+      <h2 id="governing-basis">6. Governing basis</h2>
+      <p>Standing determines whether the proposed action is sufficiently grounded to enter authorization. A prior standing result is not a reusable approval. Every protected movement receives a fresh Decision API decision.</p>
+
+      <h2 id="intent-horizon">7. Intent Horizon</h2>
+      <p>Intent alignment checks whether a later proposed action is still the same movement the enterprise authorized. Distance or similarity scores do not themselves authorize or refuse release.</p>
+
+      <h2 id="authority">8. Authority</h2>
+      <p>Retrievable is not authorized. Callable is not delegated. Source authority and capability authority are evaluated separately from evidence sufficiency. Positive authority is a prerequisite, not an independent ALLOW engine.</p>
+
+      <h2 id="evidence">9. Evidence</h2>
+      <p id="proof-harness">Provenance, integrity, and custody remain separate fields. Missing or customer-asserted custody is preserved as such. The proof harness exports valid artifacts or an explicit failure / pending state. It does not emit silent blanks.</p>
+
+      <h2 id="release">10. Release / consequence custody</h2>
+      <p id="invariants">Release control records whether the movement is authorized, withheld, refused, replaced, or routed. Consequence custody binds proposed movement → governing basis → Decision API result → release / no-bind state → receipt → manifest → whether the protected effect formed. A no-bind receipt records that no protected downstream effect formed in the evidenced environment.</p>
+      <pre class="diagram">Proposed movement
+        │
+ Frozen basis + Decision API
+        │
+ Release control (authorize / withhold)
+        │
+ Consequence custody
+   effect formed  |  no-bind receipt
+        │
+ Receipt + manifest hashes</pre>
+
+      <h2 id="human-review">11. Human review</h2>
+      <p>ESCALATE is not a queue token. Closure records reviewer, authority, evidence considered, disposition, approved or revised action, release state, and resulting consequence. Unresolved states remain explicit. Review-gated learning signals may be exported. Live model-weight mutation is not part of the authorization path.</p>
+
+      <h2 id="proof-packaging">12. Proof packaging</h2>
+      <p>Portable Decision Authorization evidence can include a buyer-facing report, machine-readable decision receipt, integrity manifest, and controlled-batch summary. More detailed audit-pack schemas are provided through technical diligence.</p>
+      <p>Public filenames on this site are the sanitized variants. Batch / Controlled Corridor Mode can aggregate multiple cases while retaining per-case hashes and full-audit pointers. Aggregate rule: any BLOCK controls; else any ESCALATE controls; ALLOW requires all-clear cases.</p>
+
+      <h2 id="controlled-seam">13. Controlled full seam</h2>
+      <p>The controlled full seam demonstrates L4 behavior on a bounded controlled route, including a reproducible executor harness used in the AgenTrust integration review. In that controlled proof, an authorized $250,000 action can proceed (commit_count=1, TRACE emitted) while a $260,000 mutation is refused (state remains PENDING, commit_count=0, no TRACE). This is controlled proof, not a customer bank transaction.</p>
+      <pre class="diagram">Controlled proof
+        │
+Customer-connected route
+        │
+Production completeness
+  (inventory, fail-closed,
+   bypass, replay, closure)</pre>
+
+      <h2 id="production-route">14. Production route evidence</h2>
+      <p>Customer integration establishes protected endpoint connection, route inventory, production fail-closed behavior, bypass testing, production replay, real reviewer closure, and downstream outcome evidence. Universal production non-bypassability is not claimed from public artifacts alone.</p>
+
+      <h2 id="longitudinal">15. Longitudinal governance</h2>
+      <p id="review-gated-feedback">Longitudinal governance uses decision and outcome history for bounded review and diagnostics. History is not a second Decision API. Insufficient history is reported rather than invented.</p>
+      <pre class="diagram">Decision history
+ Governing-basis epochs
+ Outcome evidence
+        │
+ Review-gated learning candidate
+        │
+ No live weight mutation</pre>
+
+      <h2 id="boundaries">16. Capability boundaries</h2>
+      <p id="financial-pilot">Not claimed: universal production L5; automatic regulatory compliance; hardware-backed attestation unless supplied by the deployment; OPAQUE certification; AgenTrust Verified; replacement of human legal, medical, or financial authority; autonomous protected action merely because a semantic score is high.</p>
+      <p>External ecosystem integration validation: the Decision Authorization → execution-evidence → TRACE path was independently exercised by an AgenTrust maintainer before acceptance into the integrations repository. Status: Community Integration.</p>
+      <p id="technical-depth">Procurement and security review materials can be discussed under NDA. Do not send confidential customer data through the public site.</p>
+      <p id="industries"></p><p id="roadmap"></p><p id="buyer-value"></p><p id="visuals"></p><p id="control-plane"></p><p id="state-transition-record"></p>
+      <p><a class="btn btn-dark" href="proof-explorer/index.html">Open Proof Explorer</a> <a class="btn btn-ghost" href="index.html#contact">Request diligence conversation</a></p>
+    </article>
+  </div>
 </section>
 </main>
-<footer class="footer"><div class="container"><p><a href="/">Back to OntoGuard homepage</a> | <a href="mailto:mark.starobinsky@ontoguard.ai">mark.starobinsky@ontoguard.ai</a></p></div></footer>
-<section class="center-message appendix-bottom-cta section-blue-deep section-space-md centered-section section-no-border"><div class="container"><h2>Ready to move from diligence to a representative review?</h2><p>Start with 10–25 representative outputs or inspect the public Boundary Proof Kit first.</p><div class="cta-buttons"><a class="btn primary" href="/#output-risk-scan">Run AI Output Risk Scan</a><a class="btn secondary" href="/#boundary-proof-kit">View Public Proof Kit</a></div></div></section></body>
+<script src="script.js?v=20260921-r4"></script>
+<footer class="site-footer">
+<div class="container-xl footer-grid">
+<div><a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="24" height="24"/><span class="brand-word">ONTOGUARD</span></a>
+<p style="margin-top:12px">Decision Authorization infrastructure for agentic AI.</p>
+<p><a href="mailto:mark.starobinsky@ontoguard.ai">mark.starobinsky@ontoguard.ai</a></p>
+<p><a href="https://www.linkedin.com/in/markstarobinsky/" rel="noopener noreferrer" target="_blank">LinkedIn</a></p></div>
+<div><h4>Product</h4><ul><li><a href="index.html#product">Decision Authorization</a></li><li><a href="headless-decision-authorization-runtime.html">Headless Runtime 1.0.19</a></li><li><a href="index.html#how-it-works">How it works</a></li><li><a href="index.html#maturity">Production boundary</a></li></ul></div>
+<div><h4>Solutions</h4><ul><li><a href="finance-ai-governance.html">Finance</a></li><li><a href="insurance-ai-governance.html">Insurance</a></li><li><a href="healthcare-payer-ai-governance.html">Healthcare Payers</a></li><li><a href="cybersecurity-ai-decision-authorization.html">Cybersecurity</a></li><li><a href="vertical-ai-vendors.html">Vertical AI Vendors</a></li></ul></div>
+<div><h4>Proof</h4><ul><li><a href="proof-explorer/index.html">Proof Explorer</a></li><li><a href="financial-services-ai-decision-authorization.html">Financial proof case</a></li><li><a href="cybersecurity-ai-decision-authorization-proof.html">Cybersecurity scenarios</a></li><li><a href="resources.html#proof-assets">Public Evidence</a></li><li><a href="deep-diligence-appendix.html">Technical Diligence</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="index.html#contact">Contact</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="partners.html">Integrations</a></li><li><a href="resources.html">Resources</a></li></ul></div>
+</div>
+<div class="container-xl legal"><span>© 2026 OntoGuard AI</span><span>Protected by U.S. Patent Application 19/444,521 — Track I prioritized examination granted May 2026.</span></div>
+</footer>
+
+</body>
 </html>

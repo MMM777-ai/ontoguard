@@ -1,30 +1,98 @@
-// OntoGuard production-safe analytics, navigation, disclosure, video, form, and AOS behavior.
-(function(){
- "use strict";
- var DEBUG_KEY="ONTOGUARD_ANALYTICS_DEBUG";
- function debugEnabled(){try{return window.localStorage&&window.localStorage.getItem(DEBUG_KEY)==="1";}catch(e){return false;}}
- function debugLog(message,payload){if(!debugEnabled())return;if(payload!==undefined)console.log("[OntoGuard]",message,payload);else console.log("[OntoGuard]",message);}
- function safeText(value,fallback){if(value===undefined||value===null)return fallback;return String(value).trim().slice(0,160)||fallback;}
- function trackEvent(name,props){var eventName=safeText(name,"Interaction"),safeProps=props&&typeof props==="object"?props:{};if(typeof window.plausible==="function"){try{window.plausible(eventName,{props:safeProps});}catch(e){debugLog("Plausible event failed",e);}}if(typeof window.gtag==="function"){try{window.gtag("event",eventName.toLowerCase().replace(/\s+/g,"_"),{event_category:safeProps.category||"Website",event_label:safeProps.label||safeProps.resource||safeProps.action||eventName,value:1});}catch(e){debugLog("Analytics event failed",e);}}}
- window.trackDownload=function(item){var resource=safeText(item,"Unknown Resource");trackEvent("Download",{category:"Resource",resource:resource,label:resource});};
- window.trackClick=function(action){var label=safeText(action,"Unknown Click");trackEvent("Click",{category:"Button",action:label,label:label});};
- function viewportClass(){var width=window.innerWidth||document.documentElement.clientWidth||0;return width<700?"mobile":width<1100?"tablet":"desktop";}
- window.ontoguardTrackEvent=trackEvent;window.ontoguardViewportClass=viewportClass;
- function sourcePage(){return document.body.classList.contains("home-page")?"homepage":window.location.pathname||"unknown";}
- function installDeclarativeTracking(){document.addEventListener("click",function(event){var element=event.target instanceof Element?event.target.closest("[data-track-kind][data-track-label], [data-track-event]"):null;if(!element)return;var directEvent=safeText(element.dataset.trackEvent,"");if(directEvent){trackEvent(directEvent,{category:"Governed Transaction",label:safeText(element.dataset.trackLabel,directEvent),source_page:sourcePage(),destination_type:safeText(element.dataset.destinationType,"unknown"),viewport_class:viewportClass()});return;}var kind=element.dataset.trackKind,label=safeText(element.dataset.trackLabel,"Website interaction");if(kind==="download")window.trackDownload(label);else if(kind==="click")window.trackClick(label);});}
- function observeOnce(element,eventName,props){if(!element||typeof window.IntersectionObserver!=="function")return;var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting&&entry.intersectionRatio>=0.5){trackEvent(eventName,Object.assign({category:"Governed Transaction",source_page:sourcePage(),viewport_class:viewportClass()},props||{}));observer.disconnect();}});},{threshold:[0.5]});observer.observe(element);}
- function installGovernedTransactionAnalytics(){var definition=document.getElementById("governed-transaction-definition"),example=document.getElementById("governed-transaction-example");observeOnce(definition,"governed_transaction_section_view",{destination_type:"section"});observeOnce(example,"governed_transaction_example_view",{destination_type:"example"});document.querySelectorAll(".governed-stage-detail").forEach(function(detail){detail.addEventListener("toggle",function(){if(!detail.open)return;trackEvent("governed_transaction_stage_expand",{category:"Governed Transaction",stage_number:safeText(detail.dataset.stageNumber,"unknown"),stage_name:safeText(detail.dataset.stageName,"unknown"),source_page:sourcePage(),destination_type:"stage_detail",viewport_class:viewportClass()});});});}
- function closeMoreMenu(returnFocus){var details=document.querySelector(".sticky-nav details[open]");if(!details)return;details.removeAttribute("open");if(returnFocus){var summary=details.querySelector("summary");if(summary)summary.focus();}}
- function installNavigation(){var nav=document.querySelector(".sticky-nav");if(!nav)return;document.addEventListener("keydown",function(event){if(event.key==="Escape"&&nav.querySelector("details[open]")){event.preventDefault();closeMoreMenu(true);}});document.addEventListener("click",function(event){var open=nav.querySelector("details[open]");if(!open)return;var target=event.target instanceof Element?event.target:null;if(target&&target.closest(".nav-more-menu a")){closeMoreMenu(false);return;}if(target&&!open.contains(target))closeMoreMenu(false);});}
- function openAncestorDetails(target){var node=target&&target.parentElement;while(node){if(node.tagName==="DETAILS")node.open=true;node=node.parentElement;}}
- function expandDetailsForHashTarget(userInitiated){var hash=window.location.hash;if(!hash||hash.length<2)return;var id;try{id=decodeURIComponent(hash.slice(1));}catch(e){return;}var target=document.getElementById(id);if(!target)return;openAncestorDetails(target);window.requestAnimationFrame(function(){target.scrollIntoView({block:"start",behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});if(userInitiated&&target.matches("a,button,input,select,textarea,summary,[tabindex]"))target.focus({preventScroll:true});});}
- function installAOS(){if(!window.AOS||typeof window.AOS.init!=="function")return;try{window.AOS.init({duration:800,easing:"ease-in-out",once:true,disable:function(){return window.matchMedia("(prefers-reduced-motion: reduce)").matches;}});document.documentElement.classList.add("aos-enabled");}catch(e){debugLog("AOS initialization failed",e);}}
- function installVideoTracking(){document.querySelectorAll("video").forEach(function(video){var started=false;video.addEventListener("play",function(){if(started)return;started=true;trackEvent("Video Started",{category:"Video",label:"OntoGuard Product Video"});},{passive:true});video.addEventListener("ended",function(){trackEvent("Video Completed",{category:"Video",label:"OntoGuard Product Video"});},{passive:true});});}
- function describedByAdd(field,id){var ids=(field.getAttribute("aria-describedby")||"").split(/\s+/).filter(Boolean);if(ids.indexOf(id)<0)ids.push(id);field.setAttribute("aria-describedby",ids.join(" "));}
- function describedByRemove(field,id){var ids=(field.getAttribute("aria-describedby")||"").split(/\s+/).filter(function(x){return x&&x!==id;});if(ids.length)field.setAttribute("aria-describedby",ids.join(" "));else field.removeAttribute("aria-describedby");}
- function fieldError(field){if(!field.id)return;var id=field.id+"-error",error=document.getElementById(id);if(!error){error=document.createElement("span");error.id=id;error.className="field-error";field.insertAdjacentElement("afterend",error);}error.textContent=field.validationMessage||"Please complete this field.";field.setAttribute("aria-invalid","true");describedByAdd(field,id);}
- function clearFieldError(field){if(!field.id)return;var id=field.id+"-error",error=document.getElementById(id);if(error)error.remove();field.removeAttribute("aria-invalid");describedByRemove(field,id);}
- function installFormAccessibility(){document.querySelectorAll("form").forEach(function(form){var started=false,failurePending=false,status=form.querySelector(".form-live-status");if(!status){status=document.createElement("p");status.className="form-live-status";status.setAttribute("role","status");status.setAttribute("aria-live","polite");form.appendChild(status);}form.addEventListener("focusin",function(){if(started)return;started=true;trackEvent("Form Started",{category:"Form",label:"AI Output Risk Scan"});});form.addEventListener("invalid",function(event){var field=event.target;if(!(field instanceof HTMLElement)||!field.matches("input,select,textarea"))return;fieldError(field);if(failurePending)return;failurePending=true;window.setTimeout(function(){failurePending=false;var invalid=Array.prototype.slice.call(form.querySelectorAll(":invalid"));invalid.forEach(fieldError);status.textContent="Please correct "+invalid.length+" field"+(invalid.length===1?"":"s")+" before submitting.";trackEvent("Form Validation Failed",{category:"Form",label:"AI Output Risk Scan"});if(invalid[0])invalid[0].focus();},0);},true);form.addEventListener("input",function(event){var field=event.target;if(field instanceof HTMLElement&&field.matches("input,select,textarea")&&field.validity.valid)clearFieldError(field);if(!form.querySelector(":invalid"))status.textContent="";});form.addEventListener("submit",function(){status.textContent="Submitting your request…";trackEvent("Form Submitted",{category:"Form",label:"AI Output Risk Scan"});});});}
- document.addEventListener("DOMContentLoaded",function(){installDeclarativeTracking();installNavigation();installVideoTracking();installFormAccessibility();installGovernedTransactionAnalytics();expandDetailsForHashTarget(false);installAOS();var email=document.getElementById("email");if(email&&!email.innerHTML.trim())email.innerHTML='<a href="mailto:mark.starobinsky@ontoguard.ai">mark.starobinsky@ontoguard.ai</a>';});
- window.addEventListener("hashchange",function(){expandDetailsForHashTarget(true);});
+(function () {
+  "use strict";
+  function track(name, props) {
+    if (typeof window.plausible === "function") {
+      try { window.plausible(name, { props: props || {} }); } catch (e) {}
+    }
+  }
+  window.ontoguardTrackEvent = track;
+  window.ontoguardViewportClass = function () {
+    var width = window.innerWidth || document.documentElement.clientWidth || 0;
+    return width < 700 ? "mobile" : width < 1100 ? "tablet" : "desktop";
+  };
+  function installNav() {
+    var toggle = document.querySelector(".nav-toggle");
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        var open = document.body.classList.toggle("nav-open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    document.addEventListener("click", function (e) {
+      var t = e.target;
+      if (!(t instanceof Element)) return;
+      document.querySelectorAll(".nav-drop[open]").forEach(function (d) {
+        if (!d.contains(t)) d.removeAttribute("open");
+      });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        document.querySelectorAll(".nav-drop[open]").forEach(function (d) { d.removeAttribute("open"); });
+        document.body.classList.remove("nav-open");
+      }
+    });
+  }
+  function installDemo() {
+    var btn = document.getElementById("mutate-amount");
+    var panel = document.getElementById("demo-state-b");
+    var amount = document.getElementById("demo-amount");
+    var decision = document.getElementById("demo-decision");
+    var commit = document.getElementById("demo-commit");
+    var trace = document.getElementById("demo-trace");
+    var release = document.getElementById("demo-release");
+    if (!btn || !decision) return;
+    var mutated = false;
+    btn.addEventListener("click", function () {
+      mutated = !mutated;
+      if (mutated) {
+        if (amount) amount.textContent = "$250,000 \u2192 $260,000";
+        decision.textContent = "BLOCK";
+        decision.className = "decision-chip chip-block";
+        if (commit) commit.textContent = "0";
+        if (trace) trace.textContent = "NOT EMITTED";
+        if (release) release.textContent = "WITHHELD";
+        if (panel) panel.hidden = false;
+        btn.textContent = "Reset authorized amount";
+        track("homepage_demo_mutate", { state: "block" });
+      } else {
+        if (amount) amount.textContent = "$250,000";
+        decision.textContent = "ALLOW";
+        decision.className = "decision-chip chip-allow";
+        if (commit) commit.textContent = "1";
+        if (trace) trace.textContent = "EMITTED";
+        if (release) release.textContent = "AUTHORIZED";
+        if (panel) panel.hidden = true;
+        btn.textContent = "Change amount";
+        track("homepage_demo_mutate", { state: "allow" });
+      }
+    });
+  }
+  function installTracking() {
+    document.addEventListener("click", function (e) {
+      var el = e.target instanceof Element ? e.target.closest("[data-track-event]") : null;
+      if (!el) return;
+      track(el.getAttribute("data-track-event"), { label: (el.getAttribute("data-track-label") || el.textContent).trim().slice(0, 80) });
+    });
+    document.querySelectorAll("video").forEach(function (video) {
+      var started = false;
+      video.addEventListener("play", function () {
+        if (started) return;
+        started = true;
+        track("video_play", { src: video.currentSrc || "" });
+      });
+      video.addEventListener("ended", function () {
+        track("video_complete", { src: video.currentSrc || "" });
+      });
+    });
+    document.querySelectorAll("form").forEach(function (form) {
+      form.addEventListener("submit", function () {
+        track("contact_conversion", { form: form.getAttribute("id") || "form" });
+      });
+    });
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    installNav();
+    installDemo();
+    installTracking();
+  });
 })();
