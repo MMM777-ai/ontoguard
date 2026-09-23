@@ -8,7 +8,7 @@
   <meta name="description" content="OntoGuard authorizes exact AI agent actions before execution, returning ALLOW, BLOCK, or ESCALATE with portable decision evidence."/>
   <link rel="canonical" href="https://ontoguard.ai/"/>
   <link rel="sitemap" type="application/xml" href="sitemap.xml"/>
-  <meta name="last-modified" content="2026-09-22"/>
+  <meta name="last-modified" content="2026-09-23"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;650;700&display=swap" rel="stylesheet"/>
@@ -53,8 +53,9 @@
 <a class="brand" href="index.html"><img src="assets/mark.svg" alt="" width="28" height="28"/><span class="brand-word">ONTOGUARD</span></a>
 <nav class="nav-desktop" aria-label="Primary">
 <details class="nav-drop"><summary>Product</summary><div class="dropdown">
-<a href="index.html#product">Decision Authorization<small>ALLOW / BLOCK / ESCALATE at the action</small></a>
-<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Self-contained runtime 1.0.19</small></a>
+<a href="index.html#product">Decision Authorization<small>What OntoGuard authorizes</small></a>
+<a href="decision-authorization-platform.html">Decision Authorization Platform<small>Full governance, review &amp; evidence operating surface</small></a>
+<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Embedded low-latency authorization service</small></a>
 </div></details>
 <details class="nav-drop"><summary>Solutions</summary><div class="dropdown">
 <a href="finance-ai-governance.html">Financial Services<small>Decision Authorization for financial AI</small></a>
@@ -95,6 +96,7 @@
 </div>
 <div class="mobile-panel" id="mobile-nav">
 <a href="index.html#product">Decision Authorization</a>
+<a href="decision-authorization-platform.html">Decision Authorization Platform</a>
 <a href="headless-decision-authorization-runtime.html">Headless Runtime</a>
 <a href="finance-ai-governance.html">Financial Services</a>
 <a href="insurance-ai-governance.html">Insurance</a>
@@ -152,8 +154,8 @@
   <div class="container-xl cred-grid">
     <article>
       <span class="badge">AgenTrust Marketplace</span>
-      <h3 style="margin-top:12px">Community Integration</h3>
-      <small>Listed in the AgenTrust Marketplace as a Community Integration. Community is manifest-validated, not AgenTrust Verified and not endorsement.</small>
+      <h3 style="margin-top:12px">Verified Integration</h3>
+      <small>Listed in the AgenTrust Marketplace at the Verified tier. AgenTrust maintainers exercised the integration end-to-end against released packages and confirmed its documented behavior. Verified applies to the integration boundary; it is not hardware attestation, customer-production L5, universal non-bypassability, or product certification.</small>
       <p style="margin-top:10px"><a data-track-event="agentrust_link" href="agentrust-decision-authorization-integration.html">Integration evidence</a></p>
     </article>
     <article>
@@ -229,7 +231,7 @@
         <p class="muted">Prior authorization: NO LONGER BINDS</p>
         <div class="flow-arrow">↓</div>
         <p><span class="decision-chip chip-block">BLOCK ⊘</span></p>
-        <div class="check-row"><span>Release</span><b>WITHHELD</b></div>
+        <div class="check-row"><span>Release</span><b>BLOCKED</b></div>
         <div class="check-row"><span>Commit</span><b>0</b></div>
         <div class="check-row"><span>Protected commit</span><b>0</b></div>
         <div class="check-row"><span>Execution TRACE</span><b>NOT EMITTED</b></div>
@@ -252,7 +254,7 @@
       <div class="arch-box arch-core"><strong>ONTOGUARD</strong><div>Decision Authorization</div></div>
       <div class="arch-row">
         <div class="arch-box"><span class="decision-chip chip-allow">ALLOW</span><div>Enforcement / Execution</div></div>
-        <div class="arch-box"><span class="decision-chip chip-block">BLOCK</span><div>Withheld consequence</div></div>
+        <div class="arch-box"><span class="decision-chip chip-block">BLOCK</span><div>Release blocked</div></div>
         <div class="arch-box"><span class="decision-chip chip-escalate">ESCALATE</span><div>Human authority</div></div>
       </div>
       <div>▼</div>
@@ -277,8 +279,8 @@
     <p class="kicker">Deploy where the action happens</p>
     <h2>Headless Decision Authorization Runtime</h2>
     <p class="lead">OntoGuard can run as a self-contained authorization service inside a customer-controlled or partner execution environment. The runtime carries exact-action authorization, authenticated governance inputs, and durable decision evidence without requiring the OntoGuard web application.</p>
-    <p class="privacy-note">OntoGuard Headless Decision Authorization Runtime 1.0.19 · OntoGuard Governance Pack v1.2.0 — different version namespaces.</p>
-    <p><a class="btn btn-dark" href="headless-decision-authorization-runtime.html">Explore the Headless Runtime</a></p>
+    <p class="privacy-note">OntoGuard Headless Decision Authorization Runtime · OntoGuard Governance Pack v1.2.0 — different version namespaces.</p>
+    <p><a class="btn btn-dark" href="headless-decision-authorization-runtime.html">Explore the Headless Runtime</a> <a class="btn btn-ghost" href="decision-authorization-platform.html">Decision Authorization Platform</a></p>
   </div>
 </section>
 <section class="section section-light" id="buyers">
@@ -318,7 +320,7 @@
         <p>Inspect a governed decision in-browser, including ALLOW / BLOCK / ESCALATE and no-bind state.</p>
       </a>
       <a class="card proof-card" data-track-event="agentrust_link" href="agentrust-decision-authorization-integration.html">
-        <span class="badge">AGENTRUST COMMUNITY</span>
+        <span class="badge">AGENTRUST VERIFIED</span>
         <h3>AgenTrust Integration</h3>
         <p>Inspect the public TRACE adapter and maintainer-reviewed merge.</p>
       </a>
@@ -352,7 +354,7 @@
           <li>Controlled release path</li>
           <li>Receipt / manifest</li>
           <li>Controlled full seam</li>
-          <li>TRACE community integration</li>
+          <li>TRACE Verified integration</li>
         </ul>
       </article>
       <article class="card">
@@ -374,7 +376,7 @@
           <li>Automatic regulatory compliance</li>
           <li>Hardware attestation by default</li>
           <li>Production enforcement in unintegrated environments</li>
-          <li>AgenTrust Verified status</li>
+          <li>Hardware-backed AgenTrust appraisal</li>
           <li>Replacement of human legal, medical, or financial authority</li>
         </ul>
       </article>
@@ -456,7 +458,7 @@
 <p style="margin-top:12px">Decision Authorization infrastructure for agentic AI.</p>
 <p><a href="mailto:mark.starobinsky@ontoguard.ai">mark.starobinsky@ontoguard.ai</a></p>
 <p><a href="https://www.linkedin.com/in/markstarobinsky/" rel="noopener noreferrer" target="_blank">LinkedIn</a></p></div>
-<div><h4>Product</h4><ul><li><a href="index.html#product">Decision Authorization</a></li><li><a href="headless-decision-authorization-runtime.html">Headless Runtime 1.0.19</a></li><li><a href="index.html#how-it-works">How it works</a></li><li><a href="index.html#maturity">Production boundary</a></li></ul></div>
+<div><h4>Product</h4><ul><li><a href="index.html#product">Decision Authorization</a></li><li><a href="decision-authorization-platform.html">Decision Authorization Platform</a></li><li><a href="headless-decision-authorization-runtime.html">Headless Runtime</a></li><li><a href="index.html#how-it-works">How it works</a></li><li><a href="index.html#maturity">Production boundary</a></li></ul></div>
 <div><h4>Solutions</h4><ul><li><a href="finance-ai-governance.html">Finance</a></li><li><a href="insurance-ai-governance.html">Insurance</a></li><li><a href="healthcare-payer-ai-governance.html">Healthcare Payers</a></li>
 <li><a href="cybersecurity-ai-decision-authorization.html">Cybersecurity</a></li><li><a href="vertical-ai-vendors.html">Vertical AI Vendors</a></li></ul></div>
 <div><h4>Proof</h4><ul><li><a href="proof-explorer/index.html">Proof Explorer</a></li><li><a href="financial-services-ai-decision-authorization.html">Financial proof case</a></li><li><a href="cybersecurity-ai-decision-authorization-proof.html">Cybersecurity scenarios</a></li><li><a href="index.html#proof">Public Evidence</a></li><li><a href="deep-diligence-appendix.html">Technical Diligence</a></li></ul></div>

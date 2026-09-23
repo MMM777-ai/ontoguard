@@ -21,6 +21,7 @@ The website also describes the current **Headless Decision Authorization Runtime
 ## Main public surfaces
 
 - `index.html` — homepage
+- `decision-authorization-platform.html` — full Decision Authorization operating environment
 - `headless-decision-authorization-runtime.html` — headless runtime
 - `agentrust-decision-authorization-integration.html` — AgenTrust integration
 - `financial-services-ai-decision-authorization.html` — financial-services proof
@@ -33,8 +34,8 @@ The website also describes the current **Headless Decision Authorization Runtime
 - `videos/` — public product video and captions
 - `sitemap.xml` — indexable URL inventory
 - `robots.txt` — crawler directives
-- `_redirects` — legacy URL redirects
-- `_headers` — hosting/security headers
+- `_redirects` — host-configuration template; not enforced by GitHub Pages
+- `_headers` — host-configuration template; not enforced by GitHub Pages
 
 ## Public-evidence policy
 

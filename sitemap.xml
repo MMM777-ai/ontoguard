@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ontoguard.ai/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://ontoguard.ai/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://ontoguard.ai/proof-explorer/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/financial-services-ai-decision-authorization.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://ontoguard.ai/deep-diligence-appendix.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://ontoguard.ai/partners.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://ontoguard.ai/agentrust-decision-authorization-integration.html</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://ontoguard.ai/deep-diligence-appendix.html</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://ontoguard.ai/partners.html</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://ontoguard.ai/agentrust-decision-authorization-integration.html</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://ontoguard.ai/finance-ai-governance.html</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/insurance-ai-governance.html</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/healthcare-payer-ai-governance.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://ontoguard.ai/vertical-ai-vendors.html</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://ontoguard.ai/vertical-ai-vendors.html</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://ontoguard.ai/ai-implementation-partners.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://ontoguard.ai/resources.html</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://ontoguard.ai/resources.html</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://ontoguard.ai/what-is-ai-agent-decision-authorization.html</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/ai-agent-authorization-vs-iam-oauth.html</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/ai-agent-governance-runtime-boundary.html</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/allow-block-escalate-agent-actions.html</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/decision-authorization-vs-ai-guardrails.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://ontoguard.ai/about.html</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://ontoguard.ai/about.html</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://ontoguard.ai/privacy.html</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/cybersecurity-ai-decision-authorization-proof.html</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://ontoguard.ai/cybersecurity-ai-decision-authorization.html</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://ontoguard.ai/headless-decision-authorization-runtime.html</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://ontoguard.ai/headless-decision-authorization-runtime.html</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://ontoguard.ai/decision-authorization-platform.html</loc><lastmod>2026-09-23</lastmod></url>
 </urlset>
