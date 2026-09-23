@@ -1,0 +1,25 @@
+{
+  "schema": "ontoguard.public_evidence.manifest@1",
+  "files": [
+    {
+      "name": "index.html",
+      "sha256": "2b1b08ae9d46ab13652c14f3b532a8e9f26ced0137a5affc598e9184251668ec"
+    },
+    {
+      "name": "proof-explorer-data.json",
+      "sha256": "6dfe655e835fca640b5c744e5dac02270c6776cceb0b027a7f4dc8824cbbea97"
+    },
+    {
+      "name": "proof-explorer.css",
+      "sha256": "b51e87cd0bd0844b88b45633a25bfb0dbbe66ad9ef88c277cc4303c1225b4819"
+    },
+    {
+      "name": "proof-explorer.js",
+      "sha256": "01ddfa9098c215a22b16e0938a030f936d50b8a803db6bc0eb355cd8e50429d7"
+    },
+    {
+      "name": "public-receipt.json",
+      "sha256": "1619557a1e363a662aaacb04c9e994caca076dc5eced12531e4f92e6178b4154"
+    }
+  ]
+}
