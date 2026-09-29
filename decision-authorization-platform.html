@@ -31,7 +31,7 @@
 <details class="nav-drop"><summary>Product</summary><div class="dropdown">
 <a href="index.html#product">Decision Authorization<small>What OntoGuard authorizes</small></a>
 <a href="decision-authorization-platform.html">Decision Authorization Platform<small>Full governance, review &amp; evidence operating surface</small></a>
-<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Embedded low-latency authorization service</small></a>
+<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Embedded execution-path authorization service</small></a>
 </div></details>
 <details class="nav-drop"><summary>Solutions</summary><div class="dropdown">
 <a href="finance-ai-governance.html">Financial Services<small>Decision Authorization for financial AI</small></a>
@@ -105,7 +105,7 @@
 <section class="section section-light">
   <div class="container prose">
     <p>Platform and Runtime share the same Decision Authorization core. They are different operating surfaces — not two inventions, and not Basic versus Pro.</p>
-    <p><strong>Platform</strong> is how an organization operates Decision Authorization. <strong>Runtime</strong> is how Decision Authorization is embedded in an execution path.</p>
+    <p><strong>Headless Runtime 1.2.21</strong> is decision-causal runtime intelligence plus standing, binding, evidence, consequence, and recovery semantics inside the execution environment. <strong>Platform</strong> is the enterprise operating system around those primitives: human workflow, dashboards, batch and corridor operations, reporting, evidence packages, simulation, administration, and cross-case governance.</p>
   </div>
 </section>
 
@@ -117,12 +117,12 @@
       <article class="cap-card">
         <h3>1. Decision Operations &amp; Human Authority</h3>
         <p>Approval Desk, qualified human review, assignment and closure, structured overrides, evidence additions, semantic contests, review-gated release, and decision closure evidence.</p>
-        <p>Headless can return ESCALATE. The Platform operates the escalation lifecycle.</p>
+        <p>Headless can return ESCALATE and bind a subsequent reviewer resolution to the original authorization without rewriting that original decision. The Platform adds the Approval Desk, assignment, reviewer workflow, evidence management, organizational closure, and operating UI.</p>
       </article>
       <article class="cap-card">
         <h3>2. Governance Evidence &amp; Reporting</h3>
         <p>Governance reports, buyer and audit PDFs, Decision Authorization Packets, receipts and manifests, evidence packages, artifact validation, and portable audit export.</p>
-        <p>Headless authorizes. The Platform packages the operating evidence around that authorization.</p>
+        <p>Headless retains bounded runtime evidence. The Platform packages buyer and audit PDFs, Decision Authorization Packets, and portable operating evidence around that authorization.</p>
       </article>
       <article class="cap-card">
         <h3>3. Corridor &amp; Portfolio Analysis</h3>
@@ -131,7 +131,7 @@
       <article class="cap-card">
         <h3>4. Semantic Governance Intelligence</h3>
         <p>Intent continuity, semantic projection, governing-basis analysis, longitudinal behavioral governance, drift, evidence sufficiency, and domain or jurisdiction resolution.</p>
-        <p>Ontology, retrieval, and longitudinal state are mechanisms supporting Decision Authorization. They are not the product category.</p>
+        <p>The Runtime can run a full decision-causal semantic provider inside the execution environment. The Platform adds exploration, cross-case analytics, and review workflows around that same mechanism. Ontology and retrieval are not the product category.</p>
       </article>
       <article class="cap-card">
         <h3>5. Testing, Simulation &amp; Verification</h3>
@@ -152,31 +152,35 @@
     <div class="compare-wrap">
       <table class="compare-table">
         <thead>
-          <tr><th></th><th>Decision Authorization Platform</th><th>Headless Runtime</th></tr>
+          <tr><th></th><th>Decision Authorization Platform</th><th>Headless Runtime 1.2.21</th></tr>
         </thead>
         <tbody>
           <tr><td>ALLOW / BLOCK / ESCALATE</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="yes"><span aria-label="Yes">✓</span></td></tr>
           <tr><td>Exact-action authorization</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="yes"><span aria-label="Yes">✓</span></td></tr>
-          <tr><td>Semantic Decision Authorization</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="yes"><span aria-label="Yes">✓</span></td></tr>
+          <tr><td>Pre-transition standing / nonformation</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="yes"><span aria-label="Yes">✓</span></td></tr>
           <tr><td>Signed authorization evidence</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="yes"><span aria-label="Yes">✓</span></td></tr>
           <tr><td>Fresh-state binding</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="yes"><span aria-label="Yes">✓</span></td></tr>
-          <tr><td>Low-latency execution-path deployment</td><td>Available as a deployment component</td><td>Primary purpose</td></tr>
+          <tr><td>Pre-commit revalidation</td><td>Via embedded runtime</td><td>Pack-opt-in</td></tr>
+          <tr><td>Authoritative revocation</td><td>Via embedded runtime</td><td class="yes"><span aria-label="Yes">✓</span></td></tr>
+          <tr><td>Review-resolution binding</td><td>✓ + operating workflow</td><td>✓ bounded API</td></tr>
           <tr><td>Human Approval Desk</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
           <tr><td>Governance dashboards</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
           <tr><td>Buyer / audit PDFs</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
-          <tr><td>Full evidence packages</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
-          <tr><td>Batch / corridor assessment</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
+          <tr><td>Full evidence packages</td><td class="yes"><span aria-label="Yes">✓</span></td><td>Bounded runtime evidence</td></tr>
+          <tr><td>Batch / portfolio analysis</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
           <tr><td>Scenario simulation</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
           <tr><td>Benchmarking</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
-          <tr><td>Rich ontology / retrieval / regulatory analysis</td><td class="yes"><span aria-label="Yes">✓</span></td><td>Bounded runtime form</td></tr>
-          <tr><td>Longitudinal governance analysis</td><td class="yes"><span aria-label="Yes">✓</span></td><td>Runtime subset</td></tr>
-          <tr><td>Drift analysis</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
-          <tr><td>Governance feedback / learning workflows</td><td class="yes"><span aria-label="Yes">✓</span></td><td class="no"><span aria-label="No">—</span></td></tr>
+          <tr><td>Ontology / retrieval / evidence synthesis</td><td>Rich analysis & exploration</td><td>Full-profile decision-causal provider</td></tr>
+          <tr><td>Intent / behavioral drift</td><td>Analytics + review</td><td>Pack-governed decision-causal analysis</td></tr>
+          <tr><td>Longitudinal governance</td><td>Cross-case analytics / workflows</td><td>Decision history + behavioral episodes</td></tr>
+          <tr><td>Recovery Standing</td><td>Operational oversight around runtime</td><td>Pack-opt-in consequence gate</td></tr>
+          <tr><td>Governance feedback / learning workflows</td><td class="yes"><span aria-label="Yes">✓</span></td><td>Outcome / episode projection only</td></tr>
           <tr><td>Self-contained embedded service</td><td>Optional component</td><td class="yes"><span aria-label="Yes">✓</span></td></tr>
+          <tr><td>Execution-path deployment</td><td>Available component</td><td>Primary purpose</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="privacy-note">Headless Runtime is not a lite edition. It is the specialized embedded implementation of the same Decision Authorization stack.</p>
+    <p class="privacy-note">Headless Runtime 1.2.21 is not a lite edition. Differentiation is embedded runtime versus enterprise operating surface — not limited semantics versus rich semantics.</p>
   </div>
 </section>
 

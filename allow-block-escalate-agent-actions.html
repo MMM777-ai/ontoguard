@@ -38,7 +38,7 @@
 <details class="nav-drop"><summary>Product</summary><div class="dropdown">
 <a href="index.html#product">Decision Authorization<small>What OntoGuard authorizes</small></a>
 <a href="decision-authorization-platform.html">Decision Authorization Platform<small>Full governance, review &amp; evidence operating surface</small></a>
-<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Embedded low-latency authorization service</small></a>
+<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Embedded execution-path authorization service</small></a>
 </div></details>
 <details class="nav-drop"><summary>Solutions</summary><div class="dropdown">
 <a href="finance-ai-governance.html">Financial Services<small>Decision Authorization for financial AI</small></a>
@@ -101,7 +101,7 @@
 <header class="page-hero"><div class="container"><ol class="breadcrumb"><li><a href="index.html">OntoGuard</a></li><li><a href="resources.html">Resources</a></li><li>ALLOW vs BLOCK vs ESCALATE for Agent Actions</li></ol><p class="eyebrow">Resources</p><h1>ALLOW vs BLOCK vs ESCALATE for Agent Actions</h1></div></header>
 <section class="section section-light"><div class="container prose"><p>OntoGuard’s Decision API returns one of three states for the exact proposed action.</p>
 <p><strong>ALLOW</strong> means the frozen action may proceed. It binds only that action. If amount, party, destination, or other material fields change, the prior ALLOW no longer applies.</p>
-<p><strong>BLOCK</strong> means the action may not proceed. Release is withheld. Protected commit remains zero. No execution TRACE is emitted for a withheld action.</p>
+<p><strong>BLOCK</strong> means the action may not proceed. Release is withheld. Protected commit remains zero. In the AgenTrust TRACE integration, no execution TRACE is emitted for a withheld action.</p>
 <p><strong>ESCALATE</strong> means the action is not autonomously authorized. It is routed to qualified human authority with reviewer and closure requirements. ESCALATE is an authorization state, not a crash or a missing score.</p>
 <p>A confidence number can inform the record. It does not substitute for these states. See the <a href="proof-explorer/index.html">Proof Explorer</a> and the <a href="agentrust-decision-authorization-integration.html">AgenTrust material-change path</a>.</p></div><p>Continue: <a href="proof-explorer/index.html">Proof Explorer</a> · <a href="agentrust-decision-authorization-integration.html">Inspect the AgenTrust TRACE integration</a> · <a href="headless-decision-authorization-runtime.html">Explore the Headless Decision Authorization Runtime</a>.</p></section>
 <section class="section section-muted"><div class="container prose faq"><h2>FAQ</h2><details><summary>What does ESCALATE mean?</summary><p>The action is not autonomously authorized. It is routed to qualified human authority.</p></details><details><summary>Does a prior ALLOW reuse?</summary><p>No. A mutated action is a new action.</p></details></div></section></main>

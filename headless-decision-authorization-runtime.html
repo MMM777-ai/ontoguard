@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Headless Decision Authorization Runtime | OntoGuard</title>
-  <meta name="description" content="Deploy OntoGuard Decision Authorization inside your execution environment. Self-contained runtime 1.0.21 — distinct from Governance Pack v1.2.0."/>
+  <meta name="description" content="Deploy Decision Authorization inside the execution path. Headless Runtime 1.2.21 — distinct from Governance Pack v1.2.0."/>
   <link rel="canonical" href="https://ontoguard.ai/headless-decision-authorization-runtime.html"/>
   <link rel="stylesheet" href="style.css?v=20260921-r4"/>
   <script defer data-domain="ontoguard.ai" src="https://plausible.io/js/script.js"></script>
@@ -15,11 +15,12 @@
   <link rel="shortcut icon" href="favicon.ico?v=3"/>
   <meta name="theme-color" content="#070b12"/>
   <meta property="og:title" content="Headless Decision Authorization Runtime | OntoGuard"/>
-  <meta property="og:description" content="Self-contained Decision Authorization runtime for customer-controlled execution environments."/>
+  <meta property="og:description" content="Self-contained Runtime 1.2.21 for exact-action authorization inside customer-controlled or confidential execution environments."/>
   <meta property="og:url" content="https://ontoguard.ai/headless-decision-authorization-runtime.html"/>
   <meta property="og:image" content="https://ontoguard.ai/assets/ontoguard-social-card-1200x630.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"OntoGuard","item":"https://ontoguard.ai/"},{"@type":"ListItem","position":2,"name":"Headless Runtime","item":"https://ontoguard.ai/headless-decision-authorization-runtime.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"OntoGuard Headless Decision Authorization Runtime","softwareVersion":"1.2.21","applicationCategory":"BusinessApplication","operatingSystem":"Linux","url":"https://ontoguard.ai/headless-decision-authorization-runtime.html","provider":{"@type":"Organization","name":"OntoGuard AI","url":"https://ontoguard.ai/"},"description":"Self-contained pack-governed runtime for authorizing exact agent actions inside customer-controlled or confidential execution environments."}</script>
 </head>
 <body data-base="">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -30,7 +31,7 @@
 <details class="nav-drop"><summary>Product</summary><div class="dropdown">
 <a href="index.html#product">Decision Authorization<small>What OntoGuard authorizes</small></a>
 <a href="decision-authorization-platform.html">Decision Authorization Platform<small>Full governance, review &amp; evidence operating surface</small></a>
-<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Embedded low-latency authorization service</small></a>
+<a href="headless-decision-authorization-runtime.html">Headless Runtime<small>Embedded execution-path authorization service</small></a>
 </div></details>
 <details class="nav-drop"><summary>Solutions</summary><div class="dropdown">
 <a href="finance-ai-governance.html">Financial Services<small>Decision Authorization for financial AI</small></a>
@@ -95,34 +96,64 @@
   <div class="container">
     <ol class="breadcrumb"><li><a href="index.html">OntoGuard</a></li><li>Headless Runtime</li></ol>
     <p class="eyebrow">Product</p>
-    <h1>Deploy OntoGuard Decision Authorization inside your execution environment.</h1>
-    <p class="lead">OntoGuard Headless Decision Authorization Runtime 1.0.21 is a self-contained authorization service for embedding in an execution path. It is a different version line from OntoGuard Governance Pack v1.2.0.</p>
-    <p>Need the full operating environment — review, evidence, analysis, and reporting? <a href="decision-authorization-platform.html">Explore the Decision Authorization Platform</a>.</p>
+    <h1>Deploy Decision Authorization inside the execution path.</h1>
+    <p class="lead">OntoGuard Headless Decision Authorization Runtime 1.2.21 is the self-contained, pack-governed runtime for authorizing exact agent actions inside customer-controlled or confidential execution environments.</p>
+    <p>The Runtime is the embedded Decision Authorization and execution-binding surface. The <a href="decision-authorization-platform.html">Decision Authorization Platform</a> is the organizational operating environment around the same authorization core.</p>
   </div>
 </header>
+
 <section class="section section-light">
   <div class="container prose">
-    <h2>Self-contained</h2>
-    <p>No operational dependency on the OntoGuard web application or the main source repository. Designed for deployment inside customer-controlled or confidential-computing environments.</p>
-    <h2>Exact-action binding</h2>
-    <p>Authorization applies to the exact proposed movement. A prior ALLOW does not survive material mutation.</p>
-    <h2>Signed configuration / semantic authority</h2>
-    <p>Only trusted, authenticated governance material can establish the runtime authorization context.</p>
-    <h2>Authenticated governance inputs</h2>
-    <p>The runtime accepts only authenticated governance material from trusted sources.</p>
-    <h2>Fresh-state binding</h2>
-    <p>Authorization can be bound to fresh execution state so stale approvals are not silently reused.</p>
-    <h2>Controlled execution binding</h2>
-    <p>An ALLOW is not a reusable blanket permission for arbitrary subsequent actions.</p>
-    <h2>Durable evidence</h2>
-    <p>Decision, authorization, release, and outcome evidence can be retained across the execution lifecycle.</p>
-    <h2>Longitudinal governance</h2>
-    <p>Decision and outcome history can support bounded behavior-over-time review. Historical metrics are not a second authorization authority.</p>
-    <h2>Interoperability</h2>
+    <h2>Exact-action and fresh-state binding</h2>
+    <p>Authorization applies to the exact proposed movement. A prior ALLOW does not survive material mutation. An ALLOW is not a reusable blanket permission for arbitrary later actions.</p>
+    <p>Formed authorization results carry cryptographically sealed authorization material binding the decision to the exact movement, decision basis, deployment pack, standing conditions and validity window.</p>
+
+    <h2>Pre-transition standing</h2>
+    <p>Before Decision Authorization forms, the Runtime can determine whether the proposed action has standing to enter authorization — standing, no standing, or not evaluable. If standing is absent or cannot be evaluated, the Runtime records nonformation rather than fabricating a BLOCK or ESCALATE decision.</p>
+
+    <h2>Trusted governing context</h2>
+    <p>Only trusted, authenticated governance material can establish the authorization context. Production pack selection is controlled by tenant configuration. The requesting agent cannot make its own governance pack, state, authority, evidence, or policy authoritative.</p>
+
+    <h2>Bounded and full semantic provider profiles</h2>
+    <p>Corridors can run a bounded semantic profile or a full decision-causal provider. The full profile can resolve ontology, retrieval grounding, longitudinal behavior, multi-epoch R7 semantic curvature, and evidence synthesis inside the execution environment. It does not call home to ontoguard.ai. Ontology and retrieval remain mechanisms supporting Decision Authorization — they are not the product category.</p>
+
+    <h2>Fresh-state and pre-commit standing</h2>
+    <p>Corridors can use one-time issue-and-consume authorization or opt into pre-commit revalidation. Where revalidation is required, current state, authority, evidence, and policy are obtained from trusted deployment adapters rather than caller assertions.</p>
+
+    <h2>Authoritative revocation</h2>
+    <p>An unconsumed authorization can be revoked by a trusted deployment authority. Revocation prevents future consumption. It does not rewrite history or claim to reverse a consequence that already formed.</p>
+
+    <h2>Review-resolution binding</h2>
+    <p>The Runtime can return ESCALATE and bind a subsequent reviewer resolution to the original authorization without rewriting that original decision. The Platform adds the Approval Desk, assignment, reviewer workflow, evidence management, and operating UI around that primitive.</p>
+
+    <h2>Execution-evidence binding</h2>
+    <p>The Runtime accepts independently signed execution receipts and verifies that the executed resource, state version, target, movement, and action binding match the authorization that was actually issued. Execution evidence does not retroactively change the decision; it establishes whether the authorized protected effect formed.</p>
+
+    <h2>Consequence custody and behavioral history</h2>
+    <p>Execution outcomes can be bound back to the authorization, retained as consequence evidence, and projected into durable behavioral episodes. Outcome and history delivery is decoupled from the core authorization response path.</p>
+
+    <h2>Recovery Standing</h2>
+    <p>Corridors can prevent a retry or related movement from acquiring fresh standing while the consequence of an earlier authorization remains unresolved. Independent outcome evidence can reconcile the effect as committed, not committed, or still unknown. Terminal resolutions remain immutable.</p>
+
+    <h2>Trusted deployment boundary</h2>
+    <p>Production authorization can operate inside an embedded execution boundary or with trusted context assembled by the confidential execution environment. The calling agent does not get to authorize itself by supplying the values that would decide the case.</p>
+
+    <h2>Integration conformance</h2>
+    <p>The Runtime includes bounded readiness and OEM integration-conformance checks so an integration can fail closed when required production trust sources are not actually connected.</p>
+
+
+    <h2>Supervisor-middleware integration</h2>
+    <p>The Runtime includes a bounded OpenShell-compatible adapter that can place Decision Authorization in a supervisor middleware path. Proposed HTTP/MCP activity is treated as observed candidate movement, while trusted state, authority, policy and evidence remain deployment-controlled. ALLOW can proceed; BLOCK, ESCALATE, nonformation and integration failure fail closed. This is an integration capability and does not imply an NVIDIA partnership or certification.</p>
+    <h2>TRACE interoperability</h2>
     <p>Independently evidenced execution can be projected into systems such as AgenTrust TRACE. The integration is listed at the AgenTrust Verified tier. Verification covers published integration behavior against released packages; it is not hardware attestation, L5, or product certification.</p>
+
+    <h2>Production deployment</h2>
+    <p>The deployable unit is a signed runtime image paired with engagement-specific governance packs and trusted adapters. It has no operational dependency on ontoguard.ai or the main OntoGuard application. Source archives are not the production unit.</p>
+
     <div class="notice">No OPAQUE partnership is claimed. Hardware attestation is not assumed by default. Production L5 and universal non-bypassability require deployment-route evidence.</div>
-    <p class="privacy-note">OntoGuard Governance Pack v1.2.0 names the public artifact/schema line. OntoGuard Headless Decision Authorization Runtime 1.0.21 names the deployable runtime line.</p>
+    <p class="privacy-note">OntoGuard Governance Pack v1.2.0 names the public artifact and schema line. OntoGuard Headless Decision Authorization Runtime 1.2.21 names the deployable runtime line. Those are separate version namespaces.</p>
     <p><a class="btn btn-dark" href="index.html#contact">Talk to us about a runtime corridor</a>
+       <a class="btn btn-ghost" href="decision-authorization-platform.html">Decision Authorization Platform</a>
        <a class="btn btn-ghost" href="agentrust-decision-authorization-integration.html">AgenTrust / TRACE</a></p>
   </div>
 </section>
