@@ -1,0 +1,131 @@
+{
+  "schema_version": 3,
+  "demo_id": "controlled-lending-v332-micro-r5",
+  "revision": "1",
+  "scope": "CONTROLLED_RUNTIME_OUTPUT",
+  "release": "1.89.332",
+  "run_id": "ea77a091eb21475697ab37a931eba0c9",
+  "asset_id": "compiled-asset:ea77a091eb21475697ab37a931eba0c9",
+  "product": "Semantic Intelligence Runtime OEM",
+  "runtime_package_sha256": "6f00ef9ff5a6ded5a1394e405b4517a699a82f390b99c0ccb1566da06ffb1012",
+  "runtime_wheel_sha256": "55e669770d2bbfe0db14bbff4f4997655ee9af73fe8eca02230b6ee4dae3dd72",
+  "generation_date": "2026-11-18",
+  "approval_reference": "PENDING_OWNER_DISCLOSURE_REVIEW",
+  "signature": null,
+  "native_sha256": {
+    "native.jsonl": "a74966d546a708b9bc3da2aba9528fede879f33843461cc37663c938c47ff7c6",
+    "native.ttl": "b168f8059f8e832f6fd45337ed149b9a18f45ce5b3876841549ca3ab031d90b5",
+    "native.xlsx": "96e7b270e6e1c2fb93c5d77a61a34cf188c9a3b4fd50584c29e5bbfb30e24b89",
+    "native.zip": "eb48d84a0828de02e3ec398a3a95b49a1ad65fad6969b539d8695544e8e63d3a"
+  },
+  "publication_status": "ONTOLOGY_READY",
+  "production_qualification_status": "NOT_QUALIFIED_FOR_THIS_DEMO",
+  "population": {
+    "visible_constituted": 5,
+    "review_required": 0,
+    "accepted_count": 5,
+    "relationships": 1,
+    "native_relationships": 3,
+    "count_rule": "Native constituted population minus native review-required count; graph includes only native graph edges; literal relationships separately listed."
+  },
+  "files": [
+    {
+      "name": "concepts.jsonl",
+      "length": 6358,
+      "sha256": "b6bd4e418497a8c602639816932aaea1bc1c28d3e96127a210dd85e1cdcc097b",
+      "required": true,
+      "type": "jsonl"
+    },
+    {
+      "name": "concepts.xlsx",
+      "length": 8108,
+      "sha256": "4b85f3bf6927acf96cbc208b192ec8e5580cb12188938a9b410ddd5182a81ffe",
+      "required": true,
+      "type": "xlsx"
+    },
+    {
+      "name": "contracts.json",
+      "length": 39,
+      "sha256": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "dataset.json",
+      "length": 17055,
+      "sha256": "69667ec59cfb0ab261df28a3baa24b990437808f4ad42634f93c8a992975ca2c",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "graph.ttl",
+      "length": 3675,
+      "sha256": "002f3546adbb901502e15a1220be8b909fae060a48ceb5cf2f1bf2d963080d39",
+      "required": true,
+      "type": "ttl"
+    },
+    {
+      "name": "lending-glossary.xlsx",
+      "length": 5236,
+      "sha256": "9ae1f92565cd7f1d661cf26f6ac4ec22d3de86cfe542f4afe328779c3a7bd465",
+      "required": true,
+      "type": "xlsx"
+    },
+    {
+      "name": "literal-relationships.json",
+      "length": 1099,
+      "sha256": "e3c1925be50eb343caf5cf425ec7be8a246265202330876970539355cf79a15a",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "loan-policy.txt",
+      "length": 318,
+      "sha256": "78f54c9f671ae00d618d48a1f15e9a79c708ea6a0c50478d54da5250ee1b763e",
+      "required": true,
+      "type": "txt"
+    },
+    {
+      "name": "loan-schema.json",
+      "length": 251,
+      "sha256": "a9ff6f90dd30f2c8650cc90c9a90f75a372a159afd3b2610d027ac9e64701ea1",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "native-contract-summary.json",
+      "length": 382,
+      "sha256": "4d08363dcffaf7080b6601f981abe36ae4cdcc391b9c89a58cd7b925c90d38ff",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "parity-report.json",
+      "length": 2605,
+      "sha256": "a6a4fd5353d59dfeb792acb32d9ee485311de6a8ecca600458da5a3ce42e40ec",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "receipts.json",
+      "length": 39,
+      "sha256": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "relationships.json",
+      "length": 635,
+      "sha256": "703c8f7b23d8af1016155b164f1d30fd671769e2dce4c4d5fd8af50563b0c007",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "source-cells.json",
+      "length": 834,
+      "sha256": "a73a6237497319f5e60af32eff028550a67197c111d7a4f718e1fd0981dd9bed",
+      "required": true,
+      "type": "json"
+    }
+  ]
+}

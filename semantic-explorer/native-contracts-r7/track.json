@@ -1,0 +1,1827 @@
+{
+  "schema": "ontoguard.native-contract-demo@1",
+  "scope": "CONTROLLED_RUNTIME_OUTPUT_PENDING_DISCLOSURE",
+  "release": "1.89.332",
+  "runtime_package_sha256": "6f00ef9ff5a6ded5a1394e405b4517a699a82f390b99c0ccb1566da06ffb1012",
+  "runtime_wheel_sha256": "55e669770d2bbfe0db14bbff4f4997655ee9af73fe8eca02230b6ee4dae3dd72",
+  "authorizes": false,
+  "revisions": {
+    "A": {
+      "catalogue": {
+        "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+        "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+        "revision": 1,
+        "compiler_generation_id": "compiled-generation:496c2327f2934b40ab6933335c544105",
+        "contracts": [
+          {
+            "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+            "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+            "semantic_owner": {
+              "semantic_owner_id": "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+              "semantic_owner_label": "",
+              "business_meaning": "",
+              "business_domain": "",
+              "concept_category": "",
+              "ontology_role": "",
+              "class": "",
+              "semantic_standing": "",
+              "source_ids": []
+            },
+            "fields": [
+              {
+                "field_key": "Loan Identifier",
+                "property_id": "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a",
+                "preferred_label": "Loan Identifier",
+                "business_meaning": "A unique identifier for a loan agreement.",
+                "business_domain": "Loan",
+                "concept_category": "Identifier-like",
+                "ontology_role": "IDENTIFIER",
+                "class": "Identifier",
+                "semantic_owner_id": "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+                "physical_type": "STRING",
+                "declared_value_type": "string",
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {},
+                "semantic_standing": "ESTABLISHED",
+                "source_ids": [
+                  "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf"
+                ],
+                "evidence_ids": [
+                  "provenance-summary:419ea102e45f4b6a294c894e3f835adf86a2d6b8484b8ae6cf8bd08115c4eb7c",
+                  "provenance-summary:62b29aab4fc539cd59c4d44b18474551d732cb7eb95ce0abd0961df92a367f04"
+                ],
+                "relationship_ids": []
+              },
+              {
+                "field_key": "Principal Amount",
+                "property_id": "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290",
+                "preferred_label": "Principal Amount",
+                "business_meaning": "The principal amount of a loan excluding interest and charges.",
+                "business_domain": "Loan",
+                "concept_category": "Property-like",
+                "ontology_role": "PROPERTY",
+                "class": "property",
+                "semantic_owner_id": "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+                "physical_type": "INTEGER",
+                "declared_value_type": "integer",
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {},
+                "semantic_standing": "ESTABLISHED",
+                "source_ids": [
+                  "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf"
+                ],
+                "evidence_ids": [
+                  "provenance-summary:0b78a06236c3ca0cf688ca9cdda3ba3e6ea6fcbcc4d0df6d695821f6d1b040f5",
+                  "provenance-summary:17b2636f432e0226103284182b1cbbb0a67960f706d013a7c92c7f21793cf6e3"
+                ],
+                "relationship_ids": []
+              }
+            ],
+            "relationship_fingerprint": {
+              "count": 0,
+              "sha256": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "relationships": [],
+              "truncated": false
+            },
+            "unknown_field_policy": "REJECT",
+            "coercion_policy": "PROHIBITED",
+            "exact_decimal_policy": "EXACT_DECIMAL_LEXICAL_OR_DECIMAL_OBJECT",
+            "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+            "contract_version": 1,
+            "contract_content_sha256": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+            "contract_binding_sha256": "sha256:0d1621cc576309a4509702a3f2113dd74a42f5197c8caf39a42a8ee282ebb823",
+            "certification_status": "CERTIFIED",
+            "certification_reasons": [],
+            "ai_readiness": "AI_READY",
+            "duplicate_field_keys": []
+          }
+        ],
+        "summary": {
+          "contract_count": 1,
+          "certified_contract_count": 1,
+          "review_required_contract_count": 0,
+          "property_count": 2,
+          "contracted_property_count": 2,
+          "contract_coverage": 1.0,
+          "uncontracted_property_count": 0
+        },
+        "uncontracted_fields": []
+      },
+      "seal": {
+        "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+        "revision": 1,
+        "run_id": "496c2327f2934b40ab6933335c544105",
+        "runtime_version": "1.89.332",
+        "content_hash": "sha256:48824f676af7797523a855af793d38ed5263ec8950bbe3b2e769784d4dba89b7",
+        "previous_hash": "GENESIS",
+        "compiler_generation_id": "compiled-generation:496c2327f2934b40ab6933335c544105",
+        "authorizes": false
+      },
+      "native_sha256": {
+        "jsonl": "f00ca9ebaa39b022ceb9998213de289d65cd7d01795407745be20779de57f9e2",
+        "xlsx": "fa98f74f3da3f105015fdde47a0f907d2dd20b723788b63d5be25e23a54e6cd3",
+        "ttl": "82281eeb49dc66712131d721e4e0a2bdec203f1774e3df37292a535786b050af",
+        "zip": "690637c612c77b06d10016ad4606f48f8de59bb1f146d995a62383a634af6b32"
+      },
+      "source_files": {
+        "source-instance:semantic:81af23f928f4461b843762e1d3838f0fb5fbc820da152860b050c1e19bc8fe4a": {
+          "file": "source-Q-glossary.xlsx",
+          "sha256": "513ed075cd24966a4169b486be4eec3971eba18167135ae32f10d6e6651e1a15"
+        },
+        "source-instance:semantic:b2668b8c26467fc0c902e798faf8a99006b4ba6f86aa00bcfff4881f744ff5c8": {
+          "file": "source-Q-owner.xlsx",
+          "sha256": "96869be26e2b22700302afc7ce6ba95e3e1199e4018d7e50c180c38a8109ad6f"
+        },
+        "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf": {
+          "file": "source-Q-dictionary.xlsx",
+          "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc"
+        }
+      },
+      "evidence": {
+        "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a": {
+          "canonical_sense_id": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "native_fingerprint": "sha256:63804e6bfb904b13874076fe3d4ad17906db7f12545a4d78f1df8ff654ebb4da",
+          "source_refs": [
+            {
+              "dimension": "definition",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "domain",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "C3",
+              "value": "Loan",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "class",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "role",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            }
+          ]
+        },
+        "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290": {
+          "canonical_sense_id": "structural-concept:ae4473189f7a92a2914f202b9d2f7093da05b6bda1b468ae85a549a9a3f943df",
+          "native_fingerprint": "sha256:ab5daf87e56d3e1c0155a438f55d2c681d8d30eb9b0bc1f94ccdb0cfbfee397e",
+          "source_refs": [
+            {
+              "dimension": "definition",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "domain",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "C2",
+              "value": "Loan",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "class",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "role",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            }
+          ]
+        }
+      },
+      "scope": "SAME_ASSET_SEALED_REVISION",
+      "native_store_verify": "PASS_RECORDED_PRIVATE",
+      "concepts": [
+        {
+          "id": "structural-concept:2a2a13593e1dc34f99722f3a6767815f559e62b2e88a9a0b4baf69d61ddafc30",
+          "term": "Loan Agreement",
+          "category": "Legal",
+          "definition": "A contractual arrangement establishing repayment conditions for borrowed funds.",
+          "domain": [
+            "Lending"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ca3bf4be80e3c8bfb3f182ddc1abd1a4f263b39d0e2f8fed137580abbe6d6ed3",
+          "term": "Loan",
+          "category": "Business",
+          "definition": "A financial agreement under which a lender advances funds to a borrower.",
+          "domain": [
+            "Lending"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:06124a16627f49506e3a193d24ed7051c5de4b4c53e8277987353b0af55ac0b9",
+          "term": "Payment Record",
+          "category": "Identifier-like",
+          "definition": "A data record containing the requested payment amount and payment identifier.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ebae1d02759574b5ed342e5b51d0a44524c00d1aa13b274a54200cd3e1fdf7e0",
+          "term": "Payment Reference",
+          "category": "Identifier-like",
+          "definition": "A unique identifier of the requested transfer.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ecdaad524610e225031e3471aac3d6675a579abd62a9fa948a1b1e63f170d35f",
+          "term": "Payment Amount",
+          "category": "Business",
+          "definition": "The integer amount of a requested transfer in minor currency units.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ae4473189f7a92a2914f202b9d2f7093da05b6bda1b468ae85a549a9a3f943df",
+          "term": "Principal Amount",
+          "category": "Property-like",
+          "definition": "The principal amount of a loan excluding interest and charges.",
+          "domain": [
+            "Loan"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "term": "Loan Identifier",
+          "category": "Identifier-like",
+          "definition": "A unique identifier for a loan agreement.",
+          "domain": [
+            "Loan"
+          ],
+          "standing": "ESTABLISHED"
+        }
+      ],
+      "relationships": [
+        {
+          "id": "relationship:6a4f3b18ef85b048cf815289f425ff869a3a5986dcfe2cad3420c4e0e07a54b3",
+          "from": "structural-concept:06124a16627f49506e3a193d24ed7051c5de4b4c53e8277987353b0af55ac0b9",
+          "to": "structural-concept:ecdaad524610e225031e3471aac3d6675a579abd62a9fa948a1b1e63f170d35f",
+          "predicate": "RELATED_TO",
+          "standing": "CANDIDATE"
+        },
+        {
+          "id": "relationship:d71fc1eb61ef47a14bca6b93fa69761105101088e82e5241c683cc55773f9dad",
+          "from": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "to": "structural-concept:2a2a13593e1dc34f99722f3a6767815f559e62b2e88a9a0b4baf69d61ddafc30",
+          "predicate": "RELATED_TO",
+          "standing": "CANDIDATE"
+        }
+      ]
+    },
+    "B": {
+      "catalogue": {
+        "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+        "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+        "revision": 2,
+        "compiler_generation_id": "compiled-generation:496c2327f2934b40ab6933335c544105",
+        "contracts": [
+          {
+            "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+            "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+            "semantic_owner": {
+              "semantic_owner_id": "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+              "semantic_owner_label": "",
+              "business_meaning": "",
+              "business_domain": "",
+              "concept_category": "",
+              "ontology_role": "",
+              "class": "",
+              "semantic_standing": "",
+              "source_ids": []
+            },
+            "fields": [
+              {
+                "field_key": "Loan Identifier",
+                "property_id": "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a",
+                "preferred_label": "Loan Identifier",
+                "business_meaning": "A unique identifier for a loan agreement.",
+                "business_domain": "Loan",
+                "concept_category": "Identifier-like",
+                "ontology_role": "IDENTIFIER",
+                "class": "Identifier",
+                "semantic_owner_id": "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+                "physical_type": "STRING",
+                "declared_value_type": "string",
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {},
+                "semantic_standing": "ESTABLISHED",
+                "source_ids": [
+                  "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf"
+                ],
+                "evidence_ids": [
+                  "provenance-summary:419ea102e45f4b6a294c894e3f835adf86a2d6b8484b8ae6cf8bd08115c4eb7c",
+                  "provenance-summary:62b29aab4fc539cd59c4d44b18474551d732cb7eb95ce0abd0961df92a367f04"
+                ],
+                "relationship_ids": []
+              },
+              {
+                "field_key": "Principal Amount",
+                "property_id": "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290",
+                "preferred_label": "Principal Amount",
+                "business_meaning": "The principal amount of a loan excluding interest and charges.",
+                "business_domain": "Loan",
+                "concept_category": "Property-like",
+                "ontology_role": "PROPERTY",
+                "class": "property",
+                "semantic_owner_id": "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+                "physical_type": "INTEGER",
+                "declared_value_type": "integer",
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {
+                  "allowedValues": [
+                    10000,
+                    20000
+                  ]
+                },
+                "semantic_standing": "ESTABLISHED",
+                "source_ids": [
+                  "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf"
+                ],
+                "evidence_ids": [
+                  "provenance-summary:0b78a06236c3ca0cf688ca9cdda3ba3e6ea6fcbcc4d0df6d695821f6d1b040f5",
+                  "provenance-summary:17b2636f432e0226103284182b1cbbb0a67960f706d013a7c92c7f21793cf6e3"
+                ],
+                "relationship_ids": []
+              }
+            ],
+            "relationship_fingerprint": {
+              "count": 0,
+              "sha256": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "relationships": [],
+              "truncated": false
+            },
+            "unknown_field_policy": "REJECT",
+            "coercion_policy": "PROHIBITED",
+            "exact_decimal_policy": "EXACT_DECIMAL_LEXICAL_OR_DECIMAL_OBJECT",
+            "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+            "contract_version": 2,
+            "contract_content_sha256": "sha256:c4b13798a73568fe40ae5182e38351ff9cfbb76daa198dd97d0741b8e827eb89",
+            "contract_binding_sha256": "sha256:8f4ddb61b549b396564b849514e0d30567e3fd4a8d496bdf15cb61c68c2175fb",
+            "certification_status": "CERTIFIED",
+            "certification_reasons": [],
+            "ai_readiness": "AI_READY",
+            "duplicate_field_keys": []
+          }
+        ],
+        "summary": {
+          "contract_count": 1,
+          "certified_contract_count": 1,
+          "review_required_contract_count": 0,
+          "property_count": 2,
+          "contracted_property_count": 2,
+          "contract_coverage": 1.0,
+          "uncontracted_property_count": 0
+        },
+        "uncontracted_fields": []
+      },
+      "seal": {
+        "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+        "revision": 2,
+        "run_id": "496c2327f2934b40ab6933335c544105",
+        "runtime_version": "1.89.332",
+        "content_hash": "sha256:68a7925fe78dd6e84d5b695358b0a9bc8071bc94896bf2f76c417353b35cda77",
+        "previous_hash": "sha256:7ed545a25406c5ea89ebbdd96ddf05761ac6363192231a6b2186ed2b2a537936",
+        "compiler_generation_id": "compiled-generation:496c2327f2934b40ab6933335c544105",
+        "authorizes": false
+      },
+      "native_sha256": {
+        "jsonl": "d7a4a3cf66826a1cb3d1bbc78eb0bd076ded618c4c413171a103e60d64230031",
+        "xlsx": "1db5369399b55a090e3323043a41dfd8bf8eff7a7e9b4389f575a7e2cef892a4",
+        "ttl": "b7b6977f76c70152f8bf4b5ef45c5fe4b7ed171eec731a71567880bc836b6142",
+        "zip": "165afe46c94d430c8b4fd63c62f7e77d09b7c4fe94a097218516dd91b5406ed7"
+      },
+      "source_files": {
+        "source-instance:semantic:81af23f928f4461b843762e1d3838f0fb5fbc820da152860b050c1e19bc8fe4a": {
+          "file": "source-Q-glossary.xlsx",
+          "sha256": "513ed075cd24966a4169b486be4eec3971eba18167135ae32f10d6e6651e1a15"
+        },
+        "source-instance:semantic:b2668b8c26467fc0c902e798faf8a99006b4ba6f86aa00bcfff4881f744ff5c8": {
+          "file": "source-Q-owner.xlsx",
+          "sha256": "96869be26e2b22700302afc7ce6ba95e3e1199e4018d7e50c180c38a8109ad6f"
+        },
+        "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf": {
+          "file": "source-Q-dictionary.xlsx",
+          "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc"
+        }
+      },
+      "evidence": {
+        "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a": {
+          "canonical_sense_id": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "native_fingerprint": "sha256:63804e6bfb904b13874076fe3d4ad17906db7f12545a4d78f1df8ff654ebb4da",
+          "source_refs": [
+            {
+              "dimension": "definition",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "domain",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "C3",
+              "value": "Loan",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "class",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "role",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            }
+          ]
+        },
+        "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290": {
+          "canonical_sense_id": "structural-concept:ae4473189f7a92a2914f202b9d2f7093da05b6bda1b468ae85a549a9a3f943df",
+          "native_fingerprint": "sha256:0a91a0daddeeb36db613f79f326fd947447c49d676d852d5442bf03f294006d5",
+          "source_refs": [
+            {
+              "dimension": "definition",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "domain",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "C2",
+              "value": "Loan",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "class",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "role",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            }
+          ]
+        }
+      },
+      "scope": "SAME_ASSET_SEALED_REVISION",
+      "native_store_verify": "PASS_RECORDED_PRIVATE",
+      "concepts": [
+        {
+          "id": "structural-concept:2a2a13593e1dc34f99722f3a6767815f559e62b2e88a9a0b4baf69d61ddafc30",
+          "term": "Loan Agreement",
+          "category": "Legal",
+          "definition": "A contractual arrangement establishing repayment conditions for borrowed funds.",
+          "domain": [
+            "Lending"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ca3bf4be80e3c8bfb3f182ddc1abd1a4f263b39d0e2f8fed137580abbe6d6ed3",
+          "term": "Loan",
+          "category": "Business",
+          "definition": "A financial agreement under which a lender advances funds to a borrower.",
+          "domain": [
+            "Lending"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:06124a16627f49506e3a193d24ed7051c5de4b4c53e8277987353b0af55ac0b9",
+          "term": "Payment Record",
+          "category": "Identifier-like",
+          "definition": "A data record containing the requested payment amount and payment identifier.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ebae1d02759574b5ed342e5b51d0a44524c00d1aa13b274a54200cd3e1fdf7e0",
+          "term": "Payment Reference",
+          "category": "Identifier-like",
+          "definition": "A unique identifier of the requested transfer.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ecdaad524610e225031e3471aac3d6675a579abd62a9fa948a1b1e63f170d35f",
+          "term": "Payment Amount",
+          "category": "Business",
+          "definition": "The integer amount of a requested transfer in minor currency units.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ae4473189f7a92a2914f202b9d2f7093da05b6bda1b468ae85a549a9a3f943df",
+          "term": "Principal Amount",
+          "category": "Measurement-like",
+          "definition": "The principal amount of a loan excluding interest and charges.",
+          "domain": [
+            "Loan"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "term": "Loan Identifier",
+          "category": "Identifier-like",
+          "definition": "A unique identifier for a loan agreement.",
+          "domain": [
+            "Loan"
+          ],
+          "standing": "ESTABLISHED"
+        }
+      ],
+      "relationships": [
+        {
+          "id": "relationship:6a4f3b18ef85b048cf815289f425ff869a3a5986dcfe2cad3420c4e0e07a54b3",
+          "from": "structural-concept:06124a16627f49506e3a193d24ed7051c5de4b4c53e8277987353b0af55ac0b9",
+          "to": "structural-concept:ecdaad524610e225031e3471aac3d6675a579abd62a9fa948a1b1e63f170d35f",
+          "predicate": "RELATED_TO",
+          "standing": "CANDIDATE"
+        },
+        {
+          "id": "relationship:d71fc1eb61ef47a14bca6b93fa69761105101088e82e5241c683cc55773f9dad",
+          "from": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "to": "structural-concept:2a2a13593e1dc34f99722f3a6767815f559e62b2e88a9a0b4baf69d61ddafc30",
+          "predicate": "RELATED_TO",
+          "standing": "CANDIDATE"
+        }
+      ]
+    },
+    "C": {
+      "catalogue": {
+        "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+        "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+        "revision": 3,
+        "compiler_generation_id": "compiled-generation:496c2327f2934b40ab6933335c544105",
+        "contracts": [
+          {
+            "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+            "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+            "semantic_owner": {
+              "semantic_owner_id": "concept-sense-term:1027224ce02bd23efb5d65e896ad9bd86f5388af4ebc9414192e90a42202cb90",
+              "semantic_owner_label": "Loan Agreement",
+              "business_meaning": "A contractual arrangement establishing repayment conditions for borrowed funds.",
+              "business_domain": "Lending",
+              "concept_category": "Legal",
+              "ontology_role": "BUSINESS_CONCEPT",
+              "class": "UNKNOWN",
+              "semantic_standing": "ESTABLISHED",
+              "source_ids": [
+                "source-instance:semantic:b2668b8c26467fc0c902e798faf8a99006b4ba6f86aa00bcfff4881f744ff5c8"
+              ]
+            },
+            "fields": [
+              {
+                "field_key": "Loan Identifier",
+                "property_id": "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a",
+                "preferred_label": "Loan Identifier",
+                "business_meaning": "A unique identifier for a loan agreement.",
+                "business_domain": "Loan",
+                "concept_category": "Identifier-like",
+                "ontology_role": "IDENTIFIER",
+                "class": "Identifier",
+                "semantic_owner_id": "concept-sense-term:1027224ce02bd23efb5d65e896ad9bd86f5388af4ebc9414192e90a42202cb90",
+                "physical_type": "STRING",
+                "declared_value_type": "string",
+                "required": true,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {},
+                "semantic_standing": "ESTABLISHED",
+                "source_ids": [
+                  "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf"
+                ],
+                "evidence_ids": [
+                  "provenance-summary:419ea102e45f4b6a294c894e3f835adf86a2d6b8484b8ae6cf8bd08115c4eb7c",
+                  "provenance-summary:62b29aab4fc539cd59c4d44b18474551d732cb7eb95ce0abd0961df92a367f04"
+                ],
+                "relationship_ids": []
+              }
+            ],
+            "relationship_fingerprint": {
+              "count": 1,
+              "sha256": "sha256:10624be3355909838f235fa4b15be92e15ba11ceef2b5976cb834085d05f38d6",
+              "relationships": [
+                {
+                  "from": "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a",
+                  "predicate": "RELATED_TO",
+                  "to": "concept-sense-term:1027224ce02bd23efb5d65e896ad9bd86f5388af4ebc9414192e90a42202cb90",
+                  "standing": "CANDIDATE"
+                }
+              ],
+              "truncated": false
+            },
+            "unknown_field_policy": "REJECT",
+            "coercion_policy": "PROHIBITED",
+            "exact_decimal_policy": "EXACT_DECIMAL_LEXICAL_OR_DECIMAL_OBJECT",
+            "contract_id": "semantic-data-contract:e4dba53a725db96f0c7f346abcfcc9f94dd10da9a135e656b694f79d95d17d2d",
+            "contract_version": 3,
+            "contract_content_sha256": "sha256:9932af854b75b8139992ebbd0af7dd5bc7de10ef64f5840786d7f5bb63007805",
+            "contract_binding_sha256": "sha256:89924b695b1f5bded0a117f17766dc4f73f6452de0df3492d098da1f246736b0",
+            "certification_status": "CERTIFIED",
+            "certification_reasons": [],
+            "ai_readiness": "AI_READY",
+            "duplicate_field_keys": []
+          },
+          {
+            "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+            "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+            "semantic_owner": {
+              "semantic_owner_id": "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+              "semantic_owner_label": "",
+              "business_meaning": "",
+              "business_domain": "",
+              "concept_category": "",
+              "ontology_role": "",
+              "class": "",
+              "semantic_standing": "",
+              "source_ids": []
+            },
+            "fields": [
+              {
+                "field_key": "Principal Amount",
+                "property_id": "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290",
+                "preferred_label": "Principal Amount",
+                "business_meaning": "The principal amount of a loan excluding interest and charges.",
+                "business_domain": "Loan",
+                "concept_category": "Property-like",
+                "ontology_role": "PROPERTY",
+                "class": "property",
+                "semantic_owner_id": "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+                "physical_type": "INTEGER",
+                "declared_value_type": "integer",
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {
+                  "allowedValues": [
+                    10000,
+                    20000
+                  ]
+                },
+                "semantic_standing": "ESTABLISHED",
+                "source_ids": [
+                  "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf"
+                ],
+                "evidence_ids": [
+                  "provenance-summary:0b78a06236c3ca0cf688ca9cdda3ba3e6ea6fcbcc4d0df6d695821f6d1b040f5",
+                  "provenance-summary:17b2636f432e0226103284182b1cbbb0a67960f706d013a7c92c7f21793cf6e3"
+                ],
+                "relationship_ids": []
+              }
+            ],
+            "relationship_fingerprint": {
+              "count": 0,
+              "sha256": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "relationships": [],
+              "truncated": false
+            },
+            "unknown_field_policy": "REJECT",
+            "coercion_policy": "PROHIBITED",
+            "exact_decimal_policy": "EXACT_DECIMAL_LEXICAL_OR_DECIMAL_OBJECT",
+            "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+            "contract_version": 3,
+            "contract_content_sha256": "sha256:8192fcb7fc727922dd3179d09a20865ee3920ed08b06a8b4441ebe7add164e46",
+            "contract_binding_sha256": "sha256:7ec08a1802135bef7f7c8874a37cc31a170d0661f8cdb6421c1decf862633194",
+            "certification_status": "CERTIFIED",
+            "certification_reasons": [],
+            "ai_readiness": "AI_READY",
+            "duplicate_field_keys": []
+          }
+        ],
+        "summary": {
+          "contract_count": 2,
+          "certified_contract_count": 2,
+          "review_required_contract_count": 0,
+          "property_count": 2,
+          "contracted_property_count": 2,
+          "contract_coverage": 1.0,
+          "uncontracted_property_count": 0
+        },
+        "uncontracted_fields": []
+      },
+      "seal": {
+        "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+        "revision": 3,
+        "run_id": "496c2327f2934b40ab6933335c544105",
+        "runtime_version": "1.89.332",
+        "content_hash": "sha256:316ccf60327d211cd8148fa0a24eb432a5b89445c9f0db2b45dca599926be3eb",
+        "previous_hash": "sha256:9eb0a940b0c5595ce69e853f671b286f98198f10340cf3cc0b37db0a766d379c",
+        "compiler_generation_id": "compiled-generation:496c2327f2934b40ab6933335c544105",
+        "authorizes": false
+      },
+      "native_sha256": {
+        "jsonl": "62685d03882f69808fa3e3271fcd1a9c249829f93094c78334ed3e65c96e4645",
+        "xlsx": "a2407024562691d85d38ad1dc18d3854938b449ae07311de4e0f4babc68094dc",
+        "ttl": "aea7eda1a54f5efe2bfb45f11aa6285875bde5eeaf4f8a119bbfa9a32d37b9eb",
+        "zip": "268079597f14a3c84dac1aed7f3a2a01ce261758ce8db5ad2faba068565ea446"
+      },
+      "source_files": {
+        "source-instance:semantic:81af23f928f4461b843762e1d3838f0fb5fbc820da152860b050c1e19bc8fe4a": {
+          "file": "source-Q-glossary.xlsx",
+          "sha256": "513ed075cd24966a4169b486be4eec3971eba18167135ae32f10d6e6651e1a15"
+        },
+        "source-instance:semantic:b2668b8c26467fc0c902e798faf8a99006b4ba6f86aa00bcfff4881f744ff5c8": {
+          "file": "source-Q-owner.xlsx",
+          "sha256": "96869be26e2b22700302afc7ce6ba95e3e1199e4018d7e50c180c38a8109ad6f"
+        },
+        "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf": {
+          "file": "source-Q-dictionary.xlsx",
+          "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc"
+        }
+      },
+      "evidence": {
+        "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a": {
+          "canonical_sense_id": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "native_fingerprint": "sha256:63804e6bfb904b13874076fe3d4ad17906db7f12545a4d78f1df8ff654ebb4da",
+          "source_refs": [
+            {
+              "dimension": "definition",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "domain",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "C3",
+              "value": "Loan",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "class",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            },
+            {
+              "dimension": "role",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:b23eb5be2a372627f1d56d812566efdb7dd5794c9bd10c966fe9a4ef7678eba5"
+            }
+          ]
+        },
+        "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290": {
+          "canonical_sense_id": "structural-concept:ae4473189f7a92a2914f202b9d2f7093da05b6bda1b468ae85a549a9a3f943df",
+          "native_fingerprint": "sha256:0a91a0daddeeb36db613f79f326fd947447c49d676d852d5442bf03f294006d5",
+          "source_refs": [
+            {
+              "dimension": "definition",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "domain",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "C2",
+              "value": "Loan",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "class",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            },
+            {
+              "dimension": "role",
+              "source_id": "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf",
+              "file": "source-Q-dictionary.xlsx",
+              "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan excluding interest and charges.",
+              "native_unit_id": "unit:05631d7a8d1314fd4cb742404dee7256a338099e4c7d3b4834bb69c71c210c31"
+            }
+          ]
+        }
+      },
+      "scope": "SAME_ASSET_SEALED_REVISION",
+      "native_store_verify": "PASS_RECORDED_PRIVATE",
+      "concepts": [
+        {
+          "id": "structural-concept:2a2a13593e1dc34f99722f3a6767815f559e62b2e88a9a0b4baf69d61ddafc30",
+          "term": "Loan Agreement",
+          "category": "Legal",
+          "definition": "A contractual arrangement establishing repayment conditions for borrowed funds.",
+          "domain": [
+            "Lending"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ca3bf4be80e3c8bfb3f182ddc1abd1a4f263b39d0e2f8fed137580abbe6d6ed3",
+          "term": "Loan",
+          "category": "Business",
+          "definition": "A financial agreement under which a lender advances funds to a borrower.",
+          "domain": [
+            "Lending"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:06124a16627f49506e3a193d24ed7051c5de4b4c53e8277987353b0af55ac0b9",
+          "term": "Payment Record",
+          "category": "Identifier-like",
+          "definition": "A data record containing the requested payment amount and payment identifier.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ebae1d02759574b5ed342e5b51d0a44524c00d1aa13b274a54200cd3e1fdf7e0",
+          "term": "Payment Reference",
+          "category": "Identifier-like",
+          "definition": "A unique identifier of the requested transfer.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ecdaad524610e225031e3471aac3d6675a579abd62a9fa948a1b1e63f170d35f",
+          "term": "Payment Amount",
+          "category": "Business",
+          "definition": "The integer amount of a requested transfer in minor currency units.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ae4473189f7a92a2914f202b9d2f7093da05b6bda1b468ae85a549a9a3f943df",
+          "term": "Principal Amount",
+          "category": "Measurement-like",
+          "definition": "The principal amount of a loan excluding interest and charges.",
+          "domain": [
+            "Loan"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "term": "Loan Identifier",
+          "category": "Identifier-like",
+          "definition": "A unique identifier for a loan agreement.",
+          "domain": [
+            "Loan"
+          ],
+          "standing": "ESTABLISHED"
+        }
+      ],
+      "relationships": [
+        {
+          "id": "relationship:6a4f3b18ef85b048cf815289f425ff869a3a5986dcfe2cad3420c4e0e07a54b3",
+          "from": "structural-concept:06124a16627f49506e3a193d24ed7051c5de4b4c53e8277987353b0af55ac0b9",
+          "to": "structural-concept:ecdaad524610e225031e3471aac3d6675a579abd62a9fa948a1b1e63f170d35f",
+          "predicate": "RELATED_TO",
+          "standing": "CANDIDATE"
+        },
+        {
+          "id": "relationship:d71fc1eb61ef47a14bca6b93fa69761105101088e82e5241c683cc55773f9dad",
+          "from": "structural-concept:3d0747071275d32ed7cf22d4ac236712dd77d01d1aa54e886b751d56405efbfd",
+          "to": "structural-concept:2a2a13593e1dc34f99722f3a6767815f559e62b2e88a9a0b4baf69d61ddafc30",
+          "predicate": "RELATED_TO",
+          "standing": "CANDIDATE"
+        }
+      ]
+    },
+    "T": {
+      "catalogue": {
+        "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+        "asset_id": "compiled-asset:00397b63ee2b4e79998602b9e1f7aa12",
+        "revision": 1,
+        "compiler_generation_id": "compiled-generation:00397b63ee2b4e79998602b9e1f7aa12",
+        "contracts": [
+          {
+            "contract": "OG_SEMANTIC_DATA_CONTRACT_V1",
+            "asset_id": "compiled-asset:00397b63ee2b4e79998602b9e1f7aa12",
+            "semantic_owner": {
+              "semantic_owner_id": "term:f42c54af98cb280cef5d111b586839acbac9c00781895d6e9c886cb6de0e951b",
+              "semantic_owner_label": "",
+              "business_meaning": "",
+              "business_domain": "",
+              "concept_category": "",
+              "ontology_role": "",
+              "class": "",
+              "semantic_standing": "",
+              "source_ids": []
+            },
+            "fields": [
+              {
+                "field_key": "Loan Identifier",
+                "property_id": "concept-sense-property:9dc27c1fac9408ba19bd71420d4a89f46e8392a55ca91b846abaf7e48f935f96",
+                "preferred_label": "Loan Identifier",
+                "business_meaning": "A unique identifier for a loan agreement.",
+                "business_domain": "Loan",
+                "concept_category": "Identifier-like",
+                "ontology_role": "IDENTIFIER",
+                "class": "Identifier",
+                "semantic_owner_id": "term:f42c54af98cb280cef5d111b586839acbac9c00781895d6e9c886cb6de0e951b",
+                "physical_type": "STRING",
+                "declared_value_type": "string",
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {},
+                "semantic_standing": "ESTABLISHED",
+                "source_ids": [
+                  "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a"
+                ],
+                "evidence_ids": [
+                  "provenance-summary:13f968903548bf5bef3914b12f12042343c99126aa658f1d554196b618e4fe3d",
+                  "provenance-summary:70cc6ed5d585286df7c8055279736ff252d2cd93fb0c014ad3019fc0908f5cb0"
+                ],
+                "relationship_ids": []
+              },
+              {
+                "field_key": "Principal Amount",
+                "property_id": "concept-sense-property:fc2248190492143d25b86074fd70163332825044cbdf105e909bd96d3846e716",
+                "preferred_label": "Principal Amount",
+                "business_meaning": "The principal amount of a loan including capitalized interest but excluding other charges.",
+                "business_domain": "Loan",
+                "concept_category": "Property-like",
+                "ontology_role": "PROPERTY",
+                "class": "property",
+                "semantic_owner_id": "term:f42c54af98cb280cef5d111b586839acbac9c00781895d6e9c886cb6de0e951b",
+                "physical_type": "INTEGER",
+                "declared_value_type": "integer",
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {},
+                "semantic_standing": "ESTABLISHED",
+                "source_ids": [
+                  "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a"
+                ],
+                "evidence_ids": [
+                  "provenance-summary:33270eab6fc486eb715579a85445cc6ec1f1524a5fe7a812e6dfb856ab34d182",
+                  "provenance-summary:8b126d7927cbc46f0c3f53e69f7ef9e79c59c8cb266d3dd8c468aac57d785a61"
+                ],
+                "relationship_ids": []
+              }
+            ],
+            "relationship_fingerprint": {
+              "count": 0,
+              "sha256": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "relationships": [],
+              "truncated": false
+            },
+            "unknown_field_policy": "REJECT",
+            "coercion_policy": "PROHIBITED",
+            "exact_decimal_policy": "EXACT_DECIMAL_LEXICAL_OR_DECIMAL_OBJECT",
+            "contract_id": "semantic-data-contract:172109a8dad0bb9061c348782b01c2d0099a49912f1f37af85316871887d299c",
+            "contract_version": 1,
+            "contract_content_sha256": "sha256:d8ba35a7f358c1614f42d1cc92f487704b6577b55f2fdfeb469ad8298ea4cead",
+            "contract_binding_sha256": "sha256:1935e22c8d1a4553dc1c6be94b493b205211cca2d38b4ef42a5fcb771fd0a7f8",
+            "certification_status": "CERTIFIED",
+            "certification_reasons": [],
+            "ai_readiness": "AI_READY",
+            "duplicate_field_keys": []
+          }
+        ],
+        "summary": {
+          "contract_count": 1,
+          "certified_contract_count": 1,
+          "review_required_contract_count": 0,
+          "property_count": 2,
+          "contracted_property_count": 2,
+          "contract_coverage": 1.0,
+          "uncontracted_property_count": 0
+        },
+        "uncontracted_fields": []
+      },
+      "seal": {
+        "asset_id": "compiled-asset:00397b63ee2b4e79998602b9e1f7aa12",
+        "revision": 1,
+        "run_id": "00397b63ee2b4e79998602b9e1f7aa12",
+        "runtime_version": "1.89.332",
+        "content_hash": "sha256:d3772d8621309f4e62302431d255f7677c053f8f2f4c0000fdd41e8859ff5424",
+        "previous_hash": "GENESIS",
+        "compiler_generation_id": "compiled-generation:00397b63ee2b4e79998602b9e1f7aa12",
+        "authorizes": false
+      },
+      "native_sha256": {
+        "jsonl": "8ff01c8047bbfd56b62617d4d7f07cff12d086d96ba815380c986bd642ca3a4c",
+        "xlsx": "e159724614a35fa787ac2ca24b575ee7d3f579c0af8debb372bef3bd1a687478",
+        "ttl": "c8733d353198f0338650bff2f6a400f475113ada7bc892fad67bf6f566b04fc1",
+        "zip": "e8106a80eafec0609040ccde39d8535db3372df238892558d7e71ab9718bea9b"
+      },
+      "source_files": {
+        "source-instance:semantic:81af23f928f4461b843762e1d3838f0fb5fbc820da152860b050c1e19bc8fe4a": {
+          "file": "source-T-glossary.xlsx",
+          "sha256": "513ed075cd24966a4169b486be4eec3971eba18167135ae32f10d6e6651e1a15"
+        },
+        "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a": {
+          "file": "source-T-dictionary.xlsx",
+          "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25"
+        },
+        "source-instance:semantic:b2668b8c26467fc0c902e798faf8a99006b4ba6f86aa00bcfff4881f744ff5c8": {
+          "file": "source-T-owner.xlsx",
+          "sha256": "96869be26e2b22700302afc7ce6ba95e3e1199e4018d7e50c180c38a8109ad6f"
+        }
+      },
+      "evidence": {
+        "concept-sense-property:9dc27c1fac9408ba19bd71420d4a89f46e8392a55ca91b846abaf7e48f935f96": {
+          "canonical_sense_id": "structural-concept:3c1c5b88ade79c998aec782ba3f3bfefe89f049e36f1f673744daa87c410c486",
+          "native_fingerprint": "sha256:79b48ba1dfe3323406eac432b509777e8d266c1ba4aaf340af9d8717c2c66c0e",
+          "source_refs": [
+            {
+              "dimension": "definition",
+              "source_id": "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a",
+              "file": "source-T-dictionary.xlsx",
+              "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:d2937c38c92d9cb3d0a799a6a547a190dba39b985bbe5f62d2bf198e9b97316a"
+            },
+            {
+              "dimension": "domain",
+              "source_id": "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a",
+              "file": "source-T-dictionary.xlsx",
+              "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+              "sheet": "Data Dictionary",
+              "cell": "C3",
+              "value": "Loan",
+              "native_unit_id": "unit:d2937c38c92d9cb3d0a799a6a547a190dba39b985bbe5f62d2bf198e9b97316a"
+            },
+            {
+              "dimension": "class",
+              "source_id": "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a",
+              "file": "source-T-dictionary.xlsx",
+              "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:d2937c38c92d9cb3d0a799a6a547a190dba39b985bbe5f62d2bf198e9b97316a"
+            },
+            {
+              "dimension": "role",
+              "source_id": "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a",
+              "file": "source-T-dictionary.xlsx",
+              "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+              "sheet": "Data Dictionary",
+              "cell": "B3",
+              "value": "A unique identifier for a loan agreement.",
+              "native_unit_id": "unit:d2937c38c92d9cb3d0a799a6a547a190dba39b985bbe5f62d2bf198e9b97316a"
+            }
+          ]
+        },
+        "concept-sense-property:fc2248190492143d25b86074fd70163332825044cbdf105e909bd96d3846e716": {
+          "canonical_sense_id": "structural-concept:72a16304e03ade5195167092a93106f7395d796760a8f2d28a36d9d7807da2f8",
+          "native_fingerprint": "sha256:d16218987932a16f1ce22de9614cd4af32bf1a0e5930780e8232988f27fd022b",
+          "source_refs": [
+            {
+              "dimension": "definition",
+              "source_id": "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a",
+              "file": "source-T-dictionary.xlsx",
+              "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan including capitalized interest but excluding other charges.",
+              "native_unit_id": "unit:bc6c89a89b1d36c087800daee9daf3b9c99bd359e8f45a13b4635163c5aabae8"
+            },
+            {
+              "dimension": "domain",
+              "source_id": "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a",
+              "file": "source-T-dictionary.xlsx",
+              "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+              "sheet": "Data Dictionary",
+              "cell": "C2",
+              "value": "Loan",
+              "native_unit_id": "unit:bc6c89a89b1d36c087800daee9daf3b9c99bd359e8f45a13b4635163c5aabae8"
+            },
+            {
+              "dimension": "class",
+              "source_id": "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a",
+              "file": "source-T-dictionary.xlsx",
+              "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan including capitalized interest but excluding other charges.",
+              "native_unit_id": "unit:bc6c89a89b1d36c087800daee9daf3b9c99bd359e8f45a13b4635163c5aabae8"
+            },
+            {
+              "dimension": "role",
+              "source_id": "source-instance:semantic:83c25c6a0ca9bd24464c9b09af957142cd58c5602d4285b2636155028c62978a",
+              "file": "source-T-dictionary.xlsx",
+              "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+              "sheet": "Data Dictionary",
+              "cell": "B2",
+              "value": "The principal amount of a loan including capitalized interest but excluding other charges.",
+              "native_unit_id": "unit:bc6c89a89b1d36c087800daee9daf3b9c99bd359e8f45a13b4635163c5aabae8"
+            }
+          ]
+        }
+      },
+      "scope": "SOURCE_REINGESTION_SEPARATE_ASSET",
+      "native_store_verify": "PASS_RECORDED_PRIVATE",
+      "concepts": [
+        {
+          "id": "structural-concept:2a2a13593e1dc34f99722f3a6767815f559e62b2e88a9a0b4baf69d61ddafc30",
+          "term": "Loan Agreement",
+          "category": "Legal",
+          "definition": "A contractual arrangement establishing repayment conditions for borrowed funds.",
+          "domain": [
+            "Lending"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ca3bf4be80e3c8bfb3f182ddc1abd1a4f263b39d0e2f8fed137580abbe6d6ed3",
+          "term": "Loan",
+          "category": "Business",
+          "definition": "A financial agreement under which a lender advances funds to a borrower.",
+          "domain": [
+            "Lending"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:06124a16627f49506e3a193d24ed7051c5de4b4c53e8277987353b0af55ac0b9",
+          "term": "Payment Record",
+          "category": "Identifier-like",
+          "definition": "A data record containing the requested payment amount and payment identifier.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ebae1d02759574b5ed342e5b51d0a44524c00d1aa13b274a54200cd3e1fdf7e0",
+          "term": "Payment Reference",
+          "category": "Identifier-like",
+          "definition": "A unique identifier of the requested transfer.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:ecdaad524610e225031e3471aac3d6675a579abd62a9fa948a1b1e63f170d35f",
+          "term": "Payment Amount",
+          "category": "Business",
+          "definition": "The integer amount of a requested transfer in minor currency units.",
+          "domain": [
+            "Payments"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:3c1c5b88ade79c998aec782ba3f3bfefe89f049e36f1f673744daa87c410c486",
+          "term": "Loan Identifier",
+          "category": "Identifier-like",
+          "definition": "A unique identifier for a loan agreement.",
+          "domain": [
+            "Loan"
+          ],
+          "standing": "ESTABLISHED"
+        },
+        {
+          "id": "structural-concept:72a16304e03ade5195167092a93106f7395d796760a8f2d28a36d9d7807da2f8",
+          "term": "Principal Amount",
+          "category": "Property-like",
+          "definition": "The principal amount of a loan including capitalized interest but excluding other charges.",
+          "domain": [
+            "Loan"
+          ],
+          "standing": "ESTABLISHED"
+        }
+      ],
+      "relationships": [
+        {
+          "id": "relationship:6a4f3b18ef85b048cf815289f425ff869a3a5986dcfe2cad3420c4e0e07a54b3",
+          "from": "structural-concept:06124a16627f49506e3a193d24ed7051c5de4b4c53e8277987353b0af55ac0b9",
+          "to": "structural-concept:ecdaad524610e225031e3471aac3d6675a579abd62a9fa948a1b1e63f170d35f",
+          "predicate": "RELATED_TO",
+          "standing": "CANDIDATE"
+        },
+        {
+          "id": "relationship:ad8563305cc7bb2f9729269f1f20c34cb9f921c2087550a1b73a7d1532ac8ad9",
+          "from": "structural-concept:3c1c5b88ade79c998aec782ba3f3bfefe89f049e36f1f673744daa87c410c486",
+          "to": "structural-concept:2a2a13593e1dc34f99722f3a6767815f559e62b2e88a9a0b4baf69d61ddafc30",
+          "predicate": "RELATED_TO",
+          "standing": "CANDIDATE"
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "id": "valid",
+      "revision": "A",
+      "input": {
+        "Loan Identifier": "LOAN-DEMO",
+        "Principal Amount": 10000
+      },
+      "claimed_contract_version": 1,
+      "claimed_contract_hash": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+      "receipt": {
+        "contract": "OG_SEMANTIC_DATA_VALIDATION_RECEIPT_V1",
+        "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+        "contract_version": 1,
+        "contract_content_sha256": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+        "input_sha256": "sha256:2eda7ea910cba9a2e7c5d0c3384bd9591d8b7d0f6710998efc78e956faf3d4cb",
+        "unknown_field_policy": "REJECT",
+        "status": "PASS",
+        "stale_contract": false,
+        "stale_reasons": [],
+        "violations": [],
+        "warnings": [],
+        "receipt_sha256": "sha256:663e87dadfd38d21a714a7143d8b1ae0f41246f6116f170b7cad0083ea4dd84a",
+        "canonical_validated_object": {
+          "Loan Identifier": "LOAN-DEMO",
+          "Principal Amount": 10000
+        },
+        "data_quality_status": "CONFORMANT",
+        "downstream_impact": {
+          "affected_semantic_concept_ids": [],
+          "affected_source_ids": [],
+          "relationship_count": 0,
+          "truncated": false,
+          "violation_count": 0,
+          "authorizes": false
+        }
+      }
+    },
+    {
+      "id": "invalid",
+      "revision": "A",
+      "input": {
+        "Loan Identifier": "LOAN-DEMO",
+        "Principal Amount": "10000"
+      },
+      "claimed_contract_version": 1,
+      "claimed_contract_hash": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+      "receipt": {
+        "contract": "OG_SEMANTIC_DATA_VALIDATION_RECEIPT_V1",
+        "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+        "contract_version": 1,
+        "contract_content_sha256": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+        "input_sha256": "sha256:708cc5ec6ca2061b76ec9684b613ca819fd650a183f6091219fb6de9fd664c01",
+        "unknown_field_policy": "REJECT",
+        "status": "FAIL",
+        "stale_contract": false,
+        "stale_reasons": [],
+        "violations": [
+          {
+            "field_key": "Principal Amount",
+            "code": "TYPE_MISMATCH",
+            "expected": "INTEGER",
+            "received_type": "str"
+          }
+        ],
+        "warnings": [],
+        "receipt_sha256": "sha256:48dd5dfb6ca56df991b7309094051a7aa4bcfc0d3a36ae5b37e1cbd4d87f1bd7",
+        "canonical_validated_object": null,
+        "data_quality_status": "CONTRACT_VIOLATION",
+        "downstream_impact": {
+          "affected_semantic_concept_ids": [],
+          "affected_source_ids": [],
+          "relationship_count": 0,
+          "truncated": false,
+          "violation_count": 1
+        }
+      }
+    },
+    {
+      "id": "unknown",
+      "revision": "A",
+      "input": {
+        "unknown": 1
+      },
+      "claimed_contract_version": 1,
+      "claimed_contract_hash": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+      "receipt": {
+        "contract": "OG_SEMANTIC_DATA_VALIDATION_RECEIPT_V1",
+        "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+        "contract_version": 1,
+        "contract_content_sha256": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+        "input_sha256": "sha256:1ed6548f7e5254f8a1474b8cad94888551e1e355682954bd950c3b1581969bbb",
+        "unknown_field_policy": "REJECT",
+        "status": "FAIL",
+        "stale_contract": false,
+        "stale_reasons": [],
+        "violations": [
+          {
+            "field_key": "unknown",
+            "code": "UNEXPECTED_FIELD",
+            "expected": "declared contract field",
+            "received_type": "int"
+          }
+        ],
+        "warnings": [],
+        "receipt_sha256": "sha256:b0498fed6c6e1ece41fee7c6a6aa86f4c7e2f1f5b8b7712af0c0f67f93439035",
+        "canonical_validated_object": null,
+        "data_quality_status": "CONTRACT_VIOLATION",
+        "downstream_impact": {
+          "affected_semantic_concept_ids": [],
+          "affected_source_ids": [],
+          "relationship_count": 0,
+          "truncated": false,
+          "violation_count": 1
+        }
+      }
+    },
+    {
+      "id": "B-stale",
+      "revision": "B",
+      "input": {
+        "Loan Identifier": "LOAN-DEMO",
+        "Principal Amount": 30000
+      },
+      "claimed_contract_version": 1,
+      "claimed_contract_hash": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+      "receipt": {
+        "contract": "OG_SEMANTIC_DATA_VALIDATION_RECEIPT_V1",
+        "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+        "contract_version": 2,
+        "contract_content_sha256": "sha256:c4b13798a73568fe40ae5182e38351ff9cfbb76daa198dd97d0741b8e827eb89",
+        "input_sha256": "sha256:f63ad13efec9633b794f9ae11a39a2b99f1ebb08e42dd19bc956be78e72b66ae",
+        "unknown_field_policy": "REJECT",
+        "status": "FAIL",
+        "stale_contract": true,
+        "stale_reasons": [
+          "CONTRACT_VERSION_MISMATCH",
+          "CONTRACT_CONTENT_HASH_MISMATCH"
+        ],
+        "violations": [
+          {
+            "field_key": "Principal Amount",
+            "code": "VALUE_NOT_ALLOWED",
+            "expected": [
+              10000,
+              20000
+            ],
+            "received_type": "int"
+          }
+        ],
+        "warnings": [],
+        "receipt_sha256": "sha256:11b49e05ec2e71cab60df6ee510d5bcd5dec86ca954aebb6200552dd1ba18ebd",
+        "canonical_validated_object": null,
+        "data_quality_status": "CONTRACT_VIOLATION",
+        "downstream_impact": {
+          "affected_semantic_concept_ids": [],
+          "affected_source_ids": [],
+          "relationship_count": 0,
+          "truncated": false,
+          "violation_count": 1
+        }
+      }
+    },
+    {
+      "id": "C-valid",
+      "revision": "C",
+      "input": {
+        "Loan Identifier": "LOAN-DEMO"
+      },
+      "claimed_contract_version": 3,
+      "claimed_contract_hash": "sha256:9932af854b75b8139992ebbd0af7dd5bc7de10ef64f5840786d7f5bb63007805",
+      "receipt": {
+        "contract": "OG_SEMANTIC_DATA_VALIDATION_RECEIPT_V1",
+        "contract_id": "semantic-data-contract:e4dba53a725db96f0c7f346abcfcc9f94dd10da9a135e656b694f79d95d17d2d",
+        "contract_version": 3,
+        "contract_content_sha256": "sha256:9932af854b75b8139992ebbd0af7dd5bc7de10ef64f5840786d7f5bb63007805",
+        "input_sha256": "sha256:e8dc7becb2d9724ae92f25a12b0b454b18283cd263537db871c5081d73a83e59",
+        "unknown_field_policy": "REJECT",
+        "status": "PASS",
+        "stale_contract": false,
+        "stale_reasons": [],
+        "violations": [],
+        "warnings": [],
+        "receipt_sha256": "sha256:fdfce6fadc758ed5f9b7429562f961905258fc4b318c94f9ab8c027a958fd610",
+        "canonical_validated_object": {
+          "Loan Identifier": "LOAN-DEMO"
+        },
+        "data_quality_status": "CONFORMANT",
+        "downstream_impact": {
+          "affected_semantic_concept_ids": [],
+          "affected_source_ids": [],
+          "relationship_count": 0,
+          "truncated": false,
+          "violation_count": 0,
+          "authorizes": false
+        }
+      }
+    },
+    {
+      "id": "C-missing",
+      "revision": "C",
+      "input": {},
+      "claimed_contract_version": 3,
+      "claimed_contract_hash": "sha256:9932af854b75b8139992ebbd0af7dd5bc7de10ef64f5840786d7f5bb63007805",
+      "receipt": {
+        "contract": "OG_SEMANTIC_DATA_VALIDATION_RECEIPT_V1",
+        "contract_id": "semantic-data-contract:e4dba53a725db96f0c7f346abcfcc9f94dd10da9a135e656b694f79d95d17d2d",
+        "contract_version": 3,
+        "contract_content_sha256": "sha256:9932af854b75b8139992ebbd0af7dd5bc7de10ef64f5840786d7f5bb63007805",
+        "input_sha256": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "unknown_field_policy": "REJECT",
+        "status": "FAIL",
+        "stale_contract": false,
+        "stale_reasons": [],
+        "violations": [
+          {
+            "field_key": "Loan Identifier",
+            "code": "MISSING_REQUIRED_FIELD",
+            "expected": true
+          }
+        ],
+        "warnings": [],
+        "receipt_sha256": "sha256:87ff3498dcdef5ad950462c7a1ae2eca957a0a70f685d087981fa2a3d1ec7960",
+        "canonical_validated_object": null,
+        "data_quality_status": "CONTRACT_VIOLATION",
+        "downstream_impact": {
+          "affected_semantic_concept_ids": [
+            "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a"
+          ],
+          "affected_source_ids": [
+            "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf"
+          ],
+          "relationship_count": 1,
+          "truncated": false,
+          "violation_count": 1
+        }
+      }
+    },
+    {
+      "id": "C-type",
+      "revision": "C",
+      "input": {
+        "Loan Identifier": 123
+      },
+      "claimed_contract_version": 3,
+      "claimed_contract_hash": "sha256:9932af854b75b8139992ebbd0af7dd5bc7de10ef64f5840786d7f5bb63007805",
+      "receipt": {
+        "contract": "OG_SEMANTIC_DATA_VALIDATION_RECEIPT_V1",
+        "contract_id": "semantic-data-contract:e4dba53a725db96f0c7f346abcfcc9f94dd10da9a135e656b694f79d95d17d2d",
+        "contract_version": 3,
+        "contract_content_sha256": "sha256:9932af854b75b8139992ebbd0af7dd5bc7de10ef64f5840786d7f5bb63007805",
+        "input_sha256": "sha256:7989c6f02da798cae9504a3c4750e70e6afc6ac49b7eec485de3e96200ab2236",
+        "unknown_field_policy": "REJECT",
+        "status": "FAIL",
+        "stale_contract": false,
+        "stale_reasons": [],
+        "violations": [
+          {
+            "field_key": "Loan Identifier",
+            "code": "TYPE_MISMATCH",
+            "expected": "STRING",
+            "received_type": "int"
+          }
+        ],
+        "warnings": [],
+        "receipt_sha256": "sha256:a1df687f4f8d69deb3ebd145c0129abed912c2889b61a33fd645b2df82b6a305",
+        "canonical_validated_object": null,
+        "data_quality_status": "CONTRACT_VIOLATION",
+        "downstream_impact": {
+          "affected_semantic_concept_ids": [
+            "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a"
+          ],
+          "affected_source_ids": [
+            "source-instance:semantic:e9e83467727ea8d67ce03654145b80304dbfa49ca64a3cbc2b867778fd992fcf"
+          ],
+          "relationship_count": 1,
+          "truncated": false,
+          "violation_count": 1
+        }
+      }
+    }
+  ],
+  "comparisons": {
+    "AB": {
+      "contract": "OG_SEMANTIC_DATA_CONTRACT_DRIFT_V1",
+      "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+      "from_revision": 1,
+      "to_revision": 2,
+      "changed_contract_count": 1,
+      "breaking_change": true,
+      "changes": [
+        {
+          "contract": "OG_SEMANTIC_DATA_CONTRACT_DRIFT_V1",
+          "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+          "from_version": 1,
+          "to_version": 2,
+          "from_content_sha256": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+          "to_content_sha256": "sha256:c4b13798a73568fe40ae5182e38351ff9cfbb76daa198dd97d0741b8e827eb89",
+          "changed": true,
+          "breaking_change": true,
+          "events": [
+            {
+              "field_key": "Principal Amount",
+              "drift_type": "STRUCTURAL_DRIFT",
+              "change": "CONSTRAINTS_CHANGED",
+              "from": {
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {}
+              },
+              "to": {
+                "required": false,
+                "nullability": "UNKNOWN",
+                "cardinality": null,
+                "constraints": {
+                  "allowedValues": [
+                    10000,
+                    20000
+                  ]
+                }
+              },
+              "breaking": true
+            }
+          ],
+          "drift_sha256": "sha256:663b99b0c6b355e8ccbc046aca654b7a1a9ee1b38618fef92a05e5832fe40231"
+        }
+      ]
+    },
+    "BC": {
+      "contract": "OG_SEMANTIC_DATA_CONTRACT_DRIFT_V1",
+      "asset_id": "compiled-asset:496c2327f2934b40ab6933335c544105",
+      "from_revision": 2,
+      "to_revision": 3,
+      "changed_contract_count": 2,
+      "breaking_change": true,
+      "changes": [
+        {
+          "contract": "OG_SEMANTIC_DATA_CONTRACT_DRIFT_V1",
+          "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+          "from_version": 2,
+          "to_version": 3,
+          "from_content_sha256": "sha256:c4b13798a73568fe40ae5182e38351ff9cfbb76daa198dd97d0741b8e827eb89",
+          "to_content_sha256": "sha256:8192fcb7fc727922dd3179d09a20865ee3920ed08b06a8b4441ebe7add164e46",
+          "changed": true,
+          "breaking_change": true,
+          "events": [
+            {
+              "field_key": "Loan Identifier",
+              "drift_type": "STRUCTURAL_DRIFT",
+              "change": "FIELD_REMOVED",
+              "breaking": true
+            }
+          ],
+          "drift_sha256": "sha256:1a3743a778fdf56cd0a6b41f2dfdbae45558424853c184ec77fab89b5f03d172"
+        },
+        {
+          "contract_id": "semantic-data-contract:e4dba53a725db96f0c7f346abcfcc9f94dd10da9a135e656b694f79d95d17d2d",
+          "drift_type": "STRUCTURAL_DRIFT",
+          "change": "CONTRACT_ADDED",
+          "breaking": false
+        }
+      ]
+    },
+    "BC_identity": {
+      "contract": "OG_SEMANTIC_DATA_CONTRACT_DRIFT_V1",
+      "contract_id": "semantic-data-contract:e4dba53a725db96f0c7f346abcfcc9f94dd10da9a135e656b694f79d95d17d2d",
+      "from_version": 2,
+      "to_version": 3,
+      "from_content_sha256": "sha256:c4b13798a73568fe40ae5182e38351ff9cfbb76daa198dd97d0741b8e827eb89",
+      "to_content_sha256": "sha256:9932af854b75b8139992ebbd0af7dd5bc7de10ef64f5840786d7f5bb63007805",
+      "changed": true,
+      "breaking_change": true,
+      "events": [
+        {
+          "field_key": "Loan Identifier",
+          "drift_type": "STRUCTURAL_DRIFT",
+          "change": "CONSTRAINTS_CHANGED",
+          "from": {
+            "required": false,
+            "nullability": "UNKNOWN",
+            "cardinality": null,
+            "constraints": {}
+          },
+          "to": {
+            "required": true,
+            "nullability": "UNKNOWN",
+            "cardinality": null,
+            "constraints": {}
+          },
+          "breaking": true
+        },
+        {
+          "field_key": "Loan Identifier",
+          "drift_type": "SEMANTIC_DRIFT",
+          "change": "SEMANTIC_IDENTITY_OR_CLASSIFICATION_CHANGED",
+          "details": {
+            "semantic_owner_id": [
+              "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+              "concept-sense-term:1027224ce02bd23efb5d65e896ad9bd86f5388af4ebc9414192e90a42202cb90"
+            ]
+          },
+          "breaking": true
+        },
+        {
+          "field_key": "Principal Amount",
+          "drift_type": "STRUCTURAL_DRIFT",
+          "change": "FIELD_REMOVED",
+          "breaking": true
+        },
+        {
+          "field_key": null,
+          "drift_type": "RELATIONSHIP_DRIFT",
+          "change": "OWNER_RELATIONSHIP_GRAPH_CHANGED",
+          "from": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "to": "sha256:10624be3355909838f235fa4b15be92e15ba11ceef2b5976cb834085d05f38d6",
+          "breaking": true
+        }
+      ],
+      "drift_sha256": "sha256:a0ba073e91b914ca3714adc74bffde9164cb5ee4c7d1f907c5eb35268243fd14"
+    },
+    "AT_definition": {
+      "contract": "OG_SEMANTIC_DATA_CONTRACT_DRIFT_V1",
+      "contract_id": "semantic-data-contract:172109a8dad0bb9061c348782b01c2d0099a49912f1f37af85316871887d299c",
+      "from_version": 1,
+      "to_version": 1,
+      "from_content_sha256": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+      "to_content_sha256": "sha256:d8ba35a7f358c1614f42d1cc92f487704b6577b55f2fdfeb469ad8298ea4cead",
+      "changed": true,
+      "breaking_change": true,
+      "events": [
+        {
+          "field_key": "Loan Identifier",
+          "drift_type": "SEMANTIC_DRIFT",
+          "change": "SEMANTIC_IDENTITY_OR_CLASSIFICATION_CHANGED",
+          "details": {
+            "semantic_owner_id": [
+              "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+              "term:f42c54af98cb280cef5d111b586839acbac9c00781895d6e9c886cb6de0e951b"
+            ]
+          },
+          "breaking": true
+        },
+        {
+          "field_key": "Principal Amount",
+          "drift_type": "DEFINITION_DRIFT",
+          "change": "BUSINESS_MEANING_CHANGED",
+          "from": "The principal amount of a loan excluding interest and charges.",
+          "to": "The principal amount of a loan including capitalized interest but excluding other charges.",
+          "breaking": true
+        },
+        {
+          "field_key": "Principal Amount",
+          "drift_type": "SEMANTIC_DRIFT",
+          "change": "SEMANTIC_IDENTITY_OR_CLASSIFICATION_CHANGED",
+          "details": {
+            "semantic_owner_id": [
+              "term:57264b78fdfa751a5543d7f2ec530e48ba349a696c019e0f6fbb913f47b74d82",
+              "term:f42c54af98cb280cef5d111b586839acbac9c00781895d6e9c886cb6de0e951b"
+            ]
+          },
+          "breaking": true
+        }
+      ],
+      "drift_sha256": "sha256:b8514262e5f53af8111f8531b09fbe84ce7b7815e94dd2f932b57649c0077182"
+    },
+    "staleness": {
+      "contract": "OG_SEMANTIC_DATA_VALIDATION_RECEIPT_V1",
+      "contract_id": "semantic-data-contract:a75a74f1828b1b719cb45acdaea32391d65a127e3178e28446ca1afdb993862e",
+      "validated_contract_version": 1,
+      "current_contract_version": 2,
+      "validated_contract_content_sha256": "sha256:60073c6e276ce9352fce1860b88b8190b28e677adb89f28f28e2828cd8062e19",
+      "current_contract_content_sha256": "sha256:c4b13798a73568fe40ae5182e38351ff9cfbb76daa198dd97d0741b8e827eb89",
+      "status": "STALE_CONTRACT",
+      "requires_revalidation": true
+    }
+  },
+  "scope_notes": [
+    "A/B/C are same native asset revisions. B is reviewer-defined allowed-value policy; its proposed definition was not selected. C is a reviewed owner binding and requiredness policy.",
+    "T is a separate sealed source-edited asset, not a revision of A. Native comparator reports definition drift with unchanged INTEGER.",
+    "A/B owner identifier exists; owner label/meaning unresolved. Native CERTIFIED is a contract coverage result, not release qualification or authority.",
+    "Source Required=true was not selected in A/B. Native C requiredness is reviewer policy. Nullability remains UNKNOWN.",
+    "Recorded native execution only; unsigned same-origin byte consistency is not publisher authentication."
+  ]
+}

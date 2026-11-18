@@ -1,0 +1,68 @@
+@prefix og: <https://ontoguard.ai/demo/v332/> .
+
+<https://ontoguard.ai/demo/v332/relationship:3452f0ea115b7ab3401cf7dd568929da7f4f52c13cf8d9f978a1001b3998370b> og:evidence_id og:cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:3107f0fbed5be0013ddbd298bc0f97b6bf59e77307ea3a299a99cdc9b1764750> ;
+    og:object_literal "amount" ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:79c95871d3d586e87915be83af0a1dc7093711da6ee6682f393b41dd6abc5315> og:evidence_id og:cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:531c91c7df904b2b99efd757c2bcf4556f3a05a8056889dc00660086b3078f6b> ;
+    og:object_literal "amount" ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:df6bc1a11f03aaea006fa3c7456da07eaf34edd59cba747d1bf21c3071e47d22> og:evidence_id og:cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:470787bee260dd248fec0e1531f036bc22f319d80fcbf6a1abe77c55f75cebab> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:4f7b63d9178cebbf2f90e7dd49f5491910e8a65f392b412b701dbefbe3f0b5fd> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:f083ff354524f1d34b39939ca9e497f73396d754ebeafd631e121d88acae64f2> og:category "Legal" ;
+    og:class "UNKNOWN" ;
+    og:definition "A contractual arrangement in which a lender advances funds to a borrower subject to repayment conditions." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Loan Agreement" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:3107f0fbed5be0013ddbd298bc0f97b6bf59e77307ea3a299a99cdc9b1764750> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "A sequence of dates and amounts specifying when the borrower must repay the outstanding loan balance." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Repayment Schedule" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:470787bee260dd248fec0e1531f036bc22f319d80fcbf6a1abe77c55f75cebab> og:category "Property-like" ;
+    og:class "Property" ;
+    og:definition "The date on which funds are transferred between the borrower and lender to settle a repayment obligation." ;
+    og:domain "Repayment" ;
+    og:revision "1" ;
+    og:role "PROPERTY" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Settlement Date" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:4f7b63d9178cebbf2f90e7dd49f5491910e8a65f392b412b701dbefbe3f0b5fd> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "A contractual duty requiring the borrower to repay outstanding principal by the specified due date." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Repayment Obligation" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:531c91c7df904b2b99efd757c2bcf4556f3a05a8056889dc00660086b3078f6b> og:category "Measurement-like" ;
+    og:class "Metric" ;
+    og:definition "The amount of outstanding principal that a lender could lose if a borrower fails to repay." ;
+    og:domain "Credit Risk" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Credit Exposure" .
+

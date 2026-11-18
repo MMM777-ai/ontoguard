@@ -1,0 +1,29 @@
+{
+  "revision": "1",
+  "records": [
+    {
+      "id": "relationship:3452f0ea115b7ab3401cf7dd568929da7f4f52c13cf8d9f978a1001b3998370b",
+      "from": "structural-concept:3107f0fbed5be0013ddbd298bc0f97b6bf59e77307ea3a299a99cdc9b1764750",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06",
+      "evidence_ids": [
+        "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06"
+      ],
+      "revision": "1",
+      "object_literal": "amount"
+    },
+    {
+      "id": "relationship:79c95871d3d586e87915be83af0a1dc7093711da6ee6682f393b41dd6abc5315",
+      "from": "structural-concept:531c91c7df904b2b99efd757c2bcf4556f3a05a8056889dc00660086b3078f6b",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b",
+      "evidence_ids": [
+        "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b"
+      ],
+      "revision": "1",
+      "object_literal": "amount"
+    }
+  ]
+}

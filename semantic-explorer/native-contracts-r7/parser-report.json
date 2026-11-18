@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "scope": "Private native JSONL/XLSX/package/RDF equivalence and exact source cell values; actual API receipt reproduction via native validator; native comparator replay. Does not establish publisher identity.",
+  "artifact_hashes": {
+    "source-Q-dictionary.xlsx": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+    "source-Q-glossary.xlsx": "513ed075cd24966a4169b486be4eec3971eba18167135ae32f10d6e6651e1a15",
+    "source-Q-owner.xlsx": "96869be26e2b22700302afc7ce6ba95e3e1199e4018d7e50c180c38a8109ad6f",
+    "source-T-dictionary.xlsx": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+    "source-T-glossary.xlsx": "513ed075cd24966a4169b486be4eec3971eba18167135ae32f10d6e6651e1a15",
+    "source-T-owner.xlsx": "96869be26e2b22700302afc7ce6ba95e3e1199e4018d7e50c180c38a8109ad6f",
+    "track.json": "cfc1896753605878857eb89202d3fc384ccdeb0e57518d0b23271c6710c9b478"
+  },
+  "native_hashes": {
+    "A": {
+      "jsonl": "f00ca9ebaa39b022ceb9998213de289d65cd7d01795407745be20779de57f9e2",
+      "xlsx": "fa98f74f3da3f105015fdde47a0f907d2dd20b723788b63d5be25e23a54e6cd3",
+      "ttl": "82281eeb49dc66712131d721e4e0a2bdec203f1774e3df37292a535786b050af",
+      "zip": "690637c612c77b06d10016ad4606f48f8de59bb1f146d995a62383a634af6b32"
+    },
+    "B": {
+      "jsonl": "d7a4a3cf66826a1cb3d1bbc78eb0bd076ded618c4c413171a103e60d64230031",
+      "xlsx": "1db5369399b55a090e3323043a41dfd8bf8eff7a7e9b4389f575a7e2cef892a4",
+      "ttl": "b7b6977f76c70152f8bf4b5ef45c5fe4b7ed171eec731a71567880bc836b6142",
+      "zip": "165afe46c94d430c8b4fd63c62f7e77d09b7c4fe94a097218516dd91b5406ed7"
+    },
+    "C": {
+      "jsonl": "62685d03882f69808fa3e3271fcd1a9c249829f93094c78334ed3e65c96e4645",
+      "xlsx": "a2407024562691d85d38ad1dc18d3854938b449ae07311de4e0f4babc68094dc",
+      "ttl": "aea7eda1a54f5efe2bfb45f11aa6285875bde5eeaf4f8a119bbfa9a32d37b9eb",
+      "zip": "268079597f14a3c84dac1aed7f3a2a01ce261758ce8db5ad2faba068565ea446"
+    },
+    "T": {
+      "jsonl": "8ff01c8047bbfd56b62617d4d7f07cff12d086d96ba815380c986bd642ca3a4c",
+      "xlsx": "e159724614a35fa787ac2ca24b575ee7d3f579c0af8debb372bef3bd1a687478",
+      "ttl": "c8733d353198f0338650bff2f6a400f475113ada7bc892fad67bf6f566b04fc1",
+      "zip": "e8106a80eafec0609040ccde39d8535db3372df238892558d7e71ab9718bea9b"
+    }
+  },
+  "checks": [
+    {
+      "revision": "A",
+      "property": "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a",
+      "source_refs": 4,
+      "native_field_match": true
+    },
+    {
+      "revision": "A",
+      "property": "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290",
+      "source_refs": 4,
+      "native_field_match": true
+    },
+    {
+      "revision": "B",
+      "property": "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a",
+      "source_refs": 4,
+      "native_field_match": true
+    },
+    {
+      "revision": "B",
+      "property": "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290",
+      "source_refs": 4,
+      "native_field_match": true
+    },
+    {
+      "revision": "C",
+      "property": "concept-sense-property:2fd8c26e47b748251ec2307e28a41f593c577eb2d30c89f680d3c0336397767a",
+      "source_refs": 4,
+      "native_field_match": true
+    },
+    {
+      "revision": "C",
+      "property": "concept-sense-property:258effcab3a0fb0a886ccc4c7652e0407cfaaaa300feab4d0b997bb6529f0290",
+      "source_refs": 4,
+      "native_field_match": true
+    },
+    {
+      "revision": "T",
+      "property": "concept-sense-property:9dc27c1fac9408ba19bd71420d4a89f46e8392a55ca91b846abaf7e48f935f96",
+      "source_refs": 4,
+      "native_field_match": true
+    },
+    {
+      "revision": "T",
+      "property": "concept-sense-property:fc2248190492143d25b86074fd70163332825044cbdf105e909bd96d3846e716",
+      "source_refs": 4,
+      "native_field_match": true
+    }
+  ],
+  "receipt_count": 7,
+  "revision_count": 4
+}

@@ -1,0 +1,15 @@
+{
+  "asset_id": "compiled-asset:b4ca1467635947f5baa8aa2c3ff4f116",
+  "revision": "1",
+  "summary": {
+    "contract_count": 0,
+    "certified_contract_count": 0,
+    "review_required_contract_count": 0,
+    "property_count": 0,
+    "contracted_property_count": 0,
+    "contract_coverage": 0.0,
+    "uncontracted_property_count": 0
+  },
+  "contract_count": 0,
+  "authorizes": false
+}

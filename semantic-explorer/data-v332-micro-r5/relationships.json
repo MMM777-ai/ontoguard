@@ -1,0 +1,17 @@
+{
+  "revision": "1",
+  "records": [
+    {
+      "id": "relationship:df6bc1a11f03aaea006fa3c7456da07eaf34edd59cba747d1bf21c3071e47d22",
+      "from": "structural-concept:470787bee260dd248fec0e1531f036bc22f319d80fcbf6a1abe77c55f75cebab",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7",
+      "evidence_ids": [
+        "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7"
+      ],
+      "revision": "1",
+      "to": "structural-concept:4f7b63d9178cebbf2f90e7dd49f5491910e8a65f392b412b701dbefbe3f0b5fd"
+    }
+  ]
+}

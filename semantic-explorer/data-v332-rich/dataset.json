@@ -1,0 +1,1949 @@
+{
+  "schema_version": 3,
+  "demo_id": "controlled-lending-v332-rich",
+  "revision": "1",
+  "scope": "CONTROLLED_RUNTIME_OUTPUT",
+  "runtime_release": "1.89.332",
+  "run_id": "b4ca1467635947f5baa8aa2c3ff4f116",
+  "asset_id": "compiled-asset:b4ca1467635947f5baa8aa2c3ff4f116",
+  "sources": [
+    {
+      "id": "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+      "name": "treasury.xlsx",
+      "version": "synthetic input 1",
+      "kind": "XLSX",
+      "file": "treasury.xlsx",
+      "sha256": "9da251d21ee79e19fedc6dd7e064c613dfee0226a40d0a8d2bb20e48f46f7c04",
+      "revision": "1",
+      "cell_index": "treasury-cells.json"
+    },
+    {
+      "id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "name": "glossary.xlsx",
+      "version": "synthetic input 1",
+      "kind": "XLSX",
+      "file": "glossary.xlsx",
+      "sha256": "a7f1e3a812b43e8062ac09ebf5bbe72ed7954dc8e7aeb27fe55651f37f6b8764",
+      "revision": "1",
+      "cell_index": "glossary-cells.json"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "cell-f193d839e37c0618a3d01f03737a0ad8850d9717bc32fc44cfcc6241160b4f1a",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B19",
+      "excerpt": "A unique reference assigned to a payment instruction in the payment system.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-8e95c561fe157e1989fac076d3e96fd007722def854ed9817aa25eadea0485b4",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C19",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-65abdebefdd0ac5317963ea2a3efc1ef89aaaba588a47edb7b73224e74307b7c",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B21",
+      "excerpt": "The status of an obligation when a scheduled payment remains unpaid after its due date.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-cb9a78a95a4cadbe4b750b9a1fcaeede213e43d5d7f7421933237e1b9679a157",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C21",
+      "excerpt": "Credit Risk",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf",
+      "source_id": "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+      "locator": "Treasury glossary!B3",
+      "excerpt": "The event in which a receiving bank acknowledges receipt of a payment instruction, before transfer is final.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-c4a834ba7a02d8ed56c81ffdf028b8aca63b28a186700b53574d7066db438b6e",
+      "source_id": "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+      "locator": "Treasury glossary!C3",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-2590d88a4d7a49f0f3943c68514f26cfb25e4c55b7c0e3c8c4d35bf5032a65fd",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B15",
+      "excerpt": "The completion of the transfer of funds between the sending and receiving institutions.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-a04ef2cd69463fa4581d05e904bd0bb8e2dd186b5f8853a7134e28507d978c2f",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C15",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B3",
+      "excerpt": "A contractual duty requiring the borrower to repay outstanding principal by the specified due date.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-dae135f20028970e01f4a8cdea4ac9a012540e82978a2c63ba3d5444ae4c1f73",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C3",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-5dfe0daf966709ed69dc0b88add7e497db49a4740bddb79532f10aad27527e83",
+      "source_id": "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+      "locator": "Treasury glossary!B2",
+      "excerpt": "A request directing a payment processor to transfer funds to a specified recipient.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-c79768756db0e85a2ca13d830d6c18228384dc0318a9e538b7e59cba58eb9cc9",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C11",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-815ffd6be4c22493c35c3376ddf3817e2016270c5c490e92d53156ff805f8a83",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B13",
+      "excerpt": "The event of sending a payment instruction to a payment processor for execution.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-a0ada173ef9b36d25500a147c9bcfd8f5ea76f1bb7b0020d1b9a5c4dba9e768b",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C13",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-7ea10a215afa9624d118ecf17994dd276f0396b7699e61004871ab7d6380208e",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B10",
+      "excerpt": "The periodic recognition of interest earned on outstanding principal.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-4a6a24130c5d5e054cb722366ac414e6e2da08c6ea8d41c69b36d65f13bcc77c",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C10",
+      "excerpt": "Loan Accounting",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-40536767939a4929ba69cd4afc939d0e6db5cec305840ed6c746268b5774a51b",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B22",
+      "excerpt": "The final transfer of funds satisfying a payment instruction.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-590cbf97d08d50b2b668f89d1676534e051787fed4228c5612d542765e58e7af",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C23",
+      "excerpt": "Insurance Claims",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-45ea5b3941c02fab26c29214d6d5bb881ebb619f718b7251c5edd6e9eed4b0ca",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B17",
+      "excerpt": "The date by which a borrower is required to make a scheduled repayment.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-464507623db6b4cfe09518c68443a9f40e76dd33e9b0829886e16186e7eade10",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C17",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-e568c2f39b26d1f321cf72df9576dfc16e1b27ca1525c71ed44a65e26df19b0c",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B4",
+      "excerpt": "A sequence of dates and amounts specifying when the borrower must repay the outstanding loan balance.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-243c8dad4d2194a899dcb5e5fb54b1db7a6a7c22b3839ca1fc641cf877515c14",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C4",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-25f543bad16904f93d16a8674cb4d191c9b5de3c987ecf3d6cf48553b1c4980a",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B9",
+      "excerpt": "The outstanding amount of borrowed principal excluding accrued interest.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-fe5ff50c0b4e73296a96bb7f4ed688931a2269ac6474c83cb248df3ed85d3f87",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C9",
+      "excerpt": "Loan Accounting",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B5",
+      "excerpt": "The date on which funds are transferred between the borrower and lender to settle a repayment obligation.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-4d05866a5da44524ae2064a2446c211e4e138c188c7815f69ed9ab5ccbddb523",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C5",
+      "excerpt": "Repayment",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B6",
+      "excerpt": "The amount of outstanding principal that a lender could lose if a borrower fails to repay.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-a5ee9e92f80e9510082375bf60f71528e6329a0b069dec1685723b00be35f7a9",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C6",
+      "excerpt": "Credit Risk",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-cd9d1ad16231877c8e0409452ef2dd348f3dddd92a240191eb9e760f0ce515ba",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B18",
+      "excerpt": "A unique reference assigned to a loan agreement in the servicing system.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-a39b6f90567066985cf533f81a48ff4d5349da0583adf2aa2e65a6efc67b8249",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C18",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-cf81d2c0abf16e5012e57e910155fc50405e7e7fefa6b7279e45eb36cbf0eb94",
+      "source_id": "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+      "locator": "Treasury glossary!B5",
+      "excerpt": "A subsequent transaction reversing a previously executed payment.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-720aaaf669c86add3f4d071dd6fcf4dbb8e6e478ba94b2b798c939889add0392",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C16",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-e0f9dede3321c6526e02b3a9c50e94fe7211b6e751806509747f5983b1de9740",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B16",
+      "excerpt": "A subsequent transaction reversing a previously executed payment.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-6e52c327152c186a9ce71c08567c813025888d48e9c0e410f76334053ddf7578",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B7",
+      "excerpt": "A person or organization that receives loan proceeds and undertakes repayment obligations.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-f731808c8291235c68d69ee97634315baeb764705532f8bd03fbc1b752973a37",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C7",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-7c178685001571895073abfb8c71cd0e7b5dadf8d260f7f2e12e2754575aa199",
+      "source_id": "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+      "locator": "Treasury glossary!B4",
+      "excerpt": "The event in which a payment processor performs a specified transfer of funds.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-bfe71b572b32b4dfc53fe99e7c383fdd44a0e3493f2075657b800eb54e9a287c",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B20",
+      "excerpt": "A code identifying the currency in which a monetary amount is denominated.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-e49a50cbc8d39db7dbcc8aa860fe11b3ef0f31a7b031d7e2fee9bc5c01d464f8",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C20",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-11a473417a0a36bc236cca18c608a09a5e8cf2bf1c7d164fa612e8abb60a1d00",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B8",
+      "excerpt": "An organization that advances funds under a loan agreement.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-f0806d61c571bff834ea97875931adc403ca475878bcb00cdbd396b8da942071",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C8",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B2",
+      "excerpt": "A contractual arrangement in which a lender advances funds to a borrower subject to repayment conditions.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-29412a279165feb80ea677148801f71257d464f6c577286d38ce7c07af8ae676",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C2",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-6e101260ba852009bb0a1c79e87d6dadc6ebbc10743f55c81ecd799e27310630",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B12",
+      "excerpt": "A recorded approval permitting a specified payment instruction subject to stated conditions.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-28b0301798890af6658ebeac87faf6105cdec26b2031ed519366757452df436a",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!C12",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-712cbb461be5f7682015211d299d5a929469beeedf7f7e2a4505f6b3e8fc0536",
+      "source_id": "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc",
+      "locator": "Glossary!B11",
+      "excerpt": "A request directing a payment processor to transfer funds to a specified recipient.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "structural-concept:0ff505322ea7b34bb63cd20b5e2e2859e1fe1eef46432bad9f95d78bfaf81762",
+      "term": "Payment Identifier",
+      "category": "Identifier-like",
+      "definition": "A unique reference assigned to a payment instruction in the payment system.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-f193d839e37c0618a3d01f03737a0ad8850d9717bc32fc44cfcc6241160b4f1a",
+        "cell-8e95c561fe157e1989fac076d3e96fd007722def854ed9817aa25eadea0485b4"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:19023c6db37f0d2f3bb4172f001934f21e1b019bc1518ea1e04c9a0528eb4d8f",
+      "definition_evidence_ids": [
+        "cell-f193d839e37c0618a3d01f03737a0ad8850d9717bc32fc44cfcc6241160b4f1a"
+      ],
+      "domain_evidence_ids": [
+        "cell-8e95c561fe157e1989fac076d3e96fd007722def854ed9817aa25eadea0485b4"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-f193d839e37c0618a3d01f03737a0ad8850d9717bc32fc44cfcc6241160b4f1a"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Identifier",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:b65999ebebb9e476f9dc5cbc4e082245ee102e45f741cd227bc9dbae3de6f26e",
+      "term": "Delinquency",
+      "category": "Value-Domain",
+      "definition": "The status of an obligation when a scheduled payment remains unpaid after its due date.",
+      "domain": "Credit Risk",
+      "class": "Value Domain",
+      "role": "VALUE_DOMAIN",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-65abdebefdd0ac5317963ea2a3efc1ef89aaaba588a47edb7b73224e74307b7c",
+        "cell-cb9a78a95a4cadbe4b750b9a1fcaeede213e43d5d7f7421933237e1b9679a157"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "RESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:4c0dbca9a21c0e9a61b552b1a24b9e7abadc413fc4ea642659c8b700a857b119",
+      "definition_evidence_ids": [
+        "cell-65abdebefdd0ac5317963ea2a3efc1ef89aaaba588a47edb7b73224e74307b7c"
+      ],
+      "domain_evidence_ids": [
+        "cell-cb9a78a95a4cadbe4b750b9a1fcaeede213e43d5d7f7421933237e1b9679a157"
+      ],
+      "class_evidence_ids": [
+        "cell-65abdebefdd0ac5317963ea2a3efc1ef89aaaba588a47edb7b73224e74307b7c"
+      ],
+      "role_evidence_ids": [
+        "cell-65abdebefdd0ac5317963ea2a3efc1ef89aaaba588a47edb7b73224e74307b7c"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Delinquency",
+      "resolution_reasons": [],
+      "resolution_question": "",
+      "resolution_requirements": []
+    },
+    {
+      "id": "structural-concept:dda5e41684a24a7aca811c2d3921f8dabcfd2e3e831b3ecb6661835aa0208453",
+      "term": "Payment Settlement",
+      "category": "Business",
+      "definition": "The event in which a receiving bank acknowledges receipt of a payment instruction, before transfer is final.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": true,
+      "evidence_ids": [
+        "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf",
+        "cell-c4a834ba7a02d8ed56c81ffdf028b8aca63b28a186700b53574d7066db438b6e"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "NEEDS_RESOLUTION",
+      "revision": "1",
+      "native_fingerprint": "sha256:41d18153af6eda503eb4559974fceec20a06ffc134115bd72575bfe27f1ac3ae",
+      "definition_evidence_ids": [
+        "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf"
+      ],
+      "domain_evidence_ids": [
+        "cell-c4a834ba7a02d8ed56c81ffdf028b8aca63b28a186700b53574d7066db438b6e"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287"
+      ],
+      "display_qualifier": "Payments (Treasury glossary!B3)",
+      "native_display_label": "Payments (Treasury glossary!B3) · Payment Settlement",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE",
+        "UNRESOLVED_IDENTITY_COLLISION"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ],
+      "related_unresolved_senses": [
+        "structural-concept:fe4ad8c58293ab69e58a8e35929d3757bd427114c61c398622115cb332d795fb"
+      ]
+    },
+    {
+      "id": "structural-concept:fe4ad8c58293ab69e58a8e35929d3757bd427114c61c398622115cb332d795fb",
+      "term": "Payment Settlement",
+      "category": "Business",
+      "definition": "The completion of the transfer of funds between the sending and receiving institutions.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": true,
+      "evidence_ids": [
+        "cell-2590d88a4d7a49f0f3943c68514f26cfb25e4c55b7c0e3c8c4d35bf5032a65fd",
+        "cell-a04ef2cd69463fa4581d05e904bd0bb8e2dd186b5f8853a7134e28507d978c2f"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "NEEDS_RESOLUTION",
+      "revision": "1",
+      "native_fingerprint": "sha256:736c71b78db02f3f332b6856d896d6efcbaeeec881cece5fd45f87dbfe2f7bc3",
+      "definition_evidence_ids": [
+        "cell-2590d88a4d7a49f0f3943c68514f26cfb25e4c55b7c0e3c8c4d35bf5032a65fd"
+      ],
+      "domain_evidence_ids": [
+        "cell-a04ef2cd69463fa4581d05e904bd0bb8e2dd186b5f8853a7134e28507d978c2f"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-2590d88a4d7a49f0f3943c68514f26cfb25e4c55b7c0e3c8c4d35bf5032a65fd"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "Payments (Glossary!B15)",
+      "native_display_label": "Payments (Glossary!B15) · Payment Settlement",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR",
+        "UNRESOLVED_IDENTITY_COLLISION"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ],
+      "related_unresolved_senses": [
+        "structural-concept:dda5e41684a24a7aca811c2d3921f8dabcfd2e3e831b3ecb6661835aa0208453"
+      ]
+    },
+    {
+      "id": "structural-concept:e77ca3cd539a77464a4f56d1e322405b12978f1b0d7b5f25fe31eaca93616b09",
+      "term": "Repayment Obligation",
+      "category": "Business",
+      "definition": "A contractual duty requiring the borrower to repay outstanding principal by the specified due date.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850",
+        "cell-dae135f20028970e01f4a8cdea4ac9a012540e82978a2c63ba3d5444ae4c1f73"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "PHENOMENOLOGY_AND_MICRO_ONTOLOGY_CONTEXTUALIZED",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:9a49ecd1ebf9928b41128d8234e6cea1029641404c90e9135ec5ce060d6ba515",
+      "definition_evidence_ids": [
+        "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850"
+      ],
+      "domain_evidence_ids": [
+        "cell-dae135f20028970e01f4a8cdea4ac9a012540e82978a2c63ba3d5444ae4c1f73"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Repayment Obligation",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:692230da18a9587c72ecf80a458bb6fc2f55fdbd3dff423934429706f68ad2e9",
+      "term": "Payment Instruction",
+      "category": "Business",
+      "definition": "A request directing a payment processor to transfer funds to a specified recipient.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-5dfe0daf966709ed69dc0b88add7e497db49a4740bddb79532f10aad27527e83",
+        "cell-c79768756db0e85a2ca13d830d6c18228384dc0318a9e538b7e59cba58eb9cc9"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:720c7b867de04b551bdeb86cfdf2091ce5bfaa507125e8d68feb4189016f177b",
+      "definition_evidence_ids": [
+        "cell-5dfe0daf966709ed69dc0b88add7e497db49a4740bddb79532f10aad27527e83"
+      ],
+      "domain_evidence_ids": [
+        "cell-c79768756db0e85a2ca13d830d6c18228384dc0318a9e538b7e59cba58eb9cc9"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-5dfe0daf966709ed69dc0b88add7e497db49a4740bddb79532f10aad27527e83"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Instruction",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:2356819844e77831235c87c4c954edfda17a78ef0dff0f990b222fc18c89a797",
+      "term": "Payment Submission",
+      "category": "Event-like",
+      "definition": "The event of sending a payment instruction to a payment processor for execution.",
+      "domain": "Payments",
+      "class": "Event",
+      "role": "EVENT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-815ffd6be4c22493c35c3376ddf3817e2016270c5c490e92d53156ff805f8a83",
+        "cell-a0ada173ef9b36d25500a147c9bcfd8f5ea76f1bb7b0020d1b9a5c4dba9e768b"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:18bea9fa3f79e9c4d5dec0f983822ed112438655ff1078a76814022a1e61f20a",
+      "definition_evidence_ids": [
+        "cell-815ffd6be4c22493c35c3376ddf3817e2016270c5c490e92d53156ff805f8a83"
+      ],
+      "domain_evidence_ids": [
+        "cell-a0ada173ef9b36d25500a147c9bcfd8f5ea76f1bb7b0020d1b9a5c4dba9e768b"
+      ],
+      "class_evidence_ids": [
+        "cell-815ffd6be4c22493c35c3376ddf3817e2016270c5c490e92d53156ff805f8a83"
+      ],
+      "role_evidence_ids": [
+        "cell-815ffd6be4c22493c35c3376ddf3817e2016270c5c490e92d53156ff805f8a83"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Submission",
+      "resolution_reasons": [
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the relationship of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:9e4276cad72d6b64e36c6499e42b2614cf0dfa47f378b5918483610bbcf3bd61",
+      "term": "Interest Accrual",
+      "category": "Business",
+      "definition": "The periodic recognition of interest earned on outstanding principal.",
+      "domain": "Loan Accounting",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-7ea10a215afa9624d118ecf17994dd276f0396b7699e61004871ab7d6380208e",
+        "cell-4a6a24130c5d5e054cb722366ac414e6e2da08c6ea8d41c69b36d65f13bcc77c"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:f91da9fbcc789e75fa70fbee3f73fc2091b256aa5cfa97403caed73e8998d9ca",
+      "definition_evidence_ids": [
+        "cell-7ea10a215afa9624d118ecf17994dd276f0396b7699e61004871ab7d6380208e"
+      ],
+      "domain_evidence_ids": [
+        "cell-4a6a24130c5d5e054cb722366ac414e6e2da08c6ea8d41c69b36d65f13bcc77c"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-7ea10a215afa9624d118ecf17994dd276f0396b7699e61004871ab7d6380208e"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Interest Accrual",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:6ad884d7f63c68fcd5d7bce12e844d684a0c27269b0adcd213070a0481da6d20",
+      "term": "Settlement",
+      "category": "Business",
+      "definition": "The final transfer of funds satisfying a payment instruction.",
+      "domain": "Insurance Claims",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-40536767939a4929ba69cd4afc939d0e6db5cec305840ed6c746268b5774a51b",
+        "cell-590cbf97d08d50b2b668f89d1676534e051787fed4228c5612d542765e58e7af"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:872b0a5ed201eb660f13e79616200ecdc5ec54358de24e8d8004b72bd3ac3439",
+      "definition_evidence_ids": [
+        "cell-40536767939a4929ba69cd4afc939d0e6db5cec305840ed6c746268b5774a51b"
+      ],
+      "domain_evidence_ids": [
+        "cell-590cbf97d08d50b2b668f89d1676534e051787fed4228c5612d542765e58e7af"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-40536767939a4929ba69cd4afc939d0e6db5cec305840ed6c746268b5774a51b"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Settlement",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:c3ce133ec66e941a56f13dc65f2fae381e27772e52209652dc77cdf06609c38b",
+      "term": "Due Date",
+      "category": "Property-like",
+      "definition": "The date by which a borrower is required to make a scheduled repayment.",
+      "domain": "Lending",
+      "class": "Property",
+      "role": "PROPERTY",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-45ea5b3941c02fab26c29214d6d5bb881ebb619f718b7251c5edd6e9eed4b0ca",
+        "cell-464507623db6b4cfe09518c68443a9f40e76dd33e9b0829886e16186e7eade10"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:efdebc290ea8ef34a9ebc3fa6a6bdbf60b98902a6f5032297786b30ef6854a16",
+      "definition_evidence_ids": [
+        "cell-45ea5b3941c02fab26c29214d6d5bb881ebb619f718b7251c5edd6e9eed4b0ca"
+      ],
+      "domain_evidence_ids": [
+        "cell-464507623db6b4cfe09518c68443a9f40e76dd33e9b0829886e16186e7eade10"
+      ],
+      "class_evidence_ids": [
+        "cell-45ea5b3941c02fab26c29214d6d5bb881ebb619f718b7251c5edd6e9eed4b0ca"
+      ],
+      "role_evidence_ids": [
+        "cell-45ea5b3941c02fab26c29214d6d5bb881ebb619f718b7251c5edd6e9eed4b0ca"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Due Date",
+      "resolution_reasons": [
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the relationship of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:ce2ee0d2a7fc5078fb8c91b22f326ed9cb204e3ef45a59ea47f741403233da40",
+      "term": "Repayment Schedule",
+      "category": "Business",
+      "definition": "A sequence of dates and amounts specifying when the borrower must repay the outstanding loan balance.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-e568c2f39b26d1f321cf72df9576dfc16e1b27ca1525c71ed44a65e26df19b0c",
+        "cell-243c8dad4d2194a899dcb5e5fb54b1db7a6a7c22b3839ca1fc641cf877515c14"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:14dcbcff70284fb567a4b548fe4f5db25f130164480ff8be906deb1fa276f7d2",
+      "definition_evidence_ids": [
+        "cell-e568c2f39b26d1f321cf72df9576dfc16e1b27ca1525c71ed44a65e26df19b0c"
+      ],
+      "domain_evidence_ids": [
+        "cell-243c8dad4d2194a899dcb5e5fb54b1db7a6a7c22b3839ca1fc641cf877515c14"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-e568c2f39b26d1f321cf72df9576dfc16e1b27ca1525c71ed44a65e26df19b0c"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Repayment Schedule",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:0da277bc760499b9b988b772fff325945b99d146d6500a729c8ff9e3f18ab36c",
+      "term": "Principal Balance",
+      "category": "Business",
+      "definition": "The outstanding amount of borrowed principal excluding accrued interest.",
+      "domain": "Loan Accounting",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-25f543bad16904f93d16a8674cb4d191c9b5de3c987ecf3d6cf48553b1c4980a",
+        "cell-fe5ff50c0b4e73296a96bb7f4ed688931a2269ac6474c83cb248df3ed85d3f87"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:475e814e0120618810ba6baf446ea587dc53db9bb224a83a55f0e89c05e99844",
+      "definition_evidence_ids": [
+        "cell-25f543bad16904f93d16a8674cb4d191c9b5de3c987ecf3d6cf48553b1c4980a"
+      ],
+      "domain_evidence_ids": [
+        "cell-fe5ff50c0b4e73296a96bb7f4ed688931a2269ac6474c83cb248df3ed85d3f87"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-25f543bad16904f93d16a8674cb4d191c9b5de3c987ecf3d6cf48553b1c4980a"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Principal Balance",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:a0fc7c9806a021832b5e95048b6b4008245cb260d8e9745884f046d1733eb46d",
+      "term": "Settlement Date",
+      "category": "Property-like",
+      "definition": "The date on which funds are transferred between the borrower and lender to settle a repayment obligation.",
+      "domain": "Repayment",
+      "class": "Property",
+      "role": "PROPERTY",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c",
+        "cell-4d05866a5da44524ae2064a2446c211e4e138c188c7815f69ed9ab5ccbddb523"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:8d91c9bdf9957d97a2ece367a47f317b4710d85adadf69349bfa1f03db6f50af",
+      "definition_evidence_ids": [
+        "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c"
+      ],
+      "domain_evidence_ids": [
+        "cell-4d05866a5da44524ae2064a2446c211e4e138c188c7815f69ed9ab5ccbddb523"
+      ],
+      "class_evidence_ids": [
+        "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c"
+      ],
+      "role_evidence_ids": [
+        "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Settlement Date",
+      "resolution_reasons": [
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the relationship of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:eeb8868ab2d5214437d6e0ca4ef5dd6e0a24cde9cf30db5dc471da0ace818973",
+      "term": "Credit Exposure",
+      "category": "Measurement-like",
+      "definition": "The amount of outstanding principal that a lender could lose if a borrower fails to repay.",
+      "domain": "Credit Risk",
+      "class": "Metric",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "CANDIDATE",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c",
+        "cell-a5ee9e92f80e9510082375bf60f71528e6329a0b069dec1685723b00be35f7a9"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:c77a1a92219871b1eb9c9a52757c24fcf16735290b599ead2847885828d6e75d",
+      "definition_evidence_ids": [
+        "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c"
+      ],
+      "domain_evidence_ids": [
+        "cell-a5ee9e92f80e9510082375bf60f71528e6329a0b069dec1685723b00be35f7a9"
+      ],
+      "class_evidence_ids": [
+        "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c"
+      ],
+      "role_evidence_ids": [
+        "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Credit Exposure",
+      "resolution_reasons": [
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:784821d65a17c524dae1ef30a70e708b5eccc96e2ab96da150d7aea149405bd8",
+      "term": "Loan Identifier",
+      "category": "Identifier-like",
+      "definition": "A unique reference assigned to a loan agreement in the servicing system.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-cd9d1ad16231877c8e0409452ef2dd348f3dddd92a240191eb9e760f0ce515ba",
+        "cell-a39b6f90567066985cf533f81a48ff4d5349da0583adf2aa2e65a6efc67b8249"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:3744001ac76a178d3696f44a087022f857b12a11154281208988ed5291ff5a8a",
+      "definition_evidence_ids": [
+        "cell-cd9d1ad16231877c8e0409452ef2dd348f3dddd92a240191eb9e760f0ce515ba"
+      ],
+      "domain_evidence_ids": [
+        "cell-a39b6f90567066985cf533f81a48ff4d5349da0583adf2aa2e65a6efc67b8249"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-cd9d1ad16231877c8e0409452ef2dd348f3dddd92a240191eb9e760f0ce515ba"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Loan Identifier",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:2c10f25f92600d6c066a0c40f023131747fe75379216267f861dc03f9db3414f",
+      "term": "Payment Reversal",
+      "category": "Business",
+      "definition": "A subsequent transaction reversing a previously executed payment.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-cf81d2c0abf16e5012e57e910155fc50405e7e7fefa6b7279e45eb36cbf0eb94",
+        "cell-720aaaf669c86add3f4d071dd6fcf4dbb8e6e478ba94b2b798c939889add0392",
+        "cell-e0f9dede3321c6526e02b3a9c50e94fe7211b6e751806509747f5983b1de9740"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:85bbc147f0334470f845043fb01273736e8f8031f89d3c897197433cf8757c9d",
+      "definition_evidence_ids": [
+        "cell-cf81d2c0abf16e5012e57e910155fc50405e7e7fefa6b7279e45eb36cbf0eb94"
+      ],
+      "domain_evidence_ids": [
+        "cell-720aaaf669c86add3f4d071dd6fcf4dbb8e6e478ba94b2b798c939889add0392"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-e0f9dede3321c6526e02b3a9c50e94fe7211b6e751806509747f5983b1de9740"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Reversal",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:d4b9080194fd2d8cccb1ca4e5a8f2d1f827ff6813282ee53535679960f77c061",
+      "term": "Borrower",
+      "category": "Business",
+      "definition": "A person or organization that receives loan proceeds and undertakes repayment obligations.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-6e52c327152c186a9ce71c08567c813025888d48e9c0e410f76334053ddf7578",
+        "cell-f731808c8291235c68d69ee97634315baeb764705532f8bd03fbc1b752973a37"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:817e3331492badce20bc7a4204dff70ba0eda459e50d47ccd6237446d51b6831",
+      "definition_evidence_ids": [
+        "cell-6e52c327152c186a9ce71c08567c813025888d48e9c0e410f76334053ddf7578"
+      ],
+      "domain_evidence_ids": [
+        "cell-f731808c8291235c68d69ee97634315baeb764705532f8bd03fbc1b752973a37"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-6e52c327152c186a9ce71c08567c813025888d48e9c0e410f76334053ddf7578"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Borrower",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "concept:sense:eba03df4c3183ac3a49a4bb072d03a76fb02c78ee89ed0a13e63e5db2a52a553",
+      "term": "Payment Execution",
+      "category": "Business",
+      "definition": "The event in which a payment processor performs a specified transfer of funds.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "CANDIDATE",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-7c178685001571895073abfb8c71cd0e7b5dadf8d260f7f2e12e2754575aa199",
+        "cell-720aaaf669c86add3f4d071dd6fcf4dbb8e6e478ba94b2b798c939889add0392"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:165934efd59b351c0714c17ad946cac775b691eef775a1843020995aeba7f433",
+      "definition_evidence_ids": [
+        "cell-7c178685001571895073abfb8c71cd0e7b5dadf8d260f7f2e12e2754575aa199"
+      ],
+      "domain_evidence_ids": [
+        "cell-720aaaf669c86add3f4d071dd6fcf4dbb8e6e478ba94b2b798c939889add0392"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-7c178685001571895073abfb8c71cd0e7b5dadf8d260f7f2e12e2754575aa199"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:53ddce4dc0715738ffa3654a25cc09da85dd663bcc58c52f8e8ed5cf538b6287",
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Execution",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:138ee360fad7cda6eef52b6f598dfd86cbedffd13683e4846216eb6f25f7a56e",
+      "term": "Currency Code",
+      "category": "Identifier-like",
+      "definition": "A code identifying the currency in which a monetary amount is denominated.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-bfe71b572b32b4dfc53fe99e7c383fdd44a0e3493f2075657b800eb54e9a287c",
+        "cell-e49a50cbc8d39db7dbcc8aa860fe11b3ef0f31a7b031d7e2fee9bc5c01d464f8"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "PHENOMENOLOGY_AND_MICRO_ONTOLOGY_CONTEXTUALIZED",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:e4d626c6063b2534b4b94c7b18cdb54eda280ec1a59ee5eba4ba1ec033d805ef",
+      "definition_evidence_ids": [
+        "cell-bfe71b572b32b4dfc53fe99e7c383fdd44a0e3493f2075657b800eb54e9a287c"
+      ],
+      "domain_evidence_ids": [
+        "cell-e49a50cbc8d39db7dbcc8aa860fe11b3ef0f31a7b031d7e2fee9bc5c01d464f8"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-bfe71b572b32b4dfc53fe99e7c383fdd44a0e3493f2075657b800eb54e9a287c"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Currency Code",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:0b9aaaa9140d108de9d85860368406167159aff545ead973a2dff9c6f32f96cf",
+      "term": "Lender",
+      "category": "Organizational",
+      "definition": "An organization that advances funds under a loan agreement.",
+      "domain": "Lending",
+      "class": "Organization",
+      "role": "ORGANIZATION_PARTY",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-11a473417a0a36bc236cca18c608a09a5e8cf2bf1c7d164fa612e8abb60a1d00",
+        "cell-f0806d61c571bff834ea97875931adc403ca475878bcb00cdbd396b8da942071"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:ca2adcd3471f65a96e5368f689ac58c360897b34a67cc3d6472a84fa922f23e5",
+      "definition_evidence_ids": [
+        "cell-11a473417a0a36bc236cca18c608a09a5e8cf2bf1c7d164fa612e8abb60a1d00"
+      ],
+      "domain_evidence_ids": [
+        "cell-f0806d61c571bff834ea97875931adc403ca475878bcb00cdbd396b8da942071"
+      ],
+      "class_evidence_ids": [
+        "cell-11a473417a0a36bc236cca18c608a09a5e8cf2bf1c7d164fa612e8abb60a1d00"
+      ],
+      "role_evidence_ids": [
+        "cell-11a473417a0a36bc236cca18c608a09a5e8cf2bf1c7d164fa612e8abb60a1d00"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Lender",
+      "resolution_reasons": [
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the relationship of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:da0d5d3d798ef37799c2d56017852ef4900fc719b9fc266f86e470c07d95aa07",
+      "term": "Loan Agreement",
+      "category": "Legal",
+      "definition": "A contractual arrangement in which a lender advances funds to a borrower subject to repayment conditions.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5",
+        "cell-29412a279165feb80ea677148801f71257d464f6c577286d38ce7c07af8ae676"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:fa954c042840afafe9130b9ec27f59b6a8c13ebf644e68e8e4832cfc3db9cbe6",
+      "definition_evidence_ids": [
+        "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5"
+      ],
+      "domain_evidence_ids": [
+        "cell-29412a279165feb80ea677148801f71257d464f6c577286d38ce7c07af8ae676"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Loan Agreement",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:23807ffbfaea41e25acc215089edf0e9b5346400ca41d5bcdb6a05dd67228590",
+      "term": "Payment Authorization",
+      "category": "Business",
+      "definition": "A recorded approval permitting a specified payment instruction subject to stated conditions.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-6e101260ba852009bb0a1c79e87d6dadc6ebbc10743f55c81ecd799e27310630",
+        "cell-28b0301798890af6658ebeac87faf6105cdec26b2031ed519366757452df436a"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:f4de079fcf25b29281c817a7d6ff0e65c8a472a57baee4f7e190409cd50201d3",
+      "definition_evidence_ids": [
+        "cell-6e101260ba852009bb0a1c79e87d6dadc6ebbc10743f55c81ecd799e27310630"
+      ],
+      "domain_evidence_ids": [
+        "cell-28b0301798890af6658ebeac87faf6105cdec26b2031ed519366757452df436a"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-6e101260ba852009bb0a1c79e87d6dadc6ebbc10743f55c81ecd799e27310630"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:b27d98084ea64516079a8633675995764e1aadf5454759bde7e81ff6a2222cbc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Authorization",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "relationship:0579a1df20dbdf23ea431cb4674fabee723d186a84eb922df99288c601427c13",
+      "from": "structural-concept:d4b9080194fd2d8cccb1ca4e5a8f2d1f827ff6813282ee53535679960f77c061",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-6e52c327152c186a9ce71c08567c813025888d48e9c0e410f76334053ddf7578",
+      "evidence_ids": [
+        "cell-6e52c327152c186a9ce71c08567c813025888d48e9c0e410f76334053ddf7578"
+      ],
+      "revision": "1",
+      "to": "structural-concept:e77ca3cd539a77464a4f56d1e322405b12978f1b0d7b5f25fe31eaca93616b09"
+    },
+    {
+      "id": "relationship:07e6ee8c70330070aa0b8d1dc2227c5cb2593f6daa5dfeef3d41fd49ca052f0f",
+      "from": "structural-concept:c3ce133ec66e941a56f13dc65f2fae381e27772e52209652dc77cdf06609c38b",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-45ea5b3941c02fab26c29214d6d5bb881ebb619f718b7251c5edd6e9eed4b0ca",
+      "evidence_ids": [
+        "cell-45ea5b3941c02fab26c29214d6d5bb881ebb619f718b7251c5edd6e9eed4b0ca"
+      ],
+      "revision": "1",
+      "to": "structural-concept:d4b9080194fd2d8cccb1ca4e5a8f2d1f827ff6813282ee53535679960f77c061"
+    },
+    {
+      "id": "relationship:101747153288be11e7667a0a17d10a9e4b3a95c65278eeb6b9477b15fbea574f",
+      "from": "structural-concept:a0fc7c9806a021832b5e95048b6b4008245cb260d8e9745884f046d1733eb46d",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c",
+      "evidence_ids": [
+        "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c"
+      ],
+      "revision": "1",
+      "to": "structural-concept:0b9aaaa9140d108de9d85860368406167159aff545ead973a2dff9c6f32f96cf"
+    },
+    {
+      "id": "relationship:400388886a2469dd61f10f217a463b64c7aa56138b5ee5fb600a52e21d74a023",
+      "from": "structural-concept:ce2ee0d2a7fc5078fb8c91b22f326ed9cb204e3ef45a59ea47f741403233da40",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-e568c2f39b26d1f321cf72df9576dfc16e1b27ca1525c71ed44a65e26df19b0c",
+      "evidence_ids": [
+        "cell-e568c2f39b26d1f321cf72df9576dfc16e1b27ca1525c71ed44a65e26df19b0c"
+      ],
+      "revision": "1",
+      "to": "structural-concept:d4b9080194fd2d8cccb1ca4e5a8f2d1f827ff6813282ee53535679960f77c061"
+    },
+    {
+      "id": "relationship:57154c36b3d611af9fc829357bfb568906b1524b5bb2a2e91aa5c4cc0a6b522f",
+      "from": "structural-concept:eeb8868ab2d5214437d6e0ca4ef5dd6e0a24cde9cf30db5dc471da0ace818973",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c",
+      "evidence_ids": [
+        "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c"
+      ],
+      "revision": "1",
+      "to": "structural-concept:0b9aaaa9140d108de9d85860368406167159aff545ead973a2dff9c6f32f96cf"
+    },
+    {
+      "id": "relationship:578e238b05e4c80583a6cb68cf4e3a490f0650ee1be494741416a6dfd9307bef",
+      "from": "structural-concept:dda5e41684a24a7aca811c2d3921f8dabcfd2e3e831b3ecb6661835aa0208453",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf",
+      "evidence_ids": [
+        "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf"
+      ],
+      "revision": "1",
+      "to": "structural-concept:692230da18a9587c72ecf80a458bb6fc2f55fdbd3dff423934429706f68ad2e9"
+    },
+    {
+      "id": "relationship:5bc68a1401225958541f1e1589fe69e6477d2fedf4bb0d1be78e7b0a9ab4a461",
+      "from": "structural-concept:b65999ebebb9e476f9dc5cbc4e082245ee102e45f741cd227bc9dbae3de6f26e",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-65abdebefdd0ac5317963ea2a3efc1ef89aaaba588a47edb7b73224e74307b7c",
+      "evidence_ids": [
+        "cell-65abdebefdd0ac5317963ea2a3efc1ef89aaaba588a47edb7b73224e74307b7c"
+      ],
+      "revision": "1",
+      "to": "structural-concept:c3ce133ec66e941a56f13dc65f2fae381e27772e52209652dc77cdf06609c38b"
+    },
+    {
+      "id": "relationship:5d02b1518fe1b381bdb8fc15d6b24aee366eeffee7f00d7b93569fc5fb9afae5",
+      "from": "structural-concept:e77ca3cd539a77464a4f56d1e322405b12978f1b0d7b5f25fe31eaca93616b09",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850",
+      "evidence_ids": [
+        "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850"
+      ],
+      "revision": "1",
+      "to": "structural-concept:d4b9080194fd2d8cccb1ca4e5a8f2d1f827ff6813282ee53535679960f77c061"
+    },
+    {
+      "id": "relationship:5f873c48c9146ebf1d83d99bacfe2d170fc3b1bc733f123de5b6204bfeaf8b9c",
+      "from": "structural-concept:eeb8868ab2d5214437d6e0ca4ef5dd6e0a24cde9cf30db5dc471da0ace818973",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c",
+      "evidence_ids": [
+        "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c"
+      ],
+      "revision": "1",
+      "to": "structural-concept:d4b9080194fd2d8cccb1ca4e5a8f2d1f827ff6813282ee53535679960f77c061"
+    },
+    {
+      "id": "relationship:6e98927002f18eaf3fa25794097b6b08108d72dd486be162172efe0dad828f23",
+      "from": "structural-concept:6ad884d7f63c68fcd5d7bce12e844d684a0c27269b0adcd213070a0481da6d20",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-40536767939a4929ba69cd4afc939d0e6db5cec305840ed6c746268b5774a51b",
+      "evidence_ids": [
+        "cell-40536767939a4929ba69cd4afc939d0e6db5cec305840ed6c746268b5774a51b"
+      ],
+      "revision": "1",
+      "to": "structural-concept:692230da18a9587c72ecf80a458bb6fc2f55fdbd3dff423934429706f68ad2e9"
+    },
+    {
+      "id": "relationship:755061669bbbe8024a6751ea6a7e4ed161c580e65e120181550f910b01b01693",
+      "from": "structural-concept:23807ffbfaea41e25acc215089edf0e9b5346400ca41d5bcdb6a05dd67228590",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-6e101260ba852009bb0a1c79e87d6dadc6ebbc10743f55c81ecd799e27310630",
+      "evidence_ids": [
+        "cell-6e101260ba852009bb0a1c79e87d6dadc6ebbc10743f55c81ecd799e27310630"
+      ],
+      "revision": "1",
+      "to": "structural-concept:692230da18a9587c72ecf80a458bb6fc2f55fdbd3dff423934429706f68ad2e9"
+    },
+    {
+      "id": "relationship:874b887161c66339b42520d04ad7839afbb57deebd1c07e22c6bf9ad04003887",
+      "from": "structural-concept:da0d5d3d798ef37799c2d56017852ef4900fc719b9fc266f86e470c07d95aa07",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5",
+      "evidence_ids": [
+        "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5"
+      ],
+      "revision": "1",
+      "to": "structural-concept:d4b9080194fd2d8cccb1ca4e5a8f2d1f827ff6813282ee53535679960f77c061"
+    },
+    {
+      "id": "relationship:9461b37c6125df44007bc5ca0c2a20aa49034923ae7d518907ee088ad5c24e66",
+      "from": "structural-concept:784821d65a17c524dae1ef30a70e708b5eccc96e2ab96da150d7aea149405bd8",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-cd9d1ad16231877c8e0409452ef2dd348f3dddd92a240191eb9e760f0ce515ba",
+      "evidence_ids": [
+        "cell-cd9d1ad16231877c8e0409452ef2dd348f3dddd92a240191eb9e760f0ce515ba"
+      ],
+      "revision": "1",
+      "to": "structural-concept:da0d5d3d798ef37799c2d56017852ef4900fc719b9fc266f86e470c07d95aa07"
+    },
+    {
+      "id": "relationship:a56327d70f1b98c418901c21caefe6e3409d9b51cbe3439f2bca8a9aa3225add",
+      "from": "structural-concept:0b9aaaa9140d108de9d85860368406167159aff545ead973a2dff9c6f32f96cf",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-11a473417a0a36bc236cca18c608a09a5e8cf2bf1c7d164fa612e8abb60a1d00",
+      "evidence_ids": [
+        "cell-11a473417a0a36bc236cca18c608a09a5e8cf2bf1c7d164fa612e8abb60a1d00"
+      ],
+      "revision": "1",
+      "to": "structural-concept:da0d5d3d798ef37799c2d56017852ef4900fc719b9fc266f86e470c07d95aa07"
+    },
+    {
+      "id": "relationship:c50f87a57008c51831488adaf347828ea939c5d8df898315e92e01042872a343",
+      "from": "structural-concept:da0d5d3d798ef37799c2d56017852ef4900fc719b9fc266f86e470c07d95aa07",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5",
+      "evidence_ids": [
+        "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5"
+      ],
+      "revision": "1",
+      "to": "structural-concept:0b9aaaa9140d108de9d85860368406167159aff545ead973a2dff9c6f32f96cf"
+    },
+    {
+      "id": "relationship:cbbe3de21c25e442ffe6b4f9449d5741430b8dc2493f397aefc9949e2c799447",
+      "from": "structural-concept:a0fc7c9806a021832b5e95048b6b4008245cb260d8e9745884f046d1733eb46d",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c",
+      "evidence_ids": [
+        "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c"
+      ],
+      "revision": "1",
+      "to": "structural-concept:d4b9080194fd2d8cccb1ca4e5a8f2d1f827ff6813282ee53535679960f77c061"
+    },
+    {
+      "id": "relationship:e951a807a0423cf1cf5fb79249d8a7a11e6d0be308d8c02bd657ff6cff481aca",
+      "from": "structural-concept:0ff505322ea7b34bb63cd20b5e2e2859e1fe1eef46432bad9f95d78bfaf81762",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-f193d839e37c0618a3d01f03737a0ad8850d9717bc32fc44cfcc6241160b4f1a",
+      "evidence_ids": [
+        "cell-f193d839e37c0618a3d01f03737a0ad8850d9717bc32fc44cfcc6241160b4f1a"
+      ],
+      "revision": "1",
+      "to": "structural-concept:692230da18a9587c72ecf80a458bb6fc2f55fdbd3dff423934429706f68ad2e9"
+    },
+    {
+      "id": "relationship:f2aff210062ced4b27138ac26541c4338d415cb17cdbc3e1ac758c393a402d92",
+      "from": "structural-concept:e77ca3cd539a77464a4f56d1e322405b12978f1b0d7b5f25fe31eaca93616b09",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850",
+      "evidence_ids": [
+        "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850"
+      ],
+      "revision": "1",
+      "to": "structural-concept:c3ce133ec66e941a56f13dc65f2fae381e27772e52209652dc77cdf06609c38b"
+    },
+    {
+      "id": "relationship:f64204b56db27c3924a84a460bc5263df6ce6ea3a28999821eb340301a4161da",
+      "from": "structural-concept:2356819844e77831235c87c4c954edfda17a78ef0dff0f990b222fc18c89a797",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-815ffd6be4c22493c35c3376ddf3817e2016270c5c490e92d53156ff805f8a83",
+      "evidence_ids": [
+        "cell-815ffd6be4c22493c35c3376ddf3817e2016270c5c490e92d53156ff805f8a83"
+      ],
+      "revision": "1",
+      "to": "structural-concept:692230da18a9587c72ecf80a458bb6fc2f55fdbd3dff423934429706f68ad2e9"
+    },
+    {
+      "id": "relationship:fd22ccf5fb0e3c30006a8aad6b93d81e5a14e3e623d0a9a76258159b4cfc00ad",
+      "from": "structural-concept:a0fc7c9806a021832b5e95048b6b4008245cb260d8e9745884f046d1733eb46d",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c",
+      "evidence_ids": [
+        "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c"
+      ],
+      "revision": "1",
+      "to": "structural-concept:e77ca3cd539a77464a4f56d1e322405b12978f1b0d7b5f25fe31eaca93616b09"
+    }
+  ],
+  "literal_relationships": [],
+  "review": [
+    {
+      "id": "review-structural-concept:dda5e41684a24a7aca811c2d3921f8dabcfd2e3e831b3ecb6661835aa0208453",
+      "concept_id": "structural-concept:dda5e41684a24a7aca811c2d3921f8dabcfd2e3e831b3ecb6661835aa0208453",
+      "reason": "NO_QUALIFIED_EVIDENCE; COMPETING_EVIDENCE; UNRESOLVED_IDENTITY_COLLISION",
+      "resolution": "What evidence establishes the class of this ConceptSense?",
+      "evidence_ids": [
+        "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf",
+        "cell-2590d88a4d7a49f0f3943c68514f26cfb25e4c55b7c0e3c8c4d35bf5032a65fd"
+      ],
+      "revision": "1"
+    },
+    {
+      "id": "review-structural-concept:fe4ad8c58293ab69e58a8e35929d3757bd427114c61c398622115cb332d795fb",
+      "concept_id": "structural-concept:fe4ad8c58293ab69e58a8e35929d3757bd427114c61c398622115cb332d795fb",
+      "reason": "NO_QUALIFIED_EVIDENCE; AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR; UNRESOLVED_IDENTITY_COLLISION",
+      "resolution": "What evidence establishes the class of this ConceptSense?",
+      "evidence_ids": [
+        "cell-2590d88a4d7a49f0f3943c68514f26cfb25e4c55b7c0e3c8c4d35bf5032a65fd",
+        "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf"
+      ],
+      "revision": "1"
+    }
+  ],
+  "lifecycle": [
+    {
+      "id": "fsi:1d3b9af49abe1a607b6a767feff82d32",
+      "stage": "Loan Agreement · OBLIGATION_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: subject to repayment conditions | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-2778998f88a85742db63cd239513da6055e3d8e2753d33c8d9683ec6a7cd4cb5",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:20d1fd09af23bbd86c32f6427d9fbe0f",
+      "stage": "Interest Accrual · FINANCIAL_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-7ea10a215afa9624d118ecf17994dd276f0396b7699e61004871ab7d6380208e",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:26e4577d34de9c60146f6186f27f180a",
+      "stage": "Lender · CONTRACT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-11a473417a0a36bc236cca18c608a09a5e8cf2bf1c7d164fa612e8abb60a1d00",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:3784bd0ec76f63fe3f1fed2d3e230245",
+      "stage": "Settlement Date · OBLIGATION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-b577514fdd7ec3913040e9fd7c978279b602831494e46870afa65d3da74d126c",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:39392543d946f40e2e9a85248aae475a",
+      "stage": "Settlement · PAYMENT_INSTRUCTION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-40536767939a4929ba69cd4afc939d0e6db5cec305840ed6c746268b5774a51b",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:42171d130787c228a654e161e6e06ad4",
+      "stage": "Repayment Obligation · OBLIGATION_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-8ee83d2f4bc9b0b491aacfd74d1c2bbde2c1cac49baffb04cc343c6b44855850",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:5a5f5a9bc5c958b6320ae5b58eb42050",
+      "stage": "Delinquency · OBLIGATION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: when a scheduled payment remains unpaid after its due date; after its due date | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-65abdebefdd0ac5317963ea2a3efc1ef89aaaba588a47edb7b73224e74307b7c",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:5bbe59e3460592c14af83faa63b272d3",
+      "stage": "Due Date · OBLIGATION_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-45ea5b3941c02fab26c29214d6d5bb881ebb619f718b7251c5edd6e9eed4b0ca",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:958f4de8494da79d56fe12b79d4d8002",
+      "stage": "Payment Reversal · PAYMENT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-e0f9dede3321c6526e02b3a9c50e94fe7211b6e751806509747f5983b1de9740",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:aff341a156088055508c76afd7e49ec1",
+      "stage": "Payment Instruction · PAYMENT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-5dfe0daf966709ed69dc0b88add7e497db49a4740bddb79532f10aad27527e83",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:b6d65041459a69ae5cc7ee1143f5399b",
+      "stage": "Repayment Schedule · FINANCIAL_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: when the borrower must repay the outstanding loan balance | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-e568c2f39b26d1f321cf72df9576dfc16e1b27ca1525c71ed44a65e26df19b0c",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:b7f71982cbc925e039d4607d3a5f9f8a",
+      "stage": "Payment Execution · PAYMENT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-7c178685001571895073abfb8c71cd0e7b5dadf8d260f7f2e12e2754575aa199",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:b817b5b36d13a4ff014ccdae22f0c3d0",
+      "stage": "Payment Settlement · PAYMENT_INSTRUCTION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: before transfer is final | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-c97b035fb3edf1f5a120f06ac53d4ddc9121986e7500d16f67b3cd0d2185cdcf",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:c615c573a68d177845a06eb189e57fd2",
+      "stage": "Borrower · OBLIGATION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-6e52c327152c186a9ce71c08567c813025888d48e9c0e410f76334053ddf7578",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:cf58993bc4957d5896f48e05d3c752b4",
+      "stage": "Payment Submission · PAYMENT_INSTRUCTION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-815ffd6be4c22493c35c3376ddf3817e2016270c5c490e92d53156ff805f8a83",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:f7642c31d4ee2e9f570925db1f7d89bf",
+      "stage": "Credit Exposure · FINANCIAL_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: if a borrower fails to repay | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-ee934a9429a0e349a54a22d8b59cc0d43945e30cd770ce76276023959be8946c",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:f9304c0477692b83f9c7db96c2f2110a",
+      "stage": "Principal Balance · FINANCIAL_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-25f543bad16904f93d16a8674cb4d191c9b5de3c987ecf3d6cf48553b1c4980a",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:fe75f8a1e091795cdcd0d0b718cef844",
+      "stage": "Payment Authorization · PAYMENT_INSTRUCTION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: subject to stated conditions | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-6e101260ba852009bb0a1c79e87d6dadc6ebbc10743f55c81ecd799e27310630",
+      "revision": "1"
+    }
+  ],
+  "contracts": [],
+  "receipts": [],
+  "native_relationship_count": 20,
+  "native_unknown_count": 8,
+  "unresolved_observations": [
+    {
+      "id": "unknown-summary:4c47dc00be826546499dfd1831fc7299036f61f38159f42edf3c8af5b85003c4",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "Lending"
+    },
+    {
+      "id": "unknown-summary:58965ba55b34a84a685c0512c3aa640d40f9a598473adcb22c6ac5b2e984cd5b",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "Repayment"
+    },
+    {
+      "id": "unknown-summary:66938c1d3514e4bd33ab65b37733011862d8fc04331597631ad45853594af080",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "term:e4c02bb8bdd3470e780afff735f925959bfe6edd5773e9ffd882d0973aa9acdd"
+    },
+    {
+      "id": "unknown-summary:876ed4e9cfbac91620080a85d97de502bea2d8460b3a422af50c1b33ffbb020b",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "Credit Risk"
+    },
+    {
+      "id": "unknown-summary:99aeddf9227c816d91d2771a857fbe47d69650db9625950150b2b9ae910a4b95",
+      "reason": "INSUFFICIENT_IDENTITY_EVIDENCE",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": null
+    },
+    {
+      "id": "unknown-summary:d372b231a1fced6b6e99e4f934fd34a767703eacadf8f0bd7c49721bcf4c8ccc",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "Loan Accounting"
+    },
+    {
+      "id": "unknown-summary:ece6ca4f7586facf9604d622f4ebd4d75a3a83099cd674940e5dba94d259c508",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "Insurance Claims"
+    },
+    {
+      "id": "unknown-summary:f1d8e550e86a92aa0c3670378f0315af5d51ac034b844f581d94b91a8719ea9a",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "Payments"
+    }
+  ]
+}

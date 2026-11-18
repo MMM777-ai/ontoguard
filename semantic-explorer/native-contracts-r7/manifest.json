@@ -1,0 +1,49 @@
+{
+  "schema": "ontoguard.native-contract-manifest@1",
+  "release": "1.89.332",
+  "scope": "CONTROLLED_RUNTIME_OUTPUT_PENDING_DISCLOSURE",
+  "files": [
+    {
+      "name": "parser-report.json",
+      "sha256": "cbc7df00480c759555c711b1787ec27c8d277000a604c7d9af9fbc7355072255",
+      "length": 4015
+    },
+    {
+      "name": "source-Q-dictionary.xlsx",
+      "sha256": "a41fb0799274806b4731a79969a020ae9e7b589575962941daed0a47d2fe93dc",
+      "length": 5032
+    },
+    {
+      "name": "source-Q-glossary.xlsx",
+      "sha256": "513ed075cd24966a4169b486be4eec3971eba18167135ae32f10d6e6651e1a15",
+      "length": 5020
+    },
+    {
+      "name": "source-Q-owner.xlsx",
+      "sha256": "96869be26e2b22700302afc7ce6ba95e3e1199e4018d7e50c180c38a8109ad6f",
+      "length": 4991
+    },
+    {
+      "name": "source-T-dictionary.xlsx",
+      "sha256": "5bfef9d10a23b4340d5d46203b8b827a8870223834ff7758b843283641d37f25",
+      "length": 5053
+    },
+    {
+      "name": "source-T-glossary.xlsx",
+      "sha256": "513ed075cd24966a4169b486be4eec3971eba18167135ae32f10d6e6651e1a15",
+      "length": 5020
+    },
+    {
+      "name": "source-T-owner.xlsx",
+      "sha256": "96869be26e2b22700302afc7ce6ba95e3e1199e4018d7e50c180c38a8109ad6f",
+      "length": 4991
+    },
+    {
+      "name": "track.json",
+      "sha256": "cfc1896753605878857eb89202d3fc384ccdeb0e57518d0b23271c6710c9b478",
+      "length": 84900
+    }
+  ],
+  "approval_id": null,
+  "signature": null
+}

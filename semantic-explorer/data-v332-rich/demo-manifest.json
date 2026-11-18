@@ -1,0 +1,131 @@
+{
+  "schema_version": 3,
+  "demo_id": "controlled-lending-v332-rich",
+  "revision": "1",
+  "scope": "CONTROLLED_RUNTIME_OUTPUT",
+  "release": "1.89.332",
+  "run_id": "b4ca1467635947f5baa8aa2c3ff4f116",
+  "asset_id": "compiled-asset:b4ca1467635947f5baa8aa2c3ff4f116",
+  "product": "Semantic Intelligence Runtime OEM",
+  "runtime_package_sha256": "6f00ef9ff5a6ded5a1394e405b4517a699a82f390b99c0ccb1566da06ffb1012",
+  "runtime_wheel_sha256": "55e669770d2bbfe0db14bbff4f4997655ee9af73fe8eca02230b6ee4dae3dd72",
+  "generation_date": "2026-11-18",
+  "approval_reference": "PENDING_OWNER_DISCLOSURE_REVIEW",
+  "signature": null,
+  "native_sha256": {
+    "native.jsonl": "46c228add488771e18398fede4f51bb486b982886ae3fecab0df007cb6d7607f",
+    "native.ttl": "c7b18b41d421ad5e50e5fc9989d289ce7e1969c0e48259219dcfcdcb074bd8af",
+    "native.xlsx": "16b9095fc71236cec025d8ca918adfbffefb3ca1554e4c767924d2c8db55af00",
+    "native.zip": "09df4d891a9315dfcddede66f004c8df8369f3088b517e368d478bd38a6a6817"
+  },
+  "publication_status": "ONTOLOGY_READY",
+  "production_qualification_status": "NOT_QUALIFIED_FOR_THIS_DEMO",
+  "population": {
+    "visible_constituted": 22,
+    "review_required": 2,
+    "accepted_count": 20,
+    "relationships": 20,
+    "native_relationships": 20,
+    "count_rule": "Native constituted population minus native review-required count; graph includes only native graph edges; literal relationships separately listed."
+  },
+  "files": [
+    {
+      "name": "concepts.jsonl",
+      "length": 40186,
+      "sha256": "a866de6087ab36c472470a7d9d78ffec2c4204a1f9492769847b684f2745f61c",
+      "required": true,
+      "type": "jsonl"
+    },
+    {
+      "name": "concepts.xlsx",
+      "length": 14384,
+      "sha256": "673a10df090a3baca0b326fb2ea2fbb7c4fdc743990b9851360c5078c361c99d",
+      "required": true,
+      "type": "xlsx"
+    },
+    {
+      "name": "contracts.json",
+      "length": 39,
+      "sha256": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "dataset.json",
+      "length": 89556,
+      "sha256": "3328560761560d88d7e3f78bedae3799ef62bed411dc19370242507d16c28acb",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "glossary-cells.json",
+      "length": 2686,
+      "sha256": "b52e397a6f9afce9615e3571781539504c583df9f9c9e7ec17238b9da9b73e82",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "glossary.xlsx",
+      "length": 6076,
+      "sha256": "a7f1e3a812b43e8062ac09ebf5bbe72ed7954dc8e7aeb27fe55651f37f6b8764",
+      "required": true,
+      "type": "xlsx"
+    },
+    {
+      "name": "graph.ttl",
+      "length": 20152,
+      "sha256": "3473b013465f9096c09b7dc1194d594bef46246740da0c6449351fc663bd1136",
+      "required": true,
+      "type": "ttl"
+    },
+    {
+      "name": "literal-relationships.json",
+      "length": 39,
+      "sha256": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "native-contract-summary.json",
+      "length": 382,
+      "sha256": "6341437f64ba968c7fe9711c18b793c0d6100e5722ee6598c7d7b0a4fae3a5a8",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "parity-report.json",
+      "length": 2602,
+      "sha256": "67b902e510410e5b2dbd9f2240a404e160426d94ba61cf37691e548ba9f5fffb",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "receipts.json",
+      "length": 39,
+      "sha256": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "relationships.json",
+      "length": 11921,
+      "sha256": "12c96cd46aa06a90f53388b2d6d75dd847fc70d9376d02d6c938c29c53c0b648",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "treasury-cells.json",
+      "length": 495,
+      "sha256": "e8bcdfad8b958d8a27692d1dd0c88e948b727f8767cb2103e65848ef3d5e4d77",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "treasury.xlsx",
+      "length": 5164,
+      "sha256": "9da251d21ee79e19fedc6dd7e064c613dfee0226a40d0a8d2bb20e48f46f7c04",
+      "required": true,
+      "type": "xlsx"
+    }
+  ]
+}
