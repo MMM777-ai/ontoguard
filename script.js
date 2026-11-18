@@ -1,10 +1,6 @@
 (function () {
   "use strict";
-  function track(name, props) {
-    if (typeof window.plausible === "function") {
-      try { window.plausible(name, { props: props || {} }); } catch (e) {}
-    }
-  }
+  function track(name, props) { /* Analytics disabled in public static edition. */ }
   window.ontoguardTrackEvent = track;
   window.ontoguardViewportClass = function () {
     var width = window.innerWidth || document.documentElement.clientWidth || 0;

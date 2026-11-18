@@ -1,0 +1,275 @@
+{
+  "schema": "ontoguard.public-facts@1",
+  "website_release": "ontoguard-website-20261118-r12-portable-public-disclosure",
+  "review_status": "PENDING_OWNER_APPROVAL",
+  "products": [
+    {
+      "name": "OntoGuard Semantic Intelligence Runtime OEM",
+      "version": "1.89.332",
+      "url": "https://ontoguard.ai/semantic-intelligence-runtime.html",
+      "evidence": "https://ontoguard.ai/semantic-explorer/contracts.html"
+    },
+    {
+      "name": "OntoGuard Headless Decision Authorization Runtime",
+      "version": "1.5.2",
+      "url": "https://ontoguard.ai/headless-decision-authorization-runtime.html",
+      "evidence": "https://ontoguard.ai/proof-explorer/index.html"
+    }
+  ],
+  "release_facts": {
+    "si": {
+      "release": "1.89.332",
+      "release_approved": true,
+      "commercial_production_ready": true,
+      "authorizes": false,
+      "counts": {
+        "constituted_concepts": 1362,
+        "relationships": 3434,
+        "exports": 17,
+        "xlsx_jsonl_core_mismatches": 0
+      },
+      "metrics": {
+        "established_definition_precision": {
+          "good": 279,
+          "n": 281,
+          "pct": 99.3
+        },
+        "candidate_definition_precision": {
+          "good": 37,
+          "n": 38,
+          "pct": 97.4
+        },
+        "domain_precision": {
+          "good": 334,
+          "n": 334,
+          "pct": 100.0
+        },
+        "category_accuracy": {
+          "good": 333,
+          "n": 333,
+          "pct": 100.0
+        },
+        "pdf_recall": {
+          "n": 14,
+          "pct": 92.9,
+          "present": 13
+        }
+      },
+      "structured_recall": {
+        "present_or_merged": 119,
+        "denominator": 121,
+        "pct": 98.3
+      },
+      "native_profiles": [
+        "bounded-owl",
+        "csv",
+        "docx",
+        "dtsx",
+        "jpeg",
+        "json",
+        "jsonl",
+        "jsonld",
+        "mp4",
+        "nquads",
+        "ntriples",
+        "obo",
+        "pdf",
+        "png",
+        "pptx",
+        "pyspark",
+        "python",
+        "rdfxml",
+        "shacl-core",
+        "sql",
+        "text",
+        "turtle",
+        "wav",
+        "xlsx",
+        "xml",
+        "yaml",
+        "zip"
+      ],
+      "export_formats": [
+        "csv",
+        "graphml",
+        "json",
+        "jsonl",
+        "jsonld",
+        "nquads",
+        "ntriples",
+        "owl",
+        "package",
+        "pdf",
+        "png",
+        "python",
+        "rdfxml",
+        "sparql",
+        "svg",
+        "turtle",
+        "xlsx"
+      ],
+      "documented_api_paths": 157,
+      "qualification_scope": "Release-reported selected corpus and release engineer scoring. Residual semantic errors exist; not independent external review. Not a latency guarantee. Separate from synthetic site demonstration.",
+      "approval": "PENDING_OWNER_APPROVAL",
+      "selected_source_tests": 1244,
+      "selected_installed_tests": 1244,
+      "commercial_gate": {
+        "passed": 20,
+        "total": 20
+      },
+      "same_host_replay_seconds": {
+        "parallel": 186.6,
+        "serial": 194.2,
+        "baseline_parallel": 234.2,
+        "baseline_serial": 235.4
+      },
+      "historical_inventory": {
+        "failed": 451,
+        "skipped": 52,
+        "scope": "Outside selected qualification campaign"
+      }
+    },
+    "da": {
+      "release": "1.5.2",
+      "selected_source_tests": 463,
+      "selected_installed_tests": 463,
+      "python": "3.13.5",
+      "reference_anchor_added_p95_ms": 23.102914999981294,
+      "reference_group_commit_auth_s_tenant": 3714.3882661739094,
+      "commit_window_ms": 20,
+      "scope": "Release-reported reference log; external production log, Python 3.12 qualification and signed OCI not established. No end-to-end guarantee.",
+      "approval": "PENDING_OWNER_APPROVAL"
+    }
+  },
+  "native_contracts": {
+    "source": "https://ontoguard.ai/semantic-explorer/native-contracts-r7/track.json",
+    "scope": "CONTROLLED_RUNTIME_OUTPUT_PENDING_DISCLOSURE",
+    "asset_revision_records": 4,
+    "contract_version_records": 5,
+    "receipts": 7,
+    "same_asset_revisions": [
+      "A",
+      "B",
+      "C"
+    ],
+    "separate_source_edited_asset": "T",
+    "authorizes": false
+  },
+  "references": [
+    "https://github.com/agentrust-io/integrations/pull/201",
+    "https://github.com/agentrust-io/integrations/pull/236"
+  ],
+  "native_lineage_example": {
+    "runtime": "1.89.332",
+    "scope": "controlled synthetic source assertions; pending disclosure approval",
+    "concepts": 8,
+    "graph_edges": 7,
+    "source_locators": 16,
+    "native_predicate": "INTENDED_TO_FULFILL",
+    "standing": "CANDIDATE",
+    "url": "https://ontoguard.ai/semantic-intelligence-obligations.html",
+    "limits": "No established transaction identity, settlement, discharge or operative authority."
+  },
+  "verification_scope": {
+    "contract": "Exact original native store and response recheck; browser projection and report binding only; publisher authentication NOT VERIFIED",
+    "lineage": "Fresh replay reproduced candidate source-linked output; established same-transaction identity not demonstrated",
+    "da": "Fresh isolated mock execution and historical packet verification; V16 NOT RUN"
+  },
+  "contact_mode": "email-draft",
+  "website_variant": "static-portable-commercial-public-disclosure",
+  "buyer_positioning": {
+    "company": "Two independently licensable enterprise infrastructure runtimes; evidence-qualified meaning and exact-action permission-to-act are separate responsibilities.",
+    "si": {
+      "private_core": "Completely offline, CPU, no LLM, internet, GPU or cloud AI required; air-gapped with locally provisioned dependencies. Optional providers are not authority.",
+      "differentiation": [
+        {
+          "capability": "Meaning you can defend",
+          "description": "Every visible constituted concept must have a real semantic identity, a definition, a domain, a category, standing and exact supporting source evidence. This is more than extracting names or generating plausible descriptions.",
+          "potential_buyer_value": "Reduce time spent tracing definitions and explaining decisions to data owners and auditors."
+        },
+        {
+          "capability": "One ontology, disagreements included",
+          "description": "Competing meanings, uncertain classifications and unresolved conflicts stay visible. Business and technical concepts coexist without collapsing different senses or treating absence of evidence as false.",
+          "potential_buyer_value": "Avoid silently propagating inconsistent definitions into reports, models and agents."
+        },
+        {
+          "capability": "Business obligations, not just field names",
+          "description": "The finance-first, domain-extensible model captures who owes what, to whom, under what conditions, with relevant amount, currency, time, lifecycle and lineage when supported. A source assertion is not legal discharge or authority.",
+          "potential_buyer_value": "Make contract, lending, payments and other operational information more usable without manufacturing facts."
+        },
+        {
+          "capability": "Three levels of truth",
+          "description": "What a source says, what it means, and what is actually in force or authorized are separate. Unknown settlement or fulfillment stays unknown until appropriate evidence exists.",
+          "potential_buyer_value": "Prevent a status label from becoming an unsupported business conclusion."
+        },
+        {
+          "capability": "Contracts that govern meaning",
+          "description": "Generate native semantic data contracts for eligible fields from a sealed revision. Strict validation, receipts, staleness and drift checks distinguish a changed definition from an unchanged physical data type.",
+          "potential_buyer_value": "Catch meaning changes before they flow silently into downstream reporting or integrations."
+        },
+        {
+          "capability": "One version, every representation",
+          "description": "A governed semantic asset drives UI, API and export projections. Qualified input profiles and all 17 output formats, with release-reported cross-format parity checks, make the meaning reusable.",
+          "potential_buyer_value": "Reuse the asset across existing catalog, graph, BI and application tools rather than rebuilding maps for each consumer."
+        }
+      ],
+      "input_profile_count": 27,
+      "output_format_count": 17,
+      "api_path_count": 157,
+      "complete_format_listing": "https://ontoguard.ai/semantic-intelligence-runtime.html#formats"
+    },
+    "da": {
+      "differentiation": [
+        {
+          "capability": "Permission bound to the exact action",
+          "description": "Bind the actor, operation, target and material parameters—not a broad approval, token or model score. Changing a material amount, recipient or target invalidates the earlier binding.",
+          "potential_buyer_value": "Reduce exposure to substituted or manipulated payments, record changes and privileged tool calls."
+        },
+        {
+          "capability": "Authority comes from trusted systems",
+          "description": "Use controlled policy, authority, evidence and current resource state rather than claims supplied by an agent. Keep the actual business decision with its authorized human or system owner.",
+          "potential_buyer_value": "Keep existing approvals and accountability intact across agentic workflows."
+        },
+        {
+          "capability": "Check again immediately before effect",
+          "description": "An earlier ALLOW is not permanent permission. Re-evaluate current conditions at the protected execution point; missing or changed required authority is refused or routed for review.",
+          "potential_buyer_value": "Close the gap between approval and execution when circumstances change."
+        },
+        {
+          "capability": "Fail closed at the protected boundary",
+          "description": "A trusted executor verifies the exact signed, anchored consume acknowledgement before a protected effect. A decision endpoint alone is not enforcement; all relevant routes must be controlled for the desired protection.",
+          "potential_buyer_value": "Make the wrong action fail at the route that matters, not just generate an alert."
+        },
+        {
+          "capability": "Recovery without inventing an outcome",
+          "description": "Idempotent retry, reconciliation and explicit unresolved outcomes distinguish a consumed authorization from an observed effect. Missing receipt evidence is not treated as no effect.",
+          "potential_buyer_value": "Support incident investigation and recovery without turning an ambiguous retry into a new business action."
+        },
+        {
+          "capability": "Proof another party can verify",
+          "description": "Correlate authorization, pre-effect consume, reasons and a separate signed outcome. Portable packets and a standalone verifier support verification without trusting the live runtime; independent production log and pinned trust are deployment requirements.",
+          "potential_buyer_value": "Give audit, risk and customer teams a defensible approval-to-effect record within the covered route."
+        }
+      ],
+      "public_proof_scope": "Reviewed adapter and bounded software harness only; no customer deployment or production-wide non-bypassability.",
+      "public_proof": [
+        {
+          "pr": "https://github.com/agentrust-io/integrations/pull/201",
+          "adapter_tests": 27,
+          "exact_payment_usd": 250000,
+          "altered_payment_usd": 260000,
+          "exact_commits": 1,
+          "altered_commits": 0
+        },
+        {
+          "pr": "https://github.com/agentrust-io/integrations/pull/236",
+          "negative_probes_refused": 97,
+          "positive_actions_executed": 4,
+          "integration_tests": 36
+        }
+      ]
+    },
+    "commercial_scope": "Potential buyer value, not guaranteed ROI. Enterprise and OEM licensing; focused paid evaluations with buyer-owned inputs and protected route."
+  },
+  "public_disclosure": "Public product behavior and scoped synthetic outputs only. Detailed runtime source, implementation, API contracts and private diligence materials are not distributed."
+}

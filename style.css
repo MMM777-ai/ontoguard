@@ -448,3 +448,16 @@ h3{font-size:1.2rem;line-height:1.3;margin-bottom:8px}
 @media (max-width:860px){.cap-grid{grid-template-columns:1fr}}
 .cap-card{background:#0f1a29;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px}
 .cap-card h3{margin:0 0 8px}
+
+/* Shared legacy proof readability (original archive HTML and evidence remain immutable). */
+.proof-explorer-page .pe-verification-list li:not(.pass):not(.mismatch):not(.unavailable):not(.partial) strong{color:#526579}
+.proof-explorer-page .pe-boundary-section .card-kicker{color:#8ce6df}
+.proof-explorer-page .pe-scenario-button{min-width:0;overflow-wrap:anywhere;white-space:normal}
+@media(max-width:700px){.proof-explorer-page .pe-core-why,.proof-explorer-page .pe-capability-detail-grid,.proof-explorer-page .pe-consequence-custody{grid-template-columns:minmax(0,1fr)}.proof-explorer-page .pe-consequence-custody dl,.proof-explorer-page .pe-capability-detail-grid dl div{grid-template-columns:minmax(0,1fr)}}
+
+/* Historical presentation navigation: bounded readable menus. */
+.site-header .nav-desktop .dropdown{width:min(300px,calc(100vw - 32px));min-width:min(300px,calc(100vw - 32px));max-width:min(300px,calc(100vw - 32px));overflow-wrap:normal;word-break:normal;z-index:90}
+.site-header .nav-desktop .nav-item:nth-last-child(-n+2) .dropdown,.site-header .nav-desktop .nav-drop:nth-last-child(-n+2) .dropdown{left:auto;right:0}
+.site-header .dropdown a{min-height:44px;white-space:normal;overflow-wrap:break-word;word-break:normal;line-height:1.4}
+.site-header .mobile-panel .dropdown{position:static;width:100%;min-width:0;max-width:100%;margin:.35rem 0;box-shadow:none}
+.site-header .nav-drop:not([open])>.dropdown{display:none}
