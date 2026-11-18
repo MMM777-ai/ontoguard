@@ -1,0 +1,15 @@
+{
+  "keys": [
+    {
+      "crv": "Ed25519",
+      "kid": "og-rt-215b0161bdd8b581",
+      "kty": "OKP",
+      "x": "WFGyefqt79LhXILgc_y73KA5-TU-A9aUn7OK7p28X_E",
+      "use": "authorization",
+      "status": "active",
+      "valid_from": "2026-11-18T02:28:08.224320Z",
+      "valid_until": null,
+      "ephemeral": false
+    }
+  ]
+}

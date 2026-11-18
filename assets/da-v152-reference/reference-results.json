@@ -1,0 +1,655 @@
+{
+  "release": "1.5.2",
+  "scope": "Fresh synthetic reference-vector generation by installed wheel; synthetic ledger/receipt fixtures; not a live target execution, independent production log, or verified publisher identity. Owner disclosure pending. Historical age disabled; V16 online not run.",
+  "package_sha256": "964abe668544f3c82f4528270059779632b8e2c9e68e5cb305a5a55619799c21",
+  "results": [
+    {
+      "vector": "tamper-v01.zip",
+      "track": "test-vectors",
+      "sha256": "6f10b699d8aecc1d9890931e77af325f1c9fadb785014ae37554a41477934cee",
+      "verdict": "FAIL",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "FAIL"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "download": "tamper-v01.zip",
+      "runtime_version": "1.5.2",
+      "environment": "NON_PRODUCTION",
+      "created_at": "2026-11-18T02:06:06.580744Z",
+      "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+      "action": "RELEASE_PAYMENT",
+      "decision": "ALLOW",
+      "execution_authorized": true,
+      "packet_profile": "shareable",
+      "trust_key_file": "legacy-runtime-jwks.json",
+      "historical_age_check": "disabled",
+      "online_freshness": "NOT RUN",
+      "scope": "Synthetic verifier reference fixture, not observed customer effect or real executor test"
+    },
+    {
+      "vector": "tamper-v03.zip",
+      "track": "test-vectors",
+      "sha256": "3f2311b040276039ba1a9ebf673961db5d265050c82bf012bba8b8978225d5e7",
+      "verdict": "FAIL",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "FAIL"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "download": "tamper-v03.zip",
+      "runtime_version": "1.5.2",
+      "environment": "NON_PRODUCTION",
+      "created_at": "2026-11-18T02:06:06.580744Z",
+      "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+      "action": "RELEASE_PAYMENT",
+      "decision": "ALLOW",
+      "execution_authorized": true,
+      "packet_profile": "shareable",
+      "trust_key_file": "legacy-runtime-jwks.json",
+      "historical_age_check": "disabled",
+      "online_freshness": "NOT RUN",
+      "scope": "Synthetic verifier reference fixture, not observed customer effect or real executor test"
+    },
+    {
+      "vector": "valid-allow-executed.zip",
+      "track": "test-vectors",
+      "sha256": "389ed8e1a9944791256243d63d745e322fd1355cf65ff6c4249f1f540477a30f",
+      "verdict": "PASS_WITH_WARNINGS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "download": "valid-allow-executed.zip",
+      "runtime_version": "1.5.2",
+      "environment": "NON_PRODUCTION",
+      "created_at": "2026-11-18T02:06:06.580744Z",
+      "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+      "action": "RELEASE_PAYMENT",
+      "decision": "ALLOW",
+      "execution_authorized": true,
+      "packet_profile": "shareable",
+      "trust_key_file": "legacy-runtime-jwks.json",
+      "historical_age_check": "disabled",
+      "online_freshness": "NOT RUN",
+      "scope": "Synthetic verifier reference fixture, not observed customer effect or real executor test"
+    },
+    {
+      "vector": "valid-block-no-effect.zip",
+      "track": "test-vectors",
+      "sha256": "8a36d66a148db36c3d475f3b9cabd2b7f4a32bd2ad6618f333966abf1be800ee",
+      "verdict": "PASS_WITH_WARNINGS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "download": "valid-block-no-effect.zip",
+      "runtime_version": "1.5.2",
+      "environment": "NON_PRODUCTION",
+      "created_at": "2026-11-18T02:06:06.589836Z",
+      "packet_id": "6465fad5-a2ee-4a7f-a06b-4fa6186406a1",
+      "action": "RELEASE_PAYMENT",
+      "decision": "BLOCK",
+      "execution_authorized": false,
+      "packet_profile": "shareable",
+      "trust_key_file": "legacy-runtime-jwks.json",
+      "historical_age_check": "disabled",
+      "online_freshness": "NOT RUN",
+      "scope": "Synthetic verifier reference fixture, not observed customer effect or real executor test"
+    },
+    {
+      "vector": "valid-escalate-then-resolved.zip",
+      "track": "test-vectors",
+      "sha256": "de9c48e35e146a730c9cf2f049c6e2792f1bab738280530269a925abcbc14261",
+      "verdict": "PASS_WITH_WARNINGS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "download": "valid-escalate-then-resolved.zip",
+      "runtime_version": "1.5.2",
+      "environment": "NON_PRODUCTION",
+      "created_at": "2026-11-18T02:06:06.601754Z",
+      "packet_id": "bf2521b4-f4b0-4790-bddc-76211d210ff9",
+      "action": "RELEASE_PAYMENT",
+      "decision": "ESCALATE",
+      "execution_authorized": false,
+      "packet_profile": "shareable",
+      "trust_key_file": "legacy-runtime-jwks.json",
+      "historical_age_check": "disabled",
+      "online_freshness": "NOT RUN",
+      "scope": "Synthetic verifier reference fixture, not observed customer effect or real executor test"
+    },
+    {
+      "vector": "forged-receipt.zip",
+      "track": "r15",
+      "sha256": "0dd2f400d009ccefd432e2761c6b9c333f476b91ebfe82b686076653e27f50f0",
+      "verdict": "FAIL",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "PASS"
+        },
+        {
+          "code": "V15",
+          "status": "FAIL"
+        }
+      ],
+      "download": "forged-receipt.zip",
+      "runtime_version": "1.5.2",
+      "environment": "PRODUCTION",
+      "created_at": "2026-11-18T02:06:07.699740Z",
+      "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+      "action": "RELEASE_PAYMENT",
+      "decision": "ALLOW",
+      "execution_authorized": true,
+      "packet_profile": "shareable",
+      "trust_key_file": "anchored-runtime-jwks.json",
+      "historical_age_check": "disabled",
+      "online_freshness": "NOT RUN",
+      "scope": "Synthetic verifier reference fixture, not observed customer effect or real executor test"
+    },
+    {
+      "vector": "missing-anchor.zip",
+      "track": "r15",
+      "sha256": "02429db8a0785a4debc61c4e172ec54d7daba83b7d483c8d4590ef55ca315f69",
+      "verdict": "FAIL",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "PASS"
+        },
+        {
+          "code": "V15",
+          "status": "FAIL"
+        }
+      ],
+      "download": "missing-anchor.zip",
+      "runtime_version": "1.5.2",
+      "environment": "PRODUCTION",
+      "created_at": "2026-11-18T02:06:07.699740Z",
+      "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+      "action": "RELEASE_PAYMENT",
+      "decision": "ALLOW",
+      "execution_authorized": true,
+      "packet_profile": "shareable",
+      "trust_key_file": "anchored-runtime-jwks.json",
+      "historical_age_check": "disabled",
+      "online_freshness": "NOT RUN",
+      "scope": "Synthetic verifier reference fixture, not observed customer effect or real executor test"
+    },
+    {
+      "vector": "valid-anchored.zip",
+      "track": "r15",
+      "sha256": "56eaf96fbf6d3bdefb400adbc425e2dbeed07af5b2318981ca52f4c87d0b0111",
+      "verdict": "PASS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "PASS"
+        },
+        {
+          "code": "V15",
+          "status": "PASS"
+        }
+      ],
+      "download": "valid-anchored.zip",
+      "runtime_version": "1.5.2",
+      "environment": "PRODUCTION",
+      "created_at": "2026-11-18T02:06:07.699740Z",
+      "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+      "action": "RELEASE_PAYMENT",
+      "decision": "ALLOW",
+      "execution_authorized": true,
+      "packet_profile": "shareable",
+      "trust_key_file": "anchored-runtime-jwks.json",
+      "historical_age_check": "disabled",
+      "online_freshness": "NOT RUN",
+      "scope": "Synthetic verifier reference fixture, not observed customer effect or real executor test"
+    }
+  ]
+}

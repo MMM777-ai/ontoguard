@@ -1,0 +1,9 @@
+Product,Metric,Buyer baseline,Evaluation observation,Unit,Notes
+SI,Manual ontology construction,,,hours,Comparable corpus
+SI,Reconciliation and rework,,,hours,Include review burden
+SI,Source evidence accuracy,,,percent,Sample independently
+SI,Integration and review cost,,,buyer input,No assumed savings
+DA,Exact action allow and refusal,,,count,Track false blocks and escalations
+DA,Review and audit time,,,hours,Comparable workflow
+DA,Protected corridor latency,,,ms,Measure end to end
+DA,Integration and log cost,,,buyer input,No assumed savings

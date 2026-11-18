@@ -1,0 +1,2881 @@
+{
+  "release": "1.5.2",
+  "scope": "Build-extracted, allowlisted packet fields. Tampered packets may contain false claims; recorded verifier verdict controls interpretation. No current freshness or independently authenticated publisher.",
+  "packets": [
+    {
+      "id": "SYNTHETIC_VERIFIER_VECTOR-tamper-v01",
+      "title": "Tamper V01",
+      "scope": "SYNTHETIC_VERIFIER_VECTOR",
+      "file": "/assets/da-v152-reference/tamper-v01.zip",
+      "sha256": "6f10b699d8aecc1d9890931e77af325f1c9fadb785014ae37554a41477934cee",
+      "length": 4948,
+      "expected_offline_result": "FAIL",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "FAIL"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-reference/legacy-runtime-jwks.json",
+      "log_key": null,
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json",
+        "unexpected.txt"
+      ],
+      "manifest": {
+        "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+        "created_at": "2026-11-18T02:06:06.580744Z",
+        "environment": "NON_PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 2786,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:ffc90ab9603ee8cef29231c036666204bfe1f25764a8887dcf7f40ef63a9e307"
+          },
+          {
+            "bytes": 714,
+            "path": "keys.json",
+            "sha256": "sha256:cf8a8c2ed0314d800053ffeb35a3ca01643a4b86c98b3476fd3e8e4ded0ab299"
+          },
+          {
+            "bytes": 1240,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:2ba4811673ac5cfc306393b0fa3caa0fa8cc57c0ada515fc6c9154eb7564514b"
+          },
+          {
+            "bytes": 5944,
+            "path": "lifecycle.json",
+            "sha256": "sha256:bdefbdb7d0ee55a74112726706bb5be8341b56680266d6688422174f42321c5c"
+          }
+        ],
+        "authorization_ids": [
+          "allow-executed"
+        ],
+        "anchor_freshness_verified": true,
+        "payload_sha256": "sha256:24222da8bcf4060d6bf19bd292f5e257b996ce36ea22332a603ba30c3f8310bc",
+        "kid": "og-rt-c508578aa9e38bd5"
+      },
+      "authorization": {
+        "authorization_id": "allow-executed",
+        "decision": "ALLOW",
+        "execution_authorized": true,
+        "release_authorized": true,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": null,
+        "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+        "authority_context_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:06:06.571033Z",
+        "expires_at": "2026-11-18T03:06:06.571033Z",
+        "payload_sha256": "sha256:7394678790e640d2dcb530049f17e3df0afd12f1ac7c6425e605737c6ad9e23c",
+        "kid": "og-rt-2466673b6fb02090"
+      },
+      "lifecycle": {
+        "terminal_state": "EXECUTED_EFFECT_FORMED",
+        "protected_effect_formed": true,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:c0d5aff61de0d65b759d5eaef911fb2a12cca55e69a828d4122042f125f15af4",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:06:06.572276Z"
+          },
+          {
+            "actor": "executor",
+            "entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+            "event": "EXECUTION_RECEIPT_ACCEPTED",
+            "time": "2026-11-18T02:06:06.575573Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 3,
+          "root_hash": "sha256:60fd2278e11fec06302dee3e32846807b684e55b6dda779f91417b23a7215b20",
+          "head_entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+          "signed_at": "2026-11-18T02:06:06.578469Z",
+          "payload_sha256": "sha256:d43699952ce91ba04bcbaffb81d316601108c436911ac03a56eb28adb2268915",
+          "kid": "og-rt-c508578aa9e38bd5"
+        },
+        "log_receipt": {},
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:6fb0c2299712a91cc948f4dc2e3817a583a1d5b80d17650f91903b4a2eec9397",
+              "sha256:e2c79c29878b5df4357f852c28924a35d35bc2d6b6c737c2d9f41e06fa70edce"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 2,
+            "tenant": "vectors",
+            "tree_size": 3
+          },
+          {
+            "audit_path": [
+              "sha256:03de52f30f07b34612497076e83f9c1de96ef4b76783bb0ea0c3c6b269868a7c"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 3,
+            "tenant": "vectors",
+            "tree_size": 3
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:c0d5aff61de0d65b759d5eaef911fb2a12cca55e69a828d4122042f125f15af4",
+            "recorded_body_fields": {
+              "authorization_id": "allow-executed",
+              "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+              "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+            }
+          },
+          {
+            "event": "EXECUTION_RECEIPT_ACCEPTED",
+            "entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+            "recorded_body_fields": {
+              "authorization_id": "allow-executed",
+              "executed": true,
+              "protected_effect_formed": true,
+              "execution_event_id": "exec-allow"
+            }
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+        "authorization_id": "allow-executed",
+        "packet_sha256": "6f10b699d8aecc1d9890931e77af325f1c9fadb785014ae37554a41477934cee",
+        "length": 4948,
+        "runtime_key_sha256": "6f3827277b69ff58fbc6797da2c22d4ed3572d80ac0a75fc575fdb6265f1e874",
+        "log_key_sha256": null,
+        "verdict": "FAIL",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "FAIL"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "WARN"
+          },
+          {
+            "code": "V15",
+            "status": "WARN"
+          }
+        ],
+        "terminal_state": "EXECUTED_EFFECT_FORMED",
+        "checkpoint_tree_size": 3,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "SYNTHETIC_VERIFIER_VECTOR-tamper-v03",
+      "title": "Tamper V03",
+      "scope": "SYNTHETIC_VERIFIER_VECTOR",
+      "file": "/assets/da-v152-reference/tamper-v03.zip",
+      "sha256": "3f2311b040276039ba1a9ebf673961db5d265050c82bf012bba8b8978225d5e7",
+      "length": 4836,
+      "expected_offline_result": "FAIL",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "FAIL"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-reference/legacy-runtime-jwks.json",
+      "log_key": null,
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+        "created_at": "2026-11-18T02:06:06.580744Z",
+        "environment": "NON_PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 2786,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:ffc90ab9603ee8cef29231c036666204bfe1f25764a8887dcf7f40ef63a9e307"
+          },
+          {
+            "bytes": 714,
+            "path": "keys.json",
+            "sha256": "sha256:cf8a8c2ed0314d800053ffeb35a3ca01643a4b86c98b3476fd3e8e4ded0ab299"
+          },
+          {
+            "bytes": 1240,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:2ba4811673ac5cfc306393b0fa3caa0fa8cc57c0ada515fc6c9154eb7564514b"
+          },
+          {
+            "bytes": 5944,
+            "path": "lifecycle.json",
+            "sha256": "sha256:bdefbdb7d0ee55a74112726706bb5be8341b56680266d6688422174f42321c5c"
+          }
+        ],
+        "authorization_ids": [
+          "allow-executed"
+        ],
+        "anchor_freshness_verified": true,
+        "payload_sha256": "sha256:24222da8bcf4060d6bf19bd292f5e257b996ce36ea22332a603ba30c3f8310bc",
+        "kid": "og-rt-c508578aa9e38bd5"
+      },
+      "authorization": {
+        "authorization_id": "allow-executed",
+        "decision": "ALLOW",
+        "execution_authorized": true,
+        "release_authorized": true,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": null,
+        "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+        "authority_context_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:06:06.571033Z",
+        "expires_at": "2026-11-18T03:06:06.571033Z",
+        "payload_sha256": "sha256:7394678790e640d2dcb530049f17e3df0afd12f1ac7c6425e605737c6ad9e23c",
+        "kid": "og-rt-2466673b6fb02090"
+      },
+      "lifecycle": {
+        "terminal_state": "EXECUTED_EFFECT_FORMED",
+        "protected_effect_formed": true,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:c0d5aff61de0d65b759d5eaef911fb2a12cca55e69a828d4122042f125f15af4",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:06:06.572276Z"
+          },
+          {
+            "actor": "executor",
+            "entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+            "event": "EXECUTION_RECEIPT_ACCEPTED",
+            "time": "2026-11-18T02:06:06.575573Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 3,
+          "root_hash": "sha256:60fd2278e11fec06302dee3e32846807b684e55b6dda779f91417b23a7215b20",
+          "head_entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+          "signed_at": "2026-11-18T02:06:06.578469Z",
+          "payload_sha256": "sha256:d43699952ce91ba04bcbaffb81d316601108c436911ac03a56eb28adb2268915",
+          "kid": "og-rt-c508578aa9e38bd5"
+        },
+        "log_receipt": {},
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:6fb0c2299712a91cc948f4dc2e3817a583a1d5b80d17650f91903b4a2eec9397",
+              "sha256:e2c79c29878b5df4357f852c28924a35d35bc2d6b6c737c2d9f41e06fa70edce"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 2,
+            "tenant": "vectors",
+            "tree_size": 3
+          },
+          {
+            "audit_path": [
+              "sha256:03de52f30f07b34612497076e83f9c1de96ef4b76783bb0ea0c3c6b269868a7c"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 3,
+            "tenant": "vectors",
+            "tree_size": 3
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:c0d5aff61de0d65b759d5eaef911fb2a12cca55e69a828d4122042f125f15af4",
+            "recorded_body_fields": {
+              "authorization_id": "allow-executed",
+              "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+              "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+            }
+          },
+          {
+            "event": "EXECUTION_RECEIPT_ACCEPTED",
+            "entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+            "recorded_body_fields": {
+              "authorization_id": "allow-executed",
+              "executed": true,
+              "protected_effect_formed": true,
+              "execution_event_id": "exec-allow"
+            }
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+        "authorization_id": "allow-executed",
+        "packet_sha256": "3f2311b040276039ba1a9ebf673961db5d265050c82bf012bba8b8978225d5e7",
+        "length": 4836,
+        "runtime_key_sha256": "6f3827277b69ff58fbc6797da2c22d4ed3572d80ac0a75fc575fdb6265f1e874",
+        "log_key_sha256": null,
+        "verdict": "FAIL",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "FAIL"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "WARN"
+          },
+          {
+            "code": "V15",
+            "status": "WARN"
+          }
+        ],
+        "terminal_state": "EXECUTED_EFFECT_FORMED",
+        "checkpoint_tree_size": 3,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "SYNTHETIC_VERIFIER_VECTOR-valid-allow-executed",
+      "title": "Valid Allow Executed",
+      "scope": "SYNTHETIC_VERIFIER_VECTOR",
+      "file": "/assets/da-v152-reference/valid-allow-executed.zip",
+      "sha256": "389ed8e1a9944791256243d63d745e322fd1355cf65ff6c4249f1f540477a30f",
+      "length": 4836,
+      "expected_offline_result": "PASS_WITH_WARNINGS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-reference/legacy-runtime-jwks.json",
+      "log_key": null,
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+        "created_at": "2026-11-18T02:06:06.580744Z",
+        "environment": "NON_PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 2786,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:ffc90ab9603ee8cef29231c036666204bfe1f25764a8887dcf7f40ef63a9e307"
+          },
+          {
+            "bytes": 714,
+            "path": "keys.json",
+            "sha256": "sha256:cf8a8c2ed0314d800053ffeb35a3ca01643a4b86c98b3476fd3e8e4ded0ab299"
+          },
+          {
+            "bytes": 1240,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:2ba4811673ac5cfc306393b0fa3caa0fa8cc57c0ada515fc6c9154eb7564514b"
+          },
+          {
+            "bytes": 5944,
+            "path": "lifecycle.json",
+            "sha256": "sha256:bdefbdb7d0ee55a74112726706bb5be8341b56680266d6688422174f42321c5c"
+          }
+        ],
+        "authorization_ids": [
+          "allow-executed"
+        ],
+        "anchor_freshness_verified": true,
+        "payload_sha256": "sha256:24222da8bcf4060d6bf19bd292f5e257b996ce36ea22332a603ba30c3f8310bc",
+        "kid": "og-rt-c508578aa9e38bd5"
+      },
+      "authorization": {
+        "authorization_id": "allow-executed",
+        "decision": "ALLOW",
+        "execution_authorized": true,
+        "release_authorized": true,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": null,
+        "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+        "authority_context_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:06:06.571033Z",
+        "expires_at": "2026-11-18T03:06:06.571033Z",
+        "payload_sha256": "sha256:7394678790e640d2dcb530049f17e3df0afd12f1ac7c6425e605737c6ad9e23c",
+        "kid": "og-rt-2466673b6fb02090"
+      },
+      "lifecycle": {
+        "terminal_state": "EXECUTED_EFFECT_FORMED",
+        "protected_effect_formed": true,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:c0d5aff61de0d65b759d5eaef911fb2a12cca55e69a828d4122042f125f15af4",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:06:06.572276Z"
+          },
+          {
+            "actor": "executor",
+            "entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+            "event": "EXECUTION_RECEIPT_ACCEPTED",
+            "time": "2026-11-18T02:06:06.575573Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 3,
+          "root_hash": "sha256:60fd2278e11fec06302dee3e32846807b684e55b6dda779f91417b23a7215b20",
+          "head_entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+          "signed_at": "2026-11-18T02:06:06.578469Z",
+          "payload_sha256": "sha256:d43699952ce91ba04bcbaffb81d316601108c436911ac03a56eb28adb2268915",
+          "kid": "og-rt-c508578aa9e38bd5"
+        },
+        "log_receipt": {},
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:6fb0c2299712a91cc948f4dc2e3817a583a1d5b80d17650f91903b4a2eec9397",
+              "sha256:e2c79c29878b5df4357f852c28924a35d35bc2d6b6c737c2d9f41e06fa70edce"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 2,
+            "tenant": "vectors",
+            "tree_size": 3
+          },
+          {
+            "audit_path": [
+              "sha256:03de52f30f07b34612497076e83f9c1de96ef4b76783bb0ea0c3c6b269868a7c"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 3,
+            "tenant": "vectors",
+            "tree_size": 3
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:c0d5aff61de0d65b759d5eaef911fb2a12cca55e69a828d4122042f125f15af4",
+            "recorded_body_fields": {
+              "authorization_id": "allow-executed",
+              "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+              "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+            }
+          },
+          {
+            "event": "EXECUTION_RECEIPT_ACCEPTED",
+            "entry_hash": "sha256:4f523aba693703d2d443d468cd0fd3a3d02be8548003e96166621facf2b232c2",
+            "recorded_body_fields": {
+              "authorization_id": "allow-executed",
+              "executed": true,
+              "protected_effect_formed": true,
+              "execution_event_id": "exec-allow"
+            }
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "f4686263-6546-433e-a247-ea8b0c949780",
+        "authorization_id": "allow-executed",
+        "packet_sha256": "389ed8e1a9944791256243d63d745e322fd1355cf65ff6c4249f1f540477a30f",
+        "length": 4836,
+        "runtime_key_sha256": "6f3827277b69ff58fbc6797da2c22d4ed3572d80ac0a75fc575fdb6265f1e874",
+        "log_key_sha256": null,
+        "verdict": "PASS_WITH_WARNINGS",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "WARN"
+          },
+          {
+            "code": "V15",
+            "status": "WARN"
+          }
+        ],
+        "terminal_state": "EXECUTED_EFFECT_FORMED",
+        "checkpoint_tree_size": 3,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "SYNTHETIC_VERIFIER_VECTOR-valid-block-no-effect",
+      "title": "Valid Block No Effect",
+      "scope": "SYNTHETIC_VERIFIER_VECTOR",
+      "file": "/assets/da-v152-reference/valid-block-no-effect.zip",
+      "sha256": "8a36d66a148db36c3d475f3b9cabd2b7f4a32bd2ad6618f333966abf1be800ee",
+      "length": 4272,
+      "expected_offline_result": "PASS_WITH_WARNINGS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-reference/legacy-runtime-jwks.json",
+      "log_key": null,
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "6465fad5-a2ee-4a7f-a06b-4fa6186406a1",
+        "created_at": "2026-11-18T02:06:06.589836Z",
+        "environment": "NON_PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 2802,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:d07acee9d3ad17b26946156ea2c0370497466791732d266562f2454bd3a0b9c5"
+          },
+          {
+            "bytes": 522,
+            "path": "keys.json",
+            "sha256": "sha256:49e0241eb09b5ab1e036c49a86d1066087c408d77f74f0185bac5310327591d2"
+          },
+          {
+            "bytes": 1000,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:91d37b0cb8dc464e875dfafd74e72ee3a33e9a34521844c83ca5ebae597e934d"
+          },
+          {
+            "bytes": 4187,
+            "path": "lifecycle.json",
+            "sha256": "sha256:56a720a3ca1bd26b949feaee3156d5aec6ed6504cf6d2f8e1d5dccf301f72b5e"
+          }
+        ],
+        "authorization_ids": [
+          "block-no-effect"
+        ],
+        "anchor_freshness_verified": true,
+        "payload_sha256": "sha256:6072cbab802d297ef55774e2c301c2f052c5009b4ce819f5f4bc023232d6064a",
+        "kid": "og-rt-c508578aa9e38bd5"
+      },
+      "authorization": {
+        "authorization_id": "block-no-effect",
+        "decision": "BLOCK",
+        "execution_authorized": false,
+        "release_authorized": false,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": null,
+        "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+        "authority_context_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:06:06.584505Z",
+        "expires_at": "2026-11-18T03:06:06.584505Z",
+        "payload_sha256": "sha256:2bd4551fe92b8b7360e070a902f150cdf582c67100169c4ba926d95d3f182f13",
+        "kid": "og-rt-2466673b6fb02090"
+      },
+      "lifecycle": {
+        "terminal_state": "NO_BIND",
+        "protected_effect_formed": false,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:28aebfb6ea492769cb03f247279ea7f059e11dbcb24b30e772d5554426b20a89",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:06:06.585276Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 5,
+          "root_hash": "sha256:2a1cdacd7f596d015862cd4b0fc1a414da8cfd2254082ae8a45ac9176e76b782",
+          "head_entry_hash": "sha256:28aebfb6ea492769cb03f247279ea7f059e11dbcb24b30e772d5554426b20a89",
+          "signed_at": "2026-11-18T02:06:06.589241Z",
+          "payload_sha256": "sha256:89a94bb93b2b304c57c5711e843708ff61c5573daf04468d03aaf4e5b5b6229c",
+          "kid": "og-rt-c508578aa9e38bd5"
+        },
+        "log_receipt": {},
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:0e0b1be6cd6944d0f59f56e5216db947bb73bfe4485b1945236cb07d15567b80"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 5,
+            "tenant": "vectors",
+            "tree_size": 5
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:28aebfb6ea492769cb03f247279ea7f059e11dbcb24b30e772d5554426b20a89",
+            "recorded_body_fields": {
+              "authorization_id": "block-no-effect",
+              "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+              "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+            }
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "6465fad5-a2ee-4a7f-a06b-4fa6186406a1",
+        "authorization_id": "block-no-effect",
+        "packet_sha256": "8a36d66a148db36c3d475f3b9cabd2b7f4a32bd2ad6618f333966abf1be800ee",
+        "length": 4272,
+        "runtime_key_sha256": "6f3827277b69ff58fbc6797da2c22d4ed3572d80ac0a75fc575fdb6265f1e874",
+        "log_key_sha256": null,
+        "verdict": "PASS_WITH_WARNINGS",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "WARN"
+          },
+          {
+            "code": "V15",
+            "status": "WARN"
+          }
+        ],
+        "terminal_state": "NO_BIND",
+        "checkpoint_tree_size": 5,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "SYNTHETIC_VERIFIER_VECTOR-valid-escalate-then-resolved",
+      "title": "Valid Escalate Then Resolved",
+      "scope": "SYNTHETIC_VERIFIER_VECTOR",
+      "file": "/assets/da-v152-reference/valid-escalate-then-resolved.zip",
+      "sha256": "de9c48e35e146a730c9cf2f049c6e2792f1bab738280530269a925abcbc14261",
+      "length": 4633,
+      "expected_offline_result": "PASS_WITH_WARNINGS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "WARN"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-reference/legacy-runtime-jwks.json",
+      "log_key": null,
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "bf2521b4-f4b0-4790-bddc-76211d210ff9",
+        "created_at": "2026-11-18T02:06:06.601754Z",
+        "environment": "NON_PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 2806,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:88bf50f91819c5cddef6dd80d0ce2594f707f40b9de20a6923be9750588f1f93"
+          },
+          {
+            "bytes": 522,
+            "path": "keys.json",
+            "sha256": "sha256:49e0241eb09b5ab1e036c49a86d1066087c408d77f74f0185bac5310327591d2"
+          },
+          {
+            "bytes": 1462,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:76c6b5eec32ffa5af870465ab36fbd442b7cd92f6502f407e9f79054abb83175"
+          },
+          {
+            "bytes": 5160,
+            "path": "lifecycle.json",
+            "sha256": "sha256:1b733ac167e18d854c024f37b882c7f92c488cce976ed1312e579c4a96581c7c"
+          }
+        ],
+        "authorization_ids": [
+          "escalate-resolved"
+        ],
+        "anchor_freshness_verified": true,
+        "payload_sha256": "sha256:3f21f86b0591733f78f79ea5cbcfe305749e9689a69fbfcdcd37abaeafc006f2",
+        "kid": "og-rt-c508578aa9e38bd5"
+      },
+      "authorization": {
+        "authorization_id": "escalate-resolved",
+        "decision": "ESCALATE",
+        "execution_authorized": false,
+        "release_authorized": false,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": null,
+        "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+        "authority_context_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:06:06.593441Z",
+        "expires_at": "2026-11-18T03:06:06.593441Z",
+        "payload_sha256": "sha256:d5c18fa610b7cf67c74fab668bc50c0af0e74d26d0ce4c08966e69fc05ef3d5c",
+        "kid": "og-rt-2466673b6fb02090"
+      },
+      "lifecycle": {
+        "terminal_state": "PENDING",
+        "protected_effect_formed": false,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:55d7d3b143740734171e09a08de935f3e7c01b5006bd9b3fc1f1a26e895d4b6f",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:06:06.594214Z"
+          },
+          {
+            "actor": "reviewer",
+            "entry_hash": "sha256:b53a881cdd646e22951c7698c7f0e70ee27b0f3bbf7cc7822ffef6f9d01a8332",
+            "event": "REVIEW_RESOLUTION_RECORDED",
+            "time": "2026-11-18T02:06:06.597467Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 8,
+          "root_hash": "sha256:94780ee2d61542b9ccfa8406fdb2d4caa3d5571a1ce79c995c4c1ff9fb2a6b19",
+          "head_entry_hash": "sha256:b53a881cdd646e22951c7698c7f0e70ee27b0f3bbf7cc7822ffef6f9d01a8332",
+          "signed_at": "2026-11-18T02:06:06.601131Z",
+          "payload_sha256": "sha256:62b4e7fb4c63f68421ed1f7120686a3a69f4d126f250d9e4e38eed5b8db7405f",
+          "kid": "og-rt-c508578aa9e38bd5"
+        },
+        "log_receipt": {},
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:2a0db6d7abd1a2feb9e7ead190a921175044cd059336e005d3c67df32a0b4efc",
+              "sha256:0e64846aaf2d20532b299f2d92921400c3c2b5b096156e9893a31216c94904b1",
+              "sha256:0e0b1be6cd6944d0f59f56e5216db947bb73bfe4485b1945236cb07d15567b80"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 7,
+            "tenant": "vectors",
+            "tree_size": 8
+          },
+          {
+            "audit_path": [
+              "sha256:4476a51803d19a84835dcaacc679bdf871dc71da9dc6b7ba6fe5b7dc4b636319",
+              "sha256:0e64846aaf2d20532b299f2d92921400c3c2b5b096156e9893a31216c94904b1",
+              "sha256:0e0b1be6cd6944d0f59f56e5216db947bb73bfe4485b1945236cb07d15567b80"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 8,
+            "tenant": "vectors",
+            "tree_size": 8
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:55d7d3b143740734171e09a08de935f3e7c01b5006bd9b3fc1f1a26e895d4b6f",
+            "recorded_body_fields": {
+              "authorization_id": "escalate-resolved",
+              "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+              "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+            }
+          },
+          {
+            "event": "REVIEW_RESOLUTION_RECORDED",
+            "entry_hash": "sha256:b53a881cdd646e22951c7698c7f0e70ee27b0f3bbf7cc7822ffef6f9d01a8332",
+            "recorded_body_fields": {
+              "authorization_id": "escalate-resolved"
+            }
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "bf2521b4-f4b0-4790-bddc-76211d210ff9",
+        "authorization_id": "escalate-resolved",
+        "packet_sha256": "de9c48e35e146a730c9cf2f049c6e2792f1bab738280530269a925abcbc14261",
+        "length": 4633,
+        "runtime_key_sha256": "6f3827277b69ff58fbc6797da2c22d4ed3572d80ac0a75fc575fdb6265f1e874",
+        "log_key_sha256": null,
+        "verdict": "PASS_WITH_WARNINGS",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "WARN"
+          },
+          {
+            "code": "V15",
+            "status": "WARN"
+          }
+        ],
+        "terminal_state": "PENDING",
+        "checkpoint_tree_size": 8,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "SYNTHETIC_VERIFIER_VECTOR-forged-receipt",
+      "title": "Forged Receipt",
+      "scope": "SYNTHETIC_VERIFIER_VECTOR",
+      "file": "/assets/da-v152-reference/forged-receipt.zip",
+      "sha256": "0dd2f400d009ccefd432e2761c6b9c333f476b91ebfe82b686076653e27f50f0",
+      "length": 6076,
+      "expected_offline_result": "FAIL",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "PASS"
+        },
+        {
+          "code": "V15",
+          "status": "FAIL"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-reference/anchored-runtime-jwks.json",
+      "log_key": "/assets/da-v152-reference/reference-log-public-key.json",
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+        "created_at": "2026-11-18T02:06:07.699740Z",
+        "environment": "PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 5476,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:2624d49460eabef6c574cf62a521cb3c17c25ef911960914b60307d7c46e3a75"
+          },
+          {
+            "bytes": 522,
+            "path": "keys.json",
+            "sha256": "sha256:ad5e521379b058121623fb7ae04304425d4f6714a53a343dbdb0ff89de1051b9"
+          },
+          {
+            "bytes": 5577,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:11cb41b56fbcc8450386df1db34951a2fe07ac88e34f21523c5ca6ac74aae149"
+          },
+          {
+            "bytes": 4872,
+            "path": "lifecycle.json",
+            "sha256": "sha256:2e13ed09310bc0135c3c171e612ae52b387da5208c7af14cef237f81a8b0d00b"
+          }
+        ],
+        "authorization_ids": [
+          "r15-case"
+        ],
+        "anchor_freshness_verified": true,
+        "latest_anchored_tree_size": 3,
+        "payload_sha256": "sha256:35ff9d089945cec2d0e2b5011e9ff42025c68bc2d6aa5305bae6213048900666",
+        "kid": "og-rt-5f6a93b1e279d7a8"
+      },
+      "authorization": {
+        "authorization_id": "r15-case",
+        "decision": "ALLOW",
+        "execution_authorized": true,
+        "release_authorized": true,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": null,
+        "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+        "authority_context_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:06:07.650908Z",
+        "expires_at": "2026-11-18T03:06:07.650908Z",
+        "payload_sha256": "sha256:878c3838c1ccfae6aaa1228afc0bbb82b60d861af514958e03e3a6a1916a8d99",
+        "kid": "og-rt-94752851e41dcaaa"
+      },
+      "lifecycle": {
+        "terminal_state": "PENDING",
+        "protected_effect_formed": false,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:cfb65c294eb51d3b629a497010e55c210619bff0374fd217bc63c6d9407b5cc9",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:06:07.652038Z"
+          },
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+            "event": "RECONCILIATION_FINDING",
+            "time": "2026-11-18T02:06:07.685338Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 3,
+          "root_hash": "sha256:57baadb9b4ad998f8dbea4f7490e374aa9c1a21409e84325089ab2abc541139b",
+          "head_entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+          "signed_at": "2026-11-18T02:06:07.688282Z",
+          "payload_sha256": "sha256:de8cd62c9cc6d8eccb146b5cde656d766f8580e1af5b337f45055f2af104aac2",
+          "kid": "og-rt-5f6a93b1e279d7a8"
+        },
+        "log_receipt": {
+          "log_id": "r15-independent-log",
+          "log_index": 1,
+          "integrated_at": "2026-11-18T02:06:07.692754Z",
+          "checkpoint_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "inclusion_proof": [
+            "sha256:e0bd935a09dc88423ff9abbb066cc8be9e683e88e1f70b3e6caa68b9c41927b2"
+          ]
+        },
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:97f471f99f30f44eb5c175ca6b53647f60bd0d4dd75b709ae468e9254ccdd6cb",
+              "sha256:7fe0609c29ba79919f00d539b5ef6e85d70a0308690752dc18c6d20f3587b455"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 2,
+            "tenant": "r15-tenant",
+            "tree_size": 3
+          },
+          {
+            "audit_path": [
+              "sha256:b6d0d1b82643a76085df7f6ada93f5b072c7730f8e7c43405806a3858c215fdf"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 3,
+            "tenant": "r15-tenant",
+            "tree_size": 3
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:cfb65c294eb51d3b629a497010e55c210619bff0374fd217bc63c6d9407b5cc9",
+            "recorded_body_fields": {
+              "authorization_id": "r15-case",
+              "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+              "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+            }
+          },
+          {
+            "event": "RECONCILIATION_FINDING",
+            "entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+            "recorded_body_fields": {}
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+        "authorization_id": "r15-case",
+        "packet_sha256": "0dd2f400d009ccefd432e2761c6b9c333f476b91ebfe82b686076653e27f50f0",
+        "length": 6076,
+        "runtime_key_sha256": "b3e2aa657270f987df2f437133136cf413fffeba22d59bfb45529bfedd44bd85",
+        "log_key_sha256": "03284ef56153b0c27ed008e08fb8ca281a6d90d0f4da96e23bca7fffe35bb72c",
+        "verdict": "FAIL",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "PASS"
+          },
+          {
+            "code": "V15",
+            "status": "FAIL"
+          }
+        ],
+        "terminal_state": "PENDING",
+        "checkpoint_tree_size": 3,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "SYNTHETIC_VERIFIER_VECTOR-missing-anchor",
+      "title": "Missing Anchor",
+      "scope": "SYNTHETIC_VERIFIER_VECTOR",
+      "file": "/assets/da-v152-reference/missing-anchor.zip",
+      "sha256": "02429db8a0785a4debc61c4e172ec54d7daba83b7d483c8d4590ef55ca315f69",
+      "length": 5489,
+      "expected_offline_result": "FAIL",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "PASS"
+        },
+        {
+          "code": "V15",
+          "status": "FAIL"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-reference/anchored-runtime-jwks.json",
+      "log_key": "/assets/da-v152-reference/reference-log-public-key.json",
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+        "created_at": "2026-11-18T02:06:07.699740Z",
+        "environment": "PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 5476,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:2624d49460eabef6c574cf62a521cb3c17c25ef911960914b60307d7c46e3a75"
+          },
+          {
+            "bytes": 522,
+            "path": "keys.json",
+            "sha256": "sha256:ad5e521379b058121623fb7ae04304425d4f6714a53a343dbdb0ff89de1051b9"
+          },
+          {
+            "bytes": 1249,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:03d3ec7dfc12a303843a0f37ff9b223e563c825103ae2b2cd445faa027a52a77"
+          },
+          {
+            "bytes": 4872,
+            "path": "lifecycle.json",
+            "sha256": "sha256:2e13ed09310bc0135c3c171e612ae52b387da5208c7af14cef237f81a8b0d00b"
+          }
+        ],
+        "authorization_ids": [
+          "r15-case"
+        ],
+        "anchor_freshness_verified": true,
+        "latest_anchored_tree_size": 3,
+        "payload_sha256": "sha256:0c2c386e8707de2094d8ff309271aa767253a8ec72955ae9cac16dbcf2933a0b",
+        "kid": "og-rt-5f6a93b1e279d7a8"
+      },
+      "authorization": {
+        "authorization_id": "r15-case",
+        "decision": "ALLOW",
+        "execution_authorized": true,
+        "release_authorized": true,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": null,
+        "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+        "authority_context_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:06:07.650908Z",
+        "expires_at": "2026-11-18T03:06:07.650908Z",
+        "payload_sha256": "sha256:878c3838c1ccfae6aaa1228afc0bbb82b60d861af514958e03e3a6a1916a8d99",
+        "kid": "og-rt-94752851e41dcaaa"
+      },
+      "lifecycle": {
+        "terminal_state": "PENDING",
+        "protected_effect_formed": false,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:cfb65c294eb51d3b629a497010e55c210619bff0374fd217bc63c6d9407b5cc9",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:06:07.652038Z"
+          },
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+            "event": "RECONCILIATION_FINDING",
+            "time": "2026-11-18T02:06:07.685338Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 3,
+          "root_hash": "sha256:57baadb9b4ad998f8dbea4f7490e374aa9c1a21409e84325089ab2abc541139b",
+          "head_entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+          "signed_at": "2026-11-18T02:06:07.688282Z",
+          "payload_sha256": "sha256:de8cd62c9cc6d8eccb146b5cde656d766f8580e1af5b337f45055f2af104aac2",
+          "kid": "og-rt-5f6a93b1e279d7a8"
+        },
+        "log_receipt": {},
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:97f471f99f30f44eb5c175ca6b53647f60bd0d4dd75b709ae468e9254ccdd6cb",
+              "sha256:7fe0609c29ba79919f00d539b5ef6e85d70a0308690752dc18c6d20f3587b455"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 2,
+            "tenant": "r15-tenant",
+            "tree_size": 3
+          },
+          {
+            "audit_path": [
+              "sha256:b6d0d1b82643a76085df7f6ada93f5b072c7730f8e7c43405806a3858c215fdf"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 3,
+            "tenant": "r15-tenant",
+            "tree_size": 3
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:cfb65c294eb51d3b629a497010e55c210619bff0374fd217bc63c6d9407b5cc9",
+            "recorded_body_fields": {
+              "authorization_id": "r15-case",
+              "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+              "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+            }
+          },
+          {
+            "event": "RECONCILIATION_FINDING",
+            "entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+            "recorded_body_fields": {}
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+        "authorization_id": "r15-case",
+        "packet_sha256": "02429db8a0785a4debc61c4e172ec54d7daba83b7d483c8d4590ef55ca315f69",
+        "length": 5489,
+        "runtime_key_sha256": "b3e2aa657270f987df2f437133136cf413fffeba22d59bfb45529bfedd44bd85",
+        "log_key_sha256": "03284ef56153b0c27ed008e08fb8ca281a6d90d0f4da96e23bca7fffe35bb72c",
+        "verdict": "FAIL",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "PASS"
+          },
+          {
+            "code": "V15",
+            "status": "FAIL"
+          }
+        ],
+        "terminal_state": "PENDING",
+        "checkpoint_tree_size": 3,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "SYNTHETIC_VERIFIER_VECTOR-valid-anchored",
+      "title": "Valid Anchored",
+      "scope": "SYNTHETIC_VERIFIER_VECTOR",
+      "file": "/assets/da-v152-reference/valid-anchored.zip",
+      "sha256": "56eaf96fbf6d3bdefb400adbc425e2dbeed07af5b2318981ca52f4c87d0b0111",
+      "length": 6115,
+      "expected_offline_result": "PASS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "PASS"
+        },
+        {
+          "code": "V15",
+          "status": "PASS"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-reference/anchored-runtime-jwks.json",
+      "log_key": "/assets/da-v152-reference/reference-log-public-key.json",
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+        "created_at": "2026-11-18T02:06:07.699740Z",
+        "environment": "PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 5476,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:2624d49460eabef6c574cf62a521cb3c17c25ef911960914b60307d7c46e3a75"
+          },
+          {
+            "bytes": 522,
+            "path": "keys.json",
+            "sha256": "sha256:ad5e521379b058121623fb7ae04304425d4f6714a53a343dbdb0ff89de1051b9"
+          },
+          {
+            "bytes": 5577,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:b7d8e04f05538f610f036bc058f8603f2ca60b36e400a5fb70dd6eb7dfcf740f"
+          },
+          {
+            "bytes": 4872,
+            "path": "lifecycle.json",
+            "sha256": "sha256:2e13ed09310bc0135c3c171e612ae52b387da5208c7af14cef237f81a8b0d00b"
+          }
+        ],
+        "authorization_ids": [
+          "r15-case"
+        ],
+        "anchor_freshness_verified": true,
+        "latest_anchored_tree_size": 3,
+        "payload_sha256": "sha256:66e909ccaf6a49dc2bab0bcaa23c0a3d66fc7bda0e178b2aa523ba3d9ef3ae60",
+        "kid": "og-rt-5f6a93b1e279d7a8"
+      },
+      "authorization": {
+        "authorization_id": "r15-case",
+        "decision": "ALLOW",
+        "execution_authorized": true,
+        "release_authorized": true,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": null,
+        "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+        "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+        "authority_context_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:06:07.650908Z",
+        "expires_at": "2026-11-18T03:06:07.650908Z",
+        "payload_sha256": "sha256:878c3838c1ccfae6aaa1228afc0bbb82b60d861af514958e03e3a6a1916a8d99",
+        "kid": "og-rt-94752851e41dcaaa"
+      },
+      "lifecycle": {
+        "terminal_state": "PENDING",
+        "protected_effect_formed": false,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:cfb65c294eb51d3b629a497010e55c210619bff0374fd217bc63c6d9407b5cc9",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:06:07.652038Z"
+          },
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+            "event": "RECONCILIATION_FINDING",
+            "time": "2026-11-18T02:06:07.685338Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 3,
+          "root_hash": "sha256:57baadb9b4ad998f8dbea4f7490e374aa9c1a21409e84325089ab2abc541139b",
+          "head_entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+          "signed_at": "2026-11-18T02:06:07.688282Z",
+          "payload_sha256": "sha256:de8cd62c9cc6d8eccb146b5cde656d766f8580e1af5b337f45055f2af104aac2",
+          "kid": "og-rt-5f6a93b1e279d7a8"
+        },
+        "log_receipt": {
+          "log_id": "r15-independent-log",
+          "log_index": 1,
+          "integrated_at": "2026-11-18T02:06:07.692754Z",
+          "checkpoint_digest": "sha256:1569d833b088afd714f01d265d9fbb4531b5adfc2f610c081f946d0862332f1a",
+          "inclusion_proof": [
+            "sha256:e0bd935a09dc88423ff9abbb066cc8be9e683e88e1f70b3e6caa68b9c41927b2"
+          ]
+        },
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:97f471f99f30f44eb5c175ca6b53647f60bd0d4dd75b709ae468e9254ccdd6cb",
+              "sha256:7fe0609c29ba79919f00d539b5ef6e85d70a0308690752dc18c6d20f3587b455"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 2,
+            "tenant": "r15-tenant",
+            "tree_size": 3
+          },
+          {
+            "audit_path": [
+              "sha256:b6d0d1b82643a76085df7f6ada93f5b072c7730f8e7c43405806a3858c215fdf"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 3,
+            "tenant": "r15-tenant",
+            "tree_size": 3
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:cfb65c294eb51d3b629a497010e55c210619bff0374fd217bc63c6d9407b5cc9",
+            "recorded_body_fields": {
+              "authorization_id": "r15-case",
+              "action_binding_digest": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+              "movement_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+            }
+          },
+          {
+            "event": "RECONCILIATION_FINDING",
+            "entry_hash": "sha256:70528b3dbd567708862ab19243908cc05b95d79010b07ee1205a6fc54eafca31",
+            "recorded_body_fields": {}
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "3524e0e8-67a4-43d5-b11d-6922d05352e0",
+        "authorization_id": "r15-case",
+        "packet_sha256": "56eaf96fbf6d3bdefb400adbc425e2dbeed07af5b2318981ca52f4c87d0b0111",
+        "length": 6115,
+        "runtime_key_sha256": "b3e2aa657270f987df2f437133136cf413fffeba22d59bfb45529bfedd44bd85",
+        "log_key_sha256": "03284ef56153b0c27ed008e08fb8ca281a6d90d0f4da96e23bca7fffe35bb72c",
+        "verdict": "PASS",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "PASS"
+          },
+          {
+            "code": "V15",
+            "status": "PASS"
+          }
+        ],
+        "terminal_state": "PENDING",
+        "checkpoint_tree_size": 3,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "CONTROLLED_LOCAL_MOCK_TARGET-pre-effect-unknown",
+      "title": "Pre Effect Unknown",
+      "scope": "CONTROLLED_LOCAL_MOCK_TARGET",
+      "file": "/assets/da-v152-execution-r5/pre-effect-unknown.zip",
+      "sha256": "e20a910866c423b05cdc71be0f42ab11507c876ef5c96ee7e310f4d1eeebfef0",
+      "length": 8249,
+      "expected_offline_result": "PASS_WITH_WARNINGS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "PASS"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-execution-r5/runtime-jwks.json",
+      "log_key": "/assets/da-v152-execution-r5/log-public-key.json",
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "72046a34-8f51-4652-a72b-2d8fcfa72c69",
+        "created_at": "2026-11-18T02:28:08.356986Z",
+        "environment": "NON_PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 7131,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:7b6a42929d0ddcaf2dce5b617ad0c7bb090930076a298b1b49757211796bdc0c"
+          },
+          {
+            "bytes": 313,
+            "path": "keys.json",
+            "sha256": "sha256:2f9fe222b3d1d7608cc9230472a5f18ea4b5bf8211520302f1b69fabf953353c"
+          },
+          {
+            "bytes": 5966,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:8d790af3045b59f56e9a33e8951b8e64a65cfb085564d01bab7c0a550070349e"
+          },
+          {
+            "bytes": 7993,
+            "path": "lifecycle.json",
+            "sha256": "sha256:c9b96e47efaf736241034bc6c9acd040089dece365f6d1109d99d74ec26d72cf"
+          }
+        ],
+        "authorization_ids": [
+          "52ba9663-862f-49c2-a432-732c1fdb51f8"
+        ],
+        "anchor_freshness_verified": true,
+        "latest_anchored_tree_size": 4,
+        "payload_sha256": "sha256:0d93bf61368884247bf56ddf14eea4d474eca6ed69f8f45065b8b0f9a371a5a5",
+        "kid": "og-rt-215b0161bdd8b581"
+      },
+      "authorization": {
+        "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+        "decision": "ALLOW",
+        "execution_authorized": true,
+        "release_authorized": true,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": "ISSUE_AND_CONSUME",
+        "action_binding_digest": "sha256:4d15f35114e9c29e79ed462b8fb787439c34a8f9c012ab3f458872bbf4d7c3d5",
+        "movement_hash": "sha256:03fe910f27f34f49c6f43fc4dabceaafc4b6c78ad03c964709ff1de45e0181e6",
+        "authority_context_hash": "sha256:8d5335b2696cef9ffc28afda63cb8481ab1767bb2e9ec74d209bbc20460453e4",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:28:08.250387Z",
+        "expires_at": "2026-11-18T03:28:08.250387Z",
+        "payload_sha256": "sha256:553b56d1c8443895c535a051d621c8d311b914f54856e14c2be5325f428b26f6",
+        "kid": "og-rt-215b0161bdd8b581"
+      },
+      "lifecycle": {
+        "terminal_state": "CONSUMED_OUTCOME_UNKNOWN",
+        "protected_effect_formed": false,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:256fd29e16b146d50cdeeaa0686de065702346c30d3615a974999870acafc313",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:28:08.256949Z"
+          },
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:a9a52ecae186726287e9369faa2207df4832339a5ed72584d4926bf3f0dd976c",
+            "event": "AUTHORIZATION_CONSUMED",
+            "time": "2026-11-18T02:28:08.326832Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 4,
+          "root_hash": "sha256:c0acc8e890307c80e85aed1eedf37313352443bf5464b3a4a031fb07a024fd68",
+          "head_entry_hash": "sha256:a9a52ecae186726287e9369faa2207df4832339a5ed72584d4926bf3f0dd976c",
+          "signed_at": "2026-11-18T02:28:08.333074Z",
+          "payload_sha256": "sha256:6da6ff4417cdf4cc4d94d4557bb8083de50dde55710134ebce62a91f1087cf07",
+          "kid": "og-rt-215b0161bdd8b581"
+        },
+        "log_receipt": {
+          "log_id": "reference-demo-log",
+          "log_index": 2,
+          "integrated_at": "2026-11-18T02:28:08.337543Z",
+          "checkpoint_digest": "sha256:767789a16f6f18271341a2d72d743a80c81408eb35bb96b35d5d4a3381d9661e",
+          "inclusion_proof": [
+            "sha256:c2b1bf511ca49b113c45a1a36650b9ec64c9e4539d4728068ab2f20a2dfafc2c"
+          ]
+        },
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:bb77ae9bae981b5d85e45ec1ad88cd198a12e1814786088413828d2e561640e6",
+              "sha256:135378961c3d0bcb54c99e5fb1680478c6a6205c3538a1cf3860ab410c294d85"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 2,
+            "tenant": "website-reference",
+            "tree_size": 4
+          },
+          {
+            "audit_path": [
+              "sha256:717bf3e4ba54a098ba437982c0ddb71daab6c2cb8b21146770322897726cfe32",
+              "sha256:b3d3543de31b337b8a48e0a594c7977861b7acc1517cb326aecea07f3ad0a7a7"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 4,
+            "tenant": "website-reference",
+            "tree_size": 4
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:256fd29e16b146d50cdeeaa0686de065702346c30d3615a974999870acafc313",
+            "recorded_body_fields": {
+              "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+              "action_binding_digest": "sha256:4d15f35114e9c29e79ed462b8fb787439c34a8f9c012ab3f458872bbf4d7c3d5",
+              "movement_hash": "sha256:03fe910f27f34f49c6f43fc4dabceaafc4b6c78ad03c964709ff1de45e0181e6"
+            }
+          },
+          {
+            "event": "AUTHORIZATION_CONSUMED",
+            "entry_hash": "sha256:a9a52ecae186726287e9369faa2207df4832339a5ed72584d4926bf3f0dd976c",
+            "recorded_body_fields": {
+              "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+              "precommit_id": "967cb372-e498-403e-889b-6e567459452e",
+              "action_binding_digest": "sha256:4d15f35114e9c29e79ed462b8fb787439c34a8f9c012ab3f458872bbf4d7c3d5",
+              "movement_hash": "sha256:03fe910f27f34f49c6f43fc4dabceaafc4b6c78ad03c964709ff1de45e0181e6",
+              "execution_target": "core-payments",
+              "resource_id": "synthetic-reference-payment"
+            }
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "72046a34-8f51-4652-a72b-2d8fcfa72c69",
+        "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+        "packet_sha256": "e20a910866c423b05cdc71be0f42ab11507c876ef5c96ee7e310f4d1eeebfef0",
+        "length": 8249,
+        "runtime_key_sha256": "148c59e99216aee4312c0506866f62443db14ec7f8de729f908c84195031e095",
+        "log_key_sha256": "7ec2fa7a8ee4eb8227d4ff966bab23c5d9d6c64734b2a2650a6d2bc645eabe4e",
+        "verdict": "PASS_WITH_WARNINGS",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "WARN"
+          },
+          {
+            "code": "V15",
+            "status": "PASS"
+          }
+        ],
+        "terminal_state": "CONSUMED_OUTCOME_UNKNOWN",
+        "checkpoint_tree_size": 4,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    },
+    {
+      "id": "CONTROLLED_LOCAL_MOCK_TARGET-exact-effect",
+      "title": "Exact Effect",
+      "scope": "CONTROLLED_LOCAL_MOCK_TARGET",
+      "file": "/assets/da-v152-execution-r5/exact-effect.zip",
+      "sha256": "3884a878b4048f6599d858a61316d33f56d57d35a946071126fbd8b6c7754998",
+      "length": 8862,
+      "expected_offline_result": "PASS_WITH_WARNINGS",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "PASS"
+        }
+      ],
+      "runtime_keys": "/assets/da-v152-execution-r5/runtime-jwks.json",
+      "log_key": "/assets/da-v152-execution-r5/log-public-key.json",
+      "members": [
+        "decision_receipt.json",
+        "keys.json",
+        "ledger_proof.json",
+        "lifecycle.json",
+        "manifest.json"
+      ],
+      "manifest": {
+        "packet_id": "9b7a67d5-2ce9-48c5-a53e-b43d522264cd",
+        "created_at": "2026-11-18T02:28:08.424241Z",
+        "environment": "NON_PRODUCTION",
+        "runtime_version": "1.5.2",
+        "profile": "shareable",
+        "files": [
+          {
+            "bytes": 7279,
+            "path": "decision_receipt.json",
+            "sha256": "sha256:83d95ec462d5b467df69e36a8c4bc4f247305699532f82da1e9d7a3feae97d1b"
+          },
+          {
+            "bytes": 513,
+            "path": "keys.json",
+            "sha256": "sha256:f30ccf5474927b53df35ec00bf16cafa4d4f46f644fb7830cd02e480f9576367"
+          },
+          {
+            "bytes": 6512,
+            "path": "ledger_proof.json",
+            "sha256": "sha256:6dd033d9541f019ca05055afeea6a0d312a256535e28310272e4ac2cc36a2e33"
+          },
+          {
+            "bytes": 10394,
+            "path": "lifecycle.json",
+            "sha256": "sha256:53bf3d5a81ffc76cc1cf80bdbe4ce6d13ee39114eb839e12f2361f67b48c2662"
+          }
+        ],
+        "authorization_ids": [
+          "52ba9663-862f-49c2-a432-732c1fdb51f8"
+        ],
+        "anchor_freshness_verified": true,
+        "latest_anchored_tree_size": 5,
+        "payload_sha256": "sha256:5023a6e3c6fb493fa83113705e78c534ddd95e060c949199c32d88488505800a",
+        "kid": "og-rt-215b0161bdd8b581"
+      },
+      "authorization": {
+        "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+        "decision": "ALLOW",
+        "execution_authorized": true,
+        "release_authorized": true,
+        "review_required": false,
+        "formation_status": null,
+        "standing_status": null,
+        "standing_mode": "ISSUE_AND_CONSUME",
+        "action_binding_digest": "sha256:4d15f35114e9c29e79ed462b8fb787439c34a8f9c012ab3f458872bbf4d7c3d5",
+        "movement_hash": "sha256:03fe910f27f34f49c6f43fc4dabceaafc4b6c78ad03c964709ff1de45e0181e6",
+        "authority_context_hash": "sha256:8d5335b2696cef9ffc28afda63cb8481ab1767bb2e9ec74d209bbc20460453e4",
+        "resource_version": "v1",
+        "state_version": "v1",
+        "issued_at": "2026-11-18T02:28:08.250387Z",
+        "expires_at": "2026-11-18T03:28:08.250387Z",
+        "payload_sha256": "sha256:553b56d1c8443895c535a051d621c8d311b914f54856e14c2be5325f428b26f6",
+        "kid": "og-rt-215b0161bdd8b581"
+      },
+      "lifecycle": {
+        "terminal_state": "EXECUTED_EFFECT_FORMED",
+        "protected_effect_formed": true,
+        "refusal_counts": {},
+        "timeline": [
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:256fd29e16b146d50cdeeaa0686de065702346c30d3615a974999870acafc313",
+            "event": "AUTHORIZATION_DECIDED",
+            "time": "2026-11-18T02:28:08.256949Z"
+          },
+          {
+            "actor": "runtime",
+            "entry_hash": "sha256:a9a52ecae186726287e9369faa2207df4832339a5ed72584d4926bf3f0dd976c",
+            "event": "AUTHORIZATION_CONSUMED",
+            "time": "2026-11-18T02:28:08.326832Z"
+          },
+          {
+            "actor": "executor",
+            "entry_hash": "sha256:59482fe0243f8c2b9074a485b22600c8ee137c645e925c9d4ba03568f21feb8f",
+            "event": "EXECUTION_RECEIPT_ACCEPTED",
+            "time": "2026-11-18T02:28:08.384324Z"
+          }
+        ]
+      },
+      "ledger": {
+        "checkpoint": {
+          "tree_size": 5,
+          "root_hash": "sha256:ec6dfea4f13369ef02885a7c62816bd1b8eab40934d2e49683c310b0c32fddd7",
+          "head_entry_hash": "sha256:59482fe0243f8c2b9074a485b22600c8ee137c645e925c9d4ba03568f21feb8f",
+          "signed_at": "2026-11-18T02:28:08.402905Z",
+          "payload_sha256": "sha256:5fa20e33818aa8bdcb5bfdb20f5f137f162cbbda7a216e36e60bf235c581c208",
+          "kid": "og-rt-215b0161bdd8b581"
+        },
+        "log_receipt": {
+          "log_id": "reference-demo-log",
+          "log_index": 3,
+          "integrated_at": "2026-11-18T02:28:08.407744Z",
+          "checkpoint_digest": "sha256:527fc1a1897c9152776aef7309662d588d6b2a0c6433cbcf7b74e22092695368",
+          "inclusion_proof": [
+            "sha256:176c312b6034df2f5dac799d05c950561c973ae167936442e0975e2f050a181a",
+            "sha256:c2b1bf511ca49b113c45a1a36650b9ec64c9e4539d4728068ab2f20a2dfafc2c"
+          ]
+        },
+        "inclusion_proofs": [
+          {
+            "audit_path": [
+              "sha256:bb77ae9bae981b5d85e45ec1ad88cd198a12e1814786088413828d2e561640e6",
+              "sha256:135378961c3d0bcb54c99e5fb1680478c6a6205c3538a1cf3860ab410c294d85",
+              "sha256:0990ab0a13dfee97e0a44d18ce5a02aac5a36aa9cf15285cd6ba3cad0a1e83c3"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 2,
+            "tenant": "website-reference",
+            "tree_size": 5
+          },
+          {
+            "audit_path": [
+              "sha256:717bf3e4ba54a098ba437982c0ddb71daab6c2cb8b21146770322897726cfe32",
+              "sha256:b3d3543de31b337b8a48e0a594c7977861b7acc1517cb326aecea07f3ad0a7a7",
+              "sha256:0990ab0a13dfee97e0a44d18ce5a02aac5a36aa9cf15285cd6ba3cad0a1e83c3"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 4,
+            "tenant": "website-reference",
+            "tree_size": 5
+          },
+          {
+            "audit_path": [
+              "sha256:c0acc8e890307c80e85aed1eedf37313352443bf5464b3a4a031fb07a024fd68"
+            ],
+            "schema": "og.ledger.inclusion.v1",
+            "seq": 5,
+            "tenant": "website-reference",
+            "tree_size": 5
+          }
+        ],
+        "events": [
+          {
+            "event": "AUTHORIZATION_DECIDED",
+            "entry_hash": "sha256:256fd29e16b146d50cdeeaa0686de065702346c30d3615a974999870acafc313",
+            "recorded_body_fields": {
+              "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+              "action_binding_digest": "sha256:4d15f35114e9c29e79ed462b8fb787439c34a8f9c012ab3f458872bbf4d7c3d5",
+              "movement_hash": "sha256:03fe910f27f34f49c6f43fc4dabceaafc4b6c78ad03c964709ff1de45e0181e6"
+            }
+          },
+          {
+            "event": "AUTHORIZATION_CONSUMED",
+            "entry_hash": "sha256:a9a52ecae186726287e9369faa2207df4832339a5ed72584d4926bf3f0dd976c",
+            "recorded_body_fields": {
+              "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+              "precommit_id": "967cb372-e498-403e-889b-6e567459452e",
+              "action_binding_digest": "sha256:4d15f35114e9c29e79ed462b8fb787439c34a8f9c012ab3f458872bbf4d7c3d5",
+              "movement_hash": "sha256:03fe910f27f34f49c6f43fc4dabceaafc4b6c78ad03c964709ff1de45e0181e6",
+              "execution_target": "core-payments",
+              "resource_id": "synthetic-reference-payment"
+            }
+          },
+          {
+            "event": "EXECUTION_RECEIPT_ACCEPTED",
+            "entry_hash": "sha256:59482fe0243f8c2b9074a485b22600c8ee137c645e925c9d4ba03568f21feb8f",
+            "recorded_body_fields": {
+              "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+              "executed": true,
+              "protected_effect_formed": true,
+              "execution_event_id": "exec-website-1"
+            }
+          }
+        ]
+      },
+      "browser_crypto_scope": "NOT RUN \u2014 only downloaded byte SHA-256; packet fields are recorded inspection, not independently validated in the browser.",
+      "verification_binding": {
+        "packet_id": "9b7a67d5-2ce9-48c5-a53e-b43d522264cd",
+        "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+        "packet_sha256": "3884a878b4048f6599d858a61316d33f56d57d35a946071126fbd8b6c7754998",
+        "length": 8862,
+        "runtime_key_sha256": "148c59e99216aee4312c0506866f62443db14ec7f8de729f908c84195031e095",
+        "log_key_sha256": "7ec2fa7a8ee4eb8227d4ff966bab23c5d9d6c64734b2a2650a6d2bc645eabe4e",
+        "verdict": "PASS_WITH_WARNINGS",
+        "checks": [
+          {
+            "code": "V01",
+            "status": "PASS"
+          },
+          {
+            "code": "V02",
+            "status": "PASS"
+          },
+          {
+            "code": "V03",
+            "status": "PASS"
+          },
+          {
+            "code": "SCHEMA",
+            "status": "PASS"
+          },
+          {
+            "code": "V04",
+            "status": "PASS"
+          },
+          {
+            "code": "V05",
+            "status": "PASS"
+          },
+          {
+            "code": "V06",
+            "status": "PASS"
+          },
+          {
+            "code": "V07",
+            "status": "PASS"
+          },
+          {
+            "code": "V08",
+            "status": "PASS"
+          },
+          {
+            "code": "V09",
+            "status": "PASS"
+          },
+          {
+            "code": "V10",
+            "status": "PASS"
+          },
+          {
+            "code": "V11",
+            "status": "PASS"
+          },
+          {
+            "code": "V12",
+            "status": "PASS"
+          },
+          {
+            "code": "V13",
+            "status": "WARN"
+          },
+          {
+            "code": "V15",
+            "status": "PASS"
+          }
+        ],
+        "terminal_state": "EXECUTED_EFFECT_FORMED",
+        "checkpoint_tree_size": 5,
+        "issue_time_anchor_freshness": true,
+        "V16_current_freshness": "NOT RUN",
+        "historical_age_policy": "API max_age_hours=None; legacy opt-in only for unanchored reference vectors"
+      }
+    }
+  ],
+  "comparison": {
+    "authorization_id": "52ba9663-862f-49c2-a432-732c1fdb51f8",
+    "pre_effect_packet_id": "72046a34-8f51-4652-a72b-2d8fcfa72c69",
+    "exact_effect_packet_id": "9b7a67d5-2ce9-48c5-a53e-b43d522264cd",
+    "pre_effect_state": "OUTCOME_UNKNOWN",
+    "exact_effect_state": "EXECUTED_EFFECT_FORMED",
+    "checkpoints": [
+      4,
+      5
+    ]
+  },
+  "reference_execution_sha256": "3ab0a1f636bb312e5b9aeb6e973cac0170a51eca07e656f4ceb024239dc041fc",
+  "mock_observation_sha256": "6a071d95de6e70e239c16b9fa6e94ff9137d260e7cc899fe29aa0cc416ef9f5d",
+  "verification_policy": "Exact v1.5.2 standalone verifier, historical-only; V16 NOT RUN"
+}

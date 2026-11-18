@@ -1,0 +1,6 @@
+{
+  "kty": "OKP",
+  "crv": "Ed25519",
+  "x": "kXULH2Iuu8OIOlFSz-k8YOe1XOok4hXK_B3Dl47Opjg",
+  "kid": "log-key-1"
+}

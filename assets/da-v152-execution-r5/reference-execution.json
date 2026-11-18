@@ -1,0 +1,169 @@
+{
+  "runtime_release": "1.5.2",
+  "scope": "Development trust mode; local reference transparency log; actual isolated file-writing mock target after native anchored consume verification; no payment or independently operated production log. Historical verifier only; V16 not run.",
+  "records": [
+    {
+      "case": "changed amount binding presented for original authorization",
+      "http_status": 409,
+      "observed_mock_target_commits": 0,
+      "result": "REFUSED"
+    },
+    {
+      "file": "pre-effect-unknown.zip",
+      "sha256": "e20a910866c423b05cdc71be0f42ab11507c876ef5c96ee7e310f4d1eeebfef0",
+      "verdict": "PASS_WITH_WARNINGS",
+      "terminal_state": "CONSUMED_OUTCOME_UNKNOWN",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "case": "tampered consume acknowledgement",
+      "result": "REFUSED",
+      "observed_mock_target_commits": 0
+    },
+    {
+      "case": "exact action after verified consume",
+      "result": "ACCEPTED",
+      "observed_mock_target_commits": 1,
+      "receipt_http_status": 200
+    },
+    {
+      "file": "exact-effect.zip",
+      "sha256": "3884a878b4048f6599d858a61316d33f56d57d35a946071126fbd8b6c7754998",
+      "verdict": "PASS_WITH_WARNINGS",
+      "terminal_state": "EXECUTED_EFFECT_FORMED",
+      "checks": [
+        {
+          "code": "V01",
+          "status": "PASS"
+        },
+        {
+          "code": "V02",
+          "status": "PASS"
+        },
+        {
+          "code": "V03",
+          "status": "PASS"
+        },
+        {
+          "code": "SCHEMA",
+          "status": "PASS"
+        },
+        {
+          "code": "V04",
+          "status": "PASS"
+        },
+        {
+          "code": "V05",
+          "status": "PASS"
+        },
+        {
+          "code": "V06",
+          "status": "PASS"
+        },
+        {
+          "code": "V07",
+          "status": "PASS"
+        },
+        {
+          "code": "V08",
+          "status": "PASS"
+        },
+        {
+          "code": "V09",
+          "status": "PASS"
+        },
+        {
+          "code": "V10",
+          "status": "PASS"
+        },
+        {
+          "code": "V11",
+          "status": "PASS"
+        },
+        {
+          "code": "V12",
+          "status": "PASS"
+        },
+        {
+          "code": "V13",
+          "status": "WARN"
+        },
+        {
+          "code": "V15",
+          "status": "PASS"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "event": "synthetic payment record committed to local test file",
+      "amount": "250000.00",
+      "post_state": "v2"
+    }
+  ],
+  "owner_disclosure": "PENDING",
+  "package_sha256": "964abe668544f3c82f4528270059779632b8e2c9e68e5cb305a5a55619799c21",
+  "generation_environment": "Python 3.13.5; exact installed wheel; local FastAPI TestClient and isolated file mock; development trust mode."
+}

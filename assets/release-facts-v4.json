@@ -1,0 +1,125 @@
+{
+  "si": {
+    "release": "1.89.332",
+    "release_approved": true,
+    "commercial_production_ready": true,
+    "authorizes": false,
+    "counts": {
+      "constituted_concepts": 1362,
+      "relationships": 3434,
+      "exports": 17,
+      "xlsx_jsonl_core_mismatches": 0
+    },
+    "metrics": {
+      "established_definition_precision": {
+        "good": 279,
+        "n": 281,
+        "pct": 99.3
+      },
+      "candidate_definition_precision": {
+        "good": 37,
+        "n": 38,
+        "pct": 97.4
+      },
+      "domain_precision": {
+        "good": 334,
+        "n": 334,
+        "pct": 100.0
+      },
+      "category_accuracy": {
+        "good": 333,
+        "n": 333,
+        "pct": 100.0
+      },
+      "pdf_recall": {
+        "n": 14,
+        "pct": 92.9,
+        "present": 13
+      }
+    },
+    "structured_recall": {
+      "present_or_merged": 119,
+      "denominator": 121,
+      "pct": 98.3
+    },
+    "native_profiles": [
+      "bounded-owl",
+      "csv",
+      "docx",
+      "dtsx",
+      "jpeg",
+      "json",
+      "jsonl",
+      "jsonld",
+      "mp4",
+      "nquads",
+      "ntriples",
+      "obo",
+      "pdf",
+      "png",
+      "pptx",
+      "pyspark",
+      "python",
+      "rdfxml",
+      "shacl-core",
+      "sql",
+      "text",
+      "turtle",
+      "wav",
+      "xlsx",
+      "xml",
+      "yaml",
+      "zip"
+    ],
+    "export_formats": [
+      "csv",
+      "graphml",
+      "json",
+      "jsonl",
+      "jsonld",
+      "nquads",
+      "ntriples",
+      "owl",
+      "package",
+      "pdf",
+      "png",
+      "python",
+      "rdfxml",
+      "sparql",
+      "svg",
+      "turtle",
+      "xlsx"
+    ],
+    "documented_api_paths": 157,
+    "qualification_scope": "Release-reported selected corpus and release engineer scoring. Residual semantic errors exist; not independent external review. Not a latency guarantee. Separate from synthetic site demonstration.",
+    "approval": "PENDING_OWNER_APPROVAL",
+    "selected_source_tests": 1244,
+    "selected_installed_tests": 1244,
+    "commercial_gate": {
+      "passed": 20,
+      "total": 20
+    },
+    "same_host_replay_seconds": {
+      "parallel": 186.6,
+      "serial": 194.2,
+      "baseline_parallel": 234.2,
+      "baseline_serial": 235.4
+    },
+    "historical_inventory": {
+      "failed": 451,
+      "skipped": 52,
+      "scope": "Outside selected qualification campaign"
+    }
+  },
+  "da": {
+    "release": "1.5.2",
+    "selected_source_tests": 463,
+    "selected_installed_tests": 463,
+    "python": "3.13.5",
+    "reference_anchor_added_p95_ms": 23.102914999981294,
+    "reference_group_commit_auth_s_tenant": 3714.3882661739094,
+    "commit_window_ms": 20,
+    "scope": "Release-reported reference log; external production log, Python 3.12 qualification and signed OCI not established. No end-to-end guarantee.",
+    "approval": "PENDING_OWNER_APPROVAL"
+  }
+}
