@@ -1,9 +1,9 @@
 {
-  "schema": "ontoguard.public_evidence.manifest@1",
+  "schema": "ontoguard.public_evidence.presentation_manifest@1",
   "files": [
     {
       "name": "index.html",
-      "sha256": "a4408bdca321941c91dee73c0990f3ee18640383e9f28404a5a038bb728460a8"
+      "sha256": "b1340a64c1687500d77ed6622c97c9fc4fd032d826df61075ce1f766d4f286ef"
     },
     {
       "name": "proof-explorer-data.json",
@@ -21,5 +21,7 @@
       "name": "public-receipt.json",
       "sha256": "1619557a1e363a662aaacb04c9e994caca076dc5eced12531e4f92e6178b4154"
     }
-  ]
+  ],
+  "source_manifest_sha256": "f2793bd3f6c68815d524cfab813bb8e1eef2e5a8c89f464948e5df25b215fe0d",
+  "scope": "Historical public presentation, portable and disclosure-updated; original case data and receipts retained; not original snapshot authentication."
 }
