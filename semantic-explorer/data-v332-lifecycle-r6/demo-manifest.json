@@ -1,0 +1,131 @@
+{
+  "schema_version": 3,
+  "demo_id": "controlled-lending-v332-lifecycle-r6",
+  "revision": "1",
+  "scope": "CONTROLLED_RUNTIME_OUTPUT",
+  "release": "1.89.332",
+  "run_id": "4cbf477d67194b9f83817c1cfa11657a",
+  "asset_id": "compiled-asset:4cbf477d67194b9f83817c1cfa11657a",
+  "product": "Semantic Intelligence Runtime OEM",
+  "runtime_package_sha256": "6f00ef9ff5a6ded5a1394e405b4517a699a82f390b99c0ccb1566da06ffb1012",
+  "runtime_wheel_sha256": "55e669770d2bbfe0db14bbff4f4997655ee9af73fe8eca02230b6ee4dae3dd72",
+  "generation_date": "2026-11-18",
+  "approval_reference": "PENDING_OWNER_DISCLOSURE_REVIEW",
+  "signature": null,
+  "native_sha256": {
+    "native.jsonl": "311ae46b0c831f6dae51c63cebb3e1092db63c945a413477d5967d230cfa309a",
+    "native.ttl": "0a154d30fcb56fff7358e0ecffa04fe28cfab8817cfa85efb17ae2f09e786ff6",
+    "native.xlsx": "21f5f174bb10c45eb652041a8b228aa0db06db8a58a36cbb8e3be0bbdd43c22f",
+    "native.zip": "25a18c21181d9999346bc5e30cbf3f1f887e5e35724c2601e77e66609df032f2"
+  },
+  "publication_status": "ONTOLOGY_READY",
+  "production_qualification_status": "NOT_QUALIFIED_FOR_THIS_DEMO",
+  "population": {
+    "visible_constituted": 8,
+    "review_required": 0,
+    "accepted_count": 8,
+    "relationships": 3,
+    "native_relationships": 3,
+    "count_rule": "Native constituted population minus native review-required count; graph includes only native graph edges; literal relationships separately listed."
+  },
+  "files": [
+    {
+      "name": "concepts.jsonl",
+      "length": 14652,
+      "sha256": "f4d0994cabe1885040ea6376a2a8ae5a652ed730ef234ffdf37f31f15e588b59",
+      "required": true,
+      "type": "jsonl"
+    },
+    {
+      "name": "concepts.xlsx",
+      "length": 8672,
+      "sha256": "62f44fcb1938199d98620c01fb91be28aa24493a5f08e72937d685613fc7af66",
+      "required": true,
+      "type": "xlsx"
+    },
+    {
+      "name": "contracts.json",
+      "length": 39,
+      "sha256": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "dataset.json",
+      "length": 35671,
+      "sha256": "1c7bcc2b1f55da4ac88809466209d621f4b5b92aa756693e28460b347d46f94f",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "events-cells.json",
+      "length": 1059,
+      "sha256": "d8f861f80035b03547b0b9da955c71bb54bfb95844a23829c043f58cf4103dcb",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "events.xlsx",
+      "length": 5259,
+      "sha256": "699d55ea0425801289ca6253ece0ba00b1067cdf02bb053da65f8401963744c9",
+      "required": true,
+      "type": "xlsx"
+    },
+    {
+      "name": "glossary-cells.json",
+      "length": 353,
+      "sha256": "833137d5e9d294354774f4b688422ffdf6a505cda5898296c9a24075a693cea8",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "glossary.xlsx",
+      "length": 5042,
+      "sha256": "90d4f8644a6b9a5a3775b771b1d854f7cddf3272d91de29dabb28d2c4877732e",
+      "required": true,
+      "type": "xlsx"
+    },
+    {
+      "name": "graph.ttl",
+      "length": 5259,
+      "sha256": "a97e7a3a88bfcf91dea6ecc3dae1084924c29e01100268781345501d661827f6",
+      "required": true,
+      "type": "ttl"
+    },
+    {
+      "name": "literal-relationships.json",
+      "length": 39,
+      "sha256": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "native-contract-summary.json",
+      "length": 382,
+      "sha256": "68283051995f509cfb251cc157ba63fd4085d37b1cddd5f9682050979ffb2981",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "parity-report.json",
+      "length": 2227,
+      "sha256": "caa0da5a1061dcfd269cbfa37114427f3c275f2b2d9a5ed21b71f1e1b8ebb5e2",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "receipts.json",
+      "length": 39,
+      "sha256": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "name": "relationships.json",
+      "length": 1823,
+      "sha256": "94f97d2a4eb5aaf6cfda8c057c92ac9f2eee0b7b39aabfc7b72686bd33e5db8b",
+      "required": true,
+      "type": "json"
+    }
+  ]
+}

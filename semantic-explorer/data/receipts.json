@@ -1,0 +1,31 @@
+{
+  "revision": "illustrative-lending-r1",
+  "records": [
+    {
+      "id": "simulation-valid",
+      "scope": "BROWSER_SIMULATION",
+      "contract_id": "illustrative-loan-contract",
+      "contract_hash": "e24f0e0947c51d686047907c878aabeb995a15e1641566d846d6d92826a8ff58",
+      "revision": "illustrative-lending-r1",
+      "record": "valid",
+      "input_digest": "d3dd559e7f5c2af21883bb0cd0c4ea6bf524505163b83f50fbc9e29e546c3431",
+      "result": "PASS",
+      "violations": [],
+      "authorizes": false
+    },
+    {
+      "id": "simulation-invalid",
+      "scope": "BROWSER_SIMULATION",
+      "contract_id": "illustrative-loan-contract",
+      "contract_hash": "e24f0e0947c51d686047907c878aabeb995a15e1641566d846d6d92826a8ff58",
+      "revision": "illustrative-lending-r1",
+      "record": "invalid",
+      "input_digest": "fcdee62cec63bfad2be5a360493c1c75252a98c6c05bdb174538c24134a7331e",
+      "result": "FAIL",
+      "violations": [
+        "amount: expected number; no coercion"
+      ],
+      "authorizes": false
+    }
+  ]
+}

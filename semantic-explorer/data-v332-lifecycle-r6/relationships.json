@@ -1,0 +1,41 @@
+{
+  "revision": "1",
+  "records": [
+    {
+      "id": "relationship:29224b44c642a2d1c7c35a21e04e1e9177dd370948e08b5610662e45678c25ed",
+      "from": "structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56",
+      "evidence_ids": [
+        "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56"
+      ],
+      "revision": "1",
+      "to": "structural-concept:0bfeef70c916fee6e3e52d46a8ae85f05f4181c7da16dd6aecb9518174ad7c14"
+    },
+    {
+      "id": "relationship:76d46de8b7ce312bdd7fe7652b86ce164f8dc39289a21fee694eabf6a7529196",
+      "from": "structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56",
+      "evidence_ids": [
+        "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56"
+      ],
+      "revision": "1",
+      "to": "structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798"
+    },
+    {
+      "id": "relationship:d8a11693e72cfdeb9506079ef1f9a59b4c23f4fa6249134a0820be2e3ccf2ca6",
+      "from": "structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1",
+      "evidence_ids": [
+        "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1"
+      ],
+      "revision": "1",
+      "to": "structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08"
+    }
+  ]
+}

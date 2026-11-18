@@ -1,0 +1,25 @@
+@prefix og: <https://ontoguard.ai/illustrative/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+og:loan rdfs:label "Loan" ; og:definition "A credit agreement between borrower and lender." ; og:domain "Lending" ; og:category "business" .
+og:loan-id rdfs:label "Loan ID" ; og:definition "Unique identifier of a loan record." ; og:domain "Loan records" ; og:category "technical" .
+og:borrower rdfs:label "Borrower" ; og:definition "Party owing repayment under the agreement." ; og:domain "Lending" ; og:category "business" .
+og:amount rdfs:label "Amount" ; og:definition "Principal amount in the currency recorded." ; og:domain "Lending" ; og:category "measurement-like" .
+og:currency rdfs:label "Currency" ; og:definition "Currency code for the principal amount." ; og:domain "Loan records" ; og:category "property-like" .
+og:due-date rdfs:label "Due Date" ; og:definition "Scheduled date when repayment is due." ; og:domain "Repayment" ; og:category "property-like" .
+og:payment-instruction rdfs:label "Payment" ; og:definition "A submitted repayment instruction." ; og:domain "Repayment" ; og:category "event-like" .
+og:payment-settled rdfs:label "Payment" ; og:definition "A settled transfer, not merely a submitted instruction." ; og:domain "Repayment" ; og:category "event-like" .
+og:obligation rdfs:label "Repayment obligation" ; og:definition "Borrower owes repayment of principal under the loan agreement." ; og:domain "Repayment" ; og:category "legal" .
+og:submission rdfs:label "Submission" ; og:definition "A repayment instruction submitted on the recorded date." ; og:domain "Repayment" ; og:category "operational" .
+og:schema rdfs:label "Loan record schema" ; og:definition "Object with loan ID, amount and currency properties." ; og:domain "Loan records" ; og:category "structural" .
+og:r1 og:source og:loan ; og:target og:borrower ; og:relationship "HAS_PARTY" ; og:evidence og:d4 .
+og:r2 og:source og:loan ; og:target og:amount ; og:relationship "HAS_AMOUNT" ; og:evidence og:d5 .
+og:r3 og:source og:loan ; og:target og:loan-id ; og:relationship "IDENTIFIED_BY" ; og:evidence og:d3 .
+og:r4 og:source og:loan ; og:target og:obligation ; og:relationship "GOVERNS" ; og:evidence og:p1 .
+og:r5 og:source og:loan ; og:target og:obligation ; og:relationship "HAS_OBLIGATION" ; og:evidence og:p1 .
+og:r6 og:source og:obligation ; og:target og:due-date ; og:relationship "DUE_ON" ; og:evidence og:p2 .
+og:r7 og:source og:amount ; og:target og:currency ; og:relationship "DENOMINATED_IN" ; og:evidence og:d6 .
+og:r8 og:source og:submission ; og:target og:payment-instruction ; og:relationship "REFERS_TO" ; og:evidence og:p4 .
+og:r9 og:source og:payment-instruction ; og:target og:payment-settled ; og:relationship "DISTINCT_FROM" ; og:evidence og:p3 .
+og:r10 og:source og:schema ; og:target og:amount ; og:relationship "DECLARES_TYPE" ; og:evidence og:s-amount .
+og:r11 og:source og:schema ; og:target og:loan-id ; og:relationship "DECLARES_PROPERTY" ; og:evidence og:s-loan_id .
+og:r12 og:source og:borrower ; og:target og:obligation ; og:relationship "OWES" ; og:evidence og:p1 .

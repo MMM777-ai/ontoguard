@@ -1,0 +1,12 @@
+{
+  "Synthetic assertions!B6": "The final transfer of funds satisfying a payment instruction; payment settlement is pending until confirmation by the receiving bank.",
+  "Synthetic assertions!C6": "Payments",
+  "Synthetic assertions!B5": "A contractual duty requiring the borrower to repay USD 250 to the lender by 2026-01-20 under the loan agreement, subject to the repayment schedule.",
+  "Synthetic assertions!C5": "Lending",
+  "Synthetic assertions!B4": "A transaction reversing a previously executed payment. Payment Reversal was reversed on 2026-01-17 under the repayment agreement.",
+  "Synthetic assertions!C4": "Payments",
+  "Synthetic assertions!B2": "A payment instruction submitted to a processor. Payment Submission was submitted on 2026-01-15 for USD 250 under the repayment agreement.",
+  "Synthetic assertions!C2": "Payments",
+  "Synthetic assertions!B3": "A transfer of funds performed by a payment processor. Payment Execution was executed on 2026-01-16 for USD 250 under the repayment agreement.",
+  "Synthetic assertions!C3": "Payments"
+}

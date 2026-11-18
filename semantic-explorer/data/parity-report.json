@@ -1,0 +1,21 @@
+{
+  "scope": "ILLUSTRATIVE_WEBSITE_FIXTURE",
+  "revision": "illustrative-lending-r1",
+  "status": "PASS",
+  "xlsx_rows": 11,
+  "rdf_edges": 12,
+  "rdf_triples": 92,
+  "limitations": "Illustrative projection. RDF represents selected fields and edges; not a runtime export. XLSX and JSONL include complete concept projection.",
+  "artifact_sha256": {
+    "concepts.jsonl": "5f84f47f00e7e74fde28e22993cc5beb75d3633d5aa36ebd74865f6e5ff5a787",
+    "concepts.xlsx": "1cd5a2cff0eaefbad1cc80e1bf691750235ca44fe6f867ff5f29ad46c8948ccc",
+    "contracts.json": "6ad9675b97fede8e8e32a43b83d3c73ada74d1934baf7e2742d99f003d999801",
+    "dataset.json": "ccf6e27df199563b1c96feb04bf1757a0bf9ce8987453d80cb603041a0fd1bd6",
+    "graph.ttl": "7b984b440637767e9f7018783c23753742568af5715d093f9af481618aab2aeb",
+    "lending-dictionary.csv": "d2b8cffff8af9c869e33ccb523039c042df7739f4165b3000f94bbd1a8683075",
+    "loan-policy.txt": "78f54c9f671ae00d618d48a1f15e9a79c708ea6a0c50478d54da5250ee1b763e",
+    "loan-schema.json": "a9ff6f90dd30f2c8650cc90c9a90f75a372a159afd3b2610d027ac9e64701ea1",
+    "receipts.json": "bcb901fe500578c731ffc4470f8e0f0fc265e21067edb8836e6e821837eb3cc4",
+    "relationships.json": "785b125b8ac8e5e5e2ba26967ddb54d8a6a910a672ec2bbb47dac7f87f21ad0b"
+  }
+}

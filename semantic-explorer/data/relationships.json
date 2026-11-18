@@ -1,0 +1,137 @@
+{
+  "revision": "illustrative-lending-r1",
+  "records": [
+    {
+      "id": "r1",
+      "from": "loan",
+      "to": "borrower",
+      "type": "HAS_PARTY",
+      "evidence_id": "d4",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "d4"
+      ]
+    },
+    {
+      "id": "r2",
+      "from": "loan",
+      "to": "amount",
+      "type": "HAS_AMOUNT",
+      "evidence_id": "d5",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "d5"
+      ]
+    },
+    {
+      "id": "r3",
+      "from": "loan",
+      "to": "loan-id",
+      "type": "IDENTIFIED_BY",
+      "evidence_id": "d3",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "d3"
+      ]
+    },
+    {
+      "id": "r4",
+      "from": "loan",
+      "to": "obligation",
+      "type": "GOVERNS",
+      "evidence_id": "p1",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "p1"
+      ]
+    },
+    {
+      "id": "r5",
+      "from": "loan",
+      "to": "obligation",
+      "type": "HAS_OBLIGATION",
+      "evidence_id": "p1",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "p1"
+      ]
+    },
+    {
+      "id": "r6",
+      "from": "obligation",
+      "to": "due-date",
+      "type": "DUE_ON",
+      "evidence_id": "p2",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "p2"
+      ]
+    },
+    {
+      "id": "r7",
+      "from": "amount",
+      "to": "currency",
+      "type": "DENOMINATED_IN",
+      "evidence_id": "d6",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "d6"
+      ]
+    },
+    {
+      "id": "r8",
+      "from": "submission",
+      "to": "payment-instruction",
+      "type": "REFERS_TO",
+      "evidence_id": "p4",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "p4"
+      ]
+    },
+    {
+      "id": "r9",
+      "from": "payment-instruction",
+      "to": "payment-settled",
+      "type": "DISTINCT_FROM",
+      "evidence_id": "p3",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "p3"
+      ]
+    },
+    {
+      "id": "r10",
+      "from": "schema",
+      "to": "amount",
+      "type": "DECLARES_TYPE",
+      "evidence_id": "s-amount",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "s-amount"
+      ]
+    },
+    {
+      "id": "r11",
+      "from": "schema",
+      "to": "loan-id",
+      "type": "DECLARES_PROPERTY",
+      "evidence_id": "s-loan_id",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "s-loan_id"
+      ]
+    },
+    {
+      "id": "r12",
+      "from": "borrower",
+      "to": "obligation",
+      "type": "OWES",
+      "evidence_id": "p1",
+      "standing": "ILLUSTRATIVE_ESTABLISHED",
+      "evidence_ids": [
+        "p1"
+      ]
+    }
+  ]
+}

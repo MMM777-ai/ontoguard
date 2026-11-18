@@ -1,0 +1,31 @@
+{
+  "scope": "CONTROLLED_RUNTIME_OUTPUT",
+  "revision": "1",
+  "release": "1.89.332",
+  "run_id": "ea77a091eb21475697ab37a931eba0c9",
+  "asset_id": "compiled-asset:ea77a091eb21475697ab37a931eba0c9",
+  "status": "PASS",
+  "xlsx_rows": 5,
+  "rdf_edges": 1,
+  "artifact_sha256": {
+    "concepts.jsonl": "b6bd4e418497a8c602639816932aaea1bc1c28d3e96127a210dd85e1cdcc097b",
+    "concepts.xlsx": "4b85f3bf6927acf96cbc208b192ec8e5580cb12188938a9b410ddd5182a81ffe",
+    "contracts.json": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+    "dataset.json": "5c052b88bc07d5c3989d34933668a30aa1b9b99b659b9277484e10dbe240396b",
+    "graph.ttl": "c4e7ae01be4f1b5e2ced42575d48368d73080015254722ea8d3609ac8495a2d6",
+    "lending-glossary.xlsx": "9ae1f92565cd7f1d661cf26f6ac4ec22d3de86cfe542f4afe328779c3a7bd465",
+    "loan-policy.txt": "78f54c9f671ae00d618d48a1f15e9a79c708ea6a0c50478d54da5250ee1b763e",
+    "loan-schema.json": "a9ff6f90dd30f2c8650cc90c9a90f75a372a159afd3b2610d027ac9e64701ea1",
+    "native-contract-summary.json": "4d08363dcffaf7080b6601f981abe36ae4cdcc391b9c89a58cd7b925c90d38ff",
+    "receipts.json": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+    "relationships.json": "703c8f7b23d8af1016155b164f1d30fd671769e2dce4c4d5fd8af50563b0c007",
+    "source-cells.json": "a73a6237497319f5e60af32eff028550a67197c111d7a4f718e1fd0981dd9bed"
+  },
+  "native_sha256": {
+    "native.jsonl": "a74966d546a708b9bc3da2aba9528fede879f33843461cc37663c938c47ff7c6",
+    "native.ttl": "b168f8059f8e832f6fd45337ed149b9a18f45ce5b3876841549ca3ab031d90b5",
+    "native.xlsx": "96e7b270e6e1c2fb93c5d77a61a34cf188c9a3b4fd50584c29e5bbfb30e24b89",
+    "native.zip": "eb48d84a0828de02e3ec398a3a95b49a1ad65fad6969b539d8695544e8e63d3a"
+  },
+  "limitations": "Build checked native XLSX core and relationship records, native RDF core and graph edge endpoints; public minimized derivative, not native file. Browser checks hashes and JSON parity, not independent XLSX/RDF parse."
+}

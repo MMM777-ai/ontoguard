@@ -1,0 +1,50 @@
+{
+  "revision": "illustrative-lending-r1",
+  "records": [
+    {
+      "id": "illustrative-loan-contract",
+      "revision": "illustrative-lending-r1",
+      "fields": [
+        {
+          "field": "loan_id",
+          "concept_id": "loan-id",
+          "type": "string",
+          "evidence_id": "s-loan_id",
+          "required": true,
+          "nullable": false
+        },
+        {
+          "field": "amount",
+          "concept_id": "amount",
+          "type": "number",
+          "evidence_id": "s-amount",
+          "required": true,
+          "nullable": false
+        },
+        {
+          "field": "currency",
+          "concept_id": "currency",
+          "type": "string",
+          "evidence_id": "s-currency",
+          "required": true,
+          "nullable": false
+        }
+      ],
+      "records": {
+        "valid": {
+          "loan_id": "L-001",
+          "amount": 1250,
+          "currency": "USD"
+        },
+        "invalid": {
+          "loan_id": "L-001",
+          "amount": "1250",
+          "currency": "USD"
+        }
+      },
+      "version": "illustration-2",
+      "additional_properties": null,
+      "contract_hash": "e24f0e0947c51d686047907c878aabeb995a15e1641566d846d6d92826a8ff58"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+@prefix og: <https://ontoguard.ai/demo/v332/> .
+
+<https://ontoguard.ai/demo/v332/relationship:29224b44c642a2d1c7c35a21e04e1e9177dd370948e08b5610662e45678c25ed> og:evidence_id og:cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:0bfeef70c916fee6e3e52d46a8ae85f05f4181c7da16dd6aecb9518174ad7c14> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:76d46de8b7ce312bdd7fe7652b86ce164f8dc39289a21fee694eabf6a7529196> og:evidence_id og:cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:d8a11693e72cfdeb9506079ef1f9a59b4c23f4fa6249134a0820be2e3ccf2ca6> og:evidence_id og:cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:41fdc18a5d5b2206a2c871a517290b9a6f59f2d95fbbf0109b51c7f7d7d1f377> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "A payment instruction submitted to a processor. Payment Submission was submitted on 2026-01-15 for USD 250 under the repayment agreement." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Submission" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:7477d9ae36a8965d26797c0d16ebc2fed29febd4439e5d3bb276d8665c124b8a> og:category "Identifier-like" ;
+    og:class "UNKNOWN" ;
+    og:definition "A unique reference assigned to a payment instruction." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Identifier" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:7df7e4184c9b9cdc1989dbf40f75666f528f10117f80640890601ca0ffc15264> og:category "Process-like" ;
+    og:class "Process" ;
+    og:definition "A transfer of funds performed by a payment processor. Payment Execution was executed on 2026-01-16 for USD 250 under the repayment agreement." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "PROCESS" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Execution" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:c0a4d4cd3df86d25d9192aeab8330a152055be26092e8379886fd764e7a8ab89> og:category "Event-like" ;
+    og:class "Event" ;
+    og:definition "A transaction reversing a previously executed payment. Payment Reversal was reversed on 2026-01-17 under the repayment agreement." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "EVENT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Reversal" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:c7930e56527d19005ca4233e8e2a5fd85474e301fa33f997acfdfee97fcae9cb> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "The final transfer of funds satisfying a payment instruction; payment settlement is pending until confirmation by the receiving bank." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Settlement" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:0bfeef70c916fee6e3e52d46a8ae85f05f4181c7da16dd6aecb9518174ad7c14> og:category "Organizational" ;
+    og:class "Organization" ;
+    og:definition "An organization that advances funds under a loan agreement." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "ORGANIZATION_PARTY" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Lender" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "A person or organization that receives loan proceeds and undertakes repayment obligations." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Borrower" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "A contractual duty requiring the borrower to repay USD 250 to the lender by 2026-01-20 under the loan agreement, subject to the repayment schedule." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Repayment Obligation" .
+

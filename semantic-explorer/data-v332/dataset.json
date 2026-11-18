@@ -1,0 +1,389 @@
+{
+  "schema_version": 2,
+  "demo_id": "controlled-lending-v332",
+  "revision": "1",
+  "scope": "CONTROLLED_RUNTIME_OUTPUT",
+  "runtime_release": "1.89.332",
+  "run_id": "ea77a091eb21475697ab37a931eba0c9",
+  "asset_id": "compiled-asset:ea77a091eb21475697ab37a931eba0c9",
+  "sources": [
+    {
+      "id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "name": "lending-glossary.xlsx",
+      "version": "synthetic input 1",
+      "kind": "XLSX",
+      "file": "lending-glossary.xlsx",
+      "sha256": "9ae1f92565cd7f1d661cf26f6ac4ec22d3de86cfe542f4afe328779c3a7bd465",
+      "revision": "1",
+      "cell_index": "source-cells.json"
+    },
+    {
+      "id": "source-instance:semantic:6b99b88f9db2d5427fb3c1ff5c6ffcc7eaf5c8503d4ddbec700ed043af94284b",
+      "name": "loan-schema.json",
+      "version": "synthetic input 1",
+      "kind": "JSON",
+      "file": "loan-schema.json",
+      "sha256": "a9ff6f90dd30f2c8650cc90c9a90f75a372a159afd3b2610d027ac9e64701ea1",
+      "revision": "1"
+    },
+    {
+      "id": "source-instance:semantic:b6fe2fcb13220e1a1b6ccac91578e44bc37e7e93efdb8d7a1f454ac15222d58f",
+      "name": "loan-policy.txt",
+      "version": "synthetic input 1",
+      "kind": "TEXT",
+      "file": "loan-policy.txt",
+      "sha256": "78f54c9f671ae00d618d48a1f15e9a79c708ea6a0c50478d54da5250ee1b763e",
+      "revision": "1"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "cell-b0d780a9d13105789ac116ac66fb93d32f418955265869c2e04ccdd85fb34a22",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!B2",
+      "excerpt": "A contractual duty requiring the borrower to repay outstanding principal by the specified due date.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-5aae460ba3a7f284cd915223cc956c29dc39eac57672039131078f65aa920705",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!C2",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!B4",
+      "excerpt": "A sequence of dates and amounts specifying when the borrower must repay the outstanding loan balance.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-b844ffec3247ac3cbaf4c6e80ede44304011690e84636d04b5b41fff31fd02e5",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!C4",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-8f1a4815d1cdd16252709f8d99108818dd712ece7eda0409fa4c3d9a4ec7212f",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!B3",
+      "excerpt": "A contractual arrangement in which a lender advances funds to a borrower subject to repayment conditions.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-51fa086b8395e1b00eea02b9449d00e73461268b7c4e929f2ef055427687a0d2",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!C3",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!B5",
+      "excerpt": "The date on which funds are transferred between the borrower and lender to settle a repayment obligation.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-43e6027ef321816c849af03107ac2f8ab11ddcffa1a298d47ddab8cf1500d0ce",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!C5",
+      "excerpt": "Repayment",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!B6",
+      "excerpt": "The amount of outstanding principal that a lender could lose if a borrower fails to repay.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-5d1814c28a8f4075557615c3f427b6293e6c0da54b2f865b88e74dbf50e2a90f",
+      "source_id": "source-instance:semantic:5e773e2141df74b58612fba3bd32e9d9356ae9d3fc35a17f20958a8be98e73dc",
+      "locator": "Lending glossary!C6",
+      "excerpt": "Credit Risk",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "structural-concept:4f7b63d9178cebbf2f90e7dd49f5491910e8a65f392b412b701dbefbe3f0b5fd",
+      "term": "Repayment Obligation",
+      "category": "Business",
+      "definition": "A contractual duty requiring the borrower to repay outstanding principal by the specified due date.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-b0d780a9d13105789ac116ac66fb93d32f418955265869c2e04ccdd85fb34a22",
+        "cell-5aae460ba3a7f284cd915223cc956c29dc39eac57672039131078f65aa920705"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "PHENOMENOLOGY_AND_MICRO_ONTOLOGY_CONTEXTUALIZED",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:1e94376194e316851a82aed2dd7782ddbd013f6eae649e5b0e98e28ebc350939",
+      "definition_evidence_ids": [
+        "cell-b0d780a9d13105789ac116ac66fb93d32f418955265869c2e04ccdd85fb34a22"
+      ],
+      "domain_evidence_ids": [
+        "cell-5aae460ba3a7f284cd915223cc956c29dc39eac57672039131078f65aa920705"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-b0d780a9d13105789ac116ac66fb93d32f418955265869c2e04ccdd85fb34a22"
+      ]
+    },
+    {
+      "id": "structural-concept:3107f0fbed5be0013ddbd298bc0f97b6bf59e77307ea3a299a99cdc9b1764750",
+      "term": "Repayment Schedule",
+      "category": "Business",
+      "definition": "A sequence of dates and amounts specifying when the borrower must repay the outstanding loan balance.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06",
+        "cell-b844ffec3247ac3cbaf4c6e80ede44304011690e84636d04b5b41fff31fd02e5"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:fde31a1c1d01e2681c29d46aaffeb5f7e91b9b908919a99700a77736f0093dbc",
+      "definition_evidence_ids": [
+        "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06"
+      ],
+      "domain_evidence_ids": [
+        "cell-b844ffec3247ac3cbaf4c6e80ede44304011690e84636d04b5b41fff31fd02e5"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06"
+      ]
+    },
+    {
+      "id": "structural-concept:f083ff354524f1d34b39939ca9e497f73396d754ebeafd631e121d88acae64f2",
+      "term": "Loan Agreement",
+      "category": "Legal",
+      "definition": "A contractual arrangement in which a lender advances funds to a borrower subject to repayment conditions.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-8f1a4815d1cdd16252709f8d99108818dd712ece7eda0409fa4c3d9a4ec7212f",
+        "cell-51fa086b8395e1b00eea02b9449d00e73461268b7c4e929f2ef055427687a0d2"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:eb496ee1cc7304982fc44657b1e6bd3e4b71c30eb38c0ceb6e63705c8cec97c0",
+      "definition_evidence_ids": [
+        "cell-8f1a4815d1cdd16252709f8d99108818dd712ece7eda0409fa4c3d9a4ec7212f"
+      ],
+      "domain_evidence_ids": [
+        "cell-51fa086b8395e1b00eea02b9449d00e73461268b7c4e929f2ef055427687a0d2"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-8f1a4815d1cdd16252709f8d99108818dd712ece7eda0409fa4c3d9a4ec7212f"
+      ]
+    },
+    {
+      "id": "structural-concept:470787bee260dd248fec0e1531f036bc22f319d80fcbf6a1abe77c55f75cebab",
+      "term": "Settlement Date",
+      "category": "Property-like",
+      "definition": "The date on which funds are transferred between the borrower and lender to settle a repayment obligation.",
+      "domain": "Repayment",
+      "class": "Property",
+      "role": "PROPERTY",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7",
+        "cell-43e6027ef321816c849af03107ac2f8ab11ddcffa1a298d47ddab8cf1500d0ce"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:14f1c2fbe1b75322001bcda17e7c7359ac200a5963b2f9dc602b1caeeb7551ac",
+      "definition_evidence_ids": [
+        "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7"
+      ],
+      "domain_evidence_ids": [
+        "cell-43e6027ef321816c849af03107ac2f8ab11ddcffa1a298d47ddab8cf1500d0ce"
+      ],
+      "class_evidence_ids": [
+        "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7"
+      ],
+      "role_evidence_ids": [
+        "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7"
+      ]
+    },
+    {
+      "id": "structural-concept:531c91c7df904b2b99efd757c2bcf4556f3a05a8056889dc00660086b3078f6b",
+      "term": "Credit Exposure",
+      "category": "Measurement-like",
+      "definition": "The amount of outstanding principal that a lender could lose if a borrower fails to repay.",
+      "domain": "Credit Risk",
+      "class": "Metric",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "CANDIDATE",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b",
+        "cell-5d1814c28a8f4075557615c3f427b6293e6c0da54b2f865b88e74dbf50e2a90f"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:08c116dfd28c266d0943648a719db39e597a0925136c194ef49df144fa95eb9e",
+      "definition_evidence_ids": [
+        "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b"
+      ],
+      "domain_evidence_ids": [
+        "cell-5d1814c28a8f4075557615c3f427b6293e6c0da54b2f865b88e74dbf50e2a90f"
+      ],
+      "class_evidence_ids": [
+        "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b"
+      ],
+      "role_evidence_ids": [
+        "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "relationship:df6bc1a11f03aaea006fa3c7456da07eaf34edd59cba747d1bf21c3071e47d22",
+      "from": "structural-concept:470787bee260dd248fec0e1531f036bc22f319d80fcbf6a1abe77c55f75cebab",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7",
+      "evidence_ids": [
+        "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7"
+      ],
+      "revision": "1",
+      "to": "structural-concept:4f7b63d9178cebbf2f90e7dd49f5491910e8a65f392b412b701dbefbe3f0b5fd"
+    }
+  ],
+  "literal_relationships": [
+    {
+      "id": "relationship:3452f0ea115b7ab3401cf7dd568929da7f4f52c13cf8d9f978a1001b3998370b",
+      "from": "structural-concept:3107f0fbed5be0013ddbd298bc0f97b6bf59e77307ea3a299a99cdc9b1764750",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06",
+      "evidence_ids": [
+        "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06"
+      ],
+      "revision": "1",
+      "object_literal": "amount"
+    },
+    {
+      "id": "relationship:79c95871d3d586e87915be83af0a1dc7093711da6ee6682f393b41dd6abc5315",
+      "from": "structural-concept:531c91c7df904b2b99efd757c2bcf4556f3a05a8056889dc00660086b3078f6b",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b",
+      "evidence_ids": [
+        "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b"
+      ],
+      "revision": "1",
+      "object_literal": "amount"
+    }
+  ],
+  "review": [],
+  "lifecycle": [
+    {
+      "id": "fsi:06d4d85102a598b0ccc13cbde48c8cc6",
+      "stage": "Repayment Schedule · FINANCIAL_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: when the borrower must repay the outstanding loan balance | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-08939ac2c0aa8b8d2e3e7989ddc2254875f695a0e48eb5e4fefb4f48aec6fb06",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:54f4481bd5e9468af7b103c30df138b6",
+      "stage": "Credit Exposure · FINANCIAL_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: if a borrower fails to repay | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-84aa2552e07c7b6502b2bd817927a742cb7ce5cb52b2506b23b8d95d78acc13b",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:5c32de5f7cd0fe0c10dcdb4c8a3c00ef",
+      "stage": "Repayment Obligation · OBLIGATION_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-b0d780a9d13105789ac116ac66fb93d32f418955265869c2e04ccdd85fb34a22",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:66bd496fe4ac5dad47b4015a9b7a0a90",
+      "stage": "Loan Agreement · OBLIGATION_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: subject to repayment conditions | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-8f1a4815d1cdd16252709f8d99108818dd712ece7eda0409fa4c3d9a4ec7212f",
+      "revision": "1"
+    },
+    {
+      "id": "fsi:a26709a0e4454d93fde55891d5eba085",
+      "stage": "Settlement Date · OBLIGATION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-f6ac325734016fc87b17f5abf47121deb3b9e6bc02b5354bd1b8a3d439ff70a7",
+      "revision": "1"
+    }
+  ],
+  "contracts": [],
+  "receipts": [],
+  "native_relationship_count": 3,
+  "native_unknown_count": 13
+}

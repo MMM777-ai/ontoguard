@@ -1,0 +1,810 @@
+{
+  "schema_version": 3,
+  "demo_id": "controlled-lending-v332-lifecycle-r6",
+  "revision": "1",
+  "scope": "CONTROLLED_RUNTIME_OUTPUT",
+  "runtime_release": "1.89.332",
+  "run_id": "4cbf477d67194b9f83817c1cfa11657a",
+  "asset_id": "compiled-asset:4cbf477d67194b9f83817c1cfa11657a",
+  "sources": [
+    {
+      "id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "name": "events.xlsx",
+      "version": "synthetic input 1",
+      "kind": "XLSX",
+      "file": "events.xlsx",
+      "sha256": "699d55ea0425801289ca6253ece0ba00b1067cdf02bb053da65f8401963744c9",
+      "revision": "1",
+      "cell_index": "events-cells.json"
+    },
+    {
+      "id": "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0",
+      "name": "glossary.xlsx",
+      "version": "synthetic input 1",
+      "kind": "XLSX",
+      "file": "glossary.xlsx",
+      "sha256": "90d4f8644a6b9a5a3775b771b1d854f7cddf3272d91de29dabb28d2c4877732e",
+      "revision": "1",
+      "cell_index": "glossary-cells.json"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "cell-d64c345f2672c8a42e76d1befb194deacce240db288cb6ad7045d09713ff23cd",
+      "source_id": "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0",
+      "locator": "Glossary!B4",
+      "excerpt": "A unique reference assigned to a payment instruction.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-7cc2f0ea89dceb090152dde9b6a0ba93a150a0ea1a30c6d964da5113f72a0fe3",
+      "source_id": "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0",
+      "locator": "Glossary!C4",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-473cfadfe817ba19b43d3d8ba3b9375cb43a0c1ab50ee83d09689f71689ced71",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!B6",
+      "excerpt": "The final transfer of funds satisfying a payment instruction; payment settlement is pending until confirmation by the receiving bank.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-ee93169999274158abcc6e475cde5e8da910b9353a3018e234cbaaa920950efb",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!C6",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!B5",
+      "excerpt": "A contractual duty requiring the borrower to repay USD 250 to the lender by 2026-01-20 under the loan agreement, subject to the repayment schedule.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-d6cd02a7d123478af7f0c4b3420217b76cfee88d310db01fd997a65fdf1a2a3c",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!C5",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-e5abaef60ca2d0445e676b65fe1b91c10b896893420095656b086f2e7d8eb800",
+      "source_id": "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0",
+      "locator": "Glossary!B3",
+      "excerpt": "An organization that advances funds under a loan agreement.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-fce293620c1147e174aaf14a97567f0c5e61271244b2619ac329dd92f01220ec",
+      "source_id": "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0",
+      "locator": "Glossary!C3",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-03e5bc54b3dd8ca634013b86bb36fb03ad82652b6bd81bb1924cded1359f5f89",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!B4",
+      "excerpt": "A transaction reversing a previously executed payment. Payment Reversal was reversed on 2026-01-17 under the repayment agreement.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-a778fec93ad8088b2ff030e5b041eeb537a44397c3abdefc755a9f10b7248440",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!C4",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-5e4ebdd0e2b730fe234e80291402c6a1de13e7df65276e288fcaa50f74d05223",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!B2",
+      "excerpt": "A payment instruction submitted to a processor. Payment Submission was submitted on 2026-01-15 for USD 250 under the repayment agreement.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-e1c82238f51984477838d2286434c343cecb45ac67dedfad6101982e41bd55c9",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!C2",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-5e7122c79682b3a05810f4ef7f92b0a24793091a4ba475b26aae62e60378335f",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!B3",
+      "excerpt": "A transfer of funds performed by a payment processor. Payment Execution was executed on 2026-01-16 for USD 250 under the repayment agreement.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-5dcec6e56b70454ace2deca384c19182c670c774885871610e3301ce491be907",
+      "source_id": "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc",
+      "locator": "Synthetic assertions!C3",
+      "excerpt": "Payments",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1",
+      "source_id": "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0",
+      "locator": "Glossary!B2",
+      "excerpt": "A person or organization that receives loan proceeds and undertakes repayment obligations.",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    },
+    {
+      "id": "cell-aff356681e3620554599c1b145bcb7d10b69ba4588adf824578cc1a99f1c66bf",
+      "source_id": "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0",
+      "locator": "Glossary!C2",
+      "excerpt": "Lending",
+      "type": "Runtime-selected source reference · workbook cell",
+      "revision": "1"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "structural-concept:7477d9ae36a8965d26797c0d16ebc2fed29febd4439e5d3bb276d8665c124b8a",
+      "term": "Payment Identifier",
+      "category": "Identifier-like",
+      "definition": "A unique reference assigned to a payment instruction.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-d64c345f2672c8a42e76d1befb194deacce240db288cb6ad7045d09713ff23cd",
+        "cell-7cc2f0ea89dceb090152dde9b6a0ba93a150a0ea1a30c6d964da5113f72a0fe3"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:d38de3a8eaa0cb6b72335b01d3d569648b5150933b89843a739c07f34cd32892",
+      "definition_evidence_ids": [
+        "cell-d64c345f2672c8a42e76d1befb194deacce240db288cb6ad7045d09713ff23cd"
+      ],
+      "domain_evidence_ids": [
+        "cell-7cc2f0ea89dceb090152dde9b6a0ba93a150a0ea1a30c6d964da5113f72a0fe3"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-d64c345f2672c8a42e76d1befb194deacce240db288cb6ad7045d09713ff23cd"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Identifier",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:c7930e56527d19005ca4233e8e2a5fd85474e301fa33f997acfdfee97fcae9cb",
+      "term": "Payment Settlement",
+      "category": "Business",
+      "definition": "The final transfer of funds satisfying a payment instruction; payment settlement is pending until confirmation by the receiving bank.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-473cfadfe817ba19b43d3d8ba3b9375cb43a0c1ab50ee83d09689f71689ced71",
+        "cell-ee93169999274158abcc6e475cde5e8da910b9353a3018e234cbaaa920950efb"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:e0d295cfc2c0c55dd8063c2362b6570a93ee6ce71cc32fd9c0c1925cd766cd0d",
+      "definition_evidence_ids": [
+        "cell-473cfadfe817ba19b43d3d8ba3b9375cb43a0c1ab50ee83d09689f71689ced71"
+      ],
+      "domain_evidence_ids": [
+        "cell-ee93169999274158abcc6e475cde5e8da910b9353a3018e234cbaaa920950efb"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-473cfadfe817ba19b43d3d8ba3b9375cb43a0c1ab50ee83d09689f71689ced71"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Settlement",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08",
+      "term": "Repayment Obligation",
+      "category": "Business",
+      "definition": "A contractual duty requiring the borrower to repay USD 250 to the lender by 2026-01-20 under the loan agreement, subject to the repayment schedule.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56",
+        "cell-d6cd02a7d123478af7f0c4b3420217b76cfee88d310db01fd997a65fdf1a2a3c"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "PHENOMENOLOGY_AND_MICRO_ONTOLOGY_CONTEXTUALIZED",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:d3e328f654b5ed99b253c9c653601c124304666166c4f6eb5bf947fa56af387e",
+      "definition_evidence_ids": [
+        "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56"
+      ],
+      "domain_evidence_ids": [
+        "cell-d6cd02a7d123478af7f0c4b3420217b76cfee88d310db01fd997a65fdf1a2a3c"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Repayment Obligation",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:0bfeef70c916fee6e3e52d46a8ae85f05f4181c7da16dd6aecb9518174ad7c14",
+      "term": "Lender",
+      "category": "Organizational",
+      "definition": "An organization that advances funds under a loan agreement.",
+      "domain": "Lending",
+      "class": "Organization",
+      "role": "ORGANIZATION_PARTY",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-e5abaef60ca2d0445e676b65fe1b91c10b896893420095656b086f2e7d8eb800",
+        "cell-fce293620c1147e174aaf14a97567f0c5e61271244b2619ac329dd92f01220ec"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:f5d4cc0b4992fa360871525d10ad677e1f672cf689828fca73f78954c74eebb4",
+      "definition_evidence_ids": [
+        "cell-e5abaef60ca2d0445e676b65fe1b91c10b896893420095656b086f2e7d8eb800"
+      ],
+      "domain_evidence_ids": [
+        "cell-fce293620c1147e174aaf14a97567f0c5e61271244b2619ac329dd92f01220ec"
+      ],
+      "class_evidence_ids": [
+        "cell-e5abaef60ca2d0445e676b65fe1b91c10b896893420095656b086f2e7d8eb800"
+      ],
+      "role_evidence_ids": [
+        "cell-e5abaef60ca2d0445e676b65fe1b91c10b896893420095656b086f2e7d8eb800"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Lender",
+      "resolution_reasons": [
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the relationship of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:c0a4d4cd3df86d25d9192aeab8330a152055be26092e8379886fd764e7a8ab89",
+      "term": "Payment Reversal",
+      "category": "Event-like",
+      "definition": "A transaction reversing a previously executed payment. Payment Reversal was reversed on 2026-01-17 under the repayment agreement.",
+      "domain": "Payments",
+      "class": "Event",
+      "role": "EVENT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-03e5bc54b3dd8ca634013b86bb36fb03ad82652b6bd81bb1924cded1359f5f89",
+        "cell-a778fec93ad8088b2ff030e5b041eeb537a44397c3abdefc755a9f10b7248440"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:64310110831c41fdf64deecaae758239ba952a77b9f691fb376c3b72b9e3b8d9",
+      "definition_evidence_ids": [
+        "cell-03e5bc54b3dd8ca634013b86bb36fb03ad82652b6bd81bb1924cded1359f5f89"
+      ],
+      "domain_evidence_ids": [
+        "cell-a778fec93ad8088b2ff030e5b041eeb537a44397c3abdefc755a9f10b7248440"
+      ],
+      "class_evidence_ids": [
+        "cell-03e5bc54b3dd8ca634013b86bb36fb03ad82652b6bd81bb1924cded1359f5f89"
+      ],
+      "role_evidence_ids": [
+        "cell-03e5bc54b3dd8ca634013b86bb36fb03ad82652b6bd81bb1924cded1359f5f89"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Reversal",
+      "resolution_reasons": [
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR"
+      ],
+      "resolution_question": "What evidence establishes the relationship of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:41fdc18a5d5b2206a2c871a517290b9a6f59f2d95fbbf0109b51c7f7d7d1f377",
+      "term": "Payment Submission",
+      "category": "Business",
+      "definition": "A payment instruction submitted to a processor. Payment Submission was submitted on 2026-01-15 for USD 250 under the repayment agreement.",
+      "domain": "Payments",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-5e4ebdd0e2b730fe234e80291402c6a1de13e7df65276e288fcaa50f74d05223",
+        "cell-e1c82238f51984477838d2286434c343cecb45ac67dedfad6101982e41bd55c9"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:64afff240073565e238f004984f1daf64445d9c71a4939c305ed967376dc2314",
+      "definition_evidence_ids": [
+        "cell-5e4ebdd0e2b730fe234e80291402c6a1de13e7df65276e288fcaa50f74d05223"
+      ],
+      "domain_evidence_ids": [
+        "cell-e1c82238f51984477838d2286434c343cecb45ac67dedfad6101982e41bd55c9"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-5e4ebdd0e2b730fe234e80291402c6a1de13e7df65276e288fcaa50f74d05223"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Submission",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:7df7e4184c9b9cdc1989dbf40f75666f528f10117f80640890601ca0ffc15264",
+      "term": "Payment Execution",
+      "category": "Process-like",
+      "definition": "A transfer of funds performed by a payment processor. Payment Execution was executed on 2026-01-16 for USD 250 under the repayment agreement.",
+      "domain": "Payments",
+      "class": "Process",
+      "role": "PROCESS",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "ESTABLISHED",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-5e7122c79682b3a05810f4ef7f92b0a24793091a4ba475b26aae62e60378335f",
+        "cell-5dcec6e56b70454ace2deca384c19182c670c774885871610e3301ce491be907"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:341fa1771e87fea943da6027142fdab20b6dd9668f029049f79d2e5b1715a156",
+      "definition_evidence_ids": [
+        "cell-5e7122c79682b3a05810f4ef7f92b0a24793091a4ba475b26aae62e60378335f"
+      ],
+      "domain_evidence_ids": [
+        "cell-5dcec6e56b70454ace2deca384c19182c670c774885871610e3301ce491be907"
+      ],
+      "class_evidence_ids": [
+        "cell-5e7122c79682b3a05810f4ef7f92b0a24793091a4ba475b26aae62e60378335f"
+      ],
+      "role_evidence_ids": [
+        "cell-5e7122c79682b3a05810f4ef7f92b0a24793091a4ba475b26aae62e60378335f"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:32fa0daeae33ec948f88ae27231f3def1c81e734c4cdf3eda123885602a36cfc"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Payment Execution",
+      "resolution_reasons": [
+        "AVAILABLE_EVIDENCE_BELOW_ESTABLISHMENT_BAR"
+      ],
+      "resolution_question": "What evidence establishes the relationship of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    },
+    {
+      "id": "structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798",
+      "term": "Borrower",
+      "category": "Business",
+      "definition": "A person or organization that receives loan proceeds and undertakes repayment obligations.",
+      "domain": "Lending",
+      "class": "UNKNOWN",
+      "role": "BUSINESS_CONCEPT",
+      "standing": "ESTABLISHED",
+      "definition_standing": "ESTABLISHED",
+      "domain_standing": "ESTABLISHED",
+      "class_standing": "UNKNOWN",
+      "role_standing": "ESTABLISHED",
+      "needs_review": false,
+      "evidence_ids": [
+        "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1",
+        "cell-aff356681e3620554599c1b145bcb7d10b69ba4588adf824578cc1a99f1c66bf"
+      ],
+      "aliases": [],
+      "alternatives": [],
+      "construction": "DIRECT_STRUCTURAL",
+      "resolution_status": "OPEN_WORLD_UNRESOLVED",
+      "revision": "1",
+      "native_fingerprint": "sha256:bfe17791a47cef6824294aa9d05141db0c9d0beafd1c1975b6ee72c053243606",
+      "definition_evidence_ids": [
+        "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1"
+      ],
+      "domain_evidence_ids": [
+        "cell-aff356681e3620554599c1b145bcb7d10b69ba4588adf824578cc1a99f1c66bf"
+      ],
+      "class_evidence_ids": [],
+      "role_evidence_ids": [
+        "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1"
+      ],
+      "native_source_reference_ids": [
+        "source-instance:semantic:9701db79d327119429c39ae59f24ad623cf62ce72e02b7af0fc8d7af365712a0"
+      ],
+      "display_qualifier": "",
+      "native_display_label": "Borrower",
+      "resolution_reasons": [
+        "NO_QUALIFIED_EVIDENCE",
+        "COMPETING_EVIDENCE"
+      ],
+      "resolution_question": "What evidence establishes the class of this ConceptSense?",
+      "resolution_requirements": [
+        "explicit source/native class or independently supported structural/graph class evidence",
+        "explicit predicate/mapping or independently supported same-record/region/source/cross-source graph evidence"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "relationship:29224b44c642a2d1c7c35a21e04e1e9177dd370948e08b5610662e45678c25ed",
+      "from": "structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56",
+      "evidence_ids": [
+        "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56"
+      ],
+      "revision": "1",
+      "to": "structural-concept:0bfeef70c916fee6e3e52d46a8ae85f05f4181c7da16dd6aecb9518174ad7c14"
+    },
+    {
+      "id": "relationship:76d46de8b7ce312bdd7fe7652b86ce164f8dc39289a21fee694eabf6a7529196",
+      "from": "structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56",
+      "evidence_ids": [
+        "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56"
+      ],
+      "revision": "1",
+      "to": "structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798"
+    },
+    {
+      "id": "relationship:d8a11693e72cfdeb9506079ef1f9a59b4c23f4fa6249134a0820be2e3ccf2ca6",
+      "from": "structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798",
+      "type": "RELATED_TO",
+      "standing": "CANDIDATE",
+      "evidence_id": "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1",
+      "evidence_ids": [
+        "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1"
+      ],
+      "revision": "1",
+      "to": "structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08"
+    }
+  ],
+  "literal_relationships": [],
+  "review": [],
+  "lifecycle": [
+    {
+      "id": "fsi:04c6f24cc075b5dc8779c27fcfb1e35c",
+      "stage": "Payment Execution · OBLIGATION_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: EXECUTED | Currency: USD | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-5e7122c79682b3a05810f4ef7f92b0a24793091a4ba475b26aae62e60378335f",
+      "evidence_ids": [
+        "cell-5e7122c79682b3a05810f4ef7f92b0a24793091a4ba475b26aae62e60378335f"
+      ],
+      "revision": "1",
+      "concept_id": "structural-concept:7df7e4184c9b9cdc1989dbf40f75666f528f10117f80640890601ca0ffc15264",
+      "native_lifecycle_state": "EXECUTED",
+      "temporal_context": {
+        "expressions": [
+          "2026-01-16"
+        ],
+        "state": "SOURCE_ASSERTED_TEMPORAL_CONTEXT"
+      },
+      "lineage_context": [],
+      "conditions": [],
+      "currency": "USD",
+      "source_assertion_standing": "ESTABLISHED",
+      "operative_standing": "UNKNOWN",
+      "fulfillment_or_discharge": "UNKNOWN",
+      "authority_to_act": "NOT_ESTABLISHED",
+      "authorizes": false
+    },
+    {
+      "id": "fsi:55a2110ba6f5739705d1f3192ffdcd66",
+      "stage": "Borrower · OBLIGATION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1",
+      "evidence_ids": [
+        "cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1"
+      ],
+      "revision": "1",
+      "concept_id": "structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798",
+      "native_lifecycle_state": "UNKNOWN",
+      "temporal_context": {
+        "expressions": [],
+        "state": "UNKNOWN"
+      },
+      "lineage_context": [],
+      "conditions": [],
+      "currency": "UNKNOWN",
+      "source_assertion_standing": "ESTABLISHED",
+      "operative_standing": "UNKNOWN",
+      "fulfillment_or_discharge": "UNKNOWN",
+      "authority_to_act": "NOT_ESTABLISHED",
+      "authorizes": false
+    },
+    {
+      "id": "fsi:a7dfd4e03f3bed17a40d58da1d759f44",
+      "stage": "Payment Submission · PAYMENT_INSTRUCTION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: SUBMITTED | Currency: USD | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-5e4ebdd0e2b730fe234e80291402c6a1de13e7df65276e288fcaa50f74d05223",
+      "evidence_ids": [
+        "cell-5e4ebdd0e2b730fe234e80291402c6a1de13e7df65276e288fcaa50f74d05223"
+      ],
+      "revision": "1",
+      "concept_id": "structural-concept:41fdc18a5d5b2206a2c871a517290b9a6f59f2d95fbbf0109b51c7f7d7d1f377",
+      "native_lifecycle_state": "SUBMITTED",
+      "temporal_context": {
+        "expressions": [
+          "2026-01-15"
+        ],
+        "state": "SOURCE_ASSERTED_TEMPORAL_CONTEXT"
+      },
+      "lineage_context": [],
+      "conditions": [],
+      "currency": "USD",
+      "source_assertion_standing": "ESTABLISHED",
+      "operative_standing": "UNKNOWN",
+      "fulfillment_or_discharge": "UNKNOWN",
+      "authority_to_act": "NOT_ESTABLISHED",
+      "authorizes": false
+    },
+    {
+      "id": "fsi:b016fa6a821e0193be7ba94d1d53c64e",
+      "stage": "Payment Reversal · REVERSAL",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: REVERSED | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-03e5bc54b3dd8ca634013b86bb36fb03ad82652b6bd81bb1924cded1359f5f89",
+      "evidence_ids": [
+        "cell-03e5bc54b3dd8ca634013b86bb36fb03ad82652b6bd81bb1924cded1359f5f89"
+      ],
+      "revision": "1",
+      "concept_id": "structural-concept:c0a4d4cd3df86d25d9192aeab8330a152055be26092e8379886fd764e7a8ab89",
+      "native_lifecycle_state": "REVERSED",
+      "temporal_context": {
+        "expressions": [
+          "2026-01-17"
+        ],
+        "state": "SOURCE_ASSERTED_TEMPORAL_CONTEXT"
+      },
+      "lineage_context": [],
+      "conditions": [],
+      "currency": "UNKNOWN",
+      "source_assertion_standing": "ESTABLISHED",
+      "operative_standing": "UNKNOWN",
+      "fulfillment_or_discharge": "UNKNOWN",
+      "authority_to_act": "NOT_ESTABLISHED",
+      "authorizes": false
+    },
+    {
+      "id": "fsi:b556b56390d38ba0c0223baf6b5f4973",
+      "stage": "Repayment Obligation · OBLIGATION_CONTEXT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: subject to the repayment schedule | Lifecycle: UNKNOWN | Currency: USD | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56",
+      "evidence_ids": [
+        "cell-aa60b62b1db507e7cbe04d9b919e832796b044171150aef356bb1268d5ccda56"
+      ],
+      "revision": "1",
+      "concept_id": "structural-concept:fd543ed7d1cf65d11fa6a752b2525649b9be310ca14ffbb0df3bdaa599c67a08",
+      "native_lifecycle_state": "UNKNOWN",
+      "temporal_context": {
+        "expressions": [
+          "2026-01-20"
+        ],
+        "state": "SOURCE_ASSERTED_TEMPORAL_CONTEXT"
+      },
+      "lineage_context": [
+        "borrower to repay USD 250 to the lender by 2026-01-20 under the loan agreement, subject to the repayment schedule"
+      ],
+      "conditions": [
+        "subject to the repayment schedule"
+      ],
+      "currency": "USD",
+      "source_assertion_standing": "ESTABLISHED",
+      "operative_standing": "UNKNOWN",
+      "fulfillment_or_discharge": "UNKNOWN",
+      "authority_to_act": "NOT_ESTABLISHED",
+      "authorizes": false
+    },
+    {
+      "id": "fsi:e947f82f7b27fc021a7b0e6de8ca7191",
+      "stage": "Lender · CONTRACT",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-e5abaef60ca2d0445e676b65fe1b91c10b896893420095656b086f2e7d8eb800",
+      "evidence_ids": [
+        "cell-e5abaef60ca2d0445e676b65fe1b91c10b896893420095656b086f2e7d8eb800"
+      ],
+      "revision": "1",
+      "concept_id": "structural-concept:0bfeef70c916fee6e3e52d46a8ae85f05f4181c7da16dd6aecb9518174ad7c14",
+      "native_lifecycle_state": "UNKNOWN",
+      "temporal_context": {
+        "expressions": [],
+        "state": "UNKNOWN"
+      },
+      "lineage_context": [],
+      "conditions": [],
+      "currency": "UNKNOWN",
+      "source_assertion_standing": "ESTABLISHED",
+      "operative_standing": "UNKNOWN",
+      "fulfillment_or_discharge": "UNKNOWN",
+      "authority_to_act": "NOT_ESTABLISHED",
+      "authorizes": false
+    },
+    {
+      "id": "fsi:fa09559121b856cd1dc23ea9b249c58b",
+      "stage": "Payment Settlement · PAYMENT_INSTRUCTION",
+      "standing": "CANDIDATE",
+      "detail": "Conditions: UNKNOWN | Lifecycle: UNKNOWN | Currency: UNKNOWN | Operative standing: UNKNOWN | Discharge: UNKNOWN",
+      "evidence_id": "cell-473cfadfe817ba19b43d3d8ba3b9375cb43a0c1ab50ee83d09689f71689ced71",
+      "evidence_ids": [
+        "cell-473cfadfe817ba19b43d3d8ba3b9375cb43a0c1ab50ee83d09689f71689ced71"
+      ],
+      "revision": "1",
+      "concept_id": "structural-concept:c7930e56527d19005ca4233e8e2a5fd85474e301fa33f997acfdfee97fcae9cb",
+      "native_lifecycle_state": "UNKNOWN",
+      "temporal_context": {
+        "expressions": [
+          "until confirmation by the receiving bank"
+        ],
+        "state": "SOURCE_ASSERTED_TEMPORAL_CONTEXT"
+      },
+      "lineage_context": [],
+      "conditions": [],
+      "currency": "UNKNOWN",
+      "source_assertion_standing": "ESTABLISHED",
+      "operative_standing": "UNKNOWN",
+      "fulfillment_or_discharge": "UNKNOWN",
+      "authority_to_act": "NOT_ESTABLISHED",
+      "authorizes": false
+    }
+  ],
+  "contracts": [],
+  "receipts": [],
+  "native_relationship_count": 3,
+  "native_unknown_count": 3,
+  "unresolved_observations": [
+    {
+      "id": "unknown-summary:4c47dc00be826546499dfd1831fc7299036f61f38159f42edf3c8af5b85003c4",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "Lending"
+    },
+    {
+      "id": "unknown-summary:99aeddf9227c816d91d2771a857fbe47d69650db9625950150b2b9ae910a4b95",
+      "reason": "INSUFFICIENT_IDENTITY_EVIDENCE",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": null
+    },
+    {
+      "id": "unknown-summary:f1d8e550e86a92aa0c3670378f0315af5d51ac034b844f581d94b91a8719ea9a",
+      "reason": "AMBIGUOUS_INTERPRETATION",
+      "resolution": "Inspect source context; supply explicit supported evidence.",
+      "affected": "Payments"
+    }
+  ]
+}

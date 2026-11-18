@@ -1,0 +1,8 @@
+Field,Definition,Domain
+Loan,A credit agreement between borrower and lender.,Lending
+Loan ID,Unique identifier of a loan record.,Loan records
+Borrower,Party owing repayment under the agreement.,Lending
+Amount,Principal amount in the currency recorded.,Lending
+Currency,Currency code for the principal amount.,Loan records
+Due Date,Scheduled date when repayment is due.,Repayment
+Payment,A submitted repayment instruction.,Repayment

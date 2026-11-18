@@ -1,0 +1,123 @@
+@prefix og: <https://ontoguard.ai/demo/v332/> .
+
+<https://ontoguard.ai/demo/v332/relationship:3958b3287f969c55351306ccf38a238fe81ccc192afae508b26c92a8ffb7c4f1> og:evidence_id og:cell-17b506744220a19d3f376f5d4a403ab6b97f34d29708a5bd73c8c69711052d30 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:18d4685569eb909365d4459d8c56b90630bff13688b733dc4e91239720905f09> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:e7bb56cbd1642dc32715a1e20524d70362a7a8945f7618f6ac375da2015165d8> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:6b50e5718e9a318203442d15bef3a16cbbdf9ff3832971579d50bfbe3a23ccdc> og:evidence_id og:cell-ed7f5f273a266b9ddea74acf591b7972e9dff210292b461241a6dd18100dde53 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:e7bb56cbd1642dc32715a1e20524d70362a7a8945f7618f6ac375da2015165d8> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:8bfbf46408b11b28c0faf81412f23c673946addf752f45435f1c2f144f9db562> og:evidence_id og:cell-ba130e0a1deada281c4871c93f7e2dfa68918fd9eea577c3dc46ae9bc6980dd1 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:e7bb56cbd1642dc32715a1e20524d70362a7a8945f7618f6ac375da2015165d8> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:b7fa67ac7f673ab97c3fd1a3704f3edf7d27372b650e123f6312bfd105577201> og:evidence_id og:cell-17b506744220a19d3f376f5d4a403ab6b97f34d29708a5bd73c8c69711052d30 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:18d4685569eb909365d4459d8c56b90630bff13688b733dc4e91239720905f09> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:e7bb56cbd1642dc32715a1e20524d70362a7a8945f7618f6ac375da2015165d8> ;
+    og:type "INTENDED_TO_FULFILL" .
+
+<https://ontoguard.ai/demo/v332/relationship:cebcf303cf4e2e2d7c57f5d4a497c3e8ac371d978d1d45b26ab34fb1add39282> og:evidence_id og:cell-21bead592be9b6e00dbb7c09440a831667d3d3f1f97a0b25970d0817699de11c ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:ddb25a3710c7a0e117d59c3b0673b8752eea4d6fb604533aa560bf5e09e62003> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:18d4685569eb909365d4459d8c56b90630bff13688b733dc4e91239720905f09> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:edf3416be1855b3ed20fdfd691b908ec33f3eef5150378d81df06f16baf5b92a> og:evidence_id og:cell-46c66fd1e53ed50fe37d9b09c461c6fc343f9cbe07f553b1e7a24e442d53f2b0 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:9f92b5402a030f27635d315e240287f2b0c287a33a4b2a5993951ca6aebebaea> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:ddb25a3710c7a0e117d59c3b0673b8752eea4d6fb604533aa560bf5e09e62003> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/relationship:f3ddafa1de5e17458e254cbb2d11f3882c2326272b08f9b172730112057a6a99> og:evidence_id og:cell-ed7f5f273a266b9ddea74acf591b7972e9dff210292b461241a6dd18100dde53 ;
+    og:from <https://ontoguard.ai/demo/v332/structural-concept:e7bb56cbd1642dc32715a1e20524d70362a7a8945f7618f6ac375da2015165d8> ;
+    og:revision "1" ;
+    og:standing "CANDIDATE" ;
+    og:to <https://ontoguard.ai/demo/v332/structural-concept:0bfeef70c916fee6e3e52d46a8ae85f05f4181c7da16dd6aecb9518174ad7c14> ;
+    og:type "RELATED_TO" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:7477d9ae36a8965d26797c0d16ebc2fed29febd4439e5d3bb276d8665c124b8a> og:category "Identifier-like" ;
+    og:class "UNKNOWN" ;
+    og:definition "A unique reference assigned to a payment instruction." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Identifier" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:c2918b5b1b610e427851f671b3baef9df2348cf64548a4b8873b6f3b3cb6a730> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "The final transfer of funds satisfying a payment instruction; payment settlement is pending until confirmation by the receiving bank." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Settlement" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:0bfeef70c916fee6e3e52d46a8ae85f05f4181c7da16dd6aecb9518174ad7c14> og:category "Organizational" ;
+    og:class "Organization" ;
+    og:definition "An organization that advances funds under a loan agreement." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "ORGANIZATION_PARTY" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Lender" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:9f92b5402a030f27635d315e240287f2b0c287a33a4b2a5993951ca6aebebaea> og:category "Event-like" ;
+    og:class "Event" ;
+    og:definition "A transaction reversing a previously executed payment. Payment Reversal was reversed on 2026-01-17 under the repayment agreement. Payment Reversal references payment record identifier SYN-PMT-01 and links to Payment Execution." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "EVENT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Reversal" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:4a10f984770159d5805fa9507f39b915f88587ad118945395097797778914798> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "A person or organization that receives loan proceeds and undertakes repayment obligations." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Borrower" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:ddb25a3710c7a0e117d59c3b0673b8752eea4d6fb604533aa560bf5e09e62003> og:category "Process-like" ;
+    og:class "Process" ;
+    og:definition "A transfer of funds performed by a payment processor. Payment Execution was executed on 2026-01-16 for USD 250 under the repayment agreement. Payment Execution references payment record identifier SYN-PMT-01 and links to Payment Submission." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "PROCESS" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Execution" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:18d4685569eb909365d4459d8c56b90630bff13688b733dc4e91239720905f09> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "A payment instruction submitted to a processor. Payment Submission was submitted on 2026-01-15 for USD 250 under the repayment agreement. Payment Submission references payment record identifier SYN-PMT-01 and links to Repayment Obligation." ;
+    og:domain "Payments" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Payment Submission" .
+
+<https://ontoguard.ai/demo/v332/structural-concept:e7bb56cbd1642dc32715a1e20524d70362a7a8945f7618f6ac375da2015165d8> og:category "Business" ;
+    og:class "UNKNOWN" ;
+    og:definition "A contractual duty requiring the borrower to repay USD 250 to the lender by 2026-01-20 under the loan agreement, subject to the repayment schedule. Repayment Obligation references loan identifier SYN-LOAN-01." ;
+    og:domain "Lending" ;
+    og:revision "1" ;
+    og:role "BUSINESS_CONCEPT" ;
+    og:standing "ESTABLISHED" ;
+    og:term "Repayment Obligation" .
+

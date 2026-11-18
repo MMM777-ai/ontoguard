@@ -1,0 +1,38 @@
+{
+  "scope": "CONTROLLED_RUNTIME_OUTPUT",
+  "revision": "1",
+  "release": "1.89.332",
+  "run_id": "be931ea599de4c37bda614718c6626ee",
+  "asset_id": "compiled-asset:be931ea599de4c37bda614718c6626ee",
+  "status": "PASS",
+  "xlsx_rows": 8,
+  "rdf_edges": 7,
+  "rdf_literal_assertions": 0,
+  "schema": "og.website.parity@3",
+  "parser_versions": {
+    "openpyxl": "3.1.5",
+    "rdflib": "7.5.0"
+  },
+  "artifact_sha256": {
+    "concepts.jsonl": "232536c590842d24d8e90070d1bfec51cb5bd2a94c54aa165547818d7057d08b",
+    "concepts.xlsx": "496272b507fa5daf74df22124740a4f172e76e1fe8792b60efecaaa1cdf80253",
+    "contracts.json": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+    "dataset.json": "62c559e8bd23131791f746cf0152e15c5793b49e152334f4da73cb6192a9080b",
+    "events-cells.json": "053383a147192343b459c41caa9b9ddbe20c2a89d386524fc127153804d487eb",
+    "events.xlsx": "e8c5c8170a142d66ff5c270e5e485960ef2a99f65c01ddac226c4b2e3bdf7b10",
+    "glossary-cells.json": "833137d5e9d294354774f4b688422ffdf6a505cda5898296c9a24075a693cea8",
+    "glossary.xlsx": "90d4f8644a6b9a5a3775b771b1d854f7cddf3272d91de29dabb28d2c4877732e",
+    "graph.ttl": "99c4d28332109758be2a196da6c95825193a8b2b1109acfcf1715bba6e66ac14",
+    "literal-relationships.json": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+    "native-contract-summary.json": "b6c32223b89c14363d77ea0546503233e32f2b31d836d125444f0e0ee8cc1f7a",
+    "receipts.json": "45113adbc8edc9800d53e803118869f8532273b5014730ee0f6a6358d32d179b",
+    "relationships.json": "82733070d6992f3c61e7ab7299a86f8b558a3adbf24f80167e0636758f44579d"
+  },
+  "native_sha256": {
+    "native.jsonl": "699a767474b08b9f3394a24cc957658921d0a3484ba76b40f2160b5ee9c03e5e",
+    "native.ttl": "e6ae401397f3e7b1ca8499690748c726fa0431ee4353c833c3377d6dd15e3885",
+    "native.xlsx": "f7630ef6521bf4df196931af5c3d8ab2c8e00f0737de99cb1215c26f9a1acd97",
+    "native.zip": "4f346d5be11276b6557ac3a68287d325614301a91616769f8f54947d01cf8e1e"
+  },
+  "limitations": "Build checked native XLSX core and relationship records, native RDF core and graph edge endpoints; public minimized derivative, not native file. Browser checks hashes and JSON parity, not independent XLSX/RDF parse."
+}
