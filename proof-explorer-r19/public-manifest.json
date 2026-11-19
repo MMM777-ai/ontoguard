@@ -1,0 +1,27 @@
+{
+  "schema": "ontoguard.public_evidence.presentation_manifest@1",
+  "files": [
+    {
+      "name": "index.html",
+      "sha256": "dc7a53a98f6e99cdcaab7596befe0b842cb254abfcbabe002367b7b54853d711"
+    },
+    {
+      "name": "proof-explorer-data.json",
+      "sha256": "6dfe655e835fca640b5c744e5dac02270c6776cceb0b027a7f4dc8824cbbea97"
+    },
+    {
+      "name": "proof-explorer.css",
+      "sha256": "b51e87cd0bd0844b88b45633a25bfb0dbbe66ad9ef88c277cc4303c1225b4819"
+    },
+    {
+      "name": "proof-explorer.js",
+      "sha256": "01ddfa9098c215a22b16e0938a030f936d50b8a803db6bc0eb355cd8e50429d7"
+    },
+    {
+      "name": "public-receipt.json",
+      "sha256": "1619557a1e363a662aaacb04c9e994caca076dc5eced12531e4f92e6178b4154"
+    }
+  ],
+  "source_manifest_sha256": "f2793bd3f6c68815d524cfab813bb8e1eef2e5a8c89f464948e5df25b215fe0d",
+  "scope": "Historical public presentation with updated contact navigation; original case data and receipts retained; not original snapshot authentication."
+}
