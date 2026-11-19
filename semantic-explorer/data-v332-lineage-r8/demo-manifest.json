@@ -10,7 +10,7 @@
   "runtime_package_sha256": "6f00ef9ff5a6ded5a1394e405b4517a699a82f390b99c0ccb1566da06ffb1012",
   "runtime_wheel_sha256": "55e669770d2bbfe0db14bbff4f4997655ee9af73fe8eca02230b6ee4dae3dd72",
   "generation_date": "2026-11-18",
-  "approval_reference": "PENDING_OWNER_DISCLOSURE_REVIEW",
+  "approval_reference": "NOT_INDEPENDENTLY_AUTHENTICATED",
   "signature": null,
   "native_sha256": {
     "native.jsonl": "699a767474b08b9f3394a24cc957658921d0a3484ba76b40f2160b5ee9c03e5e",
