@@ -1,6 +1,6 @@
 {
   "release": "1.5.2",
-  "scope": "Fresh synthetic reference-vector generation by installed wheel; synthetic ledger/receipt fixtures; not a live target execution, independent production log, or verified publisher identity. Owner disclosure pending. Historical age disabled; V16 online not run.",
+  "scope": "Fresh synthetic reference-vector generation by installed wheel; synthetic ledger/receipt fixtures; not a live target execution, independent production log, or verified publisher identity.  Historical age disabled; V16 online not run.",
   "package_sha256": "964abe668544f3c82f4528270059779632b8e2c9e68e5cb305a5a55619799c21",
   "results": [
     {

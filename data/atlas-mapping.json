@@ -1,0 +1,213 @@
+{
+  "atlas_release": "v2026.09",
+  "verified_on": "2026-11-18",
+  "source_release": "https://github.com/mitre-atlas/atlas-data/releases/tag/v2026.09",
+  "verification_scope": "IDs, names and technique-mitigation links checked against the tagged ATLAS v2026.09 release file (format 6.0.0), pinned as data/ATLAS-2026.09.yaml.",
+  "techniques": [
+    {
+      "id": "AML.T0053",
+      "name": "AI Agent Tool Invocation",
+      "source_url": "https://atlas.mitre.org/techniques/AML.T0053",
+      "attacker_gets": "A credentialed agent calls a privileged tool.",
+      "da_control": "Check the exact requested operation, target and current authority; refuse or escalate.",
+      "limit": "Only protected execution routes are checked.",
+      "mitigations": [
+        "AML.M0029",
+        "AML.M0037"
+      ],
+      "evidence": "/proof-explorer/index.html#scenario-controls",
+      "verification": {
+        "status": "confirmed",
+        "checked_on": "2026-11-18",
+        "atlas_url": "https://atlas.mitre.org/techniques/AML.T0053",
+        "source_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+        "notes": "ID and name match ATLAS v2026.09 exactly (AI Agent Tool Invocation). Mitigation links recorded in mitigation_notes."
+      },
+      "mitigation_notes": {
+        "AML.M0029": "Linked to AML.T0053 in ATLAS v2026.09.",
+        "AML.M0037": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0037 (AI Agent Authority Expansion Controls) to AML.T0053. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do."
+      }
+    },
+    {
+      "id": "AML.T0012",
+      "name": "Valid Accounts",
+      "source_url": "https://atlas.mitre.org/techniques/AML.T0012",
+      "attacker_gets": "Legitimate account access is used for an unauthorized change.",
+      "da_control": "Separate authentication and tool access from permission for the exact action.",
+      "limit": "Not credential theft prevention.",
+      "mitigations": [
+        "AML.M0037"
+      ],
+      "evidence": "/proof-explorer/index.html#scenario-controls",
+      "verification": {
+        "status": "confirmed",
+        "checked_on": "2026-11-18",
+        "atlas_url": "https://atlas.mitre.org/techniques/AML.T0012",
+        "source_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+        "notes": "ID and name match ATLAS v2026.09 exactly (Valid Accounts). Mitigation links recorded in mitigation_notes."
+      },
+      "mitigation_notes": {
+        "AML.M0037": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0037 (AI Agent Authority Expansion Controls) to AML.T0012. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do."
+      }
+    },
+    {
+      "id": "AML.T0051",
+      "name": "LLM Prompt Injection",
+      "source_url": "https://atlas.mitre.org/techniques/AML.T0051",
+      "attacker_gets": "Injected instructions propose a changed payment or record.",
+      "da_control": "Check proposed parameters against trusted authority rather than prompt claims.",
+      "limit": "Not universal prompt injection detection.",
+      "mitigations": [
+        "AML.M0029",
+        "AML.M0037"
+      ],
+      "evidence": "/proof-explorer/index.html#scenario-controls",
+      "verification": {
+        "status": "confirmed",
+        "checked_on": "2026-11-18",
+        "atlas_url": "https://atlas.mitre.org/techniques/AML.T0051",
+        "source_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+        "notes": "ID and name match ATLAS v2026.09 exactly (LLM Prompt Injection). Mitigation links recorded in mitigation_notes."
+      },
+      "mitigation_notes": {
+        "AML.M0029": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0029 (Human In-the-Loop for AI Agent Actions) to AML.T0051. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do.",
+        "AML.M0037": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0037 (AI Agent Authority Expansion Controls) to AML.T0051. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do."
+      }
+    },
+    {
+      "id": "AML.T0080",
+      "name": "AI Agent Context Poisoning",
+      "source_url": "https://atlas.mitre.org/techniques/AML.T0080",
+      "attacker_gets": "Manipulated context attempts to change the basis for a tool action.",
+      "da_control": "Use trusted current context; refuse or escalate missing or altered required authority.",
+      "limit": "Does not establish truth of all context.",
+      "mitigations": [
+        "AML.M0037"
+      ],
+      "evidence": "/proof-explorer/index.html#scenario-controls",
+      "verification": {
+        "status": "confirmed",
+        "checked_on": "2026-11-18",
+        "atlas_url": "https://atlas.mitre.org/techniques/AML.T0080",
+        "source_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+        "notes": "ID and name match ATLAS v2026.09 exactly (AI Agent Context Poisoning). Mitigation links recorded in mitigation_notes."
+      },
+      "mitigation_notes": {
+        "AML.M0037": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0037 (AI Agent Authority Expansion Controls) to AML.T0080. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do."
+      }
+    },
+    {
+      "id": "AML.T0101",
+      "name": "Data Destruction via AI Agent Tool Invocation",
+      "source_url": "https://atlas.mitre.org/techniques/AML.T0101",
+      "attacker_gets": "An agent requests destructive changes through an available tool.",
+      "da_control": "Require exact authorization and executor verification for the protected operation.",
+      "limit": "Unintegrated delete routes are outside scope.",
+      "mitigations": [
+        "AML.M0029",
+        "AML.M0037"
+      ],
+      "evidence": "/proof-explorer/index.html#scenario-controls",
+      "verification": {
+        "status": "confirmed",
+        "checked_on": "2026-11-18",
+        "atlas_url": "https://atlas.mitre.org/techniques/AML.T0101",
+        "source_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+        "notes": "ID and name match ATLAS v2026.09 exactly (Data Destruction via AI Agent Tool Invocation). Mitigation links recorded in mitigation_notes."
+      },
+      "mitigation_notes": {
+        "AML.M0029": "Linked to AML.T0101 in ATLAS v2026.09.",
+        "AML.M0037": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0037 (AI Agent Authority Expansion Controls) to AML.T0101. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do."
+      }
+    },
+    {
+      "id": "AML.T0086",
+      "name": "Exfiltration via AI Agent Tool Invocation",
+      "source_url": "https://atlas.mitre.org/techniques/AML.T0086",
+      "attacker_gets": "An agent requests a sensitive export to an unauthorized destination.",
+      "da_control": "Check covered export destination, scope and authority.",
+      "limit": "Not universal DLP or network monitoring.",
+      "mitigations": [
+        "AML.M0037",
+        "AML.M0024"
+      ],
+      "evidence": "/proof-explorer/index.html#scenario-controls",
+      "verification": {
+        "status": "confirmed",
+        "checked_on": "2026-11-18",
+        "atlas_url": "https://atlas.mitre.org/techniques/AML.T0086",
+        "source_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+        "notes": "ID and name match ATLAS v2026.09 exactly (Exfiltration via AI Agent Tool Invocation). Mitigation links recorded in mitigation_notes."
+      },
+      "mitigation_notes": {
+        "AML.M0037": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0037 (AI Agent Authority Expansion Controls) to AML.T0086. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do.",
+        "AML.M0024": "Linked to AML.T0086 in ATLAS v2026.09."
+      }
+    },
+    {
+      "id": "AML.T0083",
+      "name": "Credentials from AI Agent Configuration",
+      "source_url": "https://atlas.mitre.org/techniques/AML.T0083",
+      "attacker_gets": "Stolen credentials are used to propose a privileged operation.",
+      "da_control": "Require trusted current authority for the specific protected action.",
+      "limit": "Does not prevent credential extraction.",
+      "mitigations": [
+        "AML.M0037",
+        "AML.M0024"
+      ],
+      "evidence": "/proof-explorer/index.html#scenario-controls",
+      "verification": {
+        "status": "confirmed",
+        "checked_on": "2026-11-18",
+        "atlas_url": "https://atlas.mitre.org/techniques/AML.T0083",
+        "source_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+        "notes": "ID and name match ATLAS v2026.09 exactly (Credentials from AI Agent Configuration). Mitigation links recorded in mitigation_notes."
+      },
+      "mitigation_notes": {
+        "AML.M0037": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0037 (AI Agent Authority Expansion Controls) to AML.T0083. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do.",
+        "AML.M0024": "OntoGuard's interpretation: ATLAS v2026.09 does not link AML.M0024 (AI Telemetry Logging) to AML.T0083. OntoGuard applies it because exact-action authorization limits what an agent's existing authority can do."
+      }
+    }
+  ],
+  "illustrative_mutations": {
+    "recipient": [
+      "AML.T0086",
+      "AML.T0051"
+    ],
+    "target": [
+      "AML.T0053"
+    ],
+    "operation": [
+      "AML.T0053",
+      "AML.T0101"
+    ],
+    "state": [
+      "AML.T0080"
+    ],
+    "approval": [
+      "AML.T0012"
+    ],
+    "missing": [
+      "AML.T0012"
+    ],
+    "tampered": [
+      "AML.T0080"
+    ],
+    "expired": [
+      "AML.T0012"
+    ],
+    "mismatched": [
+      "AML.T0053"
+    ],
+    "anchor": [
+      "AML.T0080"
+    ],
+    "replay": [
+      "AML.T0012",
+      "AML.T0083"
+    ]
+  },
+  "illustrative_scope": "Conceptual control mappings to existing mutations, not recorded ATLAS detections.",
+  "source_yaml_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+  "source_sha256": "935efa93e28294432d3e2f537eb94991ef8d1f8c58341cd360ea3321ddb66688"
+}

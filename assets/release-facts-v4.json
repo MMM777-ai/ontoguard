@@ -92,7 +92,6 @@
     ],
     "documented_api_paths": 157,
     "qualification_scope": "Release-reported selected corpus and release engineer scoring. Residual semantic errors exist; not independent external review. Not a latency guarantee. Separate from synthetic site demonstration.",
-    "approval": "PENDING_OWNER_APPROVAL",
     "selected_source_tests": 1244,
     "selected_installed_tests": 1244,
     "commercial_gate": {
@@ -119,7 +118,6 @@
     "reference_anchor_added_p95_ms": 23.102914999981294,
     "reference_group_commit_auth_s_tenant": 3714.3882661739094,
     "commit_window_ms": 20,
-    "scope": "Release-reported reference log; external production log, Python 3.12 qualification and signed OCI not established. No end-to-end guarantee.",
-    "approval": "PENDING_OWNER_APPROVAL"
+    "scope": "Release-reported reference log; external production log, Python 3.12 qualification and signed OCI not established. No end-to-end guarantee."
   }
 }
