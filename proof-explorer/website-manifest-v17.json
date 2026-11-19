@@ -1,0 +1,43 @@
+{
+  "schema": "ontoguard.website.explorer@17",
+  "release_id": "ontoguard-website-20261118-r17",
+  "scope": "Portable active explorer byte consistency; file mode verifies bundled snapshot; not publisher authentication",
+  "files": [
+    {
+      "name": "index.html",
+      "sha256": "f1a314b6df2ac09b7fd5e714a40fd2ad53c8b23466a64d78707b6c323a21820f",
+      "length": 42128
+    },
+    {
+      "name": "proof-explorer-data.json",
+      "sha256": "6dfe655e835fca640b5c744e5dac02270c6776cceb0b027a7f4dc8824cbbea97",
+      "length": 19677
+    },
+    {
+      "name": "proof-explorer.css",
+      "sha256": "b51e87cd0bd0844b88b45633a25bfb0dbbe66ad9ef88c277cc4303c1225b4819",
+      "length": 20276
+    },
+    {
+      "name": "proof-explorer.js",
+      "sha256": "bdbdaf82fbc1afd83420c4ff164a53bf779cda8b86c19708eb2ed85136d04c9e",
+      "length": 12008
+    },
+    {
+      "name": "public-receipt.json",
+      "sha256": "1619557a1e363a662aaacb04c9e994caca076dc5eced12531e4f92e6178b4154",
+      "length": 403
+    },
+    {
+      "name": "reference-v4.js",
+      "sha256": "a6f6ec79cdb7a8320f4f81fea28e32813279c1e45087e58ae8545e37e6bc1be9",
+      "length": 7084
+    },
+    {
+      "name": "extended.js",
+      "sha256": "a7fb7be318b77d3714b05f02859ab66dbbcd914a0e3e93b24fd7fa4e5e0832e5",
+      "length": 4440
+    }
+  ],
+  "version": "17"
+}

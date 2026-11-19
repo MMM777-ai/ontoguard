@@ -3,7 +3,7 @@
   "files": [
     {
       "name": "index.html",
-      "sha256": "b1340a64c1687500d77ed6622c97c9fc4fd032d826df61075ce1f766d4f286ef"
+      "sha256": "dc7a53a98f6e99cdcaab7596befe0b842cb254abfcbabe002367b7b54853d711"
     },
     {
       "name": "proof-explorer-data.json",
@@ -23,5 +23,5 @@
     }
   ],
   "source_manifest_sha256": "f2793bd3f6c68815d524cfab813bb8e1eef2e5a8c89f464948e5df25b215fe0d",
-  "scope": "Historical public presentation, portable and disclosure-updated; original case data and receipts retained; not original snapshot authentication."
+  "scope": "Historical public presentation with updated contact navigation; original case data and receipts retained; not original snapshot authentication."
 }

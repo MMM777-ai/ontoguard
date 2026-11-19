@@ -1,12 +1,12 @@
 {
   "schema": "ontoguard.website.explorer@12",
   "release_id": "ontoguard-website-20261118-r12-portable-public-disclosure",
-  "scope": "Portable active explorer byte consistency; file mode verifies bundled snapshot; not publisher authentication",
+  "scope": "Historical r12 public presentation, restored in r23; no publisher authentication. Native case data and receipts preserved.",
   "files": [
     {
       "name": "index.html",
-      "sha256": "ec3bfdc15b8bddf3fc1a63c7a6c05fb429b091c2a7e79c4f63ba103422db493c",
-      "length": 41680
+      "sha256": "2a1c4c51d0a75b845f17908f61fe8aa1c2d693f892f4040aca7978c840defac4",
+      "length": 41890
     },
     {
       "name": "proof-explorer-data.json",

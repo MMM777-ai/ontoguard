@@ -1,12 +1,12 @@
 {
   "schema": "ontoguard.website.explorer@9",
   "release_id": "ontoguard-website-20261118-r9",
-  "scope": "Historical public presentation, portable and disclosure-updated; original case data and receipts retained; not original snapshot authentication.",
+  "scope": "Historical public presentation restored in r23; indexing metadata normalized. Original case data and receipts retained; not original snapshot authentication.",
   "files": [
     {
       "name": "index.html",
-      "sha256": "00d399a90e3fbcc70c94fb0eb1a925367ac82f058ca94c214be85da98d86e505",
-      "length": 41290
+      "sha256": "a2ce6871837ca37308e2826de741eac8b80990d9d8bfdd739f0554883f96a7a1",
+      "length": 41244
     },
     {
       "name": "proof-explorer-data.json",
@@ -40,5 +40,6 @@
     }
   ],
   "version": "9",
-  "source_manifest_sha256": "3259349a5b976c71c9eea3df611f0c8a0835e6b8eef9745ac2cec4cb6603e8fc"
+  "source_manifest_sha256": "3259349a5b976c71c9eea3df611f0c8a0835e6b8eef9745ac2cec4cb6603e8fc",
+  "previous_presentation_manifest_sha256": "cf054d869667d74d076712c19d84d77253609a334c7c3850ab6a1f63e289954b"
 }
