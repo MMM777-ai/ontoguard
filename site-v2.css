@@ -114,3 +114,19 @@ button,.btn{max-width:100%;white-space:normal;overflow-wrap:anywhere}
  .mast .nav details{width:100%;min-width:0}
  .mast .nav .dropdown,.mast .nav details:nth-last-child(-n+2)>.dropdown{position:static;left:auto;right:auto;top:auto;width:100%;min-width:0;max-width:100%;transform:none;box-shadow:none;margin-bottom:.35rem}
 }
+
+/* R15: retain the offline panel heading hierarchy and original heading appearance. */
+#private .sales-offline h3{color:#a0ffed;font-size:clamp(1.8rem,3.5vw,2.65rem);margin:.1rem 0 .5rem;letter-spacing:-.035em}
+
+/* R17: product-specific, text-only marketplace proof. */
+.og-verified{display:inline-flex;align-items:center;gap:.55rem;flex-wrap:wrap;max-width:100%;min-width:0;padding:.58rem .8rem;border:1px solid #447e79;border-radius:.65rem;background:#102e37;color:#d6fff8;text-decoration:none;font-size:.85rem;line-height:1.35}
+.og-verified:hover,.og-verified:focus-visible{border-color:#81f4da;color:#fff;text-decoration:underline}
+.og-verified-badge{display:inline-block;padding:.22rem .48rem;border-radius:.3rem;background:#b3f4df;color:#092b24;font-weight:800;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap;vertical-align:middle}
+.og-verified-card{margin-bottom:1.2rem;border-color:#447e79;overflow-wrap:anywhere}.og-verified-card h2,.og-verified-card h3{line-height:1.4}.og-verified-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem 1.4rem;margin:1rem 0}.og-verified-facts dt{font-weight:700;color:#a0ffed}.og-verified-facts dd{margin:0}
+.sales-home-hero{padding-top:1.5rem;padding-bottom:1.25rem}.sales-home-hero .sales-hero-note{margin-top:.85rem}#product{padding-top:1.5rem}
+@media(max-width:620px){.mast .nav nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 .5rem}.mast .nav summary{min-height:44px;font-size:.84rem}.mast .nav details[open]{grid-column:1/-1}.og-verified{width:100%;box-sizing:border-box}.og-verified-facts{grid-template-columns:minmax(0,1fr)}}
+
+/* r21: wide tables scroll inside their own box on phones instead of widening the page */
+@media(max-width:620px){main table{display:block;max-width:100%;overflow-x:auto}}
+
+.verified-scope{font-size:.82em;font-weight:600;white-space:normal;overflow-wrap:normal;}

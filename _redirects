@@ -1,65 +1,19 @@
-/assets/boundary-proof-kit/one_page_refusal_escalation_receipt.public_sanitized.pdf    /financial-services-ai-decision-authorization.html    301
-/assets/boundary-proof-kit/one_page_boundary_receipt.public_sanitized.pdf    /financial-services-ai-decision-authorization.html    301
-/assets/boundary-proof-kit/*    /financial-services-ai-decision-authorization.html    301
-/index.html / 301
-/proof-explorer/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-
-
-/proof-explorer/website-manifest-v4.json /proof-explorer-r4/website-manifest-v4.json 301!
-/proof-explorer/website-manifest-v5.json /proof-explorer-r5/website-manifest-v5.json 301!
-
-/proof-explorer/website-manifest-v6.json /proof-explorer-r6/website-manifest-v6.json 301!
-/proof-explorer-r4/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-/proof-explorer-r5/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-/proof-explorer-r6/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-
-/proof-explorer/website-manifest-v7.json /proof-explorer-r7/website-manifest-v7.json 301!
-/proof-explorer-r7/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-/semantic-explorer/ /semantic-explorer/index.html 301!
-/proof-explorer/ /proof-explorer/index.html 301!
-
-/proof-explorer/website-manifest-v8.json /proof-explorer-r8/website-manifest-v8.json 301!
-/proof-explorer-r8/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-
-/proof-explorer/website-manifest-v9.json /proof-explorer-r9/website-manifest-v9.json 301!
-/proof-explorer-r6/website-manifest-v4.json /proof-explorer-r4/website-manifest-v4.json 301!
-/proof-explorer-r6/website-manifest-v5.json /proof-explorer-r5/website-manifest-v5.json 301!
-/proof-explorer-r8/website-manifest-v4.json /proof-explorer-r4/website-manifest-v4.json 301!
-/proof-explorer-r8/website-manifest-v5.json /proof-explorer-r5/website-manifest-v5.json 301!
-/proof-explorer-r8/website-manifest-v6.json /proof-explorer-r6/website-manifest-v6.json 301!
-/proof-explorer-r8/website-manifest-v7.json /proof-explorer-r7/website-manifest-v7.json 301!
-/proof-explorer-r9/website-manifest-v4.json /proof-explorer-r4/website-manifest-v4.json 301!
-/proof-explorer-r9/website-manifest-v5.json /proof-explorer-r5/website-manifest-v5.json 301!
-/proof-explorer-r9/website-manifest-v6.json /proof-explorer-r6/website-manifest-v6.json 301!
-/proof-explorer-r9/website-manifest-v7.json /proof-explorer-r7/website-manifest-v7.json 301!
-/proof-explorer-r9/website-manifest-v8.json /proof-explorer-r8/website-manifest-v8.json 301!
-/proof-explorer-r9/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-
-/proof-explorer/website-manifest-v10.json /proof-explorer-r10/website-manifest-v10.json 301!
-/proof-explorer-r10/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-/proof-explorer-r10/website-manifest-v4.json /proof-explorer-r4/website-manifest-v4.json 301!
-/proof-explorer-r10/website-manifest-v5.json /proof-explorer-r5/website-manifest-v5.json 301!
-/proof-explorer-r10/website-manifest-v6.json /proof-explorer-r6/website-manifest-v6.json 301!
-/proof-explorer-r10/website-manifest-v7.json /proof-explorer-r7/website-manifest-v7.json 301!
-/proof-explorer-r10/website-manifest-v8.json /proof-explorer-r8/website-manifest-v8.json 301!
-/proof-explorer-r10/website-manifest-v9.json /proof-explorer-r9/website-manifest-v9.json 301!
-
-/proof-explorer-v1/ /proof-explorer-v1/index.html 301!
-/proof-explorer-r4/ /proof-explorer-r4/index.html 301!
-/proof-explorer-r5/ /proof-explorer-r5/index.html 301!
-/proof-explorer-r6/ /proof-explorer-r6/index.html 301!
-/proof-explorer-r7/ /proof-explorer-r7/index.html 301!
-/proof-explorer-r8/ /proof-explorer-r8/index.html 301!
-/proof-explorer-r9/ /proof-explorer-r9/index.html 301!
-/proof-explorer-r10/ /proof-explorer-r10/index.html 301!
-
-/proof-explorer/website-manifest-v11.json /proof-explorer-r11/website-manifest-v11.json 301!
-/proof-explorer-r11/ /proof-explorer-r11/index.html 301!
-/proof-explorer-r11/public-manifest.json /proof-explorer-v1/public-manifest.json 301!
-/proof-explorer-r11/website-manifest-v4.json /proof-explorer-r4/website-manifest-v4.json 301!
-/proof-explorer-r11/website-manifest-v5.json /proof-explorer-r5/website-manifest-v5.json 301!
-/proof-explorer-r11/website-manifest-v6.json /proof-explorer-r6/website-manifest-v6.json 301!
-/proof-explorer-r11/website-manifest-v7.json /proof-explorer-r7/website-manifest-v7.json 301!
-/proof-explorer-r11/website-manifest-v8.json /proof-explorer-r8/website-manifest-v8.json 301!
-/proof-explorer-r11/website-manifest-v9.json /proof-explorer-r9/website-manifest-v9.json 301!
-/proof-explorer-r11/website-manifest-v10.json /proof-explorer-r10/website-manifest-v10.json 301!
+/proof-explorer/public-manifest.json /proof-explorer-v1/public-manifest.json 301
+/proof-explorer/website-manifest-v19.json /proof-explorer-r19/website-manifest-v19.json 301
+/proof-explorer/website-manifest-v12.json /proof-explorer-r12/website-manifest-v12.json 301
+/proof-explorer/website-manifest-v11.json /proof-explorer-r11/website-manifest-v11.json 301
+/proof-explorer/website-manifest-v10.json /proof-explorer-r10/website-manifest-v10.json 301
+/proof-explorer/website-manifest-v9.json /proof-explorer-r9/website-manifest-v9.json 301
+/proof-explorer/website-manifest-v8.json /proof-explorer-r8/website-manifest-v8.json 301
+/proof-explorer/website-manifest-v7.json /proof-explorer-r7/website-manifest-v7.json 301
+/proof-explorer/website-manifest-v6.json /proof-explorer-r6/website-manifest-v6.json 301
+/proof-explorer/website-manifest-v5.json /proof-explorer-r5/website-manifest-v5.json 301
+/proof-explorer/website-manifest-v4.json /proof-explorer-r4/website-manifest-v4.json 301
+/assets/boundary-proof-kit/one_page_refusal_escalation_receipt.public_sanitized.pdf /financial-services-ai-decision-authorization.html 301
+/assets/boundary-proof-kit/one_page_boundary_receipt.public_sanitized.pdf /financial-services-ai-decision-authorization.html 301
+/assets/boundary-proof-kit/* /financial-services-ai-decision-authorization.html 301
+/ /index.html 200
+/semantic-explorer/ /semantic-explorer/index.html 200
+/proof-explorer/ /proof-explorer/index.html 200
+/proof-explorer-v1/ /proof-explorer-v1/index.html 200
+/archive/ /archive/index.html 200

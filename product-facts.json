@@ -1,7 +1,6 @@
 {
   "schema": "ontoguard.public-facts@1",
-  "website_release": "ontoguard-website-20261118-r12-portable-public-disclosure",
-  "review_status": "PENDING_OWNER_APPROVAL",
+  "website_release": "ontoguard-website-20261118-r23",
   "products": [
     {
       "name": "OntoGuard Semantic Intelligence Runtime OEM",
@@ -110,7 +109,6 @@
       ],
       "documented_api_paths": 157,
       "qualification_scope": "Release-reported selected corpus and release engineer scoring. Residual semantic errors exist; not independent external review. Not a latency guarantee. Separate from synthetic site demonstration.",
-      "approval": "PENDING_OWNER_APPROVAL",
       "selected_source_tests": 1244,
       "selected_installed_tests": 1244,
       "commercial_gate": {
@@ -137,13 +135,12 @@
       "reference_anchor_added_p95_ms": 23.102914999981294,
       "reference_group_commit_auth_s_tenant": 3714.3882661739094,
       "commit_window_ms": 20,
-      "scope": "Release-reported reference log; external production log, Python 3.12 qualification and signed OCI not established. No end-to-end guarantee.",
-      "approval": "PENDING_OWNER_APPROVAL"
+      "scope": "Release-reported reference log; external production log, Python 3.12 qualification and signed OCI not established. No end-to-end guarantee."
     }
   },
   "native_contracts": {
     "source": "https://ontoguard.ai/semantic-explorer/native-contracts-r7/track.json",
-    "scope": "CONTROLLED_RUNTIME_OUTPUT_PENDING_DISCLOSURE",
+    "scope": "CONTROLLED_RUNTIME_OUTPUT",
     "asset_revision_records": 4,
     "contract_version_records": 5,
     "receipts": 7,
@@ -161,7 +158,7 @@
   ],
   "native_lineage_example": {
     "runtime": "1.89.332",
-    "scope": "controlled synthetic source assertions; pending disclosure approval",
+    "scope": "Controlled synthetic source assertions; candidate lineage, not established identity",
     "concepts": 8,
     "graph_edges": 7,
     "source_locators": 16,
@@ -171,12 +168,12 @@
     "limits": "No established transaction identity, settlement, discharge or operative authority."
   },
   "verification_scope": {
-    "contract": "Exact original native store and response recheck; browser projection and report binding only; publisher authentication NOT VERIFIED",
-    "lineage": "Fresh replay reproduced candidate source-linked output; established same-transaction identity not demonstrated",
-    "da": "Fresh isolated mock execution and historical packet verification; V16 NOT RUN"
+    "contract": "Recorded controlled native output; browser projection and report binding only; publisher authentication NOT VERIFIED",
+    "lineage": "Recorded candidate source-linked output; established same-transaction identity not demonstrated",
+    "da": "Recorded isolated mock execution and historical packet verification; V16 NOT RUN"
   },
-  "contact_mode": "email-draft",
-  "website_variant": "static-portable-commercial-public-disclosure",
+  "contact_mode": "formsubmit",
+  "website_variant": "github-pages-r23",
   "buyer_positioning": {
     "company": "Two independently licensable enterprise infrastructure runtimes; evidence-qualified meaning and exact-action permission-to-act are separate responsibilities.",
     "si": {
@@ -271,5 +268,530 @@
     },
     "commercial_scope": "Potential buyer value, not guaranteed ROI. Enterprise and OEM licensing; focused paid evaluations with buyer-owned inputs and protected route."
   },
-  "public_disclosure": "Public product behavior and scoped synthetic outputs only. Detailed runtime source, implementation, API contracts and private diligence materials are not distributed."
+  "public_disclosure": "Public product behavior and scoped synthetic outputs only. Detailed runtime source, implementation, API contracts and private diligence materials are not distributed.",
+  "facts": {
+    "da.tests.source": {
+      "value": 463,
+      "display": "463",
+      "scope_note": "Release-reported Python 3.13 reference environment; not production-wide or end-to-end latency.",
+      "value_sha256": "b4d15f20a430a2223c217238e96f17b5225805df490e78f3bff05007602e837c",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "da.tests.installed": {
+      "value": 463,
+      "display": "463",
+      "scope_note": "Release-reported Python 3.13 reference environment; not production-wide or end-to-end latency.",
+      "value_sha256": "b4d15f20a430a2223c217238e96f17b5225805df490e78f3bff05007602e837c",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "da.latency": {
+      "value": 23.102914999981294,
+      "display": "23.1 ms",
+      "scope_note": "Release-reported Python 3.13 reference environment; not production-wide or end-to-end latency.",
+      "value_sha256": "2757477471a7cf6f99f0241840a84e3b7ccdb1a0c1a8a842c4facad23d6a77f9",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "da.throughput": {
+      "value": 3714.3882661739094,
+      "display": "3,714",
+      "scope_note": "Release-reported Python 3.13 reference environment; not production-wide or end-to-end latency.",
+      "value_sha256": "7340170252696802cb74ab150a67314610e9be610e32ffbf90c7651e2d62c965",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "da.window": {
+      "value": 20,
+      "display": "20 ms",
+      "scope_note": "Release-reported Python 3.13 reference environment; not production-wide or end-to-end latency.",
+      "value_sha256": "ca90204d1e3a70ec1cc662c38892255ba7a3529e7a14054f61ee13b0741f19a8",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.profiles": {
+      "value": 27,
+      "display": "27",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "54e13bb99772b8fe3044bfe894c2b95dd2116ea4388215274a63d0acd828c7fc",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.exports": {
+      "value": 17,
+      "display": "17",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "e82d225d91027fa0658c89dbdefc9da3201059090b58e7360e59bb7ee1bc829e",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.api": {
+      "value": 157,
+      "display": "157",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "0eb53f16ff9798fc0d5231f8249a00dd7f7ceff85610cb14c9283b741b0c7b53",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.source_tests": {
+      "value": 1244,
+      "display": "1,244",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "e768e7cb2fff64760fd23943f649f665cd42542e481318f5142e40c8f424241a",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.installed_tests": {
+      "value": 1244,
+      "display": "1,244",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "0e08832be17789544271ad20368e2332aa859b0b4a1b0f2f5ffdcf6e8368b712",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.concepts": {
+      "value": 1362,
+      "display": "1,362",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "555f20dc3182bd35406351cac73bbcf9e1f0d2aecb0cb497aef386b01a8bab84",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.relationships": {
+      "value": 3434,
+      "display": "3,434",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "b97bef63caa3a9fb9037033616846cc98e1efb75020de99cd53a457d360d247c",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.gate": {
+      "value": 20,
+      "display": "20/20",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "2f00cef726288e095d8a6205b84ddb26d9d490388897268fec19395397672b3c",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.established": {
+      "value": 279,
+      "display": "279/281",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "969435b2f3ea6a0e2071128006b28099b074d2752022cab79c7905fd69333e56",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.candidate": {
+      "value": 37,
+      "display": "37/38",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "d0b71a384da6da09c4667faec3fde1e6822b0b95f33b0f7c8067a573775cea3a",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.domain": {
+      "value": 334,
+      "display": "334/334",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "c073a35a525453a53fbf75fd58b33845350475d08a8eefbabb9b6c95361aa538",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.category": {
+      "value": 333,
+      "display": "333/333",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "98c7367de44a361db4f2e394cc7a844e6d30b5053e6cf4890ba6809913bd46f0",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "pr201.tests": {
+      "value": 27,
+      "display": "27",
+      "source_file": "https://github.com/agentrust-io/integrations/pull/201",
+      "source_sha256": null,
+      "scope_note": "Reviewed adapter or bounded executor harness; not whole-runtime or customer deployment proof.",
+      "value_sha256": "0d12864e6d2fe158f74e84fe7aa00652e559de3aa59a0ceda9fd666ecf79ee15"
+    },
+    "pr201.exact": {
+      "value": 250000,
+      "display": "$250,000",
+      "source_file": "https://github.com/agentrust-io/integrations/pull/201",
+      "source_sha256": null,
+      "scope_note": "Reviewed adapter or bounded executor harness; not whole-runtime or customer deployment proof.",
+      "value_sha256": "4f452848400bacbc76742f879c1e010b26e6d556ddd23bc5eb4a763da6cc6e84"
+    },
+    "pr201.altered": {
+      "value": 260000,
+      "display": "$260,000",
+      "source_file": "https://github.com/agentrust-io/integrations/pull/201",
+      "source_sha256": null,
+      "scope_note": "Reviewed adapter or bounded executor harness; not whole-runtime or customer deployment proof.",
+      "value_sha256": "0064560afbfdfe725134dcb4bcb23b9c6d6e8b8c77c8ae72759bde36f9c1d84f"
+    },
+    "pr236.negative": {
+      "value": 97,
+      "display": "97",
+      "source_file": "https://github.com/agentrust-io/integrations/pull/236",
+      "source_sha256": null,
+      "scope_note": "Reviewed adapter or bounded executor harness; not whole-runtime or customer deployment proof.",
+      "value_sha256": "d92eebc512521dece0b041512d3a6a3648ec48d16c47236ddcee0b4e1d3ed703"
+    },
+    "pr236.positive": {
+      "value": 4,
+      "display": "4",
+      "source_file": "https://github.com/agentrust-io/integrations/pull/236",
+      "source_sha256": null,
+      "scope_note": "Reviewed adapter or bounded executor harness; not whole-runtime or customer deployment proof.",
+      "value_sha256": "3ea078d5fcc4641302ab114abcff3a473bf9a08b0f08e27a7eb69e7d01e37e04"
+    },
+    "pr236.tests": {
+      "value": 36,
+      "display": "36",
+      "source_file": "https://github.com/agentrust-io/integrations/pull/236",
+      "source_sha256": null,
+      "scope_note": "Reviewed adapter or bounded executor harness; not whole-runtime or customer deployment proof.",
+      "value_sha256": "20cf82afe465384e50397453e20d1c1a1aad8e36cb2cece5aae37233a3ce8975"
+    },
+    "si.version": {
+      "value": "1.89.332",
+      "display": "1.89.332",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "cd912b1c903133a6960b8f012a24d996df22f7426f0dd1d44b5382e09137e69e",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "da.version": {
+      "value": "1.5.2",
+      "display": "1.5.2",
+      "scope_note": "Release-reported Python 3.13 reference environment; not production-wide or end-to-end latency.",
+      "value_sha256": "cfe482a900ee788847ead131f212180bebbd63ab9d8904ac78430aa87a244739",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.exports_ratio": {
+      "value": 17,
+      "display": "17/17",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "57abcd953bc62882e7e4933158e56c96347ddec063d3d084da9493711fa62a72",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.mismatches": {
+      "value": 0,
+      "display": "0",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "1755eb9e89c42dc91818ea72308c81dbd970c31d7837426825be96ac37a8ad9c",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.established_pct": {
+      "value": 99.3,
+      "display": "279/281 (99.3%)",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "e1559b2683358df8ecec90b82839b7f16441a2592196a86ddab7d7d4d9b385cc",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.candidate_pct": {
+      "value": 97.4,
+      "display": "37/38 (97.4%)",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "3ea06026734d8f8e9a1aa9532a336b9fe70b82ba5597e4f5dbb809b79edd53c8",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.domain_pct": {
+      "value": 100.0,
+      "display": "334/334 (100.0%)",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "7a2908a62647325a7aa9a8cff8eed627e31cd26d368ded5777f48fdc4e6a1508",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.category_pct": {
+      "value": 100.0,
+      "display": "333/333 (100.0%)",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "dab16eea48c3b18c651d9cc3fba2ec1427c13f96d5751ecacab2ee28d790db40",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.pdf_recall": {
+      "value": 92.9,
+      "display": "13/14 (92.9%)",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "a2c0335ead2e07af710b4cd63dd17620622f7811631c0586476165af6ce3ef85",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.structured_recall": {
+      "value": 98.3,
+      "display": "119/121 (98.3%)",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "93cffd92456f36bd8c16817d758207bb404d5909076ed0530fcee26405dadee0",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.parallel": {
+      "value": 186.6,
+      "display": "186.6",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "9d4421908f726a023ed18e89fc818b2148d4217590260c3d34be21949fe85be1",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.serial": {
+      "value": 194.2,
+      "display": "194.2",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "fec35297e4a2e9c3d9565605a425c3487aecf08f015fc091d5bccdd22f7ff1d1",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.baseline_parallel": {
+      "value": 234.2,
+      "display": "234.2",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "5e68f35972bd8a5526b30fe00e5fe6ac064a787c00e5231e4545653c2afeaa13",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.baseline_serial": {
+      "value": 235.4,
+      "display": "235.4",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "f267f007610f47b40f8c88f190bc3e081b2115641805c0d700242dbbc7103343",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "si.baseline_version": {
+      "value": "1.89.302",
+      "display": "1.89.302",
+      "scope_note": "Release-reported selected corpus and release engineer scoring; not independent external review or universal semantic correctness.",
+      "value_sha256": "3a12b678b3acc4dce9b1a1b5b065978aa059e1a569395ddb3cdcfdf525e7c430",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "da.python": {
+      "value": "3.13.5",
+      "display": "3.13.5",
+      "scope_note": "Release-reported Python 3.13 reference environment; not production-wide or end-to-end latency.",
+      "value_sha256": "e248c6fc83a4a3f59330d90dce4bd1462901a1b6858447f6820af5b3d2b7193c",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "da.python_unqualified": {
+      "value": "3.12",
+      "display": "3.12",
+      "scope_note": "Not established in supplied runtime release evidence.",
+      "value_sha256": "5d2c6c997e9e48263bc1935d16e8dc2568d8bec13acd28af7542bc5e1b9ab505",
+      "source_scope": "Release-reported qualification; private supporting evidence available subject to diligence."
+    },
+    "demo.rich.concepts": {
+      "value": 22,
+      "display": "22",
+      "source_file": "semantic-explorer/data-v332-rich/dataset.json",
+      "source_sha256": "3328560761560d88d7e3f78bedae3799ef62bed411dc19370242507d16c28acb",
+      "scope_note": "Controlled synthetic native output, not a customer deployment.",
+      "value_sha256": "31519e419c90c6b28e7f6da37e42d6b13d8caeb07604376ad6a29021454177f7"
+    },
+    "demo.rich.edges": {
+      "value": 20,
+      "display": "20",
+      "source_file": "semantic-explorer/data-v332-rich/dataset.json",
+      "source_sha256": "3328560761560d88d7e3f78bedae3799ef62bed411dc19370242507d16c28acb",
+      "scope_note": "Controlled candidate relationships.",
+      "value_sha256": "f21d532b66469d7b4bb69670e96c3abd9df621a68884a5368bdfa2dcaaf4c6c7"
+    },
+    "demo.rich.locators": {
+      "value": 45,
+      "display": "45",
+      "source_file": "semantic-explorer/data-v332-rich/dataset.json",
+      "source_sha256": "3328560761560d88d7e3f78bedae3799ef62bed411dc19370242507d16c28acb",
+      "scope_note": "Controlled synthetic source references.",
+      "value_sha256": "38e651c26235ad5dd0ef968f0c290097fb3dfd2b6ac3f6eb97dcfc1dd1a323a5"
+    },
+    "demo.rich.accepted": {
+      "value": 20,
+      "display": "20",
+      "source_file": "semantic-explorer/data-v332-rich/dataset.json",
+      "source_sha256": "3328560761560d88d7e3f78bedae3799ef62bed411dc19370242507d16c28acb",
+      "scope_note": "Counting summary; review rows remain visible.",
+      "value_sha256": "05b50f526ab6d790b5f0deb5376bb9573584622c7729c4eaafdd5b9cc029bf0b"
+    },
+    "demo.lifecycle.locators": {
+      "value": 16,
+      "display": "16",
+      "source_file": "semantic-explorer/data-v332-lifecycle-r6/dataset.json",
+      "source_sha256": "1c7bcc2b1f55da4ac88809466209d621f4b5b92aa756693e28460b347d46f94f",
+      "scope_note": "Controlled synthetic source assertions; identity not established.",
+      "value_sha256": "c9d524bcefc43cd212710e7a71da3618728d2d03fead525ce52b69da23b76b08"
+    },
+    "demo.lineage.locators": {
+      "value": 16,
+      "display": "16",
+      "source_file": "semantic-explorer/data-v332-lineage-r8/dataset.json",
+      "source_sha256": "62c559e8bd23131791f746cf0152e15c5793b49e152334f4da73cb6192a9080b",
+      "scope_note": "Controlled synthetic source assertions; identity not established.",
+      "value_sha256": "26d160de053aba4a662386933b60d3f46547e3757a7aafb00276d9289bb70749"
+    },
+    "demo.contract.integer": {
+      "value": 10000,
+      "display": "10000",
+      "source_file": "semantic-explorer/native-contracts-r7/track.json",
+      "source_sha256": "cfc1896753605878857eb89202d3fc384ccdeb0e57518d0b23271c6710c9b478",
+      "scope_note": "Recorded native INTEGER case, not a live validation endpoint.",
+      "value_sha256": "67e474a10a93cedf5d4f7ad58a3d93b3cf6bce1c070c080f69d42d26b245e819"
+    },
+    "demo.contract.disallowed": {
+      "value": 30000,
+      "display": "30000",
+      "source_file": "semantic-explorer/native-contracts-r7/track.json",
+      "source_sha256": "cfc1896753605878857eb89202d3fc384ccdeb0e57518d0b23271c6710c9b478",
+      "scope_note": "Recorded native disallowed input.",
+      "value_sha256": "926c5eb6e22f0f1245155b921a37bec2d3bd1d55d1a27273a03d7990855fa324"
+    },
+    "demo.contract.allowed_second": {
+      "value": 20000,
+      "display": "20000",
+      "source_file": "semantic-explorer/native-contracts-r7/track.json",
+      "source_sha256": "cfc1896753605878857eb89202d3fc384ccdeb0e57518d0b23271c6710c9b478",
+      "scope_note": "Reviewer-selected allowed-value constraint, not automatic extraction.",
+      "value_sha256": "2bfd449886efb3a48d4248101607ce76e00e8fecac1e179374c74c3de3b1094c"
+    },
+    "da.mock.changed_status": {
+      "value": 409,
+      "display": "409",
+      "source_file": "assets/da-v152-execution-r5/reference-execution.json",
+      "source_sha256": "3ab0a1f636bb312e5b9aeb6e973cac0170a51eca07e656f4ceb024239dc041fc",
+      "scope_note": "Local development mock target; not a real financial effect.",
+      "value_sha256": "1f0604d5df8fbbbd1e550bf3fa36f6a0322581807842fa7b9d0122f93174b2e5"
+    },
+    "da.mock.checkpoint_unknown": {
+      "value": 4,
+      "display": "4",
+      "source_file": "assets/da-v152-execution-r5/packet-inspection.json",
+      "source_sha256": "3dab0e5ccc6998dc37ff3f8c696c7049268843694cdf3128abc8e4135b5c4563",
+      "scope_note": "Historical checkpoint, outcome unknown.",
+      "value_sha256": "fdd97417c9d3d310619f20c5764b1c983daacaf01acd6d3659a5ad43ca698265"
+    },
+    "da.mock.checkpoint_effect": {
+      "value": 5,
+      "display": "5",
+      "source_file": "assets/da-v152-execution-r5/packet-inspection.json",
+      "source_sha256": "3dab0e5ccc6998dc37ff3f8c696c7049268843694cdf3128abc8e4135b5c4563",
+      "scope_note": "Historical checkpoint, accepted signed effect.",
+      "value_sha256": "ce3ad01f555490573cc168db0c555b24a7aab2003f42521afbffaa0bafcb543c"
+    },
+    "pr201.id": {
+      "value": 201,
+      "display": "201",
+      "source_file": "https://github.com/agentrust-io/integrations/pull/201",
+      "source_sha256": null,
+      "scope_note": "Reviewed adapter or bounded executor harness; not whole-runtime or customer deployment proof.",
+      "value_sha256": "49b629eb443fa663f82a6554e486380cd95246bb1da8c5d81ab0910dd8e8ac57"
+    },
+    "pr236.id": {
+      "value": 236,
+      "display": "236",
+      "source_file": "https://github.com/agentrust-io/integrations/pull/236",
+      "source_sha256": null,
+      "scope_note": "Reviewed adapter or bounded executor harness; not whole-runtime or customer deployment proof.",
+      "value_sha256": "24309f1c655ea9902df87d253f46ffaa23dc753ff2a6fd9064774ab3873a110a"
+    },
+    "atlas.september_entries": {
+      "value": 208,
+      "display": "208",
+      "source_file": "https://github.com/mitre-atlas/atlas-data/releases/tag/v2026.09",
+      "source_sha256": null,
+      "scope_note": "MITRE September release: techniques plus sub-techniques. Agentic tag count not independently verified.",
+      "value_sha256": "d723f9a3712bb58f798206ff6ab84aa5ace31b9e0db9577939574dd6d666f72c"
+    },
+    "demo.micro.concepts": {
+      "value": 5,
+      "display": "5",
+      "source_file": "semantic-explorer/data-v332/dataset.json",
+      "source_sha256": "5c052b88bc07d5c3989d34933668a30aa1b9b99b659b9277484e10dbe240396b",
+      "scope_note": "Controlled synthetic micro dataset; candidate assertions are not operative truth or customer deployment.",
+      "value_sha256": "9e299866e72d713fcf294a50bf88235e9e0ef4850275148925adc313ac411c4f"
+    },
+    "demo.rich.review": {
+      "value": 2,
+      "display": "2",
+      "source_file": "semantic-explorer/data-v332-rich/dataset.json",
+      "source_sha256": "3328560761560d88d7e3f78bedae3799ef62bed411dc19370242507d16c28acb",
+      "scope_note": "Controlled synthetic rich dataset; candidate assertions are not operative truth or customer deployment.",
+      "value_sha256": "457d44f8ad5eacef173a1255fa9e82d744fad92085df5d2b32085876f897e716"
+    },
+    "demo.lifecycle.concepts": {
+      "value": 8,
+      "display": "8",
+      "source_file": "semantic-explorer/data-v332-lifecycle-r6/dataset.json",
+      "source_sha256": "1c7bcc2b1f55da4ac88809466209d621f4b5b92aa756693e28460b347d46f94f",
+      "scope_note": "Controlled synthetic lifecycle dataset; candidate assertions are not operative truth or customer deployment.",
+      "value_sha256": "ed25ec06ad0b4d75377357a49c8a497ca58302064c5944352ea5c5a136c702c2"
+    },
+    "demo.lifecycle.edges": {
+      "value": 3,
+      "display": "3",
+      "source_file": "semantic-explorer/data-v332-lifecycle-r6/dataset.json",
+      "source_sha256": "1c7bcc2b1f55da4ac88809466209d621f4b5b92aa756693e28460b347d46f94f",
+      "scope_note": "Controlled synthetic lifecycle dataset; candidate assertions are not operative truth or customer deployment.",
+      "value_sha256": "596b842f756fd06932756b095485701459eb499acf55171edf469a473f98283f"
+    },
+    "demo.lineage.concepts": {
+      "value": 8,
+      "display": "8",
+      "source_file": "semantic-explorer/data-v332-lineage-r8/dataset.json",
+      "source_sha256": "62c559e8bd23131791f746cf0152e15c5793b49e152334f4da73cb6192a9080b",
+      "scope_note": "Controlled synthetic lineage dataset; candidate assertions are not operative truth or customer deployment.",
+      "value_sha256": "eed4f2e255b168b090145fdd236f41a6dfa048e0e3c2d3f7bb3859421d079c19"
+    },
+    "demo.lineage.edges": {
+      "value": 7,
+      "display": "7",
+      "source_file": "semantic-explorer/data-v332-lineage-r8/dataset.json",
+      "source_sha256": "62c559e8bd23131791f746cf0152e15c5793b49e152334f4da73cb6192a9080b",
+      "scope_note": "Controlled synthetic lineage dataset; candidate assertions are not operative truth or customer deployment.",
+      "value_sha256": "9f1e348bfeb82f50029c767dcde203ab14650e8962d9b15dfe1482b2465c70d1"
+    },
+    "demo.contract.properties": {
+      "value": 2,
+      "display": "2",
+      "source_file": "semantic-explorer/native-contracts-r7/track.json",
+      "source_sha256": "cfc1896753605878857eb89202d3fc384ccdeb0e57518d0b23271c6710c9b478",
+      "scope_note": "Recorded native contract catalogue in revision A; no authorization.",
+      "value_sha256": "13b8c64924745bc9d1f7761cbf182ad4c06928050c3cf1cabe3a8a6479cefe63"
+    },
+    "demo.contract.receipts": {
+      "value": 7,
+      "display": "7",
+      "source_file": "semantic-explorer/native-contracts-r7/track.json",
+      "source_sha256": "cfc1896753605878857eb89202d3fc384ccdeb0e57518d0b23271c6710c9b478",
+      "scope_note": "Recorded native validation receipts across the controlled contract track; no live validation.",
+      "value_sha256": "11bc924d33eb15b816def45db7b738254f0aaa0e0077e68d0143cf0511c8c368"
+    },
+    "agentrust.tier": {
+      "value": "verified",
+      "display": "VERIFIED",
+      "source_file": "https://raw.githubusercontent.com/agentrust-io/integrations/9899c26/marketplace/catalog.json",
+      "source_sha256": "f6bdb3e10983d2564dc5a84add263d3ee7406d84fa01c1cb3e9ce859f5e59ce0",
+      "scope_note": "Marketplace tier for the Decision Authorization TRACE integration only; not endorsement or certification.",
+      "value_sha256": "01cac7cd8f1133a231a9e7c73acbfb4600b1ed5a4458bb79b1d2932e8cf86819"
+    },
+    "agentrust.verified_on": {
+      "value": "2026-09-22",
+      "display": "September 22, 2026",
+      "source_file": "https://github.com/agentrust-io/integrations/commit/9ab78ec",
+      "source_sha256": "f6bdb3e10983d2564dc5a84add263d3ee7406d84fa01c1cb3e9ce859f5e59ce0",
+      "scope_note": "Verification commit 9ab78ec, PR #212; documented integration behavior against released packages.",
+      "value_sha256": "6c5f78b333e6676a38be46c4310d3f07d5943edbc152f360ac29e059f1d4486b"
+    },
+    "agentrust.verified_vendors": {
+      "value": 10,
+      "display": "10",
+      "source_file": "https://raw.githubusercontent.com/agentrust-io/integrations/9899c26/marketplace/catalog.json",
+      "source_sha256": "f6bdb3e10983d2564dc5a84add263d3ee7406d84fa01c1cb3e9ce859f5e59ce0",
+      "scope_note": "Distinct external vendors with Verified listings at catalog commit 9899c26; date-specific, not a market ranking.",
+      "value_sha256": "93af83900d3193a242be9c3e6f867fd4a0ba0ac2221cff1858d901506acd4e5a"
+    },
+    "agentrust.listings": {
+      "value": 51,
+      "display": "51",
+      "source_file": "https://raw.githubusercontent.com/agentrust-io/integrations/9899c26/marketplace/catalog.json",
+      "source_sha256": "f6bdb3e10983d2564dc5a84add263d3ee7406d84fa01c1cb3e9ce859f5e59ce0",
+      "scope_note": "Total catalog listings at commit 9899c26; date-specific.",
+      "value_sha256": "3ef88bcdfed469d281746c69a46425eeefdd65ab5918210b60985756dcd4bc78"
+    },
+    "agentrust.checked_on": {
+      "value": "2026-11-18",
+      "display": "November 18, 2026",
+      "source_file": "https://raw.githubusercontent.com/agentrust-io/integrations/9899c26/marketplace/catalog.json",
+      "source_sha256": "f6bdb3e10983d2564dc5a84add263d3ee7406d84fa01c1cb3e9ce859f5e59ce0",
+      "scope_note": "Date of the recorded catalog snapshot; not a current live status guarantee.",
+      "value_sha256": "733a11297d1e132b07fa2ddc1635f15f63da6f16a450ad75d8139bc3a1428311"
+    }
+  },
+  "atlas": {
+    "release": "v2026.09",
+    "source": "https://github.com/mitre-atlas/atlas-data/releases/tag/v2026.09",
+    "technique_ids": [
+      "AML.T0053",
+      "AML.T0012",
+      "AML.T0051",
+      "AML.T0080",
+      "AML.T0101",
+      "AML.T0086",
+      "AML.T0083"
+    ]
+  }
 }

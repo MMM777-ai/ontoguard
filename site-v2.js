@@ -1,8 +1,26 @@
 'use strict';
-// No third-party analytics. Contact remains email-only in the static build.
+// No third-party analytics. Inquiry submission uses a native HTML POST to FormSubmit.
 document.addEventListener('click',e=>{for(const d of document.querySelectorAll('.nav details[open]'))if(!d.contains(e.target))d.open=false;});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')for(const d of document.querySelectorAll('.nav details[open]')){d.open=false;d.querySelector('summary').focus();}});
-const f=document.getElementById('inquiry');if(f){let inFlight=false;const submit=f.querySelector('button[type=submit]'),status=document.getElementById('form-status'),link=document.getElementById('mail-draft');submit.disabled=false;const p=new URLSearchParams(location.search);for(const k of ['product','intent']){const field=f.elements[k],v=p.get(k);if([...field.options].some(o=>o.value===v))field.value=v;}f.addEventListener('submit',async e=>{e.preventDefault();if(inFlight||!f.reportValidity())return;const d=new FormData(f),payload=Object.fromEntries(d);const subject='OntoGuard inquiry: '+d.get('product')+' / '+d.get('intent');const body=['Name: '+d.get('name'),'Organization: '+d.get('organization'),'Business email: '+d.get('email'),'Goal: '+d.get('goal')].join('\n');link.href='mailto:mark.starobinsky@ontoguard.ai?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);link.hidden=false;if(f.dataset.delivery!=='first-party'){status.textContent='Draft prepared. Open your email application and send it yourself; no inquiry has been submitted.';link.focus();return;}inFlight=true;submit.disabled=true;status.textContent='Submitting…';try{const res=await fetch('/api/inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:AbortSignal.timeout(15000)});const reply=await res.json();if(!res.ok||reply.accepted!==true)throw Error('Not accepted');status.textContent='Your inquiry was accepted by the configured mail relay. Final inbox delivery is not confirmed.';link.hidden=true;f.reset();}catch{status.textContent='Inquiry not confirmed. Please retry or use the email fallback. No success is asserted.';link.focus();}finally{inFlight=false;submit.disabled=false;}});}
+const f=document.getElementById('inquiry');
+if(f){
+ const submit=f.querySelector('button[type=submit]'),status=document.getElementById('form-status'),done=document.getElementById('form-done');
+ const params=new URLSearchParams(location.search);const src=/^[a-z0-9-]{1,80}$/.test(params.get('src')||'')?params.get('src'):'direct';
+ for(const k of ['product','intent']){const field=f.elements[k],v=k==='intent'&&params.get(k)==='oem'?'licensing':params.get(k);if([...field.options].some(o=>o.value===v))field.value=v;}
+ f.elements.src.value=src;
+ if(params.get('sent')==='1'){f.hidden=true;done.hidden=false;done.focus();}
+ let sending=false;
+ const label=k=>f.elements[k].selectedOptions[0].textContent.trim();
+ f.addEventListener('submit',e=>{
+  if(sending){e.preventDefault();return;}
+  const org=f.elements.organization.value.replace(/[\r\n\x00-\x1f\x7f]/g,' ').trim();
+  f.elements._subject.value='Website inquiry: '+label('product')+' / '+label('intent')+' | '+org;
+  sending=true;submit.disabled=true;submit.textContent='Sending…';status.textContent='Sending…';
+  // Allow the browser's default POST. No fetch, mailto or JavaScript dependency.
+ });
+ window.addEventListener('pageshow',()=>{sending=false;submit.disabled=false;submit.textContent='Send message';status.textContent='';});
+}
+
 const rf=document.getElementById('resource-filter');if(rf){const apply=()=>{let n=0;for(const el of document.querySelectorAll('[data-resource]')){el.hidden=['product','kind','status','date'].some(k=>rf.elements[k]&&rf.elements[k].value!=='all'&&rf.elements[k].value!==el.dataset[k]);if(!el.hidden)n++;}document.getElementById('resource-count').textContent=n+' resources visible';};rf.addEventListener('change',apply);apply();}
 
 // Direct-file navigation to portable views; immutable historical HTML remains unchanged.

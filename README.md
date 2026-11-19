@@ -140,7 +140,7 @@ The public website and its interactive examples provide product information and 
 
 ## 6. Contact OntoGuard
 
-For OEM licensing, enterprise evaluations, technical diligence or strategic opportunities, visit [Contact OntoGuard](https://ontoguard.ai/contact.html). Select Semantic Intelligence, Decision Authorization or both. The static contact page prepares an email draft; the visitor reviews and sends the message through their own email application.
+[Submit a non-confidential inquiry](https://ontoguard.ai/contact.html).
 
 Please do not include confidential customer data, credentials, payment details or other sensitive information in an initial inquiry.
 
@@ -153,3 +153,17 @@ The extracted static website can be opened directly using `index.html`. The acti
 ## Public disclosure boundary
 
 This website describes observable product behavior and bounded public evidence. The examples use synthetic data or previously published controlled proof. Proprietary runtime source, private integration contracts, internal qualification materials and patent strategy are not included. The historical public presentations may omit outdated legal wording; original decision receipts and native evidence records retain their original scope. Contact OntoGuard for private technical diligence. No patent status, coverage, or freedom-to-operate representation is made by this website.
+
+
+## AgenTrust marketplace and cybersecurity evidence
+
+Decision Authorization is listed at AgenTrust’s **Verified** tier for its documented TRACE integration (verified September 22, 2026; catalog snapshot November 18, 2026). Maintainers ran that integration end to end against released packages. This is not certification, endorsement, a commercial partnership, Semantic Intelligence validation or proof of production-wide enforcement.
+
+- [AgenTrust marketplace](https://agentrust-io.com/marketplace/)
+- [Integration and independent engineering evidence](https://ontoguard.ai/agentrust-decision-authorization-integration.html)
+- [MITRE ATLAS cybersecurity mapping](https://ontoguard.ai/cybersecurity-ai-decision-authorization.html) — OntoGuard's mapping against v2026.09, not MITRE certification.
+- [OEM integration kit](https://ontoguard.ai/oem-integration-kit.html) and [OEM security-agent platforms](https://ontoguard.ai/oem-security-agent-platforms.html).
+
+## Contact and disclosure
+
+[Contact OntoGuard](https://ontoguard.ai/contact.html) for a non-confidential evaluation or licensing inquiry. The form submits to FormSubmit for email relay; return to the confirmation page is not proof of inbox delivery. See the [privacy notice](https://ontoguard.ai/privacy.html). Do not submit customer records, credentials or confidential data. Proprietary runtime code, detailed implementation contracts and private diligence materials are not distributed.
